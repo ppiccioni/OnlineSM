@@ -1,0 +1,360 @@
+{
+  "logicalTable": {
+    "name": "Date",
+    "type": "DIMENSION",
+    "primaryKey": [
+      "Date Key"
+    ],
+    "logicalColumns": [
+      {
+        "name": "Date Key",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "DIM_DATE_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_DATE.DATE_KEY"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Detail"
+      },
+      {
+        "name": "Calendar Date",
+        "dataType": "DATE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "DIM_DATE_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_DATE.CALENDAR_DATE"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Detail"
+      },
+      {
+        "name": "Day Of Week",
+        "dataType": "VARCHAR",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "DIM_DATE_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_DATE.DAY_OF_WEEK"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Detail"
+      },
+      {
+        "name": "Week Start Date",
+        "dataType": "DATE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "DIM_DATE_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_DATE.WEEK_START_DATE"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Week"
+      },
+      {
+        "name": "Month Number",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "DIM_DATE_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_DATE.MONTH_NUMBER"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Month"
+      },
+      {
+        "name": "Month Name",
+        "dataType": "VARCHAR",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "DIM_DATE_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_DATE.MONTH_NAME"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Month"
+      },
+      {
+        "name": "Quarter Number",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "DIM_DATE_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_DATE.QUARTER_NUMBER"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Quarter"
+      },
+      {
+        "name": "Calendar Year",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "DIM_DATE_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_DATE.CALENDAR_YEAR"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Year"
+      },
+      {
+        "name": "Fiscal Year",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "DIM_DATE_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_DATE.FISCAL_YEAR"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Year"
+      },
+      {
+        "name": "Fiscal Period",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "DIM_DATE_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_DATE.FISCAL_PERIOD"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Month"
+      },
+      {
+        "name": "Is Weekend",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "DIM_DATE_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_DATE.IS_WEEKEND"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Detail"
+      },
+      {
+        "name": "Is Holiday Peak",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "DIM_DATE_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_DATE.IS_HOLIDAY_PEAK"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Detail"
+      }
+    ],
+    "logicalTableSources": [
+      {
+        "name": "DIM_DATE_LTS",
+        "disable": false,
+        "tableMapping": {
+          "tables": [
+            "physicalTable:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_DATE"
+          ]
+        },
+        "combineWithOtherFragments": false,
+        "enableFragmentSelection": false,
+        "distinctValues": false
+      }
+    ],
+    "hierarchyType": "LEVEL_BASED",
+    "levelBasedHierarchy": {
+      "defaultRootLevel": "Total",
+      "ragged": false,
+      "skipped": false,
+      "logicalLevels": [
+        {
+          "name": "Total",
+          "numberOfElements": 1,
+          "grandTotalLevel": true,
+          "disableAggregateToHigherLevel": false
+        },
+        {
+          "name": "Year",
+          "numberOfElements": 3,
+          "grandTotalLevel": false,
+          "disableAggregateToHigherLevel": false,
+          "primaryKey": [
+            "Calendar Year"
+          ],
+          "displayKey": "Calendar Year",
+          "chronologicalKey": [
+            "Calendar Year"
+          ]
+        },
+        {
+          "name": "Quarter",
+          "numberOfElements": 12,
+          "grandTotalLevel": false,
+          "disableAggregateToHigherLevel": false,
+          "primaryKey": [
+            "Calendar Year",
+            "Quarter Number"
+          ],
+          "displayKey": "Quarter Number",
+          "chronologicalKey": [
+            "Quarter Number"
+          ]
+        },
+        {
+          "name": "Month",
+          "numberOfElements": 36,
+          "grandTotalLevel": false,
+          "disableAggregateToHigherLevel": false,
+          "primaryKey": [
+            "Calendar Year",
+            "Month Number"
+          ],
+          "displayKey": "Month Name",
+          "chronologicalKey": [
+            "Month Number"
+          ]
+        },
+        {
+          "name": "Week",
+          "numberOfElements": 160,
+          "grandTotalLevel": false,
+          "disableAggregateToHigherLevel": false,
+          "primaryKey": [
+            "Week Start Date"
+          ],
+          "displayKey": "Week Start Date",
+          "chronologicalKey": [
+            "Week Start Date"
+          ]
+        },
+        {
+          "name": "Detail",
+          "numberOfElements": 1096,
+          "grandTotalLevel": false,
+          "disableAggregateToHigherLevel": false,
+          "primaryKey": [
+            "Date Key"
+          ],
+          "displayKey": "Calendar Date",
+          "chronologicalKey": [
+            "Date Key"
+          ]
+        }
+      ],
+      "logicalHierarchies": [
+        {
+          "name": "Calendar",
+          "description": "default hierarchy",
+          "levels": [
+            "Total",
+            "Year",
+            "Quarter",
+            "Month",
+            "Week",
+            "Detail"
+          ]
+        }
+      ]
+    }
+  }
+}

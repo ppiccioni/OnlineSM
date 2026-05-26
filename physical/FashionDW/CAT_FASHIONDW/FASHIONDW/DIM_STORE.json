@@ -1,0 +1,108 @@
+{
+  "physicalTable": {
+    "name": "DIM_STORE",
+    "sourceType": "TABLE",
+    "physicalColumns": [
+      {
+        "name": "STORE_ID",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
+        "name": "STORE_CODE",
+        "dataType": "VARCHAR",
+        "length": 20,
+        "nullable": true
+      },
+      {
+        "name": "STORE_NAME",
+        "dataType": "VARCHAR",
+        "length": 120,
+        "nullable": true
+      },
+      {
+        "name": "COUNTRY",
+        "dataType": "VARCHAR",
+        "length": 80,
+        "nullable": true
+      },
+      {
+        "name": "REGION",
+        "dataType": "VARCHAR",
+        "length": 80,
+        "nullable": true
+      },
+      {
+        "name": "CITY",
+        "dataType": "VARCHAR",
+        "length": 80,
+        "nullable": true
+      },
+      {
+        "name": "STORE_FORMAT",
+        "dataType": "VARCHAR",
+        "length": 40,
+        "nullable": true
+      },
+      {
+        "name": "LOCATION_TYPE",
+        "dataType": "VARCHAR",
+        "length": 40,
+        "nullable": true
+      },
+      {
+        "name": "OPENING_DATE",
+        "dataType": "DATE",
+        "length": 7,
+        "nullable": true
+      },
+      {
+        "name": "SELLING_AREA_SQM",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
+        "name": "CLIMATE_ZONE",
+        "dataType": "VARCHAR",
+        "length": 40,
+        "nullable": true
+      },
+      {
+        "name": "AFFLUENCE_INDEX",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
+        "name": "IS_FLAGSHIP",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
+        "name": "IS_OUTLET",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
+        "name": "LATITUDE",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
+        "name": "LONGITUDE",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      }
+    ],
+    "caching": {
+      "enable": true,
+      "expiryTime": 0
+    }
+  }
+}

@@ -1,0 +1,551 @@
+{
+  "logicalTable": {
+    "name": "Sales KPIs",
+    "description": "Sales line measures and fashion retail KPIs from FASHIONDW.FACT_SALES.",
+    "type": "FACT",
+    "logicalColumns": [
+      {
+        "name": "Sales Line ID",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "FACT_SALES_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.FACT_SALES.SALES_LINE_ID"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Transaction ID",
+        "dataType": "VARCHAR",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "FACT_SALES_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.FACT_SALES.TRANSACTION_ID"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Date Key",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "FACT_SALES_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.FACT_SALES.DATE_KEY"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Store ID",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "FACT_SALES_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.FACT_SALES.STORE_ID"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Customer ID",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "FACT_SALES_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.FACT_SALES.CUSTOMER_ID"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "SKU ID",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "FACT_SALES_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.FACT_SALES.SKU_ID"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Collection ID",
+        "dataType": "VARCHAR",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "FACT_SALES_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.FACT_SALES.COLLECTION_ID"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Channel ID",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "FACT_SALES_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.FACT_SALES.CHANNEL_ID"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Promotion ID",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "FACT_SALES_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.FACT_SALES.PROMOTION_ID"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Units Sold",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "FACT_SALES_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.FACT_SALES.QUANTITY"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        }
+      },
+      {
+        "name": "Gross Sales Amount",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "FACT_SALES_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.FACT_SALES.GROSS_SALES_AMOUNT"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        }
+      },
+      {
+        "name": "Discount Amount",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "FACT_SALES_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.FACT_SALES.DISCOUNT_AMOUNT"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        }
+      },
+      {
+        "name": "Net Sales Amount",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "FACT_SALES_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.FACT_SALES.NET_SALES_AMOUNT"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        }
+      },
+      {
+        "name": "Cost Amount",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "FACT_SALES_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.FACT_SALES.COST_AMOUNT"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        }
+      },
+      {
+        "name": "Gross Margin Amount",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "FACT_SALES_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.FACT_SALES.GROSS_MARGIN_AMOUNT"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        }
+      },
+      {
+        "name": "Markdown Pct Raw",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "FACT_SALES_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.FACT_SALES.MARKDOWN_PCT"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "AVG"
+        }
+      },
+      {
+        "name": "Full Price Line Count",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "FACT_SALES_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.FACT_SALES.IS_FULL_PRICE"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        }
+      },
+      {
+        "name": "Returned Line Count",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "FACT_SALES_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.FACT_SALES.IS_RETURNED"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        }
+      },
+      {
+        "name": "Scenario Tag",
+        "dataType": "VARCHAR",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "FACT_SALES_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.FACT_SALES.SCENARIO_TAG"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Sales Line Count",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "expressionTemplate": "COUNT(DISTINCT %1)",
+            "expressionObjects": [
+              "logicalColumn:Fashion Retail DW.Sales KPIs.Sales Line ID"
+            ]
+          }
+        }
+      },
+      {
+        "name": "Transaction Count",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "expressionTemplate": "COUNT(DISTINCT %1)",
+            "expressionObjects": [
+              "logicalColumn:Fashion Retail DW.Sales KPIs.Transaction ID"
+            ]
+          }
+        }
+      },
+      {
+        "name": "Average Selling Price",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "expressionTemplate": "%1 / %2",
+            "expressionObjects": [
+              "logicalColumn:Fashion Retail DW.Sales KPIs.Net Sales Amount",
+              "logicalColumn:Fashion Retail DW.Sales KPIs.Units Sold"
+            ]
+          }
+        }
+      },
+      {
+        "name": "Gross Margin Pct",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "expressionTemplate": "%1 / %2 * 100",
+            "expressionObjects": [
+              "logicalColumn:Fashion Retail DW.Sales KPIs.Gross Margin Amount",
+              "logicalColumn:Fashion Retail DW.Sales KPIs.Net Sales Amount"
+            ]
+          }
+        }
+      },
+      {
+        "name": "Markdown Pct",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "expressionTemplate": "%1 / %2 * 100",
+            "expressionObjects": [
+              "logicalColumn:Fashion Retail DW.Sales KPIs.Discount Amount",
+              "logicalColumn:Fashion Retail DW.Sales KPIs.Gross Sales Amount"
+            ]
+          }
+        }
+      },
+      {
+        "name": "Return Line Rate",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "expressionTemplate": "%1 / %2 * 100",
+            "expressionObjects": [
+              "logicalColumn:Fashion Retail DW.Sales KPIs.Returned Line Count",
+              "logicalColumn:Fashion Retail DW.Sales KPIs.Sales Line Count"
+            ]
+          }
+        }
+      },
+      {
+        "name": "Full Price Line Share",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "expressionTemplate": "%1 / %2 * 100",
+            "expressionObjects": [
+              "logicalColumn:Fashion Retail DW.Sales KPIs.Full Price Line Count",
+              "logicalColumn:Fashion Retail DW.Sales KPIs.Sales Line Count"
+            ]
+          }
+        }
+      }
+    ],
+    "logicalTableSources": [
+      {
+        "name": "FACT_SALES_LTS",
+        "disable": false,
+        "tableMapping": {
+          "tables": [
+            "physicalTable:FashionDW.CAT_FASHIONDW.FASHIONDW.FACT_SALES"
+          ]
+        },
+        "combineWithOtherFragments": false,
+        "enableFragmentSelection": false,
+        "distinctValues": false
+      }
+    ],
+    "joins": [
+      {
+        "rightTable": "logicalTable:Fashion Retail DW.Date",
+        "joinType": "INNER",
+        "cardinality": "MANY_TO_ZERO_OR_ONE"
+      },
+      {
+        "rightTable": "logicalTable:Fashion Retail DW.Store",
+        "joinType": "INNER",
+        "cardinality": "MANY_TO_ZERO_OR_ONE"
+      },
+      {
+        "rightTable": "logicalTable:Fashion Retail DW.Customer",
+        "joinType": "INNER",
+        "cardinality": "MANY_TO_ZERO_OR_ONE"
+      },
+      {
+        "rightTable": "logicalTable:Fashion Retail DW.Product",
+        "joinType": "INNER",
+        "cardinality": "MANY_TO_ZERO_OR_ONE"
+      },
+      {
+        "rightTable": "logicalTable:Fashion Retail DW.Collection",
+        "joinType": "INNER",
+        "cardinality": "MANY_TO_ZERO_OR_ONE"
+      },
+      {
+        "rightTable": "logicalTable:Fashion Retail DW.Channel",
+        "joinType": "INNER",
+        "cardinality": "MANY_TO_ZERO_OR_ONE"
+      },
+      {
+        "rightTable": "logicalTable:Fashion Retail DW.Promotion",
+        "joinType": "INNER",
+        "cardinality": "MANY_TO_ZERO_OR_ONE"
+      }
+    ]
+  }
+}

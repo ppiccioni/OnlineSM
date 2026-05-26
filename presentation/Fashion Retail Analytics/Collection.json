@@ -1,0 +1,57 @@
+{
+  "presentationTable": {
+    "name": "Collection",
+    "presentationColumns": [
+      {
+        "name": "Collection Name",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection.Collection Name",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Season Code",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection.Season Code",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Season Name",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection.Season Name",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Collection Year",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection.Collection Year",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Launch Date",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection.Launch Date",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Markdown Start Date",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection.Markdown Start Date",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Clearance Start Date",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection.Clearance Start Date",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "End Date",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection.End Date",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Primary Weather",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection.Primary Weather",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Story",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection.Story",
+        "useLogicalColumnName": true
+      }
+    ]
+  }
+}

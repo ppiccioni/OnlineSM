@@ -1,0 +1,43 @@
+{
+  "database": {
+    "name": "FashionDW",
+    "description": "Autonomous Database connection for the FashionDW generated warehouse.",
+    "databaseType": "ORACLE_DATABASE",
+    "connectionPools": [
+      {
+        "name": "CP1",
+        "connection": "'system'.'FashionDW_SM'",
+        "remoteConnection": false,
+        "maxConnections": 50,
+        "requiresFullyQualifedTableNames": false,
+        "connectionTimeout": 5,
+        "connectionTimeoutUnit": "WHEN_QUERY_COMPLETES",
+        "multithreaded": true,
+        "supportParams": true,
+        "writeBackConfig": {
+          "dbSupportsUnicode": false,
+          "bulkInsertBufferSize": 10240,
+          "transactionBoundary": 0
+        }
+      }
+    ],
+    "featureOverrides": [
+      {
+        "name": "IDENTIFIER_QUOTE_CHAR",
+        "value": "\""
+      },
+      {
+        "name": "DEFAULT_BULK_FETCH_ROW_COUNT",
+        "value": 100
+      },
+      {
+        "name": "MAX_BULK_FETCH_BUFFER_SIZE",
+        "value": 327680
+      }
+    ],
+    "virtualPrivateDatabase": false,
+    "crmMetadataTables": false,
+    "allowDirectDatabaseRequests": false,
+    "allowPopulateQueries": false
+  }
+}

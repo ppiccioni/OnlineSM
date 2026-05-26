@@ -1,0 +1,198 @@
+{
+  "physicalTable": {
+    "name": "FACT_SALES",
+    "sourceType": "TABLE",
+    "physicalColumns": [
+      {
+        "name": "SALES_LINE_ID",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
+        "name": "TRANSACTION_ID",
+        "dataType": "VARCHAR",
+        "length": 40,
+        "nullable": true
+      },
+      {
+        "name": "DATE_KEY",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
+        "name": "STORE_ID",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
+        "name": "CUSTOMER_ID",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
+        "name": "SKU_ID",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
+        "name": "COLLECTION_ID",
+        "dataType": "VARCHAR",
+        "length": 4,
+        "nullable": true
+      },
+      {
+        "name": "CHANNEL_ID",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
+        "name": "PROMOTION_ID",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
+        "name": "QUANTITY",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
+        "name": "GROSS_SALES_AMOUNT",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
+        "name": "DISCOUNT_AMOUNT",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
+        "name": "NET_SALES_AMOUNT",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
+        "name": "COST_AMOUNT",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
+        "name": "GROSS_MARGIN_AMOUNT",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
+        "name": "MARKDOWN_PCT",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
+        "name": "IS_FULL_PRICE",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
+        "name": "IS_RETURNED",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
+        "name": "SCENARIO_TAG",
+        "dataType": "VARCHAR",
+        "length": 80,
+        "nullable": true
+      }
+    ],
+    "caching": {
+      "enable": true,
+      "expiryTime": 0
+    },
+    "joins": [
+      {
+        "rightTable": "physicalTable:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_DATE",
+        "useJoinExpression": false,
+        "joinConditions": [
+          {
+            "leftColumn": "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.FACT_SALES.DATE_KEY",
+            "rightColumn": "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_DATE.DATE_KEY"
+          }
+        ]
+      },
+      {
+        "rightTable": "physicalTable:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_STORE",
+        "useJoinExpression": false,
+        "joinConditions": [
+          {
+            "leftColumn": "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.FACT_SALES.STORE_ID",
+            "rightColumn": "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_STORE.STORE_ID"
+          }
+        ]
+      },
+      {
+        "rightTable": "physicalTable:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_CUSTOMER",
+        "useJoinExpression": false,
+        "joinConditions": [
+          {
+            "leftColumn": "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.FACT_SALES.CUSTOMER_ID",
+            "rightColumn": "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_CUSTOMER.CUSTOMER_ID"
+          }
+        ]
+      },
+      {
+        "rightTable": "physicalTable:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_PRODUCT",
+        "useJoinExpression": false,
+        "joinConditions": [
+          {
+            "leftColumn": "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.FACT_SALES.SKU_ID",
+            "rightColumn": "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_PRODUCT.SKU_ID"
+          }
+        ]
+      },
+      {
+        "rightTable": "physicalTable:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_COLLECTION",
+        "useJoinExpression": false,
+        "joinConditions": [
+          {
+            "leftColumn": "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.FACT_SALES.COLLECTION_ID",
+            "rightColumn": "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_COLLECTION.COLLECTION_ID"
+          }
+        ]
+      },
+      {
+        "rightTable": "physicalTable:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_CHANNEL",
+        "useJoinExpression": false,
+        "joinConditions": [
+          {
+            "leftColumn": "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.FACT_SALES.CHANNEL_ID",
+            "rightColumn": "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_CHANNEL.CHANNEL_ID"
+          }
+        ]
+      },
+      {
+        "rightTable": "physicalTable:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_PROMOTION",
+        "useJoinExpression": false,
+        "joinConditions": [
+          {
+            "leftColumn": "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.FACT_SALES.PROMOTION_ID",
+            "rightColumn": "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_PROMOTION.PROMOTION_ID"
+          }
+        ]
+      }
+    ]
+  }
+}

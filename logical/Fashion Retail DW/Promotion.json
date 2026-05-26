@@ -1,0 +1,216 @@
+{
+  "logicalTable": {
+    "name": "Promotion",
+    "type": "DIMENSION",
+    "primaryKey": [
+      "Promotion ID"
+    ],
+    "logicalColumns": [
+      {
+        "name": "Promotion ID",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "DIM_PROMOTION_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_PROMOTION.PROMOTION_ID"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Detail"
+      },
+      {
+        "name": "Promotion Code",
+        "dataType": "VARCHAR",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "DIM_PROMOTION_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_PROMOTION.PROMOTION_CODE"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Detail"
+      },
+      {
+        "name": "Promotion Name",
+        "dataType": "VARCHAR",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "DIM_PROMOTION_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_PROMOTION.PROMOTION_NAME"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Detail"
+      },
+      {
+        "name": "Promotion Type",
+        "dataType": "VARCHAR",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "DIM_PROMOTION_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_PROMOTION.PROMOTION_TYPE"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Type"
+      },
+      {
+        "name": "Markdown Depth Pct",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "DIM_PROMOTION_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_PROMOTION.MARKDOWN_DEPTH_PCT"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Detail"
+      },
+      {
+        "name": "Campaign Family",
+        "dataType": "VARCHAR",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "DIM_PROMOTION_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_PROMOTION.CAMPAIGN_FAMILY"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Type"
+      },
+      {
+        "name": "Is Clearance",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "DIM_PROMOTION_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_PROMOTION.IS_CLEARANCE"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Detail"
+      }
+    ],
+    "logicalTableSources": [
+      {
+        "name": "DIM_PROMOTION_LTS",
+        "disable": false,
+        "tableMapping": {
+          "tables": [
+            "physicalTable:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_PROMOTION"
+          ]
+        },
+        "combineWithOtherFragments": false,
+        "enableFragmentSelection": false,
+        "distinctValues": false
+      }
+    ],
+    "hierarchyType": "LEVEL_BASED",
+    "levelBasedHierarchy": {
+      "defaultRootLevel": "Total",
+      "ragged": false,
+      "skipped": false,
+      "logicalLevels": [
+        {
+          "name": "Total",
+          "numberOfElements": 1,
+          "grandTotalLevel": true,
+          "disableAggregateToHigherLevel": false
+        },
+        {
+          "name": "Type",
+          "numberOfElements": 4,
+          "grandTotalLevel": false,
+          "disableAggregateToHigherLevel": false,
+          "primaryKey": [
+            "Promotion Type"
+          ],
+          "displayKey": "Promotion Type",
+          "chronologicalKey": [
+            "Promotion Type"
+          ]
+        },
+        {
+          "name": "Detail",
+          "numberOfElements": 6,
+          "grandTotalLevel": false,
+          "disableAggregateToHigherLevel": false,
+          "primaryKey": [
+            "Promotion ID"
+          ],
+          "displayKey": "Promotion Name",
+          "chronologicalKey": [
+            "Promotion ID"
+          ]
+        }
+      ],
+      "logicalHierarchies": [
+        {
+          "name": "Promotion",
+          "description": "default hierarchy",
+          "levels": [
+            "Total",
+            "Type",
+            "Detail"
+          ]
+        }
+      ]
+    }
+  }
+}

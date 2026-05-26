@@ -1,0 +1,54 @@
+{
+  "physicalTable": {
+    "name": "DIM_PROMOTION",
+    "sourceType": "TABLE",
+    "physicalColumns": [
+      {
+        "name": "PROMOTION_ID",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
+        "name": "PROMOTION_CODE",
+        "dataType": "VARCHAR",
+        "length": 40,
+        "nullable": true
+      },
+      {
+        "name": "PROMOTION_NAME",
+        "dataType": "VARCHAR",
+        "length": 80,
+        "nullable": true
+      },
+      {
+        "name": "PROMOTION_TYPE",
+        "dataType": "VARCHAR",
+        "length": 40,
+        "nullable": true
+      },
+      {
+        "name": "MARKDOWN_DEPTH_PCT",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
+        "name": "CAMPAIGN_FAMILY",
+        "dataType": "VARCHAR",
+        "length": 80,
+        "nullable": true
+      },
+      {
+        "name": "IS_CLEARANCE",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      }
+    ],
+    "caching": {
+      "enable": true,
+      "expiryTime": 0
+    }
+  }
+}

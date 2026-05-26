@@ -1,0 +1,90 @@
+{
+  "physicalTable": {
+    "name": "DIM_DATE",
+    "sourceType": "TABLE",
+    "physicalColumns": [
+      {
+        "name": "DATE_KEY",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
+        "name": "CALENDAR_DATE",
+        "dataType": "DATE",
+        "length": 7,
+        "nullable": true
+      },
+      {
+        "name": "DAY_OF_WEEK",
+        "dataType": "VARCHAR",
+        "length": 12,
+        "nullable": true
+      },
+      {
+        "name": "WEEK_START_DATE",
+        "dataType": "DATE",
+        "length": 7,
+        "nullable": true
+      },
+      {
+        "name": "MONTH_NUMBER",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
+        "name": "MONTH_NAME",
+        "dataType": "VARCHAR",
+        "length": 12,
+        "nullable": true
+      },
+      {
+        "name": "QUARTER_NUMBER",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
+        "name": "CALENDAR_YEAR",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
+        "name": "FISCAL_YEAR",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
+        "name": "FISCAL_PERIOD",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
+        "name": "COLLECTION_ID",
+        "dataType": "VARCHAR",
+        "length": 4,
+        "nullable": true
+      },
+      {
+        "name": "IS_WEEKEND",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
+        "name": "IS_HOLIDAY_PEAK",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      }
+    ],
+    "caching": {
+      "enable": true,
+      "expiryTime": 0
+    }
+  }
+}

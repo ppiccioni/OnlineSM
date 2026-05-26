@@ -1,0 +1,78 @@
+{
+  "physicalTable": {
+    "name": "DIM_CUSTOMER",
+    "sourceType": "TABLE",
+    "physicalColumns": [
+      {
+        "name": "CUSTOMER_ID",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
+        "name": "CUSTOMER_CODE",
+        "dataType": "VARCHAR",
+        "length": 30,
+        "nullable": true
+      },
+      {
+        "name": "HOME_COUNTRY",
+        "dataType": "VARCHAR",
+        "length": 80,
+        "nullable": true
+      },
+      {
+        "name": "AGE_BAND",
+        "dataType": "VARCHAR",
+        "length": 20,
+        "nullable": true
+      },
+      {
+        "name": "GENDER_AFFINITY",
+        "dataType": "VARCHAR",
+        "length": 30,
+        "nullable": true
+      },
+      {
+        "name": "LOYALTY_TIER",
+        "dataType": "VARCHAR",
+        "length": 20,
+        "nullable": true
+      },
+      {
+        "name": "ACQUISITION_CHANNEL",
+        "dataType": "VARCHAR",
+        "length": 40,
+        "nullable": true
+      },
+      {
+        "name": "SIGNUP_DATE",
+        "dataType": "DATE",
+        "length": 7,
+        "nullable": true
+      },
+      {
+        "name": "DISCOUNT_SENSITIVITY",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
+        "name": "STYLE_AFFINITY",
+        "dataType": "VARCHAR",
+        "length": 60,
+        "nullable": true
+      },
+      {
+        "name": "IS_ACTIVE",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      }
+    ],
+    "caching": {
+      "enable": true,
+      "expiryTime": 0
+    }
+  }
+}

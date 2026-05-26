@@ -1,0 +1,170 @@
+{
+  "presentationTable": {
+    "name": "Sales KPIs",
+    "presentationColumns": [
+      {
+        "name": "Sales Line ID",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Sales KPIs.Sales Line ID",
+        "useLogicalColumnName": true,
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
+      },
+      {
+        "name": "Transaction ID",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Sales KPIs.Transaction ID",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Date Key",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Sales KPIs.Date Key",
+        "useLogicalColumnName": true,
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
+      },
+      {
+        "name": "Store ID",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Sales KPIs.Store ID",
+        "useLogicalColumnName": true,
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
+      },
+      {
+        "name": "Customer ID",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Sales KPIs.Customer ID",
+        "useLogicalColumnName": true,
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
+      },
+      {
+        "name": "SKU ID",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Sales KPIs.SKU ID",
+        "useLogicalColumnName": true,
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
+      },
+      {
+        "name": "Collection ID",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Sales KPIs.Collection ID",
+        "useLogicalColumnName": true,
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
+      },
+      {
+        "name": "Channel ID",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Sales KPIs.Channel ID",
+        "useLogicalColumnName": true,
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
+      },
+      {
+        "name": "Promotion ID",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Sales KPIs.Promotion ID",
+        "useLogicalColumnName": true,
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
+      },
+      {
+        "name": "Units Sold",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Sales KPIs.Units Sold",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Gross Sales Amount",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Sales KPIs.Gross Sales Amount",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Discount Amount",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Sales KPIs.Discount Amount",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Net Sales Amount",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Sales KPIs.Net Sales Amount",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Cost Amount",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Sales KPIs.Cost Amount",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Gross Margin Amount",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Sales KPIs.Gross Margin Amount",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Markdown Pct Raw",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Sales KPIs.Markdown Pct Raw",
+        "useLogicalColumnName": true,
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
+      },
+      {
+        "name": "Full Price Line Count",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Sales KPIs.Full Price Line Count",
+        "useLogicalColumnName": true,
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
+      },
+      {
+        "name": "Returned Line Count",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Sales KPIs.Returned Line Count",
+        "useLogicalColumnName": true,
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
+      },
+      {
+        "name": "Scenario Tag",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Sales KPIs.Scenario Tag",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Sales Line Count",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Sales KPIs.Sales Line Count",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Transaction Count",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Sales KPIs.Transaction Count",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Average Selling Price",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Sales KPIs.Average Selling Price",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Gross Margin Pct",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Sales KPIs.Gross Margin Pct",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Markdown Pct",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Sales KPIs.Markdown Pct",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Return Line Rate",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Sales KPIs.Return Line Rate",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Full Price Line Share",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Sales KPIs.Full Price Line Share",
+        "useLogicalColumnName": true
+      }
+    ]
+  }
+}

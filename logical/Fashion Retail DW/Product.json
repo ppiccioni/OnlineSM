@@ -1,0 +1,521 @@
+{
+  "logicalTable": {
+    "name": "Product",
+    "type": "DIMENSION",
+    "primaryKey": [
+      "SKU ID"
+    ],
+    "logicalColumns": [
+      {
+        "name": "SKU ID",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "DIM_PRODUCT_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_PRODUCT.SKU_ID"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "SKU"
+      },
+      {
+        "name": "SKU Code",
+        "dataType": "VARCHAR",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "DIM_PRODUCT_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_PRODUCT.SKU_CODE"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "SKU"
+      },
+      {
+        "name": "Style ID",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "DIM_PRODUCT_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_PRODUCT.STYLE_ID"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Style"
+      },
+      {
+        "name": "Style Code",
+        "dataType": "VARCHAR",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "DIM_PRODUCT_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_PRODUCT.STYLE_CODE"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Style"
+      },
+      {
+        "name": "Product Name",
+        "dataType": "VARCHAR",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "DIM_PRODUCT_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_PRODUCT.PRODUCT_NAME"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "SKU"
+      },
+      {
+        "name": "Department",
+        "dataType": "VARCHAR",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "DIM_PRODUCT_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_PRODUCT.DEPARTMENT"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Department"
+      },
+      {
+        "name": "Category",
+        "dataType": "VARCHAR",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "DIM_PRODUCT_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_PRODUCT.CATEGORY"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Category"
+      },
+      {
+        "name": "Subcategory",
+        "dataType": "VARCHAR",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "DIM_PRODUCT_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_PRODUCT.SUBCATEGORY"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Subcategory"
+      },
+      {
+        "name": "Brand",
+        "dataType": "VARCHAR",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "DIM_PRODUCT_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_PRODUCT.BRAND"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "SKU"
+      },
+      {
+        "name": "Collection ID",
+        "dataType": "VARCHAR",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "DIM_PRODUCT_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_PRODUCT.COLLECTION_ID"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "SKU"
+      },
+      {
+        "name": "Color Family",
+        "dataType": "VARCHAR",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "DIM_PRODUCT_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_PRODUCT.COLOR_FAMILY"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "SKU"
+      },
+      {
+        "name": "Size Code",
+        "dataType": "VARCHAR",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "DIM_PRODUCT_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_PRODUCT.SIZE_CODE"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "SKU"
+      },
+      {
+        "name": "Fit",
+        "dataType": "VARCHAR",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "DIM_PRODUCT_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_PRODUCT.FIT"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "SKU"
+      },
+      {
+        "name": "Fabric",
+        "dataType": "VARCHAR",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "DIM_PRODUCT_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_PRODUCT.FABRIC"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "SKU"
+      },
+      {
+        "name": "Price Tier",
+        "dataType": "VARCHAR",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "DIM_PRODUCT_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_PRODUCT.PRICE_TIER"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "SKU"
+      },
+      {
+        "name": "List Price",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "DIM_PRODUCT_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_PRODUCT.LIST_PRICE"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "SKU"
+      },
+      {
+        "name": "Standard Cost",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "DIM_PRODUCT_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_PRODUCT.STANDARD_COST"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "SKU"
+      },
+      {
+        "name": "Trend Tag",
+        "dataType": "VARCHAR",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "DIM_PRODUCT_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_PRODUCT.TREND_TAG"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "SKU"
+      },
+      {
+        "name": "Sustainability Flag",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "DIM_PRODUCT_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_PRODUCT.SUSTAINABILITY_FLAG"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "SKU"
+      },
+      {
+        "name": "Carryover Flag",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "DIM_PRODUCT_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_PRODUCT.CARRYOVER_FLAG"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "SKU"
+      }
+    ],
+    "logicalTableSources": [
+      {
+        "name": "DIM_PRODUCT_LTS",
+        "disable": false,
+        "tableMapping": {
+          "tables": [
+            "physicalTable:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_PRODUCT"
+          ]
+        },
+        "combineWithOtherFragments": false,
+        "enableFragmentSelection": false,
+        "distinctValues": false
+      }
+    ],
+    "hierarchyType": "LEVEL_BASED",
+    "levelBasedHierarchy": {
+      "defaultRootLevel": "Total",
+      "ragged": false,
+      "skipped": false,
+      "logicalLevels": [
+        {
+          "name": "Total",
+          "numberOfElements": 1,
+          "grandTotalLevel": true,
+          "disableAggregateToHigherLevel": false
+        },
+        {
+          "name": "Department",
+          "numberOfElements": 10,
+          "grandTotalLevel": false,
+          "disableAggregateToHigherLevel": false,
+          "primaryKey": [
+            "Department"
+          ],
+          "displayKey": "Department",
+          "chronologicalKey": [
+            "Department"
+          ]
+        },
+        {
+          "name": "Category",
+          "numberOfElements": 30,
+          "grandTotalLevel": false,
+          "disableAggregateToHigherLevel": false,
+          "primaryKey": [
+            "Department",
+            "Category"
+          ],
+          "displayKey": "Category",
+          "chronologicalKey": [
+            "Category"
+          ]
+        },
+        {
+          "name": "Subcategory",
+          "numberOfElements": 80,
+          "grandTotalLevel": false,
+          "disableAggregateToHigherLevel": false,
+          "primaryKey": [
+            "Department",
+            "Category",
+            "Subcategory"
+          ],
+          "displayKey": "Subcategory",
+          "chronologicalKey": [
+            "Subcategory"
+          ]
+        },
+        {
+          "name": "Style",
+          "numberOfElements": 1200,
+          "grandTotalLevel": false,
+          "disableAggregateToHigherLevel": false,
+          "primaryKey": [
+            "Style ID"
+          ],
+          "displayKey": "Style Code",
+          "chronologicalKey": [
+            "Style ID"
+          ]
+        },
+        {
+          "name": "SKU",
+          "numberOfElements": 8808,
+          "grandTotalLevel": false,
+          "disableAggregateToHigherLevel": false,
+          "primaryKey": [
+            "SKU ID"
+          ],
+          "displayKey": "Product Name",
+          "chronologicalKey": [
+            "SKU ID"
+          ]
+        }
+      ],
+      "logicalHierarchies": [
+        {
+          "name": "Product",
+          "description": "default hierarchy",
+          "levels": [
+            "Total",
+            "Department",
+            "Category",
+            "Subcategory",
+            "Style",
+            "SKU"
+          ]
+        }
+      ]
+    }
+  }
+}
