@@ -87,6 +87,44 @@
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product.Carryover Flag",
         "useLogicalColumnName": true
       }
+    ],
+    "hierarchies": [
+      {
+        "name": "Product",
+        "description": "default hierarchy",
+        "sourceLogicalTable": "logicalTable:Fashion Retail DW.Product",
+        "levels": [
+          {
+            "name": "Total",
+            "sourceLogicalLevel": "logicalLevel:Fashion Retail DW.Product.Total"
+          },
+          {
+            "name": "Department",
+            "sourceLogicalLevel": "logicalLevel:Fashion Retail DW.Product.Department",
+            "displayColumn": "presentationColumn:Fashion Retail Analytics.Product.Department"
+          },
+          {
+            "name": "Category",
+            "sourceLogicalLevel": "logicalLevel:Fashion Retail DW.Product.Category",
+            "displayColumn": "presentationColumn:Fashion Retail Analytics.Product.Category"
+          },
+          {
+            "name": "Subcategory",
+            "sourceLogicalLevel": "logicalLevel:Fashion Retail DW.Product.Subcategory",
+            "displayColumn": "presentationColumn:Fashion Retail Analytics.Product.Subcategory"
+          },
+          {
+            "name": "Style",
+            "sourceLogicalLevel": "logicalLevel:Fashion Retail DW.Product.Style",
+            "displayColumn": "presentationColumn:Fashion Retail Analytics.Product.Style Code"
+          },
+          {
+            "name": "SKU",
+            "sourceLogicalLevel": "logicalLevel:Fashion Retail DW.Product.SKU",
+            "displayColumn": "presentationColumn:Fashion Retail Analytics.Product.SKU Code"
+          }
+        ]
+      }
     ]
   }
 }

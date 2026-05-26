@@ -77,6 +77,39 @@
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Store.Longitude",
         "useLogicalColumnName": true
       }
+    ],
+    "hierarchies": [
+      {
+        "name": "Store",
+        "description": "default hierarchy",
+        "sourceLogicalTable": "logicalTable:Fashion Retail DW.Store",
+        "levels": [
+          {
+            "name": "Total",
+            "sourceLogicalLevel": "logicalLevel:Fashion Retail DW.Store.Total"
+          },
+          {
+            "name": "Country",
+            "sourceLogicalLevel": "logicalLevel:Fashion Retail DW.Store.Country",
+            "displayColumn": "presentationColumn:Fashion Retail Analytics.Store.Country"
+          },
+          {
+            "name": "Region",
+            "sourceLogicalLevel": "logicalLevel:Fashion Retail DW.Store.Region",
+            "displayColumn": "presentationColumn:Fashion Retail Analytics.Store.Region"
+          },
+          {
+            "name": "City",
+            "sourceLogicalLevel": "logicalLevel:Fashion Retail DW.Store.City",
+            "displayColumn": "presentationColumn:Fashion Retail Analytics.Store.City"
+          },
+          {
+            "name": "Store",
+            "sourceLogicalLevel": "logicalLevel:Fashion Retail DW.Store.Store",
+            "displayColumn": "presentationColumn:Fashion Retail Analytics.Store.Store Name"
+          }
+        ]
+      }
     ]
   }
 }
