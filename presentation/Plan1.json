@@ -1,0 +1,31 @@
+{
+  "subjectArea" : {
+    "name" : "Plan1",
+    "sourceBusinessModel" : "businessModel:Plan1",
+    "tableOrder" : [ {
+      "name" : "presentationTable:Plan1.Plan1#1"
+    }, {
+      "name" : "presentationTable:Plan1.Account"
+    }, {
+      "name" : "presentationTable:Plan1.Period"
+    }, {
+      "name" : "presentationTable:Plan1.HSP_View"
+    }, {
+      "name" : "presentationTable:Plan1.Year"
+    }, {
+      "name" : "presentationTable:Plan1.Scenario"
+    }, {
+      "name" : "presentationTable:Plan1.Version"
+    }, {
+      "name" : "presentationTable:Plan1.Entity"
+    }, {
+      "name" : "presentationTable:Plan1.Product"
+    }, {
+      "name" : "presentationTable:Plan1.Market Size"
+    } ],
+    "localization" : {
+      "localizationKey" : "Plan1",
+      "nameVariable" : "PBCS-Plan1"
+    }
+  }
+}

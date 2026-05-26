@@ -1,0 +1,47 @@
+{
+  "physicalTable" : {
+    "name" : "SA_D_COHORT",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "ADMIT_TERM_CD",
+      "dataType" : "VARCHAR",
+      "length" : 50,
+      "nullable" : true
+    }, {
+      "name" : "ADMIT_TYPE_CD",
+      "dataType" : "VARCHAR",
+      "length" : 50,
+      "nullable" : true
+    }, {
+      "name" : "COHORT_DESC",
+      "dataType" : "VARCHAR",
+      "length" : 100,
+      "nullable" : false
+    }, {
+      "name" : "COHORT_WID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "DSYS_BATCH_ID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "DSYS_INSTANCE_ID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "DSYS_PROCESS_ID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    } ],
+    "additionalKeys" : [ [ "COHORT_WID" ], [ "COHORT_WID" ], [ "COHORT_WID" ], [ "COHORT_WID" ], [ "COHORT_WID" ], [ "COHORT_WID" ], [ "COHORT_WID" ] ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

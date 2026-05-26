@@ -1,0 +1,350 @@
+{
+  "presentationTable" : {
+    "name" : "Time",
+    "presentationColumns" : [ {
+      "name" : "Date",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Time.Date",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "CAL_HALF",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Time.CAL_HALF",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Month #",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Time.Month #",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "CAL_MONTH_KEY",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Time.CAL_MONTH_KEY",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Qter #",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Time.Qter #",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "CAL_QTR_END_DT_KEY",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Time.CAL_QTR_END_DT_KEY",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "CAL_QTR_KEY",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Time.CAL_QTR_KEY",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "CAL_QTR_START_DT_KEY",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Time.CAL_QTR_START_DT_KEY",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "CAL_TRIMESTER",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Time.CAL_TRIMESTER",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "CAL_WEEK",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Time.CAL_WEEK",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "CAL_WEEK_END_DT_KEY",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Time.CAL_WEEK_END_DT_KEY",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "CAL_WEEK_START_DT_KEY",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Time.CAL_WEEK_START_DT_KEY",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Year",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Time.Year",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "CAL_YEAR_END_DT",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Time.CAL_YEAR_END_DT",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "CAL_YEAR_END_DT_KEY",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Time.CAL_YEAR_END_DT_KEY",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "CAL_YEAR_KEY",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Time.CAL_YEAR_KEY",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "CAL_YEAR_START_DT",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Time.CAL_YEAR_START_DT",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "CAL_YEAR_START_DT_KEY",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Time.CAL_YEAR_START_DT_KEY",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DATE_ID",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Time.DATE_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DAY_DT",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Time.DAY_DT",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DAY_OF_MONTH",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Time.DAY_OF_MONTH",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DAY_OF_WEEK",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Time.DAY_OF_WEEK",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DAY_OF_YEAR",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Time.DAY_OF_YEAR",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "ENT_WEEK_START_DT",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Time.ENT_WEEK_START_DT",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "FST_DAY_CAL_MNTH_FLG",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Time.FST_DAY_CAL_MNTH_FLG",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "FST_DAY_CAL_QTR_FLG",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Time.FST_DAY_CAL_QTR_FLG",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "FST_DAY_CAL_WK_FLG",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Time.FST_DAY_CAL_WK_FLG",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "FST_DAY_CAL_YEAR_FLG",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Time.FST_DAY_CAL_YEAR_FLG",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "JULIAN_DAY_NUM",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Time.JULIAN_DAY_NUM",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "JULIAN_MONTH_NUM",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Time.JULIAN_MONTH_NUM",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "JULIAN_QTR_NUM",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Time.JULIAN_QTR_NUM",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "JULIAN_TER_NUM",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Time.JULIAN_TER_NUM",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "JULIAN_WEEK_NUM",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Time.JULIAN_WEEK_NUM",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "JULIAN_YEAR_NUM",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Time.JULIAN_YEAR_NUM",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "LAST_DAY_CAL_MNTH_FLG",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Time.LAST_DAY_CAL_MNTH_FLG",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "LAST_DAY_CAL_QTR_FLG",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Time.LAST_DAY_CAL_QTR_FLG",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "LAST_DAY_CAL_WK_FLG",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Time.LAST_DAY_CAL_WK_FLG",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "LAST_DAY_CAL_YEAR_FLG",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Time.LAST_DAY_CAL_YEAR_FLG",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "M_END_CAL_DT_KEY",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Time.M_END_CAL_DT_KEY",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "M_STRT_CAL_DT_KEY",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Time.M_STRT_CAL_DT_KEY",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "PER_NAME_HALF",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Time.PER_NAME_HALF",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Month",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Time.Month",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "PER_NAME_OFFSET_WK",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Time.PER_NAME_OFFSET_WK",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "PER_NAME_QTR",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Time.PER_NAME_QTR",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "PER_NAME_TER",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Time.PER_NAME_TER",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "PER_NAME_WEEK",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Time.PER_NAME_WEEK",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "PER_NAME_YEAR",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Time.PER_NAME_YEAR",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "W_DAY_CODE",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Time.W_DAY_CODE",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "W_MONTH_CODE",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Time.W_MONTH_CODE",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    } ],
+    "hierarchies" : [ {
+      "name" : "Hierarchy 1",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:NFL Stats.Time",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      },
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:NFL Stats.Time.Total"
+      }, {
+        "name" : "Detail",
+        "sourceLogicalLevel" : "logicalLevel:NFL Stats.Time.Detail",
+        "displayColumn" : "presentationColumn:NFL Stats.Time.Date"
+      } ]
+    } ]
+  }
+}

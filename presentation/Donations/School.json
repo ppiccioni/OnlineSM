@@ -1,0 +1,79 @@
+{
+  "presentationTable" : {
+    "name" : "School",
+    "presentationColumns" : [ {
+      "name" : "School ID",
+      "sourceLogicalColumn" : "logicalColumn:Donations.School.School ID",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "School Charter",
+      "sourceLogicalColumn" : "logicalColumn:Donations.School.School Charter",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "School City",
+      "sourceLogicalColumn" : "logicalColumn:Donations.School.School City",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "School County",
+      "sourceLogicalColumn" : "logicalColumn:Donations.School.School County",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "School District",
+      "sourceLogicalColumn" : "logicalColumn:Donations.School.School District",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "School Metro",
+      "sourceLogicalColumn" : "logicalColumn:Donations.School.School Metro",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "School NCES ID",
+      "sourceLogicalColumn" : "logicalColumn:Donations.School.School NCES ID",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "School NLNS",
+      "sourceLogicalColumn" : "logicalColumn:Donations.School.School NLNS",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "School Geo State",
+      "sourceLogicalColumn" : "logicalColumn:Donations.School.School Geo State",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "School Geo Zip",
+      "sourceLogicalColumn" : "logicalColumn:Donations.School.School Geo Zip",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "School Geo Long",
+      "sourceLogicalColumn" : "logicalColumn:Donations.School.School Geo Long",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "School Geo Lat",
+      "sourceLogicalColumn" : "logicalColumn:Donations.School.School Geo Lat",
+      "useLogicalColumnName" : true
+    } ],
+    "hierarchies" : [ {
+      "name" : "Geo Hier",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:Donations.School",
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:Donations.School.Total"
+      }, {
+        "name" : "School District",
+        "sourceLogicalLevel" : "logicalLevel:Donations.School.School District",
+        "displayColumn" : "presentationColumn:Donations.School.School District"
+      }, {
+        "name" : "School City",
+        "sourceLogicalLevel" : "logicalLevel:Donations.School.School City",
+        "displayColumn" : "presentationColumn:Donations.School.School City"
+      }, {
+        "name" : "School Geo State",
+        "sourceLogicalLevel" : "logicalLevel:Donations.School.School Geo State",
+        "displayColumn" : "presentationColumn:Donations.School.School Geo State"
+      }, {
+        "name" : "Detail",
+        "sourceLogicalLevel" : "logicalLevel:Donations.School.Detail",
+        "displayColumn" : "presentationColumn:Donations.School.School ID"
+      } ]
+    } ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "physicalTable": {
+    "name": "DIM_SF_RESTAURANTS",
+    "sourceTable": "physicalTable:DB11.CAT11.OA_HERE_MAPS.VIEW_SF_RESTAURANTS",
+    "caching": {
+      "enable": true
+    },
+    "additionalKeys": [
+      [
+        "RESTAURANTID"
+      ]
+    ]
+  }
+}

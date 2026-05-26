@@ -1,0 +1,59 @@
+{
+  "presentationTable" : {
+    "name" : "Orders",
+    "description" : "Orders Dimension Details",
+    "presentationColumns" : [ {
+      "name" : "Channel",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Orders.Channel",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Order Number",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Orders.Order Number",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Order Status",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Orders.Order Status",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Bill Date",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Orders.Bill Date",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Paid Date",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Orders.Paid Date",
+      "useLogicalColumnName" : true
+    } ],
+    "hierarchies" : [ {
+      "name" : "Channels",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:SampleApp Payments.Orders",
+      "levels" : [ {
+        "name" : "All Orders",
+        "sourceLogicalLevel" : "logicalLevel:SampleApp Payments.Orders.All Orders"
+      }, {
+        "name" : "Channel",
+        "sourceLogicalLevel" : "logicalLevel:SampleApp Payments.Orders.Channel",
+        "displayColumn" : "presentationColumn:SampleApp Payments.Orders.Channel"
+      }, {
+        "name" : "Detail",
+        "sourceLogicalLevel" : "logicalLevel:SampleApp Payments.Orders.Detail",
+        "displayColumn" : "presentationColumn:SampleApp Payments.Orders.Order Number"
+      } ]
+    }, {
+      "name" : "Order Statuses",
+      "sourceLogicalTable" : "logicalTable:SampleApp Payments.Orders",
+      "levels" : [ {
+        "name" : "All Orders",
+        "sourceLogicalLevel" : "logicalLevel:SampleApp Payments.Orders.All Orders"
+      }, {
+        "name" : "Order Status",
+        "sourceLogicalLevel" : "logicalLevel:SampleApp Payments.Orders.Order Status",
+        "displayColumn" : "presentationColumn:SampleApp Payments.Orders.Order Status"
+      }, {
+        "name" : "Detail",
+        "sourceLogicalLevel" : "logicalLevel:SampleApp Payments.Orders.Detail",
+        "displayColumn" : "presentationColumn:SampleApp Payments.Orders.Order Number"
+      } ]
+    } ]
+  }
+}

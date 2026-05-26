@@ -1,0 +1,221 @@
+{
+  "logicalTable" : {
+    "name" : "RTD_Cho_Seg",
+    "type" : "DIMENSION",
+    "primaryKey" : [ "Choice Id" ],
+    "logicalColumns" : [ {
+      "name" : "Application",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "V_RTD_ChoSeg_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.V_RTD_ChoSeg.APPLICATION" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Application"
+    }, {
+      "name" : "Choice Category",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "V_RTD_ChoSeg_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.V_RTD_ChoSeg.CHOICE_CATEGORY" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Choice Category"
+    }, {
+      "name" : "Choice Group",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "V_RTD_ChoSeg_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.V_RTD_ChoSeg.CHOICE_GROUP" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Choice Group"
+    }, {
+      "name" : "Choice Id",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "V_RTD_ChoSeg_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.V_RTD_ChoSeg.CHOICE_ID" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Choice"
+    }, {
+      "name" : "Choice Name",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "V_RTD_ChoSeg_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.V_RTD_ChoSeg.CHOICE_NAME" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Choice"
+    }, {
+      "name" : "Choice Subgroup",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "V_RTD_ChoSeg_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.V_RTD_ChoSeg.CHOICE_SUBGROUP" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Choice Subgroup"
+    }, {
+      "name" : "Choice Subgroup Id",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "V_RTD_ChoSeg_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.V_RTD_ChoSeg.CHOICE_SUBID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Segment",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "V_RTD_ChoSeg_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.V_RTD_ChoSeg.SEGMENT" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Segment"
+    }, {
+      "name" : "Segment Id",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "V_RTD_ChoSeg_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.V_RTD_ChoSeg.SEGMENT_ID" ]
+          }
+        } ]
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "V_RTD_ChoSeg_LTS",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:MtM_Campaign2Order.CAT8.SCH8.V_RTD_ChoSeg" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "hierarchyType" : "LEVEL_BASED",
+    "levelBasedHierarchy" : {
+      "defaultRootLevel" : "Total",
+      "ragged" : false,
+      "skipped" : false,
+      "logicalLevels" : [ {
+        "name" : "Total",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : true,
+        "disableAggregateToHigherLevel" : false
+      }, {
+        "name" : "Segment",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Segment" ],
+        "displayKey" : "Segment",
+        "chronologicalKey" : [ "Segment" ]
+      }, {
+        "name" : "Choice",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Choice Id" ],
+        "displayKey" : "Choice Name",
+        "additionalKeys" : [ [ "Choice Name", "Choice Id" ] ],
+        "chronologicalKey" : [ "Choice Id" ]
+      }, {
+        "name" : "Application",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Application" ],
+        "displayKey" : "Application",
+        "chronologicalKey" : [ "Application" ]
+      }, {
+        "name" : "Choice Category",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Choice Category" ],
+        "displayKey" : "Choice Category",
+        "chronologicalKey" : [ "Choice Category" ]
+      }, {
+        "name" : "Choice Group",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Choice Group" ],
+        "displayKey" : "Choice Group",
+        "chronologicalKey" : [ "Choice Group" ]
+      }, {
+        "name" : "Choice Subgroup",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Choice Subgroup" ],
+        "displayKey" : "Choice Subgroup",
+        "chronologicalKey" : [ "Choice Subgroup" ]
+      } ],
+      "logicalHierarchies" : [ {
+        "name" : "RTD_Cho_Seg",
+        "description" : "default hierarchy",
+        "levels" : [ "Total", "Segment", "Choice" ]
+      }, {
+        "name" : "RTD_Cho_Seg-1",
+        "description" : "default hierarchy",
+        "levels" : [ "Total", "Application", "Choice Category", "Choice Group", "Choice Subgroup", "Choice" ]
+      } ]
+    }
+  }
+}

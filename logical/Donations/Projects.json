@@ -1,0 +1,240 @@
+{
+  "logicalTable" : {
+    "name" : "Projects",
+    "type" : "DIMENSION",
+    "primaryKey" : [ "Project ID" ],
+    "logicalColumns" : [ {
+      "name" : "Date Completed",
+      "dataType" : "DATETIME",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "V_PROJECT_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Donations.CAT4.SCH4.V_PROJECT.DATE_COMPLETED" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Date Expiration",
+      "dataType" : "DATETIME",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "V_PROJECT_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Donations.CAT4.SCH4.V_PROJECT.DATE_EXPIRATION" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Date Posted",
+      "dataType" : "DATETIME",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "V_PROJECT_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Donations.CAT4.SCH4.V_PROJECT.DATE_POSTED" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Eligible Double Impact Match",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "V_PROJECT_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Donations.CAT4.SCH4.V_PROJECT.ELIGIBLE_DOUBLE_IMPACT_MATCH" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Funding Status",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "V_PROJECT_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Donations.CAT4.SCH4.V_PROJECT.FUNDING_STATUS" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Grade Level",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "V_PROJECT_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Donations.CAT4.SCH4.V_PROJECT.GRADE_LEVEL" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Poverty Level",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "V_PROJECT_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Donations.CAT4.SCH4.V_PROJECT.POVERTY_LEVEL" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Primary Focus Area",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "V_PROJECT_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Donations.CAT4.SCH4.V_PROJECT.PRIMARY_FOCUS_AREA" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Primary Focus Subject",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "V_PROJECT_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Donations.CAT4.SCH4.V_PROJECT.PRIMARY_FOCUS_SUBJECT" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Project ID",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "V_PROJECT_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Donations.CAT4.SCH4.V_PROJECT.PROJECTID" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "Resource Type",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "V_PROJECT_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Donations.CAT4.SCH4.V_PROJECT.RESOURCE_TYPE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Secondary Focus Area",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "V_PROJECT_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Donations.CAT4.SCH4.V_PROJECT.SECONDARY_FOCUS_AREA" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Secondary Focus Subject",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "V_PROJECT_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Donations.CAT4.SCH4.V_PROJECT.SECONDARY_FOCUS_SUBJECT" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Project Donations",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "V_PROJECT_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Donations.CAT4.SCH4.V_PROJECT.TOTAL_DONATIONS" ]
+          }
+        } ]
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "V_PROJECT_LTS",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:Donations.CAT4.SCH4.V_PROJECT" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "hierarchyType" : "LEVEL_BASED",
+    "levelBasedHierarchy" : {
+      "defaultRootLevel" : "Total",
+      "ragged" : false,
+      "skipped" : false,
+      "logicalLevels" : [ {
+        "name" : "Total",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : true,
+        "disableAggregateToHigherLevel" : false
+      }, {
+        "name" : "Detail",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Project ID" ],
+        "displayKey" : "Project ID",
+        "chronologicalKey" : [ "Project ID" ]
+      } ],
+      "logicalHierarchies" : [ {
+        "name" : "Projects",
+        "description" : "default hierarchy",
+        "levels" : [ "Total", "Detail" ]
+      } ]
+    }
+  }
+}

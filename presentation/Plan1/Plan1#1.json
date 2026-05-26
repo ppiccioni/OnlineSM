@@ -1,0 +1,66 @@
+{
+  "presentationTable" : {
+    "name" : "Plan1#1",
+    "presentationColumns" : [ {
+      "name" : "Value",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Plan1.Value",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "DateValue",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Plan1.DateValue",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "TextValue",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Plan1.TextValue",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "ValueType",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Plan1.ValueType",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "CellText",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Plan1.CellText",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Attribute",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Plan1.Attribute",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "IsDerived",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Plan1.IsDerived",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "IsLinkFile",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Plan1.IsLinkFile",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "IsLinkURL",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Plan1.IsLinkURL",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "IsLinkedCellNote",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Plan1.IsLinkedCellNote",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "IsLinkedObject",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Plan1.IsLinkedObject",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "IsLinkedPartition",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Plan1.IsLinkedPartition",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "IsMissing",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Plan1.IsMissing",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "IsReadOnly",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Plan1.IsReadOnly",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "IsReadWrite",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Plan1.IsReadWrite",
+      "useLogicalColumnName" : true
+    } ]
+  }
+}

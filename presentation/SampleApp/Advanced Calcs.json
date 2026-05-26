@@ -1,0 +1,121 @@
+{
+  "presentationTable" : {
+    "name" : "Advanced Calcs",
+    "presentationColumns" : [ {
+      "name" : "ADDR_KEY",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Advanced Calcs.ADDR_KEY",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "COST_FIXED",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Advanced Calcs.COST_FIXED",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "COST_VARIABLE",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Advanced Calcs.COST_VARIABLE",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "# of Customers",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Advanced Calcs.# of Customers",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Discount Value",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Advanced Calcs.Discount Value",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "# of Orders",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Advanced Calcs.# of Orders",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "PROD_ITEM_KEY",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Advanced Calcs.PROD_ITEM_KEY",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Revenue",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Advanced Calcs.Revenue",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "TIME_BILL_DT",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Advanced Calcs.TIME_BILL_DT",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "UNITS",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Advanced Calcs.UNITS",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Rev - Year To Date",
+      "description" : " To Date time series calculation on Revenue",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Advanced Calcs.Rev - Year To Date",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Rev - Month Ago",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Advanced Calcs.Rev - Month Ago",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Rev - % Month Ago Increase",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Advanced Calcs.Rev - % Month Ago Increase",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Full Quarter Revenue",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Advanced Calcs.Full Quarter Revenue",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Full Company Revenue",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Advanced Calcs.Full Company Revenue",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "% of Full Company Revenue",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Advanced Calcs.% of Full Company Revenue",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Rev - Trailing 3 Months",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Advanced Calcs.Rev - Trailing 3 Months",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "% of Full Quarter Revenue",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Advanced Calcs.% of Full Quarter Revenue",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Revenue Bin",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Advanced Calcs.Revenue Bin",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Revenue Bin Width",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Advanced Calcs.Revenue Bin Width",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Data Filtered Revenue (Brand)",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Advanced Calcs.Data Filtered Revenue (Brand)",
+      "useLogicalColumnName" : true
+    } ]
+  }
+}

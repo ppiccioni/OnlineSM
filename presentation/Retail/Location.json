@@ -1,0 +1,47 @@
+{
+  "presentationTable" : {
+    "name" : "Location",
+    "presentationColumns" : [ {
+      "name" : "Location Name",
+      "sourceLogicalColumn" : "logicalColumn:Retail.Location.Location Name",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Location Category",
+      "sourceLogicalColumn" : "logicalColumn:Retail.Location.Location Category",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Formula",
+      "sourceLogicalColumn" : "logicalColumn:Retail.Location.Formula",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Location ID",
+      "sourceLogicalColumn" : "logicalColumn:Retail.Location.Location ID",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Location Number",
+      "sourceLogicalColumn" : "logicalColumn:Retail.Location.Location Number",
+      "useLogicalColumnName" : true
+    } ],
+    "hierarchies" : [ {
+      "name" : "Hierarchy 1",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:Retail.Location",
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:Retail.Location.Total"
+      }, {
+        "name" : "Location Category",
+        "sourceLogicalLevel" : "logicalLevel:Retail.Location.Location Category",
+        "displayColumn" : "presentationColumn:Retail.Location.Location Category"
+      }, {
+        "name" : "Location Name",
+        "sourceLogicalLevel" : "logicalLevel:Retail.Location.Location Name",
+        "displayColumn" : "presentationColumn:Retail.Location.Location Name"
+      }, {
+        "name" : "Detail",
+        "sourceLogicalLevel" : "logicalLevel:Retail.Location.Detail",
+        "displayColumn" : "presentationColumn:Retail.Location.Location ID"
+      } ]
+    } ]
+  }
+}

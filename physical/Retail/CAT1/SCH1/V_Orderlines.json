@@ -1,0 +1,85 @@
+{
+  "physicalTable" : {
+    "name" : "V_Orderlines",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "DATES",
+      "dataType" : "DATE",
+      "length" : 7,
+      "nullable" : true
+    }, {
+      "name" : "LINEID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "LOCATIONID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "PRICE",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "PRODUCTID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "QUANTITY",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "REVENUE",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "TIME",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "TRANSACTIONID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    } ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    },
+    "joins" : [ {
+      "rightTable" : "physicalTable:Retail.CAT1.SCH1.Day",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:Retail.CAT1.SCH1.V_Orderlines.DATES",
+        "rightColumn" : "physicalColumn:Retail.CAT1.SCH1.Day.DAY_DT"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:Retail.CAT1.SCH1.V_Location",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:Retail.CAT1.SCH1.V_Orderlines.LOCATIONID",
+        "rightColumn" : "physicalColumn:Retail.CAT1.SCH1.V_Location.LOCATIONID"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:Retail.CAT1.SCH1.V_Product",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:Retail.CAT1.SCH1.V_Orderlines.PRODUCTID",
+        "rightColumn" : "physicalColumn:Retail.CAT1.SCH1.V_Product.PRODUCTID"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:Retail.CAT1.SCH1.V_Time",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:Retail.CAT1.SCH1.V_Orderlines.TIME",
+        "rightColumn" : "physicalColumn:Retail.CAT1.SCH1.V_Time.TIME"
+      } ]
+    } ]
+  }
+}

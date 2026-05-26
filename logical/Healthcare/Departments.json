@@ -1,0 +1,123 @@
+{
+  "logicalTable" : {
+    "name" : "Departments",
+    "type" : "DIMENSION",
+    "primaryKey" : [ "Department" ],
+    "logicalColumns" : [ {
+      "name" : "DSYS_BATCH_ID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "HC_D_DEPARTMENTS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Healthcare.CAT7.SCH7.HC_D_DEPARTMENTS.DSYS_BATCH_ID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "DSYS_INSTANCE_ID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "HC_D_DEPARTMENTS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Healthcare.CAT7.SCH7.HC_D_DEPARTMENTS.DSYS_INSTANCE_ID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "DSYS_PROCESS_ID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "HC_D_DEPARTMENTS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Healthcare.CAT7.SCH7.HC_D_DEPARTMENTS.DSYS_PROCESS_ID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Department",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "HC_D_DEPARTMENTS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Healthcare.CAT7.SCH7.HC_D_DEPARTMENTS.DEPARTMENT" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Department"
+    }, {
+      "name" : "Hospital",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "HC_D_DEPARTMENTS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Healthcare.CAT7.SCH7.HC_D_DEPARTMENTS.HOSPITAL" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Hospital"
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "HC_D_DEPARTMENTS_LTS",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:Healthcare.CAT7.SCH7.HC_D_DEPARTMENTS" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "hierarchyType" : "LEVEL_BASED",
+    "levelBasedHierarchy" : {
+      "defaultRootLevel" : "All Departments",
+      "ragged" : false,
+      "skipped" : false,
+      "logicalLevels" : [ {
+        "name" : "All Departments",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : true,
+        "disableAggregateToHigherLevel" : false
+      }, {
+        "name" : "Hospital",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Hospital" ],
+        "displayKey" : "Hospital",
+        "chronologicalKey" : [ "Hospital" ]
+      }, {
+        "name" : "Department",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Department" ],
+        "displayKey" : "Department",
+        "chronologicalKey" : [ "Department" ]
+      } ],
+      "logicalHierarchies" : [ {
+        "name" : "Departments",
+        "description" : "default hierarchy",
+        "levels" : [ "All Departments", "Hospital", "Department" ]
+      } ]
+    }
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "physicalTable" : {
+    "name" : "V_Calculated _Revenue_Facts",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "SHIPTO_ADDR_KEY",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "BILL_DAY_DT",
+      "dataType" : "DATETIME",
+      "length" : 7,
+      "nullable" : false
+    }, {
+      "name" : "COST_FIXED",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "COST_VARIABLE",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "CUST_KEY",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "DISCNT_RATE",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "DISCNT_VALUE",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "OFFICE_KEY",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "ORDER_KEY",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "PROD_KEY",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "REVENUE",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "EMPL_KEY",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "UNITS",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    } ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    },
+    "joins" : [ {
+      "rightTable" : "physicalTable:MtM_Campaign2Order.CAT8.SCH8.SAMP_ADDRESSES_D",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.V_Calculated _Revenue_Facts.SHIPTO_ADDR_KEY",
+        "rightColumn" : "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.SAMP_ADDRESSES_D.ADDRESS_KEY"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:MtM_Campaign2Order.CAT8.SCH8.SAMP_CUSTOMERS_D",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.V_Calculated _Revenue_Facts.CUST_KEY",
+        "rightColumn" : "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.SAMP_CUSTOMERS_D.CUST_KEY"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:MtM_Campaign2Order.CAT8.SCH8.SAMP_EMPL_D",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.V_Calculated _Revenue_Facts.EMPL_KEY",
+        "rightColumn" : "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.SAMP_EMPL_D.EMPLOYEE_KEY"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:MtM_Campaign2Order.CAT8.SCH8.SAMP_OFFICES_D",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.V_Calculated _Revenue_Facts.OFFICE_KEY",
+        "rightColumn" : "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.SAMP_OFFICES_D.OFFICE_KEY"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:MtM_Campaign2Order.CAT8.SCH8.SAMP_PRODUCTS_D",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.V_Calculated _Revenue_Facts.PROD_KEY",
+        "rightColumn" : "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.SAMP_PRODUCTS_D.PROD_KEY"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:MtM_Campaign2Order.CAT8.SCH8.SAMP_TIME_DAY_D",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.V_Calculated _Revenue_Facts.BILL_DAY_DT",
+        "rightColumn" : "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.SAMP_TIME_DAY_D.CALENDAR_DATE"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:MtM_Campaign2Order.CAT8.SCH8.V_Orders",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.V_Calculated _Revenue_Facts.ORDER_KEY",
+        "rightColumn" : "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.V_Orders.ORDER_KEY"
+      } ]
+    } ]
+  }
+}

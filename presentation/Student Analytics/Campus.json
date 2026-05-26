@@ -1,0 +1,80 @@
+{
+  "presentationTable" : {
+    "name" : "Campus",
+    "presentationColumns" : [ {
+      "name" : "CAMPUS_CD",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Campus.CAMPUS_CD",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Campus",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Campus.Campus",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "CAMPUS_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Campus.CAMPUS_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_BATCH_ID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Campus.DSYS_BATCH_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_INSTANCE_ID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Campus.DSYS_INSTANCE_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_PROCESS_ID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Campus.DSYS_PROCESS_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "INSTITUTION_CD",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Campus.INSTITUTION_CD",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Institution",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Campus.Institution",
+      "useLogicalColumnName" : true
+    } ],
+    "hierarchies" : [ {
+      "name" : "Campus Hierarchy",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:Student Analytics.Campus",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      },
+      "levels" : [ {
+        "name" : "All Campuses",
+        "sourceLogicalLevel" : "logicalLevel:Student Analytics.Campus.All Campuses"
+      }, {
+        "name" : "Institution",
+        "sourceLogicalLevel" : "logicalLevel:Student Analytics.Campus.Institution",
+        "displayColumn" : "presentationColumn:Student Analytics.Campus.Institution"
+      }, {
+        "name" : "Campus",
+        "sourceLogicalLevel" : "logicalLevel:Student Analytics.Campus.Campus",
+        "displayColumn" : "presentationColumn:Student Analytics.Campus.Campus"
+      }, {
+        "name" : "Detail",
+        "sourceLogicalLevel" : "logicalLevel:Student Analytics.Campus.Detail",
+        "displayColumn" : "presentationColumn:Student Analytics.Campus.CAMPUS_WID"
+      } ]
+    } ]
+  }
+}

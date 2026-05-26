@@ -1,0 +1,57 @@
+{
+  "physicalTable" : {
+    "name" : "NFL_GAMES",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "GAME",
+      "dataType" : "VARCHAR",
+      "length" : 10,
+      "nullable" : true
+    }, {
+      "name" : "SEASON",
+      "dataType" : "VARCHAR",
+      "length" : 50,
+      "nullable" : true
+    }, {
+      "name" : "GAME_SORT",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "GAME_TYPE",
+      "dataType" : "VARCHAR",
+      "length" : 50,
+      "nullable" : true
+    }, {
+      "name" : "OPP_QB",
+      "dataType" : "VARCHAR",
+      "length" : 100,
+      "nullable" : true
+    }, {
+      "name" : "TEAM_QB",
+      "dataType" : "VARCHAR",
+      "length" : 100,
+      "nullable" : true
+    }, {
+      "name" : "QB_PAIR",
+      "dataType" : "VARCHAR",
+      "length" : 201,
+      "nullable" : true
+    }, {
+      "name" : "ROW_WID",
+      "dataType" : "VARCHAR",
+      "length" : 20,
+      "nullable" : true
+    }, {
+      "name" : "GAME_WID",
+      "dataType" : "VARCHAR",
+      "length" : 50,
+      "nullable" : false
+    } ],
+    "additionalKeys" : [ [ "ROW_WID" ] ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

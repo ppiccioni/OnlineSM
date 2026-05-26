@@ -1,0 +1,71 @@
+{
+  "presentationTable" : {
+    "name" : "Revenue Metrics",
+    "description" : "Billed Revenue Related Metrics and Calculations\r\nBd 506_01",
+    "presentationColumns" : [ {
+      "name" : "ADDR_KEY",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Revenue Metrics.ADDR_KEY",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "COST_FIXED",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Revenue Metrics.COST_FIXED",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "COST_VARIABLE",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Revenue Metrics.COST_VARIABLE",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "# of Customers",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Revenue Metrics.# of Customers",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Discount Value",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Revenue Metrics.Discount Value",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "# of Orders",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Revenue Metrics.# of Orders",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "# of Products",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Revenue Metrics.# of Products",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Revenue",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Revenue Metrics.Revenue",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "TIME_BILL_DT",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Revenue Metrics.TIME_BILL_DT",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Billed Units",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Revenue Metrics.Billed Units",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Unit Price",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Revenue Metrics.Unit Price",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Avg Order Size",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Revenue Metrics.Avg Order Size",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Discount Ratio %",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Revenue Metrics.Discount Ratio %",
+      "useLogicalColumnName" : true
+    } ]
+  }
+}

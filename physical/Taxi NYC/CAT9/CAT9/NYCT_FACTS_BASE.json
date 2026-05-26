@@ -1,0 +1,142 @@
+{
+  "physicalTable" : {
+    "name" : "NYCT_FACTS_BASE",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "DROPOFF_HOUR",
+      "dataType" : "INT",
+      "length" : 0,
+      "nullable" : true
+    }, {
+      "name" : "DROPOFF_DAY",
+      "dataType" : "DATE",
+      "length" : 0,
+      "nullable" : true
+    }, {
+      "name" : "DROPOFF_LAT",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "DROPOFF_LON",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "FARE_AMOUNT",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "HACK_LICENSE",
+      "dataType" : "VARCHAR",
+      "length" : 200,
+      "nullable" : true
+    }, {
+      "name" : "MEDALLION",
+      "dataType" : "VARCHAR",
+      "length" : 200,
+      "nullable" : true
+    }, {
+      "name" : "MTA_TAX",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "PASSENGER_COUNT",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "PICKUP_HOUR",
+      "dataType" : "INT",
+      "length" : 0,
+      "nullable" : true
+    }, {
+      "name" : "PICKUP_MIN",
+      "dataType" : "VARCHAR",
+      "length" : 10,
+      "nullable" : true
+    }, {
+      "name" : "PICKUP_LAT",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "PICKUP_LON",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "SURCHARGE",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "TIP_AMOUNT",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "TOLLS_AMOUNT",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "TOTAL_AMOUNT",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "TRIP_DISTANCE",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "ROW_WID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "TRIP_TIME_IN_MIN",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "DROPOFF_MIN",
+      "dataType" : "VARCHAR",
+      "length" : 10,
+      "nullable" : true
+    }, {
+      "name" : "PICKUP_DAY",
+      "dataType" : "DATE",
+      "length" : 0,
+      "nullable" : true
+    }, {
+      "name" : "ATTR_KEY",
+      "dataType" : "VARCHAR",
+      "length" : 1000,
+      "nullable" : true
+    } ],
+    "additionalKeys" : [ [ "ROW_WID" ] ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    },
+    "joins" : [ {
+      "rightTable" : "physicalTable:Taxi NYC.CAT9.CAT9.NYCT_ATTR",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_FACTS_BASE.ATTR_KEY",
+        "rightColumn" : "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_ATTR.ATTR_KEY"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:Taxi NYC.CAT9.CAT9.NYCT_PICKUP_DATE",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_FACTS_BASE.PICKUP_DAY",
+        "rightColumn" : "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_PICKUP_DATE.DAY_DT"
+      } ]
+    } ]
+  }
+}

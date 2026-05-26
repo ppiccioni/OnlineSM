@@ -1,0 +1,131 @@
+{
+  "logicalTable" : {
+    "name" : "Geo Pickup Suburb",
+    "type" : "DIMENSION",
+    "primaryKey" : [ "Regionid" ],
+    "logicalColumns" : [ {
+      "name" : "Pickup Borough (L2)",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "NYCT_REGIONS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.PICKUP_REGIONS.CITY" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "City"
+    }, {
+      "name" : "Pickup County (L1)",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "NYCT_REGIONS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.PICKUP_REGIONS.COUNTY" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "County"
+    }, {
+      "name" : "Pickup Suburb (L3)",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "NYCT_REGIONS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.PICKUP_REGIONS.NAME" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Geo Region Detail"
+    }, {
+      "name" : "Regionid",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "NYCT_REGIONS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.PICKUP_REGIONS.REGIONID" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Geo Region Detail"
+    }, {
+      "name" : "State",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "NYCT_REGIONS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.PICKUP_REGIONS.STATE" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Geo Region Detail"
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "NYCT_REGIONS",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:Taxi NYC.CAT9.CAT9.PICKUP_REGIONS" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "hierarchyType" : "LEVEL_BASED",
+    "levelBasedHierarchy" : {
+      "defaultRootLevel" : "Geo Region Total",
+      "ragged" : false,
+      "skipped" : false,
+      "logicalLevels" : [ {
+        "name" : "Geo Region Total",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : true,
+        "disableAggregateToHigherLevel" : false
+      }, {
+        "name" : "County",
+        "numberOfElements" : 10,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Pickup County (L1)" ],
+        "displayKey" : "Pickup County (L1)"
+      }, {
+        "name" : "City",
+        "numberOfElements" : 50,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Pickup Borough (L2)" ],
+        "displayKey" : "Pickup Borough (L2)"
+      }, {
+        "name" : "Geo Region Detail",
+        "numberOfElements" : 200,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Regionid" ],
+        "displayKey" : "Pickup Suburb (L3)",
+        "additionalKeys" : [ [ "Pickup Suburb (L3)" ] ]
+      } ],
+      "logicalHierarchies" : [ {
+        "name" : "Geo PickupDim",
+        "levels" : [ "Geo Region Total", "County", "City", "Geo Region Detail" ]
+      } ]
+    }
+  }
+}

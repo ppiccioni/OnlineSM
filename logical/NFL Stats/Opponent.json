@@ -1,0 +1,218 @@
+{
+  "logicalTable" : {
+    "name" : "Opponent",
+    "type" : "DIMENSION",
+    "primaryKey" : [ "TEAM_KEY" ],
+    "logicalColumns" : [ {
+      "name" : "Opp City",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "NFL_TEAMS_OPP_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:NFL Stats.CAT3.SCH3.NFL_TEAMS_OPP.CITY" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "TEAM_ROW",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "NFL_TEAMS_OPP_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:NFL Stats.CAT3.SCH3.NFL_TEAMS_OPP.TEAM_ROW" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "TEAM_COL",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "NFL_TEAMS_OPP_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:NFL Stats.CAT3.SCH3.NFL_TEAMS_OPP.TEAM_COL" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Opp Colors",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "NFL_TEAMS_OPP_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:NFL Stats.CAT3.SCH3.NFL_TEAMS_OPP.COLOR" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Opp Conf",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "NFL_TEAMS_OPP_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:NFL Stats.CAT3.SCH3.NFL_TEAMS_OPP.CONFERENCE" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Opp Conf"
+    }, {
+      "name" : "Opp Division",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "NFL_TEAMS_OPP_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:NFL Stats.CAT3.SCH3.NFL_TEAMS_OPP.NFL_DIVISIONS" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Opp Division"
+    }, {
+      "name" : "Opp State",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "NFL_TEAMS_OPP_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:NFL Stats.CAT3.SCH3.NFL_TEAMS_OPP.STATE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Opponent",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "NFL_TEAMS_OPP_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:NFL Stats.CAT3.SCH3.NFL_TEAMS_OPP.TEAM" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Opponent"
+    }, {
+      "name" : "TEAM_KEY",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "NFL_TEAMS_OPP_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:NFL Stats.CAT3.SCH3.NFL_TEAMS_OPP.TEAM_KEY" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Opponent"
+    }, {
+      "name" : "TEAM_ROLLUP",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "NFL_TEAMS_OPP_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:NFL Stats.CAT3.SCH3.NFL_TEAMS_OPP.TEAM_ROLLUP" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "USED",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "NFL_TEAMS_OPP_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:NFL Stats.CAT3.SCH3.NFL_TEAMS_OPP.USED" ]
+          }
+        } ]
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "NFL_TEAMS_OPP_LTS",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:NFL Stats.CAT3.SCH3.NFL_TEAMS_OPP" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "hierarchyType" : "LEVEL_BASED",
+    "levelBasedHierarchy" : {
+      "defaultRootLevel" : "Total",
+      "ragged" : false,
+      "skipped" : false,
+      "logicalLevels" : [ {
+        "name" : "Total",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : true,
+        "disableAggregateToHigherLevel" : false
+      }, {
+        "name" : "Opp Conf",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Opp Conf" ],
+        "displayKey" : "Opp Conf",
+        "chronologicalKey" : [ "Opp Conf" ]
+      }, {
+        "name" : "Opp Division",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Opp Division" ],
+        "displayKey" : "Opp Division",
+        "chronologicalKey" : [ "Opp Division" ]
+      }, {
+        "name" : "Opponent",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "TEAM_KEY" ],
+        "displayKey" : "Opponent",
+        "additionalKeys" : [ [ "Opponent" ] ],
+        "chronologicalKey" : [ "TEAM_KEY" ]
+      } ],
+      "logicalHierarchies" : [ {
+        "name" : "Opponent",
+        "description" : "default hierarchy",
+        "levels" : [ "Total", "Opp Conf", "Opp Division", "Opponent" ]
+      } ]
+    }
+  }
+}

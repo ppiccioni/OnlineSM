@@ -1,0 +1,47 @@
+{
+  "presentationTable" : {
+    "name" : "Buyers",
+    "presentationColumns" : [ {
+      "name" : "Buyer",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Buyers.Buyer",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "DSYS_BATCH_ID",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Buyers.DSYS_BATCH_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_INSTANCE_ID",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Buyers.DSYS_INSTANCE_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_PROCESS_ID",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Buyers.DSYS_PROCESS_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    } ],
+    "hierarchies" : [ {
+      "name" : "Hierarchy 1",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:Healthcare.Buyers",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      },
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:Healthcare.Buyers.Total"
+      }, {
+        "name" : "Detail",
+        "sourceLogicalLevel" : "logicalLevel:Healthcare.Buyers.Detail",
+        "displayColumn" : "presentationColumn:Healthcare.Buyers.Buyer"
+      } ]
+    } ]
+  }
+}

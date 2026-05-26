@@ -1,0 +1,118 @@
+{
+  "presentationTable" : {
+    "name" : "Program",
+    "presentationColumns" : [ {
+      "name" : "ACADEMIC_LEVEL_CD",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Program.ACADEMIC_LEVEL_CD",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Academic Level",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Program.Academic Level",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "COLLEGE_CD",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Program.COLLEGE_CD",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "College",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Program.College",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "DEGREE_CD",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Program.DEGREE_CD",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Degree",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Program.Degree",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "DSYS_BATCH_ID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Program.DSYS_BATCH_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_INSTANCE_ID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Program.DSYS_INSTANCE_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_PROCESS_ID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Program.DSYS_PROCESS_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "INSTITUTION_CD",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Program.INSTITUTION_CD",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Institution",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Program.Institution",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "PROGRAM_CD",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Program.PROGRAM_CD",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Program",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Program.Program",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "PROGRAM_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Program.PROGRAM_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    } ],
+    "hierarchies" : [ {
+      "name" : "Program Hierarchy",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:Student Analytics.Program",
+      "levels" : [ {
+        "name" : "All Programs",
+        "sourceLogicalLevel" : "logicalLevel:Student Analytics.Program.All Programs"
+      }, {
+        "name" : "Institution",
+        "sourceLogicalLevel" : "logicalLevel:Student Analytics.Program.Institution",
+        "displayColumn" : "presentationColumn:Student Analytics.Program.Institution"
+      }, {
+        "name" : "College",
+        "sourceLogicalLevel" : "logicalLevel:Student Analytics.Program.College",
+        "displayColumn" : "presentationColumn:Student Analytics.Program.College"
+      }, {
+        "name" : "Academic Level",
+        "sourceLogicalLevel" : "logicalLevel:Student Analytics.Program.Academic Level",
+        "displayColumn" : "presentationColumn:Student Analytics.Program.Academic Level"
+      }, {
+        "name" : "Degree",
+        "sourceLogicalLevel" : "logicalLevel:Student Analytics.Program.Degree",
+        "displayColumn" : "presentationColumn:Student Analytics.Program.Degree"
+      }, {
+        "name" : "Program",
+        "sourceLogicalLevel" : "logicalLevel:Student Analytics.Program.Program",
+        "displayColumn" : "presentationColumn:Student Analytics.Program.Program"
+      } ]
+    } ]
+  }
+}

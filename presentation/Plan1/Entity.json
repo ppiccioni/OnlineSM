@@ -1,0 +1,103 @@
+{
+  "presentationTable" : {
+    "name" : "Entity",
+    "presentationColumns" : [ {
+      "name" : "Entity Alias:Default,Gen,1",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Entity.Entity Alias:Default,Gen,1",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Entity Alias:Default,Gen,2",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Entity.Entity Alias:Default,Gen,2",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Entity Alias:Default,Gen,3",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Entity.Entity Alias:Default,Gen,3",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Entity Alias:Default,Gen,4",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Entity.Entity Alias:Default,Gen,4",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Entity Alias:Default,Gen,5",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Entity.Entity Alias:Default,Gen,5",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Entity Alias:English,Gen,1",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Entity.Entity Alias:English,Gen,1",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Entity Alias:English,Gen,2",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Entity.Entity Alias:English,Gen,2",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Entity Alias:English,Gen,3",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Entity.Entity Alias:English,Gen,3",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Entity Alias:English,Gen,4",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Entity.Entity Alias:English,Gen,4",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Entity Alias:English,Gen,5",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Entity.Entity Alias:English,Gen,5",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Entity Base Currency",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Entity.Entity Base Currency",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Entity Default",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Entity.Entity Default",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Entity English",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Entity.Entity English",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Entity Gen Number",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Entity.Entity Gen Number",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Entity Leaf Indicator",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Entity.Entity Leaf Indicator",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Entity Market Size",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Entity.Entity Market Size",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Entity Name",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Entity.Entity Name",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Entity Name,Gen,1",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Entity.Entity Name,Gen,1",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Entity Name,Gen,2",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Entity.Entity Name,Gen,2",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Entity Name,Gen,3",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Entity.Entity Name,Gen,3",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Entity Name,Gen,4",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Entity.Entity Name,Gen,4",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Entity Name,Gen,5",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Entity.Entity Name,Gen,5",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Entity Parent Key",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Entity.Entity Parent Key",
+      "useLogicalColumnName" : true
+    } ],
+    "hierarchies" : [ {
+      "name" : "Entity",
+      "sourceLogicalTable" : "logicalTable:Plan1.Entity",
+      "displayColumn" : "presentationColumn:Plan1.Entity.Entity Name"
+    } ]
+  }
+}

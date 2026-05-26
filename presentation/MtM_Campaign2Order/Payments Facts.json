@@ -1,0 +1,69 @@
+{
+  "presentationTable" : {
+    "name" : "Payments Facts",
+    "presentationColumns" : [ {
+      "name" : "Customer Id",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Payments Facts.Customer Id",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "SalesRep Id",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Payments Facts.SalesRep Id",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Office Id",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Payments Facts.Office Id",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Order Id",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Payments Facts.Order Id",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Paid Date",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Payments Facts.Paid Date",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Product Id",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Payments Facts.Product Id",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Payment",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Payments Facts.Payment",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Address Id",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Payments Facts.Address Id",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Quantity",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Payments Facts.Quantity",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "# Customers",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Payments Facts.# Customers",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "# SalesReps",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Payments Facts.# SalesReps",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "# Payments",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Payments Facts.# Payments",
+      "useLogicalColumnName" : true
+    } ]
+  }
+}

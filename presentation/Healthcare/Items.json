@@ -1,0 +1,60 @@
+{
+  "presentationTable" : {
+    "name" : "Items",
+    "presentationColumns" : [ {
+      "name" : "DSYS_BATCH_ID",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Items.DSYS_BATCH_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_INSTANCE_ID",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Items.DSYS_INSTANCE_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_PROCESS_ID",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Items.DSYS_PROCESS_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Item",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Items.Item",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Item Category",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Items.Item Category",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Manufacturer",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Items.Manufacturer",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "On Contract",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Items.On Contract",
+      "useLogicalColumnName" : true
+    } ],
+    "hierarchies" : [ {
+      "name" : "Item Hierarchy",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:Healthcare.Items",
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:Healthcare.Items.Total"
+      }, {
+        "name" : "Item Category",
+        "sourceLogicalLevel" : "logicalLevel:Healthcare.Items.Item Category",
+        "displayColumn" : "presentationColumn:Healthcare.Items.Item Category"
+      }, {
+        "name" : "Item",
+        "sourceLogicalLevel" : "logicalLevel:Healthcare.Items.Item",
+        "displayColumn" : "presentationColumn:Healthcare.Items.Item"
+      } ]
+    } ]
+  }
+}

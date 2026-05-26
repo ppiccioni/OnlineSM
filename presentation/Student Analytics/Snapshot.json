@@ -1,0 +1,103 @@
+{
+  "presentationTable" : {
+    "name" : "Snapshot",
+    "presentationColumns" : [ {
+      "name" : "Day of Term",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Snapshot.Day of Term",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "DSYS_BATCH_ID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Snapshot.DSYS_BATCH_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_INSTANCE_ID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Snapshot.DSYS_INSTANCE_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_PROCESS_ID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Snapshot.DSYS_PROCESS_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "SNAPSHOT_CD",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Snapshot.SNAPSHOT_CD",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Snapshot",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Snapshot.Snapshot",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Snapshot PTRM",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Snapshot.Snapshot PTRM",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "SNAPSHOT_STATE_CD",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Snapshot.SNAPSHOT_STATE_CD",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Snapshot State",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Snapshot.Snapshot State",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Snapshot Term",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Snapshot.Snapshot Term",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "SNAPSHOT_TYPE_CD",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Snapshot.SNAPSHOT_TYPE_CD",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Snapshot Type",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Snapshot.Snapshot Type",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "SNAPSHOT_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Snapshot.SNAPSHOT_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    } ],
+    "hierarchies" : [ {
+      "name" : "Snapshot Hierarchy",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:Student Analytics.Snapshot",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      },
+      "levels" : [ {
+        "name" : "All Snapshots",
+        "sourceLogicalLevel" : "logicalLevel:Student Analytics.Snapshot.All Snapshots"
+      }, {
+        "name" : "Snapshot Type",
+        "sourceLogicalLevel" : "logicalLevel:Student Analytics.Snapshot.Snapshot Type",
+        "displayColumn" : "presentationColumn:Student Analytics.Snapshot.Snapshot Type"
+      }, {
+        "name" : "Snapshot",
+        "sourceLogicalLevel" : "logicalLevel:Student Analytics.Snapshot.Snapshot",
+        "displayColumn" : "presentationColumn:Student Analytics.Snapshot.Snapshot"
+      }, {
+        "name" : "Detail",
+        "sourceLogicalLevel" : "logicalLevel:Student Analytics.Snapshot.Detail",
+        "displayColumn" : "presentationColumn:Student Analytics.Snapshot.SNAPSHOT_WID"
+      } ]
+    } ]
+  }
+}

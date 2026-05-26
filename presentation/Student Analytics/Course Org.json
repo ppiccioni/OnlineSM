@@ -1,0 +1,99 @@
+{
+  "presentationTable" : {
+    "name" : "Course Org",
+    "presentationColumns" : [ {
+      "name" : "COLLEGE_CD",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Course Org.COLLEGE_CD",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "COURSE_ORG_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Course Org.COURSE_ORG_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "College",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Course Org.College",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "DEPT_CD",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Course Org.DEPT_CD",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_BATCH_ID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Course Org.DSYS_BATCH_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_INSTANCE_ID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Course Org.DSYS_INSTANCE_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_PROCESS_ID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Course Org.DSYS_PROCESS_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Department",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Course Org.Department",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "EFF_TERM_CD",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Course Org.EFF_TERM_CD",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Effective Term",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Course Org.Effective Term",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "INSTITUTION_CD",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Course Org.INSTITUTION_CD",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Institution",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Course Org.Institution",
+      "useLogicalColumnName" : true
+    } ],
+    "hierarchies" : [ {
+      "name" : "Course Org Hierarchy",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:Student Analytics.Course Org",
+      "levels" : [ {
+        "name" : "All Departments",
+        "sourceLogicalLevel" : "logicalLevel:Student Analytics.Course Org.All Departments"
+      }, {
+        "name" : "Institution",
+        "sourceLogicalLevel" : "logicalLevel:Student Analytics.Course Org.Institution",
+        "displayColumn" : "presentationColumn:Student Analytics.Course Org.Institution"
+      }, {
+        "name" : "College",
+        "sourceLogicalLevel" : "logicalLevel:Student Analytics.Course Org.College",
+        "displayColumn" : "presentationColumn:Student Analytics.Course Org.College"
+      }, {
+        "name" : "Department",
+        "sourceLogicalLevel" : "logicalLevel:Student Analytics.Course Org.Department",
+        "displayColumn" : "presentationColumn:Student Analytics.Course Org.Department"
+      } ]
+    } ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "physicalTable" : {
+    "name" : "V_MyConsumers Facts",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "CU_ID",
+      "dataType" : "VARCHAR",
+      "length" : 255,
+      "nullable" : true
+    } ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    },
+    "joins" : [ {
+      "rightTable" : "physicalTable:MtM_Campaign2Order.CAT8.SCH8.V_MyConsumers",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.V_MyConsumers Facts.CU_ID",
+        "rightColumn" : "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.V_MyConsumers.CU_ID"
+      } ]
+    } ]
+  }
+}

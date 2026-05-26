@@ -1,0 +1,18 @@
+{
+  "presentationTable" : {
+    "name" : "Restaurants",
+    "presentationColumns" : [ {
+      "name" : "RestaurantGeo",
+      "sourceLogicalColumn" : "logicalColumn:BM11 - Spatial Demo.Restaurants.RestaurantGeo",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "RestaurantId",
+      "sourceLogicalColumn" : "logicalColumn:BM11 - Spatial Demo.Restaurants.RestaurantId",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "RestaurantName",
+      "sourceLogicalColumn" : "logicalColumn:BM11 - Spatial Demo.Restaurants.RestaurantName",
+      "useLogicalColumnName" : true
+    } ]
+  }
+}

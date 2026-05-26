@@ -1,0 +1,38 @@
+{
+  "subjectArea" : {
+    "name" : "Healthcare",
+    "sourceBusinessModel" : "businessModel:Healthcare",
+    "alternateNames" : [ "PC7" ],
+    "tableOrder" : [ {
+      "name" : "presentationTable:Healthcare.Compensation"
+    }, {
+      "name" : "presentationTable:Healthcare.Time"
+    }, {
+      "name" : "presentationTable:Healthcare.Purchases"
+    }, {
+      "name" : "presentationTable:Healthcare.Buyers"
+    }, {
+      "name" : "presentationTable:Healthcare.Departments"
+    }, {
+      "name" : "presentationTable:Healthcare.Events"
+    }, {
+      "name" : "presentationTable:Healthcare.Actuals"
+    }, {
+      "name" : "presentationTable:Healthcare.Accounts"
+    }, {
+      "name" : "presentationTable:Healthcare.Items"
+    }, {
+      "name" : "presentationTable:Healthcare.Employees"
+    }, {
+      "name" : "presentationTable:Healthcare.Jobs"
+    }, {
+      "name" : "presentationTable:Healthcare.Hiring"
+    }, {
+      "name" : "presentationTable:Healthcare.Suppliers"
+    } ],
+    "localization" : {
+      "localizationKey" : "Healthcare",
+      "nameVariable" : "Healthcare"
+    }
+  }
+}

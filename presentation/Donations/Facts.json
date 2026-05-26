@@ -1,0 +1,76 @@
+{
+  "presentationTable" : {
+    "name" : "Facts",
+    "presentationColumns" : [ {
+      "name" : "Σ Project Cost $",
+      "sourceLogicalColumn" : "logicalColumn:Donations.Facts.Σ Project Cost $",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Avg Donations by Donors",
+      "sourceLogicalColumn" : "logicalColumn:Donations.Facts.Avg Donations by Donors",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Avg Donations per Student",
+      "sourceLogicalColumn" : "logicalColumn:Donations.Facts.Avg Donations per Student",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "DATE_COMPLETED",
+      "sourceLogicalColumn" : "logicalColumn:Donations.Facts.DATE_COMPLETED",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Avg Proj Completion Days",
+      "sourceLogicalColumn" : "logicalColumn:Donations.Facts.Avg Proj Completion Days",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "DATE_POSTED",
+      "sourceLogicalColumn" : "logicalColumn:Donations.Facts.DATE_POSTED",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "# Of Donors",
+      "sourceLogicalColumn" : "logicalColumn:Donations.Facts.# Of Donors",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "# Of Projects",
+      "sourceLogicalColumn" : "logicalColumn:Donations.Facts.# Of Projects",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "# Of Schools",
+      "sourceLogicalColumn" : "logicalColumn:Donations.Facts.# Of Schools",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "# of Teachers",
+      "sourceLogicalColumn" : "logicalColumn:Donations.Facts.# of Teachers",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Σ Donations $",
+      "sourceLogicalColumn" : "logicalColumn:Donations.Facts.Σ Donations $",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "# Students Reached",
+      "sourceLogicalColumn" : "logicalColumn:Donations.Facts.# Students Reached",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Avg Donations by Project",
+      "sourceLogicalColumn" : "logicalColumn:Donations.Facts.Avg Donations by Project",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Avg Students Reached",
+      "sourceLogicalColumn" : "logicalColumn:Donations.Facts.Avg Students Reached",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Avg Cost Per Student",
+      "sourceLogicalColumn" : "logicalColumn:Donations.Facts.Avg Cost Per Student",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Pct Attainment",
+      "sourceLogicalColumn" : "logicalColumn:Donations.Facts.Pct Attainment",
+      "useLogicalColumnName" : true
+    } ]
+  }
+}

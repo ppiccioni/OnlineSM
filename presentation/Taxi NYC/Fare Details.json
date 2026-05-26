@@ -1,0 +1,47 @@
+{
+  "presentationTable" : {
+    "name" : "Fare Details",
+    "alternateNames" : [ "Base Facts", "Fare Facts" ],
+    "presentationColumns" : [ {
+      "name" : "Σ Tips Amt",
+      "sourceLogicalColumn" : "logicalColumn:Taxi NYC.Facts.Σ Tips Amt",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Σ Tolls Amt",
+      "sourceLogicalColumn" : "logicalColumn:Taxi NYC.Facts.Σ Tolls Amt",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Tolls % of Total",
+      "sourceLogicalColumn" : "logicalColumn:Taxi NYC.Facts.Tolls % of Total",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Tips % of Total",
+      "sourceLogicalColumn" : "logicalColumn:Taxi NYC.Facts.Tips % of Total",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Surcharge % of Total",
+      "sourceLogicalColumn" : "logicalColumn:Taxi NYC.Facts.Surcharge % of Total",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Fare % of Total",
+      "sourceLogicalColumn" : "logicalColumn:Taxi NYC.Facts.Fare % of Total",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Tax % of Total",
+      "sourceLogicalColumn" : "logicalColumn:Taxi NYC.Facts.Tax % of Total",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Σ Fare Amt",
+      "sourceLogicalColumn" : "logicalColumn:Taxi NYC.Facts.Σ Fare Amt",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Σ MTA Tax Amt",
+      "sourceLogicalColumn" : "logicalColumn:Taxi NYC.Facts.Σ MTA Tax Amt",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Σ Surcharge Amt",
+      "sourceLogicalColumn" : "logicalColumn:Taxi NYC.Facts.Σ Surcharge Amt",
+      "useLogicalColumnName" : true
+    } ]
+  }
+}

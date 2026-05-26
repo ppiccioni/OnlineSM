@@ -1,0 +1,50 @@
+{
+  "logicalTable" : {
+    "name" : "UT Users",
+    "type" : "FACT",
+    "logicalColumns" : [ {
+      "name" : "CONNECTOR",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "CLOUD_UT_USERS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:NFL Stats.CAT3.SCH3.CLOUD_UT_USERS.CONNECTOR" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "UT_Username",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "CLOUD_UT_USERS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:NFL Stats.CAT3.SCH3.CLOUD_UT_USERS.USERNAME" ]
+          }
+        } ]
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "CLOUD_UT_USERS_LTS",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:NFL Stats.CAT3.SCH3.CLOUD_UT_USERS" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "joins" : [ {
+      "rightTable" : "logicalTable:NFL Stats.UT Dashboards",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    } ]
+  }
+}

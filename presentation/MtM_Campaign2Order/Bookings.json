@@ -1,0 +1,43 @@
+{
+  "presentationTable" : {
+    "name" : "Bookings",
+    "presentationColumns" : [ {
+      "name" : "Currency",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Bookings.Currency",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Booking Date",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Bookings.Booking Date",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Order Id",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Bookings.Order Id",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Order Number",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Bookings.Order Number",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "ORDER_STATUS",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Bookings.ORDER_STATUS",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "ORDER_TYPE",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Bookings.ORDER_TYPE",
+      "useLogicalColumnName" : true
+    } ],
+    "hierarchies" : [ {
+      "name" : "Hierarchy 1",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:MtM_Campaign2Order.Bookings",
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:MtM_Campaign2Order.Bookings.Total"
+      }, {
+        "name" : "Detail",
+        "sourceLogicalLevel" : "logicalLevel:MtM_Campaign2Order.Bookings.Detail",
+        "displayColumn" : "presentationColumn:MtM_Campaign2Order.Bookings.Order Id"
+      } ]
+    } ]
+  }
+}

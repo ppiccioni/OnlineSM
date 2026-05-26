@@ -1,0 +1,324 @@
+{
+  "logicalTable" : {
+    "name" : "Faculty Demographics",
+    "type" : "DIMENSION",
+    "primaryKey" : [ "FACULTY_BIODEMO_WID" ],
+    "logicalColumns" : [ {
+      "name" : "DSYS_BATCH_ID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SA_D_FACULTY_BIODEMO_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_FACULTY_BIODEMO.DSYS_BATCH_ID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "DSYS_INSTANCE_ID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SA_D_FACULTY_BIODEMO_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_FACULTY_BIODEMO.DSYS_INSTANCE_ID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "DSYS_PROCESS_ID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SA_D_FACULTY_BIODEMO_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_FACULTY_BIODEMO.DSYS_PROCESS_ID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "ETHNIC_GROUP_CD",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SA_D_FACULTY_BIODEMO_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_FACULTY_BIODEMO.ETHNIC_GROUP_CD" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Ethnic Group",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SA_D_FACULTY_BIODEMO_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_FACULTY_BIODEMO.ETHNIC_GROUP_DESC" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "FACULTY_BIODEMO_WID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SA_D_FACULTY_BIODEMO_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_FACULTY_BIODEMO.FACULTY_BIODEMO_WID" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "FACULTY_STIPEND_CD",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SA_D_FACULTY_BIODEMO_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_FACULTY_BIODEMO.FACULTY_STIPEND_CD" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Faculty Stipend",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SA_D_FACULTY_BIODEMO_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_FACULTY_BIODEMO.FACULTY_STIPEND_DESC" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "GENDER_CD",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SA_D_FACULTY_BIODEMO_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_FACULTY_BIODEMO.GENDER_CD" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Gender",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SA_D_FACULTY_BIODEMO_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_FACULTY_BIODEMO.GENDER_DESC" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "HISPANIC_FACULTY_CD",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SA_D_FACULTY_BIODEMO_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_FACULTY_BIODEMO.HISPANIC_FACULTY_CD" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Hispanic Faculty",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SA_D_FACULTY_BIODEMO_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_FACULTY_BIODEMO.HISPANIC_FACULTY_DESC" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "INTL_FACULTY_CD",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SA_D_FACULTY_BIODEMO_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_FACULTY_BIODEMO.INTL_FACULTY_CD" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "IN_STATE_FACULTY_CD",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SA_D_FACULTY_BIODEMO_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_FACULTY_BIODEMO.IN_STATE_FACULTY_CD" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "In-State Faculty",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SA_D_FACULTY_BIODEMO_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_FACULTY_BIODEMO.IN_STATE_FACULTY_DESC" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "International Faculty",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SA_D_FACULTY_BIODEMO_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_FACULTY_BIODEMO.INTL_FACULTY_DESC" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "MARITAL_STATUS_CD",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SA_D_FACULTY_BIODEMO_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_FACULTY_BIODEMO.MARITAL_STATUS_CD" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "MILITARY_FACULTY_CD",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SA_D_FACULTY_BIODEMO_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_FACULTY_BIODEMO.MILITARY_FACULTY_CD" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Marital Status",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SA_D_FACULTY_BIODEMO_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_FACULTY_BIODEMO.MARITAL_STATUS_DESC" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Military Faculty",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SA_D_FACULTY_BIODEMO_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_FACULTY_BIODEMO.MILITARY_FACULTY_DESC" ]
+          }
+        } ]
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "SA_D_FACULTY_BIODEMO_LTS",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:Student Analytics.CAT10.SCH10.SA_D_FACULTY_BIODEMO" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "hierarchyType" : "LEVEL_BASED",
+    "levelBasedHierarchy" : {
+      "defaultRootLevel" : "Total",
+      "ragged" : false,
+      "skipped" : false,
+      "logicalLevels" : [ {
+        "name" : "Total",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : true,
+        "disableAggregateToHigherLevel" : false
+      }, {
+        "name" : "Detail",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "FACULTY_BIODEMO_WID" ],
+        "displayKey" : "FACULTY_BIODEMO_WID",
+        "chronologicalKey" : [ "FACULTY_BIODEMO_WID" ]
+      } ],
+      "logicalHierarchies" : [ {
+        "name" : "Faculty Demographics",
+        "description" : "default hierarchy",
+        "levels" : [ "Total", "Detail" ]
+      } ]
+    }
+  }
+}

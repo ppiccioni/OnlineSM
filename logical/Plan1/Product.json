@@ -1,0 +1,412 @@
+{
+  "logicalTable" : {
+    "name" : "Product",
+    "type" : "DIMENSION",
+    "primaryKey" : [ "Product Name" ],
+    "logicalColumns" : [ {
+      "name" : "Product Alias:Default,Gen,1",
+      "dataType" : "VARCHAR",
+      "sortBy" : "Product Sort Order,Gen,1",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Plan1",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:adm:thin:com\\.hyperion\\.ap\\.hsp\\.HspAdmDriver:193\\.122\\.4\\.108%3A9000:Vision.Plan1.Product Alias:Default,Gen,1" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "Product Alias:Default,Gen,2",
+      "dataType" : "VARCHAR",
+      "sortBy" : "Product Sort Order,Gen,2",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Plan1",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:adm:thin:com\\.hyperion\\.ap\\.hsp\\.HspAdmDriver:193\\.122\\.4\\.108%3A9000:Vision.Plan1.Product Alias:Default,Gen,2" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "Product Alias:Default,Gen,3",
+      "dataType" : "VARCHAR",
+      "sortBy" : "Product Sort Order,Gen,3",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Plan1",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:adm:thin:com\\.hyperion\\.ap\\.hsp\\.HspAdmDriver:193\\.122\\.4\\.108%3A9000:Vision.Plan1.Product Alias:Default,Gen,3" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "Product Alias:Default,Gen,4",
+      "dataType" : "VARCHAR",
+      "sortBy" : "Product Sort Order,Gen,4",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Plan1",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:adm:thin:com\\.hyperion\\.ap\\.hsp\\.HspAdmDriver:193\\.122\\.4\\.108%3A9000:Vision.Plan1.Product Alias:Default,Gen,4" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "Product Alias:English,Gen,1",
+      "dataType" : "VARCHAR",
+      "sortBy" : "Product Sort Order,Gen,1",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Plan1",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:adm:thin:com\\.hyperion\\.ap\\.hsp\\.HspAdmDriver:193\\.122\\.4\\.108%3A9000:Vision.Plan1.Product Alias:English,Gen,1" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "Product Alias:English,Gen,2",
+      "dataType" : "VARCHAR",
+      "sortBy" : "Product Sort Order,Gen,2",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Plan1",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:adm:thin:com\\.hyperion\\.ap\\.hsp\\.HspAdmDriver:193\\.122\\.4\\.108%3A9000:Vision.Plan1.Product Alias:English,Gen,2" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "Product Alias:English,Gen,3",
+      "dataType" : "VARCHAR",
+      "sortBy" : "Product Sort Order,Gen,3",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Plan1",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:adm:thin:com\\.hyperion\\.ap\\.hsp\\.HspAdmDriver:193\\.122\\.4\\.108%3A9000:Vision.Plan1.Product Alias:English,Gen,3" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "Product Alias:English,Gen,4",
+      "dataType" : "VARCHAR",
+      "sortBy" : "Product Sort Order,Gen,4",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Plan1",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:adm:thin:com\\.hyperion\\.ap\\.hsp\\.HspAdmDriver:193\\.122\\.4\\.108%3A9000:Vision.Plan1.Product Alias:English,Gen,4" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "Product Default",
+      "dataType" : "VARCHAR",
+      "sortBy" : "Product Sort Order#1",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Plan1",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:adm:thin:com\\.hyperion\\.ap\\.hsp\\.HspAdmDriver:193\\.122\\.4\\.108%3A9000:Vision.Plan1.Product.Product.Product Default" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "Product English",
+      "dataType" : "VARCHAR",
+      "sortBy" : "Product Sort Order#1",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Plan1",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:adm:thin:com\\.hyperion\\.ap\\.hsp\\.HspAdmDriver:193\\.122\\.4\\.108%3A9000:Vision.Plan1.Product.Product.Product English" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "Product Gen Number",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Plan1",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:adm:thin:com\\.hyperion\\.ap\\.hsp\\.HspAdmDriver:193\\.122\\.4\\.108%3A9000:Vision.Plan1.Product.Product.Product Gen Number" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "Product Leaf Indicator",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Plan1",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:adm:thin:com\\.hyperion\\.ap\\.hsp\\.HspAdmDriver:193\\.122\\.4\\.108%3A9000:Vision.Plan1.Product.Product.Product Leaf Indicator" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "Product Name",
+      "dataType" : "VARCHAR",
+      "sortBy" : "Product Sort Order#1",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Plan1",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:adm:thin:com\\.hyperion\\.ap\\.hsp\\.HspAdmDriver:193\\.122\\.4\\.108%3A9000:Vision.Plan1.Product.Product.Product Name" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "Product Name,Gen,1",
+      "dataType" : "VARCHAR",
+      "sortBy" : "Product Sort Order,Gen,1",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Plan1",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:adm:thin:com\\.hyperion\\.ap\\.hsp\\.HspAdmDriver:193\\.122\\.4\\.108%3A9000:Vision.Plan1.Product Name,Gen,1" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "Product Name,Gen,2",
+      "dataType" : "VARCHAR",
+      "sortBy" : "Product Sort Order,Gen,2",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Plan1",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:adm:thin:com\\.hyperion\\.ap\\.hsp\\.HspAdmDriver:193\\.122\\.4\\.108%3A9000:Vision.Plan1.Product Name,Gen,2" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "Product Name,Gen,3",
+      "dataType" : "VARCHAR",
+      "sortBy" : "Product Sort Order,Gen,3",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Plan1",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:adm:thin:com\\.hyperion\\.ap\\.hsp\\.HspAdmDriver:193\\.122\\.4\\.108%3A9000:Vision.Plan1.Product Name,Gen,3" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "Product Name,Gen,4",
+      "dataType" : "VARCHAR",
+      "sortBy" : "Product Sort Order,Gen,4",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Plan1",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:adm:thin:com\\.hyperion\\.ap\\.hsp\\.HspAdmDriver:193\\.122\\.4\\.108%3A9000:Vision.Plan1.Product Name,Gen,4" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "Product Parent Key",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Plan1",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:adm:thin:com\\.hyperion\\.ap\\.hsp\\.HspAdmDriver:193\\.122\\.4\\.108%3A9000:Vision.Plan1.Product.Product.Product Parent Key" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "Product Sort Order",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Plan1",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:adm:thin:com\\.hyperion\\.ap\\.hsp\\.HspAdmDriver:193\\.122\\.4\\.108%3A9000:Vision.Plan1.Product.Product.Product Sort Order" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "Product Sort Order#1",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Plan1",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:adm:thin:com\\.hyperion\\.ap\\.hsp\\.HspAdmDriver:193\\.122\\.4\\.108%3A9000:Vision.Plan1.Product.Product.Product Sort Order#1" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "Product Sort Order,Gen,1",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Plan1",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:adm:thin:com\\.hyperion\\.ap\\.hsp\\.HspAdmDriver:193\\.122\\.4\\.108%3A9000:Vision.Plan1.Product Sort Order,Gen,1" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "Product Sort Order,Gen,2",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Plan1",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:adm:thin:com\\.hyperion\\.ap\\.hsp\\.HspAdmDriver:193\\.122\\.4\\.108%3A9000:Vision.Plan1.Product Sort Order,Gen,2" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "Product Sort Order,Gen,3",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Plan1",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:adm:thin:com\\.hyperion\\.ap\\.hsp\\.HspAdmDriver:193\\.122\\.4\\.108%3A9000:Vision.Plan1.Product Sort Order,Gen,3" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "Product Sort Order,Gen,4",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Plan1",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:adm:thin:com\\.hyperion\\.ap\\.hsp\\.HspAdmDriver:193\\.122\\.4\\.108%3A9000:Vision.Plan1.Product Sort Order,Gen,4" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "Plan1",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalCubeTable:adm:thin:com\\.hyperion\\.ap\\.hsp\\.HspAdmDriver:193\\.122\\.4\\.108%3A9000:Vision.Plan1" ]
+      },
+      "dataGranularity" : [ "logicalLevel:Plan1.Product.Detail" ],
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "hierarchyType" : "PARENT_CHILD",
+    "parentChildHierarchy" : {
+      "name" : "Product",
+      "logicalLevels" : [ {
+        "name" : "Total",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : true,
+        "disableAggregateToHigherLevel" : false
+      }, {
+        "name" : "Detail",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Product Name" ],
+        "displayKey" : "Product Name",
+        "parentKey" : "Product Parent Key"
+      } ]
+    }
+  }
+}

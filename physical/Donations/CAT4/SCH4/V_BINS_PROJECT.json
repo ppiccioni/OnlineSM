@@ -1,0 +1,57 @@
+{
+  "physicalTable" : {
+    "name" : "V_BINS_PROJECT",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "BINA_PROJ_V1",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "BINA_PROJ_V1_W",
+      "dataType" : "VARCHAR",
+      "length" : 46,
+      "nullable" : true
+    }, {
+      "name" : "BINA_PROJ_V2",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "BINA_PROJ_V2_W",
+      "dataType" : "VARCHAR",
+      "length" : 46,
+      "nullable" : true
+    }, {
+      "name" : "BINA_PROJ_V3",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "BINA_PROJ_V3_W",
+      "dataType" : "VARCHAR",
+      "length" : 46,
+      "nullable" : true
+    }, {
+      "name" : "BINA_PROJ_V4",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "BINA_PROJ_V4_W",
+      "dataType" : "VARCHAR",
+      "length" : 46,
+      "nullable" : true
+    }, {
+      "name" : "PROJECTID",
+      "dataType" : "VARCHAR",
+      "length" : 50,
+      "nullable" : true
+    } ],
+    "additionalKeys" : [ [ "PROJECTID" ] ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

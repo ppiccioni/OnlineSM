@@ -1,0 +1,18 @@
+{
+  "presentationTable" : {
+    "name" : "Facts",
+    "presentationColumns" : [ {
+      "name" : "RestaurantId",
+      "sourceLogicalColumn" : "logicalColumn:BM11 - Spatial Demo.Facts.RestaurantId",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "RestaurantName",
+      "sourceLogicalColumn" : "logicalColumn:BM11 - Spatial Demo.Facts.RestaurantName",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Distance",
+      "sourceLogicalColumn" : "logicalColumn:BM11 - Spatial Demo.Facts.Distance",
+      "useLogicalColumnName" : true
+    } ]
+  }
+}

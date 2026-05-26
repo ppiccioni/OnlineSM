@@ -1,0 +1,26 @@
+{
+  "subjectArea" : {
+    "name" : "Donations",
+    "sourceBusinessModel" : "businessModel:Donations",
+    "alternateNames" : [ "PC4" ],
+    "tableOrder" : [ {
+      "name" : "presentationTable:Donations.Facts"
+    }, {
+      "name" : "presentationTable:Donations.School"
+    }, {
+      "name" : "presentationTable:Donations.Projects"
+    }, {
+      "name" : "presentationTable:Donations.Teacher"
+    }, {
+      "name" : "presentationTable:Donations.School Bins"
+    }, {
+      "name" : "presentationTable:Donations.Project Bins"
+    }, {
+      "name" : "presentationTable:Donations.Posted Date"
+    } ],
+    "localization" : {
+      "localizationKey" : "Donations",
+      "nameVariable" : "Donations"
+    }
+  }
+}

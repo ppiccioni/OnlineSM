@@ -1,0 +1,46 @@
+{
+  "presentationTable" : {
+    "name" : "UT Lite",
+    "presentationColumns" : [ {
+      "name" : "# of Hits",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.UT Lite.# of Hits",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Dashboard",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.UT Lite.Dashboard",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Dboard Page",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.UT Lite.Dboard Page",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Dt Day Name",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.UT Lite.Dt Day Name",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Dt Month",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.UT Lite.Dt Month",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Dt Year",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.UT Lite.Dt Year",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "User",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.UT Lite.User",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Attribute 1",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.UT Lite.Attribute 1",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Hit Date Time",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.UT Lite.Hit Date Time",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Hit Date",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.UT Lite.Hit Date",
+      "useLogicalColumnName" : true
+    } ]
+  }
+}

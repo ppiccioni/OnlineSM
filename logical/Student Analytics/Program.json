@@ -1,0 +1,278 @@
+{
+  "logicalTable" : {
+    "name" : "Program",
+    "type" : "DIMENSION",
+    "primaryKey" : [ "PROGRAM_WID" ],
+    "logicalColumns" : [ {
+      "name" : "ACADEMIC_LEVEL_CD",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SA_D_PROGRAM_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_PROGRAM.ACADEMIC_LEVEL_CD" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Academic Level",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SA_D_PROGRAM_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_PROGRAM.ACADEMIC_LEVEL_DESC" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Academic Level"
+    }, {
+      "name" : "COLLEGE_CD",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SA_D_PROGRAM_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_PROGRAM.COLLEGE_CD" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "College",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SA_D_PROGRAM_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_PROGRAM.COLLEGE_DESC" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "College"
+    }, {
+      "name" : "DEGREE_CD",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SA_D_PROGRAM_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_PROGRAM.DEGREE_CD" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Degree",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SA_D_PROGRAM_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_PROGRAM.DEGREE_DESC" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Degree"
+    }, {
+      "name" : "DSYS_BATCH_ID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SA_D_PROGRAM_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_PROGRAM.DSYS_BATCH_ID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "DSYS_INSTANCE_ID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SA_D_PROGRAM_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_PROGRAM.DSYS_INSTANCE_ID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "DSYS_PROCESS_ID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SA_D_PROGRAM_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_PROGRAM.DSYS_PROCESS_ID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "INSTITUTION_CD",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SA_D_PROGRAM_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_PROGRAM.INSTITUTION_CD" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Institution",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SA_D_PROGRAM_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_PROGRAM.INSTITUTION_DESC" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Institution"
+    }, {
+      "name" : "PROGRAM_CD",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SA_D_PROGRAM_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_PROGRAM.PROGRAM_CD" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Program",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SA_D_PROGRAM_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_PROGRAM.PROGRAM_DESC" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Program"
+    }, {
+      "name" : "PROGRAM_WID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SA_D_PROGRAM_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_PROGRAM.PROGRAM_WID" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Program"
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "SA_D_PROGRAM_LTS",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:Student Analytics.CAT10.SCH10.SA_D_PROGRAM" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "hierarchyType" : "LEVEL_BASED",
+    "levelBasedHierarchy" : {
+      "defaultRootLevel" : "All Programs",
+      "ragged" : false,
+      "skipped" : false,
+      "logicalLevels" : [ {
+        "name" : "All Programs",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : true,
+        "disableAggregateToHigherLevel" : false
+      }, {
+        "name" : "Institution",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Institution" ],
+        "displayKey" : "Institution",
+        "chronologicalKey" : [ "Institution" ]
+      }, {
+        "name" : "College",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "College" ],
+        "displayKey" : "College",
+        "chronologicalKey" : [ "College" ]
+      }, {
+        "name" : "Academic Level",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Academic Level" ],
+        "displayKey" : "Academic Level",
+        "chronologicalKey" : [ "Academic Level" ]
+      }, {
+        "name" : "Degree",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Degree" ],
+        "displayKey" : "Degree",
+        "chronologicalKey" : [ "Degree" ]
+      }, {
+        "name" : "Program",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "PROGRAM_WID" ],
+        "displayKey" : "Program",
+        "additionalKeys" : [ [ "Program" ] ],
+        "chronologicalKey" : [ "PROGRAM_WID" ]
+      } ],
+      "logicalHierarchies" : [ {
+        "name" : "Program",
+        "description" : "default hierarchy",
+        "levels" : [ "All Programs", "Institution", "College", "Academic Level", "Degree", "Program" ]
+      } ]
+    }
+  }
+}

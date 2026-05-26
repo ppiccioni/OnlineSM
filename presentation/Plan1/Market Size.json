@@ -1,0 +1,59 @@
+{
+  "presentationTable" : {
+    "name" : "Market Size",
+    "presentationColumns" : [ {
+      "name" : "Market Size Alias:Default,Gen,1",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Market Size.Market Size Alias:Default,Gen,1",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Market Size Alias:Default,Gen,2",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Market Size.Market Size Alias:Default,Gen,2",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Market Size Alias:English,Gen,1",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Market Size.Market Size Alias:English,Gen,1",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Market Size Alias:English,Gen,2",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Market Size.Market Size Alias:English,Gen,2",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Market Size Default",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Market Size.Market Size Default",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Market Size English",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Market Size.Market Size English",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Market Size Gen Number",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Market Size.Market Size Gen Number",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Market Size Leaf Indicator",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Market Size.Market Size Leaf Indicator",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Market Size Name",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Market Size.Market Size Name",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Market Size Name,Gen,1",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Market Size.Market Size Name,Gen,1",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Market Size Name,Gen,2",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Market Size.Market Size Name,Gen,2",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Market Size Parent Key",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Market Size.Market Size Parent Key",
+      "useLogicalColumnName" : true
+    } ],
+    "hierarchies" : [ {
+      "name" : "Market Size",
+      "sourceLogicalTable" : "logicalTable:Plan1.Market Size",
+      "displayColumn" : "presentationColumn:Plan1.Market Size.Market Size Name"
+    } ]
+  }
+}

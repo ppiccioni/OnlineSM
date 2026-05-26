@@ -1,0 +1,52 @@
+{
+  "presentationTable" : {
+    "name" : "Jobs",
+    "presentationColumns" : [ {
+      "name" : "DSYS_BATCH_ID",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Jobs.DSYS_BATCH_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_INSTANCE_ID",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Jobs.DSYS_INSTANCE_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_PROCESS_ID",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Jobs.DSYS_PROCESS_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Job Category",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Jobs.Job Category",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Job Description",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Jobs.Job Description",
+      "useLogicalColumnName" : true
+    } ],
+    "hierarchies" : [ {
+      "name" : "Job Hierarchy",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:Higher_Ed.Jobs",
+      "levels" : [ {
+        "name" : "All Jobs",
+        "sourceLogicalLevel" : "logicalLevel:Higher_Ed.Jobs.All Jobs"
+      }, {
+        "name" : "Job Category",
+        "sourceLogicalLevel" : "logicalLevel:Higher_Ed.Jobs.Job Category",
+        "displayColumn" : "presentationColumn:Higher_Ed.Jobs.Job Category"
+      }, {
+        "name" : "Job Description",
+        "sourceLogicalLevel" : "logicalLevel:Higher_Ed.Jobs.Job Description",
+        "displayColumn" : "presentationColumn:Higher_Ed.Jobs.Job Description"
+      } ]
+    } ]
+  }
+}

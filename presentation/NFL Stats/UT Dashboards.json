@@ -1,0 +1,49 @@
+{
+  "presentationTable" : {
+    "name" : "UT Dashboards",
+    "presentationColumns" : [ {
+      "name" : "Dashboard",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.UT Dashboards.Dashboard",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Dboard Page",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.UT Dashboards.Dboard Page",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "UT Insert",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.UT Dashboards.UT Insert",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Integer 1",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.UT Dashboards.Integer 1",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Current User",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.UT Dashboards.Current User",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "CONNECTOR",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.UT Dashboards.CONNECTOR",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    } ],
+    "hierarchies" : [ {
+      "name" : "Hierarchy 1",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:NFL Stats.UT Dashboards",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      },
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:NFL Stats.UT Dashboards.Total"
+      }, {
+        "name" : "Detail",
+        "sourceLogicalLevel" : "logicalLevel:NFL Stats.UT Dashboards.Detail",
+        "displayColumn" : "presentationColumn:NFL Stats.UT Dashboards.Dashboard"
+      } ]
+    } ]
+  }
+}

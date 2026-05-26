@@ -1,0 +1,52 @@
+{
+  "presentationTable" : {
+    "name" : "Departments",
+    "presentationColumns" : [ {
+      "name" : "Department",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Departments.Department",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "DSYS_BATCH_ID",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Departments.DSYS_BATCH_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_INSTANCE_ID",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Departments.DSYS_INSTANCE_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_PROCESS_ID",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Departments.DSYS_PROCESS_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Institution",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Departments.Institution",
+      "useLogicalColumnName" : true
+    } ],
+    "hierarchies" : [ {
+      "name" : "Department Hierarchy",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:Higher_Ed.Departments",
+      "levels" : [ {
+        "name" : "All Departments",
+        "sourceLogicalLevel" : "logicalLevel:Higher_Ed.Departments.All Departments"
+      }, {
+        "name" : "Institution",
+        "sourceLogicalLevel" : "logicalLevel:Higher_Ed.Departments.Institution",
+        "displayColumn" : "presentationColumn:Higher_Ed.Departments.Institution"
+      }, {
+        "name" : "Department",
+        "sourceLogicalLevel" : "logicalLevel:Higher_Ed.Departments.Department",
+        "displayColumn" : "presentationColumn:Higher_Ed.Departments.Department"
+      } ]
+    } ]
+  }
+}

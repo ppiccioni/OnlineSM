@@ -1,0 +1,330 @@
+{
+  "physicalTable" : {
+    "name" : "NYCT_FACT_VTS",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "FARE_AMOUNT",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "MTA_TAX",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "PASSENGER_COUNT",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "PICKUP_HOUR",
+      "dataType" : "INT",
+      "length" : 0,
+      "nullable" : true
+    }, {
+      "name" : "SURCHARGE",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "TIP_AMOUNT",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "TOLLS_AMOUNT",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "TOTAL_AMOUNT",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "TRIP_DISTANCE",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "ROW_WID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "TRIP_TIME_IN_MIN",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "PICKUP_DAY",
+      "dataType" : "DATE",
+      "length" : 0,
+      "nullable" : true
+    }, {
+      "name" : "ATTR_KEY",
+      "dataType" : "VARCHAR",
+      "length" : 1000,
+      "nullable" : true
+    }, {
+      "name" : "BINB_GRAN_V1",
+      "dataType" : "INT",
+      "length" : 0,
+      "nullable" : false
+    }, {
+      "name" : "BINB_GRAN_V2",
+      "dataType" : "INT",
+      "length" : 0,
+      "nullable" : false
+    }, {
+      "name" : "BINB_GRAN_V3",
+      "dataType" : "INT",
+      "length" : 0,
+      "nullable" : false
+    }, {
+      "name" : "BINB_GRAN_V4",
+      "dataType" : "INT",
+      "length" : 0,
+      "nullable" : false
+    }, {
+      "name" : "BINA_GRAN_V1",
+      "dataType" : "INT",
+      "length" : 0,
+      "nullable" : false
+    }, {
+      "name" : "BINA_GRAN_V2",
+      "dataType" : "INT",
+      "length" : 0,
+      "nullable" : false
+    }, {
+      "name" : "BINA_GRAN_V3",
+      "dataType" : "INT",
+      "length" : 0,
+      "nullable" : false
+    }, {
+      "name" : "BINA_GRAN_V4",
+      "dataType" : "INT",
+      "length" : 0,
+      "nullable" : false
+    }, {
+      "name" : "M_KEY",
+      "dataType" : "VARCHAR",
+      "length" : 10,
+      "nullable" : true
+    }, {
+      "name" : "BINA_AGGR_V1",
+      "dataType" : "INT",
+      "length" : 0,
+      "nullable" : false
+    }, {
+      "name" : "BINA_AGGR_V2",
+      "dataType" : "INT",
+      "length" : 0,
+      "nullable" : false
+    }, {
+      "name" : "BINA_AGGR_V3",
+      "dataType" : "INT",
+      "length" : 0,
+      "nullable" : false
+    }, {
+      "name" : "BINA_AGGR_V4",
+      "dataType" : "INT",
+      "length" : 0,
+      "nullable" : false
+    }, {
+      "name" : "BINB_AGGR_V1",
+      "dataType" : "INT",
+      "length" : 0,
+      "nullable" : false
+    }, {
+      "name" : "BINB_AGGR_V2",
+      "dataType" : "INT",
+      "length" : 0,
+      "nullable" : false
+    }, {
+      "name" : "BINB_AGGR_V3",
+      "dataType" : "INT",
+      "length" : 0,
+      "nullable" : false
+    }, {
+      "name" : "BINB_AGGR_V4",
+      "dataType" : "INT",
+      "length" : 0,
+      "nullable" : false
+    }, {
+      "name" : "H_KEY",
+      "dataType" : "VARCHAR",
+      "length" : 10,
+      "nullable" : true
+    }, {
+      "name" : "PICKUP_REGID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "DROPOFF_REGID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "PICKUP_MIN",
+      "dataType" : "INT",
+      "length" : 0,
+      "nullable" : true
+    } ],
+    "additionalKeys" : [ [ "ROW_WID" ] ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    },
+    "joins" : [ {
+      "rightTable" : "physicalTable:Taxi NYC.CAT9.CAT9.BINSA_MEDAL_V1",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_FACT_VTS.BINA_AGGR_V1",
+        "rightColumn" : "physicalColumn:Taxi NYC.CAT9.CAT9.BINSA_MEDAL_V1.BINA_NUM"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:Taxi NYC.CAT9.CAT9.BINSA_MEDAL_V2",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_FACT_VTS.BINA_AGGR_V2",
+        "rightColumn" : "physicalColumn:Taxi NYC.CAT9.CAT9.BINSA_MEDAL_V2.BINA_NUM"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:Taxi NYC.CAT9.CAT9.BINSA_MEDAL_V3",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_FACT_VTS.BINA_AGGR_V3",
+        "rightColumn" : "physicalColumn:Taxi NYC.CAT9.CAT9.BINSA_MEDAL_V3.BINA_NUM"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:Taxi NYC.CAT9.CAT9.BINSA_MEDAL_V4",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_FACT_VTS.BINA_AGGR_V4",
+        "rightColumn" : "physicalColumn:Taxi NYC.CAT9.CAT9.BINSA_MEDAL_V4.BINA_NUM"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:Taxi NYC.CAT9.CAT9.BINSA_V1",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_FACT_VTS.BINA_GRAN_V1",
+        "rightColumn" : "physicalColumn:Taxi NYC.CAT9.CAT9.BINSA_V1.BINA_NUM"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:Taxi NYC.CAT9.CAT9.BINSA_V2",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_FACT_VTS.BINA_GRAN_V2",
+        "rightColumn" : "physicalColumn:Taxi NYC.CAT9.CAT9.BINSA_V2.BINA_NUM"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:Taxi NYC.CAT9.CAT9.BINSA_V3",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_FACT_VTS.BINA_GRAN_V3",
+        "rightColumn" : "physicalColumn:Taxi NYC.CAT9.CAT9.BINSA_V3.BINA_NUM"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:Taxi NYC.CAT9.CAT9.BINSA_V4",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_FACT_VTS.BINA_GRAN_V4",
+        "rightColumn" : "physicalColumn:Taxi NYC.CAT9.CAT9.BINSA_V4.BINA_NUM"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:Taxi NYC.CAT9.CAT9.BINSB_MEDAL_V1",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_FACT_VTS.BINB_AGGR_V1",
+        "rightColumn" : "physicalColumn:Taxi NYC.CAT9.CAT9.BINSB_MEDAL_V1.BINB_NUM"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:Taxi NYC.CAT9.CAT9.BINSB_MEDAL_V2",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_FACT_VTS.BINB_AGGR_V2",
+        "rightColumn" : "physicalColumn:Taxi NYC.CAT9.CAT9.BINSB_MEDAL_V2.BINB_NUM"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:Taxi NYC.CAT9.CAT9.BINSB_MEDAL_V3",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_FACT_VTS.BINB_AGGR_V3",
+        "rightColumn" : "physicalColumn:Taxi NYC.CAT9.CAT9.BINSB_MEDAL_V3.BINB_NUM"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:Taxi NYC.CAT9.CAT9.BINSB_MEDAL_V4",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_FACT_VTS.BINB_AGGR_V4",
+        "rightColumn" : "physicalColumn:Taxi NYC.CAT9.CAT9.BINSB_MEDAL_V4.BINB_NUM"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:Taxi NYC.CAT9.CAT9.BINSB_V1",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_FACT_VTS.BINB_GRAN_V1",
+        "rightColumn" : "physicalColumn:Taxi NYC.CAT9.CAT9.BINSB_V1.BINB_NUM"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:Taxi NYC.CAT9.CAT9.BINSB_V2",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_FACT_VTS.BINB_GRAN_V2",
+        "rightColumn" : "physicalColumn:Taxi NYC.CAT9.CAT9.BINSB_V2.BINB_NUM"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:Taxi NYC.CAT9.CAT9.BINSB_V3",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_FACT_VTS.BINB_GRAN_V3",
+        "rightColumn" : "physicalColumn:Taxi NYC.CAT9.CAT9.BINSB_V3.BINB_NUM"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:Taxi NYC.CAT9.CAT9.BINSB_V4",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_FACT_VTS.BINB_GRAN_V4",
+        "rightColumn" : "physicalColumn:Taxi NYC.CAT9.CAT9.BINSB_V4.BINB_NUM"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:Taxi NYC.CAT9.CAT9.DROPOFF_REGIONS",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_FACT_VTS.DROPOFF_REGID",
+        "rightColumn" : "physicalColumn:Taxi NYC.CAT9.CAT9.DROPOFF_REGIONS.REGIONID"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:Taxi NYC.CAT9.CAT9.NYCT_ATTR",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_FACT_VTS.ATTR_KEY",
+        "rightColumn" : "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_ATTR.ATTR_KEY"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:Taxi NYC.CAT9.CAT9.NYCT_PICKUP_DATE",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_FACT_VTS.PICKUP_DAY",
+        "rightColumn" : "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_PICKUP_DATE.DAY_DT"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:Taxi NYC.CAT9.CAT9.NYCT_REGIONS",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_FACT_VTS.PICKUP_REGID",
+        "rightColumn" : "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_REGIONS.REGIONID"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:Taxi NYC.CAT9.CAT9.PICKUP_REGIONS",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_FACT_VTS.PICKUP_REGID",
+        "rightColumn" : "physicalColumn:Taxi NYC.CAT9.CAT9.PICKUP_REGIONS.REGIONID"
+      } ]
+    } ]
+  }
+}

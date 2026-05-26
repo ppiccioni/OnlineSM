@@ -1,0 +1,57 @@
+{
+  "physicalTable" : {
+    "name" : "V_BINS_SCHOOL",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "BINA_SCHOOL_V1",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "BINA_SCHOOL_V1_W",
+      "dataType" : "VARCHAR",
+      "length" : 46,
+      "nullable" : true
+    }, {
+      "name" : "BINA_SCHOOL_V2",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "BINA_SCHOOL_V2_W",
+      "dataType" : "VARCHAR",
+      "length" : 46,
+      "nullable" : true
+    }, {
+      "name" : "BINA_SCHOOL_V3",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "BINA_SCHOOL_V3_W",
+      "dataType" : "VARCHAR",
+      "length" : 46,
+      "nullable" : true
+    }, {
+      "name" : "BINA_SCHOOL_V4",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "BINA_SCHOOL_V4_W",
+      "dataType" : "VARCHAR",
+      "length" : 46,
+      "nullable" : true
+    }, {
+      "name" : "SCHOOLID",
+      "dataType" : "VARCHAR",
+      "length" : 50,
+      "nullable" : true
+    } ],
+    "additionalKeys" : [ [ "SCHOOLID" ] ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "presentationTable" : {
+    "name" : "Matric Academic Attributes",
+    "presentationColumns" : [ {
+      "name" : "DSYS_BATCH_ID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Matric Academic Attributes.DSYS_BATCH_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_INSTANCE_ID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Matric Academic Attributes.DSYS_INSTANCE_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_PROCESS_ID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Matric Academic Attributes.DSYS_PROCESS_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "FIRST_TIME_STUDENT_CD",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Matric Academic Attributes.FIRST_TIME_STUDENT_CD",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "FT_PT_STUDENT_CD",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Matric Academic Attributes.FT_PT_STUDENT_CD",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "First Time Student",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Matric Academic Attributes.First Time Student",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "MATRIC_ACADEMIC_ATTRIB_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Matric Academic Attributes.MATRIC_ACADEMIC_ATTRIB_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Student Status",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Matric Academic Attributes.Student Status",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "TRANSFERRED_STUDENT_CD",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Matric Academic Attributes.TRANSFERRED_STUDENT_CD",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Transferred Student",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Matric Academic Attributes.Transferred Student",
+      "useLogicalColumnName" : true
+    } ],
+    "hierarchies" : [ {
+      "name" : "Hierarchy 1",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:Student Analytics.Matric Academic Attributes",
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:Student Analytics.Matric Academic Attributes.Total"
+      }, {
+        "name" : "Detail",
+        "sourceLogicalLevel" : "logicalLevel:Student Analytics.Matric Academic Attributes.Detail",
+        "displayColumn" : "presentationColumn:Student Analytics.Matric Academic Attributes.MATRIC_ACADEMIC_ATTRIB_WID"
+      } ]
+    } ]
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "physicalTable" : {
+    "name" : "NYCT_BINSB_GRAN",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "BINB_NUM",
+      "dataType" : "INT",
+      "length" : 0,
+      "nullable" : true
+    }, {
+      "name" : "BINB_GRAN_V1_W",
+      "dataType" : "VARCHAR",
+      "length" : 20,
+      "nullable" : true
+    }, {
+      "name" : "BINB_GRAN_V2_W",
+      "dataType" : "VARCHAR",
+      "length" : 20,
+      "nullable" : true
+    }, {
+      "name" : "BINB_GRAN_V4_W",
+      "dataType" : "VARCHAR",
+      "length" : 20,
+      "nullable" : true
+    }, {
+      "name" : "BINB_GRAN_V3_W",
+      "dataType" : "VARCHAR",
+      "length" : 20,
+      "nullable" : true
+    } ],
+    "additionalKeys" : [ [ "BINB_NUM" ] ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

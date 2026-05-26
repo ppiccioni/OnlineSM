@@ -1,0 +1,99 @@
+{
+  "presentationTable" : {
+    "name" : "Academic Org",
+    "presentationColumns" : [ {
+      "name" : "ACADEMIC_ORG_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Academic Org.ACADEMIC_ORG_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "COLLEGE_CD",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Academic Org.COLLEGE_CD",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "College",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Academic Org.College",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "DEPT_CD",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Academic Org.DEPT_CD",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Department",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Academic Org.Department",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "DSYS_BATCH_ID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Academic Org.DSYS_BATCH_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_INSTANCE_ID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Academic Org.DSYS_INSTANCE_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_PROCESS_ID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Academic Org.DSYS_PROCESS_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "EFF_TERM_CD",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Academic Org.EFF_TERM_CD",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Effective Term",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Academic Org.Effective Term",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "INSTITUTION_CD",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Academic Org.INSTITUTION_CD",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Institution",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Academic Org.Institution",
+      "useLogicalColumnName" : true
+    } ],
+    "hierarchies" : [ {
+      "name" : "Academic Org Hierarchy",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:Student Analytics.Academic Org",
+      "levels" : [ {
+        "name" : "All Departments",
+        "sourceLogicalLevel" : "logicalLevel:Student Analytics.Academic Org.All Departments"
+      }, {
+        "name" : "Institution",
+        "sourceLogicalLevel" : "logicalLevel:Student Analytics.Academic Org.Institution",
+        "displayColumn" : "presentationColumn:Student Analytics.Academic Org.Institution"
+      }, {
+        "name" : "College",
+        "sourceLogicalLevel" : "logicalLevel:Student Analytics.Academic Org.College",
+        "displayColumn" : "presentationColumn:Student Analytics.Academic Org.College"
+      }, {
+        "name" : "Department",
+        "sourceLogicalLevel" : "logicalLevel:Student Analytics.Academic Org.Department",
+        "displayColumn" : "presentationColumn:Student Analytics.Academic Org.Department"
+      } ]
+    } ]
+  }
+}

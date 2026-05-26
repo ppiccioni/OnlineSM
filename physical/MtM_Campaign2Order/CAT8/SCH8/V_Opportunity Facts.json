@@ -1,0 +1,114 @@
+{
+  "physicalTable" : {
+    "name" : "V_Opportunity Facts",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "O0_OPPTY_KEY",
+      "dataType" : "VARCHAR",
+      "length" : 10,
+      "nullable" : true
+    }, {
+      "name" : "O12_NO_ACTIVITIES",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "O13_NO_DAYS_STAGE",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "O15_LEAD_STATUS",
+      "dataType" : "VARCHAR",
+      "length" : 20,
+      "nullable" : true
+    }, {
+      "name" : "O7_PROJ_REV",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "O8_ACTUAL_REV",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "O3_CLOSE_DATE",
+      "dataType" : "DATETIME",
+      "length" : 7,
+      "nullable" : false
+    }, {
+      "name" : "O16_SALES_REP_NO",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "O18_PROD_KEY",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "O17_MANAGER_NO",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "O20_ADDRESS_KEY",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "O19_CUST_KEY",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    } ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    },
+    "joins" : [ {
+      "rightTable" : "physicalTable:MtM_Campaign2Order.CAT8.SCH8.SAMP_ADDRESSES_D",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.V_Opportunity Facts.O20_ADDRESS_KEY",
+        "rightColumn" : "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.SAMP_ADDRESSES_D.ADDRESS_KEY"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:MtM_Campaign2Order.CAT8.SCH8.SAMP_CUSTOMERS_D",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.V_Opportunity Facts.O19_CUST_KEY",
+        "rightColumn" : "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.SAMP_CUSTOMERS_D.CUST_KEY"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:MtM_Campaign2Order.CAT8.SCH8.SAMP_EMPL_D",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.V_Opportunity Facts.O16_SALES_REP_NO",
+        "rightColumn" : "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.SAMP_EMPL_D.EMPLOYEE_KEY"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:MtM_Campaign2Order.CAT8.SCH8.SAMP_PRODUCTS_D",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.V_Opportunity Facts.O18_PROD_KEY",
+        "rightColumn" : "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.SAMP_PRODUCTS_D.PROD_KEY"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:MtM_Campaign2Order.CAT8.SCH8.SAMP_TIME_DAY_D",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.V_Opportunity Facts.O3_CLOSE_DATE",
+        "rightColumn" : "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.SAMP_TIME_DAY_D.CALENDAR_DATE"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:MtM_Campaign2Order.CAT8.SCH8.V_Opportunites",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.V_Opportunity Facts.O0_OPPTY_KEY",
+        "rightColumn" : "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.V_Opportunites.O0_OPPTY_KEY"
+      } ]
+    } ]
+  }
+}

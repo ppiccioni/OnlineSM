@@ -1,0 +1,142 @@
+{
+  "logicalTable" : {
+    "name" : "Opponent QB",
+    "type" : "DIMENSION",
+    "primaryKey" : [ "Opp Quarter Back" ],
+    "logicalColumns" : [ {
+      "name" : "Opp QB College",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "NFL_QB_OPP_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:NFL Stats.CAT3.SCH3.NFL_QB_OPP.COLLEGE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Opp Career TD Thrown",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "NFL_QB_OPP_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:NFL Stats.CAT3.SCH3.NFL_QB_OPP.CAREER_TD_THROWN" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Opp QB Drafted By",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "NFL_QB_OPP_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:NFL Stats.CAT3.SCH3.NFL_QB_OPP.DRAFTED_BY" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Opp QB Pick",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "NFL_QB_OPP_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:NFL Stats.CAT3.SCH3.NFL_QB_OPP.PICK" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Opp Quarter Back",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "NFL_QB_OPP_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:NFL Stats.CAT3.SCH3.NFL_QB_OPP.QB_NAME" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "Opp QB Round",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "NFL_QB_OPP_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:NFL Stats.CAT3.SCH3.NFL_QB_OPP.ROUND" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Opp QB Year Drafted",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "NFL_QB_OPP_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:NFL Stats.CAT3.SCH3.NFL_QB_OPP.YEAR_DRAFTED" ]
+          }
+        } ]
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "NFL_QB_OPP_LTS",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:NFL Stats.CAT3.SCH3.NFL_QB_OPP" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "hierarchyType" : "LEVEL_BASED",
+    "levelBasedHierarchy" : {
+      "defaultRootLevel" : "Total",
+      "ragged" : false,
+      "skipped" : false,
+      "logicalLevels" : [ {
+        "name" : "Total",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : true,
+        "disableAggregateToHigherLevel" : false
+      }, {
+        "name" : "Detail",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Opp Quarter Back" ],
+        "displayKey" : "Opp Quarter Back",
+        "chronologicalKey" : [ "Opp Quarter Back" ]
+      } ],
+      "logicalHierarchies" : [ {
+        "name" : "Opponent QB",
+        "description" : "default hierarchy",
+        "levels" : [ "Total", "Detail" ]
+      } ]
+    }
+  }
+}

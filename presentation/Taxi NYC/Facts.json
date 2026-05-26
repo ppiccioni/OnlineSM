@@ -1,0 +1,58 @@
+{
+  "presentationTable" : {
+    "name" : "Facts",
+    "alternateNames" : [ "Trip Facts" ],
+    "presentationColumns" : [ {
+      "name" : "Σ Total Amt",
+      "sourceLogicalColumn" : "logicalColumn:Taxi NYC.Facts.Σ Total Amt",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Σ Miles",
+      "sourceLogicalColumn" : "logicalColumn:Taxi NYC.Facts.Σ Miles",
+      "useLogicalColumnName" : true,
+      "alternateNames" : [ "Σ Trip Distance" ]
+    }, {
+      "name" : "# of Trips",
+      "sourceLogicalColumn" : "logicalColumn:Taxi NYC.Facts.# of Trips",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "# of Medallions",
+      "sourceLogicalColumn" : "logicalColumn:Taxi NYC.Facts.# of Medallions",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "% of Total Trips",
+      "sourceLogicalColumn" : "logicalColumn:Taxi NYC.Facts.% of Total Trips",
+      "useLogicalColumnName" : true,
+      "alternateNames" : [ "% of all Period Trips", "% of all Period Trips for Period", "% of all Trips for Period", "% of Period Trips" ]
+    }, {
+      "name" : "% of Total Miles",
+      "sourceLogicalColumn" : "logicalColumn:Taxi NYC.Facts.% of Total Miles",
+      "useLogicalColumnName" : true,
+      "alternateNames" : [ "% of all Distance for Period", "% of all Miles for Period", "% of Period Miles" ]
+    }, {
+      "name" : "% of Total Amt",
+      "sourceLogicalColumn" : "logicalColumn:Taxi NYC.Facts.% of Total Amt",
+      "useLogicalColumnName" : true,
+      "alternateNames" : [ "% of all Amount for Period", "% of Period Amt" ]
+    }, {
+      "name" : "Σ Pax Miles",
+      "sourceLogicalColumn" : "logicalColumn:Taxi NYC.Facts.Σ Pax Miles",
+      "useLogicalColumnName" : true,
+      "alternateNames" : [ "Σ Passenger Miles" ]
+    }, {
+      "name" : "Σ Pax",
+      "sourceLogicalColumn" : "logicalColumn:Taxi NYC.Facts.Σ Pax",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "# of Drivers",
+      "sourceLogicalColumn" : "logicalColumn:Taxi NYC.Facts.# of Drivers",
+      "useLogicalColumnName" : true,
+      "alternateNames" : [ "# of Driver Lic", "# of Licenses" ]
+    }, {
+      "name" : "% of Total Drivers",
+      "sourceLogicalColumn" : "logicalColumn:Taxi NYC.Facts.% of Total Drivers",
+      "useLogicalColumnName" : true,
+      "alternateNames" : [ "% of Period Drivers" ]
+    } ]
+  }
+}

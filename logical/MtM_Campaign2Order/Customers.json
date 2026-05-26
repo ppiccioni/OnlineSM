@@ -1,0 +1,362 @@
+{
+  "logicalTable" : {
+    "name" : "Customers",
+    "type" : "DIMENSION",
+    "primaryKey" : [ "Customer Id" ],
+    "logicalColumns" : [ {
+      "name" : "Account Name",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SAMP_CUSTOMERS_D_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.SAMP_CUSTOMERS_D.ACCOUNT_NAME" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Birth Date",
+      "dataType" : "DATETIME",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SAMP_CUSTOMERS_D_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.SAMP_CUSTOMERS_D.BIRTH_DT" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Credit Rate",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SAMP_CUSTOMERS_D_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.SAMP_CUSTOMERS_D.CRDT_RATE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Customer Id",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SAMP_CUSTOMERS_D_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.SAMP_CUSTOMERS_D.CUST_KEY" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "First Contact Date",
+      "dataType" : "DATETIME",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SAMP_CUSTOMERS_D_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.SAMP_CUSTOMERS_D.FST_CONTACT_DT" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Gender",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SAMP_CUSTOMERS_D_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.SAMP_CUSTOMERS_D.GENDER" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Income Level",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SAMP_CUSTOMERS_D_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.SAMP_CUSTOMERS_D.INCOME_LVL" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "LTV",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SAMP_CUSTOMERS_D_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.SAMP_CUSTOMERS_D.LTV" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Last Order Date",
+      "dataType" : "DATETIME",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SAMP_CUSTOMERS_D_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.SAMP_CUSTOMERS_D.LST_ORDER_DT" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Marital Status",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SAMP_CUSTOMERS_D_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.SAMP_CUSTOMERS_D.MARITAL_ST" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "NUM_ATTRIBUTE",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SAMP_CUSTOMERS_D_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.SAMP_CUSTOMERS_D.NUM_ATTRIBUTE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Name",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SAMP_CUSTOMERS_D_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.SAMP_CUSTOMERS_D.NAME" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "PREV_MARITAL_ST",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SAMP_CUSTOMERS_D_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.SAMP_CUSTOMERS_D.PREV_MARITAL_ST" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "PREV_MARITAL_ST_DT",
+      "dataType" : "DATETIME",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SAMP_CUSTOMERS_D_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.SAMP_CUSTOMERS_D.PREV_MARITAL_ST_DT" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Segment",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SAMP_CUSTOMERS_D_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.SAMP_CUSTOMERS_D.SEGMENT_KEY" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Segment"
+    }, {
+      "name" : "Status",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SAMP_CUSTOMERS_D_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.SAMP_CUSTOMERS_D.STATUS_KEY" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Status"
+    }, {
+      "name" : "TOTAL_VALUE",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SAMP_CUSTOMERS_D_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.SAMP_CUSTOMERS_D.TOTAL_VALUE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Type",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SAMP_CUSTOMERS_D_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.SAMP_CUSTOMERS_D.TYPE_KEY" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Type"
+    }, {
+      "name" : "Months as Customer",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : " TIMESTAMPDIFF( SQL_TSI_MONTH , %1,  NOW())",
+          "expressionObjects" : [ "logicalColumn:MtM_Campaign2Order.Customers.First Contact Date" ]
+        }
+      }
+    }, {
+      "name" : "Years as Customer",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : " TIMESTAMPDIFF( SQL_TSI_YEAR , %1,  NOW())",
+          "expressionObjects" : [ "logicalColumn:MtM_Campaign2Order.Customers.First Contact Date" ]
+        }
+      }
+    }, {
+      "name" : "Customer Age",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : " TIMESTAMPDIFF( SQL_TSI_YEAR , %1,  NOW())",
+          "expressionObjects" : [ "logicalColumn:MtM_Campaign2Order.Customers.Birth Date" ]
+        }
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "SAMP_CUSTOMERS_D_LTS",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:MtM_Campaign2Order.CAT8.SCH8.SAMP_CUSTOMERS_D" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "hierarchyType" : "LEVEL_BASED",
+    "levelBasedHierarchy" : {
+      "defaultRootLevel" : "Total",
+      "ragged" : false,
+      "skipped" : false,
+      "logicalLevels" : [ {
+        "name" : "Total",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : true,
+        "disableAggregateToHigherLevel" : false
+      }, {
+        "name" : "Type",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Type" ],
+        "displayKey" : "Type",
+        "chronologicalKey" : [ "Type" ]
+      }, {
+        "name" : "Status",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Status" ],
+        "displayKey" : "Status",
+        "chronologicalKey" : [ "Status" ]
+      }, {
+        "name" : "Detail",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Customer Id" ],
+        "displayKey" : "Name",
+        "additionalKeys" : [ [ "Name", "Customer Id" ] ],
+        "chronologicalKey" : [ "Customer Id" ]
+      }, {
+        "name" : "Segment",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Segment" ],
+        "displayKey" : "Segment",
+        "chronologicalKey" : [ "Segment" ]
+      } ],
+      "logicalHierarchies" : [ {
+        "name" : "Customers",
+        "description" : "default hierarchy",
+        "levels" : [ "Total", "Type", "Status", "Detail" ]
+      }, {
+        "name" : "Customers-1",
+        "description" : "default hierarchy",
+        "levels" : [ "Total", "Segment", "Detail" ]
+      } ]
+    }
+  }
+}

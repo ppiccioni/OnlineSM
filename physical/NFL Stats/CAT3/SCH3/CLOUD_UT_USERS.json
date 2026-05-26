@@ -1,0 +1,29 @@
+{
+  "physicalTable" : {
+    "name" : "CLOUD_UT_USERS",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "CONNECTOR",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "USERNAME",
+      "dataType" : "VARCHAR",
+      "length" : 100,
+      "nullable" : true
+    } ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    },
+    "joins" : [ {
+      "rightTable" : "physicalTable:NFL Stats.CAT3.SCH3.CLOUD_UT_DASHBOARDS",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:NFL Stats.CAT3.SCH3.CLOUD_UT_USERS.CONNECTOR",
+        "rightColumn" : "physicalColumn:NFL Stats.CAT3.SCH3.CLOUD_UT_DASHBOARDS.CONNECTOR"
+      } ]
+    } ]
+  }
+}

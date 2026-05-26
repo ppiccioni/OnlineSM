@@ -1,0 +1,42 @@
+{
+  "physicalTable" : {
+    "name" : "SA_D_MINOR",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "DSYS_BATCH_ID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "DSYS_INSTANCE_ID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "DSYS_PROCESS_ID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "MINOR_CD",
+      "dataType" : "VARCHAR",
+      "length" : 50,
+      "nullable" : true
+    }, {
+      "name" : "MINOR_WID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "MINOR_DESC",
+      "dataType" : "VARCHAR",
+      "length" : 50,
+      "nullable" : false
+    } ],
+    "additionalKeys" : [ [ "MINOR_WID" ], [ "MINOR_WID" ], [ "MINOR_WID" ], [ "MINOR_WID" ], [ "MINOR_WID" ] ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

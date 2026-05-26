@@ -1,0 +1,124 @@
+{
+  "presentationTable" : {
+    "name" : "Section",
+    "presentationColumns" : [ {
+      "name" : "Campus",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Section.Campus",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Course Nbr",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Section.Course Nbr",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Course Reg Nbr",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Section.Course Reg Nbr",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Distance Learning Flag",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Section.Distance Learning Flag",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "DSYS_BATCH_ID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Section.DSYS_BATCH_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_INSTANCE_ID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Section.DSYS_INSTANCE_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_PROCESS_ID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Section.DSYS_PROCESS_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Honors Flag",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Section.Honors Flag",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "SCHEDULE_CD",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Section.SCHEDULE_CD",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Schedule",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Section.Schedule",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Section",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Section.Section",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "SECTION_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Section.SECTION_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "STATUS_CD",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Section.STATUS_CD",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Status",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Section.Status",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Student Capacity",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Section.Student Capacity",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Subject",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Section.Subject",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "TERM_CD",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Section.TERM_CD",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Term",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Section.Term",
+      "useLogicalColumnName" : true
+    } ],
+    "hierarchies" : [ {
+      "name" : "Section Hierarchy",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:Student Analytics.Section",
+      "levels" : [ {
+        "name" : "All Sections",
+        "sourceLogicalLevel" : "logicalLevel:Student Analytics.Section.All Sections"
+      }, {
+        "name" : "Term",
+        "sourceLogicalLevel" : "logicalLevel:Student Analytics.Section.Term",
+        "displayColumn" : "presentationColumn:Student Analytics.Section.Term"
+      }, {
+        "name" : "Subject",
+        "sourceLogicalLevel" : "logicalLevel:Student Analytics.Section.Subject",
+        "displayColumn" : "presentationColumn:Student Analytics.Section.Subject"
+      }, {
+        "name" : "Course Nbr",
+        "sourceLogicalLevel" : "logicalLevel:Student Analytics.Section.Course Nbr",
+        "displayColumn" : "presentationColumn:Student Analytics.Section.Course Nbr"
+      }, {
+        "name" : "Section",
+        "sourceLogicalLevel" : "logicalLevel:Student Analytics.Section.Section",
+        "displayColumn" : "presentationColumn:Student Analytics.Section.Section"
+      } ]
+    } ]
+  }
+}

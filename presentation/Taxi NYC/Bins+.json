@@ -1,0 +1,25 @@
+{
+  "presentationTable" : {
+    "name" : "Bins+",
+    "alternateNames" : [ "BINSB_V1#1" ],
+    "presentationColumns" : [ {
+      "name" : "Speed (MPH) Bin+",
+      "sourceLogicalColumn" : "logicalColumn:Taxi NYC.Trip BinsB.Speed (MPH) Bin+",
+      "useLogicalColumnName" : true,
+      "alternateNames" : [ "Tip Amt Bin+", "Tip Bin+" ]
+    }, {
+      "name" : "Amount Bin+",
+      "sourceLogicalColumn" : "logicalColumn:Taxi NYC.Trip BinsB.Amount Bin+",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Distance Bin+",
+      "sourceLogicalColumn" : "logicalColumn:Taxi NYC.Trip BinsB.Distance Bin+",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "$ per Mile Bin+",
+      "sourceLogicalColumn" : "logicalColumn:Taxi NYC.Trip BinsB.$ per Mile Bin+",
+      "useLogicalColumnName" : true,
+      "alternateNames" : [ "Duration Bin+" ]
+    } ]
+  }
+}

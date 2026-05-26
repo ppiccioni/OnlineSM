@@ -1,0 +1,78 @@
+{
+  "presentationTable" : {
+    "name" : "Projects",
+    "presentationColumns" : [ {
+      "name" : "Date Completed",
+      "sourceLogicalColumn" : "logicalColumn:Donations.Projects.Date Completed",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Date Expiration",
+      "sourceLogicalColumn" : "logicalColumn:Donations.Projects.Date Expiration",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Date Posted",
+      "sourceLogicalColumn" : "logicalColumn:Donations.Projects.Date Posted",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Eligible Double Impact Match",
+      "sourceLogicalColumn" : "logicalColumn:Donations.Projects.Eligible Double Impact Match",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Funding Status",
+      "sourceLogicalColumn" : "logicalColumn:Donations.Projects.Funding Status",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Grade Level",
+      "sourceLogicalColumn" : "logicalColumn:Donations.Projects.Grade Level",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Poverty Level",
+      "sourceLogicalColumn" : "logicalColumn:Donations.Projects.Poverty Level",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Primary Focus Area",
+      "sourceLogicalColumn" : "logicalColumn:Donations.Projects.Primary Focus Area",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Primary Focus Subject",
+      "sourceLogicalColumn" : "logicalColumn:Donations.Projects.Primary Focus Subject",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Project ID",
+      "sourceLogicalColumn" : "logicalColumn:Donations.Projects.Project ID",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Resource Type",
+      "sourceLogicalColumn" : "logicalColumn:Donations.Projects.Resource Type",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Secondary Focus Area",
+      "sourceLogicalColumn" : "logicalColumn:Donations.Projects.Secondary Focus Area",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Secondary Focus Subject",
+      "sourceLogicalColumn" : "logicalColumn:Donations.Projects.Secondary Focus Subject",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Project Donations",
+      "sourceLogicalColumn" : "logicalColumn:Donations.Projects.Project Donations",
+      "useLogicalColumnName" : true
+    } ],
+    "hierarchies" : [ {
+      "name" : "Hierarchy 1",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:Donations.Projects",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      },
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:Donations.Projects.Total"
+      }, {
+        "name" : "Detail",
+        "sourceLogicalLevel" : "logicalLevel:Donations.Projects.Detail",
+        "displayColumn" : "presentationColumn:Donations.Projects.Project ID"
+      } ]
+    } ]
+  }
+}

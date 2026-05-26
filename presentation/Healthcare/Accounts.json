@@ -1,0 +1,52 @@
+{
+  "presentationTable" : {
+    "name" : "Accounts",
+    "presentationColumns" : [ {
+      "name" : "Account",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Accounts.Account",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Account Group",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Accounts.Account Group",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "DSYS_BATCH_ID",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Accounts.DSYS_BATCH_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_INSTANCE_ID",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Accounts.DSYS_INSTANCE_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_PROCESS_ID",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Accounts.DSYS_PROCESS_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    } ],
+    "hierarchies" : [ {
+      "name" : "Account Hierarchy",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:Healthcare.Accounts",
+      "levels" : [ {
+        "name" : "All Accounts",
+        "sourceLogicalLevel" : "logicalLevel:Healthcare.Accounts.All Accounts"
+      }, {
+        "name" : "Account Group",
+        "sourceLogicalLevel" : "logicalLevel:Healthcare.Accounts.Account Group",
+        "displayColumn" : "presentationColumn:Healthcare.Accounts.Account Group"
+      }, {
+        "name" : "Account",
+        "sourceLogicalLevel" : "logicalLevel:Healthcare.Accounts.Account",
+        "displayColumn" : "presentationColumn:Healthcare.Accounts.Account"
+      } ]
+    } ]
+  }
+}

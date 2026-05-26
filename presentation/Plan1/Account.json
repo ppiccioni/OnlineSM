@@ -1,0 +1,255 @@
+{
+  "presentationTable" : {
+    "name" : "Account",
+    "presentationColumns" : [ {
+      "name" : "Account - Asset",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Account.Account - Asset",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Account - Average",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Account.Account - Average",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Account - Average-Actual365",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Account.Account - Average-Actual365",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Account - Balance",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Account.Account - Balance",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Account - Custom",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Account.Account - Custom",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Account - Disable",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Account.Account - Disable",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Account - Ending",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Account.Account - Ending",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Account - Equity",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Account.Account - Equity",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Account - Expense",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Account.Account - Expense",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Account - First",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Account.Account - First",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Account - Flow",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Account.Account - Flow",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Account - Historical",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Account.Account - Historical",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Account - HSP_NOLINK",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Account.Account - HSP_NOLINK",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Account - IsExpense",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Account.Account - IsExpense",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Account - Liability",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Account.Account - Liability",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Account - No Rate",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Account.Account - No Rate",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Account - Revenue",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Account.Account - Revenue",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Account - Saved Assumption",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Account.Account - Saved Assumption",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Account - TBAverage",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Account.Account - TBAverage",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Account AccountType",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Account.Account AccountType",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Account Alias:Default,Gen,1",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Account.Account Alias:Default,Gen,1",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Account Alias:Default,Gen,10",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Account.Account Alias:Default,Gen,10",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Account Alias:Default,Gen,2",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Account.Account Alias:Default,Gen,2",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Account Alias:Default,Gen,3",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Account.Account Alias:Default,Gen,3",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Account Alias:Default,Gen,4",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Account.Account Alias:Default,Gen,4",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Account Alias:Default,Gen,5",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Account.Account Alias:Default,Gen,5",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Account Alias:Default,Gen,6",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Account.Account Alias:Default,Gen,6",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Account Alias:Default,Gen,7",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Account.Account Alias:Default,Gen,7",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Account Alias:Default,Gen,8",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Account.Account Alias:Default,Gen,8",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Account Alias:Default,Gen,9",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Account.Account Alias:Default,Gen,9",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Account Alias:English,Gen,1",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Account.Account Alias:English,Gen,1",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Account Alias:English,Gen,10",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Account.Account Alias:English,Gen,10",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Account Alias:English,Gen,2",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Account.Account Alias:English,Gen,2",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Account Alias:English,Gen,3",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Account.Account Alias:English,Gen,3",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Account Alias:English,Gen,4",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Account.Account Alias:English,Gen,4",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Account Alias:English,Gen,5",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Account.Account Alias:English,Gen,5",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Account Alias:English,Gen,6",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Account.Account Alias:English,Gen,6",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Account Alias:English,Gen,7",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Account.Account Alias:English,Gen,7",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Account Alias:English,Gen,8",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Account.Account Alias:English,Gen,8",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Account Alias:English,Gen,9",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Account.Account Alias:English,Gen,9",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Account Currency Conversion",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Account.Account Currency Conversion",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Account CurrencyCategory",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Account.Account CurrencyCategory",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Account DataType",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Account.Account DataType",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Account Default",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Account.Account Default",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Account English",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Account.Account English",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Account Gen Number",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Account.Account Gen Number",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Account Leaf Indicator",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Account.Account Leaf Indicator",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Account Name",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Account.Account Name",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Account Name,Gen,1",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Account.Account Name,Gen,1",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Account Name,Gen,10",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Account.Account Name,Gen,10",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Account Name,Gen,2",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Account.Account Name,Gen,2",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Account Name,Gen,3",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Account.Account Name,Gen,3",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Account Name,Gen,4",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Account.Account Name,Gen,4",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Account Name,Gen,5",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Account.Account Name,Gen,5",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Account Name,Gen,6",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Account.Account Name,Gen,6",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Account Name,Gen,7",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Account.Account Name,Gen,7",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Account Name,Gen,8",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Account.Account Name,Gen,8",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Account Name,Gen,9",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Account.Account Name,Gen,9",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Account Parent Key",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Account.Account Parent Key",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Account Skip",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Account.Account Skip",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Account Time Balance",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Account.Account Time Balance",
+      "useLogicalColumnName" : true
+    } ],
+    "hierarchies" : [ {
+      "name" : "Account",
+      "sourceLogicalTable" : "logicalTable:Plan1.Account",
+      "displayColumn" : "presentationColumn:Plan1.Account.Account Name"
+    } ]
+  }
+}

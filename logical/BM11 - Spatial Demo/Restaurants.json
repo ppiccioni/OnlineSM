@@ -1,0 +1,88 @@
+{
+  "logicalTable" : {
+    "name" : "Restaurants",
+    "type" : "DIMENSION",
+    "logicalColumns" : [ {
+      "name" : "DUMMY",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DIM_SF_RESTAURANTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB11.CAT11.OA_HERE_MAPS.DIM_SF_RESTAURANTS.DUMMY" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "RestaurantCountryCode",
+      "dataType" : "CHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DIM_SF_RESTAURANTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB11.CAT11.OA_HERE_MAPS.DIM_SF_RESTAURANTS.RESTAURANTCOUNTRYCODE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "RestaurantGeo",
+      "dataType" : "GEOMETRY",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DIM_SF_RESTAURANTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB11.CAT11.OA_HERE_MAPS.DIM_SF_RESTAURANTS.RESTAURANTGEO" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "RestaurantId",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DIM_SF_RESTAURANTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB11.CAT11.OA_HERE_MAPS.DIM_SF_RESTAURANTS.RESTAURANTID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "RestaurantName",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DIM_SF_RESTAURANTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB11.CAT11.OA_HERE_MAPS.DIM_SF_RESTAURANTS.RESTAURANTNAME" ]
+          }
+        } ]
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "DIM_SF_RESTAURANTS",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:DB11.CAT11.OA_HERE_MAPS.DIM_SF_RESTAURANTS" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "primaryKey" : [ "RestaurantId" ]
+  }
+}

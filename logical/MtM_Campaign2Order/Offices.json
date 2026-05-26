@@ -1,0 +1,254 @@
+{
+  "logicalTable" : {
+    "name" : "Offices",
+    "type" : "DIMENSION",
+    "primaryKey" : [ "Office Id" ],
+    "logicalColumns" : [ {
+      "name" : "Address Id",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SAMP_OFFICES_D_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.SAMP_OFFICES_D.ADDRESS_KEY" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Company",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SAMP_OFFICES_D_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.SAMP_OFFICES_D.COMPANY" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Company"
+    }, {
+      "name" : "Company Id",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SAMP_OFFICES_D_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.SAMP_OFFICES_D.COMPANY_KEY" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Department",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SAMP_OFFICES_D_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.SAMP_OFFICES_D.DEPARTMENT" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Department"
+    }, {
+      "name" : "Department Id",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SAMP_OFFICES_D_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.SAMP_OFFICES_D.DEPT_KEY" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Office",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SAMP_OFFICES_D_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.SAMP_OFFICES_D.OFFICE_DSC" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Office"
+    }, {
+      "name" : "Office Id",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SAMP_OFFICES_D_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.SAMP_OFFICES_D.OFFICE_KEY" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Office"
+    }, {
+      "name" : "Organization",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SAMP_OFFICES_D_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.SAMP_OFFICES_D.ORGANIZATION" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Organization"
+    }, {
+      "name" : "Organization Id",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SAMP_OFFICES_D_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.SAMP_OFFICES_D.ORG_KEY" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Region",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SAMP_OFFICES_D_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.SAMP_OFFICES_D.REGION" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Region"
+    }, {
+      "name" : "Sequence",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SAMP_OFFICES_D_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.SAMP_OFFICES_D.SEQUENCE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "TOTAL_VALUE",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SAMP_OFFICES_D_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.SAMP_OFFICES_D.TOTAL_VALUE" ]
+          }
+        } ]
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "SAMP_OFFICES_D_LTS",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:MtM_Campaign2Order.CAT8.SCH8.SAMP_OFFICES_D" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "hierarchyType" : "LEVEL_BASED",
+    "levelBasedHierarchy" : {
+      "defaultRootLevel" : "Total",
+      "ragged" : false,
+      "skipped" : false,
+      "logicalLevels" : [ {
+        "name" : "Total",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : true,
+        "disableAggregateToHigherLevel" : false
+      }, {
+        "name" : "Company",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Company" ],
+        "displayKey" : "Company",
+        "chronologicalKey" : [ "Company" ]
+      }, {
+        "name" : "Organization",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Organization" ],
+        "displayKey" : "Organization",
+        "chronologicalKey" : [ "Organization" ]
+      }, {
+        "name" : "Department",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Department" ],
+        "displayKey" : "Department",
+        "chronologicalKey" : [ "Department" ]
+      }, {
+        "name" : "Office",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Office Id" ],
+        "displayKey" : "Office",
+        "additionalKeys" : [ [ "Office" ] ],
+        "chronologicalKey" : [ "Office Id" ]
+      }, {
+        "name" : "Region",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Region" ],
+        "displayKey" : "Region",
+        "chronologicalKey" : [ "Region" ]
+      } ],
+      "logicalHierarchies" : [ {
+        "name" : "Offices",
+        "description" : "default hierarchy",
+        "levels" : [ "Total", "Company", "Organization", "Department", "Office" ]
+      }, {
+        "name" : "Offices-1",
+        "description" : "default hierarchy",
+        "levels" : [ "Total", "Region", "Office" ]
+      } ]
+    }
+  }
+}

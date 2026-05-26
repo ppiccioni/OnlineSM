@@ -1,0 +1,155 @@
+{
+  "physicalTable" : {
+    "name" : "SA_F_FACULTY_LOAD",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "ACADEMIC_ORG_WID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "CAMPUS_WID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "COURSE_WID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "DSYS_BATCH_ID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "DSYS_INSTANCE_ID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "DSYS_PROCESS_ID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "FACULTY_PROFILE_WID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "FACULTY_WID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "RESPONSIBILITY_PCT",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "ROW_WID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "SECTION_CREDIT_HOURS",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "SECTION_WID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "SNAPSHOT_WID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "STUDENT_ENROLLMENT_COUNT",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "TERM_SEGMENT_WID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "TERM_WID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    } ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    },
+    "joins" : [ {
+      "rightTable" : "physicalTable:Student Analytics.CAT10.SCH10.SA_D_ACADEMIC_ORG",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:Student Analytics.CAT10.SCH10.SA_F_FACULTY_LOAD.ACADEMIC_ORG_WID",
+        "rightColumn" : "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_ACADEMIC_ORG.ACADEMIC_ORG_WID"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:Student Analytics.CAT10.SCH10.SA_D_CAMPUS",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:Student Analytics.CAT10.SCH10.SA_F_FACULTY_LOAD.CAMPUS_WID",
+        "rightColumn" : "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_CAMPUS.CAMPUS_WID"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:Student Analytics.CAT10.SCH10.SA_D_COURSE",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:Student Analytics.CAT10.SCH10.SA_F_FACULTY_LOAD.COURSE_WID",
+        "rightColumn" : "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_COURSE.COURSE_WID"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:Student Analytics.CAT10.SCH10.SA_D_FACULTY",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:Student Analytics.CAT10.SCH10.SA_F_FACULTY_LOAD.FACULTY_WID",
+        "rightColumn" : "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_FACULTY.FACULTY_WID"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:Student Analytics.CAT10.SCH10.SA_D_FACULTY_PROFILE",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:Student Analytics.CAT10.SCH10.SA_F_FACULTY_LOAD.FACULTY_PROFILE_WID",
+        "rightColumn" : "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_FACULTY_PROFILE.FACULTY_PROFILE_WID"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:Student Analytics.CAT10.SCH10.SA_D_SECTION",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:Student Analytics.CAT10.SCH10.SA_F_FACULTY_LOAD.SECTION_WID",
+        "rightColumn" : "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_SECTION.SECTION_WID"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:Student Analytics.CAT10.SCH10.SA_D_SNAPSHOT",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:Student Analytics.CAT10.SCH10.SA_F_FACULTY_LOAD.SNAPSHOT_WID",
+        "rightColumn" : "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_SNAPSHOT.SNAPSHOT_WID"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:Student Analytics.CAT10.SCH10.SA_D_TERM",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:Student Analytics.CAT10.SCH10.SA_F_FACULTY_LOAD.TERM_WID",
+        "rightColumn" : "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_TERM.TERM_WID"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:Student Analytics.CAT10.SCH10.SA_D_TERM_SEGMENT",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:Student Analytics.CAT10.SCH10.SA_F_FACULTY_LOAD.TERM_SEGMENT_WID",
+        "rightColumn" : "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_TERM_SEGMENT.TERM_SEGMENT_WID"
+      } ]
+    } ]
+  }
+}

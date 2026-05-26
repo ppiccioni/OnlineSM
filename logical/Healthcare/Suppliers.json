@@ -1,0 +1,179 @@
+{
+  "logicalTable" : {
+    "name" : "Suppliers",
+    "type" : "DIMENSION",
+    "primaryKey" : [ "Supplier" ],
+    "logicalColumns" : [ {
+      "name" : "DSYS_BATCH_ID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "HC_D_SUPPLIERS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Healthcare.CAT7.SCH7.HC_D_SUPPLIERS.DSYS_BATCH_ID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "DSYS_INSTANCE_ID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "HC_D_SUPPLIERS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Healthcare.CAT7.SCH7.HC_D_SUPPLIERS.DSYS_INSTANCE_ID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "DSYS_PROCESS_ID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "HC_D_SUPPLIERS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Healthcare.CAT7.SCH7.HC_D_SUPPLIERS.DSYS_PROCESS_ID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Diversity",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "HC_D_SUPPLIERS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Healthcare.CAT7.SCH7.HC_D_SUPPLIERS.DIVERSITY" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Minority Owned",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "HC_D_SUPPLIERS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Healthcare.CAT7.SCH7.HC_D_SUPPLIERS.MINORITY_OWNED" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Parent Supplier",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "HC_D_SUPPLIERS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Healthcare.CAT7.SCH7.HC_D_SUPPLIERS.PARENT_SUPPLIER" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Parent Supplier"
+    }, {
+      "name" : "Small Bus",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "HC_D_SUPPLIERS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Healthcare.CAT7.SCH7.HC_D_SUPPLIERS.SMALL_BUS" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Supplier",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "HC_D_SUPPLIERS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Healthcare.CAT7.SCH7.HC_D_SUPPLIERS.SUPPLIER" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Supplier"
+    }, {
+      "name" : "Woman Owned",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "HC_D_SUPPLIERS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Healthcare.CAT7.SCH7.HC_D_SUPPLIERS.WOMAN_OWNED" ]
+          }
+        } ]
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "HC_D_SUPPLIERS_LTS",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:Healthcare.CAT7.SCH7.HC_D_SUPPLIERS" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "hierarchyType" : "LEVEL_BASED",
+    "levelBasedHierarchy" : {
+      "defaultRootLevel" : "All Suppliers",
+      "ragged" : false,
+      "skipped" : false,
+      "logicalLevels" : [ {
+        "name" : "All Suppliers",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : true,
+        "disableAggregateToHigherLevel" : false
+      }, {
+        "name" : "Parent Supplier",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Parent Supplier" ],
+        "displayKey" : "Parent Supplier",
+        "chronologicalKey" : [ "Parent Supplier" ]
+      }, {
+        "name" : "Supplier",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Supplier" ],
+        "displayKey" : "Supplier",
+        "chronologicalKey" : [ "Supplier" ]
+      } ],
+      "logicalHierarchies" : [ {
+        "name" : "Suppliers",
+        "description" : "default hierarchy",
+        "levels" : [ "All Suppliers", "Parent Supplier", "Supplier" ]
+      } ]
+    }
+  }
+}

@@ -1,0 +1,156 @@
+{
+  "logicalTable" : {
+    "name" : "UT Lite",
+    "type" : "FACT",
+    "logicalColumns" : [ {
+      "name" : "# of Hits",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "CLOUD_UT_VIEW_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:NFL Stats.CAT3.SCH3.CLOUD_UT_VIEW.ROW_ID" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "COUNT"
+      }
+    }, {
+      "name" : "Dashboard",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "CLOUD_UT_VIEW_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:NFL Stats.CAT3.SCH3.CLOUD_UT_VIEW.DASHBOARD" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Dboard Page",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "CLOUD_UT_VIEW_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:NFL Stats.CAT3.SCH3.CLOUD_UT_VIEW.PAGE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Dt Day Name",
+      "dataType" : "CHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : " DAYNAME(%1)",
+          "expressionObjects" : [ "logicalColumn:NFL Stats.UT Lite.Hit Date Time" ]
+        }
+      }
+    }, {
+      "name" : "Dt Month",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : " EXTRACT( MONTH  FROM %1)",
+          "expressionObjects" : [ "logicalColumn:NFL Stats.UT Lite.Hit Date Time" ]
+        }
+      }
+    }, {
+      "name" : "Dt Year",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : " EXTRACT( YEAR  FROM %1)",
+          "expressionObjects" : [ "logicalColumn:NFL Stats.UT Lite.Hit Date Time" ]
+        }
+      }
+    }, {
+      "name" : "User",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "CLOUD_UT_VIEW_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:NFL Stats.CAT3.SCH3.CLOUD_UT_VIEW.USERNAME" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Attribute 1",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "CLOUD_UT_VIEW_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:NFL Stats.CAT3.SCH3.CLOUD_UT_VIEW.ATTRIBUTE_1" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Hit Date Time",
+      "dataType" : "DATE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "CLOUD_UT_VIEW_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:NFL Stats.CAT3.SCH3.CLOUD_UT_VIEW.HIT_TIME" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Hit Date",
+      "dataType" : "DATE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "CLOUD_UT_VIEW_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:NFL Stats.CAT3.SCH3.CLOUD_UT_VIEW.HIT_DATE" ]
+          }
+        } ]
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "CLOUD_UT_VIEW_LTS",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:NFL Stats.CAT3.SCH3.CLOUD_UT_VIEW" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "joins" : [ {
+      "rightTable" : "logicalTable:NFL Stats.UT Dashboards",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    } ]
+  }
+}

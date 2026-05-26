@@ -1,0 +1,17 @@
+{
+  "physicalTable" : {
+    "name" : "V_Time",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "TIME",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    } ],
+    "additionalKeys" : [ [ "TIME" ] ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

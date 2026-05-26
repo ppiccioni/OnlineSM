@@ -1,0 +1,47 @@
+{
+  "physicalTable" : {
+    "name" : "V_Correlate and Predict",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "CHOICE_ID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "CO_ATTRIBUTENAME",
+      "dataType" : "VARCHAR",
+      "length" : 255,
+      "nullable" : true
+    }, {
+      "name" : "CO_ATTRIBUTETYPE",
+      "dataType" : "VARCHAR",
+      "length" : 255,
+      "nullable" : true
+    }, {
+      "name" : "PR_ATTRIBUTETYPE",
+      "dataType" : "VARCHAR",
+      "length" : 255,
+      "nullable" : true
+    }, {
+      "name" : "PR_ATTRIBUTENAME",
+      "dataType" : "VARCHAR",
+      "length" : 255,
+      "nullable" : true
+    }, {
+      "name" : "TIMEWINDOW",
+      "dataType" : "VARCHAR",
+      "length" : 255,
+      "nullable" : true
+    }, {
+      "name" : "ID",
+      "dataType" : "VARCHAR",
+      "length" : 100,
+      "nullable" : false
+    } ],
+    "additionalKeys" : [ [ "ID" ], [ "CHOICE_ID" ] ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

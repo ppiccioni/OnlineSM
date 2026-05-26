@@ -1,0 +1,22 @@
+{
+  "subjectArea" : {
+    "name" : "Retail",
+    "sourceBusinessModel" : "businessModel:Retail",
+    "alternateNames" : [ "PC1" ],
+    "tableOrder" : [ {
+      "name" : "presentationTable:Retail.Location"
+    }, {
+      "name" : "presentationTable:Retail.Orderlines"
+    }, {
+      "name" : "presentationTable:Retail.Time"
+    }, {
+      "name" : "presentationTable:Retail.Day"
+    }, {
+      "name" : "presentationTable:Retail.Product"
+    } ],
+    "localization" : {
+      "localizationKey" : "Retail",
+      "nameVariable" : "Retail"
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "physicalTable" : {
+    "name" : "V_RTD_ChoSeg_Facts",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "CHOICE_GROUP",
+      "dataType" : "VARCHAR",
+      "length" : 255,
+      "nullable" : true
+    }, {
+      "name" : "CHOICE_SUBGROUP",
+      "dataType" : "VARCHAR",
+      "length" : 255,
+      "nullable" : true
+    }, {
+      "name" : "CHOICE_ID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "CNTINSEGMENT",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "NOOFTRANS",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "CHOICE_ID2",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "PCTOFTRANS",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "SEGMENT",
+      "dataType" : "VARCHAR",
+      "length" : 255,
+      "nullable" : true
+    }, {
+      "name" : "SEGMENT_ID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    } ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    },
+    "joins" : [ {
+      "rightTable" : "physicalTable:MtM_Campaign2Order.CAT8.SCH8.V_Correlate and Predict",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.V_RTD_ChoSeg_Facts.CHOICE_ID",
+        "rightColumn" : "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.V_Correlate and Predict.CHOICE_ID"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:MtM_Campaign2Order.CAT8.SCH8.V_MyConsumers",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.V_RTD_ChoSeg_Facts.SEGMENT",
+        "rightColumn" : "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.V_MyConsumers.CU_Z_CUSTOM_LABEL3"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:MtM_Campaign2Order.CAT8.SCH8.V_RTD_ChoSeg",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.V_RTD_ChoSeg_Facts.CHOICE_ID2",
+        "rightColumn" : "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.V_RTD_ChoSeg.CHOICE_ID"
+      } ]
+    } ]
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "presentationTable" : {
+    "name" : "Geography",
+    "presentationColumns" : [ {
+      "name" : "Address 1",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Geography.Address 1",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Address 2",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Geography.Address 2",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Address Id",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Geography.Address Id",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Area",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Geography.Area",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "CTRY_CD3_STATE_ABBRV",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Geography.CTRY_CD3_STATE_ABBRV",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "CTRY_CD3_STATE_NAME",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Geography.CTRY_CD3_STATE_NAME",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "CTRY_CD3_STATE_NAME_CITY",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Geography.CTRY_CD3_STATE_NAME_CITY",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "City",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Geography.City",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Country",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Geography.Country",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "ESTAB_NAME",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Geography.ESTAB_NAME",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Iso Country Cd",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Geography.Iso Country Cd",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Latitude",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Geography.Latitude",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Longitude",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Geography.Longitude",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Postal Code",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Geography.Postal Code",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Region",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Geography.Region",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "State/Province",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Geography.State/Province",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "State/Province Abbrv",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Geography.State/Province Abbrv",
+      "useLogicalColumnName" : true
+    } ],
+    "hierarchies" : [ {
+      "name" : "Geographies",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:MtM_Campaign2Order.Geography",
+      "levels" : [ {
+        "name" : "All Geographies",
+        "sourceLogicalLevel" : "logicalLevel:MtM_Campaign2Order.Geography.All Geographies"
+      }, {
+        "name" : "Region",
+        "sourceLogicalLevel" : "logicalLevel:MtM_Campaign2Order.Geography.Region",
+        "displayColumn" : "presentationColumn:MtM_Campaign2Order.Geography.Region"
+      }, {
+        "name" : "Area",
+        "sourceLogicalLevel" : "logicalLevel:MtM_Campaign2Order.Geography.Area",
+        "displayColumn" : "presentationColumn:MtM_Campaign2Order.Geography.Area"
+      }, {
+        "name" : "Country",
+        "sourceLogicalLevel" : "logicalLevel:MtM_Campaign2Order.Geography.Country",
+        "displayColumn" : "presentationColumn:MtM_Campaign2Order.Geography.Country"
+      }, {
+        "name" : "State/Province",
+        "sourceLogicalLevel" : "logicalLevel:MtM_Campaign2Order.Geography.State/Province",
+        "displayColumn" : "presentationColumn:MtM_Campaign2Order.Geography.State/Province"
+      }, {
+        "name" : "City",
+        "sourceLogicalLevel" : "logicalLevel:MtM_Campaign2Order.Geography.City",
+        "displayColumn" : "presentationColumn:MtM_Campaign2Order.Geography.City"
+      }, {
+        "name" : "Postal Code",
+        "sourceLogicalLevel" : "logicalLevel:MtM_Campaign2Order.Geography.Postal Code",
+        "displayColumn" : "presentationColumn:MtM_Campaign2Order.Geography.Postal Code"
+      }, {
+        "name" : "Detail",
+        "sourceLogicalLevel" : "logicalLevel:MtM_Campaign2Order.Geography.Detail",
+        "displayColumn" : "presentationColumn:MtM_Campaign2Order.Geography.Address 1"
+      } ]
+    }, {
+      "name" : "Countries",
+      "sourceLogicalTable" : "logicalTable:MtM_Campaign2Order.Geography",
+      "levels" : [ {
+        "name" : "All Geographies",
+        "sourceLogicalLevel" : "logicalLevel:MtM_Campaign2Order.Geography.All Geographies"
+      }, {
+        "name" : "Country",
+        "sourceLogicalLevel" : "logicalLevel:MtM_Campaign2Order.Geography.Country",
+        "displayColumn" : "presentationColumn:MtM_Campaign2Order.Geography.Country"
+      }, {
+        "name" : "State/Province",
+        "sourceLogicalLevel" : "logicalLevel:MtM_Campaign2Order.Geography.State/Province",
+        "displayColumn" : "presentationColumn:MtM_Campaign2Order.Geography.State/Province"
+      }, {
+        "name" : "City",
+        "sourceLogicalLevel" : "logicalLevel:MtM_Campaign2Order.Geography.City",
+        "displayColumn" : "presentationColumn:MtM_Campaign2Order.Geography.City"
+      }, {
+        "name" : "Postal Code",
+        "sourceLogicalLevel" : "logicalLevel:MtM_Campaign2Order.Geography.Postal Code",
+        "displayColumn" : "presentationColumn:MtM_Campaign2Order.Geography.Postal Code"
+      }, {
+        "name" : "Detail",
+        "sourceLogicalLevel" : "logicalLevel:MtM_Campaign2Order.Geography.Detail",
+        "displayColumn" : "presentationColumn:MtM_Campaign2Order.Geography.Address 1"
+      } ]
+    } ]
+  }
+}

@@ -1,0 +1,301 @@
+{
+  "logicalTable" : {
+    "name" : "Year",
+    "type" : "DIMENSION",
+    "primaryKey" : [ "Year Name" ],
+    "logicalColumns" : [ {
+      "name" : "Year - HSP_LEAPYEAR",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Plan1",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:adm:thin:com\\.hyperion\\.ap\\.hsp\\.HspAdmDriver:193\\.122\\.4\\.108%3A9000:Vision.Plan1.Year.Year.Year - HSP_LEAPYEAR" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "Year Alias:Default,Gen,1",
+      "dataType" : "VARCHAR",
+      "sortBy" : "Year Sort Order,Gen,1",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Plan1",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:adm:thin:com\\.hyperion\\.ap\\.hsp\\.HspAdmDriver:193\\.122\\.4\\.108%3A9000:Vision.Plan1.Year Alias:Default,Gen,1" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "Year Alias:Default,Gen,2",
+      "dataType" : "VARCHAR",
+      "sortBy" : "Year Sort Order,Gen,2",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Plan1",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:adm:thin:com\\.hyperion\\.ap\\.hsp\\.HspAdmDriver:193\\.122\\.4\\.108%3A9000:Vision.Plan1.Year Alias:Default,Gen,2" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "Year Alias:English,Gen,1",
+      "dataType" : "VARCHAR",
+      "sortBy" : "Year Sort Order,Gen,1",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Plan1",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:adm:thin:com\\.hyperion\\.ap\\.hsp\\.HspAdmDriver:193\\.122\\.4\\.108%3A9000:Vision.Plan1.Year Alias:English,Gen,1" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "Year Alias:English,Gen,2",
+      "dataType" : "VARCHAR",
+      "sortBy" : "Year Sort Order,Gen,2",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Plan1",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:adm:thin:com\\.hyperion\\.ap\\.hsp\\.HspAdmDriver:193\\.122\\.4\\.108%3A9000:Vision.Plan1.Year Alias:English,Gen,2" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "Year Default",
+      "dataType" : "VARCHAR",
+      "sortBy" : "Year Sort Order#1",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Plan1",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:adm:thin:com\\.hyperion\\.ap\\.hsp\\.HspAdmDriver:193\\.122\\.4\\.108%3A9000:Vision.Plan1.Year.Year.Year Default" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "Year English",
+      "dataType" : "VARCHAR",
+      "sortBy" : "Year Sort Order#1",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Plan1",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:adm:thin:com\\.hyperion\\.ap\\.hsp\\.HspAdmDriver:193\\.122\\.4\\.108%3A9000:Vision.Plan1.Year.Year.Year English" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "Year Gen Number",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Plan1",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:adm:thin:com\\.hyperion\\.ap\\.hsp\\.HspAdmDriver:193\\.122\\.4\\.108%3A9000:Vision.Plan1.Year.Year.Year Gen Number" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "Year Leaf Indicator",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Plan1",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:adm:thin:com\\.hyperion\\.ap\\.hsp\\.HspAdmDriver:193\\.122\\.4\\.108%3A9000:Vision.Plan1.Year.Year.Year Leaf Indicator" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "Year Name",
+      "dataType" : "VARCHAR",
+      "sortBy" : "Year Sort Order#1",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Plan1",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:adm:thin:com\\.hyperion\\.ap\\.hsp\\.HspAdmDriver:193\\.122\\.4\\.108%3A9000:Vision.Plan1.Year.Year.Year Name" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "Year Name,Gen,1",
+      "dataType" : "VARCHAR",
+      "sortBy" : "Year Sort Order,Gen,1",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Plan1",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:adm:thin:com\\.hyperion\\.ap\\.hsp\\.HspAdmDriver:193\\.122\\.4\\.108%3A9000:Vision.Plan1.Year Name,Gen,1" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "Year Name,Gen,2",
+      "dataType" : "VARCHAR",
+      "sortBy" : "Year Sort Order,Gen,2",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Plan1",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:adm:thin:com\\.hyperion\\.ap\\.hsp\\.HspAdmDriver:193\\.122\\.4\\.108%3A9000:Vision.Plan1.Year Name,Gen,2" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "Year Parent Key",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Plan1",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:adm:thin:com\\.hyperion\\.ap\\.hsp\\.HspAdmDriver:193\\.122\\.4\\.108%3A9000:Vision.Plan1.Year.Year.Year Parent Key" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "Year Sort Order",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Plan1",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:adm:thin:com\\.hyperion\\.ap\\.hsp\\.HspAdmDriver:193\\.122\\.4\\.108%3A9000:Vision.Plan1.Year.Year.Year Sort Order" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "Year Sort Order#1",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Plan1",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:adm:thin:com\\.hyperion\\.ap\\.hsp\\.HspAdmDriver:193\\.122\\.4\\.108%3A9000:Vision.Plan1.Year.Year.Year Sort Order#1" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "Year Sort Order,Gen,1",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Plan1",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:adm:thin:com\\.hyperion\\.ap\\.hsp\\.HspAdmDriver:193\\.122\\.4\\.108%3A9000:Vision.Plan1.Year Sort Order,Gen,1" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "Year Sort Order,Gen,2",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Plan1",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:adm:thin:com\\.hyperion\\.ap\\.hsp\\.HspAdmDriver:193\\.122\\.4\\.108%3A9000:Vision.Plan1.Year Sort Order,Gen,2" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "Plan1",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalCubeTable:adm:thin:com\\.hyperion\\.ap\\.hsp\\.HspAdmDriver:193\\.122\\.4\\.108%3A9000:Vision.Plan1" ]
+      },
+      "dataGranularity" : [ "logicalLevel:Plan1.Year.Detail" ],
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "hierarchyType" : "PARENT_CHILD",
+    "parentChildHierarchy" : {
+      "name" : "Year",
+      "logicalLevels" : [ {
+        "name" : "Total",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : true,
+        "disableAggregateToHigherLevel" : false
+      }, {
+        "name" : "Detail",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Year Name" ],
+        "displayKey" : "Year Name",
+        "parentKey" : "Year Parent Key"
+      } ]
+    }
+  }
+}

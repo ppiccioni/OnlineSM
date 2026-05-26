@@ -1,0 +1,63 @@
+{
+  "presentationTable" : {
+    "name" : "Employees",
+    "presentationColumns" : [ {
+      "name" : "Age Group",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Employees.Age Group",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "DSYS_BATCH_ID",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Employees.DSYS_BATCH_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_INSTANCE_ID",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Employees.DSYS_INSTANCE_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_PROCESS_ID",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Employees.DSYS_PROCESS_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Employee Name",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Employees.Employee Name",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "High Potential",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Employees.High Potential",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Highest Degree",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Employees.Highest Degree",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Pay Grade",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Employees.Pay Grade",
+      "useLogicalColumnName" : true
+    } ],
+    "hierarchies" : [ {
+      "name" : "Hierarchy 1",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:Healthcare.Employees",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      },
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:Healthcare.Employees.Total"
+      }, {
+        "name" : "Detail",
+        "sourceLogicalLevel" : "logicalLevel:Healthcare.Employees.Detail",
+        "displayColumn" : "presentationColumn:Healthcare.Employees.Employee Name"
+      } ]
+    } ]
+  }
+}

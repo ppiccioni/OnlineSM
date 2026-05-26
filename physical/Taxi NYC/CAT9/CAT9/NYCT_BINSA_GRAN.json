@@ -1,0 +1,37 @@
+{
+  "physicalTable" : {
+    "name" : "NYCT_BINSA_GRAN",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "BINA_NUM",
+      "dataType" : "INT",
+      "length" : 0,
+      "nullable" : true
+    }, {
+      "name" : "BINA_GRAN_V1_W",
+      "dataType" : "VARCHAR",
+      "length" : 20,
+      "nullable" : true
+    }, {
+      "name" : "BINA_GRAN_V2_W",
+      "dataType" : "VARCHAR",
+      "length" : 20,
+      "nullable" : true
+    }, {
+      "name" : "BINA_GRAN_V4_W",
+      "dataType" : "VARCHAR",
+      "length" : 20,
+      "nullable" : true
+    }, {
+      "name" : "BINA_GRAN_V3_W",
+      "dataType" : "VARCHAR",
+      "length" : 20,
+      "nullable" : true
+    } ],
+    "additionalKeys" : [ [ "BINA_NUM" ] ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

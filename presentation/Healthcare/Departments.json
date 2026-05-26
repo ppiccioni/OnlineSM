@@ -1,0 +1,52 @@
+{
+  "presentationTable" : {
+    "name" : "Departments",
+    "presentationColumns" : [ {
+      "name" : "DSYS_BATCH_ID",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Departments.DSYS_BATCH_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_INSTANCE_ID",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Departments.DSYS_INSTANCE_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_PROCESS_ID",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Departments.DSYS_PROCESS_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Department",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Departments.Department",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Hospital",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Departments.Hospital",
+      "useLogicalColumnName" : true
+    } ],
+    "hierarchies" : [ {
+      "name" : "Department Hierarchy",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:Healthcare.Departments",
+      "levels" : [ {
+        "name" : "All Departments",
+        "sourceLogicalLevel" : "logicalLevel:Healthcare.Departments.All Departments"
+      }, {
+        "name" : "Hospital",
+        "sourceLogicalLevel" : "logicalLevel:Healthcare.Departments.Hospital",
+        "displayColumn" : "presentationColumn:Healthcare.Departments.Hospital"
+      }, {
+        "name" : "Department",
+        "sourceLogicalLevel" : "logicalLevel:Healthcare.Departments.Department",
+        "displayColumn" : "presentationColumn:Healthcare.Departments.Department"
+      } ]
+    } ]
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "physicalTable" : {
+    "name" : "NYCT_ATTR",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "PAYMENT_TYPE",
+      "dataType" : "VARCHAR",
+      "length" : 200,
+      "nullable" : true
+    }, {
+      "name" : "RATE_CODE",
+      "dataType" : "VARCHAR",
+      "length" : 200,
+      "nullable" : true
+    }, {
+      "name" : "STORE_AND_FWD_FLAG",
+      "dataType" : "VARCHAR",
+      "length" : 200,
+      "nullable" : true
+    }, {
+      "name" : "ATTR_KEY",
+      "dataType" : "VARCHAR",
+      "length" : 1000,
+      "nullable" : true
+    }, {
+      "name" : "PASSENGER_COUNT",
+      "dataType" : "DOUBLE",
+      "length" : 0,
+      "nullable" : true
+    }, {
+      "name" : "VENDOR_ID",
+      "dataType" : "VARCHAR",
+      "length" : 200,
+      "nullable" : true
+    } ],
+    "additionalKeys" : [ [ "PAYMENT_TYPE" ], [ "ATTR_KEY" ] ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

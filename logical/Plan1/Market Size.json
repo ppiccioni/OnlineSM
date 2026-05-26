@@ -1,0 +1,286 @@
+{
+  "logicalTable" : {
+    "name" : "Market Size",
+    "type" : "DIMENSION",
+    "primaryKey" : [ "Market Size Name" ],
+    "logicalColumns" : [ {
+      "name" : "Market Size Alias:Default,Gen,1",
+      "dataType" : "VARCHAR",
+      "sortBy" : "Market Size Sort Order,Gen,1",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Plan1",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:adm:thin:com\\.hyperion\\.ap\\.hsp\\.HspAdmDriver:193\\.122\\.4\\.108%3A9000:Vision.Plan1.Market Size Alias:Default,Gen,1" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "Market Size Alias:Default,Gen,2",
+      "dataType" : "VARCHAR",
+      "sortBy" : "Market Size Sort Order,Gen,2",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Plan1",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:adm:thin:com\\.hyperion\\.ap\\.hsp\\.HspAdmDriver:193\\.122\\.4\\.108%3A9000:Vision.Plan1.Market Size Alias:Default,Gen,2" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "Market Size Alias:English,Gen,1",
+      "dataType" : "VARCHAR",
+      "sortBy" : "Market Size Sort Order,Gen,1",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Plan1",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:adm:thin:com\\.hyperion\\.ap\\.hsp\\.HspAdmDriver:193\\.122\\.4\\.108%3A9000:Vision.Plan1.Market Size Alias:English,Gen,1" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "Market Size Alias:English,Gen,2",
+      "dataType" : "VARCHAR",
+      "sortBy" : "Market Size Sort Order,Gen,2",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Plan1",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:adm:thin:com\\.hyperion\\.ap\\.hsp\\.HspAdmDriver:193\\.122\\.4\\.108%3A9000:Vision.Plan1.Market Size Alias:English,Gen,2" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "Market Size Default",
+      "dataType" : "VARCHAR",
+      "sortBy" : "Market Size Sort Order#1",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Plan1",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:adm:thin:com\\.hyperion\\.ap\\.hsp\\.HspAdmDriver:193\\.122\\.4\\.108%3A9000:Vision.Plan1.Market Size.Market Size.Market Size Default" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "Market Size English",
+      "dataType" : "VARCHAR",
+      "sortBy" : "Market Size Sort Order#1",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Plan1",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:adm:thin:com\\.hyperion\\.ap\\.hsp\\.HspAdmDriver:193\\.122\\.4\\.108%3A9000:Vision.Plan1.Market Size.Market Size.Market Size English" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "Market Size Gen Number",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Plan1",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:adm:thin:com\\.hyperion\\.ap\\.hsp\\.HspAdmDriver:193\\.122\\.4\\.108%3A9000:Vision.Plan1.Market Size.Market Size.Market Size Gen Number" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "Market Size Leaf Indicator",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Plan1",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:adm:thin:com\\.hyperion\\.ap\\.hsp\\.HspAdmDriver:193\\.122\\.4\\.108%3A9000:Vision.Plan1.Market Size.Market Size.Market Size Leaf Indicator" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "Market Size Name",
+      "dataType" : "VARCHAR",
+      "sortBy" : "Market Size Sort Order#1",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Plan1",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:adm:thin:com\\.hyperion\\.ap\\.hsp\\.HspAdmDriver:193\\.122\\.4\\.108%3A9000:Vision.Plan1.Market Size.Market Size.Market Size Name" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "Market Size Name,Gen,1",
+      "dataType" : "VARCHAR",
+      "sortBy" : "Market Size Sort Order,Gen,1",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Plan1",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:adm:thin:com\\.hyperion\\.ap\\.hsp\\.HspAdmDriver:193\\.122\\.4\\.108%3A9000:Vision.Plan1.Market Size Name,Gen,1" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "Market Size Name,Gen,2",
+      "dataType" : "VARCHAR",
+      "sortBy" : "Market Size Sort Order,Gen,2",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Plan1",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:adm:thin:com\\.hyperion\\.ap\\.hsp\\.HspAdmDriver:193\\.122\\.4\\.108%3A9000:Vision.Plan1.Market Size Name,Gen,2" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "Market Size Parent Key",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Plan1",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:adm:thin:com\\.hyperion\\.ap\\.hsp\\.HspAdmDriver:193\\.122\\.4\\.108%3A9000:Vision.Plan1.Market Size.Market Size.Market Size Parent Key" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "Market Size Sort Order",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Plan1",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:adm:thin:com\\.hyperion\\.ap\\.hsp\\.HspAdmDriver:193\\.122\\.4\\.108%3A9000:Vision.Plan1.Market Size.Market Size.Market Size Sort Order" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "Market Size Sort Order#1",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Plan1",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:adm:thin:com\\.hyperion\\.ap\\.hsp\\.HspAdmDriver:193\\.122\\.4\\.108%3A9000:Vision.Plan1.Market Size.Market Size.Market Size Sort Order#1" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "Market Size Sort Order,Gen,1",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Plan1",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:adm:thin:com\\.hyperion\\.ap\\.hsp\\.HspAdmDriver:193\\.122\\.4\\.108%3A9000:Vision.Plan1.Market Size Sort Order,Gen,1" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "Market Size Sort Order,Gen,2",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Plan1",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:adm:thin:com\\.hyperion\\.ap\\.hsp\\.HspAdmDriver:193\\.122\\.4\\.108%3A9000:Vision.Plan1.Market Size Sort Order,Gen,2" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "Plan1",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalCubeTable:adm:thin:com\\.hyperion\\.ap\\.hsp\\.HspAdmDriver:193\\.122\\.4\\.108%3A9000:Vision.Plan1" ]
+      },
+      "dataGranularity" : [ "logicalLevel:Plan1.Market Size.Detail" ],
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "hierarchyType" : "PARENT_CHILD",
+    "parentChildHierarchy" : {
+      "name" : "Market Size",
+      "logicalLevels" : [ {
+        "name" : "Total",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : true,
+        "disableAggregateToHigherLevel" : false
+      }, {
+        "name" : "Detail",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Market Size Name" ],
+        "displayKey" : "Market Size Name",
+        "parentKey" : "Market Size Parent Key"
+      } ]
+    }
+  }
+}

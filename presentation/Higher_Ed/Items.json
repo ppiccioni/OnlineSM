@@ -1,0 +1,56 @@
+{
+  "presentationTable" : {
+    "name" : "Items",
+    "presentationColumns" : [ {
+      "name" : "DSYS_BATCH_ID",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Items.DSYS_BATCH_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_INSTANCE_ID",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Items.DSYS_INSTANCE_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_PROCESS_ID",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Items.DSYS_PROCESS_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Item",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Items.Item",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Item Category",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Items.Item Category",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "On Contract",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Items.On Contract",
+      "useLogicalColumnName" : true
+    } ],
+    "hierarchies" : [ {
+      "name" : "Item Hierarchy",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:Higher_Ed.Items",
+      "levels" : [ {
+        "name" : "All Items",
+        "sourceLogicalLevel" : "logicalLevel:Higher_Ed.Items.All Items"
+      }, {
+        "name" : "Item Category",
+        "sourceLogicalLevel" : "logicalLevel:Higher_Ed.Items.Item Category",
+        "displayColumn" : "presentationColumn:Higher_Ed.Items.Item Category"
+      }, {
+        "name" : "Item",
+        "sourceLogicalLevel" : "logicalLevel:Higher_Ed.Items.Item",
+        "displayColumn" : "presentationColumn:Higher_Ed.Items.Item"
+      } ]
+    } ]
+  }
+}

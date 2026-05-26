@@ -1,0 +1,77 @@
+{
+  "physicalTable" : {
+    "name" : "NFL_INFLUENCERS_TEAMS",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "S_INT_HUMIDITY",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "S_INT_LOC_LAT",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "S_INT_LOC_LONG",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "S_INT_TEMP",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "S_INT_WIND",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "S_SLP_HUMIDITY",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "S_SLP_LOC_LAT",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "S_SLP_LOC_LONG",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "S_SLP_TEMP",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "S_SLP_WIND",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "TEAM_KEY",
+      "dataType" : "VARCHAR",
+      "length" : 5,
+      "nullable" : true
+    }, {
+      "name" : "S_INT_DIST",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "S_SLP_DIST",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    } ],
+    "additionalKeys" : [ [ "TEAM_KEY" ] ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

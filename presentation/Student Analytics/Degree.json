@@ -1,0 +1,73 @@
+{
+  "presentationTable" : {
+    "name" : "Degree",
+    "presentationColumns" : [ {
+      "name" : "DEGREE_CD",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Degree.DEGREE_CD",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Degree",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Degree.Degree",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "DEGREE_GROUP_CD",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Degree.DEGREE_GROUP_CD",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Degree Group",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Degree.Degree Group",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "DEGREE_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Degree.DEGREE_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_BATCH_ID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Degree.DSYS_BATCH_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_INSTANCE_ID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Degree.DSYS_INSTANCE_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_PROCESS_ID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Degree.DSYS_PROCESS_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    } ],
+    "hierarchies" : [ {
+      "name" : "Degree Hierarchy",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:Student Analytics.Degree",
+      "levels" : [ {
+        "name" : "All Degrees",
+        "sourceLogicalLevel" : "logicalLevel:Student Analytics.Degree.All Degrees"
+      }, {
+        "name" : "Degree Group",
+        "sourceLogicalLevel" : "logicalLevel:Student Analytics.Degree.Degree Group",
+        "displayColumn" : "presentationColumn:Student Analytics.Degree.Degree Group"
+      }, {
+        "name" : "Degree",
+        "sourceLogicalLevel" : "logicalLevel:Student Analytics.Degree.Degree",
+        "displayColumn" : "presentationColumn:Student Analytics.Degree.Degree"
+      } ]
+    } ]
+  }
+}

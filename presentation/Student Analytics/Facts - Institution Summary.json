@@ -1,0 +1,308 @@
+{
+  "presentationTable" : {
+    "name" : "Facts - Institution Summary",
+    "presentationColumns" : [ {
+      "name" : "ACADEMIC_ORG_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Institution Summary.ACADEMIC_ORG_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "ADMIT_TERM_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Institution Summary.ADMIT_TERM_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "COHORT_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Institution Summary.COHORT_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DEGREE_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Institution Summary.DEGREE_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_BATCH_ID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Institution Summary.DSYS_BATCH_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_INSTANCE_ID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Institution Summary.DSYS_INSTANCE_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_PROCESS_ID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Institution Summary.DSYS_PROCESS_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Enrollment Adj 6Mo",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Institution Summary.Enrollment Adj 6Mo",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Enrollment Adj Yr1",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Institution Summary.Enrollment Adj Yr1",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Enrollment Adj Yr2",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Institution Summary.Enrollment Adj Yr2",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Enrollment Adj Yr3",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Institution Summary.Enrollment Adj Yr3",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Enrollment Adj Yr4",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Institution Summary.Enrollment Adj Yr4",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Enrollment Adj Yr5",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Institution Summary.Enrollment Adj Yr5",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Enrollment Adj Yr6",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Institution Summary.Enrollment Adj Yr6",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Enrollment Adj Yr7",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Institution Summary.Enrollment Adj Yr7",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Enrollment Adj Yr8",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Institution Summary.Enrollment Adj Yr8",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Enrollment Adj Yr9",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Institution Summary.Enrollment Adj Yr9",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Enrollment Count 6Mo",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Institution Summary.Enrollment Count 6Mo",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Enrollment Count Yr1",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Institution Summary.Enrollment Count Yr1",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Enrollment Count Yr2",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Institution Summary.Enrollment Count Yr2",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Enrollment Count Yr3",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Institution Summary.Enrollment Count Yr3",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Enrollment Count Yr4",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Institution Summary.Enrollment Count Yr4",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Enrollment Count Yr5",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Institution Summary.Enrollment Count Yr5",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Enrollment Count Yr6",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Institution Summary.Enrollment Count Yr6",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Enrollment Count Yr7",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Institution Summary.Enrollment Count Yr7",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Enrollment Count Yr8",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Institution Summary.Enrollment Count Yr8",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Enrollment Count Yr9",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Institution Summary.Enrollment Count Yr9",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Graduation Count Yr1",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Institution Summary.Graduation Count Yr1",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Graduation Count Yr2",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Institution Summary.Graduation Count Yr2",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Graduation Count Yr3",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Institution Summary.Graduation Count Yr3",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Graduation Count Yr4",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Institution Summary.Graduation Count Yr4",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Graduation Count Yr5",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Institution Summary.Graduation Count Yr5",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Graduation Count Yr6",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Institution Summary.Graduation Count Yr6",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Graduation Count Yr7",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Institution Summary.Graduation Count Yr7",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Graduation Count Yr8",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Institution Summary.Graduation Count Yr8",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Graduation Count Yr9",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Institution Summary.Graduation Count Yr9",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "MAJOR_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Institution Summary.MAJOR_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "MATRIC_ACADEMIC_ATTRIB_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Institution Summary.MATRIC_ACADEMIC_ATTRIB_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "MATRIC_ACADEMIC_ORG_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Institution Summary.MATRIC_ACADEMIC_ORG_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "MATRIC_ACADEMIC_PROFILE_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Institution Summary.MATRIC_ACADEMIC_PROFILE_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "PROGRAM_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Institution Summary.PROGRAM_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "ROW_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Institution Summary.ROW_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "STUDENT_ACADEMIC_ATTRIB_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Institution Summary.STUDENT_ACADEMIC_ATTRIB_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "STUDENT_ACADEMIC_PROFILE_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Institution Summary.STUDENT_ACADEMIC_PROFILE_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Student Age Admit Term",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Institution Summary.Student Age Admit Term",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "STUDENT_BIODEMO_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Institution Summary.STUDENT_BIODEMO_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "STUDENT_LOCATION_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Institution Summary.STUDENT_LOCATION_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "YR1_FALL_TERM_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Institution Summary.YR1_FALL_TERM_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "YR2_FALL_TERM_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Institution Summary.YR2_FALL_TERM_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "YR3_FALL_TERM_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Institution Summary.YR3_FALL_TERM_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "YR4_FALL_TERM_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Institution Summary.YR4_FALL_TERM_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "YR5_FALL_TERM_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Institution Summary.YR5_FALL_TERM_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "YR6_FALL_TERM_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Institution Summary.YR6_FALL_TERM_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "YR7_FALL_TERM_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Institution Summary.YR7_FALL_TERM_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "YR8_FALL_TERM_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Institution Summary.YR8_FALL_TERM_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "YR9_FALL_TERM_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Institution Summary.YR9_FALL_TERM_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    } ]
+  }
+}

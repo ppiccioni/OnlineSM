@@ -1,0 +1,140 @@
+{
+  "presentationTable" : {
+    "name" : "MKT_Tactics",
+    "presentationColumns" : [ {
+      "name" : "BR Category",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MKT_Tactics.BR Category",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "CAMPAIGN_CODE",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MKT_Tactics.CAMPAIGN_CODE",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Campaign Id",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MKT_Tactics.Campaign Id",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Campaign Name",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MKT_Tactics.Campaign Name",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Channel",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MKT_Tactics.Channel",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "CurrencyMetric1",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MKT_Tactics.CurrencyMetric1",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "CurrencyMetric2",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MKT_Tactics.CurrencyMetric2",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "End Date",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MKT_Tactics.End Date",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Inbound Flag",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MKT_Tactics.Inbound Flag",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "IntegerMetric1",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MKT_Tactics.IntegerMetric1",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "IntegerMetric2",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MKT_Tactics.IntegerMetric2",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "IntegerMetric3",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MKT_Tactics.IntegerMetric3",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "MODEL_USED",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MKT_Tactics.MODEL_USED",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Marketing Plan",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MKT_Tactics.Marketing Plan",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Offer",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MKT_Tactics.Offer",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Opty Generating",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MKT_Tactics.Opty Generating",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Order Generating",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MKT_Tactics.Order Generating",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "PROG_ROW_ID",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MKT_Tactics.PROG_ROW_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Primary Channel",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MKT_Tactics.Primary Channel",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Product Category Id",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MKT_Tactics.Product Category Id",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Program",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MKT_Tactics.Program",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Stage",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MKT_Tactics.Stage",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Start Date",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MKT_Tactics.Start Date",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Status",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MKT_Tactics.Status",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Tactic Type",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MKT_Tactics.Tactic Type",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Treatment",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MKT_Tactics.Treatment",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Type",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MKT_Tactics.Type",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Vertical Demo",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MKT_Tactics.Vertical Demo",
+      "useLogicalColumnName" : true
+    } ],
+    "hierarchies" : [ {
+      "name" : "Hierarchy 1",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:MtM_Campaign2Order.MKT_Tactics",
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:MtM_Campaign2Order.MKT_Tactics.Total"
+      }, {
+        "name" : "Detail",
+        "sourceLogicalLevel" : "logicalLevel:MtM_Campaign2Order.MKT_Tactics.Detail",
+        "displayColumn" : "presentationColumn:MtM_Campaign2Order.MKT_Tactics.Campaign Id"
+      } ]
+    } ]
+  }
+}

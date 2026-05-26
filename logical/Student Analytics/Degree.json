@@ -1,0 +1,167 @@
+{
+  "logicalTable" : {
+    "name" : "Degree",
+    "type" : "DIMENSION",
+    "primaryKey" : [ "DEGREE_WID" ],
+    "logicalColumns" : [ {
+      "name" : "DEGREE_CD",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SA_D_DEGREE_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_DEGREE.DEGREE_CD" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Degree",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SA_D_DEGREE_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_DEGREE.DEGREE_DESC" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Degree"
+    }, {
+      "name" : "DEGREE_GROUP_CD",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SA_D_DEGREE_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_DEGREE.DEGREE_GROUP_CD" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Degree Group",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SA_D_DEGREE_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_DEGREE.DEGREE_GROUP_DESC" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Degree Group"
+    }, {
+      "name" : "DEGREE_WID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SA_D_DEGREE_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_DEGREE.DEGREE_WID" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Degree"
+    }, {
+      "name" : "DSYS_BATCH_ID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SA_D_DEGREE_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_DEGREE.DSYS_BATCH_ID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "DSYS_INSTANCE_ID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SA_D_DEGREE_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_DEGREE.DSYS_INSTANCE_ID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "DSYS_PROCESS_ID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SA_D_DEGREE_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_DEGREE.DSYS_PROCESS_ID" ]
+          }
+        } ]
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "SA_D_DEGREE_LTS",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:Student Analytics.CAT10.SCH10.SA_D_DEGREE" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "hierarchyType" : "LEVEL_BASED",
+    "levelBasedHierarchy" : {
+      "defaultRootLevel" : "All Degrees",
+      "ragged" : false,
+      "skipped" : false,
+      "logicalLevels" : [ {
+        "name" : "All Degrees",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : true,
+        "disableAggregateToHigherLevel" : false
+      }, {
+        "name" : "Degree Group",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Degree Group" ],
+        "displayKey" : "Degree Group",
+        "chronologicalKey" : [ "Degree Group" ]
+      }, {
+        "name" : "Degree",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "DEGREE_WID" ],
+        "displayKey" : "Degree",
+        "additionalKeys" : [ [ "Degree" ] ],
+        "chronologicalKey" : [ "DEGREE_WID" ]
+      } ],
+      "logicalHierarchies" : [ {
+        "name" : "Degree",
+        "description" : "default hierarchy",
+        "levels" : [ "All Degrees", "Degree Group", "Degree" ]
+      } ]
+    }
+  }
+}

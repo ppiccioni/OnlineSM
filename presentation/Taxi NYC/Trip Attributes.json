@@ -1,0 +1,28 @@
+{
+  "presentationTable" : {
+    "name" : "Trip Attributes",
+    "presentationColumns" : [ {
+      "name" : "Stop and Fwd Flag",
+      "sourceLogicalColumn" : "logicalColumn:Taxi NYC.Trip Attributes.Stop and Fwd Flag",
+      "useLogicalColumnName" : true,
+      "alternateNames" : [ "Stopre and Fwd Flag" ]
+    }, {
+      "name" : "# of Pax",
+      "sourceLogicalColumn" : "logicalColumn:Taxi NYC.Trip Attributes.# of Pax",
+      "useLogicalColumnName" : true,
+      "alternateNames" : [ "# of Passengers" ]
+    }, {
+      "name" : "Payment Type",
+      "sourceLogicalColumn" : "logicalColumn:Taxi NYC.Trip Attributes.Payment Type",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Rate Code",
+      "sourceLogicalColumn" : "logicalColumn:Taxi NYC.Trip Attributes.Rate Code",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Trip Total Amt",
+      "sourceLogicalColumn" : "logicalColumn:Taxi NYC.Ride.Trip Total Amt",
+      "useLogicalColumnName" : true
+    } ]
+  }
+}

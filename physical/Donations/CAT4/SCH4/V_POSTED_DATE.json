@@ -1,0 +1,52 @@
+{
+  "physicalTable" : {
+    "name" : "V_POSTED_DATE",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "DAY_DT",
+      "dataType" : "DATETIME",
+      "length" : 7,
+      "nullable" : true
+    }, {
+      "name" : "MTH",
+      "dataType" : "VARCHAR",
+      "length" : 7,
+      "nullable" : true
+    }, {
+      "name" : "MTH_ID",
+      "dataType" : "VARCHAR",
+      "length" : 6,
+      "nullable" : true
+    }, {
+      "name" : "MTH_NAME",
+      "dataType" : "VARCHAR",
+      "length" : 12,
+      "nullable" : true
+    }, {
+      "name" : "MTH_NUM",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "QTR",
+      "dataType" : "VARCHAR",
+      "length" : 7,
+      "nullable" : true
+    }, {
+      "name" : "QTR_NUM",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "YR",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    } ],
+    "additionalKeys" : [ [ "DAY_DT" ] ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

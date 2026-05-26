@@ -1,0 +1,267 @@
+{
+  "presentationTable" : {
+    "name" : "Teams Composite Rank",
+    "presentationColumns" : [ {
+      "name" : "AVG_AFIRSTDOWN",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Teams Composite Rank.AVG_AFIRSTDOWN",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "AVG_APASSATT",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Teams Composite Rank.AVG_APASSATT",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "AVG_APASSCOMP",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Teams Composite Rank.AVG_APASSCOMP",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "AVG_APASSINT",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Teams Composite Rank.AVG_APASSINT",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "AVG_APASSYDS",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Teams Composite Rank.AVG_APASSYDS",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "AVG_APENYDS",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Teams Composite Rank.AVG_APENYDS",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "AVG_ARUSHATT",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Teams Composite Rank.AVG_ARUSHATT",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "AVG_ARUSHYDS",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Teams Composite Rank.AVG_ARUSHYDS",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "AVG_ATHIRDDOWNPCT",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Teams Composite Rank.AVG_ATHIRDDOWNPCT",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "AVG_SLOSS",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Teams Composite Rank.AVG_SLOSS",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "AVG_SWIN",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Teams Composite Rank.AVG_SWIN",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Sigmas Pass Attempts",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Teams Composite Rank.Sigmas Pass Attempts",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "STD_AFIRSTDOWN",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Teams Composite Rank.STD_AFIRSTDOWN",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "STD_APASSATT",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Teams Composite Rank.STD_APASSATT",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "STD_APASSCOMP",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Teams Composite Rank.STD_APASSCOMP",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "STD_APASSINT",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Teams Composite Rank.STD_APASSINT",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "STD_APASSYDS",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Teams Composite Rank.STD_APASSYDS",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "STD_APENYDS",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Teams Composite Rank.STD_APENYDS",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "STD_ARUSHATT",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Teams Composite Rank.STD_ARUSHATT",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "STD_ARUSHYDS",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Teams Composite Rank.STD_ARUSHYDS",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "STD_ASCORE",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Teams Composite Rank.STD_ASCORE",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "STD_ATHIRDDOWNPCT",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Teams Composite Rank.STD_ATHIRDDOWNPCT",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "STD_SLOSS",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Teams Composite Rank.STD_SLOSS",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "STD_SWIN",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Teams Composite Rank.STD_SWIN",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "TEAM_KEY",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Teams Composite Rank.TEAM_KEY",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Sigmas Rush Yards",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Teams Composite Rank.Sigmas Rush Yards",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Sigmas Rush Att",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Teams Composite Rank.Sigmas Rush Att",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Sigmas Pass Yards",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Teams Composite Rank.Sigmas Pass Yards",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Sigmas First  Downs",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Teams Composite Rank.Sigmas First  Downs",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Sigmas 3rd  Downs %",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Teams Composite Rank.Sigmas 3rd  Downs %",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Sigmas Penalty Yards",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Teams Composite Rank.Sigmas Penalty Yards",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Sigmas Pass Intercpt %",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Teams Composite Rank.Sigmas Pass Intercpt %",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Sigmas Score Team",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Teams Composite Rank.Sigmas Score Team",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "STD_APASSINTR",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Teams Composite Rank.STD_APASSINTR",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "AVG_APASSINTR",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Teams Composite Rank.AVG_APASSINTR",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "AVG_ASCORE",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Teams Composite Rank.AVG_ASCORE",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Avg Sigma",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Teams Composite Rank.Avg Sigma",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "AVG_AWINRATE",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Teams Composite Rank.AVG_AWINRATE",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Sigmas Win Rate",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Teams Composite Rank.Sigmas Win Rate",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "STD_AWINRATE",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Teams Composite Rank.STD_AWINRATE",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Avg Sigma 1",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Teams Composite Rank.Avg Sigma 1",
+      "useLogicalColumnName" : true
+    } ],
+    "hierarchies" : [ {
+      "name" : "Hierarchy 1",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:NFL Stats.Teams Composite Rank",
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:NFL Stats.Teams Composite Rank.Total"
+      }, {
+        "name" : "Detail",
+        "sourceLogicalLevel" : "logicalLevel:NFL Stats.Teams Composite Rank.Detail",
+        "displayColumn" : "presentationColumn:NFL Stats.Teams Composite Rank.TEAM_KEY"
+      } ]
+    } ]
+  }
+}

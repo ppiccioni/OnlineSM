@@ -1,0 +1,91 @@
+{
+  "physicalTable" : {
+    "name" : "V_RTD Facts",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "CO_ATTRIBUTENAME",
+      "dataType" : "VARCHAR",
+      "length" : 255,
+      "nullable" : true
+    }, {
+      "name" : "PR_ATTRIBUTENAME",
+      "dataType" : "VARCHAR",
+      "length" : 255,
+      "nullable" : true
+    }, {
+      "name" : "TIMEWINDOW",
+      "dataType" : "VARCHAR",
+      "length" : 255,
+      "nullable" : true
+    }, {
+      "name" : "ATTRIBUTEVALUE",
+      "dataType" : "VARCHAR",
+      "length" : 255,
+      "nullable" : true
+    }, {
+      "name" : "CHOICE_ID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "COID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "CORRELATION",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "TOTALCOUNT",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "MODELQUALITY",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "PRID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "PREDICTIVENESS",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "STID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "ID",
+      "dataType" : "VARCHAR",
+      "length" : 100,
+      "nullable" : false
+    } ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    },
+    "joins" : [ {
+      "rightTable" : "physicalTable:MtM_Campaign2Order.CAT8.SCH8.V_Correlate and Predict",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.V_RTD Facts.ID",
+        "rightColumn" : "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.V_Correlate and Predict.ID"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:MtM_Campaign2Order.CAT8.SCH8.V_RTD_ChoSeg",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.V_RTD Facts.CHOICE_ID",
+        "rightColumn" : "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.V_RTD_ChoSeg.CHOICE_ID"
+      } ]
+    } ]
+  }
+}

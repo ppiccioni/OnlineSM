@@ -1,0 +1,43 @@
+{
+  "presentationTable" : {
+    "name" : "Orders",
+    "presentationColumns" : [ {
+      "name" : "Billed Date",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Orders.Billed Date",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Currency",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Orders.Currency",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Order Id",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Orders.Order Id",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Order Number",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Orders.Order Number",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Order Status",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Orders.Order Status",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Order Type",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Orders.Order Type",
+      "useLogicalColumnName" : true
+    } ],
+    "hierarchies" : [ {
+      "name" : "Hierarchy 1",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:MtM_Campaign2Order.Orders",
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:MtM_Campaign2Order.Orders.Total"
+      }, {
+        "name" : "Detail",
+        "sourceLogicalLevel" : "logicalLevel:MtM_Campaign2Order.Orders.Detail",
+        "displayColumn" : "presentationColumn:MtM_Campaign2Order.Orders.Order Id"
+      } ]
+    } ]
+  }
+}

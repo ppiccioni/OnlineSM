@@ -1,0 +1,58 @@
+{
+  "presentationTable" : {
+    "name" : "Game",
+    "presentationColumns" : [ {
+      "name" : "Game",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Game.Game",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Game Season",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Game.Game Season",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Game Sort (Dev)",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Game.Game Sort (Dev)",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Game Type",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Game.Game Type",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "QB Opp",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Game.QB Opp",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "QB Team",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Game.QB Team",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "QBs Pair",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Game.QBs Pair",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Participation UID",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Game.Participation UID",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Game UID",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Game.Game UID",
+      "useLogicalColumnName" : true
+    } ],
+    "hierarchies" : [ {
+      "name" : "Hierarchy 1",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:NFL Stats.Game",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      },
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:NFL Stats.Game.Total"
+      }, {
+        "name" : "Detail",
+        "sourceLogicalLevel" : "logicalLevel:NFL Stats.Game.Detail",
+        "displayColumn" : "presentationColumn:NFL Stats.Game.Participation UID"
+      } ]
+    } ]
+  }
+}

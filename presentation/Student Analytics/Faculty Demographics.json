@@ -1,0 +1,138 @@
+{
+  "presentationTable" : {
+    "name" : "Faculty Demographics",
+    "presentationColumns" : [ {
+      "name" : "DSYS_BATCH_ID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Faculty Demographics.DSYS_BATCH_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_INSTANCE_ID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Faculty Demographics.DSYS_INSTANCE_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_PROCESS_ID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Faculty Demographics.DSYS_PROCESS_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "ETHNIC_GROUP_CD",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Faculty Demographics.ETHNIC_GROUP_CD",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Ethnic Group",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Faculty Demographics.Ethnic Group",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "FACULTY_BIODEMO_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Faculty Demographics.FACULTY_BIODEMO_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "FACULTY_STIPEND_CD",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Faculty Demographics.FACULTY_STIPEND_CD",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Faculty Stipend",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Faculty Demographics.Faculty Stipend",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "GENDER_CD",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Faculty Demographics.GENDER_CD",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Gender",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Faculty Demographics.Gender",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "HISPANIC_FACULTY_CD",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Faculty Demographics.HISPANIC_FACULTY_CD",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Hispanic Faculty",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Faculty Demographics.Hispanic Faculty",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "INTL_FACULTY_CD",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Faculty Demographics.INTL_FACULTY_CD",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "IN_STATE_FACULTY_CD",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Faculty Demographics.IN_STATE_FACULTY_CD",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "In-State Faculty",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Faculty Demographics.In-State Faculty",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "International Faculty",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Faculty Demographics.International Faculty",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "MARITAL_STATUS_CD",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Faculty Demographics.MARITAL_STATUS_CD",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "MILITARY_FACULTY_CD",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Faculty Demographics.MILITARY_FACULTY_CD",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Marital Status",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Faculty Demographics.Marital Status",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Military Faculty",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Faculty Demographics.Military Faculty",
+      "useLogicalColumnName" : true
+    } ],
+    "hierarchies" : [ {
+      "name" : "Hierarchy 1",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:Student Analytics.Faculty Demographics",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      },
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:Student Analytics.Faculty Demographics.Total"
+      }, {
+        "name" : "Detail",
+        "sourceLogicalLevel" : "logicalLevel:Student Analytics.Faculty Demographics.Detail",
+        "displayColumn" : "presentationColumn:Student Analytics.Faculty Demographics.FACULTY_BIODEMO_WID"
+      } ]
+    } ]
+  }
+}

@@ -1,0 +1,253 @@
+{
+  "logicalTable" : {
+    "name" : "Location",
+    "type" : "DIMENSION",
+    "primaryKey" : [ "LOCATION_WID" ],
+    "logicalColumns" : [ {
+      "name" : "City",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SA_D_LOCATION_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_LOCATION.CITY_NAME" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "USA City"
+    }, {
+      "name" : "COUNTRY_CD",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SA_D_LOCATION_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_LOCATION.COUNTRY_CD" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Country",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SA_D_LOCATION_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_LOCATION.COUNTRY_NAME" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Country"
+    }, {
+      "name" : "DSYS_BATCH_ID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SA_D_LOCATION_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_LOCATION.DSYS_BATCH_ID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "DSYS_INSTANCE_ID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SA_D_LOCATION_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_LOCATION.DSYS_INSTANCE_ID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "DSYS_PROCESS_ID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SA_D_LOCATION_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_LOCATION.DSYS_PROCESS_ID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Latitude",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SA_D_LOCATION_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_LOCATION.LATITUDE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "LOCATION_WID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SA_D_LOCATION_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_LOCATION.LOCATION_WID" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Postal Code"
+    }, {
+      "name" : "Longitude",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SA_D_LOCATION_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_LOCATION.LONGITUDE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Postal Code",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SA_D_LOCATION_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_LOCATION.POSTAL_CD" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Postal Code"
+    }, {
+      "name" : "STATE_CD",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SA_D_LOCATION_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_LOCATION.STATE_CD" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "State",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SA_D_LOCATION_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_LOCATION.STATE_NAME" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "State"
+    }, {
+      "name" : "USA City",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "'USA' || '_' || %1 || '_' || %2",
+          "expressionObjects" : [ "logicalColumn:Student Analytics.Location.State", "logicalColumn:Student Analytics.Location.City" ]
+        }
+      },
+      "logicalLevel" : "USA City"
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "SA_D_LOCATION_LTS",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:Student Analytics.CAT10.SCH10.SA_D_LOCATION" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "hierarchyType" : "LEVEL_BASED",
+    "levelBasedHierarchy" : {
+      "defaultRootLevel" : "All Locations",
+      "ragged" : false,
+      "skipped" : false,
+      "logicalLevels" : [ {
+        "name" : "All Locations",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : true,
+        "disableAggregateToHigherLevel" : false
+      }, {
+        "name" : "Country",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Country" ],
+        "displayKey" : "Country",
+        "chronologicalKey" : [ "Country" ]
+      }, {
+        "name" : "State",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "State" ],
+        "displayKey" : "State",
+        "chronologicalKey" : [ "State" ]
+      }, {
+        "name" : "USA City",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "USA City" ],
+        "displayKey" : "USA City",
+        "chronologicalKey" : [ "USA City" ]
+      }, {
+        "name" : "Postal Code",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "LOCATION_WID" ],
+        "displayKey" : "Postal Code",
+        "additionalKeys" : [ [ "Postal Code" ] ],
+        "chronologicalKey" : [ "LOCATION_WID" ]
+      } ],
+      "logicalHierarchies" : [ {
+        "name" : "Location",
+        "description" : "default hierarchy",
+        "levels" : [ "All Locations", "Country", "State", "USA City", "Postal Code" ]
+      } ]
+    }
+  }
+}

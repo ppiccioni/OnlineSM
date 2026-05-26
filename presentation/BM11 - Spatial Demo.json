@@ -1,0 +1,13 @@
+{
+  "subjectArea" : {
+    "name" : "BM11 - Spatial Demo",
+    "sourceBusinessModel" : "businessModel:BM11 - Spatial Demo",
+    "tableOrder" : [ {
+      "name" : "presentationTable:BM11 - Spatial Demo.Hotels"
+    }, {
+      "name" : "presentationTable:BM11 - Spatial Demo.Facts"
+    }, {
+      "name" : "presentationTable:BM11 - Spatial Demo.Restaurants"
+    } ]
+  }
+}

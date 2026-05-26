@@ -1,0 +1,68 @@
+{
+  "presentationTable" : {
+    "name" : "Suppliers",
+    "presentationColumns" : [ {
+      "name" : "Diversity",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Suppliers.Diversity",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "DSYS_BATCH_ID",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Suppliers.DSYS_BATCH_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_INSTANCE_ID",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Suppliers.DSYS_INSTANCE_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_PROCESS_ID",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Suppliers.DSYS_PROCESS_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Minority Owned",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Suppliers.Minority Owned",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Small Bus",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Suppliers.Small Bus",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Supplier",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Suppliers.Supplier",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Supplier Category",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Suppliers.Supplier Category",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Woman Owned",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Suppliers.Woman Owned",
+      "useLogicalColumnName" : true
+    } ],
+    "hierarchies" : [ {
+      "name" : "Supplier Hierarchy",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:Higher_Ed.Suppliers",
+      "levels" : [ {
+        "name" : "All Suppliers",
+        "sourceLogicalLevel" : "logicalLevel:Higher_Ed.Suppliers.All Suppliers"
+      }, {
+        "name" : "Supplier Category",
+        "sourceLogicalLevel" : "logicalLevel:Higher_Ed.Suppliers.Supplier Category",
+        "displayColumn" : "presentationColumn:Higher_Ed.Suppliers.Supplier Category"
+      }, {
+        "name" : "Supplier",
+        "sourceLogicalLevel" : "logicalLevel:Higher_Ed.Suppliers.Supplier",
+        "displayColumn" : "presentationColumn:Higher_Ed.Suppliers.Supplier"
+      } ]
+    } ]
+  }
+}

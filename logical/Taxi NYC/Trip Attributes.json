@@ -1,0 +1,131 @@
+{
+  "logicalTable" : {
+    "name" : "Trip Attributes",
+    "type" : "DIMENSION",
+    "primaryKey" : [ "ATTR_KEY" ],
+    "logicalColumns" : [ {
+      "name" : "ATTR_KEY",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "NYCT_ATTR",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_ATTR.ATTR_KEY" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Trip Attributes Detail"
+    }, {
+      "name" : "# of Pax",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "NYCT_ATTR",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_ATTR.PASSENGER_COUNT" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Trip Attributes Detail"
+    }, {
+      "name" : "Payment Type",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "NYCT_ATTR",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_ATTR.PAYMENT_TYPE" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Trip Attributes Detail"
+    }, {
+      "name" : "Rate Code",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "NYCT_ATTR",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_ATTR.RATE_CODE" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Trip Attributes Detail"
+    }, {
+      "name" : "Stop and Fwd Flag",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "NYCT_ATTR",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_ATTR.STORE_AND_FWD_FLAG" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Trip Attributes Detail"
+    }, {
+      "name" : "Vendor",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "NYCT_ATTR",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_ATTR.VENDOR_ID" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Trip Attributes Detail"
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "NYCT_ATTR",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:Taxi NYC.CAT9.CAT9.NYCT_ATTR" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "hierarchyType" : "LEVEL_BASED",
+    "levelBasedHierarchy" : {
+      "defaultRootLevel" : "Trip Attributes Total",
+      "ragged" : false,
+      "skipped" : false,
+      "logicalLevels" : [ {
+        "name" : "Trip Attributes Total",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : true,
+        "disableAggregateToHigherLevel" : false
+      }, {
+        "name" : "Trip Attributes Detail",
+        "numberOfElements" : 14776615,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "ATTR_KEY" ],
+        "displayKey" : "ATTR_KEY"
+      } ],
+      "logicalHierarchies" : [ {
+        "name" : "Trip AttributesDim",
+        "levels" : [ "Trip Attributes Total", "Trip Attributes Detail" ]
+      } ]
+    }
+  }
+}

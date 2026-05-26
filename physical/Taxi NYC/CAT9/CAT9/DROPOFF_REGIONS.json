@@ -1,0 +1,14 @@
+{
+  "physicalTable": {
+    "name": "DROPOFF_REGIONS",
+    "sourceTable": "physicalTable:Taxi NYC.CAT9.CAT9.NYCT_REGIONS",
+    "caching": {
+      "enable": true
+    },
+    "additionalKeys": [
+      [
+        "REGIONID"
+      ]
+    ]
+  }
+}

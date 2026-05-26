@@ -1,0 +1,102 @@
+{
+  "presentationTable" : {
+    "name" : "Calculated Revenue Facts",
+    "presentationColumns" : [ {
+      "name" : "Address Id",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Calculated Revenue Facts.Address Id",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Bill Date",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Calculated Revenue Facts.Bill Date",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "COST_FIXED",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Calculated Revenue Facts.COST_FIXED",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "COST_VARIABLE",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Calculated Revenue Facts.COST_VARIABLE",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Customer Id",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Calculated Revenue Facts.Customer Id",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DISCNT_RATE",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Calculated Revenue Facts.DISCNT_RATE",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DISCNT_VALUE",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Calculated Revenue Facts.DISCNT_VALUE",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Office Id",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Calculated Revenue Facts.Office Id",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Order Id",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Calculated Revenue Facts.Order Id",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Product Id",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Calculated Revenue Facts.Product Id",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "REVENUE",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Calculated Revenue Facts.REVENUE",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "SalesRep Id",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Calculated Revenue Facts.SalesRep Id",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "UNITS",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Calculated Revenue Facts.UNITS",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Net Costs",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Calculated Revenue Facts.Net Costs",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Actual Unit Price",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Calculated Revenue Facts.Actual Unit Price",
+      "useLogicalColumnName" : true
+    } ]
+  }
+}

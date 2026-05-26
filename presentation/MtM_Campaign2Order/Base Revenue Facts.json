@@ -1,0 +1,100 @@
+{
+  "presentationTable" : {
+    "name" : "Base Revenue Facts",
+    "presentationColumns" : [ {
+      "name" : "Bill Date",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Base Revenue Facts.Bill Date",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Cost - Fixed",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Base Revenue Facts.Cost - Fixed",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Cost - Variable",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Base Revenue Facts.Cost - Variable",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Customer Id",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Base Revenue Facts.Customer Id",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Discount Rate",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Base Revenue Facts.Discount Rate",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Discount Value",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Base Revenue Facts.Discount Value",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "SalesRep Id",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Base Revenue Facts.SalesRep Id",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Office Id",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Base Revenue Facts.Office Id",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Order Id",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Base Revenue Facts.Order Id",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Product Id",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Base Revenue Facts.Product Id",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Revenue",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Base Revenue Facts.Revenue",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "ShipTo Address Id",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Base Revenue Facts.ShipTo Address Id",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Quantity",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Base Revenue Facts.Quantity",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "# SalesReps",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Base Revenue Facts.# SalesReps",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "# Customers",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Base Revenue Facts.# Customers",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "# Products",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Base Revenue Facts.# Products",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "# Orders",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Base Revenue Facts.# Orders",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Cost - Net",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Base Revenue Facts.Cost - Net",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Avg Order Size",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Base Revenue Facts.Avg Order Size",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Unit Price",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Base Revenue Facts.Unit Price",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Profit Ratio %",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Base Revenue Facts.Profit Ratio %",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Profit Value",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Base Revenue Facts.Profit Value",
+      "useLogicalColumnName" : true
+    } ]
+  }
+}

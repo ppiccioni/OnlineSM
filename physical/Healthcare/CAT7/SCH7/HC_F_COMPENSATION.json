@@ -1,0 +1,90 @@
+{
+  "physicalTable" : {
+    "name" : "HC_F_COMPENSATION",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "BASE_COMP",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "DSYS_BATCH_ID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "DSYS_INSTANCE_ID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "DSYS_PROCESS_ID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "DATE_ID",
+      "dataType" : "VARCHAR",
+      "length" : 50,
+      "nullable" : false
+    }, {
+      "name" : "DEPARTMENT",
+      "dataType" : "VARCHAR",
+      "length" : 50,
+      "nullable" : false
+    }, {
+      "name" : "EMPLOYEE_NAME",
+      "dataType" : "VARCHAR",
+      "length" : 50,
+      "nullable" : false
+    }, {
+      "name" : "HEADCOUNT",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "JOB_DESCRIPTION",
+      "dataType" : "VARCHAR",
+      "length" : 50,
+      "nullable" : false
+    }, {
+      "name" : "OVERTIME_COMP",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    } ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    },
+    "joins" : [ {
+      "rightTable" : "physicalTable:Healthcare.CAT7.SCH7.HC_D_DEPARTMENTS",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:Healthcare.CAT7.SCH7.HC_F_COMPENSATION.DEPARTMENT",
+        "rightColumn" : "physicalColumn:Healthcare.CAT7.SCH7.HC_D_DEPARTMENTS.DEPARTMENT"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:Healthcare.CAT7.SCH7.HC_D_EMPLOYEES",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:Healthcare.CAT7.SCH7.HC_F_COMPENSATION.EMPLOYEE_NAME",
+        "rightColumn" : "physicalColumn:Healthcare.CAT7.SCH7.HC_D_EMPLOYEES.EMPLOYEE_NAME"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:Healthcare.CAT7.SCH7.HC_D_JOBS",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:Healthcare.CAT7.SCH7.HC_F_COMPENSATION.JOB_DESCRIPTION",
+        "rightColumn" : "physicalColumn:Healthcare.CAT7.SCH7.HC_D_JOBS.JOB_DESCRIPTION"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:Healthcare.CAT7.SCH7.HC_D_TIME",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:Healthcare.CAT7.SCH7.HC_F_COMPENSATION.DATE_ID",
+        "rightColumn" : "physicalColumn:Healthcare.CAT7.SCH7.HC_D_TIME.DATE_ID"
+      } ]
+    } ]
+  }
+}

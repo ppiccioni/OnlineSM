@@ -1,0 +1,47 @@
+{
+  "presentationTable" : {
+    "name" : "Driver Avg",
+    "presentationColumns" : [ {
+      "name" : "Daily Drive Time (Mins) by Driver",
+      "sourceLogicalColumn" : "logicalColumn:Taxi NYC.Facts.Daily Drive Time (Mins) by Driver",
+      "useLogicalColumnName" : true,
+      "alternateNames" : [ "Avg Daily Time by Driver", "Avg Dayli Time by Driver", "Avg Time by Driver", "Daily Drive Time by Driver (Min)", "Daily Time by Driver" ]
+    }, {
+      "name" : "Daily Miles by Driver",
+      "sourceLogicalColumn" : "logicalColumn:Taxi NYC.Facts.Daily Miles by Driver",
+      "useLogicalColumnName" : true,
+      "alternateNames" : [ "Avg Daily Miles by Driver", "Avg Miles by Driver" ]
+    }, {
+      "name" : "Avg Speed by Driver",
+      "sourceLogicalColumn" : "logicalColumn:Taxi NYC.Facts.Avg Speed by Driver",
+      "useLogicalColumnName" : true,
+      "alternateNames" : [ "Avg Daily Speed by Driver" ]
+    }, {
+      "name" : "Daily Amt by Driver",
+      "sourceLogicalColumn" : "logicalColumn:Taxi NYC.Facts.Daily Amt by Driver",
+      "useLogicalColumnName" : true,
+      "alternateNames" : [ "Avg Amt by Driver", "Avg Daily Amt by Driver" ]
+    }, {
+      "name" : "Daily Trips by Driver",
+      "sourceLogicalColumn" : "logicalColumn:Taxi NYC.Facts.Daily Trips by Driver",
+      "useLogicalColumnName" : true,
+      "alternateNames" : [ "Avg Daily Trips by Driver", "Avg Trips by Driver" ]
+    }, {
+      "name" : "# Trips by Driver",
+      "sourceLogicalColumn" : "logicalColumn:Taxi NYC.Facts.# Trips by Driver",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Miles by Driver",
+      "sourceLogicalColumn" : "logicalColumn:Taxi NYC.Facts.Miles by Driver",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Amt by Driver",
+      "sourceLogicalColumn" : "logicalColumn:Taxi NYC.Facts.Amt by Driver",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Drive Time (Mins) by Driver",
+      "sourceLogicalColumn" : "logicalColumn:Taxi NYC.Facts.Drive Time (Mins) by Driver",
+      "useLogicalColumnName" : true
+    } ]
+  }
+}

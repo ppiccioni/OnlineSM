@@ -1,0 +1,226 @@
+{
+  "logicalTable" : {
+    "name" : "Regr Score Teams",
+    "type" : "DIMENSION",
+    "primaryKey" : [ "TEAM_KEY" ],
+    "logicalColumns" : [ {
+      "name" : "Score Intercept Humidity",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "NFL_INFLUENCERS_TEAMS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:NFL Stats.CAT3.SCH3.NFL_INFLUENCERS_TEAMS.S_INT_HUMIDITY" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Score Intercept Lat",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "NFL_INFLUENCERS_TEAMS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:NFL Stats.CAT3.SCH3.NFL_INFLUENCERS_TEAMS.S_INT_LOC_LAT" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Score Intercept Long",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "NFL_INFLUENCERS_TEAMS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:NFL Stats.CAT3.SCH3.NFL_INFLUENCERS_TEAMS.S_INT_LOC_LONG" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Score Intercept Temp",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "NFL_INFLUENCERS_TEAMS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:NFL Stats.CAT3.SCH3.NFL_INFLUENCERS_TEAMS.S_INT_TEMP" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Score Intercept Wind",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "NFL_INFLUENCERS_TEAMS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:NFL Stats.CAT3.SCH3.NFL_INFLUENCERS_TEAMS.S_INT_WIND" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Score Slope Humidity",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "NFL_INFLUENCERS_TEAMS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:NFL Stats.CAT3.SCH3.NFL_INFLUENCERS_TEAMS.S_SLP_HUMIDITY" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Score Slope Lat",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "NFL_INFLUENCERS_TEAMS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:NFL Stats.CAT3.SCH3.NFL_INFLUENCERS_TEAMS.S_SLP_LOC_LAT" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Score Slope Long",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "NFL_INFLUENCERS_TEAMS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:NFL Stats.CAT3.SCH3.NFL_INFLUENCERS_TEAMS.S_SLP_LOC_LONG" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Score Slope Temp",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "NFL_INFLUENCERS_TEAMS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:NFL Stats.CAT3.SCH3.NFL_INFLUENCERS_TEAMS.S_SLP_TEMP" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Score Slope Wind",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "NFL_INFLUENCERS_TEAMS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:NFL Stats.CAT3.SCH3.NFL_INFLUENCERS_TEAMS.S_SLP_WIND" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "TEAM_KEY",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "NFL_INFLUENCERS_TEAMS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:NFL Stats.CAT3.SCH3.NFL_INFLUENCERS_TEAMS.TEAM_KEY" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "Score Intercept Dist",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "NFL_INFLUENCERS_TEAMS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:NFL Stats.CAT3.SCH3.NFL_INFLUENCERS_TEAMS.S_INT_DIST" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Score Slope Dist",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "NFL_INFLUENCERS_TEAMS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:NFL Stats.CAT3.SCH3.NFL_INFLUENCERS_TEAMS.S_SLP_DIST" ]
+          }
+        } ]
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "NFL_INFLUENCERS_TEAMS_LTS",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:NFL Stats.CAT3.SCH3.NFL_INFLUENCERS_TEAMS" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "hierarchyType" : "LEVEL_BASED",
+    "levelBasedHierarchy" : {
+      "defaultRootLevel" : "Total",
+      "ragged" : false,
+      "skipped" : false,
+      "logicalLevels" : [ {
+        "name" : "Total",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : true,
+        "disableAggregateToHigherLevel" : false
+      }, {
+        "name" : "Detail",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "TEAM_KEY" ],
+        "displayKey" : "TEAM_KEY",
+        "chronologicalKey" : [ "TEAM_KEY" ]
+      } ],
+      "logicalHierarchies" : [ {
+        "name" : "Regr Score Teams",
+        "description" : "default hierarchy",
+        "levels" : [ "Total", "Detail" ]
+      } ]
+    }
+  }
+}

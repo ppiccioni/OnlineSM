@@ -1,0 +1,268 @@
+{
+  "presentationTable" : {
+    "name" : "MyConsumers",
+    "presentationColumns" : [ {
+      "name" : "Age",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MyConsumers.Age",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "CON_PRELOAD_OLTP_SIA",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MyConsumers.CON_PRELOAD_OLTP_SIA",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "CU_DATE_CHANGED",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MyConsumers.CU_DATE_CHANGED",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "CU_DATE_CREATED",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MyConsumers.CU_DATE_CREATED",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "CU_ID",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MyConsumers.CU_ID",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "CU_Z_CUSTOM_LABEL1",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MyConsumers.CU_Z_CUSTOM_LABEL1",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "CU_Z_CUSTOM_LABEL2",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MyConsumers.CU_Z_CUSTOM_LABEL2",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "CU_Z_CUSTOM_NUM_FLOAT",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MyConsumers.CU_Z_CUSTOM_NUM_FLOAT",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "CU_Z_CUSTOM_NUM_INT1",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MyConsumers.CU_Z_CUSTOM_NUM_INT1",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "CU_Z_CUSTOM_NUM_INT2",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MyConsumers.CU_Z_CUSTOM_NUM_INT2",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Closest Branch",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MyConsumers.Closest Branch",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Days Since Last Contact",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MyConsumers.Days Since Last Contact",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Days Since Last Payment",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MyConsumers.Days Since Last Payment",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Days as Customer",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MyConsumers.Days as Customer",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Defection Risk",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MyConsumers.Defection Risk",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Email",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MyConsumers.Email",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Email Format",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MyConsumers.Email Format",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Employment Status",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MyConsumers.Employment Status",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "First Name",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MyConsumers.First Name",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "CU_GENDER",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MyConsumers.CU_GENDER",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "HH_ID",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MyConsumers.HH_ID",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "History Flag",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MyConsumers.History Flag",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Income Bracket",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MyConsumers.Income Bracket",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Last Name",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MyConsumers.Last Name",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Last Payment Value",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MyConsumers.Last Payment Value",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Lifecycle Stage",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MyConsumers.Lifecycle Stage",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Lifetime Potential",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MyConsumers.Lifetime Potential",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Loyalty Membership",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MyConsumers.Loyalty Membership",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Loyalty Tier",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MyConsumers.Loyalty Tier",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Marital Status",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MyConsumers.Marital Status",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Max Mktg Investment",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MyConsumers.Max Mktg Investment",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Mobile Number",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MyConsumers.Mobile Number",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Newsletter Membership",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MyConsumers.Newsletter Membership",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Num Contacts Last 12 Months",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MyConsumers.Num Contacts Last 12 Months",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Num Contacts Last 3 Months",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MyConsumers.Num Contacts Last 3 Months",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Permission: Never ANY Outbound",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MyConsumers.Permission: Never ANY Outbound",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Permission: Never Direct Mail",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MyConsumers.Permission: Never Direct Mail",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Permission: Never Email",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MyConsumers.Permission: Never Email",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Permission: Never Face-to-Face",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MyConsumers.Permission: Never Face-to-Face",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Permission: Never Phone",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MyConsumers.Permission: Never Phone",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Permission: Never SMS",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MyConsumers.Permission: Never SMS",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Phone Number",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MyConsumers.Phone Number",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Preferred Call Time",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MyConsumers.Preferred Call Time",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Preferred Channel",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MyConsumers.Preferred Channel",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Revenue History: 12 Months",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MyConsumers.Revenue History: 12 Months",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Revenue History: Total",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MyConsumers.Revenue History: Total",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Segment",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MyConsumers.Segment",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Status",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MyConsumers.Status",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Title",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MyConsumers.Title",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Age Band",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MyConsumers.Age Band",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Birth Date",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MyConsumers.Birth Date",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Sales Stage LFSP",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MyConsumers.Sales Stage LFSP",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Revenue Last 12m Band",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MyConsumers.Revenue Last 12m Band",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Last Payment Date",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MyConsumers.Last Payment Date",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Gender",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MyConsumers.Gender",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Acquired Date",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MyConsumers.Acquired Date",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Years as Customer",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MyConsumers.Years as Customer",
+      "useLogicalColumnName" : true
+    } ],
+    "hierarchies" : [ {
+      "name" : "Hierarchy 1",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:MtM_Campaign2Order.MyConsumers",
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:MtM_Campaign2Order.MyConsumers.Total"
+      }, {
+        "name" : "Detail",
+        "sourceLogicalLevel" : "logicalLevel:MtM_Campaign2Order.MyConsumers.Detail",
+        "displayColumn" : "presentationColumn:MtM_Campaign2Order.MyConsumers.CU_ID"
+      } ]
+    } ]
+  }
+}

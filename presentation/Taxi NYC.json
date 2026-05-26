@@ -1,0 +1,44 @@
+{
+  "subjectArea" : {
+    "name" : "Taxi NYC",
+    "sourceBusinessModel" : "businessModel:Taxi NYC",
+    "alternateNames" : [ "PC9" ],
+    "tableOrder" : [ {
+      "name" : "presentationTable:Taxi NYC.Trip Attributes"
+    }, {
+      "name" : "presentationTable:Taxi NYC.Taxi Attributes"
+    }, {
+      "name" : "presentationTable:Taxi NYC.Pickup Time",
+      "children" : [ {
+        "name" : "presentationTable:Taxi NYC.Date"
+      } ]
+    }, {
+      "name" : "presentationTable:Taxi NYC.Pickup Geo"
+    }, {
+      "name" : "presentationTable:Taxi NYC.Dropoff Geo"
+    }, {
+      "name" : "presentationTable:Taxi NYC.Facts",
+      "children" : [ {
+        "name" : "presentationTable:Taxi NYC.Fare Details"
+      }, {
+        "name" : "presentationTable:Taxi NYC.Trip Avg"
+      }, {
+        "name" : "presentationTable:Taxi NYC.Driver Avg"
+      } ]
+    }, {
+      "name" : "presentationTable:Taxi NYC.Trip Bins",
+      "children" : [ {
+        "name" : "presentationTable:Taxi NYC.Bins+"
+      } ]
+    }, {
+      "name" : "presentationTable:Taxi NYC.Driver Bins",
+      "children" : [ {
+        "name" : "presentationTable:Taxi NYC.Driver Bins+"
+      } ]
+    } ],
+    "localization" : {
+      "localizationKey" : "Taxi NYC",
+      "nameVariable" : "Taxi NYC"
+    }
+  }
+}

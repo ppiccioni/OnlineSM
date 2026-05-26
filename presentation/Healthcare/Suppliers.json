@@ -1,0 +1,68 @@
+{
+  "presentationTable" : {
+    "name" : "Suppliers",
+    "presentationColumns" : [ {
+      "name" : "DSYS_BATCH_ID",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Suppliers.DSYS_BATCH_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_INSTANCE_ID",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Suppliers.DSYS_INSTANCE_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_PROCESS_ID",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Suppliers.DSYS_PROCESS_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Diversity",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Suppliers.Diversity",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Minority Owned",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Suppliers.Minority Owned",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Parent Supplier",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Suppliers.Parent Supplier",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Small Bus",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Suppliers.Small Bus",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Supplier",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Suppliers.Supplier",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Woman Owned",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Suppliers.Woman Owned",
+      "useLogicalColumnName" : true
+    } ],
+    "hierarchies" : [ {
+      "name" : "Supplier Hierarchy",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:Healthcare.Suppliers",
+      "levels" : [ {
+        "name" : "All Suppliers",
+        "sourceLogicalLevel" : "logicalLevel:Healthcare.Suppliers.All Suppliers"
+      }, {
+        "name" : "Parent Supplier",
+        "sourceLogicalLevel" : "logicalLevel:Healthcare.Suppliers.Parent Supplier",
+        "displayColumn" : "presentationColumn:Healthcare.Suppliers.Parent Supplier"
+      }, {
+        "name" : "Supplier",
+        "sourceLogicalLevel" : "logicalLevel:Healthcare.Suppliers.Supplier",
+        "displayColumn" : "presentationColumn:Healthcare.Suppliers.Supplier"
+      } ]
+    } ]
+  }
+}

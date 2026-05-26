@@ -1,0 +1,80 @@
+{
+  "presentationTable" : {
+    "name" : "Opponent",
+    "presentationColumns" : [ {
+      "name" : "Opp City",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Opponent.Opp City",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "TEAM_ROW",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Opponent.TEAM_ROW",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "TEAM_COL",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Opponent.TEAM_COL",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Opp Colors",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Opponent.Opp Colors",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Opp Conf",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Opponent.Opp Conf",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Opp Division",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Opponent.Opp Division",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Opp State",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Opponent.Opp State",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Opponent",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Opponent.Opponent",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "TEAM_KEY",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Opponent.TEAM_KEY",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "TEAM_ROLLUP",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Opponent.TEAM_ROLLUP",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "USED",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Opponent.USED",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    } ],
+    "hierarchies" : [ {
+      "name" : "Opponent Hierarchy",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:NFL Stats.Opponent",
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:NFL Stats.Opponent.Total"
+      }, {
+        "name" : "Opp Conf",
+        "sourceLogicalLevel" : "logicalLevel:NFL Stats.Opponent.Opp Conf",
+        "displayColumn" : "presentationColumn:NFL Stats.Opponent.Opp Conf"
+      }, {
+        "name" : "Opp Division",
+        "sourceLogicalLevel" : "logicalLevel:NFL Stats.Opponent.Opp Division",
+        "displayColumn" : "presentationColumn:NFL Stats.Opponent.Opp Division"
+      }, {
+        "name" : "Opponent",
+        "sourceLogicalLevel" : "logicalLevel:NFL Stats.Opponent.Opponent",
+        "displayColumn" : "presentationColumn:NFL Stats.Opponent.Opponent"
+      } ]
+    } ]
+  }
+}

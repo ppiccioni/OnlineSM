@@ -1,0 +1,85 @@
+{
+  "presentationTable" : {
+    "name" : "RTD Facts",
+    "presentationColumns" : [ {
+      "name" : "# Correlated Attributes",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.RTD Facts.# Correlated Attributes",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "# Predictive Attributes",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.RTD Facts.# Predictive Attributes",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "# Time Windows",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.RTD Facts.# Time Windows",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Attribute Value",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.RTD Facts.Attribute Value",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "CHOICE_ID",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.RTD Facts.CHOICE_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "COID",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.RTD Facts.COID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Correlated Attribute Value",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.RTD Facts.Correlated Attribute Value",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Correlation Score",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.RTD Facts.Correlation Score",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Count",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.RTD Facts.Count",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Model Quality",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.RTD Facts.Model Quality",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "PRID",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.RTD Facts.PRID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Predictive Attribute Value",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.RTD Facts.Predictive Attribute Value",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Predictiveness Score",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.RTD Facts.Predictiveness Score",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "STID",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.RTD Facts.STID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Total Count",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.RTD Facts.Total Count",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "ID",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.RTD Facts.ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    } ]
+  }
+}

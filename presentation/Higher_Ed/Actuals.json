@@ -1,0 +1,64 @@
+{
+  "presentationTable" : {
+    "name" : "Actuals",
+    "presentationColumns" : [ {
+      "name" : "ACCOUNT",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Actuals.ACCOUNT",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Actual",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Actuals.Actual",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Budget",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Actuals.Budget",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "DATE_ID",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Actuals.DATE_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DEPARTMENT",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Actuals.DEPARTMENT",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_BATCH_ID",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Actuals.DSYS_BATCH_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_INSTANCE_ID",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Actuals.DSYS_INSTANCE_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_PROCESS_ID",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Actuals.DSYS_PROCESS_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Variance %",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Actuals.Variance %",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Variance",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Actuals.Variance",
+      "useLogicalColumnName" : true
+    } ]
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "presentationTable" : {
+    "name" : "MKT_Facts",
+    "presentationColumns" : [ {
+      "name" : "Avg Rev per Sale Actual",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MKT_Facts.Avg Rev per Sale Actual",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Avg Rev per Sale Pred",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MKT_Facts.Avg Rev per Sale Pred",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "BU_ID",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MKT_Facts.BU_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "CAMPAIGN_ID",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MKT_Facts.CAMPAIGN_ID",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Conversion Rate Actual",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MKT_Facts.Conversion Rate Actual",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Conversion Rate Predicted",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MKT_Facts.Conversion Rate Predicted",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Cost Per Piece",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MKT_Facts.Cost Per Piece",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Customers Contacted Actual",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MKT_Facts.Customers Contacted Actual",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Customers Contacted Predicted",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MKT_Facts.Customers Contacted Predicted",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Expenses Actual",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MKT_Facts.Expenses Actual",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Expenses Predicted",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MKT_Facts.Expenses Predicted",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Num Orders Actual",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MKT_Facts.Num Orders Actual",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Num Orders Predicted",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MKT_Facts.Num Orders Predicted",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "PERIOD_SID",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MKT_Facts.PERIOD_SID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "PRODUCT_CATEGORY_ID",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MKT_Facts.PRODUCT_CATEGORY_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "REGION_ID",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MKT_Facts.REGION_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "ROI Actual",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MKT_Facts.ROI Actual",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "ROI Predicted",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MKT_Facts.ROI Predicted",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Response Rate Actual",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MKT_Facts.Response Rate Actual",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Response Rate Predicted",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MKT_Facts.Response Rate Predicted",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Revenues Actual",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MKT_Facts.Revenues Actual",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Revenues Predicted",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MKT_Facts.Revenues Predicted",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "SID",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MKT_Facts.SID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "TID",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MKT_Facts.TID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Vertical Demo",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MKT_Facts.Vertical Demo",
+      "useLogicalColumnName" : true
+    } ]
+  }
+}

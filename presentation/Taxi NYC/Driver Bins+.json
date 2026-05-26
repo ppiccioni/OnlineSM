@@ -1,0 +1,26 @@
+{
+  "presentationTable" : {
+    "name" : "Driver Bins+",
+    "alternateNames" : [ "Bins+#1", "Cab Bins+" ],
+    "presentationColumns" : [ {
+      "name" : "Daily Amount Bin+",
+      "sourceLogicalColumn" : "logicalColumn:Taxi NYC.Medal BinsB.Daily Amount Bin+",
+      "useLogicalColumnName" : true,
+      "alternateNames" : [ "Amount Bin+" ]
+    }, {
+      "name" : "Daily Distance Bin+",
+      "sourceLogicalColumn" : "logicalColumn:Taxi NYC.Medal BinsB.Daily Distance Bin+",
+      "useLogicalColumnName" : true,
+      "alternateNames" : [ "Distance Bin+" ]
+    }, {
+      "name" : "Avg # of Pax Bin+",
+      "sourceLogicalColumn" : "logicalColumn:Taxi NYC.Medal BinsB.Avg # of Pax Bin+",
+      "useLogicalColumnName" : true,
+      "alternateNames" : [ "$ per Mile Bin+", "Avg # Pax Bin+" ]
+    }, {
+      "name" : "Speed (MPH) Bin+",
+      "sourceLogicalColumn" : "logicalColumn:Taxi NYC.Medal BinsB.Speed (MPH) Bin+",
+      "useLogicalColumnName" : true
+    } ]
+  }
+}

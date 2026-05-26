@@ -1,0 +1,210 @@
+{
+  "presentationTable" : {
+    "name" : "Facts - Term GPA Graduates",
+    "presentationColumns" : [ {
+      "name" : "ACADEMIC_ORG_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Term GPA Graduates.ACADEMIC_ORG_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "ADMIT_TERM_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Term GPA Graduates.ADMIT_TERM_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "COHORT_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Term GPA Graduates.COHORT_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Degree Completion Length",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Term GPA Graduates.Degree Completion Length",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "DEGREE_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Term GPA Graduates.DEGREE_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_BATCH_ID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Term GPA Graduates.DSYS_BATCH_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_INSTANCE_ID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Term GPA Graduates.DSYS_INSTANCE_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_PROCESS_ID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Term GPA Graduates.DSYS_PROCESS_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "MAJOR_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Term GPA Graduates.MAJOR_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "MATRIC_ACADEMIC_ATTRIB_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Term GPA Graduates.MATRIC_ACADEMIC_ATTRIB_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "MATRIC_ACADEMIC_ORG_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Term GPA Graduates.MATRIC_ACADEMIC_ORG_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "MATRIC_ACADEMIC_PROFILE_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Term GPA Graduates.MATRIC_ACADEMIC_PROFILE_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "MINOR_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Term GPA Graduates.MINOR_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "PROGRAM_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Term GPA Graduates.PROGRAM_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "ROW_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Term GPA Graduates.ROW_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "STUDENT_ACADEMIC_ATTRIB_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Term GPA Graduates.STUDENT_ACADEMIC_ATTRIB_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "STUDENT_ACADEMIC_PROFILE_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Term GPA Graduates.STUDENT_ACADEMIC_PROFILE_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Student Age Admit Term",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Term GPA Graduates.Student Age Admit Term",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Student Age Begin Term",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Term GPA Graduates.Student Age Begin Term",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "STUDENT_BIODEMO_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Term GPA Graduates.STUDENT_BIODEMO_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Student Graduated Count",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Term GPA Graduates.Student Graduated Count",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "STUDENT_LOCATION_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Term GPA Graduates.STUDENT_LOCATION_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "STUDENT_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Term GPA Graduates.STUDENT_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Term Credit Hours Earned",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Term GPA Graduates.Term Credit Hours Earned",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Term GPA",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Term GPA Graduates.Term GPA",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "TERM_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Term GPA Graduates.TERM_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Total Credit Hours Earned",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Term GPA Graduates.Total Credit Hours Earned",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Total GPA",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Term GPA Graduates.Total GPA",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Term GPA 1yr Ago",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Term GPA Graduates.Term GPA 1yr Ago",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Total GPA 1yr Ago",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Term GPA Graduates.Total GPA 1yr Ago",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Total GPA 1yr Ago Change",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Term GPA Graduates.Total GPA 1yr Ago Change",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Term GPA 1yr Ago Change",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Term GPA Graduates.Term GPA 1yr Ago Change",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Term GPA 1yr Ago Change %",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Term GPA Graduates.Term GPA 1yr Ago Change %",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Total GPA 1yr Ago Change %",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Term GPA Graduates.Total GPA 1yr Ago Change %",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Avg Term Credit Hours Earned",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Term GPA Graduates.Avg Term Credit Hours Earned",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Avg Total Credit Hours Earned",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Term GPA Graduates.Avg Total Credit Hours Earned",
+      "useLogicalColumnName" : true
+    } ]
+  }
+}

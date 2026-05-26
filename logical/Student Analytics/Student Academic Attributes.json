@@ -1,0 +1,184 @@
+{
+  "logicalTable" : {
+    "name" : "Student Academic Attributes",
+    "type" : "DIMENSION",
+    "primaryKey" : [ "STUDENT_ACADEMIC_ATTRIB_WID" ],
+    "logicalColumns" : [ {
+      "name" : "DSYS_BATCH_ID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SA_D_STUDENT_ACAD_ATTRIB_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_STUDENT_ACAD_ATTRIB.DSYS_BATCH_ID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "DSYS_INSTANCE_ID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SA_D_STUDENT_ACAD_ATTRIB_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_STUDENT_ACAD_ATTRIB.DSYS_INSTANCE_ID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "DSYS_PROCESS_ID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SA_D_STUDENT_ACAD_ATTRIB_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_STUDENT_ACAD_ATTRIB.DSYS_PROCESS_ID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "FIRST_TIME_STUDENT_CD",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SA_D_STUDENT_ACAD_ATTRIB_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_STUDENT_ACAD_ATTRIB.FIRST_TIME_STUDENT_CD" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "First Time Student",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SA_D_STUDENT_ACAD_ATTRIB_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_STUDENT_ACAD_ATTRIB.FIRST_TIME_STUDENT_DESC" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "FT_PT_STUDENT_CD",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SA_D_STUDENT_ACAD_ATTRIB_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_STUDENT_ACAD_ATTRIB.FT_PT_STUDENT_CD" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Student Status",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SA_D_STUDENT_ACAD_ATTRIB_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_STUDENT_ACAD_ATTRIB.FT_PT_STUDENT_DESC" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "STUDENT_ACADEMIC_ATTRIB_WID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SA_D_STUDENT_ACAD_ATTRIB_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_STUDENT_ACAD_ATTRIB.STUDENT_ACADEMIC_ATTRIB_WID" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "TRANSFERRED_STUDENT_CD",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SA_D_STUDENT_ACAD_ATTRIB_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_STUDENT_ACAD_ATTRIB.TRANSFERRED_STUDENT_CD" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Transferred Student",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SA_D_STUDENT_ACAD_ATTRIB_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_STUDENT_ACAD_ATTRIB.TRANSFERRED_STUDENT_DESC" ]
+          }
+        } ]
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "SA_D_STUDENT_ACAD_ATTRIB_LTS",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:Student Analytics.CAT10.SCH10.SA_D_STUDENT_ACAD_ATTRIB" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "hierarchyType" : "LEVEL_BASED",
+    "levelBasedHierarchy" : {
+      "defaultRootLevel" : "Total",
+      "ragged" : false,
+      "skipped" : false,
+      "logicalLevels" : [ {
+        "name" : "Total",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : true,
+        "disableAggregateToHigherLevel" : false
+      }, {
+        "name" : "Detail",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "STUDENT_ACADEMIC_ATTRIB_WID" ],
+        "displayKey" : "STUDENT_ACADEMIC_ATTRIB_WID",
+        "chronologicalKey" : [ "STUDENT_ACADEMIC_ATTRIB_WID" ]
+      } ],
+      "logicalHierarchies" : [ {
+        "name" : "Student Academic Attributes",
+        "description" : "default hierarchy",
+        "levels" : [ "Total", "Detail" ]
+      } ]
+    }
+  }
+}

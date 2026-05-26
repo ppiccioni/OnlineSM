@@ -1,0 +1,123 @@
+{
+  "logicalTable" : {
+    "name" : "Jobs",
+    "type" : "DIMENSION",
+    "primaryKey" : [ "Job Description" ],
+    "logicalColumns" : [ {
+      "name" : "DSYS_BATCH_ID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "HE_D_JOBS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Higher_Ed.CAT2.SCH2.HE_D_JOBS.DSYS_BATCH_ID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "DSYS_INSTANCE_ID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "HE_D_JOBS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Higher_Ed.CAT2.SCH2.HE_D_JOBS.DSYS_INSTANCE_ID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "DSYS_PROCESS_ID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "HE_D_JOBS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Higher_Ed.CAT2.SCH2.HE_D_JOBS.DSYS_PROCESS_ID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Job Category",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "HE_D_JOBS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Higher_Ed.CAT2.SCH2.HE_D_JOBS.JOB_CATEGORY" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Job Category"
+    }, {
+      "name" : "Job Description",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "HE_D_JOBS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Higher_Ed.CAT2.SCH2.HE_D_JOBS.JOB_DESCRIPTION" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Job Description"
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "HE_D_JOBS_LTS",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:Higher_Ed.CAT2.SCH2.HE_D_JOBS" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "hierarchyType" : "LEVEL_BASED",
+    "levelBasedHierarchy" : {
+      "defaultRootLevel" : "All Jobs",
+      "ragged" : false,
+      "skipped" : false,
+      "logicalLevels" : [ {
+        "name" : "All Jobs",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : true,
+        "disableAggregateToHigherLevel" : false
+      }, {
+        "name" : "Job Category",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Job Category" ],
+        "displayKey" : "Job Category",
+        "chronologicalKey" : [ "Job Category" ]
+      }, {
+        "name" : "Job Description",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Job Description" ],
+        "displayKey" : "Job Description",
+        "chronologicalKey" : [ "Job Description" ]
+      } ],
+      "logicalHierarchies" : [ {
+        "name" : "Jobs",
+        "description" : "default hierarchy",
+        "levels" : [ "All Jobs", "Job Category", "Job Description" ]
+      } ]
+    }
+  }
+}

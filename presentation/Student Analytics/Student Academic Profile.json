@@ -1,0 +1,94 @@
+{
+  "presentationTable" : {
+    "name" : "Student Academic Profile",
+    "presentationColumns" : [ {
+      "name" : "ACADEMIC_LEVEL_CD",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Student Academic Profile.ACADEMIC_LEVEL_CD",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Academic Level",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Student Academic Profile.Academic Level",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "ADMIT_TYPE_CD",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Student Academic Profile.ADMIT_TYPE_CD",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Admit Type",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Student Academic Profile.Admit Type",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "DSYS_BATCH_ID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Student Academic Profile.DSYS_BATCH_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_INSTANCE_ID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Student Academic Profile.DSYS_INSTANCE_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_PROCESS_ID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Student Academic Profile.DSYS_PROCESS_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "STUDENT_ACADEMIC_PROFILE_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Student Academic Profile.STUDENT_ACADEMIC_PROFILE_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "STUDENT_CLASS_CD",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Student Academic Profile.STUDENT_CLASS_CD",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Student Class",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Student Academic Profile.Student Class",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "STUDENT_TYPE_CD",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Student Academic Profile.STUDENT_TYPE_CD",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Student Type",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Student Academic Profile.Student Type",
+      "useLogicalColumnName" : true
+    } ],
+    "hierarchies" : [ {
+      "name" : "Hierarchy 1",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:Student Analytics.Student Academic Profile",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      },
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:Student Analytics.Student Academic Profile.Total"
+      }, {
+        "name" : "Detail",
+        "sourceLogicalLevel" : "logicalLevel:Student Analytics.Student Academic Profile.Detail",
+        "displayColumn" : "presentationColumn:Student Analytics.Student Academic Profile.STUDENT_ACADEMIC_PROFILE_WID"
+      } ]
+    } ]
+  }
+}

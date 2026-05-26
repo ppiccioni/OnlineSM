@@ -1,0 +1,937 @@
+{
+  "logicalTable" : {
+    "name" : "Facts",
+    "type" : "FACT",
+    "logicalColumns" : [ {
+      "name" : "Σ Fare Amt",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "NYCT_FACTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_FACTS_BASE.FARE_AMOUNT" ]
+          }
+        }, {
+          "logicalTableSource" : "NYCT_FACTS_FULL",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_FACT_VTS.FARE_AMOUNT" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM"
+      }
+    }, {
+      "name" : "Σ MTA Tax Amt",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "NYCT_FACTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_FACTS_BASE.MTA_TAX" ]
+          }
+        }, {
+          "logicalTableSource" : "NYCT_FACTS_FULL",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_FACT_VTS.MTA_TAX" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM"
+      }
+    }, {
+      "name" : "Σ Pax",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "NYCT_FACTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_FACTS_BASE.PASSENGER_COUNT" ]
+          }
+        }, {
+          "logicalTableSource" : "NYCT_FACTS_FULL",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_FACT_VTS.PASSENGER_COUNT" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM"
+      }
+    }, {
+      "name" : "Σ Surcharge Amt",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "NYCT_FACTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_FACTS_BASE.SURCHARGE" ]
+          }
+        }, {
+          "logicalTableSource" : "NYCT_FACTS_FULL",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_FACT_VTS.SURCHARGE" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM"
+      }
+    }, {
+      "name" : "Σ Tips Amt",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "NYCT_FACTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_FACTS_BASE.TIP_AMOUNT" ]
+          }
+        }, {
+          "logicalTableSource" : "NYCT_FACTS_FULL",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_FACT_VTS.TIP_AMOUNT" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM"
+      }
+    }, {
+      "name" : "Σ Tolls Amt",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "NYCT_FACTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_FACTS_BASE.TOLLS_AMOUNT" ]
+          }
+        }, {
+          "logicalTableSource" : "NYCT_FACTS_FULL",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_FACT_VTS.TOLLS_AMOUNT" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM"
+      }
+    }, {
+      "name" : "Σ Total Amt",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "NYCT_FACTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_FACTS_BASE.TOTAL_AMOUNT" ]
+          }
+        }, {
+          "logicalTableSource" : "NYCT_FACTS_FULL",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_FACT_VTS.TOTAL_AMOUNT" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM"
+      }
+    }, {
+      "name" : "Σ Miles",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "NYCT_FACTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_FACTS_BASE.TRIP_DISTANCE" ]
+          }
+        }, {
+          "logicalTableSource" : "NYCT_FACTS_FULL",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_FACT_VTS.TRIP_DISTANCE" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM"
+      }
+    }, {
+      "name" : "# of Trips",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "NYCT_FACTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_FACTS_BASE.ROW_WID" ]
+          }
+        }, {
+          "logicalTableSource" : "NYCT_FACTS_FULL",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_FACT_VTS.ROW_WID" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "COUNT"
+      }
+    }, {
+      "name" : "Σ Trip Minutes",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "NYCT_FACTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_FACTS_BASE.TRIP_TIME_IN_MIN" ]
+          }
+        }, {
+          "logicalTableSource" : "NYCT_FACTS_FULL",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_FACT_VTS.TRIP_TIME_IN_MIN" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM"
+      }
+    }, {
+      "name" : "Avg Trip Minutes",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 / %2",
+          "expressionObjects" : [ "logicalColumn:Taxi NYC.Facts.Σ Trip Minutes", "logicalColumn:Taxi NYC.Facts.# of Trips" ]
+        }
+      }
+    }, {
+      "name" : "Tolls % of Total",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 /  CAST (%2 AS DOUBLE PRECISION ) * 100",
+          "expressionObjects" : [ "logicalColumn:Taxi NYC.Facts.Σ Tolls Amt", "logicalColumn:Taxi NYC.Facts.Σ Total Amt" ]
+        }
+      }
+    }, {
+      "name" : "Tips % of Total",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 /  CAST (%2 AS DOUBLE PRECISION ) * 100",
+          "expressionObjects" : [ "logicalColumn:Taxi NYC.Facts.Σ Tips Amt", "logicalColumn:Taxi NYC.Facts.Σ Total Amt" ]
+        }
+      }
+    }, {
+      "name" : "Surcharge % of Total",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 /  CAST (%2 AS DOUBLE PRECISION ) * 100",
+          "expressionObjects" : [ "logicalColumn:Taxi NYC.Facts.Σ Surcharge Amt", "logicalColumn:Taxi NYC.Facts.Σ Total Amt" ]
+        }
+      }
+    }, {
+      "name" : "Fare % of Total",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 /  CAST (%2 AS DOUBLE PRECISION ) * 100",
+          "expressionObjects" : [ "logicalColumn:Taxi NYC.Facts.Σ Fare Amt", "logicalColumn:Taxi NYC.Facts.Σ Total Amt" ]
+        }
+      }
+    }, {
+      "name" : "Tax % of Total",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 /  CAST (%2 AS DOUBLE PRECISION ) * 100",
+          "expressionObjects" : [ "logicalColumn:Taxi NYC.Facts.Σ MTA Tax Amt", "logicalColumn:Taxi NYC.Facts.Σ Total Amt" ]
+        }
+      }
+    }, {
+      "name" : "Avg Trip Miles",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 / %2",
+          "expressionObjects" : [ "logicalColumn:Taxi NYC.Facts.Σ Miles", "logicalColumn:Taxi NYC.Facts.# of Trips" ]
+        }
+      }
+    }, {
+      "name" : "Avg Speed (MPH)",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : " CAST (%1 AS DOUBLE PRECISION ) / (%2 / 60)",
+          "expressionObjects" : [ "logicalColumn:Taxi NYC.Facts.Σ Miles", "logicalColumn:Taxi NYC.Facts.Σ Trip Minutes" ]
+        }
+      }
+    }, {
+      "name" : "# of Medallions",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "NYCT_FACTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_FACTS_BASE.MEDALLION" ]
+          }
+        }, {
+          "logicalTableSource" : "NYCT_FACTS_FULL",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_FACT_VTS.M_KEY" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "COUNT_DISTINCT"
+      }
+    }, {
+      "name" : "Avg $ per Mile",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : " CAST (%1 AS DOUBLE PRECISION ) / %2",
+          "expressionObjects" : [ "logicalColumn:Taxi NYC.Facts.Σ Total Amt", "logicalColumn:Taxi NYC.Facts.Σ Miles" ]
+        }
+      }
+    }, {
+      "name" : "% of Total Trips",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : " CAST (%1 AS DOUBLE PRECISION ) / %2 * 100",
+          "expressionObjects" : [ "logicalColumn:Taxi NYC.Facts.# of Trips", "logicalColumn:Taxi NYC.Facts.# of Trips LB" ]
+        }
+      }
+    }, {
+      "name" : "% of Total Miles",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : " CAST (%1 AS DOUBLE PRECISION ) / %2 * 100",
+          "expressionObjects" : [ "logicalColumn:Taxi NYC.Facts.Σ Miles", "logicalColumn:Taxi NYC.Facts.Σ Trip Distance  LB" ]
+        }
+      }
+    }, {
+      "name" : "% of Total Amt",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : " CAST (%1 AS DOUBLE PRECISION ) / %2 * 100",
+          "expressionObjects" : [ "logicalColumn:Taxi NYC.Facts.Σ Total Amt", "logicalColumn:Taxi NYC.Facts.Σ Total Amt LB" ]
+        }
+      }
+    }, {
+      "name" : "Avg Trip Amt",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 / %2",
+          "expressionObjects" : [ "logicalColumn:Taxi NYC.Facts.Σ Total Amt", "logicalColumn:Taxi NYC.Facts.# of Trips" ]
+        }
+      }
+    }, {
+      "name" : "Avg Time by Cab",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 / %2",
+          "expressionObjects" : [ "logicalColumn:Taxi NYC.Facts.Σ Trip Minutes", "logicalColumn:Taxi NYC.Facts.# of Medallions" ]
+        }
+      }
+    }, {
+      "name" : "Avg Miles by Cab",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 / %2",
+          "expressionObjects" : [ "logicalColumn:Taxi NYC.Facts.Σ Miles", "logicalColumn:Taxi NYC.Facts.# of Medallions" ]
+        }
+      }
+    }, {
+      "name" : "Avg Speed by Cab",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : " CAST (%1 AS DOUBLE PRECISION ) / (%2 * 60)",
+          "expressionObjects" : [ "logicalColumn:Taxi NYC.Facts.Avg Miles by Cab", "logicalColumn:Taxi NYC.Facts.Avg Time by Cab" ]
+        }
+      }
+    }, {
+      "name" : "Avg Amt by Cab",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 / %2",
+          "expressionObjects" : [ "logicalColumn:Taxi NYC.Facts.Σ Total Amt", "logicalColumn:Taxi NYC.Facts.# of Medallions" ]
+        }
+      }
+    }, {
+      "name" : "Avg Trips by Cab",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 / %2",
+          "expressionObjects" : [ "logicalColumn:Taxi NYC.Facts.# of Trips", "logicalColumn:Taxi NYC.Facts.# of Medallions" ]
+        }
+      }
+    }, {
+      "name" : "Avg # of Pax",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 / %2",
+          "expressionObjects" : [ "logicalColumn:Taxi NYC.Facts.Σ Pax", "logicalColumn:Taxi NYC.Facts.# of Trips" ]
+        }
+      }
+    }, {
+      "name" : "Row_Wid",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "NYCT_FACTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_FACTS_BASE.ROW_WID" ]
+          }
+        }, {
+          "logicalTableSource" : "NYCT_FACTS_FULL",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_FACT_VTS.ROW_WID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Σ Pax Miles",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "NYCT_FACTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1 * %2",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_FACTS_BASE.TRIP_DISTANCE", "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_FACTS_BASE.PASSENGER_COUNT" ]
+          }
+        }, {
+          "logicalTableSource" : "NYCT_FACTS_FULL",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1 * %2",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_FACT_VTS.PASSENGER_COUNT", "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_FACT_VTS.TRIP_DISTANCE" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM"
+      }
+    }, {
+      "name" : "Avg $ per Pax per Mile",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : " CAST (%1 AS DOUBLE PRECISION ) / %2",
+          "expressionObjects" : [ "logicalColumn:Taxi NYC.Facts.Σ Total Amt", "logicalColumn:Taxi NYC.Facts.Σ Pax Miles" ]
+        }
+      }
+    }, {
+      "name" : "# of Trips LB_BT",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "NYCT_FACTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_FACTS_BASE.ROW_WID" ]
+          }
+        }, {
+          "logicalTableSource" : "NYCT_FACTS_FULL",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_FACT_VTS.ROW_WID" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "COUNT",
+        "aggregateByLevels" : [ "logicalLevel:Taxi NYC.Trip Attributes.Trip Attributes Total", "logicalLevel:Taxi NYC.Ride.Ride Total", "logicalLevel:Taxi NYC.Trip BinsA.Total", "logicalLevel:Taxi NYC.Trip BinsB.Total", "logicalLevel:Taxi NYC.Medal BinsA.Total", "logicalLevel:Taxi NYC.Medal BinsB.Total" ]
+      }
+    }, {
+      "name" : "Σ Total Amt LB_BT",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "NYCT_FACTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_FACTS_BASE.TOTAL_AMOUNT" ]
+          }
+        }, {
+          "logicalTableSource" : "NYCT_FACTS_FULL",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_FACT_VTS.TOTAL_AMOUNT" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "aggregateByLevels" : [ "logicalLevel:Taxi NYC.Trip Attributes.Trip Attributes Total", "logicalLevel:Taxi NYC.Ride.Ride Total", "logicalLevel:Taxi NYC.Trip BinsA.Total", "logicalLevel:Taxi NYC.Trip BinsB.Total", "logicalLevel:Taxi NYC.Medal BinsA.Total", "logicalLevel:Taxi NYC.Medal BinsB.Total" ]
+      }
+    }, {
+      "name" : "Σ Trip Distance  LB_BT",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "NYCT_FACTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_FACTS_BASE.TRIP_DISTANCE" ]
+          }
+        }, {
+          "logicalTableSource" : "NYCT_FACTS_FULL",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_FACT_VTS.TRIP_DISTANCE" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "aggregateByLevels" : [ "logicalLevel:Taxi NYC.Trip Attributes.Trip Attributes Total", "logicalLevel:Taxi NYC.Ride.Ride Total", "logicalLevel:Taxi NYC.Trip BinsA.Total", "logicalLevel:Taxi NYC.Trip BinsB.Total", "logicalLevel:Taxi NYC.Medal BinsA.Total", "logicalLevel:Taxi NYC.Medal BinsB.Total" ]
+      }
+    }, {
+      "name" : "# of Drivers",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "NYCT_FACTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_FACTS_BASE.HACK_LICENSE" ]
+          }
+        }, {
+          "logicalTableSource" : "NYCT_FACTS_FULL",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_FACT_VTS.H_KEY" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "COUNT_DISTINCT"
+      }
+    }, {
+      "name" : "Daily Drive Time (Mins) by Driver",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 / %2",
+          "expressionObjects" : [ "logicalColumn:Taxi NYC.Facts.Σ Trip Minutes", "logicalColumn:Taxi NYC.Facts.# of Day\\.Drivers" ]
+        }
+      }
+    }, {
+      "name" : "Daily Miles by Driver",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 / %2",
+          "expressionObjects" : [ "logicalColumn:Taxi NYC.Facts.Σ Miles", "logicalColumn:Taxi NYC.Facts.# of Day\\.Drivers" ]
+        }
+      }
+    }, {
+      "name" : "Avg Speed by Driver",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : " CAST (%1 AS DOUBLE PRECISION ) / (%2 / 60)",
+          "expressionObjects" : [ "logicalColumn:Taxi NYC.Facts.Daily Miles by Driver", "logicalColumn:Taxi NYC.Facts.Daily Drive Time (Mins) by Driver" ]
+        }
+      }
+    }, {
+      "name" : "Daily Amt by Driver",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 / %2",
+          "expressionObjects" : [ "logicalColumn:Taxi NYC.Facts.Σ Total Amt", "logicalColumn:Taxi NYC.Facts.# of Day\\.Drivers" ]
+        }
+      }
+    }, {
+      "name" : "Daily Trips by Driver",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : " CAST (%1 AS DOUBLE PRECISION ) / %2",
+          "expressionObjects" : [ "logicalColumn:Taxi NYC.Facts.# of Trips", "logicalColumn:Taxi NYC.Facts.# of Day\\.Drivers" ]
+        }
+      }
+    }, {
+      "name" : "# of Day.Drivers",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "NYCT_FACTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1 ||  CAST (%2 AS VARCHAR ( 10 ))",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_FACTS_BASE.HACK_LICENSE", "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_FACTS_BASE.PICKUP_DAY" ]
+          }
+        }, {
+          "logicalTableSource" : "NYCT_FACTS_FULL",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1 ||  CAST (%2 AS VARCHAR ( 10 ))",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_FACT_VTS.H_KEY", "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_FACT_VTS.PICKUP_DAY" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "COUNT_DISTINCT"
+      }
+    }, {
+      "name" : "Drive Time (Mins) by Driver",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 / %2",
+          "expressionObjects" : [ "logicalColumn:Taxi NYC.Facts.Σ Trip Minutes", "logicalColumn:Taxi NYC.Facts.# of Drivers" ]
+        }
+      }
+    }, {
+      "name" : "Miles by Driver",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 / %2",
+          "expressionObjects" : [ "logicalColumn:Taxi NYC.Facts.Σ Miles", "logicalColumn:Taxi NYC.Facts.# of Drivers" ]
+        }
+      }
+    }, {
+      "name" : "Amt by Driver",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 / %2",
+          "expressionObjects" : [ "logicalColumn:Taxi NYC.Facts.Σ Total Amt", "logicalColumn:Taxi NYC.Facts.# of Drivers" ]
+        }
+      }
+    }, {
+      "name" : "# Trips by Driver",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 / %2",
+          "expressionObjects" : [ "logicalColumn:Taxi NYC.Facts.# of Trips", "logicalColumn:Taxi NYC.Facts.# of Drivers" ]
+        }
+      }
+    }, {
+      "name" : "# of Drivers LB_BT",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "NYCT_FACTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_FACTS_BASE.HACK_LICENSE" ]
+          }
+        }, {
+          "logicalTableSource" : "NYCT_FACTS_FULL",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_FACT_VTS.H_KEY" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "COUNT_DISTINCT",
+        "aggregateByLevels" : [ "logicalLevel:Taxi NYC.Trip Attributes.Trip Attributes Total", "logicalLevel:Taxi NYC.Ride.Ride Total", "logicalLevel:Taxi NYC.Trip BinsA.Total", "logicalLevel:Taxi NYC.Trip BinsB.Total", "logicalLevel:Taxi NYC.Medal BinsA.Total", "logicalLevel:Taxi NYC.Medal BinsB.Total" ]
+      }
+    }, {
+      "name" : "% of Total Drivers",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : " CAST (%1 AS DOUBLE PRECISION ) / %2 * 100",
+          "expressionObjects" : [ "logicalColumn:Taxi NYC.Facts.# of Drivers", "logicalColumn:Taxi NYC.Facts.# of Drivers LB" ]
+        }
+      }
+    }, {
+      "name" : "# of Trips LB",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "NYCT_FACTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_FACTS_BASE.ROW_WID" ]
+          }
+        }, {
+          "logicalTableSource" : "NYCT_FACTS_FULL",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_FACT_VTS.ROW_WID" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "COUNT",
+        "aggregateByLevels" : [ "logicalLevel:Taxi NYC.Trip Attributes.Trip Attributes Total", "logicalLevel:Taxi NYC.Ride.Ride Total", "logicalLevel:Taxi NYC.Pickup Date.Pickup Date Total", "logicalLevel:Taxi NYC.Trip BinsA.Total", "logicalLevel:Taxi NYC.Trip BinsB.Total", "logicalLevel:Taxi NYC.Medal BinsA.Total", "logicalLevel:Taxi NYC.Medal BinsB.Total", "logicalLevel:Taxi NYC.Geo Pickup Suburb.Geo Region Total", "logicalLevel:Taxi NYC.Geo Dropoff Suburb.Geo Dropoff Suburb Total" ]
+      }
+    }, {
+      "name" : "Σ Total Amt LB",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "NYCT_FACTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_FACTS_BASE.TOTAL_AMOUNT" ]
+          }
+        }, {
+          "logicalTableSource" : "NYCT_FACTS_FULL",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_FACT_VTS.TOTAL_AMOUNT" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "aggregateByLevels" : [ "logicalLevel:Taxi NYC.Trip Attributes.Trip Attributes Total", "logicalLevel:Taxi NYC.Ride.Ride Total", "logicalLevel:Taxi NYC.Pickup Date.Pickup Date Total", "logicalLevel:Taxi NYC.Trip BinsA.Total", "logicalLevel:Taxi NYC.Trip BinsB.Total", "logicalLevel:Taxi NYC.Medal BinsA.Total", "logicalLevel:Taxi NYC.Medal BinsB.Total", "logicalLevel:Taxi NYC.Geo Pickup Suburb.Geo Region Total", "logicalLevel:Taxi NYC.Geo Dropoff Suburb.Geo Dropoff Suburb Total" ]
+      }
+    }, {
+      "name" : "Σ Trip Distance  LB",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "NYCT_FACTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_FACTS_BASE.TRIP_DISTANCE" ]
+          }
+        }, {
+          "logicalTableSource" : "NYCT_FACTS_FULL",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_FACT_VTS.TRIP_DISTANCE" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "aggregateByLevels" : [ "logicalLevel:Taxi NYC.Trip Attributes.Trip Attributes Total", "logicalLevel:Taxi NYC.Ride.Ride Total", "logicalLevel:Taxi NYC.Pickup Date.Pickup Date Total", "logicalLevel:Taxi NYC.Trip BinsA.Total", "logicalLevel:Taxi NYC.Trip BinsB.Total", "logicalLevel:Taxi NYC.Medal BinsA.Total", "logicalLevel:Taxi NYC.Medal BinsB.Total", "logicalLevel:Taxi NYC.Geo Pickup Suburb.Geo Region Total", "logicalLevel:Taxi NYC.Geo Dropoff Suburb.Geo Dropoff Suburb Total" ]
+      }
+    }, {
+      "name" : "# of Drivers LB",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "NYCT_FACTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_FACTS_BASE.HACK_LICENSE" ]
+          }
+        }, {
+          "logicalTableSource" : "NYCT_FACTS_FULL",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_FACT_VTS.H_KEY" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "COUNT_DISTINCT",
+        "aggregateByLevels" : [ "logicalLevel:Taxi NYC.Trip Attributes.Trip Attributes Total", "logicalLevel:Taxi NYC.Ride.Ride Total", "logicalLevel:Taxi NYC.Pickup Date.Pickup Date Total", "logicalLevel:Taxi NYC.Trip BinsA.Total", "logicalLevel:Taxi NYC.Trip BinsB.Total", "logicalLevel:Taxi NYC.Medal BinsA.Total", "logicalLevel:Taxi NYC.Medal BinsB.Total", "logicalLevel:Taxi NYC.Geo Pickup Suburb.Geo Region Total", "logicalLevel:Taxi NYC.Geo Dropoff Suburb.Geo Dropoff Suburb Total" ]
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "Fact Taxi",
+      "disable" : true,
+      "tableMapping" : { },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    }, {
+      "name" : "NYCT_FACTS",
+      "disable" : true,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:Taxi NYC.CAT9.CAT9.NYCT_FACTS_BASE" ]
+      },
+      "dataGranularity" : [ "logicalLevel:Taxi NYC.Geo Pickup Suburb.Geo Region Total", "logicalLevel:Taxi NYC.Pickup Date.Pickup Date Detail", "logicalLevel:Taxi NYC.Ride.Ride Detail", "logicalLevel:Taxi NYC.Trip BinsA.Total", "logicalLevel:Taxi NYC.Trip BinsB.Total", "logicalLevel:Taxi NYC.Medal BinsA.Total", "logicalLevel:Taxi NYC.Medal BinsB.Total", "logicalLevel:Taxi NYC.Trip Attributes.Trip Attributes Detail", "logicalLevel:Taxi NYC.Geo Dropoff Suburb.Geo Dropoff Suburb Total" ],
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    }, {
+      "name" : "NYCT_FACTS_FULL",
+      "disable" : false,
+      "priority" : 1,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:Taxi NYC.CAT9.CAT9.NYCT_FACT_VTS" ]
+      },
+      "dataGranularity" : [ "logicalLevel:Taxi NYC.Trip BinsA.Detail", "logicalLevel:Taxi NYC.Trip BinsB.Detail", "logicalLevel:Taxi NYC.Medal BinsA.Detail", "logicalLevel:Taxi NYC.Medal BinsB.Detail", "logicalLevel:Taxi NYC.Geo Pickup Suburb.Geo Region Detail", "logicalLevel:Taxi NYC.Pickup Date.Pickup Date Detail", "logicalLevel:Taxi NYC.Ride.Ride Detail", "logicalLevel:Taxi NYC.Trip Attributes.Trip Attributes Detail", "logicalLevel:Taxi NYC.Geo Dropoff Suburb.Geo Dropoff Suburb Detail" ],
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "joins" : [ {
+      "rightTable" : "logicalTable:Taxi NYC.Geo Dropoff Suburb",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "rightTable" : "logicalTable:Taxi NYC.Geo Pickup Suburb",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "rightTable" : "logicalTable:Taxi NYC.Medal BinsA",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "rightTable" : "logicalTable:Taxi NYC.Medal BinsB",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "rightTable" : "logicalTable:Taxi NYC.Pickup Date",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "rightTable" : "logicalTable:Taxi NYC.Ride",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "rightTable" : "logicalTable:Taxi NYC.Trip Attributes",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "rightTable" : "logicalTable:Taxi NYC.Trip BinsA",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "rightTable" : "logicalTable:Taxi NYC.Trip BinsB",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    } ]
+  }
+}

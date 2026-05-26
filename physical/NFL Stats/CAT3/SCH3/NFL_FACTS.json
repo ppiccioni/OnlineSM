@@ -1,0 +1,331 @@
+{
+  "physicalTable" : {
+    "name" : "NFL_FACTS",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "DAY_DATE",
+      "dataType" : "DATE",
+      "length" : 7,
+      "nullable" : true
+    }, {
+      "name" : "GAME",
+      "dataType" : "VARCHAR",
+      "length" : 10,
+      "nullable" : true
+    }, {
+      "name" : "GAME_TYPE",
+      "dataType" : "VARCHAR",
+      "length" : 50,
+      "nullable" : true
+    }, {
+      "name" : "HUMIDITY",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "LOCATION_KEY",
+      "dataType" : "VARCHAR",
+      "length" : 5,
+      "nullable" : true
+    }, {
+      "name" : "OPPONENT_SCORE",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "OPP_FIRSTDOWN",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "OPP_FUMBLES",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "OPP_KEY",
+      "dataType" : "VARCHAR",
+      "length" : 5,
+      "nullable" : true
+    }, {
+      "name" : "OPP_PASSATT",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "OPP_PASSCOMP",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "OPP_PASSINT",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "OPP_PASSYDS",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "OPP_PENYDS",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "OPP_QB",
+      "dataType" : "VARCHAR",
+      "length" : 100,
+      "nullable" : true
+    }, {
+      "name" : "OPP_RUSHATT",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "OPP_RUSHYDS",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "OPP_SACKYDS",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "OPP_THIRDDOWNPCT",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "SEASON",
+      "dataType" : "VARCHAR",
+      "length" : 50,
+      "nullable" : true
+    }, {
+      "name" : "TEAM_FIRSTDOWN",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "TEAM_FUMBLES",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "TEAM_KEY",
+      "dataType" : "VARCHAR",
+      "length" : 5,
+      "nullable" : true
+    }, {
+      "name" : "TEAM_LOSS",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "TEAM_PASSATT",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "TEAM_PASSCOMP",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "TEAM_PASSINT",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "TEAM_PASSYDS",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "TEAM_PENYDS",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "TEAM_PUNTAVG",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "TEAM_QB",
+      "dataType" : "VARCHAR",
+      "length" : 100,
+      "nullable" : true
+    }, {
+      "name" : "TEAM_RUSHATT",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "TEAM_RUSHYDS",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "TEAM_SACKYDS",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "TEAM_SCORE",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "TEAM_THIRDDOWNPCT",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "TEAM_WIN",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "TEMPERATURE",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "TIE",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "WIND_CHILL",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "WIND_MPH",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "ROW_WID",
+      "dataType" : "VARCHAR",
+      "length" : 20,
+      "nullable" : false
+    }, {
+      "name" : "GAP",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "GAME_WID",
+      "dataType" : "VARCHAR",
+      "length" : 50,
+      "nullable" : false
+    }, {
+      "name" : "ALLROWS",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "GAME_SORT",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "DISTANCE",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    } ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    },
+    "joins" : [ {
+      "rightTable" : "physicalTable:NFL Stats.CAT3.SCH3.CLOUD_TIME",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:NFL Stats.CAT3.SCH3.NFL_FACTS.DAY_DATE",
+        "rightColumn" : "physicalColumn:NFL Stats.CAT3.SCH3.CLOUD_TIME.CALENDAR_DATE"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:NFL Stats.CAT3.SCH3.NFL_ATTRIBUTES",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:NFL Stats.CAT3.SCH3.NFL_FACTS.ROW_WID",
+        "rightColumn" : "physicalColumn:NFL Stats.CAT3.SCH3.NFL_ATTRIBUTES.ROW_WID"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:NFL Stats.CAT3.SCH3.NFL_AVG_ALL_TEAMS",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:NFL Stats.CAT3.SCH3.NFL_FACTS.TEAM_KEY",
+        "rightColumn" : "physicalColumn:NFL Stats.CAT3.SCH3.NFL_AVG_ALL_TEAMS.TEAM_KEY"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:NFL Stats.CAT3.SCH3.NFL_BINS",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:NFL Stats.CAT3.SCH3.NFL_FACTS.ROW_WID",
+        "rightColumn" : "physicalColumn:NFL Stats.CAT3.SCH3.NFL_BINS.ROW_WID"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:NFL Stats.CAT3.SCH3.NFL_GAMES",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:NFL Stats.CAT3.SCH3.NFL_FACTS.ROW_WID",
+        "rightColumn" : "physicalColumn:NFL Stats.CAT3.SCH3.NFL_GAMES.ROW_WID"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:NFL Stats.CAT3.SCH3.NFL_INFLUENCERS_ALL",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:NFL Stats.CAT3.SCH3.NFL_FACTS.ALLROWS",
+        "rightColumn" : "physicalColumn:NFL Stats.CAT3.SCH3.NFL_INFLUENCERS_ALL.KEY"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:NFL Stats.CAT3.SCH3.NFL_INFLUENCERS_TEAMS",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:NFL Stats.CAT3.SCH3.NFL_FACTS.TEAM_KEY",
+        "rightColumn" : "physicalColumn:NFL Stats.CAT3.SCH3.NFL_INFLUENCERS_TEAMS.TEAM_KEY"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:NFL Stats.CAT3.SCH3.NFL_LOCATIONS",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:NFL Stats.CAT3.SCH3.NFL_FACTS.LOCATION_KEY",
+        "rightColumn" : "physicalColumn:NFL Stats.CAT3.SCH3.NFL_LOCATIONS.LOC_KEY"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:NFL Stats.CAT3.SCH3.NFL_QB",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:NFL Stats.CAT3.SCH3.NFL_FACTS.TEAM_QB",
+        "rightColumn" : "physicalColumn:NFL Stats.CAT3.SCH3.NFL_QB.QB_NAME"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:NFL Stats.CAT3.SCH3.NFL_QB_OPP",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:NFL Stats.CAT3.SCH3.NFL_FACTS.OPP_QB",
+        "rightColumn" : "physicalColumn:NFL Stats.CAT3.SCH3.NFL_QB_OPP.QB_NAME"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:NFL Stats.CAT3.SCH3.NFL_TEAMS",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:NFL Stats.CAT3.SCH3.NFL_FACTS.TEAM_KEY",
+        "rightColumn" : "physicalColumn:NFL Stats.CAT3.SCH3.NFL_TEAMS.TEAM_KEY"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:NFL Stats.CAT3.SCH3.NFL_TEAMS_OPP",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:NFL Stats.CAT3.SCH3.NFL_FACTS.OPP_KEY",
+        "rightColumn" : "physicalColumn:NFL Stats.CAT3.SCH3.NFL_TEAMS_OPP.TEAM_KEY"
+      } ]
+    } ]
+  }
+}

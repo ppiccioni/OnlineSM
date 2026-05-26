@@ -1,0 +1,17 @@
+{
+  "presentationTable" : {
+    "name" : "UT Users",
+    "presentationColumns" : [ {
+      "name" : "CONNECTOR",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.UT Users.CONNECTOR",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "UT_Username",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.UT Users.UT_Username",
+      "useLogicalColumnName" : true
+    } ]
+  }
+}

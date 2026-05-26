@@ -1,0 +1,138 @@
+{
+  "presentationTable" : {
+    "name" : "Purchases",
+    "presentationColumns" : [ {
+      "name" : "BUYER",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Purchases.BUYER",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Contract Qty",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Purchases.Contract Qty",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Contract Spend Amt",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Purchases.Contract Spend Amt",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Contract Unit Price",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Purchases.Contract Unit Price",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "DATE_ID",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Purchases.DATE_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DEPARTMENT",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Purchases.DEPARTMENT",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_BATCH_ID",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Purchases.DSYS_BATCH_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_INSTANCE_ID",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Purchases.DSYS_INSTANCE_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_PROCESS_ID",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Purchases.DSYS_PROCESS_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Entry Type",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Purchases.Entry Type",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Invoice Nbr",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Purchases.Invoice Nbr",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "ITEM",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Purchases.ITEM",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "PO Count",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Purchases.PO Count",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "PO Line Count",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Purchases.PO Line Count",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "PO Line Nbr",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Purchases.PO Line Nbr",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "PO Nbr",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Purchases.PO Nbr",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "PO Release Nbr",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Purchases.PO Release Nbr",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Purchase Order",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Purchases.Purchase Order",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "SUPPLIER",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Purchases.SUPPLIER",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Total Qty",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Purchases.Total Qty",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Total Spend Amt",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Purchases.Total Spend Amt",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Total Unit Price",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Purchases.Total Unit Price",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "UOM",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Purchases.UOM",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Contract Usage %",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Purchases.Contract Usage %",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Non-Contract Qty",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Purchases.Non-Contract Qty",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Non-Contract Unit Price",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Purchases.Non-Contract Unit Price",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Non-Contract Spend Amt",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Purchases.Non-Contract Spend Amt",
+      "useLogicalColumnName" : true
+    } ]
+  }
+}

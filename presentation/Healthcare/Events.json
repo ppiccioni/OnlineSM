@@ -1,0 +1,75 @@
+{
+  "presentationTable" : {
+    "name" : "Events",
+    "presentationColumns" : [ {
+      "name" : "DSYS_BATCH_ID",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Events.DSYS_BATCH_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_INSTANCE_ID",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Events.DSYS_INSTANCE_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_PROCESS_ID",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Events.DSYS_PROCESS_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DATE_ID",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Events.DATE_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DEPARTMENT",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Events.DEPARTMENT",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Dissatisfied Ratio",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Events.Dissatisfied Ratio",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "EMPLOYEE_NAME",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Events.EMPLOYEE_NAME",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Event Action",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Events.Event Action",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Event Classification",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Events.Event Classification",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Event Reason",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Events.Event Reason",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Headcount",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Events.Headcount",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "JOB_DESCRIPTION",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Events.JOB_DESCRIPTION",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    } ]
+  }
+}

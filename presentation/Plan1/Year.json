@@ -1,0 +1,63 @@
+{
+  "presentationTable" : {
+    "name" : "Year",
+    "presentationColumns" : [ {
+      "name" : "Year - HSP_LEAPYEAR",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Year.Year - HSP_LEAPYEAR",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Year Alias:Default,Gen,1",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Year.Year Alias:Default,Gen,1",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Year Alias:Default,Gen,2",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Year.Year Alias:Default,Gen,2",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Year Alias:English,Gen,1",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Year.Year Alias:English,Gen,1",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Year Alias:English,Gen,2",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Year.Year Alias:English,Gen,2",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Year Default",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Year.Year Default",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Year English",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Year.Year English",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Year Gen Number",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Year.Year Gen Number",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Year Leaf Indicator",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Year.Year Leaf Indicator",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Year Name",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Year.Year Name",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Year Name,Gen,1",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Year.Year Name,Gen,1",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Year Name,Gen,2",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Year.Year Name,Gen,2",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Year Parent Key",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Year.Year Parent Key",
+      "useLogicalColumnName" : true
+    } ],
+    "hierarchies" : [ {
+      "name" : "Year",
+      "sourceLogicalTable" : "logicalTable:Plan1.Year",
+      "displayColumn" : "presentationColumn:Plan1.Year.Year Name"
+    } ]
+  }
+}

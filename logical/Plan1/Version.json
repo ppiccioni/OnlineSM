@@ -1,0 +1,394 @@
+{
+  "logicalTable" : {
+    "name" : "Version",
+    "type" : "DIMENSION",
+    "primaryKey" : [ "Version Name" ],
+    "logicalColumns" : [ {
+      "name" : "Version - Public",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Plan1",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:adm:thin:com\\.hyperion\\.ap\\.hsp\\.HspAdmDriver:193\\.122\\.4\\.108%3A9000:Vision.Plan1.Version.Version.Version - Public" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "Version - Standard Bottom Up",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Plan1",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:adm:thin:com\\.hyperion\\.ap\\.hsp\\.HspAdmDriver:193\\.122\\.4\\.108%3A9000:Vision.Plan1.Version.Version.Version - Standard Bottom Up" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "Version - Standard Target",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Plan1",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:adm:thin:com\\.hyperion\\.ap\\.hsp\\.HspAdmDriver:193\\.122\\.4\\.108%3A9000:Vision.Plan1.Version.Version.Version - Standard Target" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "Version Alias:Default,Gen,1",
+      "dataType" : "VARCHAR",
+      "sortBy" : "Version Sort Order,Gen,1",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Plan1",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:adm:thin:com\\.hyperion\\.ap\\.hsp\\.HspAdmDriver:193\\.122\\.4\\.108%3A9000:Vision.Plan1.Version Alias:Default,Gen,1" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "Version Alias:Default,Gen,2",
+      "dataType" : "VARCHAR",
+      "sortBy" : "Version Sort Order,Gen,2",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Plan1",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:adm:thin:com\\.hyperion\\.ap\\.hsp\\.HspAdmDriver:193\\.122\\.4\\.108%3A9000:Vision.Plan1.Version Alias:Default,Gen,2" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "Version Alias:Default,Gen,3",
+      "dataType" : "VARCHAR",
+      "sortBy" : "Version Sort Order,Gen,3",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Plan1",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:adm:thin:com\\.hyperion\\.ap\\.hsp\\.HspAdmDriver:193\\.122\\.4\\.108%3A9000:Vision.Plan1.Version Alias:Default,Gen,3" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "Version Alias:English,Gen,1",
+      "dataType" : "VARCHAR",
+      "sortBy" : "Version Sort Order,Gen,1",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Plan1",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:adm:thin:com\\.hyperion\\.ap\\.hsp\\.HspAdmDriver:193\\.122\\.4\\.108%3A9000:Vision.Plan1.Version Alias:English,Gen,1" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "Version Alias:English,Gen,2",
+      "dataType" : "VARCHAR",
+      "sortBy" : "Version Sort Order,Gen,2",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Plan1",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:adm:thin:com\\.hyperion\\.ap\\.hsp\\.HspAdmDriver:193\\.122\\.4\\.108%3A9000:Vision.Plan1.Version Alias:English,Gen,2" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "Version Alias:English,Gen,3",
+      "dataType" : "VARCHAR",
+      "sortBy" : "Version Sort Order,Gen,3",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Plan1",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:adm:thin:com\\.hyperion\\.ap\\.hsp\\.HspAdmDriver:193\\.122\\.4\\.108%3A9000:Vision.Plan1.Version Alias:English,Gen,3" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "Version Default",
+      "dataType" : "VARCHAR",
+      "sortBy" : "Version Sort Order#1",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Plan1",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:adm:thin:com\\.hyperion\\.ap\\.hsp\\.HspAdmDriver:193\\.122\\.4\\.108%3A9000:Vision.Plan1.Version.Version.Version Default" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "Version English",
+      "dataType" : "VARCHAR",
+      "sortBy" : "Version Sort Order#1",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Plan1",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:adm:thin:com\\.hyperion\\.ap\\.hsp\\.HspAdmDriver:193\\.122\\.4\\.108%3A9000:Vision.Plan1.Version.Version.Version English" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "Version Gen Number",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Plan1",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:adm:thin:com\\.hyperion\\.ap\\.hsp\\.HspAdmDriver:193\\.122\\.4\\.108%3A9000:Vision.Plan1.Version.Version.Version Gen Number" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "Version Leaf Indicator",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Plan1",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:adm:thin:com\\.hyperion\\.ap\\.hsp\\.HspAdmDriver:193\\.122\\.4\\.108%3A9000:Vision.Plan1.Version.Version.Version Leaf Indicator" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "Version Name",
+      "dataType" : "VARCHAR",
+      "sortBy" : "Version Sort Order#1",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Plan1",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:adm:thin:com\\.hyperion\\.ap\\.hsp\\.HspAdmDriver:193\\.122\\.4\\.108%3A9000:Vision.Plan1.Version.Version.Version Name" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "Version Name,Gen,1",
+      "dataType" : "VARCHAR",
+      "sortBy" : "Version Sort Order,Gen,1",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Plan1",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:adm:thin:com\\.hyperion\\.ap\\.hsp\\.HspAdmDriver:193\\.122\\.4\\.108%3A9000:Vision.Plan1.Version Name,Gen,1" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "Version Name,Gen,2",
+      "dataType" : "VARCHAR",
+      "sortBy" : "Version Sort Order,Gen,2",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Plan1",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:adm:thin:com\\.hyperion\\.ap\\.hsp\\.HspAdmDriver:193\\.122\\.4\\.108%3A9000:Vision.Plan1.Version Name,Gen,2" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "Version Name,Gen,3",
+      "dataType" : "VARCHAR",
+      "sortBy" : "Version Sort Order,Gen,3",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Plan1",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:adm:thin:com\\.hyperion\\.ap\\.hsp\\.HspAdmDriver:193\\.122\\.4\\.108%3A9000:Vision.Plan1.Version Name,Gen,3" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "Version Parent Key",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Plan1",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:adm:thin:com\\.hyperion\\.ap\\.hsp\\.HspAdmDriver:193\\.122\\.4\\.108%3A9000:Vision.Plan1.Version.Version.Version Parent Key" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "Version Sort Order",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Plan1",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:adm:thin:com\\.hyperion\\.ap\\.hsp\\.HspAdmDriver:193\\.122\\.4\\.108%3A9000:Vision.Plan1.Version.Version.Version Sort Order" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "Version Sort Order#1",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Plan1",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:adm:thin:com\\.hyperion\\.ap\\.hsp\\.HspAdmDriver:193\\.122\\.4\\.108%3A9000:Vision.Plan1.Version.Version.Version Sort Order#1" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "Version Sort Order,Gen,1",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Plan1",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:adm:thin:com\\.hyperion\\.ap\\.hsp\\.HspAdmDriver:193\\.122\\.4\\.108%3A9000:Vision.Plan1.Version Sort Order,Gen,1" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "Version Sort Order,Gen,2",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Plan1",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:adm:thin:com\\.hyperion\\.ap\\.hsp\\.HspAdmDriver:193\\.122\\.4\\.108%3A9000:Vision.Plan1.Version Sort Order,Gen,2" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "Version Sort Order,Gen,3",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Plan1",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:adm:thin:com\\.hyperion\\.ap\\.hsp\\.HspAdmDriver:193\\.122\\.4\\.108%3A9000:Vision.Plan1.Version Sort Order,Gen,3" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "Plan1",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalCubeTable:adm:thin:com\\.hyperion\\.ap\\.hsp\\.HspAdmDriver:193\\.122\\.4\\.108%3A9000:Vision.Plan1" ]
+      },
+      "dataGranularity" : [ "logicalLevel:Plan1.Version.Detail" ],
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "hierarchyType" : "PARENT_CHILD",
+    "parentChildHierarchy" : {
+      "name" : "Version",
+      "logicalLevels" : [ {
+        "name" : "Total",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : true,
+        "disableAggregateToHigherLevel" : false
+      }, {
+        "name" : "Detail",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Version Name" ],
+        "displayKey" : "Version Name",
+        "parentKey" : "Version Parent Key"
+      } ]
+    }
+  }
+}

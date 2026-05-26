@@ -1,0 +1,38 @@
+{
+  "presentationTable" : {
+    "name" : "Pickup Geo",
+    "alternateNames" : [ "Geo", "Ride" ],
+    "presentationColumns" : [ {
+      "name" : "Pickup Lat",
+      "sourceLogicalColumn" : "logicalColumn:Taxi NYC.Ride.Pickup Lat",
+      "useLogicalColumnName" : true,
+      "permissions" : [ {
+        "accessor" : "role:AuthenticatedUser",
+        "access" : "NO_ACCESS"
+      } ]
+    }, {
+      "name" : "Pickup Lon",
+      "sourceLogicalColumn" : "logicalColumn:Taxi NYC.Ride.Pickup Lon",
+      "useLogicalColumnName" : true,
+      "permissions" : [ {
+        "accessor" : "role:AuthenticatedUser",
+        "access" : "NO_ACCESS"
+      } ]
+    }, {
+      "name" : "Pickup County (L1)",
+      "sourceLogicalColumn" : "logicalColumn:Taxi NYC.Geo Pickup Suburb.Pickup County (L1)",
+      "useLogicalColumnName" : true,
+      "alternateNames" : [ "County", "County (L1)", "County L1" ]
+    }, {
+      "name" : "Pickup Borough (L2)",
+      "sourceLogicalColumn" : "logicalColumn:Taxi NYC.Geo Pickup Suburb.Pickup Borough (L2)",
+      "useLogicalColumnName" : true,
+      "alternateNames" : [ "City", "City (L2)", "City Borough (L2)" ]
+    }, {
+      "name" : "Pickup Suburb (L3)",
+      "sourceLogicalColumn" : "logicalColumn:Taxi NYC.Geo Pickup Suburb.Pickup Suburb (L3)",
+      "useLogicalColumnName" : true,
+      "alternateNames" : [ "Name", "Suburb", "Suburb (L3)" ]
+    } ]
+  }
+}

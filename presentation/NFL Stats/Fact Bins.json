@@ -1,0 +1,126 @@
+{
+  "presentationTable" : {
+    "name" : "Fact Bins",
+    "presentationColumns" : [ {
+      "name" : "Score Gap Bin",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Fact Bins.Score Gap Bin",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Humidity Bin",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Fact Bins.Humidity Bin",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Opp Score Bin",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Fact Bins.Opp Score Bin",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Opp FirstDown Bin",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Fact Bins.Opp FirstDown Bin",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Opp Pass Att  Bin",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Fact Bins.Opp Pass Att  Bin",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Opp Pass Comp Bin",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Fact Bins.Opp Pass Comp Bin",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Opp Pass Yards Bin",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Fact Bins.Opp Pass Yards Bin",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Opp Pen Yards Bin",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Fact Bins.Opp Pen Yards Bin",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Opp Rush Att Bin",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Fact Bins.Opp Rush Att Bin",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Opp Rush Yards Bin",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Fact Bins.Opp Rush Yards Bin",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Opp Sack Yards Bin",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Fact Bins.Opp Sack Yards Bin",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Opp Third Down Pct Bin",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Fact Bins.Opp Third Down Pct Bin",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "ROW_WID",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Fact Bins.ROW_WID",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Team FirstDown Bin",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Fact Bins.Team FirstDown Bin",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Team Pass Att  Bin",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Fact Bins.Team Pass Att  Bin",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Team Pass Comp Bin",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Fact Bins.Team Pass Comp Bin",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Team Pass Yards Bin",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Fact Bins.Team Pass Yards Bin",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Team Pen Yards Bin",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Fact Bins.Team Pen Yards Bin",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Team Rush Att Bin",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Fact Bins.Team Rush Att Bin",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Team Rush Yards Bin",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Fact Bins.Team Rush Yards Bin",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Team Sack Yards Bin",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Fact Bins.Team Sack Yards Bin",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Team Score Bin",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Fact Bins.Team Score Bin",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Team TEAM_THIRDDOWNPCT_B",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Fact Bins.Team TEAM_THIRDDOWNPCT_B",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Temperature Bin",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Fact Bins.Temperature Bin",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Wind Chill Bin",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Fact Bins.Wind Chill Bin",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Wind MPH Bin",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Fact Bins.Wind MPH Bin",
+      "useLogicalColumnName" : true
+    } ],
+    "hierarchies" : [ {
+      "name" : "Hierarchy 1",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:NFL Stats.Fact Bins",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      },
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:NFL Stats.Fact Bins.Total"
+      }, {
+        "name" : "Detail",
+        "sourceLogicalLevel" : "logicalLevel:NFL Stats.Fact Bins.Detail",
+        "displayColumn" : "presentationColumn:NFL Stats.Fact Bins.ROW_WID"
+      } ]
+    } ]
+  }
+}

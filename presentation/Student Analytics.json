@@ -1,0 +1,82 @@
+{
+  "subjectArea" : {
+    "name" : "Student Analytics",
+    "sourceBusinessModel" : "businessModel:Student Analytics",
+    "alternateNames" : [ "PC10" ],
+    "tableOrder" : [ {
+      "name" : "presentationTable:Student Analytics.Grade"
+    }, {
+      "name" : "presentationTable:Student Analytics.Location"
+    }, {
+      "name" : "presentationTable:Student Analytics.Facts - Degrees"
+    }, {
+      "name" : "presentationTable:Student Analytics.Campus"
+    }, {
+      "name" : "presentationTable:Student Analytics.Snapshot"
+    }, {
+      "name" : "presentationTable:Student Analytics.Facts - Section Enrollment"
+    }, {
+      "name" : "presentationTable:Student Analytics.Student Academic Attributes"
+    }, {
+      "name" : "presentationTable:Student Analytics.Student Academic Profile"
+    }, {
+      "name" : "presentationTable:Student Analytics.Faculty Profile"
+    }, {
+      "name" : "presentationTable:Student Analytics.Academic Org"
+    }, {
+      "name" : "presentationTable:Student Analytics.Major"
+    }, {
+      "name" : "presentationTable:Student Analytics.Facts - Student Test Scores"
+    }, {
+      "name" : "presentationTable:Student Analytics.Course"
+    }, {
+      "name" : "presentationTable:Student Analytics.Program"
+    }, {
+      "name" : "presentationTable:Student Analytics.Facts - Term GPA Graduates"
+    }, {
+      "name" : "presentationTable:Student Analytics.Term"
+    }, {
+      "name" : "presentationTable:Student Analytics.Section"
+    }, {
+      "name" : "presentationTable:Student Analytics.Student Demographics"
+    }, {
+      "name" : "presentationTable:Student Analytics.Facts - Faculty Load"
+    }, {
+      "name" : "presentationTable:Student Analytics.Cohort"
+    }, {
+      "name" : "presentationTable:Student Analytics.Facts - Section Grades"
+    }, {
+      "name" : "presentationTable:Student Analytics.Date"
+    }, {
+      "name" : "presentationTable:Student Analytics.Facts - Institution Summary"
+    }, {
+      "name" : "presentationTable:Student Analytics.Degree"
+    }, {
+      "name" : "presentationTable:Student Analytics.Facts - Term Enrollment"
+    }, {
+      "name" : "presentationTable:Student Analytics.Term Segment"
+    }, {
+      "name" : "presentationTable:Student Analytics.Faculty Demographics"
+    }, {
+      "name" : "presentationTable:Student Analytics.Admit Term"
+    }, {
+      "name" : "presentationTable:Student Analytics.Matric Academic Org"
+    }, {
+      "name" : "presentationTable:Student Analytics.Faculty"
+    }, {
+      "name" : "presentationTable:Student Analytics.Matric Academic Profile"
+    }, {
+      "name" : "presentationTable:Student Analytics.Student"
+    }, {
+      "name" : "presentationTable:Student Analytics.Matric Academic Attributes"
+    }, {
+      "name" : "presentationTable:Student Analytics.Course Org"
+    }, {
+      "name" : "presentationTable:Student Analytics.Minor"
+    } ],
+    "localization" : {
+      "localizationKey" : "Student Analytics",
+      "nameVariable" : "Student Analytics"
+    }
+  }
+}

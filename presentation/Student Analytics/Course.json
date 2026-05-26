@@ -1,0 +1,74 @@
+{
+  "presentationTable" : {
+    "name" : "Course",
+    "presentationColumns" : [ {
+      "name" : "Course Nbr",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Course.Course Nbr",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Course Title",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Course.Course Title",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "COURSE_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Course.COURSE_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_BATCH_ID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Course.DSYS_BATCH_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_INSTANCE_ID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Course.DSYS_INSTANCE_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_PROCESS_ID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Course.DSYS_PROCESS_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Effective Term",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Course.Effective Term",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "SUBJECT_CD",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Course.SUBJECT_CD",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Subject",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Course.Subject",
+      "useLogicalColumnName" : true
+    } ],
+    "hierarchies" : [ {
+      "name" : "Hierarchy 1",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:Student Analytics.Course",
+      "levels" : [ {
+        "name" : "All Courses",
+        "sourceLogicalLevel" : "logicalLevel:Student Analytics.Course.All Courses"
+      }, {
+        "name" : "Subject",
+        "sourceLogicalLevel" : "logicalLevel:Student Analytics.Course.Subject",
+        "displayColumn" : "presentationColumn:Student Analytics.Course.Subject"
+      }, {
+        "name" : "Course",
+        "sourceLogicalLevel" : "logicalLevel:Student Analytics.Course.Course",
+        "displayColumn" : "presentationColumn:Student Analytics.Course.Course Nbr"
+      } ]
+    } ]
+  }
+}

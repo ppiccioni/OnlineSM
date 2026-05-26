@@ -1,0 +1,54 @@
+{
+  "presentationTable" : {
+    "name" : "Orderlines",
+    "presentationColumns" : [ {
+      "name" : "Date",
+      "sourceLogicalColumn" : "logicalColumn:Retail.Orderlines.Date",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Line ID",
+      "sourceLogicalColumn" : "logicalColumn:Retail.Orderlines.Line ID",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Location ID",
+      "sourceLogicalColumn" : "logicalColumn:Retail.Orderlines.Location ID",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Price",
+      "sourceLogicalColumn" : "logicalColumn:Retail.Orderlines.Price",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Product ID",
+      "sourceLogicalColumn" : "logicalColumn:Retail.Orderlines.Product ID",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Quantity",
+      "sourceLogicalColumn" : "logicalColumn:Retail.Orderlines.Quantity",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Revenue",
+      "sourceLogicalColumn" : "logicalColumn:Retail.Orderlines.Revenue",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Time",
+      "sourceLogicalColumn" : "logicalColumn:Retail.Orderlines.Time",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Transaction ID",
+      "sourceLogicalColumn" : "logicalColumn:Retail.Orderlines.Transaction ID",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "#Transactions",
+      "sourceLogicalColumn" : "logicalColumn:Retail.Orderlines.#Transactions",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Avg Order Revenue",
+      "sourceLogicalColumn" : "logicalColumn:Retail.Orderlines.Avg Order Revenue",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Revenue Year Ago",
+      "sourceLogicalColumn" : "logicalColumn:Retail.Orderlines.Revenue Year Ago",
+      "useLogicalColumnName" : true
+    } ]
+  }
+}

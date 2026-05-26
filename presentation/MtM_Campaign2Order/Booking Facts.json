@@ -1,0 +1,63 @@
+{
+  "presentationTable" : {
+    "name" : "Booking Facts",
+    "presentationColumns" : [ {
+      "name" : "Customer Id",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Booking Facts.Customer Id",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "SalesRep Id",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Booking Facts.SalesRep Id",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Office Id",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Booking Facts.Office Id",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Booking Date",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Booking Facts.Booking Date",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Order Id",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Booking Facts.Order Id",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Product Id",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Booking Facts.Product Id",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Booked Amount",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Booking Facts.Booked Amount",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Address Id",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Booking Facts.Address Id",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Booked Quantity",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Booking Facts.Booked Quantity",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "# Customers",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Booking Facts.# Customers",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "# SalesReps",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Booking Facts.# SalesReps",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "# Bookings",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Booking Facts.# Bookings",
+      "useLogicalColumnName" : true
+    } ]
+  }
+}

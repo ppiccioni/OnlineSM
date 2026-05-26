@@ -1,0 +1,73 @@
+{
+  "presentationTable" : {
+    "name" : "School Bins",
+    "presentationColumns" : [ {
+      "name" : "BINA_SCHOOL_V1",
+      "sourceLogicalColumn" : "logicalColumn:Donations.School Bins.BINA_SCHOOL_V1",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Donations Bin",
+      "sourceLogicalColumn" : "logicalColumn:Donations.School Bins.Donations Bin",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "BINA_SCHOOL_V2",
+      "sourceLogicalColumn" : "logicalColumn:Donations.School Bins.BINA_SCHOOL_V2",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Stud Reached Bin",
+      "sourceLogicalColumn" : "logicalColumn:Donations.School Bins.Stud Reached Bin",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "BINA_SCHOOL_V3",
+      "sourceLogicalColumn" : "logicalColumn:Donations.School Bins.BINA_SCHOOL_V3",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "# Donors Bin",
+      "sourceLogicalColumn" : "logicalColumn:Donations.School Bins.# Donors Bin",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "BINA_SCHOOL_V4",
+      "sourceLogicalColumn" : "logicalColumn:Donations.School Bins.BINA_SCHOOL_V4",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "# Projects  Bin",
+      "sourceLogicalColumn" : "logicalColumn:Donations.School Bins.# Projects  Bin",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "SCHOOLID",
+      "sourceLogicalColumn" : "logicalColumn:Donations.School Bins.SCHOOLID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    } ],
+    "hierarchies" : [ {
+      "name" : "Hierarchy 1",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:Donations.School Bins",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      },
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:Donations.School Bins.Total"
+      }, {
+        "name" : "Detail",
+        "sourceLogicalLevel" : "logicalLevel:Donations.School Bins.Detail",
+        "displayColumn" : "presentationColumn:Donations.School Bins.SCHOOLID"
+      } ]
+    } ]
+  }
+}

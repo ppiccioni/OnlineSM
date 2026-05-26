@@ -1,0 +1,83 @@
+{
+  "presentationTable" : {
+    "name" : "Product",
+    "presentationColumns" : [ {
+      "name" : "Product Alias:Default,Gen,1",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Product.Product Alias:Default,Gen,1",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Product Alias:Default,Gen,2",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Product.Product Alias:Default,Gen,2",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Product Alias:Default,Gen,3",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Product.Product Alias:Default,Gen,3",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Product Alias:Default,Gen,4",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Product.Product Alias:Default,Gen,4",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Product Alias:English,Gen,1",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Product.Product Alias:English,Gen,1",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Product Alias:English,Gen,2",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Product.Product Alias:English,Gen,2",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Product Alias:English,Gen,3",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Product.Product Alias:English,Gen,3",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Product Alias:English,Gen,4",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Product.Product Alias:English,Gen,4",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Product Default",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Product.Product Default",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Product English",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Product.Product English",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Product Gen Number",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Product.Product Gen Number",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Product Leaf Indicator",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Product.Product Leaf Indicator",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Product Name",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Product.Product Name",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Product Name,Gen,1",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Product.Product Name,Gen,1",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Product Name,Gen,2",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Product.Product Name,Gen,2",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Product Name,Gen,3",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Product.Product Name,Gen,3",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Product Name,Gen,4",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Product.Product Name,Gen,4",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Product Parent Key",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Product.Product Parent Key",
+      "useLogicalColumnName" : true
+    } ],
+    "hierarchies" : [ {
+      "name" : "Product",
+      "sourceLogicalTable" : "logicalTable:Plan1.Product",
+      "displayColumn" : "presentationColumn:Plan1.Product.Product Name"
+    } ]
+  }
+}

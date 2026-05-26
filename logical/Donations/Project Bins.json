@@ -1,0 +1,170 @@
+{
+  "logicalTable" : {
+    "name" : "Project Bins",
+    "type" : "DIMENSION",
+    "primaryKey" : [ "PROJECTID" ],
+    "logicalColumns" : [ {
+      "name" : "BINA_PROJ_V1",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "V_BINS_PROJECT_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Donations.CAT4.SCH4.V_BINS_PROJECT.BINA_PROJ_V1" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Donations Bin",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "V_BINS_PROJECT_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Donations.CAT4.SCH4.V_BINS_PROJECT.BINA_PROJ_V1_W" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "BINA_PROJ_V2",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "V_BINS_PROJECT_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Donations.CAT4.SCH4.V_BINS_PROJECT.BINA_PROJ_V2" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Stud Reached Bin",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "V_BINS_PROJECT_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Donations.CAT4.SCH4.V_BINS_PROJECT.BINA_PROJ_V2_W" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "BINA_PROJ_V3",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "V_BINS_PROJECT_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Donations.CAT4.SCH4.V_BINS_PROJECT.BINA_PROJ_V3" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "# of Donors Bin",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "V_BINS_PROJECT_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Donations.CAT4.SCH4.V_BINS_PROJECT.BINA_PROJ_V3_W" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "BINA_PROJ_V4",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "V_BINS_PROJECT_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Donations.CAT4.SCH4.V_BINS_PROJECT.BINA_PROJ_V4" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Project Completion Days Bin",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "V_BINS_PROJECT_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Donations.CAT4.SCH4.V_BINS_PROJECT.BINA_PROJ_V4_W" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "PROJECTID",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "V_BINS_PROJECT_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Donations.CAT4.SCH4.V_BINS_PROJECT.PROJECTID" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "V_BINS_PROJECT_LTS",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:Donations.CAT4.SCH4.V_BINS_PROJECT" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "hierarchyType" : "LEVEL_BASED",
+    "levelBasedHierarchy" : {
+      "defaultRootLevel" : "Total",
+      "ragged" : false,
+      "skipped" : false,
+      "logicalLevels" : [ {
+        "name" : "Total",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : true,
+        "disableAggregateToHigherLevel" : false
+      }, {
+        "name" : "Detail",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "PROJECTID" ],
+        "displayKey" : "PROJECTID",
+        "chronologicalKey" : [ "PROJECTID" ]
+      } ],
+      "logicalHierarchies" : [ {
+        "name" : "Project Bins",
+        "description" : "default hierarchy",
+        "levels" : [ "Total", "Detail" ]
+      } ]
+    }
+  }
+}

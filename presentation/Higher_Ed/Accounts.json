@@ -1,0 +1,52 @@
+{
+  "presentationTable" : {
+    "name" : "Accounts",
+    "presentationColumns" : [ {
+      "name" : "Account",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Accounts.Account",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Account Group",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Accounts.Account Group",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "DSYS_BATCH_ID",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Accounts.DSYS_BATCH_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_INSTANCE_ID",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Accounts.DSYS_INSTANCE_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_PROCESS_ID",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Accounts.DSYS_PROCESS_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    } ],
+    "hierarchies" : [ {
+      "name" : "Account Hierarchy",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:Higher_Ed.Accounts",
+      "levels" : [ {
+        "name" : "All Accounts",
+        "sourceLogicalLevel" : "logicalLevel:Higher_Ed.Accounts.All Accounts"
+      }, {
+        "name" : "Account Group",
+        "sourceLogicalLevel" : "logicalLevel:Higher_Ed.Accounts.Account Group",
+        "displayColumn" : "presentationColumn:Higher_Ed.Accounts.Account Group"
+      }, {
+        "name" : "Account",
+        "sourceLogicalLevel" : "logicalLevel:Higher_Ed.Accounts.Account",
+        "displayColumn" : "presentationColumn:Higher_Ed.Accounts.Account"
+      } ]
+    } ]
+  }
+}

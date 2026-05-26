@@ -1,0 +1,39 @@
+{
+  "presentationTable" : {
+    "name" : "Trip Avg",
+    "alternateNames" : [ "Calculations", "Trip Calcs" ],
+    "presentationColumns" : [ {
+      "name" : "Avg Trip Minutes",
+      "sourceLogicalColumn" : "logicalColumn:Taxi NYC.Facts.Avg Trip Minutes",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Avg Trip Miles",
+      "sourceLogicalColumn" : "logicalColumn:Taxi NYC.Facts.Avg Trip Miles",
+      "useLogicalColumnName" : true,
+      "alternateNames" : [ "Avg Trip Distance" ]
+    }, {
+      "name" : "Avg Speed (MPH)",
+      "sourceLogicalColumn" : "logicalColumn:Taxi NYC.Facts.Avg Speed (MPH)",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Avg $ per Mile",
+      "sourceLogicalColumn" : "logicalColumn:Taxi NYC.Facts.Avg $ per Mile",
+      "useLogicalColumnName" : true,
+      "alternateNames" : [ "Avg $ Cost per Mile", "Avg $ Price per Mile" ]
+    }, {
+      "name" : "Avg Trip Amt",
+      "sourceLogicalColumn" : "logicalColumn:Taxi NYC.Facts.Avg Trip Amt",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Avg # of Pax",
+      "sourceLogicalColumn" : "logicalColumn:Taxi NYC.Facts.Avg # of Pax",
+      "useLogicalColumnName" : true,
+      "alternateNames" : [ "Avg # of Passengers" ]
+    }, {
+      "name" : "Avg $ per Pax per Mile",
+      "sourceLogicalColumn" : "logicalColumn:Taxi NYC.Facts.Avg $ per Pax per Mile",
+      "useLogicalColumnName" : true,
+      "alternateNames" : [ "Avg $ per Passenger Mile" ]
+    } ]
+  }
+}

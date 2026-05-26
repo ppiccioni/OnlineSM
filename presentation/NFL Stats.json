@@ -1,0 +1,44 @@
+{
+  "subjectArea" : {
+    "name" : "NFL Stats",
+    "sourceBusinessModel" : "businessModel:NFL Stats",
+    "alternateNames" : [ "PC3" ],
+    "tableOrder" : [ {
+      "name" : "presentationTable:NFL Stats.Opponent"
+    }, {
+      "name" : "presentationTable:NFL Stats.Fact Bins"
+    }, {
+      "name" : "presentationTable:NFL Stats.Fact Attributes"
+    }, {
+      "name" : "presentationTable:NFL Stats.Game"
+    }, {
+      "name" : "presentationTable:NFL Stats.Regr Score Teams"
+    }, {
+      "name" : "presentationTable:NFL Stats.Regr Score All"
+    }, {
+      "name" : "presentationTable:NFL Stats.Facts"
+    }, {
+      "name" : "presentationTable:NFL Stats.Time"
+    }, {
+      "name" : "presentationTable:NFL Stats.Opponent QB"
+    }, {
+      "name" : "presentationTable:NFL Stats.Team QB"
+    }, {
+      "name" : "presentationTable:NFL Stats.Team"
+    }, {
+      "name" : "presentationTable:NFL Stats.Game Location"
+    }, {
+      "name" : "presentationTable:NFL Stats.Teams Composite Rank"
+    }, {
+      "name" : "presentationTable:NFL Stats.UT Lite"
+    }, {
+      "name" : "presentationTable:NFL Stats.UT Dashboards"
+    }, {
+      "name" : "presentationTable:NFL Stats.UT Users"
+    } ],
+    "localization" : {
+      "localizationKey" : "NFL Stats",
+      "nameVariable" : "NFL Stats"
+    }
+  }
+}

@@ -1,0 +1,329 @@
+{
+  "logicalTable" : {
+    "name" : "Ride",
+    "type" : "DIMENSION",
+    "primaryKey" : [ "Row_Wid" ],
+    "logicalColumns" : [ {
+      "name" : "Row_Wid",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "NYCT_FACTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_FACTS_BASE.ROW_WID" ]
+          }
+        }, {
+          "logicalTableSource" : "NYCT_FACTS_FULL",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_FACT_VTS.ROW_WID" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Ride Detail"
+    }, {
+      "name" : "Medallion",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact Taxi",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_FACTS_BASE.MEDALLION" ]
+          }
+        }, {
+          "logicalTableSource" : "NYCT_FACTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_FACTS_BASE.MEDALLION" ]
+          }
+        }, {
+          "logicalTableSource" : "NYCT_FACTS_FULL",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_FACT_VTS.M_KEY" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Hack License",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "NYCT_FACTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_FACTS_BASE.HACK_LICENSE" ]
+          }
+        }, {
+          "logicalTableSource" : "NYCT_FACTS_FULL",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_FACT_VTS.H_KEY" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Pickup Hour",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact Taxi",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_FACTS_BASE.PICKUP_HOUR" ]
+          }
+        }, {
+          "logicalTableSource" : "NYCT_FACTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_FACTS_BASE.PICKUP_HOUR" ]
+          }
+        }, {
+          "logicalTableSource" : "NYCT_FACTS_FULL",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_FACT_VTS.PICKUP_HOUR" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Pickup Min",
+      "dataType" : "UNKNOWN",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact Taxi",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_FACTS_BASE.PICKUP_DAY" ]
+          }
+        }, {
+          "logicalTableSource" : "NYCT_FACTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_FACTS_BASE.PICKUP_MIN" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Dropoff Hour",
+      "dataType" : "UNKNOWN",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact Taxi",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_FACTS_BASE.DROPOFF_HOUR" ]
+          }
+        }, {
+          "logicalTableSource" : "NYCT_FACTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_FACTS_BASE.DROPOFF_HOUR" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Dropoff Min",
+      "dataType" : "UNKNOWN",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact Taxi",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_FACTS_BASE.DROPOFF_MIN" ]
+          }
+        }, {
+          "logicalTableSource" : "NYCT_FACTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_FACTS_BASE.DROPOFF_MIN" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Dropoff Lat",
+      "dataType" : "UNKNOWN",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact Taxi",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_FACTS_BASE.DROPOFF_LAT" ]
+          }
+        }, {
+          "logicalTableSource" : "NYCT_FACTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_FACTS_BASE.DROPOFF_LAT" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Pickup Lat",
+      "dataType" : "UNKNOWN",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact Taxi",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_FACTS_BASE.PICKUP_LAT" ]
+          }
+        }, {
+          "logicalTableSource" : "NYCT_FACTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_FACTS_BASE.PICKUP_LAT" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Pickup Lon",
+      "dataType" : "UNKNOWN",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact Taxi",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_FACTS_BASE.PICKUP_LON" ]
+          }
+        }, {
+          "logicalTableSource" : "NYCT_FACTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_FACTS_BASE.PICKUP_LON" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Dropoff Lon",
+      "dataType" : "UNKNOWN",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact Taxi",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_FACTS_BASE.DROPOFF_LON" ]
+          }
+        }, {
+          "logicalTableSource" : "NYCT_FACTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_FACTS_BASE.DROPOFF_LON" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Pickup Time of Day",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : " CASE  WHEN %1 < '06' THEN '4-Night' WHEN %1 < '12' THEN '1-Morning' WHEN %1 < '19' THEN '2-Afternoon' ELSE '3-Evening' END ",
+          "expressionObjects" : [ "logicalColumn:Taxi NYC.Ride.Pickup Hour" ]
+        }
+      }
+    }, {
+      "name" : "Trip Total Amt",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact Taxi",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_FACTS_BASE.MEDALLION" ]
+          }
+        }, {
+          "logicalTableSource" : "NYCT_FACTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_FACTS_BASE.MEDALLION" ]
+          }
+        }, {
+          "logicalTableSource" : "NYCT_FACTS_FULL",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_FACT_VTS.TOTAL_AMOUNT" ]
+          }
+        } ]
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "Fact Taxi",
+      "disable" : true,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:Taxi NYC.CAT9.CAT9.NYCT_FACTS_BASE" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    }, {
+      "name" : "NYCT_FACTS",
+      "disable" : true,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:Taxi NYC.CAT9.CAT9.NYCT_FACTS_BASE" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    }, {
+      "name" : "NYCT_FACTS_FULL",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:Taxi NYC.CAT9.CAT9.NYCT_FACT_VTS" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "hierarchyType" : "LEVEL_BASED",
+    "levelBasedHierarchy" : {
+      "defaultRootLevel" : "Ride Total",
+      "ragged" : false,
+      "skipped" : false,
+      "logicalLevels" : [ {
+        "name" : "Ride Total",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : true,
+        "disableAggregateToHigherLevel" : false
+      }, {
+        "name" : "Ride Detail",
+        "numberOfElements" : 28766791,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Row_Wid" ],
+        "displayKey" : "Row_Wid"
+      } ],
+      "logicalHierarchies" : [ {
+        "name" : "RideDim",
+        "levels" : [ "Ride Total", "Ride Detail" ]
+      } ]
+    }
+  }
+}

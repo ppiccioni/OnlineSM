@@ -1,0 +1,50 @@
+{
+  "presentationTable" : {
+    "name" : "Team QB",
+    "presentationColumns" : [ {
+      "name" : "QB College",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Team QB.QB College",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "QB Career TD Thrown",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Team QB.QB Career TD Thrown",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "QB Drafted By",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Team QB.QB Drafted By",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "QB Pick",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Team QB.QB Pick",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Quarter Back",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Team QB.Quarter Back",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "QB Round",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Team QB.QB Round",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "QB Year Drafted",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Team QB.QB Year Drafted",
+      "useLogicalColumnName" : true
+    } ],
+    "hierarchies" : [ {
+      "name" : "Hierarchy 1",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:NFL Stats.Team QB",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      },
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:NFL Stats.Team QB.Total"
+      }, {
+        "name" : "Detail",
+        "sourceLogicalLevel" : "logicalLevel:NFL Stats.Team QB.Detail",
+        "displayColumn" : "presentationColumn:NFL Stats.Team QB.Quarter Back"
+      } ]
+    } ]
+  }
+}

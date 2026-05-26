@@ -1,0 +1,18 @@
+{
+  "presentationTable" : {
+    "name" : "Hotels",
+    "presentationColumns" : [ {
+      "name" : "HotelGeo",
+      "sourceLogicalColumn" : "logicalColumn:BM11 - Spatial Demo.Hotels.HotelGeo",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "HotelId",
+      "sourceLogicalColumn" : "logicalColumn:BM11 - Spatial Demo.Hotels.HotelId",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "HotelName",
+      "sourceLogicalColumn" : "logicalColumn:BM11 - Spatial Demo.Hotels.HotelName",
+      "useLogicalColumnName" : true
+    } ]
+  }
+}

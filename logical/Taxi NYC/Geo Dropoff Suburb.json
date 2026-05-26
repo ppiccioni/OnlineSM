@@ -1,0 +1,116 @@
+{
+  "logicalTable" : {
+    "name" : "Geo Dropoff Suburb",
+    "type" : "DIMENSION",
+    "primaryKey" : [ "Regionid" ],
+    "logicalColumns" : [ {
+      "name" : "Dropoff Borough (L2)",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "NYCT_REGIONS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.DROPOFF_REGIONS.CITY" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Geo Dropoff Suburb Detail"
+    }, {
+      "name" : "Dropoff County (L1)",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "NYCT_REGIONS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.DROPOFF_REGIONS.COUNTY" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Geo Dropoff Suburb Detail"
+    }, {
+      "name" : "Dropoff Suburb (L3)",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "NYCT_REGIONS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.DROPOFF_REGIONS.NAME" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Geo Dropoff Suburb Detail"
+    }, {
+      "name" : "Regionid",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "NYCT_REGIONS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.DROPOFF_REGIONS.REGIONID" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Geo Dropoff Suburb Detail"
+    }, {
+      "name" : "State",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "NYCT_REGIONS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.DROPOFF_REGIONS.STATE" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Geo Dropoff Suburb Detail"
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "NYCT_REGIONS",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:Taxi NYC.CAT9.CAT9.DROPOFF_REGIONS" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "hierarchyType" : "LEVEL_BASED",
+    "levelBasedHierarchy" : {
+      "defaultRootLevel" : "Geo Dropoff Suburb Total",
+      "ragged" : false,
+      "skipped" : false,
+      "logicalLevels" : [ {
+        "name" : "Geo Dropoff Suburb Total",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : true,
+        "disableAggregateToHigherLevel" : false
+      }, {
+        "name" : "Geo Dropoff Suburb Detail",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Regionid" ],
+        "displayKey" : "Regionid"
+      } ],
+      "logicalHierarchies" : [ {
+        "name" : "Geo DropoffDim",
+        "levels" : [ "Geo Dropoff Suburb Total", "Geo Dropoff Suburb Detail" ]
+      } ]
+    }
+  }
+}

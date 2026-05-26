@@ -1,0 +1,206 @@
+{
+  "presentationTable" : {
+    "name" : "Date",
+    "presentationColumns" : [ {
+      "name" : "Academic Year",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Date.Academic Year",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "CAL_DAY_NAME",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Date.CAL_DAY_NAME",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "CAL_DAY_NAME_ABBREV",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Date.CAL_DAY_NAME_ABBREV",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "CAL_DAY_NBR_OVERALL",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Date.CAL_DAY_NBR_OVERALL",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "CAL_DAY_OF_MONTH",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Date.CAL_DAY_OF_MONTH",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "CAL_DAY_OF_WEEK",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Date.CAL_DAY_OF_WEEK",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Month",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Date.Month",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "CAL_MONTH_NAME_ABBREV",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Date.CAL_MONTH_NAME_ABBREV",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Month Nbr",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Date.Month Nbr",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "CAL_MONTH_OF_YEAR",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Date.CAL_MONTH_OF_YEAR",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "CAL_QTR_OF_YEAR",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Date.CAL_QTR_OF_YEAR",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "CAL_WEEKDAY_FLG",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Date.CAL_WEEKDAY_FLG",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "CAL_WEEK_BEGIN_DATE",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Date.CAL_WEEK_BEGIN_DATE",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "CAL_WEEK_BEGIN_DATE_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Date.CAL_WEEK_BEGIN_DATE_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "CAL_WEEK_NBR_OVERALL",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Date.CAL_WEEK_NBR_OVERALL",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "CAL_WEEK_OF_YEAR",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Date.CAL_WEEK_OF_YEAR",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Year",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Date.Year",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "YearMonth",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Date.YearMonth",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "DATE_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Date.DATE_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_BATCH_ID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Date.DSYS_BATCH_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_INSTANCE_ID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Date.DSYS_INSTANCE_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_PROCESS_ID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Date.DSYS_PROCESS_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Financial Aid Year",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Date.Financial Aid Year",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "FISCAL_PERIOD",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Date.FISCAL_PERIOD",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "FISCAL_QTR",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Date.FISCAL_QTR",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "FISCAL_YEAR",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Date.FISCAL_YEAR",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Day",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Date.Day",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "LAST_DAY_IN_FISCAL_PERIOD",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Date.LAST_DAY_IN_FISCAL_PERIOD",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Same Day Yago",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Date.Same Day Yago",
+      "useLogicalColumnName" : true
+    } ],
+    "hierarchies" : [ {
+      "name" : "Date Hierarchy",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:Student Analytics.Date",
+      "levels" : [ {
+        "name" : "Total Years",
+        "sourceLogicalLevel" : "logicalLevel:Student Analytics.Date.Total Years"
+      }, {
+        "name" : "Year",
+        "sourceLogicalLevel" : "logicalLevel:Student Analytics.Date.Year",
+        "displayColumn" : "presentationColumn:Student Analytics.Date.Year"
+      }, {
+        "name" : "YearMonth",
+        "sourceLogicalLevel" : "logicalLevel:Student Analytics.Date.YearMonth",
+        "displayColumn" : "presentationColumn:Student Analytics.Date.YearMonth"
+      }, {
+        "name" : "Day",
+        "sourceLogicalLevel" : "logicalLevel:Student Analytics.Date.Day",
+        "displayColumn" : "presentationColumn:Student Analytics.Date.Day"
+      } ]
+    } ]
+  }
+}

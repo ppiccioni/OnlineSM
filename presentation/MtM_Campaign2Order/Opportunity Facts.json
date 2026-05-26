@@ -1,0 +1,138 @@
+{
+  "presentationTable" : {
+    "name" : "Opportunity Facts",
+    "presentationColumns" : [ {
+      "name" : "Opportunity Id",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Opportunity Facts.Opportunity Id",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Close Date",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Opportunity Facts.Close Date",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "SalesRep Id",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Opportunity Facts.SalesRep Id",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Product Id",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Opportunity Facts.Product Id",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Manager Id",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Opportunity Facts.Manager Id",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Address Id",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Opportunity Facts.Address Id",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Customer Id",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Opportunity Facts.Customer Id",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "# Total Accepted Leads",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Opportunity Facts.# Total Accepted Leads",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "% Total Accepted Leads",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Opportunity Facts.% Total Accepted Leads",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Avg # of Activies",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Opportunity Facts.Avg # of Activies",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Avg # Days in Sales Stage",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Opportunity Facts.Avg # Days in Sales Stage",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "# Total Leads",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Opportunity Facts.# Total Leads",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Avg Project Revenue",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Opportunity Facts.Avg Project Revenue",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Avg Actual Revenue",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Opportunity Facts.Avg Actual Revenue",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "# of Opportunities",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Opportunity Facts.# of Opportunities",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Max Actual Revenue",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Opportunity Facts.Max Actual Revenue",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Min Actual Revenue",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Opportunity Facts.Min Actual Revenue",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Total # Days in Sales Stage",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Opportunity Facts.Total # Days in Sales Stage",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Total # of Activies",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Opportunity Facts.Total # of Activies",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Total Project Revenue",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Opportunity Facts.Total Project Revenue",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Max Project Revenue",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Opportunity Facts.Max Project Revenue",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Total Actual Revenue",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Opportunity Facts.Total Actual Revenue",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Min Project Revenue",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Opportunity Facts.Min Project Revenue",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "LEAD_STATUS",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Opportunity Facts.LEAD_STATUS",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "# Accepted Leads",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Opportunity Facts.# Accepted Leads",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "# Converted Leads",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Opportunity Facts.# Converted Leads",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "# Rejected Leads",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Opportunity Facts.# Rejected Leads",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "% Accepted Leads",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Opportunity Facts.% Accepted Leads",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "% Converted Leads",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Opportunity Facts.% Converted Leads",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "% Rejected Leads",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Opportunity Facts.% Rejected Leads",
+      "useLogicalColumnName" : true
+    } ]
+  }
+}

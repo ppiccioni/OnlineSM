@@ -1,0 +1,73 @@
+{
+  "physicalTable" : {
+    "name" : "HC_F_ACTUALS",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "ACCOUNT",
+      "dataType" : "VARCHAR",
+      "length" : 50,
+      "nullable" : false
+    }, {
+      "name" : "ACTUAL",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "BUDGET",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "DSYS_BATCH_ID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "DSYS_INSTANCE_ID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "DSYS_PROCESS_ID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "DATE_ID",
+      "dataType" : "VARCHAR",
+      "length" : 50,
+      "nullable" : false
+    }, {
+      "name" : "DEPARTMENT",
+      "dataType" : "VARCHAR",
+      "length" : 50,
+      "nullable" : false
+    } ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    },
+    "joins" : [ {
+      "rightTable" : "physicalTable:Healthcare.CAT7.SCH7.HC_D_ACCOUNTS",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:Healthcare.CAT7.SCH7.HC_F_ACTUALS.ACCOUNT",
+        "rightColumn" : "physicalColumn:Healthcare.CAT7.SCH7.HC_D_ACCOUNTS.ACCOUNT"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:Healthcare.CAT7.SCH7.HC_D_DEPARTMENTS",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:Healthcare.CAT7.SCH7.HC_F_ACTUALS.DEPARTMENT",
+        "rightColumn" : "physicalColumn:Healthcare.CAT7.SCH7.HC_D_DEPARTMENTS.DEPARTMENT"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:Healthcare.CAT7.SCH7.HC_D_TIME",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:Healthcare.CAT7.SCH7.HC_F_ACTUALS.DATE_ID",
+        "rightColumn" : "physicalColumn:Healthcare.CAT7.SCH7.HC_D_TIME.DATE_ID"
+      } ]
+    } ]
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "presentationTable" : {
+    "name" : "Period",
+    "presentationColumns" : [ {
+      "name" : "Period Alias:Default,Gen,1",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Period.Period Alias:Default,Gen,1",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Period Alias:Default,Gen,2",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Period.Period Alias:Default,Gen,2",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Period Alias:Default,Gen,3",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Period.Period Alias:Default,Gen,3",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Period Alias:Default,Gen,4",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Period.Period Alias:Default,Gen,4",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Period Alias:English,Gen,1",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Period.Period Alias:English,Gen,1",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Period Alias:English,Gen,2",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Period.Period Alias:English,Gen,2",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Period Alias:English,Gen,3",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Period.Period Alias:English,Gen,3",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Period Alias:English,Gen,4",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Period.Period Alias:English,Gen,4",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Period Default",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Period.Period Default",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Period English",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Period.Period English",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Period Gen Number",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Period.Period Gen Number",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Period Leaf Indicator",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Period.Period Leaf Indicator",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Period Name",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Period.Period Name",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Period Name,Gen,1",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Period.Period Name,Gen,1",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Period Name,Gen,2",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Period.Period Name,Gen,2",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Period Name,Gen,3",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Period.Period Name,Gen,3",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Period Name,Gen,4",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Period.Period Name,Gen,4",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Period Parent Key",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Period.Period Parent Key",
+      "useLogicalColumnName" : true
+    } ],
+    "hierarchies" : [ {
+      "name" : "Period",
+      "sourceLogicalTable" : "logicalTable:Plan1.Period",
+      "displayColumn" : "presentationColumn:Plan1.Period.Period Name"
+    } ]
+  }
+}

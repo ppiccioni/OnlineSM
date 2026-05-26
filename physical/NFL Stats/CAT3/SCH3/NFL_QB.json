@@ -1,0 +1,47 @@
+{
+  "physicalTable" : {
+    "name" : "NFL_QB",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "COLLEGE",
+      "dataType" : "VARCHAR",
+      "length" : 40,
+      "nullable" : true
+    }, {
+      "name" : "DRAFTED_BY",
+      "dataType" : "VARCHAR",
+      "length" : 40,
+      "nullable" : true
+    }, {
+      "name" : "PICK",
+      "dataType" : "VARCHAR",
+      "length" : 20,
+      "nullable" : true
+    }, {
+      "name" : "QB_NAME",
+      "dataType" : "VARCHAR",
+      "length" : 40,
+      "nullable" : true
+    }, {
+      "name" : "ROUND",
+      "dataType" : "VARCHAR",
+      "length" : 20,
+      "nullable" : true
+    }, {
+      "name" : "YEAR_DRAFTED",
+      "dataType" : "VARCHAR",
+      "length" : 20,
+      "nullable" : true
+    }, {
+      "name" : "CAREER_TD_THROWN",
+      "dataType" : "DOUBLE",
+      "length" : 30,
+      "nullable" : false
+    } ],
+    "additionalKeys" : [ [ "QB_NAME" ] ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

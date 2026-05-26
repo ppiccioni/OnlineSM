@@ -1,0 +1,540 @@
+{
+  "logicalTable" : {
+    "name" : "Facts - Faculty Load",
+    "type" : "FACT",
+    "logicalColumns" : [ {
+      "name" : "ACADEMIC_ORG_WID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SA_F_FACULTY_LOAD_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Student Analytics.CAT10.SCH10.SA_F_FACULTY_LOAD.ACADEMIC_ORG_WID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "CAMPUS_WID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SA_F_FACULTY_LOAD_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Student Analytics.CAT10.SCH10.SA_F_FACULTY_LOAD.CAMPUS_WID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "COURSE_WID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SA_F_FACULTY_LOAD_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Student Analytics.CAT10.SCH10.SA_F_FACULTY_LOAD.COURSE_WID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "DSYS_BATCH_ID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SA_F_FACULTY_LOAD_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Student Analytics.CAT10.SCH10.SA_F_FACULTY_LOAD.DSYS_BATCH_ID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "DSYS_INSTANCE_ID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SA_F_FACULTY_LOAD_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Student Analytics.CAT10.SCH10.SA_F_FACULTY_LOAD.DSYS_INSTANCE_ID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "DSYS_PROCESS_ID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SA_F_FACULTY_LOAD_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Student Analytics.CAT10.SCH10.SA_F_FACULTY_LOAD.DSYS_PROCESS_ID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "FACULTY_PROFILE_WID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SA_F_FACULTY_LOAD_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Student Analytics.CAT10.SCH10.SA_F_FACULTY_LOAD.FACULTY_PROFILE_WID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "FACULTY_WID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SA_F_FACULTY_LOAD_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Student Analytics.CAT10.SCH10.SA_F_FACULTY_LOAD.FACULTY_WID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Responsibility Pct",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SA_F_FACULTY_LOAD_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Student Analytics.CAT10.SCH10.SA_F_FACULTY_LOAD.RESPONSIBILITY_PCT" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "AVG"
+      }
+    }, {
+      "name" : "ROW_WID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SA_F_FACULTY_LOAD_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Student Analytics.CAT10.SCH10.SA_F_FACULTY_LOAD.ROW_WID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Section Credit Hours",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SA_F_FACULTY_LOAD_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Student Analytics.CAT10.SCH10.SA_F_FACULTY_LOAD.SECTION_CREDIT_HOURS" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM"
+      }
+    }, {
+      "name" : "SECTION_WID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SA_F_FACULTY_LOAD_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Student Analytics.CAT10.SCH10.SA_F_FACULTY_LOAD.SECTION_WID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "SNAPSHOT_WID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SA_F_FACULTY_LOAD_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Student Analytics.CAT10.SCH10.SA_F_FACULTY_LOAD.SNAPSHOT_WID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Student Enrollment Count",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SA_F_FACULTY_LOAD_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Student Analytics.CAT10.SCH10.SA_F_FACULTY_LOAD.STUDENT_ENROLLMENT_COUNT" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM"
+      }
+    }, {
+      "name" : "TERM_SEGMENT_WID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SA_F_FACULTY_LOAD_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Student Analytics.CAT10.SCH10.SA_F_FACULTY_LOAD.TERM_SEGMENT_WID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "TERM_WID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SA_F_FACULTY_LOAD_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Student Analytics.CAT10.SCH10.SA_F_FACULTY_LOAD.TERM_WID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Responsibility Pct 5yr Ago",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : " AGO(%1, %2, 5)",
+          "expressionObjects" : [ "logicalColumn:Student Analytics.Facts - Faculty Load.Responsibility Pct", "logicalLevel:Student Analytics.Term.Academic Year" ]
+        }
+      }
+    }, {
+      "name" : "Responsibility Pct 1yr Ago",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : " AGO(%1, %2, 1)",
+          "expressionObjects" : [ "logicalColumn:Student Analytics.Facts - Faculty Load.Responsibility Pct", "logicalLevel:Student Analytics.Term.Academic Year" ]
+        }
+      }
+    }, {
+      "name" : "Section Credit Hours 1yr Ago",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : " AGO(%1, %2, 1)",
+          "expressionObjects" : [ "logicalColumn:Student Analytics.Facts - Faculty Load.Section Credit Hours", "logicalLevel:Student Analytics.Term.Academic Year" ]
+        }
+      }
+    }, {
+      "name" : "Section Credit Hours 5yr Ago",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : " AGO(%1, %2, 5)",
+          "expressionObjects" : [ "logicalColumn:Student Analytics.Facts - Faculty Load.Section Credit Hours", "logicalLevel:Student Analytics.Term.Academic Year" ]
+        }
+      }
+    }, {
+      "name" : "Student Enrollment Count 1yr Ago",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : " AGO(%1, %2, 1)",
+          "expressionObjects" : [ "logicalColumn:Student Analytics.Facts - Faculty Load.Student Enrollment Count", "logicalLevel:Student Analytics.Term.Academic Year" ]
+        }
+      }
+    }, {
+      "name" : "Student Enrollment Count 5yr Ago",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : " AGO(%1, %2, 5)",
+          "expressionObjects" : [ "logicalColumn:Student Analytics.Facts - Faculty Load.Student Enrollment Count", "logicalLevel:Student Analytics.Term.Academic Year" ]
+        }
+      }
+    }, {
+      "name" : "Section Credit Hours 1yr Ago Change %",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 / %2 * 100",
+          "expressionObjects" : [ "logicalColumn:Student Analytics.Facts - Faculty Load.Section Credit Hours 1yr Ago Change", "logicalColumn:Student Analytics.Facts - Faculty Load.Section Credit Hours 1yr Ago" ]
+        }
+      }
+    }, {
+      "name" : "Section Credit Hours 1yr Ago Change",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 - %2",
+          "expressionObjects" : [ "logicalColumn:Student Analytics.Facts - Faculty Load.Section Credit Hours", "logicalColumn:Student Analytics.Facts - Faculty Load.Section Credit Hours 1yr Ago" ]
+        }
+      }
+    }, {
+      "name" : "Section Credit Hours 5yr Ago Change",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 - %2",
+          "expressionObjects" : [ "logicalColumn:Student Analytics.Facts - Faculty Load.Section Credit Hours", "logicalColumn:Student Analytics.Facts - Faculty Load.Section Credit Hours 5yr Ago" ]
+        }
+      }
+    }, {
+      "name" : "Section Credit Hours 5yr Ago Change %",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 / %2 * 100",
+          "expressionObjects" : [ "logicalColumn:Student Analytics.Facts - Faculty Load.Section Credit Hours 5yr Ago Change", "logicalColumn:Student Analytics.Facts - Faculty Load.Section Credit Hours 5yr Ago" ]
+        }
+      }
+    }, {
+      "name" : "Student Enrollment Count 1yr Ago Change %",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 / %2 * 100",
+          "expressionObjects" : [ "logicalColumn:Student Analytics.Facts - Faculty Load.Student Enrollment Count 1yr Ago Change", "logicalColumn:Student Analytics.Facts - Faculty Load.Student Enrollment Count 1yr Ago" ]
+        }
+      }
+    }, {
+      "name" : "Student Enrollment Count 5yr Ago Change",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 - %2",
+          "expressionObjects" : [ "logicalColumn:Student Analytics.Facts - Faculty Load.Student Enrollment Count", "logicalColumn:Student Analytics.Facts - Faculty Load.Student Enrollment Count 5yr Ago" ]
+        }
+      }
+    }, {
+      "name" : "Student Enrollment Count 5yr Ago Change %",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 / %2 * 100",
+          "expressionObjects" : [ "logicalColumn:Student Analytics.Facts - Faculty Load.Student Enrollment Count 5yr Ago Change", "logicalColumn:Student Analytics.Facts - Faculty Load.Student Enrollment Count 5yr Ago" ]
+        }
+      }
+    }, {
+      "name" : "Student Enrollment Count 1yr Ago Change",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 - %2",
+          "expressionObjects" : [ "logicalColumn:Student Analytics.Facts - Faculty Load.Student Enrollment Count", "logicalColumn:Student Analytics.Facts - Faculty Load.Student Enrollment Count 1yr Ago" ]
+        }
+      }
+    }, {
+      "name" : "Faculty Count",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : " COUNT(DISTINCT %1)",
+          "expressionObjects" : [ "logicalColumn:Student Analytics.Facts - Faculty Load.FACULTY_WID" ]
+        }
+      }
+    }, {
+      "name" : "Course Count",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : " COUNT(DISTINCT %1)",
+          "expressionObjects" : [ "logicalColumn:Student Analytics.Facts - Faculty Load.COURSE_WID" ]
+        }
+      }
+    }, {
+      "name" : "Faculty Load 5yr Ago Change %",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 / %2 * 100",
+          "expressionObjects" : [ "logicalColumn:Student Analytics.Facts - Faculty Load.Faculty Load 5yr Ago Change", "logicalColumn:Student Analytics.Facts - Faculty Load.Faculty Load 5yr Ago" ]
+        }
+      }
+    }, {
+      "name" : "Faculty Load 1yr Ago Change %",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 / %2 * 100",
+          "expressionObjects" : [ "logicalColumn:Student Analytics.Facts - Faculty Load.Faculty Load 1yr Ago Change", "logicalColumn:Student Analytics.Facts - Faculty Load.Faculty Load 1yr Ago" ]
+        }
+      }
+    }, {
+      "name" : "Faculty Load 5yr Ago",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 * %2",
+          "expressionObjects" : [ "logicalColumn:Student Analytics.Facts - Faculty Load.Section Credit Hours 5yr Ago", "logicalColumn:Student Analytics.Facts - Faculty Load.Student Enrollment Count 5yr Ago" ]
+        }
+      }
+    }, {
+      "name" : "Faculty Load 1yr Ago",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 * %2",
+          "expressionObjects" : [ "logicalColumn:Student Analytics.Facts - Faculty Load.Section Credit Hours 1yr Ago", "logicalColumn:Student Analytics.Facts - Faculty Load.Student Enrollment Count 1yr Ago" ]
+        }
+      }
+    }, {
+      "name" : "Faculty Load",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 * %2",
+          "expressionObjects" : [ "logicalColumn:Student Analytics.Facts - Faculty Load.Section Credit Hours", "logicalColumn:Student Analytics.Facts - Faculty Load.Student Enrollment Count" ]
+        }
+      }
+    }, {
+      "name" : "Faculty Load 1yr Ago Change",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 - %2",
+          "expressionObjects" : [ "logicalColumn:Student Analytics.Facts - Faculty Load.Faculty Load", "logicalColumn:Student Analytics.Facts - Faculty Load.Faculty Load 1yr Ago" ]
+        }
+      }
+    }, {
+      "name" : "Faculty Load 5yr Ago Change",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 - %2",
+          "expressionObjects" : [ "logicalColumn:Student Analytics.Facts - Faculty Load.Faculty Load", "logicalColumn:Student Analytics.Facts - Faculty Load.Faculty Load 5yr Ago" ]
+        }
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "SA_F_FACULTY_LOAD_LTS",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:Student Analytics.CAT10.SCH10.SA_F_FACULTY_LOAD" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "joins" : [ {
+      "rightTable" : "logicalTable:Student Analytics.Academic Org",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "rightTable" : "logicalTable:Student Analytics.Campus",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "rightTable" : "logicalTable:Student Analytics.Course",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "rightTable" : "logicalTable:Student Analytics.Faculty Profile",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "rightTable" : "logicalTable:Student Analytics.Faculty",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "rightTable" : "logicalTable:Student Analytics.Section",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "rightTable" : "logicalTable:Student Analytics.Snapshot",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "rightTable" : "logicalTable:Student Analytics.Term Segment",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "rightTable" : "logicalTable:Student Analytics.Term",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    } ]
+  }
+}

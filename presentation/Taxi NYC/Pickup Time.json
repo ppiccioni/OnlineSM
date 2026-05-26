@@ -1,0 +1,34 @@
+{
+  "presentationTable" : {
+    "name" : "Pickup Time",
+    "presentationColumns" : [ {
+      "name" : "Pickup Hour",
+      "sourceLogicalColumn" : "logicalColumn:Taxi NYC.Ride.Pickup Hour",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Pickup Min",
+      "sourceLogicalColumn" : "logicalColumn:Taxi NYC.Ride.Pickup Min",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Dropoff Hour",
+      "sourceLogicalColumn" : "logicalColumn:Taxi NYC.Ride.Dropoff Hour",
+      "useLogicalColumnName" : true,
+      "permissions" : [ {
+        "accessor" : "role:AuthenticatedUser",
+        "access" : "NO_ACCESS"
+      } ]
+    }, {
+      "name" : "Dropoff Min",
+      "sourceLogicalColumn" : "logicalColumn:Taxi NYC.Ride.Dropoff Min",
+      "useLogicalColumnName" : true,
+      "permissions" : [ {
+        "accessor" : "role:AuthenticatedUser",
+        "access" : "NO_ACCESS"
+      } ]
+    }, {
+      "name" : "Pickup Time of Day",
+      "sourceLogicalColumn" : "logicalColumn:Taxi NYC.Ride.Pickup Time of Day",
+      "useLogicalColumnName" : true
+    } ]
+  }
+}

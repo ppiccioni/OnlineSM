@@ -1,0 +1,229 @@
+{
+  "presentationTable" : {
+    "name" : "Fact Attributes",
+    "presentationColumns" : [ {
+      "name" : "DAY_DATE",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Fact Attributes.DAY_DATE",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Game",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Fact Attributes.Game",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "GAME_SORT",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Fact Attributes.GAME_SORT",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Game Type",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Fact Attributes.Game Type",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Weather Humidity",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Fact Attributes.Weather Humidity",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Game  Numeric Attributes----------",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Fact Attributes.Game  Numeric Attributes----------",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Game Score Opp",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Fact Attributes.Game Score Opp",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Opp Firstdowns",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Fact Attributes.Opp Firstdowns",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Opp Fumbles",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Fact Attributes.Opp Fumbles",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Opp  Numeric Attributes----------",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Fact Attributes.Opp  Numeric Attributes----------",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Opp Pass Attempts",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Fact Attributes.Opp Pass Attempts",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Opp Pass Completed",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Fact Attributes.Opp Pass Completed",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Opp Pass Intercepted",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Fact Attributes.Opp Pass Intercepted",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Opp Pass Yards",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Fact Attributes.Opp Pass Yards",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Opp Penalty Yards",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Fact Attributes.Opp Penalty Yards",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Team   Numeric Attributes----------",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Fact Attributes.Team   Numeric Attributes----------",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Opp Rush Attempts",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Fact Attributes.Opp Rush Attempts",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Opp Rush Yards",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Fact Attributes.Opp Rush Yards",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Opp Sack Yards",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Fact Attributes.Opp Sack Yards",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Opp Third Down %",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Fact Attributes.Opp Third Down %",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Game Unique ID",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Fact Attributes.Game Unique ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Game Season",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Fact Attributes.Game Season",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Team Firstdowns",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Fact Attributes.Team Firstdowns",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Team Fumbles",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Fact Attributes.Team Fumbles",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "TEAM_KEY",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Fact Attributes.TEAM_KEY",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Game Result Loss",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Fact Attributes.Game Result Loss",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Team Pass Attempts",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Fact Attributes.Team Pass Attempts",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Team Pass Completed",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Fact Attributes.Team Pass Completed",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Team Pass Intercepted",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Fact Attributes.Team Pass Intercepted",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Team Pass Yards",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Fact Attributes.Team Pass Yards",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Team Penalty Yards",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Fact Attributes.Team Penalty Yards",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Team Punt Avg",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Fact Attributes.Team Punt Avg",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "TEAM_QB",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Fact Attributes.TEAM_QB",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Team Rush Attempts",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Fact Attributes.Team Rush Attempts",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Team Rush Yards",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Fact Attributes.Team Rush Yards",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Team Sack Yards",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Fact Attributes.Team Sack Yards",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Game Score Team",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Fact Attributes.Game Score Team",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Team Third Down %",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Fact Attributes.Team Third Down %",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Game Result Win",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Fact Attributes.Game Result Win",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Weather Temperature",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Fact Attributes.Weather Temperature",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Game Result Tie",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Fact Attributes.Game Result Tie",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Weather Wind Chill",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Fact Attributes.Weather Wind Chill",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Weather Wind MPH",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Fact Attributes.Weather Wind MPH",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Team Pass Intercepted %",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Fact Attributes.Team Pass Intercepted %",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Travel Distance",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Fact Attributes.Travel Distance",
+      "useLogicalColumnName" : true
+    } ],
+    "hierarchies" : [ {
+      "name" : "Hierarchy 1",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:NFL Stats.Fact Attributes",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      },
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:NFL Stats.Fact Attributes.Total"
+      }, {
+        "name" : "Detail",
+        "sourceLogicalLevel" : "logicalLevel:NFL Stats.Fact Attributes.Detail",
+        "displayColumn" : "presentationColumn:NFL Stats.Fact Attributes.Game Unique ID"
+      } ]
+    } ]
+  }
+}

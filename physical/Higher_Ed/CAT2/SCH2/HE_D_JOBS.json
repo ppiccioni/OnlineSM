@@ -1,0 +1,37 @@
+{
+  "physicalTable" : {
+    "name" : "HE_D_JOBS",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "DSYS_BATCH_ID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "DSYS_INSTANCE_ID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "DSYS_PROCESS_ID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "JOB_CATEGORY",
+      "dataType" : "VARCHAR",
+      "length" : 50,
+      "nullable" : false
+    }, {
+      "name" : "JOB_DESCRIPTION",
+      "dataType" : "VARCHAR",
+      "length" : 100,
+      "nullable" : false
+    } ],
+    "additionalKeys" : [ [ "JOB_DESCRIPTION" ], [ "JOB_DESCRIPTION" ], [ "JOB_DESCRIPTION" ] ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "physicalTable" : {
+    "name" : "V_TEACHER",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "TEACHER_ACCTID",
+      "dataType" : "VARCHAR",
+      "length" : 50,
+      "nullable" : true
+    }, {
+      "name" : "TEACHER_NY_TEACHING_FELLOW",
+      "dataType" : "VARCHAR",
+      "length" : 100,
+      "nullable" : true
+    }, {
+      "name" : "TEACHER_PREFIX",
+      "dataType" : "VARCHAR",
+      "length" : 100,
+      "nullable" : true
+    }, {
+      "name" : "TEACHER_TEACH_FOR_AMERICA",
+      "dataType" : "VARCHAR",
+      "length" : 100,
+      "nullable" : true
+    } ],
+    "additionalKeys" : [ [ "TEACHER_ACCTID" ] ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

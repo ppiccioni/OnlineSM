@@ -1,0 +1,43 @@
+{
+  "presentationTable" : {
+    "name" : "Payments",
+    "presentationColumns" : [ {
+      "name" : "Currency",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Payments.Currency",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Order Id",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Payments.Order Id",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Order Number",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Payments.Order Number",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Payment Status_T",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Payments.Payment Status_T",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Payment Type_T",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Payments.Payment Type_T",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Paid Date",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Payments.Paid Date",
+      "useLogicalColumnName" : true
+    } ],
+    "hierarchies" : [ {
+      "name" : "Hierarchy 1",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:MtM_Campaign2Order.Payments",
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:MtM_Campaign2Order.Payments.Total"
+      }, {
+        "name" : "Detail",
+        "sourceLogicalLevel" : "logicalLevel:MtM_Campaign2Order.Payments.Detail",
+        "displayColumn" : "presentationColumn:MtM_Campaign2Order.Payments.Order Id"
+      } ]
+    } ]
+  }
+}

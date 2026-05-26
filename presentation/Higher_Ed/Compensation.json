@@ -1,0 +1,75 @@
+{
+  "presentationTable" : {
+    "name" : "Compensation",
+    "presentationColumns" : [ {
+      "name" : "Base Comp",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Compensation.Base Comp",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "DATE_ID",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Compensation.DATE_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DEPARTMENT",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Compensation.DEPARTMENT",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_BATCH_ID",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Compensation.DSYS_BATCH_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_INSTANCE_ID",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Compensation.DSYS_INSTANCE_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_PROCESS_ID",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Compensation.DSYS_PROCESS_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "EMPLOYEE_NAME",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Compensation.EMPLOYEE_NAME",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Headcount",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Compensation.Headcount",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "JOB_DESCRIPTION",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Compensation.JOB_DESCRIPTION",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Overload Comp",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Compensation.Overload Comp",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Overload % Base",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Compensation.Overload % Base",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Gross Comp",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Compensation.Gross Comp",
+      "useLogicalColumnName" : true
+    } ]
+  }
+}

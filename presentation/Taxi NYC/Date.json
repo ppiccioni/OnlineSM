@@ -1,0 +1,51 @@
+{
+  "presentationTable" : {
+    "name" : "Date",
+    "presentationColumns" : [ {
+      "name" : "Date",
+      "sourceLogicalColumn" : "logicalColumn:Taxi NYC.Pickup Date.Date",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Day Name",
+      "sourceLogicalColumn" : "logicalColumn:Taxi NYC.Pickup Date.Day Name",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Day Of Mth",
+      "sourceLogicalColumn" : "logicalColumn:Taxi NYC.Pickup Date.Day Of Mth",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Day Of Week",
+      "sourceLogicalColumn" : "logicalColumn:Taxi NYC.Pickup Date.Day Of Week",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Mth",
+      "sourceLogicalColumn" : "logicalColumn:Taxi NYC.Pickup Date.Mth",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Mth Name",
+      "sourceLogicalColumn" : "logicalColumn:Taxi NYC.Pickup Date.Mth Name",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Mth Num",
+      "sourceLogicalColumn" : "logicalColumn:Taxi NYC.Pickup Date.Mth Num",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Qtr",
+      "sourceLogicalColumn" : "logicalColumn:Taxi NYC.Pickup Date.Qtr",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Qtr Num",
+      "sourceLogicalColumn" : "logicalColumn:Taxi NYC.Pickup Date.Qtr Num",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Week Num",
+      "sourceLogicalColumn" : "logicalColumn:Taxi NYC.Pickup Date.Week Num",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Year",
+      "sourceLogicalColumn" : "logicalColumn:Taxi NYC.Pickup Date.Year",
+      "useLogicalColumnName" : true,
+      "alternateNames" : [ "Yr" ]
+    } ]
+  }
+}

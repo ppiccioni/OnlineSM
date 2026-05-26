@@ -1,0 +1,88 @@
+{
+  "presentationTable" : {
+    "name" : "Products",
+    "presentationColumns" : [ {
+      "name" : "ATTRIBUTE_1",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Products.ATTRIBUTE_1",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "ATTRIBUTE_2",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Products.ATTRIBUTE_2",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Brand",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Products.Brand",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Brand Id",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Products.Brand Id",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "LOB",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Products.LOB",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "LOB Id",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Products.LOB Id",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Product",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Products.Product",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Product Id",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Products.Product Id",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Sequence",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Products.Sequence",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "TOTAL_VALUE",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Products.TOTAL_VALUE",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Type",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Products.Type",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Type Id",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Products.Type Id",
+      "useLogicalColumnName" : true
+    } ],
+    "hierarchies" : [ {
+      "name" : "Hierarchy 1",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:MtM_Campaign2Order.Products",
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:MtM_Campaign2Order.Products.Total"
+      }, {
+        "name" : "Brand",
+        "sourceLogicalLevel" : "logicalLevel:MtM_Campaign2Order.Products.Brand",
+        "displayColumn" : "presentationColumn:MtM_Campaign2Order.Products.Brand"
+      }, {
+        "name" : "LOB",
+        "sourceLogicalLevel" : "logicalLevel:MtM_Campaign2Order.Products.LOB",
+        "displayColumn" : "presentationColumn:MtM_Campaign2Order.Products.LOB"
+      }, {
+        "name" : "Type",
+        "sourceLogicalLevel" : "logicalLevel:MtM_Campaign2Order.Products.Type",
+        "displayColumn" : "presentationColumn:MtM_Campaign2Order.Products.Type"
+      }, {
+        "name" : "Detail",
+        "sourceLogicalLevel" : "logicalLevel:MtM_Campaign2Order.Products.Detail",
+        "displayColumn" : "presentationColumn:MtM_Campaign2Order.Products.Product"
+      } ]
+    } ]
+  }
+}

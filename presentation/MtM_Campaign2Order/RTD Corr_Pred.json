@@ -1,0 +1,50 @@
+{
+  "presentationTable" : {
+    "name" : "RTD Corr_Pred",
+    "presentationColumns" : [ {
+      "name" : "Choice Id",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.RTD Corr_Pred.Choice Id",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Correlated Attribute",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.RTD Corr_Pred.Correlated Attribute",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Correlation Attribute Type",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.RTD Corr_Pred.Correlation Attribute Type",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Predictiness Attribute Type",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.RTD Corr_Pred.Predictiness Attribute Type",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Predictive Attribute",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.RTD Corr_Pred.Predictive Attribute",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Time Window",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.RTD Corr_Pred.Time Window",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "ID",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.RTD Corr_Pred.ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    } ],
+    "hierarchies" : [ {
+      "name" : "Hierarchy 1",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:MtM_Campaign2Order.RTD Corr_Pred",
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:MtM_Campaign2Order.RTD Corr_Pred.Total"
+      }, {
+        "name" : "Detail",
+        "sourceLogicalLevel" : "logicalLevel:MtM_Campaign2Order.RTD Corr_Pred.Detail",
+        "displayColumn" : "presentationColumn:MtM_Campaign2Order.RTD Corr_Pred.Choice Id"
+      } ]
+    } ]
+  }
+}

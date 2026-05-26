@@ -1,0 +1,88 @@
+{
+  "presentationTable" : {
+    "name" : "Term",
+    "presentationColumns" : [ {
+      "name" : "Academic Year",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Term.Academic Year",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "DSYS_BATCH_ID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Term.DSYS_BATCH_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_INSTANCE_ID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Term.DSYS_INSTANCE_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_PROCESS_ID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Term.DSYS_PROCESS_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Fiscal Year",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Term.Fiscal Year",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "TERM_CD",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Term.TERM_CD",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Term",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Term.Term",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Term End Date",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Term.Term End Date",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Term Start Date",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Term.Term Start Date",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "TERM_TYPE_CD",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Term.TERM_TYPE_CD",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Term Type",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Term.Term Type",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "TERM_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Term.TERM_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    } ],
+    "hierarchies" : [ {
+      "name" : "Term Hierarchy",
+      "sourceLogicalTable" : "logicalTable:Student Analytics.Term",
+      "levels" : [ {
+        "name" : "All Terms",
+        "sourceLogicalLevel" : "logicalLevel:Student Analytics.Term.All Terms"
+      }, {
+        "name" : "Academic Year",
+        "sourceLogicalLevel" : "logicalLevel:Student Analytics.Term.Academic Year",
+        "displayColumn" : "presentationColumn:Student Analytics.Term.Academic Year"
+      }, {
+        "name" : "Term",
+        "sourceLogicalLevel" : "logicalLevel:Student Analytics.Term.Term",
+        "displayColumn" : "presentationColumn:Student Analytics.Term.Term"
+      } ]
+    } ]
+  }
+}

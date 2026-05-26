@@ -1,0 +1,239 @@
+{
+  "logicalTable" : {
+    "name" : "School",
+    "type" : "DIMENSION",
+    "primaryKey" : [ "School ID" ],
+    "logicalColumns" : [ {
+      "name" : "School ID",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "V_SCHOOL_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Donations.CAT4.SCH4.V_SCHOOL.SCHOOLID" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "School Charter",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "V_SCHOOL_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Donations.CAT4.SCH4.V_SCHOOL.SCHOOL_CHARTER" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "School City",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "V_SCHOOL_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Donations.CAT4.SCH4.V_SCHOOL.SCHOOL_CITY" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "School City"
+    }, {
+      "name" : "School County",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "V_SCHOOL_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Donations.CAT4.SCH4.V_SCHOOL.SCHOOL_COUNTY" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "School District",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "V_SCHOOL_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Donations.CAT4.SCH4.V_SCHOOL.SCHOOL_DISTRICT" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "School District"
+    }, {
+      "name" : "School Metro",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "V_SCHOOL_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Donations.CAT4.SCH4.V_SCHOOL.SCHOOL_METRO" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "School NCES ID",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "V_SCHOOL_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Donations.CAT4.SCH4.V_SCHOOL.SCHOOL_NCESID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "School NLNS",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "V_SCHOOL_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Donations.CAT4.SCH4.V_SCHOOL.SCHOOL_NLNS" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "School Geo State",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "V_SCHOOL_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Donations.CAT4.SCH4.V_SCHOOL.SCHOOL_STATE" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "School Geo State"
+    }, {
+      "name" : "School Geo Zip",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "V_SCHOOL_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Donations.CAT4.SCH4.V_SCHOOL.SCHOOL_ZIP" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "School Geo Long",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "V_SCHOOL_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Donations.CAT4.SCH4.V_SCHOOL.SCHOOL_LONGITUDE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "School Geo Lat",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "V_SCHOOL_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Donations.CAT4.SCH4.V_SCHOOL.SCHOOL_LATITUDE" ]
+          }
+        } ]
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "V_SCHOOL_LTS",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:Donations.CAT4.SCH4.V_SCHOOL" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "hierarchyType" : "LEVEL_BASED",
+    "levelBasedHierarchy" : {
+      "defaultRootLevel" : "Total",
+      "ragged" : false,
+      "skipped" : false,
+      "logicalLevels" : [ {
+        "name" : "Total",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : true,
+        "disableAggregateToHigherLevel" : false
+      }, {
+        "name" : "School Geo State",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "School Geo State" ],
+        "displayKey" : "School Geo State",
+        "chronologicalKey" : [ "School Geo State" ]
+      }, {
+        "name" : "School City",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "School City" ],
+        "displayKey" : "School City",
+        "chronologicalKey" : [ "School City" ]
+      }, {
+        "name" : "School District",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "School District" ],
+        "displayKey" : "School District",
+        "chronologicalKey" : [ "School District" ]
+      }, {
+        "name" : "Detail",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "School ID" ],
+        "displayKey" : "School ID",
+        "chronologicalKey" : [ "School ID" ]
+      } ],
+      "logicalHierarchies" : [ {
+        "name" : "School",
+        "description" : "default hierarchy",
+        "levels" : [ "Total", "School Geo State", "School City", "School District", "Detail" ]
+      } ]
+    }
+  }
+}

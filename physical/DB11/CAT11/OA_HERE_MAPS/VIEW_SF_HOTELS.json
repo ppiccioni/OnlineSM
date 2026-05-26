@@ -1,0 +1,37 @@
+{
+  "physicalTable" : {
+    "name" : "VIEW_SF_HOTELS",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "DUMMY",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "HOTELCOUNTRYCODE",
+      "dataType" : "CHAR",
+      "length" : 3,
+      "nullable" : true
+    }, {
+      "name" : "HOTELGEO",
+      "dataType" : "GEOMETRY",
+      "length" : 3,
+      "nullable" : true
+    }, {
+      "name" : "HOTELID",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : false
+    }, {
+      "name" : "HOTELNAME",
+      "dataType" : "VARCHAR",
+      "length" : 240,
+      "nullable" : true
+    } ],
+    "additionalKeys" : [ [ "DUMMY" ] ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

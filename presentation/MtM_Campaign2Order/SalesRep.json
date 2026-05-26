@@ -1,0 +1,51 @@
+{
+  "presentationTable" : {
+    "name" : "SalesRep",
+    "presentationColumns" : [ {
+      "name" : "Employee Id",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.SalesRep.Employee Id",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Employee Name",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.SalesRep.Employee Name",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Hire Date",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.SalesRep.Hire Date",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Level",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.SalesRep.Level",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Manager Id",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.SalesRep.Manager Id",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Position",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.SalesRep.Position",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Position Id",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.SalesRep.Position Id",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Position Type",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.SalesRep.Position Type",
+      "useLogicalColumnName" : true
+    } ],
+    "hierarchies" : [ {
+      "name" : "Hierarchy 1",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:MtM_Campaign2Order.SalesRep",
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:MtM_Campaign2Order.SalesRep.Total"
+      }, {
+        "name" : "Detail",
+        "sourceLogicalLevel" : "logicalLevel:MtM_Campaign2Order.SalesRep.Detail",
+        "displayColumn" : "presentationColumn:MtM_Campaign2Order.SalesRep.Employee Id"
+      } ]
+    } ]
+  }
+}

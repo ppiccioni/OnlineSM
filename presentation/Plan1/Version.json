@@ -1,0 +1,83 @@
+{
+  "presentationTable" : {
+    "name" : "Version",
+    "presentationColumns" : [ {
+      "name" : "Version - Public",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Version.Version - Public",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Version - Standard Bottom Up",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Version.Version - Standard Bottom Up",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Version - Standard Target",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Version.Version - Standard Target",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Version Alias:Default,Gen,1",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Version.Version Alias:Default,Gen,1",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Version Alias:Default,Gen,2",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Version.Version Alias:Default,Gen,2",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Version Alias:Default,Gen,3",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Version.Version Alias:Default,Gen,3",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Version Alias:English,Gen,1",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Version.Version Alias:English,Gen,1",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Version Alias:English,Gen,2",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Version.Version Alias:English,Gen,2",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Version Alias:English,Gen,3",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Version.Version Alias:English,Gen,3",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Version Default",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Version.Version Default",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Version English",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Version.Version English",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Version Gen Number",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Version.Version Gen Number",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Version Leaf Indicator",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Version.Version Leaf Indicator",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Version Name",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Version.Version Name",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Version Name,Gen,1",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Version.Version Name,Gen,1",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Version Name,Gen,2",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Version.Version Name,Gen,2",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Version Name,Gen,3",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Version.Version Name,Gen,3",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Version Parent Key",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Version.Version Parent Key",
+      "useLogicalColumnName" : true
+    } ],
+    "hierarchies" : [ {
+      "name" : "Version",
+      "sourceLogicalTable" : "logicalTable:Plan1.Version",
+      "displayColumn" : "presentationColumn:Plan1.Version.Version Name"
+    } ]
+  }
+}

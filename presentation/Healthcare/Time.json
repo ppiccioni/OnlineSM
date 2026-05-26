@@ -1,0 +1,91 @@
+{
+  "presentationTable" : {
+    "name" : "Time",
+    "presentationColumns" : [ {
+      "name" : "DSYS_BATCH_ID",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Time.DSYS_BATCH_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_INSTANCE_ID",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Time.DSYS_INSTANCE_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_PROCESS_ID",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Time.DSYS_PROCESS_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Date ID",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Time.Date ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Day",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Time.Day",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Half",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Time.Half",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Month",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Time.Month",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Month Name",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Time.Month Name",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Month Nbr",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Time.Month Nbr",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Quarter",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Time.Quarter",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Week",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Time.Week",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Year",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Time.Year",
+      "useLogicalColumnName" : true
+    } ],
+    "hierarchies" : [ {
+      "name" : "Time Hierarchy",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:Healthcare.Time",
+      "levels" : [ {
+        "name" : "All Years",
+        "sourceLogicalLevel" : "logicalLevel:Healthcare.Time.All Years"
+      }, {
+        "name" : "Year",
+        "sourceLogicalLevel" : "logicalLevel:Healthcare.Time.Year",
+        "displayColumn" : "presentationColumn:Healthcare.Time.Year"
+      }, {
+        "name" : "Quarter",
+        "sourceLogicalLevel" : "logicalLevel:Healthcare.Time.Quarter",
+        "displayColumn" : "presentationColumn:Healthcare.Time.Quarter"
+      }, {
+        "name" : "Month",
+        "sourceLogicalLevel" : "logicalLevel:Healthcare.Time.Month",
+        "displayColumn" : "presentationColumn:Healthcare.Time.Month Nbr"
+      }, {
+        "name" : "Day",
+        "sourceLogicalLevel" : "logicalLevel:Healthcare.Time.Day",
+        "displayColumn" : "presentationColumn:Healthcare.Time.Day"
+      } ]
+    } ]
+  }
+}

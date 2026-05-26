@@ -1,0 +1,161 @@
+{
+  "logicalTable" : {
+    "name" : "Medal BinsB",
+    "type" : "DIMENSION",
+    "primaryKey" : [ "Binb" ],
+    "logicalColumns" : [ {
+      "name" : "Binb",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "BINSB_V1",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.BINSB_MEDAL_V1.BINB_NUM" ]
+          }
+        }, {
+          "logicalTableSource" : "BINSB_V2",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.BINSB_MEDAL_V2.BINB_NUM" ]
+          }
+        }, {
+          "logicalTableSource" : "BINSB_V3",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.BINSB_MEDAL_V3.BINB_NUM" ]
+          }
+        }, {
+          "logicalTableSource" : "BINSB_V4",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.BINSB_MEDAL_V4.BINB_NUM" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "Daily Amount Bin+",
+      "dataType" : "VARCHAR",
+      "sortBy" : "Binb",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "BINSB_V1",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.BINSB_MEDAL_V1.BINB_AGGR_V1_W" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Daily Distance Bin+",
+      "dataType" : "VARCHAR",
+      "sortBy" : "Binb",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "BINSB_V2",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.BINSB_MEDAL_V2.BINB_AGGR_V2_W" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Avg # of Pax Bin+",
+      "dataType" : "VARCHAR",
+      "sortBy" : "Binb",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "BINSB_V3",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.BINSB_MEDAL_V3.BINB_AGGR_V3_W" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Speed (MPH) Bin+",
+      "dataType" : "VARCHAR",
+      "sortBy" : "Binb",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "BINSB_V4",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.BINSB_MEDAL_V4.BINB_AGGR_V4_W" ]
+          }
+        } ]
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "BINSB_V1",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:Taxi NYC.CAT9.CAT9.BINSB_MEDAL_V1" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    }, {
+      "name" : "BINSB_V2",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:Taxi NYC.CAT9.CAT9.BINSB_MEDAL_V2" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    }, {
+      "name" : "BINSB_V3",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:Taxi NYC.CAT9.CAT9.BINSB_MEDAL_V3" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    }, {
+      "name" : "BINSB_V4",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:Taxi NYC.CAT9.CAT9.BINSB_MEDAL_V4" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "hierarchyType" : "LEVEL_BASED",
+    "levelBasedHierarchy" : {
+      "defaultRootLevel" : "Total",
+      "ragged" : false,
+      "skipped" : false,
+      "logicalLevels" : [ {
+        "name" : "Total",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : true,
+        "disableAggregateToHigherLevel" : false
+      }, {
+        "name" : "Detail",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Binb" ],
+        "displayKey" : "Binb"
+      } ],
+      "logicalHierarchies" : [ {
+        "name" : "Medal BinsBDim",
+        "levels" : [ "Total", "Detail" ]
+      } ]
+    }
+  }
+}

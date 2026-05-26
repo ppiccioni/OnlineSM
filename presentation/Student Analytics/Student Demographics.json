@@ -1,0 +1,138 @@
+{
+  "presentationTable" : {
+    "name" : "Student Demographics",
+    "presentationColumns" : [ {
+      "name" : "DSYS_BATCH_ID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Student Demographics.DSYS_BATCH_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_INSTANCE_ID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Student Demographics.DSYS_INSTANCE_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_PROCESS_ID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Student Demographics.DSYS_PROCESS_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "ETHNIC_GROUP_CD",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Student Demographics.ETHNIC_GROUP_CD",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Ethnic Group",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Student Demographics.Ethnic Group",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "GENDER_CD",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Student Demographics.GENDER_CD",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Gender",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Student Demographics.Gender",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "HISPANIC_STUDENT_CD",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Student Demographics.HISPANIC_STUDENT_CD",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Hispanic Student",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Student Demographics.Hispanic Student",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "INTL_STUDENT_CD",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Student Demographics.INTL_STUDENT_CD",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "International Student",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Student Demographics.International Student",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "IN_STATE_STUDENT_CD",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Student Demographics.IN_STATE_STUDENT_CD",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "In-State Student",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Student Demographics.In-State Student",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "MARITAL_STATUS_CD",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Student Demographics.MARITAL_STATUS_CD",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Marital Status",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Student Demographics.Marital Status",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "MILITARY_STUDENT_CD",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Student Demographics.MILITARY_STUDENT_CD",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Military Student",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Student Demographics.Military Student",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "STUDENT_BIODEMO_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Student Demographics.STUDENT_BIODEMO_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "STUDENT_STIPEND_CD",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Student Demographics.STUDENT_STIPEND_CD",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Student Stipend",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Student Demographics.Student Stipend",
+      "useLogicalColumnName" : true
+    } ],
+    "hierarchies" : [ {
+      "name" : "Hierarchy 1",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:Student Analytics.Student Demographics",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      },
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:Student Analytics.Student Demographics.Total"
+      }, {
+        "name" : "Detail",
+        "sourceLogicalLevel" : "logicalLevel:Student Analytics.Student Demographics.Detail",
+        "displayColumn" : "presentationColumn:Student Analytics.Student Demographics.STUDENT_BIODEMO_WID"
+      } ]
+    } ]
+  }
+}

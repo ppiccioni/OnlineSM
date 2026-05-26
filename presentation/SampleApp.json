@@ -1,0 +1,30 @@
+{
+  "subjectArea" : {
+    "name" : "SampleApp",
+    "sourceBusinessModel" : "businessModel:SampleApp Payments",
+    "alternateNames" : [ "PC0" ],
+    "tableOrder" : [ {
+      "name" : "presentationTable:SampleApp.Revenue Metrics"
+    }, {
+      "name" : "presentationTable:SampleApp.Profit Metrics"
+    }, {
+      "name" : "presentationTable:SampleApp.Advanced Calcs"
+    }, {
+      "name" : "presentationTable:SampleApp.Time"
+    }, {
+      "name" : "presentationTable:SampleApp.Customers"
+    }, {
+      "name" : "presentationTable:SampleApp.Payment Metrics"
+    }, {
+      "name" : "presentationTable:SampleApp.Products"
+    }, {
+      "name" : "presentationTable:SampleApp.Geography"
+    }, {
+      "name" : "presentationTable:SampleApp.Orders"
+    } ],
+    "localization" : {
+      "localizationKey" : "SampleApp",
+      "nameVariable" : "SampleApp"
+    }
+  }
+}

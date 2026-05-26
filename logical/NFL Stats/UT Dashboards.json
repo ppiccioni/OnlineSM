@@ -1,0 +1,117 @@
+{
+  "logicalTable" : {
+    "name" : "UT Dashboards",
+    "type" : "DIMENSION",
+    "primaryKey" : [ "Dashboard" ],
+    "logicalColumns" : [ {
+      "name" : "Dashboard",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "CLOUD_UT_DASHBOARDS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:NFL Stats.CAT3.SCH3.CLOUD_UT_DASHBOARDS.DASHBOARD" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "Dboard Page",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "CLOUD_UT_DASHBOARDS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:NFL Stats.CAT3.SCH3.CLOUD_UT_DASHBOARDS.DBOARD_PAGE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "UT Insert",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : " EVALUATE('UT_ENTRY(\\%1,\\%2,\\%3,\\%4,\\%5)', %1, %2, %3, %4, %4)",
+          "expressionObjects" : [ "logicalColumn:NFL Stats.UT Dashboards.Integer 1", "logicalColumn:NFL Stats.UT Users.UT_Username", "logicalColumn:NFL Stats.UT Dashboards.Dashboard", "logicalColumn:NFL Stats.UT Dashboards.Dboard Page" ]
+        }
+      }
+    }, {
+      "name" : "Integer 1",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "1"
+        }
+      }
+    }, {
+      "name" : "Current User",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : " LEFT( CAST ( USER() AS VARCHAR ( 50 )), 4)"
+        }
+      }
+    }, {
+      "name" : "CONNECTOR",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "CLOUD_UT_DASHBOARDS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:NFL Stats.CAT3.SCH3.CLOUD_UT_DASHBOARDS.CONNECTOR" ]
+          }
+        } ]
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "CLOUD_UT_DASHBOARDS_LTS",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:NFL Stats.CAT3.SCH3.CLOUD_UT_DASHBOARDS" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "hierarchyType" : "LEVEL_BASED",
+    "levelBasedHierarchy" : {
+      "defaultRootLevel" : "Total",
+      "ragged" : false,
+      "skipped" : false,
+      "logicalLevels" : [ {
+        "name" : "Total",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : true,
+        "disableAggregateToHigherLevel" : false
+      }, {
+        "name" : "Detail",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Dashboard" ],
+        "displayKey" : "Dashboard",
+        "chronologicalKey" : [ "Dashboard" ]
+      } ],
+      "logicalHierarchies" : [ {
+        "name" : "UT Dashboards",
+        "description" : "default hierarchy",
+        "levels" : [ "Total", "Detail" ]
+      } ]
+    }
+  }
+}

@@ -1,0 +1,341 @@
+{
+  "presentationTable" : {
+    "name" : "Day",
+    "presentationColumns" : [ {
+      "name" : "Calendar Half Year",
+      "sourceLogicalColumn" : "logicalColumn:Retail.Day.Calendar Half Year",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Calendar Month Code",
+      "sourceLogicalColumn" : "logicalColumn:Retail.Day.Calendar Month Code",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Calendar Month Id",
+      "sourceLogicalColumn" : "logicalColumn:Retail.Day.Calendar Month Id",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Calendar Quarter",
+      "sourceLogicalColumn" : "logicalColumn:Retail.Day.Calendar Quarter",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Calendar Quarter End Date",
+      "sourceLogicalColumn" : "logicalColumn:Retail.Day.Calendar Quarter End Date",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Calendar Quarter Id",
+      "sourceLogicalColumn" : "logicalColumn:Retail.Day.Calendar Quarter Id",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Calendar Quarter Start Date",
+      "sourceLogicalColumn" : "logicalColumn:Retail.Day.Calendar Quarter Start Date",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Calendar Trimester",
+      "sourceLogicalColumn" : "logicalColumn:Retail.Day.Calendar Trimester",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Calendar Week",
+      "sourceLogicalColumn" : "logicalColumn:Retail.Day.Calendar Week",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Calendar Week End Date Id",
+      "sourceLogicalColumn" : "logicalColumn:Retail.Day.Calendar Week End Date Id",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Calendar Week Start Date Id",
+      "sourceLogicalColumn" : "logicalColumn:Retail.Day.Calendar Week Start Date Id",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Calendar Year",
+      "sourceLogicalColumn" : "logicalColumn:Retail.Day.Calendar Year",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Calendar Year End Date",
+      "sourceLogicalColumn" : "logicalColumn:Retail.Day.Calendar Year End Date",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Calendar Year End Date Id",
+      "sourceLogicalColumn" : "logicalColumn:Retail.Day.Calendar Year End Date Id",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Calendar Year Id",
+      "sourceLogicalColumn" : "logicalColumn:Retail.Day.Calendar Year Id",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Calendar Year Start Date",
+      "sourceLogicalColumn" : "logicalColumn:Retail.Day.Calendar Year Start Date",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Calendar Year Start Date Id",
+      "sourceLogicalColumn" : "logicalColumn:Retail.Day.Calendar Year Start Date Id",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Date",
+      "sourceLogicalColumn" : "logicalColumn:Retail.Day.Date",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Date ID",
+      "sourceLogicalColumn" : "logicalColumn:Retail.Day.Date ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Date Timestamp",
+      "sourceLogicalColumn" : "logicalColumn:Retail.Day.Date Timestamp",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Day Name",
+      "sourceLogicalColumn" : "logicalColumn:Retail.Day.Day Name",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Day Of Month",
+      "sourceLogicalColumn" : "logicalColumn:Retail.Day.Day Of Month",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Day Of Week",
+      "sourceLogicalColumn" : "logicalColumn:Retail.Day.Day Of Week",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Day Of Year",
+      "sourceLogicalColumn" : "logicalColumn:Retail.Day.Day Of Year",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "End Calendar Date Id",
+      "sourceLogicalColumn" : "logicalColumn:Retail.Day.End Calendar Date Id",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Enterprise Half Year",
+      "sourceLogicalColumn" : "logicalColumn:Retail.Day.Enterprise Half Year",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "First Day of Calendar Month Flag",
+      "sourceLogicalColumn" : "logicalColumn:Retail.Day.First Day of Calendar Month Flag",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "First Day of Calendar Quarter Flag",
+      "sourceLogicalColumn" : "logicalColumn:Retail.Day.First Day of Calendar Quarter Flag",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "First Day of Calendar Week Flag",
+      "sourceLogicalColumn" : "logicalColumn:Retail.Day.First Day of Calendar Week Flag",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "First Day of Calendar Year Flag",
+      "sourceLogicalColumn" : "logicalColumn:Retail.Day.First Day of Calendar Year Flag",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Julian Day Number",
+      "sourceLogicalColumn" : "logicalColumn:Retail.Day.Julian Day Number",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Julian Month Number",
+      "sourceLogicalColumn" : "logicalColumn:Retail.Day.Julian Month Number",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Julian Quarter Number",
+      "sourceLogicalColumn" : "logicalColumn:Retail.Day.Julian Quarter Number",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Julian Trimester Number",
+      "sourceLogicalColumn" : "logicalColumn:Retail.Day.Julian Trimester Number",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Julian Week Number",
+      "sourceLogicalColumn" : "logicalColumn:Retail.Day.Julian Week Number",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Julian Year Number",
+      "sourceLogicalColumn" : "logicalColumn:Retail.Day.Julian Year Number",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Last Day of Calendar Month Flag",
+      "sourceLogicalColumn" : "logicalColumn:Retail.Day.Last Day of Calendar Month Flag",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Last Day of Calendar Quarter Flag",
+      "sourceLogicalColumn" : "logicalColumn:Retail.Day.Last Day of Calendar Quarter Flag",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Last Day of Calendar Week Flag",
+      "sourceLogicalColumn" : "logicalColumn:Retail.Day.Last Day of Calendar Week Flag",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Last Day of Calendar Year Flag",
+      "sourceLogicalColumn" : "logicalColumn:Retail.Day.Last Day of Calendar Year Flag",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Month",
+      "sourceLogicalColumn" : "logicalColumn:Retail.Day.Month",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Month Name",
+      "sourceLogicalColumn" : "logicalColumn:Retail.Day.Month Name",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Quarter",
+      "sourceLogicalColumn" : "logicalColumn:Retail.Day.Quarter",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Start Calendar Date Id",
+      "sourceLogicalColumn" : "logicalColumn:Retail.Day.Start Calendar Date Id",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Trimester",
+      "sourceLogicalColumn" : "logicalColumn:Retail.Day.Trimester",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Week",
+      "sourceLogicalColumn" : "logicalColumn:Retail.Day.Week",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Week By Year",
+      "sourceLogicalColumn" : "logicalColumn:Retail.Day.Week By Year",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Year",
+      "sourceLogicalColumn" : "logicalColumn:Retail.Day.Year",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    } ],
+    "hierarchies" : [ {
+      "name" : "Day Hierarchy",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:Retail.Day",
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:Retail.Day.Total"
+      }, {
+        "name" : "Year",
+        "sourceLogicalLevel" : "logicalLevel:Retail.Day.Year",
+        "displayColumn" : "presentationColumn:Retail.Day.Year"
+      }, {
+        "name" : "Quarter",
+        "sourceLogicalLevel" : "logicalLevel:Retail.Day.Quarter",
+        "displayColumn" : "presentationColumn:Retail.Day.Quarter"
+      }, {
+        "name" : "Month",
+        "sourceLogicalLevel" : "logicalLevel:Retail.Day.Month",
+        "displayColumn" : "presentationColumn:Retail.Day.Month"
+      }, {
+        "name" : "Calendar Week",
+        "sourceLogicalLevel" : "logicalLevel:Retail.Day.Calendar Week",
+        "displayColumn" : "presentationColumn:Retail.Day.Calendar Week"
+      }, {
+        "name" : "Day",
+        "sourceLogicalLevel" : "logicalLevel:Retail.Day.Day",
+        "displayColumn" : "presentationColumn:Retail.Day.Date"
+      } ]
+    } ]
+  }
+}

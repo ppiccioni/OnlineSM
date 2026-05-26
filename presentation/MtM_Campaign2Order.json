@@ -1,0 +1,62 @@
+{
+  "subjectArea" : {
+    "name" : "MtM_Campaign2Order",
+    "sourceBusinessModel" : "businessModel:MtM_Campaign2Order",
+    "alternateNames" : [ "PC8" ],
+    "tableOrder" : [ {
+      "name" : "presentationTable:MtM_Campaign2Order.Opportunites"
+    }, {
+      "name" : "presentationTable:MtM_Campaign2Order.Time"
+    }, {
+      "name" : "presentationTable:MtM_Campaign2Order.Products"
+    }, {
+      "name" : "presentationTable:MtM_Campaign2Order.Customers"
+    }, {
+      "name" : "presentationTable:MtM_Campaign2Order.Orders"
+    }, {
+      "name" : "presentationTable:MtM_Campaign2Order.Base Revenue Facts"
+    }, {
+      "name" : "presentationTable:MtM_Campaign2Order.Geography"
+    }, {
+      "name" : "presentationTable:MtM_Campaign2Order.SalesRep"
+    }, {
+      "name" : "presentationTable:MtM_Campaign2Order.Payments"
+    }, {
+      "name" : "presentationTable:MtM_Campaign2Order.Payments Facts"
+    }, {
+      "name" : "presentationTable:MtM_Campaign2Order.Bookings"
+    }, {
+      "name" : "presentationTable:MtM_Campaign2Order.Booking Facts"
+    }, {
+      "name" : "presentationTable:MtM_Campaign2Order.Shippings"
+    }, {
+      "name" : "presentationTable:MtM_Campaign2Order.Shippings Facts"
+    }, {
+      "name" : "presentationTable:MtM_Campaign2Order.Offices"
+    }, {
+      "name" : "presentationTable:MtM_Campaign2Order.Calculated Revenue Facts"
+    }, {
+      "name" : "presentationTable:MtM_Campaign2Order.Opportunity Facts"
+    }, {
+      "name" : "presentationTable:MtM_Campaign2Order.RTD Facts"
+    }, {
+      "name" : "presentationTable:MtM_Campaign2Order.RTD Corr_Pred"
+    }, {
+      "name" : "presentationTable:MtM_Campaign2Order.RTD_ChoSeg_Facts"
+    }, {
+      "name" : "presentationTable:MtM_Campaign2Order.RTD_Cho_Seg"
+    }, {
+      "name" : "presentationTable:MtM_Campaign2Order.MyConsumers Facts"
+    }, {
+      "name" : "presentationTable:MtM_Campaign2Order.MyConsumers"
+    }, {
+      "name" : "presentationTable:MtM_Campaign2Order.MKT_Facts"
+    }, {
+      "name" : "presentationTable:MtM_Campaign2Order.MKT_Tactics"
+    } ],
+    "localization" : {
+      "localizationKey" : "MtM_Campaign2Order",
+      "nameVariable" : "MtM_Campaign2Order"
+    }
+  }
+}

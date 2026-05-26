@@ -1,0 +1,59 @@
+{
+  "presentationTable" : {
+    "name" : "RTD_ChoSeg_Facts",
+    "presentationColumns" : [ {
+      "name" : "# Choice Groups",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.RTD_ChoSeg_Facts.# Choice Groups",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "# Choice Subgroups",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.RTD_ChoSeg_Facts.# Choice Subgroups",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "# Choices",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.RTD_ChoSeg_Facts.# Choices",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "# Consumers",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.RTD_ChoSeg_Facts.# Consumers",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "# Responses",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.RTD_ChoSeg_Facts.# Responses",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Avg # Responses",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.RTD_ChoSeg_Facts.Avg # Responses",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "CHOICE_SEG_ID",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.RTD_ChoSeg_Facts.CHOICE_SEG_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "No of Trans",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.RTD_ChoSeg_Facts.No of Trans",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Pct Responses",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.RTD_ChoSeg_Facts.Pct Responses",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "SEGMENT",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.RTD_ChoSeg_Facts.SEGMENT",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "SEGMENT_ID",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.RTD_ChoSeg_Facts.SEGMENT_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    } ]
+  }
+}

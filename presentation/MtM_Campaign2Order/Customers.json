@@ -1,0 +1,138 @@
+{
+  "presentationTable" : {
+    "name" : "Customers",
+    "presentationColumns" : [ {
+      "name" : "Account Name",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Customers.Account Name",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Birth Date",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Customers.Birth Date",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Credit Rate",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Customers.Credit Rate",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Customer Id",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Customers.Customer Id",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "First Contact Date",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Customers.First Contact Date",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Gender",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Customers.Gender",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Income Level",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Customers.Income Level",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "LTV",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Customers.LTV",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Last Order Date",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Customers.Last Order Date",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Marital Status",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Customers.Marital Status",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "NUM_ATTRIBUTE",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Customers.NUM_ATTRIBUTE",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Name",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Customers.Name",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "PREV_MARITAL_ST",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Customers.PREV_MARITAL_ST",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "PREV_MARITAL_ST_DT",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Customers.PREV_MARITAL_ST_DT",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Segment",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Customers.Segment",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Status",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Customers.Status",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "TOTAL_VALUE",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Customers.TOTAL_VALUE",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Type",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Customers.Type",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Months as Customer",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Customers.Months as Customer",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Years as Customer",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Customers.Years as Customer",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Customer Age",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Customers.Customer Age",
+      "useLogicalColumnName" : true
+    } ],
+    "hierarchies" : [ {
+      "name" : "Cust Segment Hier",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:MtM_Campaign2Order.Customers",
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:MtM_Campaign2Order.Customers.Total"
+      }, {
+        "name" : "Segment",
+        "sourceLogicalLevel" : "logicalLevel:MtM_Campaign2Order.Customers.Segment",
+        "displayColumn" : "presentationColumn:MtM_Campaign2Order.Customers.Segment"
+      }, {
+        "name" : "Detail",
+        "sourceLogicalLevel" : "logicalLevel:MtM_Campaign2Order.Customers.Detail",
+        "displayColumn" : "presentationColumn:MtM_Campaign2Order.Customers.Customer Id"
+      } ]
+    }, {
+      "name" : "Cust Type Hier",
+      "sourceLogicalTable" : "logicalTable:MtM_Campaign2Order.Customers",
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:MtM_Campaign2Order.Customers.Total"
+      }, {
+        "name" : "Type",
+        "sourceLogicalLevel" : "logicalLevel:MtM_Campaign2Order.Customers.Type",
+        "displayColumn" : "presentationColumn:MtM_Campaign2Order.Customers.Type"
+      }, {
+        "name" : "Status",
+        "sourceLogicalLevel" : "logicalLevel:MtM_Campaign2Order.Customers.Status",
+        "displayColumn" : "presentationColumn:MtM_Campaign2Order.Customers.Status"
+      }, {
+        "name" : "Detail",
+        "sourceLogicalLevel" : "logicalLevel:MtM_Campaign2Order.Customers.Detail",
+        "displayColumn" : "presentationColumn:MtM_Campaign2Order.Customers.Name"
+      } ]
+    } ]
+  }
+}

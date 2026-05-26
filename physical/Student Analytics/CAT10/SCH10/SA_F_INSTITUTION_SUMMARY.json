@@ -1,0 +1,383 @@
+{
+  "physicalTable" : {
+    "name" : "SA_F_INSTITUTION_SUMMARY",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "GRADUATION_COUNT_YR2",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "GRADUATION_COUNT_YR3",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "GRADUATION_COUNT_YR4",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "GRADUATION_COUNT_YR5",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "GRADUATION_COUNT_YR6",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "GRADUATION_COUNT_YR7",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "GRADUATION_COUNT_YR8",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "GRADUATION_COUNT_YR9",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "MAJOR_WID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "MATRIC_ACADEMIC_ATTRIB_WID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "MATRIC_ACADEMIC_ORG_WID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "MATRIC_ACADEMIC_PROFILE_WID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "PROGRAM_WID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "ROW_WID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "STUDENT_ACADEMIC_ATTRIB_WID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "STUDENT_ACADEMIC_PROFILE_WID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "STUDENT_AGE_ADMIT_TERM",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "STUDENT_BIODEMO_WID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "STUDENT_LOCATION_WID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "YR1_FALL_TERM_WID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "YR2_FALL_TERM_WID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "YR3_FALL_TERM_WID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "YR4_FALL_TERM_WID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "YR5_FALL_TERM_WID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "YR6_FALL_TERM_WID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "YR7_FALL_TERM_WID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "YR8_FALL_TERM_WID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "YR9_FALL_TERM_WID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "ACADEMIC_ORG_WID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "ADMIT_TERM_WID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "COHORT_WID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "DEGREE_WID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "DSYS_BATCH_ID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "DSYS_INSTANCE_ID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "DSYS_PROCESS_ID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "ENROLLMENT_ADJ_6MO",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "ENROLLMENT_ADJ_YR1",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "ENROLLMENT_ADJ_YR2",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "ENROLLMENT_ADJ_YR3",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "ENROLLMENT_ADJ_YR4",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "ENROLLMENT_ADJ_YR5",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "ENROLLMENT_ADJ_YR6",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "ENROLLMENT_ADJ_YR7",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "ENROLLMENT_ADJ_YR8",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "ENROLLMENT_ADJ_YR9",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "ENROLLMENT_COUNT_6MO",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "ENROLLMENT_COUNT_YR1",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "ENROLLMENT_COUNT_YR2",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "ENROLLMENT_COUNT_YR3",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "ENROLLMENT_COUNT_YR4",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "ENROLLMENT_COUNT_YR5",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "ENROLLMENT_COUNT_YR6",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "ENROLLMENT_COUNT_YR7",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "ENROLLMENT_COUNT_YR8",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "ENROLLMENT_COUNT_YR9",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "GRADUATION_COUNT_YR1",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    } ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    },
+    "joins" : [ {
+      "rightTable" : "physicalTable:Student Analytics.CAT10.SCH10.SA_D_ACADEMIC_ORG",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:Student Analytics.CAT10.SCH10.SA_F_INSTITUTION_SUMMARY.ACADEMIC_ORG_WID",
+        "rightColumn" : "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_ACADEMIC_ORG.ACADEMIC_ORG_WID"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:Student Analytics.CAT10.SCH10.SA_D_ADMIT_TERM",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:Student Analytics.CAT10.SCH10.SA_F_INSTITUTION_SUMMARY.ADMIT_TERM_WID",
+        "rightColumn" : "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_ADMIT_TERM.ADMIT_TERM_WID"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:Student Analytics.CAT10.SCH10.SA_D_COHORT",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:Student Analytics.CAT10.SCH10.SA_F_INSTITUTION_SUMMARY.COHORT_WID",
+        "rightColumn" : "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_COHORT.COHORT_WID"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:Student Analytics.CAT10.SCH10.SA_D_DEGREE",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:Student Analytics.CAT10.SCH10.SA_F_INSTITUTION_SUMMARY.DEGREE_WID",
+        "rightColumn" : "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_DEGREE.DEGREE_WID"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:Student Analytics.CAT10.SCH10.SA_D_LOCATION",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:Student Analytics.CAT10.SCH10.SA_F_INSTITUTION_SUMMARY.STUDENT_LOCATION_WID",
+        "rightColumn" : "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_LOCATION.LOCATION_WID"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:Student Analytics.CAT10.SCH10.SA_D_MAJOR",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:Student Analytics.CAT10.SCH10.SA_F_INSTITUTION_SUMMARY.MAJOR_WID",
+        "rightColumn" : "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_MAJOR.MAJOR_WID"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:Student Analytics.CAT10.SCH10.SA_D_MATRIC_ACAD_ATTRIB",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:Student Analytics.CAT10.SCH10.SA_F_INSTITUTION_SUMMARY.MATRIC_ACADEMIC_ATTRIB_WID",
+        "rightColumn" : "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_MATRIC_ACAD_ATTRIB.MATRIC_ACADEMIC_ATTRIB_WID"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:Student Analytics.CAT10.SCH10.SA_D_MATRIC_ACAD_ORG",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:Student Analytics.CAT10.SCH10.SA_F_INSTITUTION_SUMMARY.MATRIC_ACADEMIC_ORG_WID",
+        "rightColumn" : "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_MATRIC_ACAD_ORG.MATRIC_ACADEMIC_ORG_WID"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:Student Analytics.CAT10.SCH10.SA_D_MATRIC_ACAD_PROFILE",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:Student Analytics.CAT10.SCH10.SA_F_INSTITUTION_SUMMARY.MATRIC_ACADEMIC_PROFILE_WID",
+        "rightColumn" : "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_MATRIC_ACAD_PROFILE.MATRIC_ACADEMIC_PROFILE_WID"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:Student Analytics.CAT10.SCH10.SA_D_PROGRAM",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:Student Analytics.CAT10.SCH10.SA_F_INSTITUTION_SUMMARY.PROGRAM_WID",
+        "rightColumn" : "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_PROGRAM.PROGRAM_WID"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:Student Analytics.CAT10.SCH10.SA_D_STUDENT_ACAD_ATTRIB",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:Student Analytics.CAT10.SCH10.SA_F_INSTITUTION_SUMMARY.STUDENT_ACADEMIC_ATTRIB_WID",
+        "rightColumn" : "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_STUDENT_ACAD_ATTRIB.STUDENT_ACADEMIC_ATTRIB_WID"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:Student Analytics.CAT10.SCH10.SA_D_STUDENT_ACAD_PROFILE",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:Student Analytics.CAT10.SCH10.SA_F_INSTITUTION_SUMMARY.STUDENT_ACADEMIC_PROFILE_WID",
+        "rightColumn" : "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_STUDENT_ACAD_PROFILE.STUDENT_ACADEMIC_PROFILE_WID"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:Student Analytics.CAT10.SCH10.SA_D_STUDENT_BIODEMO",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:Student Analytics.CAT10.SCH10.SA_F_INSTITUTION_SUMMARY.STUDENT_BIODEMO_WID",
+        "rightColumn" : "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_STUDENT_BIODEMO.STUDENT_BIODEMO_WID"
+      } ]
+    } ]
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "presentationTable" : {
+    "name" : "Time",
+    "presentationColumns" : [ {
+      "name" : "DATE_ID",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Time.DATE_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Day",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Time.Day",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "DSYS_BATCH_ID",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Time.DSYS_BATCH_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_INSTANCE_ID",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Time.DSYS_INSTANCE_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_PROCESS_ID",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Time.DSYS_PROCESS_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Half",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Time.Half",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Month",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Time.Month",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Month Name",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Time.Month Name",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Month Nbr",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Time.Month Nbr",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Quarter",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Time.Quarter",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Week",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Time.Week",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Year",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Time.Year",
+      "useLogicalColumnName" : true
+    } ],
+    "hierarchies" : [ {
+      "name" : "Time Hierarchy",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:Higher_Ed.Time",
+      "levels" : [ {
+        "name" : "All Years",
+        "sourceLogicalLevel" : "logicalLevel:Higher_Ed.Time.All Years"
+      }, {
+        "name" : "Year",
+        "sourceLogicalLevel" : "logicalLevel:Higher_Ed.Time.Year",
+        "displayColumn" : "presentationColumn:Higher_Ed.Time.Year"
+      }, {
+        "name" : "Month",
+        "sourceLogicalLevel" : "logicalLevel:Higher_Ed.Time.Month",
+        "displayColumn" : "presentationColumn:Higher_Ed.Time.Month"
+      }, {
+        "name" : "Day",
+        "sourceLogicalLevel" : "logicalLevel:Higher_Ed.Time.Day",
+        "displayColumn" : "presentationColumn:Higher_Ed.Time.Day"
+      } ]
+    } ]
+  }
+}

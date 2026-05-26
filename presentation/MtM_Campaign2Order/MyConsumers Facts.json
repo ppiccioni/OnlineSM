@@ -1,0 +1,10 @@
+{
+  "presentationTable" : {
+    "name" : "MyConsumers Facts",
+    "presentationColumns" : [ {
+      "name" : "# MyConsumers",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.MyConsumers Facts.# MyConsumers",
+      "useLogicalColumnName" : true
+    } ]
+  }
+}

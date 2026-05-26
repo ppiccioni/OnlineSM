@@ -1,0 +1,97 @@
+{
+  "presentationTable" : {
+    "name" : "Offices",
+    "presentationColumns" : [ {
+      "name" : "Address Id",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Offices.Address Id",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Company",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Offices.Company",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Company Id",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Offices.Company Id",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Department",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Offices.Department",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Department Id",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Offices.Department Id",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Office",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Offices.Office",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Office Id",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Offices.Office Id",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Organization",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Offices.Organization",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Organization Id",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Offices.Organization Id",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Region",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Offices.Region",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Sequence",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Offices.Sequence",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "TOTAL_VALUE",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Offices.TOTAL_VALUE",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    } ],
+    "hierarchies" : [ {
+      "name" : "Offices Hierarchy",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:MtM_Campaign2Order.Offices",
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:MtM_Campaign2Order.Offices.Total"
+      }, {
+        "name" : "Company",
+        "sourceLogicalLevel" : "logicalLevel:MtM_Campaign2Order.Offices.Company",
+        "displayColumn" : "presentationColumn:MtM_Campaign2Order.Offices.Company"
+      }, {
+        "name" : "Organization",
+        "sourceLogicalLevel" : "logicalLevel:MtM_Campaign2Order.Offices.Organization",
+        "displayColumn" : "presentationColumn:MtM_Campaign2Order.Offices.Organization"
+      }, {
+        "name" : "Department",
+        "sourceLogicalLevel" : "logicalLevel:MtM_Campaign2Order.Offices.Department",
+        "displayColumn" : "presentationColumn:MtM_Campaign2Order.Offices.Department"
+      }, {
+        "name" : "Office",
+        "sourceLogicalLevel" : "logicalLevel:MtM_Campaign2Order.Offices.Office",
+        "displayColumn" : "presentationColumn:MtM_Campaign2Order.Offices.Office"
+      } ]
+    }, {
+      "name" : "Offices Region Hierarchy",
+      "sourceLogicalTable" : "logicalTable:MtM_Campaign2Order.Offices",
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:MtM_Campaign2Order.Offices.Total"
+      }, {
+        "name" : "Region",
+        "sourceLogicalLevel" : "logicalLevel:MtM_Campaign2Order.Offices.Region",
+        "displayColumn" : "presentationColumn:MtM_Campaign2Order.Offices.Region"
+      }, {
+        "name" : "Office",
+        "sourceLogicalLevel" : "logicalLevel:MtM_Campaign2Order.Offices.Office",
+        "displayColumn" : "presentationColumn:MtM_Campaign2Order.Offices.Office"
+      } ]
+    } ]
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "presentationTable" : {
+    "name" : "Profit Metrics",
+    "description" : "Profit Related Metrics and Calculations",
+    "presentationColumns" : [ {
+      "name" : "ADDR_KEY",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Profit Metrics.ADDR_KEY",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Fixed Costs",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Profit Metrics.Fixed Costs",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Variable Costs",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Profit Metrics.Variable Costs",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "CUST_NUMBER",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Profit Metrics.CUST_NUMBER",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "# of Orders",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Profit Metrics.# of Orders",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "PROD_ITEM_KEY",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Profit Metrics.PROD_ITEM_KEY",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "TIME_BILL_DT",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Profit Metrics.TIME_BILL_DT",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "UNITS",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Profit Metrics.UNITS",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Total Costs",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Profit Metrics.Total Costs",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Profit Ratio %",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Profit Metrics.Profit Ratio %",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Profit Value",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Profit Metrics.Profit Value",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "REVENUE",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Profit Metrics.REVENUE",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    } ]
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "presentationTable" : {
+    "name" : "Dropoff Geo",
+    "alternateNames" : [ "Geo#1" ],
+    "presentationColumns" : [ {
+      "name" : "Dropoff Lat",
+      "sourceLogicalColumn" : "logicalColumn:Taxi NYC.Ride.Dropoff Lat",
+      "useLogicalColumnName" : true,
+      "permissions" : [ {
+        "accessor" : "role:AuthenticatedUser",
+        "access" : "NO_ACCESS"
+      } ]
+    }, {
+      "name" : "Dropoff Lon",
+      "sourceLogicalColumn" : "logicalColumn:Taxi NYC.Ride.Dropoff Lon",
+      "useLogicalColumnName" : true,
+      "permissions" : [ {
+        "accessor" : "role:AuthenticatedUser",
+        "access" : "NO_ACCESS"
+      } ]
+    }, {
+      "name" : "Dropoff County (L1)",
+      "sourceLogicalColumn" : "logicalColumn:Taxi NYC.Geo Dropoff Suburb.Dropoff County (L1)",
+      "useLogicalColumnName" : true,
+      "alternateNames" : [ "County (L1)" ]
+    }, {
+      "name" : "Dropoff Borough (L2)",
+      "sourceLogicalColumn" : "logicalColumn:Taxi NYC.Geo Dropoff Suburb.Dropoff Borough (L2)",
+      "useLogicalColumnName" : true,
+      "alternateNames" : [ "City Borough (L2)", "Pickup Borough (L2)" ]
+    }, {
+      "name" : "Dropoff Suburb (L3)",
+      "sourceLogicalColumn" : "logicalColumn:Taxi NYC.Geo Dropoff Suburb.Dropoff Suburb (L3)",
+      "useLogicalColumnName" : true,
+      "alternateNames" : [ "Suburb (L3)" ]
+    } ]
+  }
+}

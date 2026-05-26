@@ -1,0 +1,51 @@
+{
+  "physicalTable" : {
+    "name" : "VIEW_SF_RESTAURANTS",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "DUMMY",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "RESTAURANTCOUNTRYCODE",
+      "dataType" : "CHAR",
+      "length" : 3,
+      "nullable" : true
+    }, {
+      "name" : "RESTAURANTGEO",
+      "dataType" : "GEOMETRY",
+      "length" : 3,
+      "nullable" : true
+    }, {
+      "name" : "RESTAURANTID",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : false
+    }, {
+      "name" : "RESTAURANTNAME",
+      "dataType" : "VARCHAR",
+      "length" : 240,
+      "nullable" : true
+    } ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    },
+    "joins" : [ {
+      "rightTable" : "physicalTable:DB11.CAT11.OA_HERE_MAPS.DIM_SF_RESTAURANTS",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:DB11.CAT11.OA_HERE_MAPS.VIEW_SF_RESTAURANTS.RESTAURANTID",
+        "rightColumn" : "physicalColumn:DB11.CAT11.OA_HERE_MAPS.DIM_SF_RESTAURANTS.RESTAURANTID"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:DB11.CAT11.OA_HERE_MAPS.VIEW_SF_HOTELS",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:DB11.CAT11.OA_HERE_MAPS.VIEW_SF_RESTAURANTS.DUMMY",
+        "rightColumn" : "physicalColumn:DB11.CAT11.OA_HERE_MAPS.VIEW_SF_HOTELS.DUMMY"
+      } ]
+    } ]
+  }
+}

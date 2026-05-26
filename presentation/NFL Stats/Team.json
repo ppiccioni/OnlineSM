@@ -1,0 +1,80 @@
+{
+  "presentationTable" : {
+    "name" : "Team",
+    "presentationColumns" : [ {
+      "name" : "Team City",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Team.Team City",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "T_Col",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Team.T_Col",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "T_Row",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Team.T_Row",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Team Color",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Team.Team Color",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Team Conf",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Team.Team Conf",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Team Division",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Team.Team Division",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Team State",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Team.Team State",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Team",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Team.Team",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "TEAM_KEY",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Team.TEAM_KEY",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "TEAM_ROLLUP",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Team.TEAM_ROLLUP",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "USED",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Team.USED",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    } ],
+    "hierarchies" : [ {
+      "name" : "Team Hierarchy",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:NFL Stats.Team",
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:NFL Stats.Team.Total"
+      }, {
+        "name" : "Team Cong",
+        "sourceLogicalLevel" : "logicalLevel:NFL Stats.Team.Team Cong",
+        "displayColumn" : "presentationColumn:NFL Stats.Team.Team Conf"
+      }, {
+        "name" : "Team Division",
+        "sourceLogicalLevel" : "logicalLevel:NFL Stats.Team.Team Division",
+        "displayColumn" : "presentationColumn:NFL Stats.Team.Team Division"
+      }, {
+        "name" : "Team",
+        "sourceLogicalLevel" : "logicalLevel:NFL Stats.Team.Team",
+        "displayColumn" : "presentationColumn:NFL Stats.Team.Team"
+      } ]
+    } ]
+  }
+}

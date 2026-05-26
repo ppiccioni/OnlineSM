@@ -1,0 +1,820 @@
+{
+  "logicalTable" : {
+    "name" : "MyConsumers",
+    "type" : "DIMENSION",
+    "primaryKey" : [ "Segment" ],
+    "logicalColumns" : [ {
+      "name" : "Age",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "V_MyConsumers_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.V_MyConsumers.CU_AGE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "CON_PRELOAD_OLTP_SIA",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "V_MyConsumers_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.V_MyConsumers.CON_PRELOAD_OLTP_SIA" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "CU_DATE_CHANGED",
+      "dataType" : "DATETIME",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "V_MyConsumers_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.V_MyConsumers.CU_DATE_CHANGED" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "CU_DATE_CREATED",
+      "dataType" : "DATETIME",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "V_MyConsumers_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.V_MyConsumers.CU_DATE_CREATED" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "CU_ID",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "V_MyConsumers_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.V_MyConsumers.CU_ID" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "CU_Z_CUSTOM_LABEL1",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "V_MyConsumers_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.V_MyConsumers.CU_Z_CUSTOM_LABEL1" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "CU_Z_CUSTOM_LABEL2",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "V_MyConsumers_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.V_MyConsumers.CU_Z_CUSTOM_LABEL2" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "CU_Z_CUSTOM_NUM_FLOAT",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "V_MyConsumers_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.V_MyConsumers.CU_Z_CUSTOM_NUM_FLOAT" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "CU_Z_CUSTOM_NUM_INT1",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "V_MyConsumers_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.V_MyConsumers.CU_Z_CUSTOM_NUM_INT1" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "CU_Z_CUSTOM_NUM_INT2",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "V_MyConsumers_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.V_MyConsumers.CU_Z_CUSTOM_NUM_INT2" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Closest Branch",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "V_MyConsumers_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.V_MyConsumers.CU_CLOSEST_BRANCH" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Days Since Last Contact",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "V_MyConsumers_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.V_MyConsumers.CU_DAYS_SINCE_LAST_CONTACT" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Days Since Last Payment",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "V_MyConsumers_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.V_MyConsumers.CU_DAYS_SINCE_LAST_PAYMENT" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Days as Customer",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "V_MyConsumers_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.V_MyConsumers.CU_DAYS_AS_CUSTOMER" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Defection Risk",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "V_MyConsumers_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.V_MyConsumers.CU_M_DEFECTION_RISK" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Email",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "V_MyConsumers_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.V_MyConsumers.CU_EMAIL" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Email Format",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "V_MyConsumers_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.V_MyConsumers.CU_EMAIL_FORMAT" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Employment Status",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "V_MyConsumers_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.V_MyConsumers.CU_EMPLOYMENT_STATUS" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "First Name",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "V_MyConsumers_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.V_MyConsumers.CU_FNAME" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "CU_GENDER",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "V_MyConsumers_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.V_MyConsumers.CU_GENDER" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "HH_ID",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "V_MyConsumers_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.V_MyConsumers.HH_ID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "History Flag",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "V_MyConsumers_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.V_MyConsumers.CU_SALES_HISTORY_FLAG" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Income Bracket",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "V_MyConsumers_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.V_MyConsumers.CU_INCOME_BRACKET" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Last Name",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "V_MyConsumers_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.V_MyConsumers.CU_LNAME" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Last Payment Value",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "V_MyConsumers_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.V_MyConsumers.CU_LAST_PAYMENT_VALUE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Lifecycle Stage",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "V_MyConsumers_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.V_MyConsumers.CU_LIFECYCLE_STAGE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Lifetime Potential",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "V_MyConsumers_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.V_MyConsumers.CU_M_LIFETIME_POTENTIAL" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Loyalty Membership",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "V_MyConsumers_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.V_MyConsumers.CU_LOYALTY_MEMBER" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Loyalty Tier",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "V_MyConsumers_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.V_MyConsumers.CU_LOYALTY_TIER" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Marital Status",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "V_MyConsumers_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.V_MyConsumers.CU_MARITAL_STATUS" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Max Mktg Investment",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "V_MyConsumers_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.V_MyConsumers.CU_M_MAX_MKTG_INVESTMENT" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Mobile Number",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "V_MyConsumers_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.V_MyConsumers.CU_MOBILE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Newsletter Membership",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "V_MyConsumers_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.V_MyConsumers.CU_NEWSLETTER_MEMBER" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Num Contacts Last 12 Months",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "V_MyConsumers_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.V_MyConsumers.CU_NUM_CONTACTS_LAST_12M" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Num Contacts Last 3 Months",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "V_MyConsumers_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.V_MyConsumers.CU_NUM_CONTACTS_LAST_3M" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Permission: Never ANY Outbound",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "V_MyConsumers_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.V_MyConsumers.CU_PERMIS_NEVER_ANY_OUTBOUND" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Permission: Never Direct Mail",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "V_MyConsumers_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.V_MyConsumers.CU_PERMIS_NEVER_DIRECTMAIL" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Permission: Never Email",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "V_MyConsumers_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.V_MyConsumers.CU_PERMIS_NEVER_EMAIL" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Permission: Never Face-to-Face",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "V_MyConsumers_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.V_MyConsumers.CU_PERMIS_NEVER_FACE_TO_FACE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Permission: Never Phone",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "V_MyConsumers_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.V_MyConsumers.CU_PERMIS_NEVER_PHONE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Permission: Never SMS",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "V_MyConsumers_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.V_MyConsumers.CU_PERMIS_NEVER_SMS" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Phone Number",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "V_MyConsumers_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.V_MyConsumers.CU_PHONE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Preferred Call Time",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "V_MyConsumers_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.V_MyConsumers.CU_PREF_CALL_TIME" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Preferred Channel",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "V_MyConsumers_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.V_MyConsumers.CU_PREF_CHANNEL" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Revenue History: 12 Months",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "V_MyConsumers_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.V_MyConsumers.CU_REVENUE_LAST_12MONTHS" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Revenue History: Total",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "V_MyConsumers_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.V_MyConsumers.CU_REVENUE_HISTORY_TOTAL" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Segment",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "V_MyConsumers_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.V_MyConsumers.CU_Z_CUSTOM_LABEL3" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "Status",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "V_MyConsumers_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.V_MyConsumers.CU_STATUS" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Title",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "V_MyConsumers_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MtM_Campaign2Order.CAT8.SCH8.V_MyConsumers.CU_TITLE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Age Band",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : " CASE  WHEN %1 < 21 THEN 'a. <21' WHEN %1 BETWEEN 21 AND 35.999 THEN 'b. 21-35' WHEN %1 BETWEEN 36 AND 45.999 THEN 'c. 36-45' WHEN %1 BETWEEN 46 AND 60.999 THEN 'd. 46-60' WHEN %1 BETWEEN 61 AND 75.999 THEN 'e. 61-75' ELSE 'f. >75' END ",
+          "expressionObjects" : [ "logicalColumn:MtM_Campaign2Order.MyConsumers.Age" ]
+        }
+      }
+    }, {
+      "name" : "Birth Date",
+      "dataType" : "DATETIME",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : " TIMESTAMPADD( SQL_TSI_DAY ,  CAST (%1 * 365 * -(1) AS INTEGER ),  NOW())",
+          "expressionObjects" : [ "logicalColumn:MtM_Campaign2Order.MyConsumers.Age" ]
+        }
+      }
+    }, {
+      "name" : "Sales Stage LFSP",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : " CASE  WHEN %1 IN ('1.Acquire', '2.Welcome') THEN '1. Unaware' WHEN %1 IN ('3.Initiate', '4.Extend') THEN '2. Aware' WHEN %1 IN ('5.Stabilize', '6.Maximize') THEN '3. Accept' WHEN %1 IN ('7.Protect', '8.Re-animate') THEN '4. Prescribe' ELSE '5. Ambassador' END ",
+          "expressionObjects" : [ "logicalColumn:MtM_Campaign2Order.MyConsumers.Lifecycle Stage" ]
+        }
+      }
+    }, {
+      "name" : "Revenue Last 12m Band",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : " CASE  WHEN %1 < 1 THEN 'a. Nil' WHEN %1 BETWEEN 1 AND 299.999 THEN 'b. Low' WHEN %1 BETWEEN 300 AND 699.999 THEN 'c. Mid' WHEN %1 BETWEEN 700 AND 1499.999 THEN 'd. High' ELSE 'e. vHigh' END ",
+          "expressionObjects" : [ "logicalColumn:MtM_Campaign2Order.MyConsumers.Revenue History: 12 Months" ]
+        }
+      }
+    }, {
+      "name" : "Last Payment Date",
+      "dataType" : "DATETIME",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : " TIMESTAMPADD( SQL_TSI_DAY ,  CAST ( CEILING(%1 * -(1)) AS INTEGER ),  NOW())",
+          "expressionObjects" : [ "logicalColumn:MtM_Campaign2Order.MyConsumers.Days Since Last Payment" ]
+        }
+      }
+    }, {
+      "name" : "Gender",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : " CASE  WHEN %1 = 'M' THEN 'Male' WHEN %1 = 'F' THEN 'Female' ELSE 'NA' END ",
+          "expressionObjects" : [ "logicalColumn:MtM_Campaign2Order.MyConsumers.CU_GENDER" ]
+        }
+      }
+    }, {
+      "name" : "Acquired Date",
+      "dataType" : "DATETIME",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : " TIMESTAMPADD( SQL_TSI_DAY ,  CAST ( CEILING(%1 * -(1)) AS INTEGER ),  NOW())",
+          "expressionObjects" : [ "logicalColumn:MtM_Campaign2Order.MyConsumers.Days as Customer" ]
+        }
+      }
+    }, {
+      "name" : "Years as Customer",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 / 365",
+          "expressionObjects" : [ "logicalColumn:MtM_Campaign2Order.MyConsumers.Days as Customer" ]
+        }
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "V_MyConsumers_LTS",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:MtM_Campaign2Order.CAT8.SCH8.V_MyConsumers" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "hierarchyType" : "LEVEL_BASED",
+    "levelBasedHierarchy" : {
+      "defaultRootLevel" : "Total",
+      "ragged" : false,
+      "skipped" : false,
+      "logicalLevels" : [ {
+        "name" : "Total",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : true,
+        "disableAggregateToHigherLevel" : false
+      }, {
+        "name" : "Detail",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Segment" ],
+        "displayKey" : "CU_ID",
+        "additionalKeys" : [ [ "CU_ID" ] ],
+        "chronologicalKey" : [ "Segment" ]
+      } ],
+      "logicalHierarchies" : [ {
+        "name" : "MyConsumers",
+        "description" : "default hierarchy",
+        "levels" : [ "Total", "Detail" ]
+      } ]
+    }
+  }
+}

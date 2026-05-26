@@ -1,0 +1,73 @@
+{
+  "presentationTable" : {
+    "name" : "Project Bins",
+    "presentationColumns" : [ {
+      "name" : "BINA_PROJ_V1",
+      "sourceLogicalColumn" : "logicalColumn:Donations.Project Bins.BINA_PROJ_V1",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Donations Bin",
+      "sourceLogicalColumn" : "logicalColumn:Donations.Project Bins.Donations Bin",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "BINA_PROJ_V2",
+      "sourceLogicalColumn" : "logicalColumn:Donations.Project Bins.BINA_PROJ_V2",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Stud Reached Bin",
+      "sourceLogicalColumn" : "logicalColumn:Donations.Project Bins.Stud Reached Bin",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "BINA_PROJ_V3",
+      "sourceLogicalColumn" : "logicalColumn:Donations.Project Bins.BINA_PROJ_V3",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "# of Donors Bin",
+      "sourceLogicalColumn" : "logicalColumn:Donations.Project Bins.# of Donors Bin",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "BINA_PROJ_V4",
+      "sourceLogicalColumn" : "logicalColumn:Donations.Project Bins.BINA_PROJ_V4",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Project Completion Days Bin",
+      "sourceLogicalColumn" : "logicalColumn:Donations.Project Bins.Project Completion Days Bin",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "PROJECTID",
+      "sourceLogicalColumn" : "logicalColumn:Donations.Project Bins.PROJECTID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    } ],
+    "hierarchies" : [ {
+      "name" : "Hierarchy 1",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:Donations.Project Bins",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      },
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:Donations.Project Bins.Total"
+      }, {
+        "name" : "Detail",
+        "sourceLogicalLevel" : "logicalLevel:Donations.Project Bins.Detail",
+        "displayColumn" : "presentationColumn:Donations.Project Bins.PROJECTID"
+      } ]
+    } ]
+  }
+}

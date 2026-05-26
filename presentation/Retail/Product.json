@@ -1,0 +1,35 @@
+{
+  "presentationTable" : {
+    "name" : "Product",
+    "presentationColumns" : [ {
+      "name" : "Category",
+      "sourceLogicalColumn" : "logicalColumn:Retail.Product.Category",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Product ID",
+      "sourceLogicalColumn" : "logicalColumn:Retail.Product.Product ID",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Product Name",
+      "sourceLogicalColumn" : "logicalColumn:Retail.Product.Product Name",
+      "useLogicalColumnName" : true
+    } ],
+    "hierarchies" : [ {
+      "name" : "Hierarchy 1",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:Retail.Product",
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:Retail.Product.Total"
+      }, {
+        "name" : "Category",
+        "sourceLogicalLevel" : "logicalLevel:Retail.Product.Category",
+        "displayColumn" : "presentationColumn:Retail.Product.Category"
+      }, {
+        "name" : "Detail",
+        "sourceLogicalLevel" : "logicalLevel:Retail.Product.Detail",
+        "displayColumn" : "presentationColumn:Retail.Product.Product Name"
+      } ]
+    } ]
+  }
+}

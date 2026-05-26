@@ -1,0 +1,249 @@
+{
+  "physicalTable" : {
+    "name" : "SA_F_TERM_ENROLLMENT",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "ACADEMIC_ORG_WID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "COHORT_WID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "CREDIT_HOURS_TAKEN",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "DEGREE_WID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "DSYS_BATCH_ID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "DSYS_INSTANCE_ID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "DSYS_PROCESS_ID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "HONORS_STUDENT_COUNT",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "MAJOR_WID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "MATRIC_ACADEMIC_ATTRIB_WID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "MATRIC_ACADEMIC_ORG_WID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "MATRIC_ACADEMIC_PROFILE_WID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "MINOR_WID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "PROGRAM_WID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "ROW_WID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "SNAPSHOT_WID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "STUDENT_ACADEMIC_ATTRIB_WID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "STUDENT_ACADEMIC_PROFILE_WID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "STUDENT_AGE_ADMIT_TERM",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "STUDENT_AGE_BEGIN_TERM",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "STUDENT_BIODEMO_WID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "STUDENT_ENROLLMENT_COUNT",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "STUDENT_LOCATION_WID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "STUDENT_WID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "TERM_WID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    } ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    },
+    "joins" : [ {
+      "rightTable" : "physicalTable:Student Analytics.CAT10.SCH10.SA_D_ACADEMIC_ORG",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:Student Analytics.CAT10.SCH10.SA_F_TERM_ENROLLMENT.ACADEMIC_ORG_WID",
+        "rightColumn" : "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_ACADEMIC_ORG.ACADEMIC_ORG_WID"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:Student Analytics.CAT10.SCH10.SA_D_COHORT",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:Student Analytics.CAT10.SCH10.SA_F_TERM_ENROLLMENT.COHORT_WID",
+        "rightColumn" : "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_COHORT.COHORT_WID"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:Student Analytics.CAT10.SCH10.SA_D_DEGREE",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:Student Analytics.CAT10.SCH10.SA_F_TERM_ENROLLMENT.DEGREE_WID",
+        "rightColumn" : "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_DEGREE.DEGREE_WID"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:Student Analytics.CAT10.SCH10.SA_D_LOCATION",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:Student Analytics.CAT10.SCH10.SA_F_TERM_ENROLLMENT.STUDENT_LOCATION_WID",
+        "rightColumn" : "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_LOCATION.LOCATION_WID"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:Student Analytics.CAT10.SCH10.SA_D_MAJOR",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:Student Analytics.CAT10.SCH10.SA_F_TERM_ENROLLMENT.MAJOR_WID",
+        "rightColumn" : "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_MAJOR.MAJOR_WID"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:Student Analytics.CAT10.SCH10.SA_D_MATRIC_ACAD_ATTRIB",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:Student Analytics.CAT10.SCH10.SA_F_TERM_ENROLLMENT.MATRIC_ACADEMIC_ATTRIB_WID",
+        "rightColumn" : "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_MATRIC_ACAD_ATTRIB.MATRIC_ACADEMIC_ATTRIB_WID"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:Student Analytics.CAT10.SCH10.SA_D_MATRIC_ACAD_ORG",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:Student Analytics.CAT10.SCH10.SA_F_TERM_ENROLLMENT.MATRIC_ACADEMIC_ORG_WID",
+        "rightColumn" : "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_MATRIC_ACAD_ORG.MATRIC_ACADEMIC_ORG_WID"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:Student Analytics.CAT10.SCH10.SA_D_MATRIC_ACAD_PROFILE",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:Student Analytics.CAT10.SCH10.SA_F_TERM_ENROLLMENT.MATRIC_ACADEMIC_PROFILE_WID",
+        "rightColumn" : "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_MATRIC_ACAD_PROFILE.MATRIC_ACADEMIC_PROFILE_WID"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:Student Analytics.CAT10.SCH10.SA_D_MINOR",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:Student Analytics.CAT10.SCH10.SA_F_TERM_ENROLLMENT.MINOR_WID",
+        "rightColumn" : "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_MINOR.MINOR_WID"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:Student Analytics.CAT10.SCH10.SA_D_PROGRAM",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:Student Analytics.CAT10.SCH10.SA_F_TERM_ENROLLMENT.PROGRAM_WID",
+        "rightColumn" : "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_PROGRAM.PROGRAM_WID"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:Student Analytics.CAT10.SCH10.SA_D_SNAPSHOT",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:Student Analytics.CAT10.SCH10.SA_F_TERM_ENROLLMENT.SNAPSHOT_WID",
+        "rightColumn" : "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_SNAPSHOT.SNAPSHOT_WID"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:Student Analytics.CAT10.SCH10.SA_D_STUDENT",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:Student Analytics.CAT10.SCH10.SA_F_TERM_ENROLLMENT.STUDENT_WID",
+        "rightColumn" : "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_STUDENT.STUDENT_WID"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:Student Analytics.CAT10.SCH10.SA_D_STUDENT_ACAD_ATTRIB",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:Student Analytics.CAT10.SCH10.SA_F_TERM_ENROLLMENT.STUDENT_ACADEMIC_ATTRIB_WID",
+        "rightColumn" : "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_STUDENT_ACAD_ATTRIB.STUDENT_ACADEMIC_ATTRIB_WID"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:Student Analytics.CAT10.SCH10.SA_D_STUDENT_ACAD_PROFILE",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:Student Analytics.CAT10.SCH10.SA_F_TERM_ENROLLMENT.STUDENT_ACADEMIC_PROFILE_WID",
+        "rightColumn" : "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_STUDENT_ACAD_PROFILE.STUDENT_ACADEMIC_PROFILE_WID"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:Student Analytics.CAT10.SCH10.SA_D_STUDENT_BIODEMO",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:Student Analytics.CAT10.SCH10.SA_F_TERM_ENROLLMENT.STUDENT_BIODEMO_WID",
+        "rightColumn" : "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_STUDENT_BIODEMO.STUDENT_BIODEMO_WID"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:Student Analytics.CAT10.SCH10.SA_D_TERM",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:Student Analytics.CAT10.SCH10.SA_F_TERM_ENROLLMENT.TERM_WID",
+        "rightColumn" : "physicalColumn:Student Analytics.CAT10.SCH10.SA_D_TERM.TERM_WID"
+      } ]
+    } ]
+  }
+}

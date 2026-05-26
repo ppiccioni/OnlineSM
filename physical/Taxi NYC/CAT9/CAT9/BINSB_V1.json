@@ -1,0 +1,14 @@
+{
+  "physicalTable": {
+    "name": "BINSB_V1",
+    "sourceTable": "physicalTable:Taxi NYC.CAT9.CAT9.NYCT_BINSB_GRAN",
+    "caching": {
+      "enable": true
+    },
+    "additionalKeys": [
+      [
+        "BINB_NUM"
+      ]
+    ]
+  }
+}

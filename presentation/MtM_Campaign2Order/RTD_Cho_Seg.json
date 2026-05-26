@@ -1,0 +1,89 @@
+{
+  "presentationTable" : {
+    "name" : "RTD_Cho_Seg",
+    "presentationColumns" : [ {
+      "name" : "Application",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.RTD_Cho_Seg.Application",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Choice Category",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.RTD_Cho_Seg.Choice Category",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Choice Group",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.RTD_Cho_Seg.Choice Group",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Choice Id",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.RTD_Cho_Seg.Choice Id",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Choice Name",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.RTD_Cho_Seg.Choice Name",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Choice Subgroup",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.RTD_Cho_Seg.Choice Subgroup",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Choice Subgroup Id",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.RTD_Cho_Seg.Choice Subgroup Id",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Segment",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.RTD_Cho_Seg.Segment",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Segment Id",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.RTD_Cho_Seg.Segment Id",
+      "useLogicalColumnName" : true
+    } ],
+    "hierarchies" : [ {
+      "name" : "Choice Hierarchy",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:MtM_Campaign2Order.RTD_Cho_Seg",
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:MtM_Campaign2Order.RTD_Cho_Seg.Total"
+      }, {
+        "name" : "Application",
+        "sourceLogicalLevel" : "logicalLevel:MtM_Campaign2Order.RTD_Cho_Seg.Application",
+        "displayColumn" : "presentationColumn:MtM_Campaign2Order.RTD_Cho_Seg.Application"
+      }, {
+        "name" : "Choice Category",
+        "sourceLogicalLevel" : "logicalLevel:MtM_Campaign2Order.RTD_Cho_Seg.Choice Category",
+        "displayColumn" : "presentationColumn:MtM_Campaign2Order.RTD_Cho_Seg.Choice Category"
+      }, {
+        "name" : "Choice Group",
+        "sourceLogicalLevel" : "logicalLevel:MtM_Campaign2Order.RTD_Cho_Seg.Choice Group",
+        "displayColumn" : "presentationColumn:MtM_Campaign2Order.RTD_Cho_Seg.Choice Group"
+      }, {
+        "name" : "Choice Subgroup",
+        "sourceLogicalLevel" : "logicalLevel:MtM_Campaign2Order.RTD_Cho_Seg.Choice Subgroup",
+        "displayColumn" : "presentationColumn:MtM_Campaign2Order.RTD_Cho_Seg.Choice Subgroup"
+      }, {
+        "name" : "Choice",
+        "sourceLogicalLevel" : "logicalLevel:MtM_Campaign2Order.RTD_Cho_Seg.Choice",
+        "displayColumn" : "presentationColumn:MtM_Campaign2Order.RTD_Cho_Seg.Choice Id"
+      } ]
+    }, {
+      "name" : "Segment Hierarchy",
+      "sourceLogicalTable" : "logicalTable:MtM_Campaign2Order.RTD_Cho_Seg",
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:MtM_Campaign2Order.RTD_Cho_Seg.Total"
+      }, {
+        "name" : "Segment",
+        "sourceLogicalLevel" : "logicalLevel:MtM_Campaign2Order.RTD_Cho_Seg.Segment",
+        "displayColumn" : "presentationColumn:MtM_Campaign2Order.RTD_Cho_Seg.Segment"
+      }, {
+        "name" : "Choice",
+        "sourceLogicalLevel" : "logicalLevel:MtM_Campaign2Order.RTD_Cho_Seg.Choice",
+        "displayColumn" : "presentationColumn:MtM_Campaign2Order.RTD_Cho_Seg.Choice Id"
+      } ]
+    } ]
+  }
+}

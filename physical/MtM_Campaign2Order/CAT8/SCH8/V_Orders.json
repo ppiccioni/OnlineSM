@@ -1,0 +1,42 @@
+{
+  "physicalTable" : {
+    "name" : "V_Orders",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "BILL_DAY_DT",
+      "dataType" : "DATETIME",
+      "length" : 7,
+      "nullable" : false
+    }, {
+      "name" : "CURRENCY",
+      "dataType" : "VARCHAR",
+      "length" : 3,
+      "nullable" : true
+    }, {
+      "name" : "ORDER_KEY",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "ORDER_NUMBER",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "ORDER_STATUS",
+      "dataType" : "VARCHAR",
+      "length" : 20,
+      "nullable" : false
+    }, {
+      "name" : "ORDER_TYPE",
+      "dataType" : "VARCHAR",
+      "length" : 20,
+      "nullable" : false
+    } ],
+    "additionalKeys" : [ [ "ORDER_KEY" ], [ "ORDER_KEY" ] ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "presentationTable" : {
+    "name" : "Jobs",
+    "presentationColumns" : [ {
+      "name" : "DSYS_BATCH_ID",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Jobs.DSYS_BATCH_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_INSTANCE_ID",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Jobs.DSYS_INSTANCE_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_PROCESS_ID",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Jobs.DSYS_PROCESS_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "EEO Job Category",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Jobs.EEO Job Category",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Job Category",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Jobs.Job Category",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Job Description",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Jobs.Job Description",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "PATCO Category",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Jobs.PATCO Category",
+      "useLogicalColumnName" : true
+    } ],
+    "hierarchies" : [ {
+      "name" : "Job Hierarchy",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:Healthcare.Jobs",
+      "levels" : [ {
+        "name" : "All Jobs",
+        "sourceLogicalLevel" : "logicalLevel:Healthcare.Jobs.All Jobs"
+      }, {
+        "name" : "Job Category",
+        "sourceLogicalLevel" : "logicalLevel:Healthcare.Jobs.Job Category",
+        "displayColumn" : "presentationColumn:Healthcare.Jobs.Job Category"
+      }, {
+        "name" : "Job Description",
+        "sourceLogicalLevel" : "logicalLevel:Healthcare.Jobs.Job Description",
+        "displayColumn" : "presentationColumn:Healthcare.Jobs.Job Description"
+      } ]
+    } ]
+  }
+}

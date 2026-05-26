@@ -1,0 +1,127 @@
+{
+  "presentationTable" : {
+    "name" : "Grade",
+    "presentationColumns" : [ {
+      "name" : "ACADEMIC_LEVEL_CD",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Grade.ACADEMIC_LEVEL_CD",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Academic Level",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Grade.Academic Level",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Attempted Flag",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Grade.Attempted Flag",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Completed Flag",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Grade.Completed Flag",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "DSYS_BATCH_ID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Grade.DSYS_BATCH_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_INSTANCE_ID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Grade.DSYS_INSTANCE_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_PROCESS_ID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Grade.DSYS_PROCESS_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "EFF_TERM_CD",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Grade.EFF_TERM_CD",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Effective Term",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Grade.Effective Term",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "GPA Flag",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Grade.GPA Flag",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "GRADE_CD",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Grade.GRADE_CD",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Grade",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Grade.Grade",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Grade Status Flag",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Grade.Grade Status Flag",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "GRADE_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Grade.GRADE_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Numeric Value",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Grade.Numeric Value",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Passed Flag",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Grade.Passed Flag",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Quality Points",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Grade.Quality Points",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Repeat Include Flag",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Grade.Repeat Include Flag",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Traditional Flag",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Grade.Traditional Flag",
+      "useLogicalColumnName" : true
+    } ],
+    "hierarchies" : [ {
+      "name" : "Grade Hierarchy",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:Student Analytics.Grade",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      },
+      "levels" : [ {
+        "name" : "All Grades",
+        "sourceLogicalLevel" : "logicalLevel:Student Analytics.Grade.All Grades"
+      }, {
+        "name" : "Effective Term",
+        "sourceLogicalLevel" : "logicalLevel:Student Analytics.Grade.Effective Term",
+        "displayColumn" : "presentationColumn:Student Analytics.Grade.Effective Term"
+      }, {
+        "name" : "Academic Level",
+        "sourceLogicalLevel" : "logicalLevel:Student Analytics.Grade.Academic Level",
+        "displayColumn" : "presentationColumn:Student Analytics.Grade.Academic Level"
+      }, {
+        "name" : "Grade",
+        "sourceLogicalLevel" : "logicalLevel:Student Analytics.Grade.Grade",
+        "displayColumn" : "presentationColumn:Student Analytics.Grade.Grade"
+      } ]
+    } ]
+  }
+}

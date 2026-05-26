@@ -1,0 +1,63 @@
+{
+  "presentationTable" : {
+    "name" : "Opportunites",
+    "presentationColumns" : [ {
+      "name" : "Opportunity Id",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Opportunites.Opportunity Id",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Region",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Opportunites.Region",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Campaign Name",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Opportunites.Campaign Name",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Reason Won Loss",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Opportunites.Reason Won Loss",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Name",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Opportunites.Name",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Created Date",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Opportunites.Created Date",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Close Date",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Opportunites.Close Date",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Sales Stage",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Opportunites.Sales Stage",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Product Name_T",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Opportunites.Product Name_T",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Win Probability",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Opportunites.Win Probability",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Customer",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Opportunites.Customer",
+      "useLogicalColumnName" : true
+    } ],
+    "hierarchies" : [ {
+      "name" : "Hierarchy 1",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:MtM_Campaign2Order.Opportunites",
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:MtM_Campaign2Order.Opportunites.Total"
+      }, {
+        "name" : "Detail",
+        "sourceLogicalLevel" : "logicalLevel:MtM_Campaign2Order.Opportunites.Detail",
+        "displayColumn" : "presentationColumn:MtM_Campaign2Order.Opportunites.Opportunity Id"
+      } ]
+    } ]
+  }
+}

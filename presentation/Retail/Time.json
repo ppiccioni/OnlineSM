@@ -1,0 +1,23 @@
+{
+  "presentationTable" : {
+    "name" : "Time",
+    "presentationColumns" : [ {
+      "name" : "Time",
+      "sourceLogicalColumn" : "logicalColumn:Retail.Time.Time",
+      "useLogicalColumnName" : true
+    } ],
+    "hierarchies" : [ {
+      "name" : "Hierarchy 1",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:Retail.Time",
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:Retail.Time.Total"
+      }, {
+        "name" : "Detail",
+        "sourceLogicalLevel" : "logicalLevel:Retail.Time.Detail",
+        "displayColumn" : "presentationColumn:Retail.Time.Time"
+      } ]
+    } ]
+  }
+}

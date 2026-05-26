@@ -1,0 +1,35 @@
+{
+  "presentationTable" : {
+    "name" : "Shippings",
+    "presentationColumns" : [ {
+      "name" : "Currency",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Shippings.Currency",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Order Id",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Shippings.Order Id",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Order Number",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Shippings.Order Number",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Shipping Date",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Shippings.Shipping Date",
+      "useLogicalColumnName" : true
+    } ],
+    "hierarchies" : [ {
+      "name" : "Hierarchy 1",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:MtM_Campaign2Order.Shippings",
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:MtM_Campaign2Order.Shippings.Total"
+      }, {
+        "name" : "Detail",
+        "sourceLogicalLevel" : "logicalLevel:MtM_Campaign2Order.Shippings.Detail",
+        "displayColumn" : "presentationColumn:MtM_Campaign2Order.Shippings.Order Id"
+      } ]
+    } ]
+  }
+}

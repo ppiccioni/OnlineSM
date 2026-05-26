@@ -1,0 +1,18 @@
+{
+  "subjectArea" : {
+    "name" : "SampleApp Payments",
+    "sourceBusinessModel" : "businessModel:SampleApp Payments",
+    "alternateNames" : [ "PC0#1", "PC11" ],
+    "tableOrder" : [ {
+      "name" : "presentationTable:SampleApp Payments.Time"
+    }, {
+      "name" : "presentationTable:SampleApp Payments.Payment Metrics"
+    }, {
+      "name" : "presentationTable:SampleApp Payments.Orders"
+    } ],
+    "localization" : {
+      "localizationKey" : "SampleApp Payments",
+      "nameVariable" : "SampleApp Payments"
+    }
+  }
+}

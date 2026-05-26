@@ -1,0 +1,230 @@
+{
+  "presentationTable" : {
+    "name" : "Time",
+    "presentationColumns" : [ {
+      "name" : "BEG_OF_MTH_WID",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Time.BEG_OF_MTH_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "BEG_OF_QTR_WID",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Time.BEG_OF_QTR_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "BEG_OF_WEEK_WID",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Time.BEG_OF_WEEK_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Date",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Time.Date",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Day Id",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Time.Day Id",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Day of Month",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Time.Day of Month",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Day of Week",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Time.Day of Week",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Day of Year",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Time.Day of Year",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Days in Fiscal Half",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Time.Days in Fiscal Half",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Days in Fiscal Month",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Time.Days in Fiscal Month",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Days in Fiscal Quarter",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Time.Days in Fiscal Quarter",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Days in Fiscal Week",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Time.Days in Fiscal Week",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Days in Fiscal Year",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Time.Days in Fiscal Year",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Days in Half Year",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Time.Days in Half Year",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Days in Month",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Time.Days in Month",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Days in Quarter",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Time.Days in Quarter",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Days in Week",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Time.Days in Week",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Days in Year",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Time.Days in Year",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Fiscal Half",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Time.Fiscal Half",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Fiscal Month",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Time.Fiscal Month",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Fiscal Month End Date",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Time.Fiscal Month End Date",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Fiscal Quarter",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Time.Fiscal Quarter",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Fiscal Quarter End Date",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Time.Fiscal Quarter End Date",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Fiscal Week",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Time.Fiscal Week",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Fiscal Week End Date",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Time.Fiscal Week End Date",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Fiscal Year",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Time.Fiscal Year",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Fiscal Year End Date",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Time.Fiscal Year End Date",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Half Year",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Time.Half Year",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Half Year End Date",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Time.Half Year End Date",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Holiday",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Time.Holiday",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Julian Day Num",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Time.Julian Day Num",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Julian Month Num",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Time.Julian Month Num",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Julian Quarter Num",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Time.Julian Quarter Num",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Julian Week Num",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Time.Julian Week Num",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "LOADED",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Time.LOADED",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Month",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Time.Month",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Month End Date",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Time.Month End Date",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Per Name Half",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Time.Per Name Half",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Per Name Month",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Time.Per Name Month",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Per Name Quarter",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Time.Per Name Quarter",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Per Name Week",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Time.Per Name Week",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Per Name Year",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Time.Per Name Year",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Quarter",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Time.Quarter",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Quarter End DAte",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Time.Quarter End DAte",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "TOTAL_VALUE",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Time.TOTAL_VALUE",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Week",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Time.Week",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Week End Date",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Time.Week End Date",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Year",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Time.Year",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Year End Date",
+      "sourceLogicalColumn" : "logicalColumn:MtM_Campaign2Order.Time.Year End Date",
+      "useLogicalColumnName" : true
+    } ],
+    "hierarchies" : [ {
+      "name" : "Hierarchy 1",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:MtM_Campaign2Order.Time",
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:MtM_Campaign2Order.Time.Total"
+      }, {
+        "name" : "Detail",
+        "sourceLogicalLevel" : "logicalLevel:MtM_Campaign2Order.Time.Detail",
+        "displayColumn" : "presentationColumn:MtM_Campaign2Order.Time.Per Name Half"
+      } ]
+    } ]
+  }
+}

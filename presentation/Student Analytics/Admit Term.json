@@ -1,0 +1,89 @@
+{
+  "presentationTable" : {
+    "name" : "Admit Term",
+    "presentationColumns" : [ {
+      "name" : "ADMIT_TERM_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Admit Term.ADMIT_TERM_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Academic Year",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Admit Term.Academic Year",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Admit Term",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Admit Term.Admit Term",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "DSYS_BATCH_ID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Admit Term.DSYS_BATCH_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_INSTANCE_ID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Admit Term.DSYS_INSTANCE_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_PROCESS_ID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Admit Term.DSYS_PROCESS_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Fiscal Year",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Admit Term.Fiscal Year",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "TERM_CD",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Admit Term.TERM_CD",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "TERM_TYPE_CD",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Admit Term.TERM_TYPE_CD",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Term End Date",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Admit Term.Term End Date",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Term Start Date",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Admit Term.Term Start Date",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Term Type",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Admit Term.Term Type",
+      "useLogicalColumnName" : true
+    } ],
+    "hierarchies" : [ {
+      "name" : "Admit Term Hierarchy",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:Student Analytics.Admit Term",
+      "levels" : [ {
+        "name" : "All Admit Terms",
+        "sourceLogicalLevel" : "logicalLevel:Student Analytics.Admit Term.All Admit Terms"
+      }, {
+        "name" : "Academic Year",
+        "sourceLogicalLevel" : "logicalLevel:Student Analytics.Admit Term.Academic Year",
+        "displayColumn" : "presentationColumn:Student Analytics.Admit Term.Academic Year"
+      }, {
+        "name" : "Admit Term",
+        "sourceLogicalLevel" : "logicalLevel:Student Analytics.Admit Term.Admit Term",
+        "displayColumn" : "presentationColumn:Student Analytics.Admit Term.Admit Term"
+      } ]
+    } ]
+  }
+}

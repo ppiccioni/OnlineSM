@@ -1,0 +1,79 @@
+{
+  "presentationTable" : {
+    "name" : "Products",
+    "description" : "Products Dimension Details",
+    "presentationColumns" : [ {
+      "name" : "Product",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Products.Product",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Brand",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Products.Brand",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Item Description",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Products.Item Description",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Product Item Key",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Products.Product Item Key",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "LOB",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Products.LOB",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Product Type",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Products.Product Type",
+      "useLogicalColumnName" : true
+    } ],
+    "hierarchies" : [ {
+      "name" : "Products",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:SampleApp Payments.Products",
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:SampleApp Payments.Products.Total"
+      }, {
+        "name" : "Brand",
+        "sourceLogicalLevel" : "logicalLevel:SampleApp Payments.Products.Brand",
+        "displayColumn" : "presentationColumn:SampleApp.Products.Brand"
+      }, {
+        "name" : "LOB",
+        "sourceLogicalLevel" : "logicalLevel:SampleApp Payments.Products.LOB",
+        "displayColumn" : "presentationColumn:SampleApp.Products.LOB"
+      }, {
+        "name" : "Type",
+        "sourceLogicalLevel" : "logicalLevel:SampleApp Payments.Products.Type",
+        "displayColumn" : "presentationColumn:SampleApp.Products.Product Type"
+      }, {
+        "name" : "Product",
+        "sourceLogicalLevel" : "logicalLevel:SampleApp Payments.Products.Product",
+        "displayColumn" : "presentationColumn:SampleApp.Products.Product"
+      }, {
+        "name" : "Detail",
+        "sourceLogicalLevel" : "logicalLevel:SampleApp Payments.Products.Detail",
+        "displayColumn" : "presentationColumn:SampleApp.Products.Item Description"
+      } ]
+    }, {
+      "name" : "Product Types",
+      "sourceLogicalTable" : "logicalTable:SampleApp Payments.Products",
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:SampleApp Payments.Products.Total"
+      }, {
+        "name" : "Type",
+        "sourceLogicalLevel" : "logicalLevel:SampleApp Payments.Products.Type",
+        "displayColumn" : "presentationColumn:SampleApp.Products.Product Type"
+      }, {
+        "name" : "Product",
+        "sourceLogicalLevel" : "logicalLevel:SampleApp Payments.Products.Product",
+        "displayColumn" : "presentationColumn:SampleApp.Products.Product"
+      }, {
+        "name" : "Detail",
+        "sourceLogicalLevel" : "logicalLevel:SampleApp Payments.Products.Detail",
+        "displayColumn" : "presentationColumn:SampleApp.Products.Item Description"
+      } ]
+    } ]
+  }
+}

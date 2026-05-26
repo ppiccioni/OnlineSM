@@ -1,0 +1,74 @@
+{
+  "presentationTable" : {
+    "name" : "Regr Score All",
+    "presentationColumns" : [ {
+      "name" : "KEY",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Regr Score All.KEY",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Score Intercept Humidity",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Regr Score All.Score Intercept Humidity",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Score Intercept Temp",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Regr Score All.Score Intercept Temp",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Score Intercept Wind",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Regr Score All.Score Intercept Wind",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Score Slope Humidity",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Regr Score All.Score Slope Humidity",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Score Slope Temp",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Regr Score All.Score Slope Temp",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Score Slope Wind",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Regr Score All.Score Slope Wind",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Score Slope Long",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Regr Score All.Score Slope Long",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Score Intercept Lat",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Regr Score All.Score Intercept Lat",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Score Slope Dist",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Regr Score All.Score Slope Dist",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Score Intercept Long",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Regr Score All.Score Intercept Long",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Score Slope Lat",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Regr Score All.Score Slope Lat",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Score Intercept Dist",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Regr Score All.Score Intercept Dist",
+      "useLogicalColumnName" : true
+    } ],
+    "hierarchies" : [ {
+      "name" : "Hierarchy 1",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:NFL Stats.Regr Score All",
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:NFL Stats.Regr Score All.Total"
+      }, {
+        "name" : "Detail",
+        "sourceLogicalLevel" : "logicalLevel:NFL Stats.Regr Score All.Detail",
+        "displayColumn" : "presentationColumn:NFL Stats.Regr Score All.KEY"
+      } ]
+    } ]
+  }
+}

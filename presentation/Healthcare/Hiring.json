@@ -1,0 +1,72 @@
+{
+  "presentationTable" : {
+    "name" : "Hiring",
+    "presentationColumns" : [ {
+      "name" : "DSYS_BATCH_ID",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Hiring.DSYS_BATCH_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_INSTANCE_ID",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Hiring.DSYS_INSTANCE_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_PROCESS_ID",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Hiring.DSYS_PROCESS_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DATE_ID",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Hiring.DATE_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DEPARTMENT",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Hiring.DEPARTMENT",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Duration Avg",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Hiring.Duration Avg",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Eligibility 1yr",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Hiring.Eligibility 1yr",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Eligibility 2yr",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Hiring.Eligibility 2yr",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Eligibility 6mo",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Hiring.Eligibility 6mo",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "JOB_DESCRIPTION",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Hiring.JOB_DESCRIPTION",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Open Position",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Hiring.Open Position",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Position Fill Rate",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Hiring.Position Fill Rate",
+      "useLogicalColumnName" : true
+    } ]
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "presentationTable" : {
+    "name" : "Events",
+    "presentationColumns" : [ {
+      "name" : "DATE_ID",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Events.DATE_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DEPARTMENT",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Events.DEPARTMENT",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Dissatisfied Ratio",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Events.Dissatisfied Ratio",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "DSYS_BATCH_ID",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Events.DSYS_BATCH_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_INSTANCE_ID",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Events.DSYS_INSTANCE_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_PROCESS_ID",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Events.DSYS_PROCESS_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "EMPLOYEE_NAME",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Events.EMPLOYEE_NAME",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Event Action",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Events.Event Action",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Event Classification",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Events.Event Classification",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Event Reason",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Events.Event Reason",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Headcount",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Events.Headcount",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "JOB_DESCRIPTION",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Events.JOB_DESCRIPTION",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    } ]
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "presentationTable" : {
+    "name" : "Student",
+    "presentationColumns" : [ {
+      "name" : "Birth Date",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Student.Birth Date",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "DSYS_BATCH_ID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Student.DSYS_BATCH_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_INSTANCE_ID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Student.DSYS_INSTANCE_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_PROCESS_ID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Student.DSYS_PROCESS_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "First Name",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Student.First Name",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Last Name",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Student.Last Name",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Middle Init",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Student.Middle Init",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Name Suffix",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Student.Name Suffix",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "STUDENT_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Student.STUDENT_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Student ID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Student.Student ID",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Student PIDM",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Student.Student PIDM",
+      "useLogicalColumnName" : true
+    } ],
+    "hierarchies" : [ {
+      "name" : "Hierarchy 1",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:Student Analytics.Student",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      },
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:Student Analytics.Student.Total"
+      }, {
+        "name" : "Detail",
+        "sourceLogicalLevel" : "logicalLevel:Student Analytics.Student.Detail",
+        "displayColumn" : "presentationColumn:Student Analytics.Student.STUDENT_WID"
+      } ]
+    } ]
+  }
+}

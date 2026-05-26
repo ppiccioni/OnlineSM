@@ -1,0 +1,66 @@
+{
+  "presentationTable" : {
+    "name" : "Posted Date",
+    "presentationColumns" : [ {
+      "name" : "Date",
+      "sourceLogicalColumn" : "logicalColumn:Donations.Posted Date.Date",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Month",
+      "sourceLogicalColumn" : "logicalColumn:Donations.Posted Date.Month",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "MTH_ID",
+      "sourceLogicalColumn" : "logicalColumn:Donations.Posted Date.MTH_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Month Name",
+      "sourceLogicalColumn" : "logicalColumn:Donations.Posted Date.Month Name",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Month #",
+      "sourceLogicalColumn" : "logicalColumn:Donations.Posted Date.Month #",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Quarter",
+      "sourceLogicalColumn" : "logicalColumn:Donations.Posted Date.Quarter",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Quarter #",
+      "sourceLogicalColumn" : "logicalColumn:Donations.Posted Date.Quarter #",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Year",
+      "sourceLogicalColumn" : "logicalColumn:Donations.Posted Date.Year",
+      "useLogicalColumnName" : true
+    } ],
+    "hierarchies" : [ {
+      "name" : "Calendar Hier",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:Donations.Posted Date",
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:Donations.Posted Date.Total"
+      }, {
+        "name" : "Year",
+        "sourceLogicalLevel" : "logicalLevel:Donations.Posted Date.Year",
+        "displayColumn" : "presentationColumn:Donations.Posted Date.Year"
+      }, {
+        "name" : "Month",
+        "sourceLogicalLevel" : "logicalLevel:Donations.Posted Date.Month",
+        "displayColumn" : "presentationColumn:Donations.Posted Date.Month"
+      }, {
+        "name" : "Quarter",
+        "sourceLogicalLevel" : "logicalLevel:Donations.Posted Date.Quarter",
+        "displayColumn" : "presentationColumn:Donations.Posted Date.Quarter"
+      }, {
+        "name" : "Detail",
+        "sourceLogicalLevel" : "logicalLevel:Donations.Posted Date.Detail",
+        "displayColumn" : "presentationColumn:Donations.Posted Date.Date"
+      } ]
+    } ]
+  }
+}

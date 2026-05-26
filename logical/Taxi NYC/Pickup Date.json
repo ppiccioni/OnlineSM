@@ -1,0 +1,223 @@
+{
+  "logicalTable" : {
+    "name" : "Pickup Date",
+    "type" : "DIMENSION",
+    "primaryKey" : [ "Date" ],
+    "logicalColumns" : [ {
+      "name" : "Date",
+      "dataType" : "DATE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "NYCT_PICKUP_DATE",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_PICKUP_DATE.DAY_DT" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Pickup Date Detail"
+    }, {
+      "name" : "Day Name",
+      "dataType" : "VARCHAR",
+      "sortBy" : "Day Of Week",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "NYCT_PICKUP_DATE",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_PICKUP_DATE.DAY_NAME" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Pickup Date Detail"
+    }, {
+      "name" : "Day Of Mth",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "NYCT_PICKUP_DATE",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_PICKUP_DATE.DAY_OF_MTH" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Pickup Date Detail"
+    }, {
+      "name" : "Day Of Week",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "NYCT_PICKUP_DATE",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_PICKUP_DATE.DAY_OF_WEEK" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Pickup Date Detail"
+    }, {
+      "name" : "Mth",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "NYCT_PICKUP_DATE",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_PICKUP_DATE.MTH" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Pickup Date Detail"
+    }, {
+      "name" : "Mth Id",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "NYCT_PICKUP_DATE",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_PICKUP_DATE.MTH_ID" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Pickup Date Detail"
+    }, {
+      "name" : "Mth Name",
+      "dataType" : "VARCHAR",
+      "sortBy" : "Mth Num",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "NYCT_PICKUP_DATE",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_PICKUP_DATE.MTH_NAME" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Pickup Date Detail"
+    }, {
+      "name" : "Mth Num",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "NYCT_PICKUP_DATE",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_PICKUP_DATE.MTH_NUM" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Pickup Date Detail"
+    }, {
+      "name" : "Qtr",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "NYCT_PICKUP_DATE",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_PICKUP_DATE.QTR" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Pickup Date Detail"
+    }, {
+      "name" : "Qtr Num",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "NYCT_PICKUP_DATE",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_PICKUP_DATE.QTR_NUM" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Pickup Date Detail"
+    }, {
+      "name" : "Week Num",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "NYCT_PICKUP_DATE",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_PICKUP_DATE.WEEK_NUM" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Pickup Date Detail"
+    }, {
+      "name" : "Year",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "NYCT_PICKUP_DATE",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Taxi NYC.CAT9.CAT9.NYCT_PICKUP_DATE.YR" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Pickup Date Detail"
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "NYCT_PICKUP_DATE",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:Taxi NYC.CAT9.CAT9.NYCT_PICKUP_DATE" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "hierarchyType" : "LEVEL_BASED",
+    "levelBasedHierarchy" : {
+      "defaultRootLevel" : "Pickup Date Total",
+      "ragged" : false,
+      "skipped" : false,
+      "logicalLevels" : [ {
+        "name" : "Pickup Date Total",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : true,
+        "disableAggregateToHigherLevel" : false
+      }, {
+        "name" : "Pickup Date Detail",
+        "numberOfElements" : 33,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Date" ],
+        "displayKey" : "Date"
+      } ],
+      "logicalHierarchies" : [ {
+        "name" : "Pickup DateDim",
+        "levels" : [ "Pickup Date Total", "Pickup Date Detail" ]
+      } ]
+    }
+  }
+}

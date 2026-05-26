@@ -1,0 +1,18 @@
+{
+  "presentationTable" : {
+    "name" : "Taxi Attributes",
+    "presentationColumns" : [ {
+      "name" : "Vendor",
+      "sourceLogicalColumn" : "logicalColumn:Taxi NYC.Trip Attributes.Vendor",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Medallion",
+      "sourceLogicalColumn" : "logicalColumn:Taxi NYC.Ride.Medallion",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Hack License",
+      "sourceLogicalColumn" : "logicalColumn:Taxi NYC.Ride.Hack License",
+      "useLogicalColumnName" : true
+    } ]
+  }
+}

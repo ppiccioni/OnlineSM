@@ -1,0 +1,93 @@
+{
+  "presentationTable" : {
+    "name" : "Customers",
+    "description" : "Customers Dimension Details",
+    "presentationColumns" : [ {
+      "name" : "Cust Birth Date",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Customers.Cust Birth Date",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Cust Credit Rate",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Customers.Cust Credit Rate",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Cust Gender",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Customers.Cust Gender",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Cust Marital Status",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Customers.Cust Marital Status",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Cust Name",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Customers.Cust Name",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Cust Number",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Customers.Cust Number",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Cust Segment",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Customers.Cust Segment",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Cust Type",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Customers.Cust Type",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Cust Age",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Customers.Cust Age",
+      "useLogicalColumnName" : true
+    } ],
+    "hierarchies" : [ {
+      "name" : "Segments",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:SampleApp Payments.Customers",
+      "levels" : [ {
+        "name" : "All Customers",
+        "sourceLogicalLevel" : "logicalLevel:SampleApp Payments.Customers.All Customers"
+      }, {
+        "name" : "Cust Segment",
+        "sourceLogicalLevel" : "logicalLevel:SampleApp Payments.Customers.Cust Segment",
+        "displayColumn" : "presentationColumn:SampleApp.Customers.Cust Segment"
+      }, {
+        "name" : "Detail",
+        "sourceLogicalLevel" : "logicalLevel:SampleApp Payments.Customers.Detail",
+        "displayColumn" : "presentationColumn:SampleApp.Customers.Cust Name"
+      } ]
+    }, {
+      "name" : "Marital Status",
+      "sourceLogicalTable" : "logicalTable:SampleApp Payments.Customers",
+      "levels" : [ {
+        "name" : "All Customers",
+        "sourceLogicalLevel" : "logicalLevel:SampleApp Payments.Customers.All Customers"
+      }, {
+        "name" : "Cust Marital Status",
+        "sourceLogicalLevel" : "logicalLevel:SampleApp Payments.Customers.Cust Marital Status",
+        "displayColumn" : "presentationColumn:SampleApp.Customers.Cust Marital Status"
+      }, {
+        "name" : "Detail",
+        "sourceLogicalLevel" : "logicalLevel:SampleApp Payments.Customers.Detail",
+        "displayColumn" : "presentationColumn:SampleApp.Customers.Cust Name"
+      } ]
+    }, {
+      "name" : "Genders",
+      "sourceLogicalTable" : "logicalTable:SampleApp Payments.Customers",
+      "levels" : [ {
+        "name" : "All Customers",
+        "sourceLogicalLevel" : "logicalLevel:SampleApp Payments.Customers.All Customers"
+      }, {
+        "name" : "Cust Gender",
+        "sourceLogicalLevel" : "logicalLevel:SampleApp Payments.Customers.Cust Gender",
+        "displayColumn" : "presentationColumn:SampleApp.Customers.Cust Gender"
+      }, {
+        "name" : "Detail",
+        "sourceLogicalLevel" : "logicalLevel:SampleApp Payments.Customers.Detail",
+        "displayColumn" : "presentationColumn:SampleApp.Customers.Cust Name"
+      } ]
+    } ]
+  }
+}

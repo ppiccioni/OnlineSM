@@ -1,0 +1,64 @@
+{
+  "presentationTable" : {
+    "name" : "Actuals",
+    "presentationColumns" : [ {
+      "name" : "ACCOUNT",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Actuals.ACCOUNT",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Actual",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Actuals.Actual",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Budget",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Actuals.Budget",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "DSYS_BATCH_ID",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Actuals.DSYS_BATCH_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_INSTANCE_ID",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Actuals.DSYS_INSTANCE_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_PROCESS_ID",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Actuals.DSYS_PROCESS_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DATE_ID",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Actuals.DATE_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DEPARTMENT",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Actuals.DEPARTMENT",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Variance",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Actuals.Variance",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Variance %",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Actuals.Variance %",
+      "useLogicalColumnName" : true
+    } ]
+  }
+}

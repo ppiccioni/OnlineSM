@@ -1,0 +1,138 @@
+{
+  "presentationTable" : {
+    "name" : "Purchases",
+    "presentationColumns" : [ {
+      "name" : "BUYER",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Purchases.BUYER",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Contract Qty",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Purchases.Contract Qty",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Contract Spend Amt",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Purchases.Contract Spend Amt",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Contract Unit Price",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Purchases.Contract Unit Price",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "DSYS_BATCH_ID",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Purchases.DSYS_BATCH_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_INSTANCE_ID",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Purchases.DSYS_INSTANCE_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_PROCESS_ID",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Purchases.DSYS_PROCESS_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DATE_ID",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Purchases.DATE_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DEPARTMENT",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Purchases.DEPARTMENT",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Entry Type",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Purchases.Entry Type",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Invoice Nbr",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Purchases.Invoice Nbr",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "ITEM",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Purchases.ITEM",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Non-Contract Qty",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Purchases.Non-Contract Qty",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Non-Contract Spend Amt",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Purchases.Non-Contract Spend Amt",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Non-Contract Unit Price",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Purchases.Non-Contract Unit Price",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "PO Count",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Purchases.PO Count",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "PO Line Count",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Purchases.PO Line Count",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "PO Line Nbr",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Purchases.PO Line Nbr",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "PO Nbr",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Purchases.PO Nbr",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "PO Release Nbr",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Purchases.PO Release Nbr",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Purchase Order",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Purchases.Purchase Order",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "SUPPLIER",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Purchases.SUPPLIER",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Total Qty",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Purchases.Total Qty",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Total Spend Amt",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Purchases.Total Spend Amt",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Total Unit Price",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Purchases.Total Unit Price",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "UOM",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Purchases.UOM",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Contract Usage %",
+      "sourceLogicalColumn" : "logicalColumn:Healthcare.Purchases.Contract Usage %",
+      "useLogicalColumnName" : true
+    } ]
+  }
+}

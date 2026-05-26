@@ -1,0 +1,76 @@
+{
+  "presentationTable" : {
+    "name" : "Game Location",
+    "presentationColumns" : [ {
+      "name" : "Home Of",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Game Location.Home Of",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Altitude",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Game Location.Altitude",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Capacity",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Game Location.Capacity",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "City",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Game Location.City",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "LOC_KEY",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Game Location.LOC_KEY",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Lat",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Game Location.Lat",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Long",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Game Location.Long",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Location Name",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Game Location.Location Name",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Roof Type",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Game Location.Roof Type",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "State",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Game Location.State",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Field Surface",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Game Location.Field Surface",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "LOC_SURFACE_DETAIL",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Game Location.LOC_SURFACE_DETAIL",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    } ],
+    "hierarchies" : [ {
+      "name" : "Hierarchy 1",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:NFL Stats.Game Location",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      },
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:NFL Stats.Game Location.Total"
+      }, {
+        "name" : "Detail",
+        "sourceLogicalLevel" : "logicalLevel:NFL Stats.Game Location.Detail",
+        "displayColumn" : "presentationColumn:NFL Stats.Game Location.LOC_KEY"
+      } ]
+    } ]
+  }
+}

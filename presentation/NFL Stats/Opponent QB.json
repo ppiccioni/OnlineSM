@@ -1,0 +1,50 @@
+{
+  "presentationTable" : {
+    "name" : "Opponent QB",
+    "presentationColumns" : [ {
+      "name" : "Opp QB College",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Opponent QB.Opp QB College",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Opp Career TD Thrown",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Opponent QB.Opp Career TD Thrown",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Opp QB Drafted By",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Opponent QB.Opp QB Drafted By",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Opp QB Pick",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Opponent QB.Opp QB Pick",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Opp Quarter Back",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Opponent QB.Opp Quarter Back",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Opp QB Round",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Opponent QB.Opp QB Round",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Opp QB Year Drafted",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Opponent QB.Opp QB Year Drafted",
+      "useLogicalColumnName" : true
+    } ],
+    "hierarchies" : [ {
+      "name" : "Hierarchy 1",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:NFL Stats.Opponent QB",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      },
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:NFL Stats.Opponent QB.Total"
+      }, {
+        "name" : "Detail",
+        "sourceLogicalLevel" : "logicalLevel:NFL Stats.Opponent QB.Detail",
+        "displayColumn" : "presentationColumn:NFL Stats.Opponent QB.Opp Quarter Back"
+      } ]
+    } ]
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "subjectArea" : {
+    "name" : "Higher_Ed",
+    "sourceBusinessModel" : "businessModel:Higher_Ed",
+    "alternateNames" : [ "PC2" ],
+    "tableOrder" : [ {
+      "name" : "presentationTable:Higher_Ed.Buyers"
+    }, {
+      "name" : "presentationTable:Higher_Ed.Accounts"
+    }, {
+      "name" : "presentationTable:Higher_Ed.Suppliers"
+    }, {
+      "name" : "presentationTable:Higher_Ed.Hiring"
+    }, {
+      "name" : "presentationTable:Higher_Ed.Purchases"
+    }, {
+      "name" : "presentationTable:Higher_Ed.Jobs"
+    }, {
+      "name" : "presentationTable:Higher_Ed.Time"
+    }, {
+      "name" : "presentationTable:Higher_Ed.Actuals"
+    }, {
+      "name" : "presentationTable:Higher_Ed.Departments"
+    }, {
+      "name" : "presentationTable:Higher_Ed.Events"
+    }, {
+      "name" : "presentationTable:Higher_Ed.Compensation"
+    }, {
+      "name" : "presentationTable:Higher_Ed.Employees"
+    }, {
+      "name" : "presentationTable:Higher_Ed.Items"
+    } ],
+    "localization" : {
+      "localizationKey" : "Higher_Ed",
+      "nameVariable" : "Higher_Ed"
+    }
+  }
+}

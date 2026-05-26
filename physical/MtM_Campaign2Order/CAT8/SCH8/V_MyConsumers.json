@@ -1,0 +1,257 @@
+{
+  "physicalTable" : {
+    "name" : "V_MyConsumers",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "CU_AGE",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "CON_PRELOAD_OLTP_SIA",
+      "dataType" : "VARCHAR",
+      "length" : 2,
+      "nullable" : true
+    }, {
+      "name" : "CU_DATE_CHANGED",
+      "dataType" : "DATETIME",
+      "length" : 7,
+      "nullable" : true
+    }, {
+      "name" : "CU_DATE_CREATED",
+      "dataType" : "DATETIME",
+      "length" : 7,
+      "nullable" : true
+    }, {
+      "name" : "CU_ID",
+      "dataType" : "VARCHAR",
+      "length" : 255,
+      "nullable" : true
+    }, {
+      "name" : "CU_Z_CUSTOM_LABEL1",
+      "dataType" : "VARCHAR",
+      "length" : 32,
+      "nullable" : true
+    }, {
+      "name" : "CU_Z_CUSTOM_LABEL2",
+      "dataType" : "VARCHAR",
+      "length" : 32,
+      "nullable" : true
+    }, {
+      "name" : "CU_Z_CUSTOM_NUM_FLOAT",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "CU_Z_CUSTOM_NUM_INT1",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "CU_Z_CUSTOM_NUM_INT2",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "CU_CLOSEST_BRANCH",
+      "dataType" : "VARCHAR",
+      "length" : 32,
+      "nullable" : true
+    }, {
+      "name" : "CU_DAYS_SINCE_LAST_CONTACT",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "CU_DAYS_SINCE_LAST_PAYMENT",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "CU_DAYS_AS_CUSTOMER",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "CU_M_DEFECTION_RISK",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "CU_EMAIL",
+      "dataType" : "VARCHAR",
+      "length" : 64,
+      "nullable" : true
+    }, {
+      "name" : "CU_EMAIL_FORMAT",
+      "dataType" : "VARCHAR",
+      "length" : 32,
+      "nullable" : true
+    }, {
+      "name" : "CU_EMPLOYMENT_STATUS",
+      "dataType" : "VARCHAR",
+      "length" : 32,
+      "nullable" : true
+    }, {
+      "name" : "CU_FNAME",
+      "dataType" : "VARCHAR",
+      "length" : 32,
+      "nullable" : true
+    }, {
+      "name" : "CU_GENDER",
+      "dataType" : "VARCHAR",
+      "length" : 8,
+      "nullable" : true
+    }, {
+      "name" : "HH_ID",
+      "dataType" : "VARCHAR",
+      "length" : 255,
+      "nullable" : true
+    }, {
+      "name" : "CU_SALES_HISTORY_FLAG",
+      "dataType" : "VARCHAR",
+      "length" : 8,
+      "nullable" : true
+    }, {
+      "name" : "CU_INCOME_BRACKET",
+      "dataType" : "VARCHAR",
+      "length" : 16,
+      "nullable" : true
+    }, {
+      "name" : "CU_LNAME",
+      "dataType" : "VARCHAR",
+      "length" : 32,
+      "nullable" : true
+    }, {
+      "name" : "CU_LAST_PAYMENT_VALUE",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "CU_LIFECYCLE_STAGE",
+      "dataType" : "VARCHAR",
+      "length" : 16,
+      "nullable" : true
+    }, {
+      "name" : "CU_M_LIFETIME_POTENTIAL",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "CU_LOYALTY_MEMBER",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "CU_LOYALTY_TIER",
+      "dataType" : "VARCHAR",
+      "length" : 16,
+      "nullable" : true
+    }, {
+      "name" : "CU_MARITAL_STATUS",
+      "dataType" : "VARCHAR",
+      "length" : 16,
+      "nullable" : true
+    }, {
+      "name" : "CU_M_MAX_MKTG_INVESTMENT",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "CU_MOBILE",
+      "dataType" : "VARCHAR",
+      "length" : 16,
+      "nullable" : true
+    }, {
+      "name" : "CU_NEWSLETTER_MEMBER",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "CU_NUM_CONTACTS_LAST_12M",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "CU_NUM_CONTACTS_LAST_3M",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "CU_PERMIS_NEVER_ANY_OUTBOUND",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "CU_PERMIS_NEVER_DIRECTMAIL",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "CU_PERMIS_NEVER_EMAIL",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "CU_PERMIS_NEVER_FACE_TO_FACE",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "CU_PERMIS_NEVER_PHONE",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "CU_PERMIS_NEVER_SMS",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "CU_PHONE",
+      "dataType" : "VARCHAR",
+      "length" : 16,
+      "nullable" : true
+    }, {
+      "name" : "CU_PREF_CALL_TIME",
+      "dataType" : "VARCHAR",
+      "length" : 16,
+      "nullable" : true
+    }, {
+      "name" : "CU_PREF_CHANNEL",
+      "dataType" : "VARCHAR",
+      "length" : 16,
+      "nullable" : true
+    }, {
+      "name" : "CU_REVENUE_LAST_12MONTHS",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "CU_REVENUE_HISTORY_TOTAL",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "CU_Z_CUSTOM_LABEL3",
+      "dataType" : "VARCHAR",
+      "length" : 32,
+      "nullable" : true
+    }, {
+      "name" : "CU_STATUS",
+      "dataType" : "VARCHAR",
+      "length" : 16,
+      "nullable" : true
+    }, {
+      "name" : "CU_TITLE",
+      "dataType" : "VARCHAR",
+      "length" : 8,
+      "nullable" : true
+    } ],
+    "additionalKeys" : [ [ "CU_Z_CUSTOM_LABEL3" ], [ "CU_ID" ] ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "presentationTable" : {
+    "name" : "HSP_View",
+    "presentationColumns" : [ {
+      "name" : "HSP_View Alias:Default,Gen,1",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.HSP_View.HSP_View Alias:Default,Gen,1",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "HSP_View Alias:Default,Gen,2",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.HSP_View.HSP_View Alias:Default,Gen,2",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "HSP_View Alias:English,Gen,1",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.HSP_View.HSP_View Alias:English,Gen,1",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "HSP_View Alias:English,Gen,2",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.HSP_View.HSP_View Alias:English,Gen,2",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "HSP_View Default",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.HSP_View.HSP_View Default",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "HSP_View English",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.HSP_View.HSP_View English",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "HSP_View Gen Number",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.HSP_View.HSP_View Gen Number",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "HSP_View Leaf Indicator",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.HSP_View.HSP_View Leaf Indicator",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "HSP_View Name",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.HSP_View.HSP_View Name",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "HSP_View Name,Gen,1",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.HSP_View.HSP_View Name,Gen,1",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "HSP_View Name,Gen,2",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.HSP_View.HSP_View Name,Gen,2",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "HSP_View Parent Key",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.HSP_View.HSP_View Parent Key",
+      "useLogicalColumnName" : true
+    } ],
+    "hierarchies" : [ {
+      "name" : "HSP_View",
+      "sourceLogicalTable" : "logicalTable:Plan1.HSP_View",
+      "displayColumn" : "presentationColumn:Plan1.HSP_View.HSP_View Name"
+    } ]
+  }
+}

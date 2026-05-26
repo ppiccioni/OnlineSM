@@ -1,0 +1,130 @@
+{
+  "presentationTable" : {
+    "name" : "Geography",
+    "description" : "Customer Geography Dimension Details",
+    "presentationColumns" : [ {
+      "name" : "Address 1",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Geography.Address 1",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Address 2",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Geography.Address 2",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Address Key",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Geography.Address Key",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Area",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Geography.Area",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "City",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Geography.City",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Country Code",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Geography.Country Code",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Country Name",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Geography.Country Name",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Postal Code",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Geography.Postal Code",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Region",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Geography.Region",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "State Province",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Geography.State Province",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Country_City",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Geography.Country_City",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Country_State Province",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Geography.Country_State Province",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Latitude",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Geography.Latitude",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Longitude",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Geography.Longitude",
+      "useLogicalColumnName" : true
+    } ],
+    "hierarchies" : [ {
+      "name" : "Geographies",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:SampleApp Payments.Geography",
+      "levels" : [ {
+        "name" : "All Geographies",
+        "sourceLogicalLevel" : "logicalLevel:SampleApp Payments.Geography.All Geographies"
+      }, {
+        "name" : "Region",
+        "sourceLogicalLevel" : "logicalLevel:SampleApp Payments.Geography.Region",
+        "displayColumn" : "presentationColumn:SampleApp.Geography.Region"
+      }, {
+        "name" : "Area",
+        "sourceLogicalLevel" : "logicalLevel:SampleApp Payments.Geography.Area",
+        "displayColumn" : "presentationColumn:SampleApp.Geography.Area"
+      }, {
+        "name" : "Country Name",
+        "sourceLogicalLevel" : "logicalLevel:SampleApp Payments.Geography.Country Name",
+        "displayColumn" : "presentationColumn:SampleApp.Geography.Country Name"
+      }, {
+        "name" : "State Province",
+        "sourceLogicalLevel" : "logicalLevel:SampleApp Payments.Geography.State Province",
+        "displayColumn" : "presentationColumn:SampleApp.Geography.State Province"
+      }, {
+        "name" : "City",
+        "sourceLogicalLevel" : "logicalLevel:SampleApp Payments.Geography.City",
+        "displayColumn" : "presentationColumn:SampleApp.Geography.City"
+      }, {
+        "name" : "Postal Code",
+        "sourceLogicalLevel" : "logicalLevel:SampleApp Payments.Geography.Postal Code",
+        "displayColumn" : "presentationColumn:SampleApp.Geography.Postal Code"
+      }, {
+        "name" : "Detail",
+        "sourceLogicalLevel" : "logicalLevel:SampleApp Payments.Geography.Detail",
+        "displayColumn" : "presentationColumn:SampleApp.Geography.Address 1"
+      } ]
+    }, {
+      "name" : "Countries",
+      "sourceLogicalTable" : "logicalTable:SampleApp Payments.Geography",
+      "levels" : [ {
+        "name" : "All Geographies",
+        "sourceLogicalLevel" : "logicalLevel:SampleApp Payments.Geography.All Geographies"
+      }, {
+        "name" : "Country Name",
+        "sourceLogicalLevel" : "logicalLevel:SampleApp Payments.Geography.Country Name",
+        "displayColumn" : "presentationColumn:SampleApp.Geography.Country Name"
+      }, {
+        "name" : "State Province",
+        "sourceLogicalLevel" : "logicalLevel:SampleApp Payments.Geography.State Province",
+        "displayColumn" : "presentationColumn:SampleApp.Geography.State Province"
+      }, {
+        "name" : "City",
+        "sourceLogicalLevel" : "logicalLevel:SampleApp Payments.Geography.City",
+        "displayColumn" : "presentationColumn:SampleApp.Geography.City"
+      }, {
+        "name" : "Postal Code",
+        "sourceLogicalLevel" : "logicalLevel:SampleApp Payments.Geography.Postal Code",
+        "displayColumn" : "presentationColumn:SampleApp.Geography.Postal Code"
+      }, {
+        "name" : "Detail",
+        "sourceLogicalLevel" : "logicalLevel:SampleApp Payments.Geography.Detail",
+        "displayColumn" : "presentationColumn:SampleApp.Geography.Address 1"
+      } ]
+    } ]
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "presentationTable" : {
+    "name" : "Facts - Student Test Scores",
+    "presentationColumns" : [ {
+      "name" : "ACADEMIC_ORG_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Student Test Scores.ACADEMIC_ORG_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "ADMIT_TERM_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Student Test Scores.ADMIT_TERM_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "COHORT_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Student Test Scores.COHORT_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DATE_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Student Test Scores.DATE_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_BATCH_ID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Student Test Scores.DSYS_BATCH_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_INSTANCE_ID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Student Test Scores.DSYS_INSTANCE_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_PROCESS_ID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Student Test Scores.DSYS_PROCESS_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "MATRIC_ACADEMIC_ORG_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Student Test Scores.MATRIC_ACADEMIC_ORG_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "MATRIC_ACADEMIC_PROFILE_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Student Test Scores.MATRIC_ACADEMIC_PROFILE_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "ROW_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Student Test Scores.ROW_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "STUDENT_ACADEMIC_ATTRIB_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Student Test Scores.STUDENT_ACADEMIC_ATTRIB_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "STUDENT_ACADEMIC_PROFILE_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Student Test Scores.STUDENT_ACADEMIC_PROFILE_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Student Age Admin Term",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Student Test Scores.Student Age Admin Term",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Student Age Begin Term",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Student Test Scores.Student Age Begin Term",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "STUDENT_BIODEMO_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Student Test Scores.STUDENT_BIODEMO_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "STUDENT_LOCATION_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Student Test Scores.STUDENT_LOCATION_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "STUDENT_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Student Test Scores.STUDENT_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "TERM_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Student Test Scores.TERM_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Test Score Nbr",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Student Test Scores.Test Score Nbr",
+      "useLogicalColumnName" : true
+    } ]
+  }
+}

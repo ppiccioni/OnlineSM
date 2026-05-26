@@ -1,0 +1,63 @@
+{
+  "presentationTable" : {
+    "name" : "Employees",
+    "presentationColumns" : [ {
+      "name" : "Age Group",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Employees.Age Group",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "DSYS_BATCH_ID",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Employees.DSYS_BATCH_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_INSTANCE_ID",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Employees.DSYS_INSTANCE_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_PROCESS_ID",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Employees.DSYS_PROCESS_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Employee Name",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Employees.Employee Name",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Highest Degree",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Employees.Highest Degree",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "High Potential",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Employees.High Potential",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Pay Grade",
+      "sourceLogicalColumn" : "logicalColumn:Higher_Ed.Employees.Pay Grade",
+      "useLogicalColumnName" : true
+    } ],
+    "hierarchies" : [ {
+      "name" : "Hierarchy 1",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:Higher_Ed.Employees",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      },
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:Higher_Ed.Employees.Total"
+      }, {
+        "name" : "Detail",
+        "sourceLogicalLevel" : "logicalLevel:Higher_Ed.Employees.Detail",
+        "displayColumn" : "presentationColumn:Higher_Ed.Employees.Employee Name"
+      } ]
+    } ]
+  }
+}

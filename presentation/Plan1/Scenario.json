@@ -1,0 +1,67 @@
+{
+  "presentationTable" : {
+    "name" : "Scenario",
+    "presentationColumns" : [ {
+      "name" : "Scenario - Forecast",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Scenario.Scenario - Forecast",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Scenario - Plan",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Scenario.Scenario - Plan",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Scenario Alias:Default,Gen,1",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Scenario.Scenario Alias:Default,Gen,1",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Scenario Alias:Default,Gen,2",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Scenario.Scenario Alias:Default,Gen,2",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Scenario Alias:English,Gen,1",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Scenario.Scenario Alias:English,Gen,1",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Scenario Alias:English,Gen,2",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Scenario.Scenario Alias:English,Gen,2",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Scenario Default",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Scenario.Scenario Default",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Scenario English",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Scenario.Scenario English",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Scenario Gen Number",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Scenario.Scenario Gen Number",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Scenario Leaf Indicator",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Scenario.Scenario Leaf Indicator",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Scenario Name",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Scenario.Scenario Name",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Scenario Name,Gen,1",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Scenario.Scenario Name,Gen,1",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Scenario Name,Gen,2",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Scenario.Scenario Name,Gen,2",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Scenario Parent Key",
+      "sourceLogicalColumn" : "logicalColumn:Plan1.Scenario.Scenario Parent Key",
+      "useLogicalColumnName" : true
+    } ],
+    "hierarchies" : [ {
+      "name" : "Scenario",
+      "sourceLogicalTable" : "logicalTable:Plan1.Scenario",
+      "displayColumn" : "presentationColumn:Plan1.Scenario.Scenario Name"
+    } ]
+  }
+}

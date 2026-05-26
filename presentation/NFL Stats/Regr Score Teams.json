@@ -1,0 +1,71 @@
+{
+  "presentationTable" : {
+    "name" : "Regr Score Teams",
+    "presentationColumns" : [ {
+      "name" : "Score Intercept Humidity",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Regr Score Teams.Score Intercept Humidity",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Score Intercept Lat",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Regr Score Teams.Score Intercept Lat",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Score Intercept Long",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Regr Score Teams.Score Intercept Long",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Score Intercept Temp",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Regr Score Teams.Score Intercept Temp",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Score Intercept Wind",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Regr Score Teams.Score Intercept Wind",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Score Slope Humidity",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Regr Score Teams.Score Slope Humidity",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Score Slope Lat",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Regr Score Teams.Score Slope Lat",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Score Slope Long",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Regr Score Teams.Score Slope Long",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Score Slope Temp",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Regr Score Teams.Score Slope Temp",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Score Slope Wind",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Regr Score Teams.Score Slope Wind",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "TEAM_KEY",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Regr Score Teams.TEAM_KEY",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Score Intercept Dist",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Regr Score Teams.Score Intercept Dist",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Score Slope Dist",
+      "sourceLogicalColumn" : "logicalColumn:NFL Stats.Regr Score Teams.Score Slope Dist",
+      "useLogicalColumnName" : true
+    } ],
+    "hierarchies" : [ {
+      "name" : "Hierarchy 1",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:NFL Stats.Regr Score Teams",
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:NFL Stats.Regr Score Teams.Total"
+      }, {
+        "name" : "Detail",
+        "sourceLogicalLevel" : "logicalLevel:NFL Stats.Regr Score Teams.Detail",
+        "displayColumn" : "presentationColumn:NFL Stats.Regr Score Teams.TEAM_KEY"
+      } ]
+    } ]
+  }
+}

@@ -1,0 +1,188 @@
+{
+  "presentationTable" : {
+    "name" : "Time",
+    "presentationColumns" : [ {
+      "name" : "Month #",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Time.Month #",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Cal Month Key",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Time.Cal Month Key",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Quarter #",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Time.Quarter #",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Cal Qtr Key",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Time.Cal Qtr Key",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Cal Trimester",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Time.Cal Trimester",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Week #",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Time.Week #",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Cal Year",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Time.Cal Year",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Cal Year Key",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Time.Cal Year Key",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Date Id",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Time.Date Id",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Day of Month",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Time.Day of Month",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Day Of Week",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Time.Day Of Week",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Day Of Year",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Time.Day Of Year",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Date Timestamp",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Time.Date Timestamp",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Date",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Time.Date",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Julian Day Number",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Time.Julian Day Number",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Julian Month Number",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Time.Julian Month Number",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Julian Quarter Number",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Time.Julian Quarter Number",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Julian Trimester Number",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Time.Julian Trimester Number",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Julian Week Number",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Time.Julian Week Number",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Julian Year Number",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Time.Julian Year Number",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Month",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Time.Month",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Week By Year",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Time.Week By Year",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Quarter",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Time.Quarter",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Trimester",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Time.Trimester",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Week",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Time.Week",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Year",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Time.Year",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Day Name",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Time.Day Name",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Month Number",
+      "sourceLogicalColumn" : "logicalColumn:SampleApp Payments.Time.Month Number",
+      "useLogicalColumnName" : true
+    } ],
+    "hierarchies" : [ {
+      "name" : "Time",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:SampleApp Payments.Time",
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:SampleApp Payments.Time.Total"
+      }, {
+        "name" : "Year",
+        "sourceLogicalLevel" : "logicalLevel:SampleApp Payments.Time.Year",
+        "displayColumn" : "presentationColumn:SampleApp Payments.Time.Year"
+      }, {
+        "name" : "Quarter",
+        "sourceLogicalLevel" : "logicalLevel:SampleApp Payments.Time.Quarter",
+        "displayColumn" : "presentationColumn:SampleApp Payments.Time.Quarter"
+      }, {
+        "name" : "Month",
+        "sourceLogicalLevel" : "logicalLevel:SampleApp Payments.Time.Month",
+        "displayColumn" : "presentationColumn:SampleApp Payments.Time.Month"
+      }, {
+        "name" : "Day",
+        "sourceLogicalLevel" : "logicalLevel:SampleApp Payments.Time.Day",
+        "displayColumn" : "presentationColumn:SampleApp Payments.Time.Date"
+      } ]
+    } ]
+  }
+}

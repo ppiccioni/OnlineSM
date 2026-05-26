@@ -1,0 +1,123 @@
+{
+  "logicalTable" : {
+    "name" : "Accounts",
+    "type" : "DIMENSION",
+    "primaryKey" : [ "Account" ],
+    "logicalColumns" : [ {
+      "name" : "Account",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "HC_D_ACCOUNTS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Healthcare.CAT7.SCH7.HC_D_ACCOUNTS.ACCOUNT" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Account"
+    }, {
+      "name" : "Account Group",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "HC_D_ACCOUNTS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Healthcare.CAT7.SCH7.HC_D_ACCOUNTS.ACCOUNT_GROUP" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Account Group"
+    }, {
+      "name" : "DSYS_BATCH_ID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "HC_D_ACCOUNTS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Healthcare.CAT7.SCH7.HC_D_ACCOUNTS.DSYS_BATCH_ID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "DSYS_INSTANCE_ID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "HC_D_ACCOUNTS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Healthcare.CAT7.SCH7.HC_D_ACCOUNTS.DSYS_INSTANCE_ID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "DSYS_PROCESS_ID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "HC_D_ACCOUNTS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Healthcare.CAT7.SCH7.HC_D_ACCOUNTS.DSYS_PROCESS_ID" ]
+          }
+        } ]
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "HC_D_ACCOUNTS_LTS",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:Healthcare.CAT7.SCH7.HC_D_ACCOUNTS" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "hierarchyType" : "LEVEL_BASED",
+    "levelBasedHierarchy" : {
+      "defaultRootLevel" : "All Accounts",
+      "ragged" : false,
+      "skipped" : false,
+      "logicalLevels" : [ {
+        "name" : "All Accounts",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : true,
+        "disableAggregateToHigherLevel" : false
+      }, {
+        "name" : "Account Group",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Account Group" ],
+        "displayKey" : "Account Group",
+        "chronologicalKey" : [ "Account Group" ]
+      }, {
+        "name" : "Account",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Account" ],
+        "displayKey" : "Account",
+        "chronologicalKey" : [ "Account" ]
+      } ],
+      "logicalHierarchies" : [ {
+        "name" : "Accounts",
+        "description" : "default hierarchy",
+        "levels" : [ "All Accounts", "Account Group", "Account" ]
+      } ]
+    }
+  }
+}

@@ -1,0 +1,190 @@
+{
+  "presentationTable" : {
+    "name" : "Facts - Degrees",
+    "presentationColumns" : [ {
+      "name" : "ACADEMIC_ORG_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Degrees.ACADEMIC_ORG_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "COHORT_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Degrees.COHORT_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Degree Completion Length",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Degrees.Degree Completion Length",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Degree Count",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Degrees.Degree Count",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "DEGREE_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Degrees.DEGREE_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_BATCH_ID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Degrees.DSYS_BATCH_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_INSTANCE_ID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Degrees.DSYS_INSTANCE_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_PROCESS_ID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Degrees.DSYS_PROCESS_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "MAJOR_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Degrees.MAJOR_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "MATRIC_ACADEMIC_ATTRIB_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Degrees.MATRIC_ACADEMIC_ATTRIB_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "MATRIC_ACADEMIC_ORG_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Degrees.MATRIC_ACADEMIC_ORG_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "MATRIC_ACADEMIC_PROFILE_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Degrees.MATRIC_ACADEMIC_PROFILE_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "MINOR_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Degrees.MINOR_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "PROGRAM_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Degrees.PROGRAM_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "ROW_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Degrees.ROW_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Seq Nbr",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Degrees.Seq Nbr",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "STUDENT_ACADEMIC_ATTRIB_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Degrees.STUDENT_ACADEMIC_ATTRIB_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "STUDENT_ACADEMIC_PROFILE_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Degrees.STUDENT_ACADEMIC_PROFILE_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Student Age Admit Term",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Degrees.Student Age Admit Term",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Student Age Begin Term",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Degrees.Student Age Begin Term",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "STUDENT_BIODEMO_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Degrees.STUDENT_BIODEMO_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "STUDENT_LOCATION_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Degrees.STUDENT_LOCATION_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "STUDENT_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Degrees.STUDENT_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "TERM_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Degrees.TERM_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "ADMIT_TERM_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Degrees.ADMIT_TERM_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Degree Count 5yr Ago",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Degrees.Degree Count 5yr Ago",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Degree Count 1yr Ago",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Degrees.Degree Count 1yr Ago",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Degree Count 1yr Ago Change",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Degrees.Degree Count 1yr Ago Change",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Degree Count 1yr Ago Change %",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Degrees.Degree Count 1yr Ago Change %",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Degree Count 5yr Ago Change %",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Degrees.Degree Count 5yr Ago Change %",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Degree Count 5yr Ago Change",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Degrees.Degree Count 5yr Ago Change",
+      "useLogicalColumnName" : true
+    } ]
+  }
+}

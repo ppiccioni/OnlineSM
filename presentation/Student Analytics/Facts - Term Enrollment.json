@@ -1,0 +1,214 @@
+{
+  "presentationTable" : {
+    "name" : "Facts - Term Enrollment",
+    "presentationColumns" : [ {
+      "name" : "ACADEMIC_ORG_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Term Enrollment.ACADEMIC_ORG_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "COHORT_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Term Enrollment.COHORT_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Credit Hours Taken",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Term Enrollment.Credit Hours Taken",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "DEGREE_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Term Enrollment.DEGREE_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_BATCH_ID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Term Enrollment.DSYS_BATCH_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_INSTANCE_ID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Term Enrollment.DSYS_INSTANCE_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_PROCESS_ID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Term Enrollment.DSYS_PROCESS_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Honors Student Count",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Term Enrollment.Honors Student Count",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "MAJOR_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Term Enrollment.MAJOR_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "MATRIC_ACADEMIC_ATTRIB_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Term Enrollment.MATRIC_ACADEMIC_ATTRIB_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "MATRIC_ACADEMIC_ORG_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Term Enrollment.MATRIC_ACADEMIC_ORG_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "MATRIC_ACADEMIC_PROFILE_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Term Enrollment.MATRIC_ACADEMIC_PROFILE_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "MINOR_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Term Enrollment.MINOR_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "PROGRAM_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Term Enrollment.PROGRAM_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "ROW_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Term Enrollment.ROW_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "SNAPSHOT_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Term Enrollment.SNAPSHOT_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "STUDENT_ACADEMIC_ATTRIB_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Term Enrollment.STUDENT_ACADEMIC_ATTRIB_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "STUDENT_ACADEMIC_PROFILE_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Term Enrollment.STUDENT_ACADEMIC_PROFILE_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Student Age Admit Term",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Term Enrollment.Student Age Admit Term",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Student Age Begin Term",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Term Enrollment.Student Age Begin Term",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "STUDENT_BIODEMO_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Term Enrollment.STUDENT_BIODEMO_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Student Enrollment Count",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Term Enrollment.Student Enrollment Count",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "STUDENT_LOCATION_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Term Enrollment.STUDENT_LOCATION_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "STUDENT_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Term Enrollment.STUDENT_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "TERM_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Term Enrollment.TERM_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Avg Credit Hours per Student",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Term Enrollment.Avg Credit Hours per Student",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Student Enrollment Count 1yr Ago",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Term Enrollment.Student Enrollment Count 1yr Ago",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Credit Hours Taken 1yr Ago",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Term Enrollment.Credit Hours Taken 1yr Ago",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Honors Student Count 1yr Ago",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Term Enrollment.Honors Student Count 1yr Ago",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Student Enrollment Count 1yr Ago Change",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Term Enrollment.Student Enrollment Count 1yr Ago Change",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Avg Credit Hours per Student 1yr Ago",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Term Enrollment.Avg Credit Hours per Student 1yr Ago",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Student Enrollment Count 1yr Ago Change %",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Term Enrollment.Student Enrollment Count 1yr Ago Change %",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Avg Credit Hours per Student 5yr Ago",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Term Enrollment.Avg Credit Hours per Student 5yr Ago",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Student Enrollment Count 5yr Ago",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Term Enrollment.Student Enrollment Count 5yr Ago",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Student Enrollment Count 5yr Ago Change %",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Term Enrollment.Student Enrollment Count 5yr Ago Change %",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Student Enrollment Count 5yr Ago Change",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Term Enrollment.Student Enrollment Count 5yr Ago Change",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Credit Hours Taken 5yr Ago",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Term Enrollment.Credit Hours Taken 5yr Ago",
+      "useLogicalColumnName" : true
+    } ]
+  }
+}

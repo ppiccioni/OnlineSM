@@ -1,0 +1,93 @@
+{
+  "physicalTable" : {
+    "name" : "HC_F_HIRING",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "DSYS_BATCH_ID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "DSYS_INSTANCE_ID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "DSYS_PROCESS_ID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "DATE_ID",
+      "dataType" : "VARCHAR",
+      "length" : 50,
+      "nullable" : false
+    }, {
+      "name" : "DEPARTMENT",
+      "dataType" : "VARCHAR",
+      "length" : 50,
+      "nullable" : false
+    }, {
+      "name" : "DURATION_AVG",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "ELIGIBILITY_1YR",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "ELIGIBILITY_2YR",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "ELIGIBILITY_6MO",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "JOB_DESCRIPTION",
+      "dataType" : "VARCHAR",
+      "length" : 50,
+      "nullable" : false
+    }, {
+      "name" : "OPEN_POSITION",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "POSITION_FILL_RATE",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    } ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    },
+    "joins" : [ {
+      "rightTable" : "physicalTable:Healthcare.CAT7.SCH7.HC_D_DEPARTMENTS",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:Healthcare.CAT7.SCH7.HC_F_HIRING.DEPARTMENT",
+        "rightColumn" : "physicalColumn:Healthcare.CAT7.SCH7.HC_D_DEPARTMENTS.DEPARTMENT"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:Healthcare.CAT7.SCH7.HC_D_JOBS",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:Healthcare.CAT7.SCH7.HC_F_HIRING.JOB_DESCRIPTION",
+        "rightColumn" : "physicalColumn:Healthcare.CAT7.SCH7.HC_D_JOBS.JOB_DESCRIPTION"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:Healthcare.CAT7.SCH7.HC_D_TIME",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:Healthcare.CAT7.SCH7.HC_F_HIRING.DATE_ID",
+        "rightColumn" : "physicalColumn:Healthcare.CAT7.SCH7.HC_D_TIME.DATE_ID"
+      } ]
+    } ]
+  }
+}

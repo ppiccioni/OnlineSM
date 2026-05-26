@@ -1,0 +1,14 @@
+{
+  "physicalTable": {
+    "name": "NYCT_PICKUP_DATE",
+    "sourceTable": "physicalTable:Taxi NYC.CAT9.CAT9.NYCT_TIME_DAY",
+    "caching": {
+      "enable": true
+    },
+    "additionalKeys": [
+      [
+        "DAY_DT"
+      ]
+    ]
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "presentationTable" : {
+    "name" : "Location",
+    "presentationColumns" : [ {
+      "name" : "City",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Location.City",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "COUNTRY_CD",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Location.COUNTRY_CD",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Country",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Location.Country",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "DSYS_BATCH_ID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Location.DSYS_BATCH_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_INSTANCE_ID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Location.DSYS_INSTANCE_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_PROCESS_ID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Location.DSYS_PROCESS_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Latitude",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Location.Latitude",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "LOCATION_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Location.LOCATION_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Longitude",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Location.Longitude",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Postal Code",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Location.Postal Code",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "STATE_CD",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Location.STATE_CD",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "State",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Location.State",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "USA City",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Location.USA City",
+      "useLogicalColumnName" : true
+    } ],
+    "hierarchies" : [ {
+      "name" : "Location Hierarchy",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:Student Analytics.Location",
+      "levels" : [ {
+        "name" : "All Locations",
+        "sourceLogicalLevel" : "logicalLevel:Student Analytics.Location.All Locations"
+      }, {
+        "name" : "Country",
+        "sourceLogicalLevel" : "logicalLevel:Student Analytics.Location.Country",
+        "displayColumn" : "presentationColumn:Student Analytics.Location.Country"
+      }, {
+        "name" : "State",
+        "sourceLogicalLevel" : "logicalLevel:Student Analytics.Location.State",
+        "displayColumn" : "presentationColumn:Student Analytics.Location.State"
+      }, {
+        "name" : "USA City",
+        "sourceLogicalLevel" : "logicalLevel:Student Analytics.Location.USA City",
+        "displayColumn" : "presentationColumn:Student Analytics.Location.USA City"
+      }, {
+        "name" : "Postal Code",
+        "sourceLogicalLevel" : "logicalLevel:Student Analytics.Location.Postal Code",
+        "displayColumn" : "presentationColumn:Student Analytics.Location.Postal Code"
+      } ]
+    } ]
+  }
+}

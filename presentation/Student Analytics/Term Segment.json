@@ -1,0 +1,108 @@
+{
+  "presentationTable" : {
+    "name" : "Term Segment",
+    "presentationColumns" : [ {
+      "name" : "Academic Year",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Term Segment.Academic Year",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "DSYS_BATCH_ID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Term Segment.DSYS_BATCH_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_INSTANCE_ID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Term Segment.DSYS_INSTANCE_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_PROCESS_ID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Term Segment.DSYS_PROCESS_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "TERM_CD",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Term Segment.TERM_CD",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "TERM_SEGMENT_CD",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Term Segment.TERM_SEGMENT_CD",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "TERM_SEGMENT_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Term Segment.TERM_SEGMENT_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "TERM_TYPE_CD",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Term Segment.TERM_TYPE_CD",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Term",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Term Segment.Term",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Term Segment",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Term Segment.Term Segment",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Term Segment Census1 Date",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Term Segment.Term Segment Census1 Date",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Term Segment Census2 Date",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Term Segment.Term Segment Census2 Date",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Term Segment End Date",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Term Segment.Term Segment End Date",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Term Segment Start Date",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Term Segment.Term Segment Start Date",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Term Type",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Term Segment.Term Type",
+      "useLogicalColumnName" : true
+    } ],
+    "hierarchies" : [ {
+      "name" : "Term Segment Hierarchy",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:Student Analytics.Term Segment",
+      "levels" : [ {
+        "name" : "All Term Segments",
+        "sourceLogicalLevel" : "logicalLevel:Student Analytics.Term Segment.All Term Segments"
+      }, {
+        "name" : "Academic Year",
+        "sourceLogicalLevel" : "logicalLevel:Student Analytics.Term Segment.Academic Year",
+        "displayColumn" : "presentationColumn:Student Analytics.Term Segment.Academic Year"
+      }, {
+        "name" : "Term",
+        "sourceLogicalLevel" : "logicalLevel:Student Analytics.Term Segment.Term",
+        "displayColumn" : "presentationColumn:Student Analytics.Term Segment.Term"
+      }, {
+        "name" : "Term Segment",
+        "sourceLogicalLevel" : "logicalLevel:Student Analytics.Term Segment.Term Segment",
+        "displayColumn" : "presentationColumn:Student Analytics.Term Segment.Term Segment"
+      } ]
+    } ]
+  }
+}

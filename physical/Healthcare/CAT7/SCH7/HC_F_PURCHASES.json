@@ -1,0 +1,177 @@
+{
+  "physicalTable" : {
+    "name" : "HC_F_PURCHASES",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "BUYER",
+      "dataType" : "VARCHAR",
+      "length" : 50,
+      "nullable" : false
+    }, {
+      "name" : "CONTRACT_QTY",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "CONTRACT_SPEND_AMT",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "CONTRACT_UNIT_PRICE",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "DSYS_BATCH_ID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "DSYS_INSTANCE_ID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "DSYS_PROCESS_ID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "DATE_ID",
+      "dataType" : "VARCHAR",
+      "length" : 50,
+      "nullable" : false
+    }, {
+      "name" : "DEPARTMENT",
+      "dataType" : "VARCHAR",
+      "length" : 50,
+      "nullable" : false
+    }, {
+      "name" : "ENTRY_TYPE",
+      "dataType" : "VARCHAR",
+      "length" : 50,
+      "nullable" : true
+    }, {
+      "name" : "INVOICE_NBR",
+      "dataType" : "VARCHAR",
+      "length" : 50,
+      "nullable" : true
+    }, {
+      "name" : "ITEM",
+      "dataType" : "VARCHAR",
+      "length" : 150,
+      "nullable" : false
+    }, {
+      "name" : "NON-CONTRACT_QTY",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "NON-CONTRACT_SPEND_AMT",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "NON-CONTRACT_UNIT_PRICE",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "PO_COUNT",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "PO_LINE_COUNT",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "PO_LINE_NBR",
+      "dataType" : "VARCHAR",
+      "length" : 50,
+      "nullable" : true
+    }, {
+      "name" : "PO_NBR",
+      "dataType" : "VARCHAR",
+      "length" : 50,
+      "nullable" : true
+    }, {
+      "name" : "PO_RELEASE_NBR",
+      "dataType" : "VARCHAR",
+      "length" : 50,
+      "nullable" : true
+    }, {
+      "name" : "PURCHASE_ORDER",
+      "dataType" : "VARCHAR",
+      "length" : 50,
+      "nullable" : false
+    }, {
+      "name" : "SUPPLIER",
+      "dataType" : "VARCHAR",
+      "length" : 50,
+      "nullable" : false
+    }, {
+      "name" : "TOTAL_QTY",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "TOTAL_SPEND_AMT",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "TOTAL_UNIT_PRICE",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "UOM",
+      "dataType" : "VARCHAR",
+      "length" : 50,
+      "nullable" : true
+    } ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    },
+    "joins" : [ {
+      "rightTable" : "physicalTable:Healthcare.CAT7.SCH7.HC_D_BUYERS",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:Healthcare.CAT7.SCH7.HC_F_PURCHASES.BUYER",
+        "rightColumn" : "physicalColumn:Healthcare.CAT7.SCH7.HC_D_BUYERS.BUYER"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:Healthcare.CAT7.SCH7.HC_D_DEPARTMENTS",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:Healthcare.CAT7.SCH7.HC_F_PURCHASES.DEPARTMENT",
+        "rightColumn" : "physicalColumn:Healthcare.CAT7.SCH7.HC_D_DEPARTMENTS.DEPARTMENT"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:Healthcare.CAT7.SCH7.HC_D_ITEMS",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:Healthcare.CAT7.SCH7.HC_F_PURCHASES.ITEM",
+        "rightColumn" : "physicalColumn:Healthcare.CAT7.SCH7.HC_D_ITEMS.ITEM"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:Healthcare.CAT7.SCH7.HC_D_SUPPLIERS",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:Healthcare.CAT7.SCH7.HC_F_PURCHASES.SUPPLIER",
+        "rightColumn" : "physicalColumn:Healthcare.CAT7.SCH7.HC_D_SUPPLIERS.SUPPLIER"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:Healthcare.CAT7.SCH7.HC_D_TIME",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:Healthcare.CAT7.SCH7.HC_F_PURCHASES.DATE_ID",
+        "rightColumn" : "physicalColumn:Healthcare.CAT7.SCH7.HC_D_TIME.DATE_ID"
+      } ]
+    } ]
+  }
+}

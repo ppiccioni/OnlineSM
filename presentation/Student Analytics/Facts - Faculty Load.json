@@ -1,0 +1,201 @@
+{
+  "presentationTable" : {
+    "name" : "Facts - Faculty Load",
+    "presentationColumns" : [ {
+      "name" : "ACADEMIC_ORG_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Faculty Load.ACADEMIC_ORG_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "CAMPUS_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Faculty Load.CAMPUS_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "COURSE_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Faculty Load.COURSE_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_BATCH_ID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Faculty Load.DSYS_BATCH_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_INSTANCE_ID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Faculty Load.DSYS_INSTANCE_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DSYS_PROCESS_ID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Faculty Load.DSYS_PROCESS_ID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "FACULTY_PROFILE_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Faculty Load.FACULTY_PROFILE_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "FACULTY_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Faculty Load.FACULTY_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Responsibility Pct",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Faculty Load.Responsibility Pct",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "ROW_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Faculty Load.ROW_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Section Credit Hours",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Faculty Load.Section Credit Hours",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "SECTION_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Faculty Load.SECTION_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "SNAPSHOT_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Faculty Load.SNAPSHOT_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Student Enrollment Count",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Faculty Load.Student Enrollment Count",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "TERM_SEGMENT_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Faculty Load.TERM_SEGMENT_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "TERM_WID",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Faculty Load.TERM_WID",
+      "useLogicalColumnName" : true,
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Responsibility Pct 5yr Ago",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Faculty Load.Responsibility Pct 5yr Ago",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Responsibility Pct 1yr Ago",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Faculty Load.Responsibility Pct 1yr Ago",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Section Credit Hours 1yr Ago",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Faculty Load.Section Credit Hours 1yr Ago",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Section Credit Hours 5yr Ago",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Faculty Load.Section Credit Hours 5yr Ago",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Student Enrollment Count 1yr Ago",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Faculty Load.Student Enrollment Count 1yr Ago",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Student Enrollment Count 5yr Ago",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Faculty Load.Student Enrollment Count 5yr Ago",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Section Credit Hours 1yr Ago Change %",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Faculty Load.Section Credit Hours 1yr Ago Change %",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Section Credit Hours 1yr Ago Change",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Faculty Load.Section Credit Hours 1yr Ago Change",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Section Credit Hours 5yr Ago Change",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Faculty Load.Section Credit Hours 5yr Ago Change",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Section Credit Hours 5yr Ago Change %",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Faculty Load.Section Credit Hours 5yr Ago Change %",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Student Enrollment Count 1yr Ago Change %",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Faculty Load.Student Enrollment Count 1yr Ago Change %",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Student Enrollment Count 5yr Ago Change",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Faculty Load.Student Enrollment Count 5yr Ago Change",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Student Enrollment Count 5yr Ago Change %",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Faculty Load.Student Enrollment Count 5yr Ago Change %",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Student Enrollment Count 1yr Ago Change",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Faculty Load.Student Enrollment Count 1yr Ago Change",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Faculty Count",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Faculty Load.Faculty Count",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Course Count",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Faculty Load.Course Count",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Faculty Load 5yr Ago Change %",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Faculty Load.Faculty Load 5yr Ago Change %",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Faculty Load 1yr Ago Change %",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Faculty Load.Faculty Load 1yr Ago Change %",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Faculty Load 5yr Ago",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Faculty Load.Faculty Load 5yr Ago",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Faculty Load 1yr Ago",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Faculty Load.Faculty Load 1yr Ago",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Faculty Load",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Faculty Load.Faculty Load",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Faculty Load 1yr Ago Change",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Faculty Load.Faculty Load 1yr Ago Change",
+      "useLogicalColumnName" : true
+    }, {
+      "name" : "Faculty Load 5yr Ago Change",
+      "sourceLogicalColumn" : "logicalColumn:Student Analytics.Facts - Faculty Load.Faculty Load 5yr Ago Change",
+      "useLogicalColumnName" : true
+    } ]
+  }
+}

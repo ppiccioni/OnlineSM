@@ -1,0 +1,27 @@
+{
+  "physicalTable" : {
+    "name" : "CLOUD_UT_DASHBOARDS",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "DASHBOARD",
+      "dataType" : "VARCHAR",
+      "length" : 50,
+      "nullable" : true
+    }, {
+      "name" : "DBOARD_PAGE",
+      "dataType" : "VARCHAR",
+      "length" : 50,
+      "nullable" : true
+    }, {
+      "name" : "CONNECTOR",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    } ],
+    "additionalKeys" : [ [ "DASHBOARD" ], [ "CONNECTOR" ] ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

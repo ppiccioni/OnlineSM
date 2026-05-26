@@ -1,0 +1,22 @@
+{
+  "initBlock" : {
+    "name" : "Binning_Min",
+    "type" : "SESSION",
+    "connectionPool" : "connectionPool:SaaS.VCP",
+    "selectStatements" : [ {
+      "databaseType" : "DEFAULT",
+      "query" : "Select 0 from Dual"
+    } ],
+    "variables" : [ {
+      "name" : "Binning_Min",
+      "description" : "RAAS_",
+      "value" : "0",
+      "enableUsersToSetValue" : false,
+      "securitySensitive" : false
+    } ],
+    "disable" : false,
+    "queryReturnsVariableNamesAndValues" : false,
+    "allowDeferredExecution" : true,
+    "cacheQueryResult" : true
+  }
+}
