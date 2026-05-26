@@ -1,0 +1,103 @@
+{
+  "presentationTable": {
+    "name": "Return KPIs",
+    "presentationColumns": [
+      {
+        "name": "Return ID",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Return KPIs.Return ID",
+        "useLogicalColumnName": true,
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
+      },
+      {
+        "name": "Sales Line ID",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Return KPIs.Sales Line ID",
+        "useLogicalColumnName": true,
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
+      },
+      {
+        "name": "Return Date Key",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Return KPIs.Return Date Key",
+        "useLogicalColumnName": true,
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
+      },
+      {
+        "name": "Store ID",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Return KPIs.Store ID",
+        "useLogicalColumnName": true,
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
+      },
+      {
+        "name": "Customer ID",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Return KPIs.Customer ID",
+        "useLogicalColumnName": true,
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
+      },
+      {
+        "name": "SKU ID",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Return KPIs.SKU ID",
+        "useLogicalColumnName": true,
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
+      },
+      {
+        "name": "Channel ID",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Return KPIs.Channel ID",
+        "useLogicalColumnName": true,
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
+      },
+      {
+        "name": "Return Reason",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Return KPIs.Return Reason",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Returned Units",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Return KPIs.Returned Units",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Refund Amount",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Return KPIs.Refund Amount",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Average Days To Return",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Return KPIs.Average Days To Return",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Scenario Tag",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Return KPIs.Scenario Tag",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Return Line Count",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Return KPIs.Return Line Count",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Average Refund Amount",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Return KPIs.Average Refund Amount",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Returned Units Per Return",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Return KPIs.Returned Units Per Return",
+        "useLogicalColumnName": true
+      }
+    ]
+  }
+}
