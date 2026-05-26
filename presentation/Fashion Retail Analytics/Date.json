@@ -57,6 +57,44 @@
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Date.Is Holiday Peak",
         "useLogicalColumnName": true
       }
+    ],
+    "hierarchies": [
+      {
+        "name": "Calendar",
+        "description": "default hierarchy",
+        "sourceLogicalTable": "logicalTable:Fashion Retail DW.Date",
+        "levels": [
+          {
+            "name": "Total",
+            "sourceLogicalLevel": "logicalLevel:Fashion Retail DW.Date.Total"
+          },
+          {
+            "name": "Year",
+            "sourceLogicalLevel": "logicalLevel:Fashion Retail DW.Date.Year",
+            "displayColumn": "presentationColumn:Fashion Retail Analytics.Date.Calendar Year"
+          },
+          {
+            "name": "Quarter",
+            "sourceLogicalLevel": "logicalLevel:Fashion Retail DW.Date.Quarter",
+            "displayColumn": "presentationColumn:Fashion Retail Analytics.Date.Quarter Number"
+          },
+          {
+            "name": "Month",
+            "sourceLogicalLevel": "logicalLevel:Fashion Retail DW.Date.Month",
+            "displayColumn": "presentationColumn:Fashion Retail Analytics.Date.Month Name"
+          },
+          {
+            "name": "Week",
+            "sourceLogicalLevel": "logicalLevel:Fashion Retail DW.Date.Week",
+            "displayColumn": "presentationColumn:Fashion Retail Analytics.Date.Week Start Date"
+          },
+          {
+            "name": "Detail",
+            "sourceLogicalLevel": "logicalLevel:Fashion Retail DW.Date.Detail",
+            "displayColumn": "presentationColumn:Fashion Retail Analytics.Date.Calendar Date"
+          }
+        ]
+      }
     ]
   }
 }

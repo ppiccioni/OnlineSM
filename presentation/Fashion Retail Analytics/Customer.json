@@ -52,6 +52,34 @@
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Customer.Is Active",
         "useLogicalColumnName": true
       }
+    ],
+    "hierarchies": [
+      {
+        "name": "Customer",
+        "description": "default hierarchy",
+        "sourceLogicalTable": "logicalTable:Fashion Retail DW.Customer",
+        "levels": [
+          {
+            "name": "Total",
+            "sourceLogicalLevel": "logicalLevel:Fashion Retail DW.Customer.Total"
+          },
+          {
+            "name": "Country",
+            "sourceLogicalLevel": "logicalLevel:Fashion Retail DW.Customer.Country",
+            "displayColumn": "presentationColumn:Fashion Retail Analytics.Customer.Home Country"
+          },
+          {
+            "name": "Segment",
+            "sourceLogicalLevel": "logicalLevel:Fashion Retail DW.Customer.Segment",
+            "displayColumn": "presentationColumn:Fashion Retail Analytics.Customer.Loyalty Tier"
+          },
+          {
+            "name": "Detail",
+            "sourceLogicalLevel": "logicalLevel:Fashion Retail DW.Customer.Detail",
+            "displayColumn": "presentationColumn:Fashion Retail Analytics.Customer.Customer Code"
+          }
+        ]
+      }
     ]
   }
 }

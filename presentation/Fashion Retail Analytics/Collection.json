@@ -52,6 +52,34 @@
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection.Story",
         "useLogicalColumnName": true
       }
+    ],
+    "hierarchies": [
+      {
+        "name": "Collection",
+        "description": "default hierarchy",
+        "sourceLogicalTable": "logicalTable:Fashion Retail DW.Collection",
+        "levels": [
+          {
+            "name": "Total",
+            "sourceLogicalLevel": "logicalLevel:Fashion Retail DW.Collection.Total"
+          },
+          {
+            "name": "Year",
+            "sourceLogicalLevel": "logicalLevel:Fashion Retail DW.Collection.Year",
+            "displayColumn": "presentationColumn:Fashion Retail Analytics.Collection.Collection Year"
+          },
+          {
+            "name": "Season",
+            "sourceLogicalLevel": "logicalLevel:Fashion Retail DW.Collection.Season",
+            "displayColumn": "presentationColumn:Fashion Retail Analytics.Collection.Season Name"
+          },
+          {
+            "name": "Detail",
+            "sourceLogicalLevel": "logicalLevel:Fashion Retail DW.Collection.Detail",
+            "displayColumn": "presentationColumn:Fashion Retail Analytics.Collection.Collection Name"
+          }
+        ]
+      }
     ]
   }
 }
