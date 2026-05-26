@@ -1,0 +1,37 @@
+{
+  "presentationTable": {
+    "name": "Promotion",
+    "presentationColumns": [
+      {
+        "name": "Promotion Code",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Promotion.Promotion Code",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Promotion Name",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Promotion.Promotion Name",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Promotion Type",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Promotion.Promotion Type",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Markdown Depth Pct",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Promotion.Markdown Depth Pct",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Campaign Family",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Promotion.Campaign Family",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Is Clearance",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Promotion.Is Clearance",
+        "useLogicalColumnName": true
+      }
+    ]
+  }
+}

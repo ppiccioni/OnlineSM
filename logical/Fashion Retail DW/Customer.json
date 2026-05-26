@@ -1,0 +1,311 @@
+{
+  "logicalTable": {
+    "name": "Customer",
+    "type": "DIMENSION",
+    "primaryKey": [
+      "Customer ID"
+    ],
+    "logicalColumns": [
+      {
+        "name": "Customer ID",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "DIM_CUSTOMER_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_CUSTOMER.CUSTOMER_ID"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Detail"
+      },
+      {
+        "name": "Customer Code",
+        "dataType": "VARCHAR",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "DIM_CUSTOMER_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_CUSTOMER.CUSTOMER_CODE"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Detail"
+      },
+      {
+        "name": "Home Country",
+        "dataType": "VARCHAR",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "DIM_CUSTOMER_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_CUSTOMER.HOME_COUNTRY"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Country"
+      },
+      {
+        "name": "Age Band",
+        "dataType": "VARCHAR",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "DIM_CUSTOMER_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_CUSTOMER.AGE_BAND"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Segment"
+      },
+      {
+        "name": "Gender Affinity",
+        "dataType": "VARCHAR",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "DIM_CUSTOMER_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_CUSTOMER.GENDER_AFFINITY"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Segment"
+      },
+      {
+        "name": "Loyalty Tier",
+        "dataType": "VARCHAR",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "DIM_CUSTOMER_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_CUSTOMER.LOYALTY_TIER"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Segment"
+      },
+      {
+        "name": "Acquisition Channel",
+        "dataType": "VARCHAR",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "DIM_CUSTOMER_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_CUSTOMER.ACQUISITION_CHANNEL"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Segment"
+      },
+      {
+        "name": "Signup Date",
+        "dataType": "DATE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "DIM_CUSTOMER_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_CUSTOMER.SIGNUP_DATE"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Detail"
+      },
+      {
+        "name": "Discount Sensitivity",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "DIM_CUSTOMER_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_CUSTOMER.DISCOUNT_SENSITIVITY"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Detail"
+      },
+      {
+        "name": "Style Affinity",
+        "dataType": "VARCHAR",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "DIM_CUSTOMER_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_CUSTOMER.STYLE_AFFINITY"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Segment"
+      },
+      {
+        "name": "Is Active",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "DIM_CUSTOMER_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_CUSTOMER.IS_ACTIVE"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Detail"
+      }
+    ],
+    "logicalTableSources": [
+      {
+        "name": "DIM_CUSTOMER_LTS",
+        "disable": false,
+        "tableMapping": {
+          "tables": [
+            "physicalTable:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_CUSTOMER"
+          ]
+        },
+        "combineWithOtherFragments": false,
+        "enableFragmentSelection": false,
+        "distinctValues": false
+      }
+    ],
+    "hierarchyType": "LEVEL_BASED",
+    "levelBasedHierarchy": {
+      "defaultRootLevel": "Total",
+      "ragged": false,
+      "skipped": false,
+      "logicalLevels": [
+        {
+          "name": "Total",
+          "numberOfElements": 1,
+          "grandTotalLevel": true,
+          "disableAggregateToHigherLevel": false
+        },
+        {
+          "name": "Country",
+          "numberOfElements": 20,
+          "grandTotalLevel": false,
+          "disableAggregateToHigherLevel": false,
+          "primaryKey": [
+            "Home Country"
+          ],
+          "displayKey": "Home Country",
+          "chronologicalKey": [
+            "Home Country"
+          ]
+        },
+        {
+          "name": "Segment",
+          "numberOfElements": 100,
+          "grandTotalLevel": false,
+          "disableAggregateToHigherLevel": false,
+          "primaryKey": [
+            "Loyalty Tier",
+            "Style Affinity"
+          ],
+          "displayKey": "Loyalty Tier",
+          "chronologicalKey": [
+            "Loyalty Tier"
+          ]
+        },
+        {
+          "name": "Detail",
+          "numberOfElements": 100000,
+          "grandTotalLevel": false,
+          "disableAggregateToHigherLevel": false,
+          "primaryKey": [
+            "Customer ID"
+          ],
+          "displayKey": "Customer Code",
+          "chronologicalKey": [
+            "Customer ID"
+          ]
+        }
+      ],
+      "logicalHierarchies": [
+        {
+          "name": "Customer",
+          "description": "default hierarchy",
+          "levels": [
+            "Total",
+            "Country",
+            "Segment",
+            "Detail"
+          ]
+        }
+      ]
+    }
+  }
+}

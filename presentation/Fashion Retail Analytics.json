@@ -1,0 +1,36 @@
+{
+  "subjectArea": {
+    "name": "Fashion Retail Analytics",
+    "sourceBusinessModel": "businessModel:Fashion Retail DW",
+    "tableOrder": [
+      {
+        "name": "presentationTable:Fashion Retail Analytics.Sales KPIs"
+      },
+      {
+        "name": "presentationTable:Fashion Retail Analytics.Date"
+      },
+      {
+        "name": "presentationTable:Fashion Retail Analytics.Collection"
+      },
+      {
+        "name": "presentationTable:Fashion Retail Analytics.Product"
+      },
+      {
+        "name": "presentationTable:Fashion Retail Analytics.Store"
+      },
+      {
+        "name": "presentationTable:Fashion Retail Analytics.Customer"
+      },
+      {
+        "name": "presentationTable:Fashion Retail Analytics.Channel"
+      },
+      {
+        "name": "presentationTable:Fashion Retail Analytics.Promotion"
+      }
+    ],
+    "localization": {
+      "localizationKey": "Fashion Retail Analytics",
+      "nameVariable": "Fashion Retail Analytics"
+    }
+  }
+}

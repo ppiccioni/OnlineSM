@@ -1,0 +1,42 @@
+{
+  "physicalTable": {
+    "name": "DIM_CHANNEL",
+    "sourceType": "TABLE",
+    "physicalColumns": [
+      {
+        "name": "CHANNEL_ID",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
+        "name": "CHANNEL_NAME",
+        "dataType": "VARCHAR",
+        "length": 40,
+        "nullable": true
+      },
+      {
+        "name": "CHANNEL_GROUP",
+        "dataType": "VARCHAR",
+        "length": 40,
+        "nullable": true
+      },
+      {
+        "name": "RETURN_BIAS",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
+        "name": "MARKDOWN_BIAS",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      }
+    ],
+    "caching": {
+      "enable": true,
+      "expiryTime": 0
+    }
+  }
+}

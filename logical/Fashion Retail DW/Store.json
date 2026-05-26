@@ -1,0 +1,427 @@
+{
+  "logicalTable": {
+    "name": "Store",
+    "type": "DIMENSION",
+    "primaryKey": [
+      "Store ID"
+    ],
+    "logicalColumns": [
+      {
+        "name": "Store ID",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "DIM_STORE_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_STORE.STORE_ID"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Store"
+      },
+      {
+        "name": "Store Code",
+        "dataType": "VARCHAR",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "DIM_STORE_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_STORE.STORE_CODE"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Store"
+      },
+      {
+        "name": "Store Name",
+        "dataType": "VARCHAR",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "DIM_STORE_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_STORE.STORE_NAME"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Store"
+      },
+      {
+        "name": "Country",
+        "dataType": "VARCHAR",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "DIM_STORE_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_STORE.COUNTRY"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Country"
+      },
+      {
+        "name": "Region",
+        "dataType": "VARCHAR",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "DIM_STORE_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_STORE.REGION"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Region"
+      },
+      {
+        "name": "City",
+        "dataType": "VARCHAR",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "DIM_STORE_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_STORE.CITY"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "City"
+      },
+      {
+        "name": "Store Format",
+        "dataType": "VARCHAR",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "DIM_STORE_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_STORE.STORE_FORMAT"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Store"
+      },
+      {
+        "name": "Location Type",
+        "dataType": "VARCHAR",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "DIM_STORE_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_STORE.LOCATION_TYPE"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Store"
+      },
+      {
+        "name": "Opening Date",
+        "dataType": "DATE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "DIM_STORE_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_STORE.OPENING_DATE"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Store"
+      },
+      {
+        "name": "Selling Area SQM",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "DIM_STORE_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_STORE.SELLING_AREA_SQM"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Store"
+      },
+      {
+        "name": "Climate Zone",
+        "dataType": "VARCHAR",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "DIM_STORE_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_STORE.CLIMATE_ZONE"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Store"
+      },
+      {
+        "name": "Affluence Index",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "DIM_STORE_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_STORE.AFFLUENCE_INDEX"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Store"
+      },
+      {
+        "name": "Is Flagship",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "DIM_STORE_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_STORE.IS_FLAGSHIP"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Store"
+      },
+      {
+        "name": "Is Outlet",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "DIM_STORE_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_STORE.IS_OUTLET"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Store"
+      },
+      {
+        "name": "Latitude",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "DIM_STORE_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_STORE.LATITUDE"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Store"
+      },
+      {
+        "name": "Longitude",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "DIM_STORE_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_STORE.LONGITUDE"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Store"
+      }
+    ],
+    "logicalTableSources": [
+      {
+        "name": "DIM_STORE_LTS",
+        "disable": false,
+        "tableMapping": {
+          "tables": [
+            "physicalTable:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_STORE"
+          ]
+        },
+        "combineWithOtherFragments": false,
+        "enableFragmentSelection": false,
+        "distinctValues": false
+      }
+    ],
+    "hierarchyType": "LEVEL_BASED",
+    "levelBasedHierarchy": {
+      "defaultRootLevel": "Total",
+      "ragged": false,
+      "skipped": false,
+      "logicalLevels": [
+        {
+          "name": "Total",
+          "numberOfElements": 1,
+          "grandTotalLevel": true,
+          "disableAggregateToHigherLevel": false
+        },
+        {
+          "name": "Country",
+          "numberOfElements": 6,
+          "grandTotalLevel": false,
+          "disableAggregateToHigherLevel": false,
+          "primaryKey": [
+            "Country"
+          ],
+          "displayKey": "Country",
+          "chronologicalKey": [
+            "Country"
+          ]
+        },
+        {
+          "name": "Region",
+          "numberOfElements": 20,
+          "grandTotalLevel": false,
+          "disableAggregateToHigherLevel": false,
+          "primaryKey": [
+            "Country",
+            "Region"
+          ],
+          "displayKey": "Region",
+          "chronologicalKey": [
+            "Region"
+          ]
+        },
+        {
+          "name": "City",
+          "numberOfElements": 50,
+          "grandTotalLevel": false,
+          "disableAggregateToHigherLevel": false,
+          "primaryKey": [
+            "Country",
+            "Region",
+            "City"
+          ],
+          "displayKey": "City",
+          "chronologicalKey": [
+            "City"
+          ]
+        },
+        {
+          "name": "Store",
+          "numberOfElements": 80,
+          "grandTotalLevel": false,
+          "disableAggregateToHigherLevel": false,
+          "primaryKey": [
+            "Store ID"
+          ],
+          "displayKey": "Store Name",
+          "chronologicalKey": [
+            "Store ID"
+          ]
+        }
+      ],
+      "logicalHierarchies": [
+        {
+          "name": "Store",
+          "description": "default hierarchy",
+          "levels": [
+            "Total",
+            "Country",
+            "Region",
+            "City",
+            "Store"
+          ]
+        }
+      ]
+    }
+  }
+}

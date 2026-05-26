@@ -1,0 +1,57 @@
+{
+  "presentationTable": {
+    "name": "Customer",
+    "presentationColumns": [
+      {
+        "name": "Customer Code",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Customer.Customer Code",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Home Country",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Customer.Home Country",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Age Band",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Customer.Age Band",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Gender Affinity",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Customer.Gender Affinity",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Loyalty Tier",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Customer.Loyalty Tier",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Acquisition Channel",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Customer.Acquisition Channel",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Signup Date",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Customer.Signup Date",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Discount Sensitivity",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Customer.Discount Sensitivity",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Style Affinity",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Customer.Style Affinity",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Is Active",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Customer.Is Active",
+        "useLogicalColumnName": true
+      }
+    ]
+  }
+}
