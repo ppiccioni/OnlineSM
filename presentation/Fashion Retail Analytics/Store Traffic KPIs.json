@@ -1,0 +1,61 @@
+{
+  "presentationTable": {
+    "name": "Store Traffic KPIs",
+    "presentationColumns": [
+      {
+        "name": "Date Key",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Store Traffic KPIs.Date Key",
+        "useLogicalColumnName": true,
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
+      },
+      {
+        "name": "Store ID",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Store Traffic KPIs.Store ID",
+        "useLogicalColumnName": true,
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
+      },
+      {
+        "name": "Footfall Count",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Store Traffic KPIs.Footfall Count",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Traffic Transaction Count",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Store Traffic KPIs.Traffic Transaction Count",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Traffic Conversion Rate",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Store Traffic KPIs.Traffic Conversion Rate",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Conversion Rate Raw",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Store Traffic KPIs.Conversion Rate Raw",
+        "useLogicalColumnName": true,
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
+      },
+      {
+        "name": "Average Dwell Minutes",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Store Traffic KPIs.Average Dwell Minutes",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Average Weather Impact Index",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Store Traffic KPIs.Average Weather Impact Index",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Local Event Day Count",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Store Traffic KPIs.Local Event Day Count",
+        "useLogicalColumnName": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "logicalTable": {
+    "name": "Store Traffic KPIs",
+    "description": "Daily store traffic measures from FASHIONDW.FACT_STORE_TRAFFIC_DAILY.",
+    "type": "FACT",
+    "logicalColumns": [
+      {
+        "name": "Date Key",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "FACT_STORE_TRAFFIC_DAILY_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.FACT_STORE_TRAFFIC_DAILY.DATE_KEY"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Store ID",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "FACT_STORE_TRAFFIC_DAILY_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.FACT_STORE_TRAFFIC_DAILY.STORE_ID"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Footfall Count",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "FACT_STORE_TRAFFIC_DAILY_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.FACT_STORE_TRAFFIC_DAILY.FOOTFALL_COUNT"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        }
+      },
+      {
+        "name": "Traffic Transaction Count",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "FACT_STORE_TRAFFIC_DAILY_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.FACT_STORE_TRAFFIC_DAILY.TRANSACTION_COUNT"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        }
+      },
+      {
+        "name": "Conversion Rate Raw",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "FACT_STORE_TRAFFIC_DAILY_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.FACT_STORE_TRAFFIC_DAILY.CONVERSION_RATE"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "AVG"
+        }
+      },
+      {
+        "name": "Average Dwell Minutes",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "FACT_STORE_TRAFFIC_DAILY_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.FACT_STORE_TRAFFIC_DAILY.AVG_DWELL_MINUTES"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "AVG"
+        }
+      },
+      {
+        "name": "Average Weather Impact Index",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "FACT_STORE_TRAFFIC_DAILY_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.FACT_STORE_TRAFFIC_DAILY.WEATHER_IMPACT_INDEX"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "AVG"
+        }
+      },
+      {
+        "name": "Local Event Day Count",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "FACT_STORE_TRAFFIC_DAILY_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.FACT_STORE_TRAFFIC_DAILY.LOCAL_EVENT_FLAG"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        }
+      },
+      {
+        "name": "Traffic Conversion Rate",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "expressionTemplate": "CASE WHEN %2 = 0 THEN 0 ELSE %1 / %2 * 100 END",
+            "expressionObjects": [
+              "logicalColumn:Fashion Retail DW.Store Traffic KPIs.Traffic Transaction Count",
+              "logicalColumn:Fashion Retail DW.Store Traffic KPIs.Footfall Count"
+            ]
+          }
+        }
+      }
+    ],
+    "logicalTableSources": [
+      {
+        "name": "FACT_STORE_TRAFFIC_DAILY_LTS",
+        "disable": false,
+        "tableMapping": {
+          "tables": [
+            "physicalTable:FashionDW.CAT_FASHIONDW.FASHIONDW.FACT_STORE_TRAFFIC_DAILY"
+          ]
+        },
+        "combineWithOtherFragments": false,
+        "enableFragmentSelection": false,
+        "distinctValues": false
+      }
+    ],
+    "joins": [
+      {
+        "rightTable": "logicalTable:Fashion Retail DW.Date",
+        "joinType": "INNER",
+        "cardinality": "MANY_TO_ZERO_OR_ONE"
+      },
+      {
+        "rightTable": "logicalTable:Fashion Retail DW.Store",
+        "joinType": "INNER",
+        "cardinality": "MANY_TO_ZERO_OR_ONE"
+      }
+    ]
+  }
+}

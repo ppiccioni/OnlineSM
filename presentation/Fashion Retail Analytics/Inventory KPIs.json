@@ -1,0 +1,94 @@
+{
+  "presentationTable": {
+    "name": "Inventory KPIs",
+    "presentationColumns": [
+      {
+        "name": "Snapshot Week Start Date",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Inventory KPIs.Snapshot Week Start Date",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Date Key",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Inventory KPIs.Date Key",
+        "useLogicalColumnName": true,
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
+      },
+      {
+        "name": "Store ID",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Inventory KPIs.Store ID",
+        "useLogicalColumnName": true,
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
+      },
+      {
+        "name": "SKU ID",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Inventory KPIs.SKU ID",
+        "useLogicalColumnName": true,
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
+      },
+      {
+        "name": "Collection ID",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Inventory KPIs.Collection ID",
+        "useLogicalColumnName": true,
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
+      },
+      {
+        "name": "On Hand Units",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Inventory KPIs.On Hand Units",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Available Units",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Inventory KPIs.Available Units",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Reserved Units",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Inventory KPIs.Reserved Units",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Stockout Count",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Inventory KPIs.Stockout Count",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Inventory Value At Cost",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Inventory KPIs.Inventory Value At Cost",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Average Weeks Of Supply",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Inventory KPIs.Average Weeks Of Supply",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Average Overstock Risk Score",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Inventory KPIs.Average Overstock Risk Score",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Average Stockout Risk Score",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Inventory KPIs.Average Stockout Risk Score",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Available Unit Share",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Inventory KPIs.Available Unit Share",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Scenario Tag",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Inventory KPIs.Scenario Tag",
+        "useLogicalColumnName": true
+      }
+    ]
+  }
+}

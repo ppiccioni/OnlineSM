@@ -1,0 +1,350 @@
+{
+  "logicalTable": {
+    "name": "Inventory KPIs",
+    "description": "Weekly store-SKU inventory measures from FASHIONDW.FACT_INVENTORY_SNAPSHOT_WEEKLY.",
+    "type": "FACT",
+    "logicalColumns": [
+      {
+        "name": "Snapshot Week Start Date",
+        "dataType": "DATE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "FACT_INVENTORY_SNAPSHOT_WEEKLY_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.FACT_INVENTORY_SNAPSHOT_WEEKLY.SNAPSHOT_WEEK_START_DATE"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Date Key",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "FACT_INVENTORY_SNAPSHOT_WEEKLY_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.FACT_INVENTORY_SNAPSHOT_WEEKLY.DATE_KEY"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Store ID",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "FACT_INVENTORY_SNAPSHOT_WEEKLY_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.FACT_INVENTORY_SNAPSHOT_WEEKLY.STORE_ID"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "SKU ID",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "FACT_INVENTORY_SNAPSHOT_WEEKLY_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.FACT_INVENTORY_SNAPSHOT_WEEKLY.SKU_ID"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Collection ID",
+        "dataType": "VARCHAR",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "FACT_INVENTORY_SNAPSHOT_WEEKLY_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.FACT_INVENTORY_SNAPSHOT_WEEKLY.COLLECTION_ID"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "On Hand Units",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "FACT_INVENTORY_SNAPSHOT_WEEKLY_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.FACT_INVENTORY_SNAPSHOT_WEEKLY.ON_HAND_UNITS"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        }
+      },
+      {
+        "name": "Available Units",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "FACT_INVENTORY_SNAPSHOT_WEEKLY_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.FACT_INVENTORY_SNAPSHOT_WEEKLY.AVAILABLE_UNITS"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        }
+      },
+      {
+        "name": "Reserved Units",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "FACT_INVENTORY_SNAPSHOT_WEEKLY_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.FACT_INVENTORY_SNAPSHOT_WEEKLY.RESERVED_UNITS"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        }
+      },
+      {
+        "name": "Stockout Count",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "FACT_INVENTORY_SNAPSHOT_WEEKLY_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.FACT_INVENTORY_SNAPSHOT_WEEKLY.STOCKOUT_FLAG"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        }
+      },
+      {
+        "name": "Inventory Value At Cost",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "FACT_INVENTORY_SNAPSHOT_WEEKLY_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.FACT_INVENTORY_SNAPSHOT_WEEKLY.INVENTORY_VALUE_AT_COST"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        }
+      },
+      {
+        "name": "Average Weeks Of Supply",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "FACT_INVENTORY_SNAPSHOT_WEEKLY_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.FACT_INVENTORY_SNAPSHOT_WEEKLY.WEEKS_OF_SUPPLY"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "AVG"
+        }
+      },
+      {
+        "name": "Average Overstock Risk Score",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "FACT_INVENTORY_SNAPSHOT_WEEKLY_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.FACT_INVENTORY_SNAPSHOT_WEEKLY.OVERSTOCK_RISK_SCORE"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "AVG"
+        }
+      },
+      {
+        "name": "Average Stockout Risk Score",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "FACT_INVENTORY_SNAPSHOT_WEEKLY_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.FACT_INVENTORY_SNAPSHOT_WEEKLY.STOCKOUT_RISK_SCORE"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "AVG"
+        }
+      },
+      {
+        "name": "Scenario Tag",
+        "dataType": "VARCHAR",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "FACT_INVENTORY_SNAPSHOT_WEEKLY_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.FACT_INVENTORY_SNAPSHOT_WEEKLY.SCENARIO_TAG"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Available Unit Share",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "expressionTemplate": "CASE WHEN %2 = 0 THEN 0 ELSE %1 / %2 * 100 END",
+            "expressionObjects": [
+              "logicalColumn:Fashion Retail DW.Inventory KPIs.Available Units",
+              "logicalColumn:Fashion Retail DW.Inventory KPIs.On Hand Units"
+            ]
+          }
+        }
+      }
+    ],
+    "logicalTableSources": [
+      {
+        "name": "FACT_INVENTORY_SNAPSHOT_WEEKLY_LTS",
+        "disable": false,
+        "tableMapping": {
+          "tables": [
+            "physicalTable:FashionDW.CAT_FASHIONDW.FASHIONDW.FACT_INVENTORY_SNAPSHOT_WEEKLY"
+          ]
+        },
+        "combineWithOtherFragments": false,
+        "enableFragmentSelection": false,
+        "distinctValues": false
+      }
+    ],
+    "joins": [
+      {
+        "rightTable": "logicalTable:Fashion Retail DW.Date",
+        "joinType": "INNER",
+        "cardinality": "MANY_TO_ZERO_OR_ONE"
+      },
+      {
+        "rightTable": "logicalTable:Fashion Retail DW.Store",
+        "joinType": "INNER",
+        "cardinality": "MANY_TO_ZERO_OR_ONE"
+      },
+      {
+        "rightTable": "logicalTable:Fashion Retail DW.Product",
+        "joinType": "INNER",
+        "cardinality": "MANY_TO_ZERO_OR_ONE"
+      },
+      {
+        "rightTable": "logicalTable:Fashion Retail DW.Collection",
+        "joinType": "INNER",
+        "cardinality": "MANY_TO_ZERO_OR_ONE"
+      }
+    ]
+  }
+}

@@ -1,0 +1,136 @@
+{
+  "physicalTable": {
+    "name": "FACT_RETURNS",
+    "sourceType": "TABLE",
+    "physicalColumns": [
+      {
+        "name": "RETURN_ID",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
+        "name": "SALES_LINE_ID",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
+        "name": "RETURN_DATE_KEY",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
+        "name": "STORE_ID",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
+        "name": "CUSTOMER_ID",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
+        "name": "SKU_ID",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
+        "name": "CHANNEL_ID",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
+        "name": "RETURN_REASON",
+        "dataType": "VARCHAR",
+        "length": 80,
+        "nullable": true
+      },
+      {
+        "name": "RETURNED_UNITS",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
+        "name": "REFUND_AMOUNT",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
+        "name": "DAYS_TO_RETURN",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
+        "name": "SCENARIO_TAG",
+        "dataType": "VARCHAR",
+        "length": 80,
+        "nullable": true
+      }
+    ],
+    "caching": {
+      "enable": true,
+      "expiryTime": 0
+    },
+    "joins": [
+      {
+        "rightTable": "physicalTable:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_DATE",
+        "useJoinExpression": false,
+        "joinConditions": [
+          {
+            "leftColumn": "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.FACT_RETURNS.RETURN_DATE_KEY",
+            "rightColumn": "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_DATE.DATE_KEY"
+          }
+        ]
+      },
+      {
+        "rightTable": "physicalTable:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_STORE",
+        "useJoinExpression": false,
+        "joinConditions": [
+          {
+            "leftColumn": "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.FACT_RETURNS.STORE_ID",
+            "rightColumn": "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_STORE.STORE_ID"
+          }
+        ]
+      },
+      {
+        "rightTable": "physicalTable:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_CUSTOMER",
+        "useJoinExpression": false,
+        "joinConditions": [
+          {
+            "leftColumn": "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.FACT_RETURNS.CUSTOMER_ID",
+            "rightColumn": "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_CUSTOMER.CUSTOMER_ID"
+          }
+        ]
+      },
+      {
+        "rightTable": "physicalTable:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_PRODUCT",
+        "useJoinExpression": false,
+        "joinConditions": [
+          {
+            "leftColumn": "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.FACT_RETURNS.SKU_ID",
+            "rightColumn": "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_PRODUCT.SKU_ID"
+          }
+        ]
+      },
+      {
+        "rightTable": "physicalTable:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_CHANNEL",
+        "useJoinExpression": false,
+        "joinConditions": [
+          {
+            "leftColumn": "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.FACT_RETURNS.CHANNEL_ID",
+            "rightColumn": "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_CHANNEL.CHANNEL_ID"
+          }
+        ]
+      }
+    ]
+  }
+}
