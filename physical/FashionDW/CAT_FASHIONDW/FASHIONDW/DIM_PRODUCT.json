@@ -122,6 +122,12 @@
         "dataType": "DOUBLE",
         "length": 22,
         "nullable": true
+      },
+      {
+        "name": "STYLE_DESCRIPTION",
+        "dataType": "VARCHAR",
+        "length": 160,
+        "nullable": true
       }
     ],
     "caching": {

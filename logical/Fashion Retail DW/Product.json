@@ -107,6 +107,26 @@
         "logicalLevel": "SKU"
       },
       {
+        "name": "Style Description",
+        "dataType": "VARCHAR",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "DIM_PRODUCT_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_PRODUCT.STYLE_DESCRIPTION"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Style"
+      },
+      {
         "name": "Department",
         "dataType": "VARCHAR",
         "writeable": false,
@@ -483,7 +503,7 @@
           "primaryKey": [
             "Style ID"
           ],
-          "displayKey": "Style Code",
+          "displayKey": "Style Description",
           "chronologicalKey": [
             "Style ID"
           ]

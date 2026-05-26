@@ -18,6 +18,11 @@
         "useLogicalColumnName": true
       },
       {
+        "name": "Style Description",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product.Style Description",
+        "useLogicalColumnName": true
+      },
+      {
         "name": "Department",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product.Department",
         "useLogicalColumnName": true
@@ -116,7 +121,7 @@
           {
             "name": "Style",
             "sourceLogicalLevel": "logicalLevel:Fashion Retail DW.Product.Style",
-            "displayColumn": "presentationColumn:Fashion Retail Analytics.Product.Style Code"
+            "displayColumn": "presentationColumn:Fashion Retail Analytics.Product.Style Description"
           },
           {
             "name": "SKU",
