@@ -1,0 +1,1028 @@
+{
+  "logicalTable": {
+    "name": "Product AI Signals",
+    "description": "Product-week AI score signals from FASHIONDW.PRODUCT_AI_SCORE_LABELED_V.",
+    "type": "FACT",
+    "logicalColumns": [
+      {
+        "name": "SKU Week Case ID",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_SCORE_LABELED_V_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_SCORE_LABELED_V.SKU_WEEK_CASE_ID"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Week Start Date",
+        "dataType": "DATE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_SCORE_LABELED_V_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_SCORE_LABELED_V.WEEK_START_DATE"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Date Key",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_SCORE_LABELED_V_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_SCORE_LABELED_V.DATE_KEY"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "SKU ID",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_SCORE_LABELED_V_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_SCORE_LABELED_V.SKU_ID"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Style ID",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_SCORE_LABELED_V_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_SCORE_LABELED_V.STYLE_ID"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Collection ID",
+        "dataType": "VARCHAR",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_SCORE_LABELED_V_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_SCORE_LABELED_V.COLLECTION_ID"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Cluster ID",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_SCORE_LABELED_V_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_SCORE_LABELED_V.CLUSTER_ID"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Demo Phenomenon",
+        "dataType": "VARCHAR",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_SCORE_LABELED_V_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_SCORE_LABELED_V.DEMO_PHENOMENON"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Reason Code",
+        "dataType": "VARCHAR",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_SCORE_LABELED_V_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_SCORE_LABELED_V.REASON_CODE"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Recommended Action",
+        "dataType": "VARCHAR",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_SCORE_LABELED_V_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_SCORE_LABELED_V.RECOMMENDED_ACTION"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Cluster Label",
+        "dataType": "VARCHAR",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_SCORE_LABELED_V_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_SCORE_LABELED_V.CLUSTER_LABEL"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Business Interpretation",
+        "dataType": "VARCHAR",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_SCORE_LABELED_V_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_SCORE_LABELED_V.BUSINESS_INTERPRETATION"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Recommended Demo Action",
+        "dataType": "VARCHAR",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_SCORE_LABELED_V_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_SCORE_LABELED_V.RECOMMENDED_DEMO_ACTION"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Model Evidence",
+        "dataType": "VARCHAR",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_SCORE_LABELED_V_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_SCORE_LABELED_V.MODEL_EVIDENCE"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Business Evidence",
+        "dataType": "VARCHAR",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_SCORE_LABELED_V_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_SCORE_LABELED_V.BUSINESS_EVIDENCE"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Cluster Evidence Summary",
+        "dataType": "VARCHAR",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_SCORE_LABELED_V_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_SCORE_LABELED_V.CLUSTER_EVIDENCE_SUMMARY"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Scenario Tag",
+        "dataType": "VARCHAR",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_SCORE_LABELED_V_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_SCORE_LABELED_V.SCENARIO_TAG"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Units Sold",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_SCORE_LABELED_V_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_SCORE_LABELED_V.UNITS_SOLD"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        }
+      },
+      {
+        "name": "Full Price Units",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_SCORE_LABELED_V_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_SCORE_LABELED_V.FULL_PRICE_UNITS"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        }
+      },
+      {
+        "name": "Net Sales Amount",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_SCORE_LABELED_V_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_SCORE_LABELED_V.NET_SALES_AMOUNT"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        }
+      },
+      {
+        "name": "Gross Margin Amount",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_SCORE_LABELED_V_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_SCORE_LABELED_V.GROSS_MARGIN_AMOUNT"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        }
+      },
+      {
+        "name": "Returned Units",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_SCORE_LABELED_V_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_SCORE_LABELED_V.RETURNED_UNITS"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        }
+      },
+      {
+        "name": "On Hand Units",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_SCORE_LABELED_V_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_SCORE_LABELED_V.ON_HAND_UNITS"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        }
+      },
+      {
+        "name": "Available Units",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_SCORE_LABELED_V_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_SCORE_LABELED_V.AVAILABLE_UNITS"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        }
+      },
+      {
+        "name": "Markdown Percent",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_SCORE_LABELED_V_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_SCORE_LABELED_V.MARKDOWN_PCT"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "AVG"
+        }
+      },
+      {
+        "name": "Gross Margin Percent",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_SCORE_LABELED_V_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_SCORE_LABELED_V.GROSS_MARGIN_PCT"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "AVG"
+        }
+      },
+      {
+        "name": "Return Rate Percent",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_SCORE_LABELED_V_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_SCORE_LABELED_V.RETURN_RATE_PCT"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "AVG"
+        }
+      },
+      {
+        "name": "Full Price Sell Through Percent",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_SCORE_LABELED_V_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_SCORE_LABELED_V.FULL_PRICE_SELL_THROUGH_PCT"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "AVG"
+        }
+      },
+      {
+        "name": "Sell Through Percent",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_SCORE_LABELED_V_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_SCORE_LABELED_V.SELL_THROUGH_PCT"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "AVG"
+        }
+      },
+      {
+        "name": "Stockout Store Rate Percent",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_SCORE_LABELED_V_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_SCORE_LABELED_V.STOCKOUT_STORE_RATE_PCT"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "AVG"
+        }
+      },
+      {
+        "name": "Average Weeks Of Supply",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_SCORE_LABELED_V_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_SCORE_LABELED_V.AVG_WEEKS_OF_SUPPLY"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "AVG"
+        }
+      },
+      {
+        "name": "Demand Index 4W",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_SCORE_LABELED_V_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_SCORE_LABELED_V.DEMAND_INDEX_4W"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "AVG"
+        }
+      },
+      {
+        "name": "Demand Index 13W",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_SCORE_LABELED_V_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_SCORE_LABELED_V.DEMAND_INDEX_13W"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "AVG"
+        }
+      },
+      {
+        "name": "Computed Stockout Risk Score",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_SCORE_LABELED_V_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_SCORE_LABELED_V.COMPUTED_STOCKOUT_RISK_SCORE"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "AVG"
+        }
+      },
+      {
+        "name": "Computed Overstock Risk Score",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_SCORE_LABELED_V_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_SCORE_LABELED_V.COMPUTED_OVERSTOCK_RISK_SCORE"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "AVG"
+        }
+      },
+      {
+        "name": "Anomaly Prediction",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_SCORE_LABELED_V_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_SCORE_LABELED_V.ANOMALY_PREDICTION"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "AVG"
+        }
+      },
+      {
+        "name": "Anomaly Count",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_SCORE_LABELED_V_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_SCORE_LABELED_V.ANOMALY_FLAG"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        }
+      },
+      {
+        "name": "Anomaly Probability",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_SCORE_LABELED_V_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_SCORE_LABELED_V.ANOMALY_PROBABILITY"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "AVG"
+        }
+      },
+      {
+        "name": "Typical Probability",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_SCORE_LABELED_V_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_SCORE_LABELED_V.TYPICAL_PROBABILITY"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "AVG"
+        }
+      },
+      {
+        "name": "Cluster Probability",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_SCORE_LABELED_V_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_SCORE_LABELED_V.CLUSTER_PROBABILITY"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "AVG"
+        }
+      },
+      {
+        "name": "Primary Feature ID",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_SCORE_LABELED_V_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_SCORE_LABELED_V.PRIMARY_FEATURE_ID"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "AVG"
+        }
+      },
+      {
+        "name": "Primary Feature Value",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_SCORE_LABELED_V_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_SCORE_LABELED_V.PRIMARY_FEATURE_VALUE"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "AVG"
+        }
+      },
+      {
+        "name": "Stockout Alert Count",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_SCORE_LABELED_V_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_SCORE_LABELED_V.STOCKOUT_ALERT_FLAG"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        }
+      },
+      {
+        "name": "Overstock Alert Count",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_SCORE_LABELED_V_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_SCORE_LABELED_V.OVERSTOCK_ALERT_FLAG"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        }
+      },
+      {
+        "name": "Margin Alert Count",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_SCORE_LABELED_V_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_SCORE_LABELED_V.MARGIN_ALERT_FLAG"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        }
+      },
+      {
+        "name": "Return Alert Count",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_SCORE_LABELED_V_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_SCORE_LABELED_V.RETURN_ALERT_FLAG"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        }
+      },
+      {
+        "name": "Demo Priority",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_SCORE_LABELED_V_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_SCORE_LABELED_V.DEMO_PRIORITY"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "AVG"
+        }
+      }
+    ],
+    "logicalTableSources": [
+      {
+        "name": "PRODUCT_AI_SCORE_LABELED_V_LTS",
+        "disable": false,
+        "tableMapping": {
+          "tables": [
+            "physicalTable:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_SCORE_LABELED_V"
+          ]
+        },
+        "combineWithOtherFragments": false,
+        "enableFragmentSelection": false,
+        "distinctValues": false
+      }
+    ],
+    "joins": [
+      {
+        "rightTable": "logicalTable:Fashion Retail DW.Date",
+        "joinType": "INNER",
+        "cardinality": "MANY_TO_ZERO_OR_ONE"
+      },
+      {
+        "rightTable": "logicalTable:Fashion Retail DW.Product",
+        "joinType": "INNER",
+        "cardinality": "MANY_TO_ZERO_OR_ONE"
+      },
+      {
+        "rightTable": "logicalTable:Fashion Retail DW.Collection",
+        "joinType": "INNER",
+        "cardinality": "MANY_TO_ZERO_OR_ONE"
+      },
+      {
+        "rightTable": "logicalTable:Fashion Retail DW.Product AI Cluster Labels",
+        "joinType": "INNER",
+        "cardinality": "MANY_TO_ZERO_OR_ONE"
+      }
+    ]
+  }
+}

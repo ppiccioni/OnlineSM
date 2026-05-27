@@ -1,0 +1,144 @@
+{
+  "physicalTable": {
+    "name": "PRODUCT_AI_CLUSTER_LABELS",
+    "sourceType": "TABLE",
+    "physicalColumns": [
+      {
+        "name": "CLUSTER_ID",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
+        "name": "CLUSTER_LABEL",
+        "dataType": "VARCHAR",
+        "length": 80,
+        "nullable": true
+      },
+      {
+        "name": "BUSINESS_INTERPRETATION",
+        "dataType": "VARCHAR",
+        "length": 500,
+        "nullable": true
+      },
+      {
+        "name": "RECOMMENDED_DEMO_ACTION",
+        "dataType": "VARCHAR",
+        "length": 500,
+        "nullable": true
+      },
+      {
+        "name": "EVIDENCE_SUMMARY",
+        "dataType": "VARCHAR",
+        "length": 1000,
+        "nullable": true
+      },
+      {
+        "name": "DEMO_PRIORITY",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
+        "name": "PRODUCT_WEEK_COUNT",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
+        "name": "SKU_COUNT",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
+        "name": "AVG_CLUSTER_PROBABILITY",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
+        "name": "AVG_UNITS_SOLD",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
+        "name": "AVG_NET_SALES_AMOUNT",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
+        "name": "AVG_FULL_PRICE_SELL_THROUGH_PCT",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
+        "name": "AVG_MARKDOWN_PCT",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
+        "name": "AVG_RETURN_RATE_PCT",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
+        "name": "AVG_STOCKOUT_RISK",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
+        "name": "AVG_OVERSTOCK_RISK",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
+        "name": "AVG_ANOMALY_PROBABILITY",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
+        "name": "ANOMALY_ROW_COUNT",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
+        "name": "MODAL_DEPARTMENT",
+        "dataType": "VARCHAR",
+        "length": 80,
+        "nullable": true
+      },
+      {
+        "name": "MODAL_CATEGORY",
+        "dataType": "VARCHAR",
+        "length": 80,
+        "nullable": true
+      },
+      {
+        "name": "MODAL_PRICE_TIER",
+        "dataType": "VARCHAR",
+        "length": 80,
+        "nullable": true
+      },
+      {
+        "name": "MODAL_REASON_CODE",
+        "dataType": "VARCHAR",
+        "length": 80,
+        "nullable": true
+      }
+    ],
+    "caching": {
+      "enable": true,
+      "expiryTime": 0
+    }
+  }
+}

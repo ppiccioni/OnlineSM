@@ -1,0 +1,503 @@
+{
+  "logicalTable": {
+    "name": "Product AI Cluster Labels",
+    "description": "Business labels and evidence summaries for product AI clusters.",
+    "type": "DIMENSION",
+    "logicalColumns": [
+      {
+        "name": "Cluster ID",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_CLUSTER_LABELS_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_CLUSTER_LABELS.CLUSTER_ID"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Cluster"
+      },
+      {
+        "name": "Cluster Label",
+        "dataType": "VARCHAR",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_CLUSTER_LABELS_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_CLUSTER_LABELS.CLUSTER_LABEL"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Cluster"
+      },
+      {
+        "name": "Business Interpretation",
+        "dataType": "VARCHAR",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_CLUSTER_LABELS_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_CLUSTER_LABELS.BUSINESS_INTERPRETATION"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Cluster"
+      },
+      {
+        "name": "Recommended Demo Action",
+        "dataType": "VARCHAR",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_CLUSTER_LABELS_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_CLUSTER_LABELS.RECOMMENDED_DEMO_ACTION"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Cluster"
+      },
+      {
+        "name": "Evidence Summary",
+        "dataType": "VARCHAR",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_CLUSTER_LABELS_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_CLUSTER_LABELS.EVIDENCE_SUMMARY"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Cluster"
+      },
+      {
+        "name": "Demo Priority",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_CLUSTER_LABELS_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_CLUSTER_LABELS.DEMO_PRIORITY"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Cluster"
+      },
+      {
+        "name": "Product Week Count",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_CLUSTER_LABELS_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_CLUSTER_LABELS.PRODUCT_WEEK_COUNT"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Cluster"
+      },
+      {
+        "name": "SKU Count",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_CLUSTER_LABELS_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_CLUSTER_LABELS.SKU_COUNT"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Cluster"
+      },
+      {
+        "name": "Average Cluster Probability",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_CLUSTER_LABELS_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_CLUSTER_LABELS.AVG_CLUSTER_PROBABILITY"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Cluster"
+      },
+      {
+        "name": "Average Units Sold",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_CLUSTER_LABELS_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_CLUSTER_LABELS.AVG_UNITS_SOLD"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Cluster"
+      },
+      {
+        "name": "Average Net Sales Amount",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_CLUSTER_LABELS_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_CLUSTER_LABELS.AVG_NET_SALES_AMOUNT"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Cluster"
+      },
+      {
+        "name": "Average Full Price Sell Through Percent",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_CLUSTER_LABELS_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_CLUSTER_LABELS.AVG_FULL_PRICE_SELL_THROUGH_PCT"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Cluster"
+      },
+      {
+        "name": "Average Markdown Percent",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_CLUSTER_LABELS_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_CLUSTER_LABELS.AVG_MARKDOWN_PCT"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Cluster"
+      },
+      {
+        "name": "Average Return Rate Percent",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_CLUSTER_LABELS_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_CLUSTER_LABELS.AVG_RETURN_RATE_PCT"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Cluster"
+      },
+      {
+        "name": "Average Stockout Risk",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_CLUSTER_LABELS_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_CLUSTER_LABELS.AVG_STOCKOUT_RISK"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Cluster"
+      },
+      {
+        "name": "Average Overstock Risk",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_CLUSTER_LABELS_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_CLUSTER_LABELS.AVG_OVERSTOCK_RISK"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Cluster"
+      },
+      {
+        "name": "Average Anomaly Probability",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_CLUSTER_LABELS_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_CLUSTER_LABELS.AVG_ANOMALY_PROBABILITY"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Cluster"
+      },
+      {
+        "name": "Anomaly Row Count",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_CLUSTER_LABELS_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_CLUSTER_LABELS.ANOMALY_ROW_COUNT"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Cluster"
+      },
+      {
+        "name": "Modal Department",
+        "dataType": "VARCHAR",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_CLUSTER_LABELS_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_CLUSTER_LABELS.MODAL_DEPARTMENT"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Cluster"
+      },
+      {
+        "name": "Modal Category",
+        "dataType": "VARCHAR",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_CLUSTER_LABELS_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_CLUSTER_LABELS.MODAL_CATEGORY"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Cluster"
+      },
+      {
+        "name": "Modal Price Tier",
+        "dataType": "VARCHAR",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_CLUSTER_LABELS_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_CLUSTER_LABELS.MODAL_PRICE_TIER"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Cluster"
+      },
+      {
+        "name": "Modal Reason Code",
+        "dataType": "VARCHAR",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_CLUSTER_LABELS_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_CLUSTER_LABELS.MODAL_REASON_CODE"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Cluster"
+      }
+    ],
+    "logicalTableSources": [
+      {
+        "name": "PRODUCT_AI_CLUSTER_LABELS_LTS",
+        "disable": false,
+        "tableMapping": {
+          "tables": [
+            "physicalTable:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_CLUSTER_LABELS"
+          ]
+        },
+        "combineWithOtherFragments": false,
+        "enableFragmentSelection": false,
+        "distinctValues": false
+      }
+    ],
+    "primaryKey": [
+      "Cluster ID"
+    ],
+    "hierarchyType": "LEVEL_BASED",
+    "levelBasedHierarchy": {
+      "defaultRootLevel": "Total",
+      "ragged": false,
+      "skipped": false,
+      "logicalLevels": [
+        {
+          "name": "Total",
+          "numberOfElements": 1,
+          "grandTotalLevel": true,
+          "disableAggregateToHigherLevel": false
+        },
+        {
+          "name": "Cluster",
+          "numberOfElements": 8,
+          "grandTotalLevel": false,
+          "disableAggregateToHigherLevel": false,
+          "primaryKey": [
+            "Cluster ID"
+          ],
+          "displayKey": "Cluster Label",
+          "chronologicalKey": [
+            "Demo Priority"
+          ]
+        }
+      ],
+      "logicalHierarchies": [
+        {
+          "name": "Product AI Cluster",
+          "description": "Cluster label hierarchy",
+          "levels": [
+            "Total",
+            "Cluster"
+          ]
+        }
+      ]
+    }
+  }
+}
