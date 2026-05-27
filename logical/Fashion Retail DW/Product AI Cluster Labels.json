@@ -122,6 +122,9 @@
             }
           ]
         },
+        "aggregation": {
+          "rule": "AVG"
+        },
         "logicalLevel": "Cluster"
       },
       {
@@ -141,6 +144,9 @@
               }
             }
           ]
+        },
+        "aggregation": {
+          "rule": "SUM"
         },
         "logicalLevel": "Cluster"
       },
@@ -162,6 +168,9 @@
             }
           ]
         },
+        "aggregation": {
+          "rule": "SUM"
+        },
         "logicalLevel": "Cluster"
       },
       {
@@ -181,6 +190,9 @@
               }
             }
           ]
+        },
+        "aggregation": {
+          "rule": "AVG"
         },
         "logicalLevel": "Cluster"
       },
@@ -202,6 +214,9 @@
             }
           ]
         },
+        "aggregation": {
+          "rule": "AVG"
+        },
         "logicalLevel": "Cluster"
       },
       {
@@ -221,6 +236,9 @@
               }
             }
           ]
+        },
+        "aggregation": {
+          "rule": "AVG"
         },
         "logicalLevel": "Cluster"
       },
@@ -242,6 +260,9 @@
             }
           ]
         },
+        "aggregation": {
+          "rule": "AVG"
+        },
         "logicalLevel": "Cluster"
       },
       {
@@ -261,6 +282,9 @@
               }
             }
           ]
+        },
+        "aggregation": {
+          "rule": "AVG"
         },
         "logicalLevel": "Cluster"
       },
@@ -282,6 +306,9 @@
             }
           ]
         },
+        "aggregation": {
+          "rule": "AVG"
+        },
         "logicalLevel": "Cluster"
       },
       {
@@ -301,6 +328,9 @@
               }
             }
           ]
+        },
+        "aggregation": {
+          "rule": "AVG"
         },
         "logicalLevel": "Cluster"
       },
@@ -322,6 +352,9 @@
             }
           ]
         },
+        "aggregation": {
+          "rule": "AVG"
+        },
         "logicalLevel": "Cluster"
       },
       {
@@ -342,6 +375,9 @@
             }
           ]
         },
+        "aggregation": {
+          "rule": "AVG"
+        },
         "logicalLevel": "Cluster"
       },
       {
@@ -361,6 +397,9 @@
               }
             }
           ]
+        },
+        "aggregation": {
+          "rule": "SUM"
         },
         "logicalLevel": "Cluster"
       },
