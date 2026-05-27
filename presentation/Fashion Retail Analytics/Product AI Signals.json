@@ -1,0 +1,266 @@
+{
+  "presentationTable": {
+    "name": "Product AI Signals",
+    "presentationColumns": [
+      {
+        "name": "SKU Week Case ID",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.SKU Week Case ID",
+        "useLogicalColumnName": true,
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
+      },
+      {
+        "name": "Week Start Date",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Week Start Date",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Date Key",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Date Key",
+        "useLogicalColumnName": true,
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
+      },
+      {
+        "name": "SKU ID",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.SKU ID",
+        "useLogicalColumnName": true,
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
+      },
+      {
+        "name": "Style ID",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Style ID",
+        "useLogicalColumnName": true,
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
+      },
+      {
+        "name": "Collection ID",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Collection ID",
+        "useLogicalColumnName": true,
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
+      },
+      {
+        "name": "Cluster ID",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Cluster ID",
+        "useLogicalColumnName": true,
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
+      },
+      {
+        "name": "Demo Phenomenon",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Demo Phenomenon",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Reason Code",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Reason Code",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Recommended Action",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Recommended Action",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Cluster Label",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Cluster Label",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Business Interpretation",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Business Interpretation",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Recommended Demo Action",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Recommended Demo Action",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Model Evidence",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Model Evidence",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Business Evidence",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Business Evidence",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Cluster Evidence Summary",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Cluster Evidence Summary",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Scenario Tag",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Scenario Tag",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Units Sold",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Units Sold",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Full Price Units",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Full Price Units",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Net Sales Amount",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Net Sales Amount",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Gross Margin Amount",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Gross Margin Amount",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Returned Units",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Returned Units",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "On Hand Units",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.On Hand Units",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Available Units",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Available Units",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Markdown Percent",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Markdown Percent",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Gross Margin Percent",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Gross Margin Percent",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Return Rate Percent",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Return Rate Percent",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Full Price Sell Through Percent",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Full Price Sell Through Percent",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Sell Through Percent",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Sell Through Percent",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Stockout Store Rate Percent",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Stockout Store Rate Percent",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Average Weeks Of Supply",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Average Weeks Of Supply",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Demand Index 4W",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Demand Index 4W",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Demand Index 13W",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Demand Index 13W",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Computed Stockout Risk Score",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Computed Stockout Risk Score",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Computed Overstock Risk Score",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Computed Overstock Risk Score",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Anomaly Prediction",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Anomaly Prediction",
+        "useLogicalColumnName": true,
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
+      },
+      {
+        "name": "Anomaly Count",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Anomaly Count",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Anomaly Probability",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Anomaly Probability",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Typical Probability",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Typical Probability",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Cluster Probability",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Cluster Probability",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Primary Feature ID",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Primary Feature ID",
+        "useLogicalColumnName": true,
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
+      },
+      {
+        "name": "Primary Feature Value",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Primary Feature Value",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Stockout Alert Count",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Stockout Alert Count",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Overstock Alert Count",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Overstock Alert Count",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Margin Alert Count",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Margin Alert Count",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Return Alert Count",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Return Alert Count",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Demo Priority",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Demo Priority",
+        "useLogicalColumnName": true
+      }
+    ]
+  }
+}
