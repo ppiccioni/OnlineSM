@@ -569,21 +569,14 @@
         "dataType": "DOUBLE",
         "writeable": false,
         "logicalColumnSource": {
-          "derivedFrom": "PHYSICAL_COLUMNS",
-          "physicalMappings": [
-            {
-              "logicalTableSource": "MART_PRODUCT_PERFORMANCE_WEEKLY_V2_LTS",
-              "physicalExpression": {
-                "expressionTemplate": "%1",
-                "expressionObjects": [
-                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.MART_PRODUCT_PERFORMANCE_WEEKLY_V2.MARKDOWN_PCT"
-                ]
-              }
-            }
-          ]
-        },
-        "aggregation": {
-          "rule": "AVG"
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "expressionTemplate": "CASE WHEN %2 = 0 THEN 0 ELSE %1 / %2 * 100 END",
+            "expressionObjects": [
+              "logicalColumn:Fashion Retail DW.Product Weekly Performance.Discount Amount",
+              "logicalColumn:Fashion Retail DW.Product Weekly Performance.Gross Sales Amount"
+            ]
+          }
         }
       },
       {
@@ -591,21 +584,14 @@
         "dataType": "DOUBLE",
         "writeable": false,
         "logicalColumnSource": {
-          "derivedFrom": "PHYSICAL_COLUMNS",
-          "physicalMappings": [
-            {
-              "logicalTableSource": "MART_PRODUCT_PERFORMANCE_WEEKLY_V2_LTS",
-              "physicalExpression": {
-                "expressionTemplate": "%1",
-                "expressionObjects": [
-                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.MART_PRODUCT_PERFORMANCE_WEEKLY_V2.GROSS_MARGIN_PCT"
-                ]
-              }
-            }
-          ]
-        },
-        "aggregation": {
-          "rule": "AVG"
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "expressionTemplate": "CASE WHEN %2 = 0 THEN 0 ELSE %1 / %2 * 100 END",
+            "expressionObjects": [
+              "logicalColumn:Fashion Retail DW.Product Weekly Performance.Gross Margin Amount",
+              "logicalColumn:Fashion Retail DW.Product Weekly Performance.Net Sales Amount"
+            ]
+          }
         }
       },
       {
@@ -613,21 +599,14 @@
         "dataType": "DOUBLE",
         "writeable": false,
         "logicalColumnSource": {
-          "derivedFrom": "PHYSICAL_COLUMNS",
-          "physicalMappings": [
-            {
-              "logicalTableSource": "MART_PRODUCT_PERFORMANCE_WEEKLY_V2_LTS",
-              "physicalExpression": {
-                "expressionTemplate": "%1",
-                "expressionObjects": [
-                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.MART_PRODUCT_PERFORMANCE_WEEKLY_V2.RETURN_RATE_PCT"
-                ]
-              }
-            }
-          ]
-        },
-        "aggregation": {
-          "rule": "AVG"
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "expressionTemplate": "CASE WHEN %2 = 0 THEN 0 ELSE %1 / %2 * 100 END",
+            "expressionObjects": [
+              "logicalColumn:Fashion Retail DW.Product Weekly Performance.Returned Units",
+              "logicalColumn:Fashion Retail DW.Product Weekly Performance.Units Sold"
+            ]
+          }
         }
       },
       {
@@ -635,21 +614,14 @@
         "dataType": "DOUBLE",
         "writeable": false,
         "logicalColumnSource": {
-          "derivedFrom": "PHYSICAL_COLUMNS",
-          "physicalMappings": [
-            {
-              "logicalTableSource": "MART_PRODUCT_PERFORMANCE_WEEKLY_V2_LTS",
-              "physicalExpression": {
-                "expressionTemplate": "%1",
-                "expressionObjects": [
-                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.MART_PRODUCT_PERFORMANCE_WEEKLY_V2.FULL_PRICE_SELL_THROUGH_PCT"
-                ]
-              }
-            }
-          ]
-        },
-        "aggregation": {
-          "rule": "AVG"
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "expressionTemplate": "CASE WHEN (%1 + %2) = 0 THEN 0 ELSE %1 / (%1 + %2) * 100 END",
+            "expressionObjects": [
+              "logicalColumn:Fashion Retail DW.Product Weekly Performance.Full Price Units",
+              "logicalColumn:Fashion Retail DW.Product Weekly Performance.On Hand Units"
+            ]
+          }
         }
       },
       {
@@ -657,21 +629,14 @@
         "dataType": "DOUBLE",
         "writeable": false,
         "logicalColumnSource": {
-          "derivedFrom": "PHYSICAL_COLUMNS",
-          "physicalMappings": [
-            {
-              "logicalTableSource": "MART_PRODUCT_PERFORMANCE_WEEKLY_V2_LTS",
-              "physicalExpression": {
-                "expressionTemplate": "%1",
-                "expressionObjects": [
-                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.MART_PRODUCT_PERFORMANCE_WEEKLY_V2.SELL_THROUGH_PCT"
-                ]
-              }
-            }
-          ]
-        },
-        "aggregation": {
-          "rule": "AVG"
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "expressionTemplate": "CASE WHEN (%1 + %2) = 0 THEN 0 ELSE %1 / (%1 + %2) * 100 END",
+            "expressionObjects": [
+              "logicalColumn:Fashion Retail DW.Product Weekly Performance.Units Sold",
+              "logicalColumn:Fashion Retail DW.Product Weekly Performance.On Hand Units"
+            ]
+          }
         }
       },
       {
@@ -679,21 +644,14 @@
         "dataType": "DOUBLE",
         "writeable": false,
         "logicalColumnSource": {
-          "derivedFrom": "PHYSICAL_COLUMNS",
-          "physicalMappings": [
-            {
-              "logicalTableSource": "MART_PRODUCT_PERFORMANCE_WEEKLY_V2_LTS",
-              "physicalExpression": {
-                "expressionTemplate": "%1",
-                "expressionObjects": [
-                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.MART_PRODUCT_PERFORMANCE_WEEKLY_V2.STOCKOUT_STORE_RATE_PCT"
-                ]
-              }
-            }
-          ]
-        },
-        "aggregation": {
-          "rule": "AVG"
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "expressionTemplate": "CASE WHEN %2 = 0 THEN 0 ELSE %1 / %2 * 100 END",
+            "expressionObjects": [
+              "logicalColumn:Fashion Retail DW.Product Weekly Performance.Stockout Store Count",
+              "logicalColumn:Fashion Retail DW.Product Weekly Performance.Store Snapshot Count"
+            ]
+          }
         }
       },
       {
