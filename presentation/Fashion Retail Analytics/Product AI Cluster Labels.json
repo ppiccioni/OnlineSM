@@ -21,8 +21,8 @@
         "useLogicalColumnName": true
       },
       {
-        "name": "Recommended Demo Action",
-        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.Recommended Demo Action",
+        "name": "Recommended Action",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.Recommended Action",
         "useLogicalColumnName": true
       },
       {
@@ -31,8 +31,8 @@
         "useLogicalColumnName": true
       },
       {
-        "name": "Demo Priority",
-        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.Demo Priority",
+        "name": "Action Priority",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.Action Priority",
         "useLogicalColumnName": true
       },
       {
@@ -76,13 +76,13 @@
         "useLogicalColumnName": true
       },
       {
-        "name": "Average Stockout Risk",
-        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.Average Stockout Risk",
+        "name": "Cluster Avg Stockout Risk Score",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.Cluster Avg Stockout Risk Score",
         "useLogicalColumnName": true
       },
       {
-        "name": "Average Overstock Risk",
-        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.Average Overstock Risk",
+        "name": "Cluster Avg Overstock Risk Score",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.Cluster Avg Overstock Risk Score",
         "useLogicalColumnName": true
       },
       {

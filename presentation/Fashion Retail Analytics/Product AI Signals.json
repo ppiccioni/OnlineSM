@@ -56,8 +56,8 @@
         }
       },
       {
-        "name": "Demo Phenomenon",
-        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Demo Phenomenon",
+        "name": "Business Phenomenon",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Business Phenomenon",
         "useLogicalColumnName": true
       },
       {
@@ -81,8 +81,8 @@
         "useLogicalColumnName": true
       },
       {
-        "name": "Recommended Demo Action",
-        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Recommended Demo Action",
+        "name": "Recommended Action",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Recommended Action",
         "useLogicalColumnName": true
       },
       {
@@ -161,6 +161,11 @@
         "useLogicalColumnName": true
       },
       {
+        "name": "Full Price Unit Share Percent",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Full Price Unit Share Percent",
+        "useLogicalColumnName": true
+      },
+      {
         "name": "Sell Through Percent",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Sell Through Percent",
         "useLogicalColumnName": true
@@ -186,13 +191,13 @@
         "useLogicalColumnName": true
       },
       {
-        "name": "Computed Stockout Risk Score",
-        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Computed Stockout Risk Score",
+        "name": "Stockout Risk Score",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Stockout Risk Score",
         "useLogicalColumnName": true
       },
       {
-        "name": "Computed Overstock Risk Score",
-        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Computed Overstock Risk Score",
+        "name": "Overstock Risk Score",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Overstock Risk Score",
         "useLogicalColumnName": true
       },
       {
@@ -237,13 +242,13 @@
         "useLogicalColumnName": true
       },
       {
-        "name": "Stockout Alert Count",
-        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Stockout Alert Count",
+        "name": "Stockout Alert Cases",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Stockout Alert Cases",
         "useLogicalColumnName": true
       },
       {
-        "name": "Overstock Alert Count",
-        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Overstock Alert Count",
+        "name": "Overstock Alert Cases",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Overstock Alert Cases",
         "useLogicalColumnName": true
       },
       {
@@ -257,8 +262,8 @@
         "useLogicalColumnName": true
       },
       {
-        "name": "Demo Priority",
-        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Demo Priority",
+        "name": "Action Priority",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Action Priority",
         "useLogicalColumnName": true
       }
     ]

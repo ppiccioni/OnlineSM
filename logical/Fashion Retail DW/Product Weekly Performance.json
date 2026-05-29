@@ -521,7 +521,7 @@
         }
       },
       {
-        "name": "Source Overstock Risk Score",
+        "name": "Source Inventory Overstock Risk Score",
         "dataType": "DOUBLE",
         "writeable": false,
         "logicalColumnSource": {
@@ -543,7 +543,7 @@
         }
       },
       {
-        "name": "Source Stockout Risk Score",
+        "name": "Source Inventory Stockout Risk Score",
         "dataType": "DOUBLE",
         "writeable": false,
         "logicalColumnSource": {
@@ -620,6 +620,21 @@
             "expressionObjects": [
               "logicalColumn:Fashion Retail DW.Product Weekly Performance.Full Price Units",
               "logicalColumn:Fashion Retail DW.Product Weekly Performance.On Hand Units"
+            ]
+          }
+        }
+      },
+      {
+        "name": "Full Price Unit Share Percent",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "expressionTemplate": "CASE WHEN %2 = 0 THEN 0 ELSE %1 / %2 * 100 END",
+            "expressionObjects": [
+              "logicalColumn:Fashion Retail DW.Product Weekly Performance.Full Price Units",
+              "logicalColumn:Fashion Retail DW.Product Weekly Performance.Units Sold"
             ]
           }
         }
@@ -787,7 +802,7 @@
         }
       },
       {
-        "name": "Computed Stockout Risk Score",
+        "name": "Stockout Risk Score",
         "dataType": "DOUBLE",
         "writeable": false,
         "logicalColumnSource": {
@@ -809,7 +824,7 @@
         }
       },
       {
-        "name": "Computed Overstock Risk Score",
+        "name": "Overstock Risk Score",
         "dataType": "DOUBLE",
         "writeable": false,
         "logicalColumnSource": {

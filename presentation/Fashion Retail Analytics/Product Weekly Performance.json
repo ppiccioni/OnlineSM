@@ -132,14 +132,20 @@
         "useLogicalColumnName": true
       },
       {
-        "name": "Source Overstock Risk Score",
-        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Source Overstock Risk Score",
-        "useLogicalColumnName": true
+        "name": "Source Inventory Overstock Risk Score",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Source Inventory Overstock Risk Score",
+        "useLogicalColumnName": true,
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
       },
       {
-        "name": "Source Stockout Risk Score",
-        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Source Stockout Risk Score",
-        "useLogicalColumnName": true
+        "name": "Source Inventory Stockout Risk Score",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Source Inventory Stockout Risk Score",
+        "useLogicalColumnName": true,
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
       },
       {
         "name": "Markdown Percent",
@@ -159,6 +165,11 @@
       {
         "name": "Full Price Sell Through Percent",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Full Price Sell Through Percent",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Full Price Unit Share Percent",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Full Price Unit Share Percent",
         "useLogicalColumnName": true
       },
       {
@@ -202,13 +213,13 @@
         "useLogicalColumnName": true
       },
       {
-        "name": "Computed Stockout Risk Score",
-        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Computed Stockout Risk Score",
+        "name": "Stockout Risk Score",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Stockout Risk Score",
         "useLogicalColumnName": true
       },
       {
-        "name": "Computed Overstock Risk Score",
-        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Computed Overstock Risk Score",
+        "name": "Overstock Risk Score",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Overstock Risk Score",
         "useLogicalColumnName": true
       },
       {
