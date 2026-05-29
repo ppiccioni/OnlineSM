@@ -76,7 +76,7 @@
               "physicalExpression": {
                 "expressionTemplate": "%1",
                 "expressionObjects": [
-                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_CLUSTER_LABELS.RECOMMENDED_DEMO_ACTION"
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_CLUSTER_LABELS.RECOMMENDED_BUSINESS_ACTION"
                 ]
               }
             }
@@ -116,7 +116,7 @@
               "physicalExpression": {
                 "expressionTemplate": "%1",
                 "expressionObjects": [
-                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_CLUSTER_LABELS.DEMO_PRIORITY"
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_CLUSTER_LABELS.SIGNAL_PRIORITY"
                 ]
               }
             }

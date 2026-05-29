@@ -149,7 +149,7 @@
               "physicalExpression": {
                 "expressionTemplate": "%1",
                 "expressionObjects": [
-                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_SCORE_LABELED_V.DEMO_PHENOMENON"
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_SCORE_LABELED_V.BUSINESS_SIGNAL"
                 ]
               }
             }
@@ -244,7 +244,7 @@
               "physicalExpression": {
                 "expressionTemplate": "%1",
                 "expressionObjects": [
-                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_SCORE_LABELED_V.RECOMMENDED_DEMO_ACTION"
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_SCORE_LABELED_V.RECOMMENDED_BUSINESS_ACTION"
                 ]
               }
             }
@@ -992,7 +992,7 @@
               "physicalExpression": {
                 "expressionTemplate": "%1",
                 "expressionObjects": [
-                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_SCORE_LABELED_V.DEMO_PRIORITY"
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_SCORE_LABELED_V.SIGNAL_PRIORITY"
                 ]
               }
             }
