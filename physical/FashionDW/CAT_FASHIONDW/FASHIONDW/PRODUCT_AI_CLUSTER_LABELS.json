@@ -22,7 +22,7 @@
         "nullable": true
       },
       {
-        "name": "RECOMMENDED_DEMO_ACTION",
+        "name": "RECOMMENDED_BUSINESS_ACTION",
         "dataType": "VARCHAR",
         "length": 500,
         "nullable": true
@@ -34,7 +34,7 @@
         "nullable": true
       },
       {
-        "name": "DEMO_PRIORITY",
+        "name": "SIGNAL_PRIORITY",
         "dataType": "DOUBLE",
         "length": 22,
         "nullable": true
