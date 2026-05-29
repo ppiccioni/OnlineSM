@@ -81,8 +81,8 @@
         "useLogicalColumnName": true
       },
       {
-        "name": "Recommended Action",
-        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Recommended Action",
+        "name": "Recommended Business Action",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Recommended Business Action",
         "useLogicalColumnName": true
       },
       {
