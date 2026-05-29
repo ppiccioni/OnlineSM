@@ -42,57 +42,68 @@
       {
         "name": "On Hand Units",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Inventory KPIs.On Hand Units",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Total physical stock on hand at store-SKU-week grain."
       },
       {
         "name": "Available Units",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Inventory KPIs.Available Units",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Units available for sale after reservations or unavailable stock."
       },
       {
         "name": "Reserved Units",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Inventory KPIs.Reserved Units",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Units reserved and not immediately available for sale."
       },
       {
         "name": "Stockout Count",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Inventory KPIs.Stockout Count",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Count of store-SKU snapshots flagged as stockout."
       },
       {
         "name": "Inventory Value At Cost",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Inventory KPIs.Inventory Value At Cost",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Inventory value calculated using standard product cost."
       },
       {
         "name": "Average Weeks Of Supply",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Inventory KPIs.Average Weeks Of Supply",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Average estimated weeks of supply based on stock and demand."
       },
       {
         "name": "Average Overstock Risk Score",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Inventory KPIs.Average Overstock Risk Score",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Historical average overstock risk at store-SKU-week grain."
       },
       {
         "name": "Average Stockout Risk Score",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Inventory KPIs.Average Stockout Risk Score",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Historical average stockout risk at store-SKU-week grain."
       },
       {
-        "name": "Current Stockout Risk Score",
-        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Inventory KPIs.Current Stockout Risk Score",
-        "useLogicalColumnName": true
+        "name": "Current Store-SKU Stockout Risk Score",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Inventory KPIs.Current Store-SKU Stockout Risk Score",
+        "useLogicalColumnName": true,
+        "description": "Store-SKU stockout risk for the latest available snapshot week in the current query context; supports Store and Region filtering."
       },
       {
-        "name": "Current Overstock Risk Score",
-        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Inventory KPIs.Current Overstock Risk Score",
-        "useLogicalColumnName": true
+        "name": "Current Store-SKU Overstock Risk Score",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Inventory KPIs.Current Store-SKU Overstock Risk Score",
+        "useLogicalColumnName": true,
+        "description": "Store-SKU overstock risk for the latest available snapshot week in the current query context; supports Store and Region filtering."
       },
       {
         "name": "Available Unit Share",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Inventory KPIs.Available Unit Share",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Available units as a percentage of on-hand units."
       },
       {
         "name": "Scenario Tag",

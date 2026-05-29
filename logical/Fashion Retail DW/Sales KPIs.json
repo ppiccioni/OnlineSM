@@ -195,7 +195,8 @@
         },
         "aggregation": {
           "rule": "SUM"
-        }
+        },
+        "description": "Total merchandise units sold after applying the current analysis filters."
       },
       {
         "name": "Gross Sales Amount",
@@ -217,7 +218,8 @@
         },
         "aggregation": {
           "rule": "SUM"
-        }
+        },
+        "description": "Sales value before discounts, markdowns, returns, or cost deductions."
       },
       {
         "name": "Discount Amount",
@@ -239,7 +241,8 @@
         },
         "aggregation": {
           "rule": "SUM"
-        }
+        },
+        "description": "Total discount or markdown value applied to sales lines."
       },
       {
         "name": "Net Sales Amount",
@@ -261,7 +264,8 @@
         },
         "aggregation": {
           "rule": "SUM"
-        }
+        },
+        "description": "Sales value after discounts and markdowns, before cost and return adjustments."
       },
       {
         "name": "Cost Amount",
@@ -283,7 +287,8 @@
         },
         "aggregation": {
           "rule": "SUM"
-        }
+        },
+        "description": "Total standard product cost associated with the sold units."
       },
       {
         "name": "Gross Margin Amount",
@@ -305,7 +310,8 @@
         },
         "aggregation": {
           "rule": "SUM"
-        }
+        },
+        "description": "Net sales minus product cost, expressed as an amount."
       },
       {
         "name": "Markdown Pct Raw",
@@ -327,7 +333,8 @@
         },
         "aggregation": {
           "rule": "AVG"
-        }
+        },
+        "description": "Raw line-level markdown ratio used as an input to markdown calculations."
       },
       {
         "name": "Full Price Line Count",
@@ -349,7 +356,8 @@
         },
         "aggregation": {
           "rule": "SUM"
-        }
+        },
+        "description": "Number of sales lines sold without markdown."
       },
       {
         "name": "Full Price Units",
@@ -372,7 +380,8 @@
         },
         "aggregation": {
           "rule": "SUM"
-        }
+        },
+        "description": "Units sold at full price, before markdown activity."
       },
       {
         "name": "Returned Line Count",
@@ -394,7 +403,8 @@
         },
         "aggregation": {
           "rule": "SUM"
-        }
+        },
+        "description": "Number of sales lines that later generated a return."
       },
       {
         "name": "Scenario Tag",
@@ -427,7 +437,8 @@
               "logicalColumn:Fashion Retail DW.Sales KPIs.Sales Line ID"
             ]
           }
-        }
+        },
+        "description": "Count of sales lines, useful as a transaction-detail activity measure."
       },
       {
         "name": "Transaction Count",
@@ -441,7 +452,8 @@
               "logicalColumn:Fashion Retail DW.Sales KPIs.Transaction ID"
             ]
           }
-        }
+        },
+        "description": "Distinct sales transactions represented in the selected context."
       },
       {
         "name": "Average Selling Price",
@@ -456,7 +468,8 @@
               "logicalColumn:Fashion Retail DW.Sales KPIs.Units Sold"
             ]
           }
-        }
+        },
+        "description": "Net sales amount divided by units sold; a proxy for realized price."
       },
       {
         "name": "Gross Margin Pct",
@@ -471,7 +484,8 @@
               "logicalColumn:Fashion Retail DW.Sales KPIs.Net Sales Amount"
             ]
           }
-        }
+        },
+        "description": "Gross margin amount as a percentage of net sales amount."
       },
       {
         "name": "Markdown Pct",
@@ -486,7 +500,8 @@
               "logicalColumn:Fashion Retail DW.Sales KPIs.Gross Sales Amount"
             ]
           }
-        }
+        },
+        "description": "Discount amount as a percentage of gross sales amount."
       },
       {
         "name": "Return Line Rate",
@@ -501,7 +516,8 @@
               "logicalColumn:Fashion Retail DW.Sales KPIs.Sales Line Count"
             ]
           }
-        }
+        },
+        "description": "Returned sales lines as a percentage of total sales lines."
       },
       {
         "name": "Full Price Line Share",
@@ -516,7 +532,8 @@
               "logicalColumn:Fashion Retail DW.Sales KPIs.Sales Line Count"
             ]
           }
-        }
+        },
+        "description": "Full-price sales lines as a percentage of total sales lines."
       },
       {
         "name": "Full Price Unit Share Percent",
@@ -531,7 +548,8 @@
               "logicalColumn:Fashion Retail DW.Sales KPIs.Units Sold"
             ]
           }
-        }
+        },
+        "description": "Full-price units as a percentage of total units sold."
       }
     ],
     "logicalTableSources": [

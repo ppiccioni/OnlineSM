@@ -34,102 +34,122 @@
       {
         "name": "Sales Line Count",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Sales Line Count",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Sales line activity aggregated to product-week grain."
       },
       {
         "name": "Transaction Count",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Transaction Count",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Distinct transaction activity represented in the product-week mart."
       },
       {
         "name": "Units Sold",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Units Sold",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Units sold for the selected product-week context."
       },
       {
         "name": "Full Price Units",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Full Price Units",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Units sold at full price for the selected product-week context."
       },
       {
         "name": "Full Price Line Count",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Full Price Line Count",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Sales lines sold at full price for the selected product-week context."
       },
       {
         "name": "Gross Sales Amount",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Gross Sales Amount",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Product-week sales amount before discounts and markdowns."
       },
       {
         "name": "Discount Amount",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Discount Amount",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Product-week discount or markdown value."
       },
       {
         "name": "Net Sales Amount",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Net Sales Amount",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Product-week sales amount after discounts and markdowns."
       },
       {
         "name": "Cost Amount",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Cost Amount",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Product-week standard cost associated with sold units."
       },
       {
         "name": "Gross Margin Amount",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Gross Margin Amount",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Product-week net sales minus product cost."
       },
       {
         "name": "Returned Units",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Returned Units",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Returned units associated with the product-week context."
       },
       {
         "name": "Return Line Count",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Return Line Count",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Return lines associated with the product-week context."
       },
       {
         "name": "Refund Amount",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Refund Amount",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Refund amount associated with returned product-week units."
       },
       {
         "name": "On Hand Units",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.On Hand Units",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Inventory on hand aggregated into the product-week mart."
       },
       {
         "name": "Available Units",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Available Units",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Available inventory aggregated into the product-week mart."
       },
       {
         "name": "Reserved Units",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Reserved Units",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Reserved inventory aggregated into the product-week mart."
       },
       {
         "name": "Stockout Store Count",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Stockout Store Count",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Number of store snapshots with a stockout for the product-week context."
       },
       {
         "name": "Store Snapshot Count",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Store Snapshot Count",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Number of store-SKU inventory snapshots contributing to the product-week context."
       },
       {
         "name": "Inventory Value At Cost",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Inventory Value At Cost",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Product-week inventory value calculated at standard cost."
       },
       {
         "name": "Average Weeks Of Supply",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Average Weeks Of Supply",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Average weeks of supply for the product-week context."
       },
       {
         "name": "Source Inventory Overstock Risk Score",
@@ -137,7 +157,8 @@
         "useLogicalColumnName": true,
         "hideIfTrue": {
           "expressionTemplate": "1 = 1"
-        }
+        },
+        "description": "Hidden source overstock score carried from inventory before product-week recomputation."
       },
       {
         "name": "Source Inventory Stockout Risk Score",
@@ -145,97 +166,116 @@
         "useLogicalColumnName": true,
         "hideIfTrue": {
           "expressionTemplate": "1 = 1"
-        }
+        },
+        "description": "Hidden source stockout score carried from inventory before product-week recomputation."
       },
       {
         "name": "Markdown Percent",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Markdown Percent",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Discount amount as a percentage of gross sales amount at product-week grain."
       },
       {
         "name": "Gross Margin Percent",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Gross Margin Percent",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Gross margin amount as a percentage of net sales amount at product-week grain."
       },
       {
         "name": "Return Rate Percent",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Return Rate Percent",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Returned units as a percentage of sold units at product-week grain."
       },
       {
         "name": "Full Price Sell Through Percent",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Full Price Sell Through Percent",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Full-price units divided by full-price units plus on-hand units."
       },
       {
         "name": "Full Price Unit Share Percent",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Full Price Unit Share Percent",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Full-price units as a percentage of total units sold."
       },
       {
         "name": "Sell Through Percent",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Sell Through Percent",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Units sold divided by units sold plus on-hand units."
       },
       {
         "name": "Stockout Store Rate Percent",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Stockout Store Rate Percent",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Stockout store snapshots as a percentage of store snapshots."
       },
       {
         "name": "Units Sold 4W Avg",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Units Sold 4W Avg",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Four-week moving average of units sold."
       },
       {
         "name": "Units Sold 13W Avg",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Units Sold 13W Avg",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Thirteen-week moving average of units sold."
       },
       {
         "name": "Net Sales 4W Avg",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Net Sales 4W Avg",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Four-week moving average of net sales amount."
       },
       {
         "name": "Return Rate 4W Avg",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Return Rate 4W Avg",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Four-week moving average of return rate."
       },
       {
         "name": "Demand Index 4W",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Demand Index 4W",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Short-term demand index based on recent four-week sales behavior."
       },
       {
         "name": "Demand Index 13W",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Demand Index 13W",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Longer-term demand index based on thirteen-week sales behavior."
       },
       {
         "name": "Stockout Risk Score",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Stockout Risk Score",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Historical product-week stockout risk score; use current product score for latest-snapshot status."
       },
       {
         "name": "Overstock Risk Score",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Overstock Risk Score",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Historical product-week overstock risk score; use current product score for latest-snapshot status."
       },
       {
-        "name": "Current Stockout Risk Score",
-        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Current Stockout Risk Score",
-        "useLogicalColumnName": true
+        "name": "Current Product Stockout Risk Score",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Current Product Stockout Risk Score",
+        "useLogicalColumnName": true,
+        "description": "Product-week stockout risk for the latest available week in the current query context; not store or region aware."
       },
       {
-        "name": "Current Overstock Risk Score",
-        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Current Overstock Risk Score",
-        "useLogicalColumnName": true
+        "name": "Current Product Overstock Risk Score",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Current Product Overstock Risk Score",
+        "useLogicalColumnName": true,
+        "description": "Product-week overstock risk for the latest available week in the current query context; not store or region aware."
       },
       {
         "name": "Activity Count",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Activity Count",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Activity flag count used to identify product-weeks with meaningful movement."
       },
       {
         "name": "Scenario Tag",

@@ -100,7 +100,8 @@
         },
         "aggregation": {
           "rule": "SUM"
-        }
+        },
+        "description": "Sales line activity aggregated to product-week grain."
       },
       {
         "name": "Transaction Count",
@@ -122,7 +123,8 @@
         },
         "aggregation": {
           "rule": "SUM"
-        }
+        },
+        "description": "Distinct transaction activity represented in the product-week mart."
       },
       {
         "name": "Units Sold",
@@ -144,7 +146,8 @@
         },
         "aggregation": {
           "rule": "SUM"
-        }
+        },
+        "description": "Units sold for the selected product-week context."
       },
       {
         "name": "Full Price Units",
@@ -166,7 +169,8 @@
         },
         "aggregation": {
           "rule": "SUM"
-        }
+        },
+        "description": "Units sold at full price for the selected product-week context."
       },
       {
         "name": "Full Price Line Count",
@@ -188,7 +192,8 @@
         },
         "aggregation": {
           "rule": "SUM"
-        }
+        },
+        "description": "Sales lines sold at full price for the selected product-week context."
       },
       {
         "name": "Gross Sales Amount",
@@ -210,7 +215,8 @@
         },
         "aggregation": {
           "rule": "SUM"
-        }
+        },
+        "description": "Product-week sales amount before discounts and markdowns."
       },
       {
         "name": "Discount Amount",
@@ -232,7 +238,8 @@
         },
         "aggregation": {
           "rule": "SUM"
-        }
+        },
+        "description": "Product-week discount or markdown value."
       },
       {
         "name": "Net Sales Amount",
@@ -254,7 +261,8 @@
         },
         "aggregation": {
           "rule": "SUM"
-        }
+        },
+        "description": "Product-week sales amount after discounts and markdowns."
       },
       {
         "name": "Cost Amount",
@@ -276,7 +284,8 @@
         },
         "aggregation": {
           "rule": "SUM"
-        }
+        },
+        "description": "Product-week standard cost associated with sold units."
       },
       {
         "name": "Gross Margin Amount",
@@ -298,7 +307,8 @@
         },
         "aggregation": {
           "rule": "SUM"
-        }
+        },
+        "description": "Product-week net sales minus product cost."
       },
       {
         "name": "Returned Units",
@@ -320,7 +330,8 @@
         },
         "aggregation": {
           "rule": "SUM"
-        }
+        },
+        "description": "Returned units associated with the product-week context."
       },
       {
         "name": "Return Line Count",
@@ -342,7 +353,8 @@
         },
         "aggregation": {
           "rule": "SUM"
-        }
+        },
+        "description": "Return lines associated with the product-week context."
       },
       {
         "name": "Refund Amount",
@@ -364,7 +376,8 @@
         },
         "aggregation": {
           "rule": "SUM"
-        }
+        },
+        "description": "Refund amount associated with returned product-week units."
       },
       {
         "name": "On Hand Units",
@@ -386,7 +399,8 @@
         },
         "aggregation": {
           "rule": "SUM"
-        }
+        },
+        "description": "Inventory on hand aggregated into the product-week mart."
       },
       {
         "name": "Available Units",
@@ -408,7 +422,8 @@
         },
         "aggregation": {
           "rule": "SUM"
-        }
+        },
+        "description": "Available inventory aggregated into the product-week mart."
       },
       {
         "name": "Reserved Units",
@@ -430,7 +445,8 @@
         },
         "aggregation": {
           "rule": "SUM"
-        }
+        },
+        "description": "Reserved inventory aggregated into the product-week mart."
       },
       {
         "name": "Stockout Store Count",
@@ -452,7 +468,8 @@
         },
         "aggregation": {
           "rule": "SUM"
-        }
+        },
+        "description": "Number of store snapshots with a stockout for the product-week context."
       },
       {
         "name": "Store Snapshot Count",
@@ -474,7 +491,8 @@
         },
         "aggregation": {
           "rule": "SUM"
-        }
+        },
+        "description": "Number of store-SKU inventory snapshots contributing to the product-week context."
       },
       {
         "name": "Inventory Value At Cost",
@@ -496,7 +514,8 @@
         },
         "aggregation": {
           "rule": "SUM"
-        }
+        },
+        "description": "Product-week inventory value calculated at standard cost."
       },
       {
         "name": "Average Weeks Of Supply",
@@ -518,7 +537,8 @@
         },
         "aggregation": {
           "rule": "AVG"
-        }
+        },
+        "description": "Average weeks of supply for the product-week context."
       },
       {
         "name": "Source Inventory Overstock Risk Score",
@@ -540,7 +560,8 @@
         },
         "aggregation": {
           "rule": "AVG"
-        }
+        },
+        "description": "Hidden source overstock score carried from inventory before product-week recomputation."
       },
       {
         "name": "Source Inventory Stockout Risk Score",
@@ -562,7 +583,8 @@
         },
         "aggregation": {
           "rule": "AVG"
-        }
+        },
+        "description": "Hidden source stockout score carried from inventory before product-week recomputation."
       },
       {
         "name": "Markdown Percent",
@@ -577,7 +599,8 @@
               "logicalColumn:Fashion Retail DW.Product Weekly Performance.Gross Sales Amount"
             ]
           }
-        }
+        },
+        "description": "Discount amount as a percentage of gross sales amount at product-week grain."
       },
       {
         "name": "Gross Margin Percent",
@@ -592,7 +615,8 @@
               "logicalColumn:Fashion Retail DW.Product Weekly Performance.Net Sales Amount"
             ]
           }
-        }
+        },
+        "description": "Gross margin amount as a percentage of net sales amount at product-week grain."
       },
       {
         "name": "Return Rate Percent",
@@ -607,7 +631,8 @@
               "logicalColumn:Fashion Retail DW.Product Weekly Performance.Units Sold"
             ]
           }
-        }
+        },
+        "description": "Returned units as a percentage of sold units at product-week grain."
       },
       {
         "name": "Full Price Sell Through Percent",
@@ -622,7 +647,8 @@
               "logicalColumn:Fashion Retail DW.Product Weekly Performance.On Hand Units"
             ]
           }
-        }
+        },
+        "description": "Full-price units divided by full-price units plus on-hand units."
       },
       {
         "name": "Full Price Unit Share Percent",
@@ -637,7 +663,8 @@
               "logicalColumn:Fashion Retail DW.Product Weekly Performance.Units Sold"
             ]
           }
-        }
+        },
+        "description": "Full-price units as a percentage of total units sold."
       },
       {
         "name": "Sell Through Percent",
@@ -652,7 +679,8 @@
               "logicalColumn:Fashion Retail DW.Product Weekly Performance.On Hand Units"
             ]
           }
-        }
+        },
+        "description": "Units sold divided by units sold plus on-hand units."
       },
       {
         "name": "Stockout Store Rate Percent",
@@ -667,7 +695,8 @@
               "logicalColumn:Fashion Retail DW.Product Weekly Performance.Store Snapshot Count"
             ]
           }
-        }
+        },
+        "description": "Stockout store snapshots as a percentage of store snapshots."
       },
       {
         "name": "Units Sold 4W Avg",
@@ -689,7 +718,8 @@
         },
         "aggregation": {
           "rule": "AVG"
-        }
+        },
+        "description": "Four-week moving average of units sold."
       },
       {
         "name": "Units Sold 13W Avg",
@@ -711,7 +741,8 @@
         },
         "aggregation": {
           "rule": "AVG"
-        }
+        },
+        "description": "Thirteen-week moving average of units sold."
       },
       {
         "name": "Net Sales 4W Avg",
@@ -733,7 +764,8 @@
         },
         "aggregation": {
           "rule": "AVG"
-        }
+        },
+        "description": "Four-week moving average of net sales amount."
       },
       {
         "name": "Return Rate 4W Avg",
@@ -755,7 +787,8 @@
         },
         "aggregation": {
           "rule": "AVG"
-        }
+        },
+        "description": "Four-week moving average of return rate."
       },
       {
         "name": "Demand Index 4W",
@@ -777,7 +810,8 @@
         },
         "aggregation": {
           "rule": "AVG"
-        }
+        },
+        "description": "Short-term demand index based on recent four-week sales behavior."
       },
       {
         "name": "Demand Index 13W",
@@ -799,7 +833,8 @@
         },
         "aggregation": {
           "rule": "AVG"
-        }
+        },
+        "description": "Longer-term demand index based on thirteen-week sales behavior."
       },
       {
         "name": "Stockout Risk Score",
@@ -821,7 +856,8 @@
         },
         "aggregation": {
           "rule": "AVG"
-        }
+        },
+        "description": "Historical product-week stockout risk score; use current product score for latest-snapshot status."
       },
       {
         "name": "Overstock Risk Score",
@@ -843,7 +879,8 @@
         },
         "aggregation": {
           "rule": "AVG"
-        }
+        },
+        "description": "Historical product-week overstock risk score; use current product score for latest-snapshot status."
       },
       {
         "name": "Raw Stockout Risk Score",
@@ -862,7 +899,8 @@
               }
             }
           ]
-        }
+        },
+        "description": "Hidden raw product-week stockout score used by current-risk calculations."
       },
       {
         "name": "Raw Overstock Risk Score",
@@ -881,11 +919,12 @@
               }
             }
           ]
-        }
+        },
+        "description": "Hidden raw product-week overstock score used by current-risk calculations."
       },
       {
-        "name": "Current Stockout Risk Score",
-        "description": "Average score for the latest available snapshot week in the current query context.",
+        "name": "Current Product Stockout Risk Score",
+        "description": "Product-week stockout risk for the latest available week in the current query context; not store or region aware.",
         "dataType": "DOUBLE",
         "writeable": false,
         "logicalColumnSource": {
@@ -900,8 +939,8 @@
         }
       },
       {
-        "name": "Current Overstock Risk Score",
-        "description": "Average score for the latest available snapshot week in the current query context.",
+        "name": "Current Product Overstock Risk Score",
+        "description": "Product-week overstock risk for the latest available week in the current query context; not store or region aware.",
         "dataType": "DOUBLE",
         "writeable": false,
         "logicalColumnSource": {
@@ -935,7 +974,8 @@
         },
         "aggregation": {
           "rule": "SUM"
-        }
+        },
+        "description": "Activity flag count used to identify product-weeks with meaningful movement."
       },
       {
         "name": "Scenario Tag",

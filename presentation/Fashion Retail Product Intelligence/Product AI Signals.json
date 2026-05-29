@@ -108,97 +108,116 @@
       {
         "name": "Units Sold",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Units Sold",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Units sold in the product-week case used by the AI signal layer."
       },
       {
         "name": "Full Price Units",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Full Price Units",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Full-price units in the product-week case used by the AI signal layer."
       },
       {
         "name": "Net Sales Amount",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Net Sales Amount",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Net sales amount in the product-week case used by the AI signal layer."
       },
       {
         "name": "Gross Margin Amount",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Gross Margin Amount",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Gross margin amount in the product-week case used by the AI signal layer."
       },
       {
         "name": "Returned Units",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Returned Units",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Returned units in the product-week case used by the AI signal layer."
       },
       {
         "name": "On Hand Units",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.On Hand Units",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "On-hand inventory in the product-week case used by the AI signal layer."
       },
       {
         "name": "Available Units",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Available Units",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Available inventory in the product-week case used by the AI signal layer."
       },
       {
         "name": "Markdown Percent",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Markdown Percent",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Markdown percent used as an AI signal feature."
       },
       {
         "name": "Gross Margin Percent",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Gross Margin Percent",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Gross margin percent used as an AI signal feature."
       },
       {
         "name": "Return Rate Percent",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Return Rate Percent",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Return rate percent used as an AI signal feature."
       },
       {
         "name": "Full Price Sell Through Percent",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Full Price Sell Through Percent",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Full-price sell-through percent used as an AI signal feature."
       },
       {
         "name": "Full Price Unit Share Percent",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Full Price Unit Share Percent",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Full-price unit share used as an AI signal feature."
       },
       {
         "name": "Sell Through Percent",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Sell Through Percent",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Sell-through percent used as an AI signal feature."
       },
       {
         "name": "Stockout Store Rate Percent",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Stockout Store Rate Percent",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Store stockout rate used as an AI signal feature."
       },
       {
         "name": "Average Weeks Of Supply",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Average Weeks Of Supply",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Weeks-of-supply feature used by the AI signal layer."
       },
       {
         "name": "Demand Index 4W",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Demand Index 4W",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Short-term demand index used by the AI signal layer."
       },
       {
         "name": "Demand Index 13W",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Demand Index 13W",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Longer-term demand index used by the AI signal layer."
       },
       {
         "name": "Stockout Risk Score",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Stockout Risk Score",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Product-week stockout risk score used by AI labeling and signal generation."
       },
       {
         "name": "Overstock Risk Score",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Overstock Risk Score",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Product-week overstock risk score used by AI labeling and signal generation."
       },
       {
         "name": "Anomaly Prediction",
@@ -206,27 +225,32 @@
         "useLogicalColumnName": true,
         "hideIfTrue": {
           "expressionTemplate": "1 = 1"
-        }
+        },
+        "description": "Model output indicating whether the product-week case is anomalous."
       },
       {
         "name": "Anomaly Count",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Anomaly Count",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Count of cases flagged as anomalous."
       },
       {
         "name": "Anomaly Probability",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Anomaly Probability",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Model probability that the product-week case is anomalous."
       },
       {
         "name": "Typical Probability",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Typical Probability",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Model probability that the product-week case is typical."
       },
       {
         "name": "Cluster Probability",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Cluster Probability",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Model confidence for the assigned product behavior cluster."
       },
       {
         "name": "Primary Feature ID",
@@ -239,32 +263,38 @@
       {
         "name": "Primary Feature Value",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Primary Feature Value",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Value of the feature that most influenced the signal assignment."
       },
       {
         "name": "Stockout Alert Cases",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Stockout Alert Cases",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Count of AI signal cases classified as stockout alerts."
       },
       {
         "name": "Overstock Alert Cases",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Overstock Alert Cases",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Count of AI signal cases classified as overstock alerts."
       },
       {
         "name": "Margin Alert Count",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Margin Alert Count",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Count of AI signal cases classified as margin alerts."
       },
       {
         "name": "Return Alert Count",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Return Alert Count",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Count of AI signal cases classified as return alerts."
       },
       {
         "name": "Action Priority",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Action Priority",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Priority score used to order recommended business actions."
       }
     ]
   }

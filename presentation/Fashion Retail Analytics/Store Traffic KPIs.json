@@ -21,17 +21,20 @@
       {
         "name": "Footfall Count",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Store Traffic KPIs.Footfall Count",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Total store visits or counted footfall events."
       },
       {
         "name": "Traffic Transaction Count",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Store Traffic KPIs.Traffic Transaction Count",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Transactions associated with store traffic reporting."
       },
       {
         "name": "Traffic Conversion Rate",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Store Traffic KPIs.Traffic Conversion Rate",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Transactions as a percentage of store footfall."
       },
       {
         "name": "Conversion Rate Raw",
@@ -39,22 +42,26 @@
         "useLogicalColumnName": true,
         "hideIfTrue": {
           "expressionTemplate": "1 = 1"
-        }
+        },
+        "description": "Raw conversion-rate input from the store traffic source."
       },
       {
         "name": "Average Dwell Minutes",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Store Traffic KPIs.Average Dwell Minutes",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Average customer dwell time in store, in minutes."
       },
       {
         "name": "Average Weather Impact Index",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Store Traffic KPIs.Average Weather Impact Index",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Average weather-related impact score for store traffic."
       },
       {
         "name": "Local Event Day Count",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Store Traffic KPIs.Local Event Day Count",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Count of days flagged as affected by local events."
       }
     ]
   }

@@ -348,7 +348,8 @@
         },
         "aggregation": {
           "rule": "SUM"
-        }
+        },
+        "description": "Number of distinct styles planned or represented in the collection context."
       },
       {
         "name": "Assortment SKU Count",
@@ -370,7 +371,8 @@
         },
         "aggregation": {
           "rule": "SUM"
-        }
+        },
+        "description": "Number of distinct SKUs planned or represented in the collection context."
       },
       {
         "name": "Average List Price",
@@ -392,7 +394,8 @@
         },
         "aggregation": {
           "rule": "AVG"
-        }
+        },
+        "description": "Average product list price for the collection context."
       },
       {
         "name": "Average Standard Cost",
@@ -414,7 +417,8 @@
         },
         "aggregation": {
           "rule": "AVG"
-        }
+        },
+        "description": "Average standard cost for products in the collection context."
       },
       {
         "name": "Sustainable SKU Count",
@@ -436,7 +440,8 @@
         },
         "aggregation": {
           "rule": "SUM"
-        }
+        },
+        "description": "Number of SKUs flagged as sustainable in the collection context."
       },
       {
         "name": "Carryover SKU Count",
@@ -458,7 +463,8 @@
         },
         "aggregation": {
           "rule": "SUM"
-        }
+        },
+        "description": "Number of carryover SKUs in the collection context."
       },
       {
         "name": "Sales Line Count",
@@ -480,7 +486,8 @@
         },
         "aggregation": {
           "rule": "SUM"
-        }
+        },
+        "description": "Sales line activity represented in the collection health mart."
       },
       {
         "name": "Transaction Count",
@@ -502,7 +509,8 @@
         },
         "aggregation": {
           "rule": "SUM"
-        }
+        },
+        "description": "Distinct transaction activity represented in the collection health mart."
       },
       {
         "name": "Selling SKU Count",
@@ -524,7 +532,8 @@
         },
         "aggregation": {
           "rule": "SUM"
-        }
+        },
+        "description": "Number of SKUs with sales activity."
       },
       {
         "name": "Selling Style Count",
@@ -546,7 +555,8 @@
         },
         "aggregation": {
           "rule": "SUM"
-        }
+        },
+        "description": "Number of styles with sales activity."
       },
       {
         "name": "Units Sold",
@@ -568,7 +578,8 @@
         },
         "aggregation": {
           "rule": "SUM"
-        }
+        },
+        "description": "Units sold for the collection/category context."
       },
       {
         "name": "Full Price Units",
@@ -590,7 +601,8 @@
         },
         "aggregation": {
           "rule": "SUM"
-        }
+        },
+        "description": "Units sold at full price for the collection/category context."
       },
       {
         "name": "Full Price Line Count",
@@ -612,7 +624,8 @@
         },
         "aggregation": {
           "rule": "SUM"
-        }
+        },
+        "description": "Full-price sales lines for the collection/category context."
       },
       {
         "name": "Gross Sales Amount",
@@ -634,7 +647,8 @@
         },
         "aggregation": {
           "rule": "SUM"
-        }
+        },
+        "description": "Gross sales amount before discounts for the collection/category context."
       },
       {
         "name": "Discount Amount",
@@ -656,7 +670,8 @@
         },
         "aggregation": {
           "rule": "SUM"
-        }
+        },
+        "description": "Discount or markdown amount for the collection/category context."
       },
       {
         "name": "Net Sales Amount",
@@ -678,7 +693,8 @@
         },
         "aggregation": {
           "rule": "SUM"
-        }
+        },
+        "description": "Net sales amount after discounts for the collection/category context."
       },
       {
         "name": "Cost Amount",
@@ -700,7 +716,8 @@
         },
         "aggregation": {
           "rule": "SUM"
-        }
+        },
+        "description": "Standard product cost for sold units in the collection/category context."
       },
       {
         "name": "Gross Margin Amount",
@@ -722,7 +739,8 @@
         },
         "aggregation": {
           "rule": "SUM"
-        }
+        },
+        "description": "Net sales minus standard cost for the collection/category context."
       },
       {
         "name": "Returned Units",
@@ -744,7 +762,8 @@
         },
         "aggregation": {
           "rule": "SUM"
-        }
+        },
+        "description": "Returned units for the collection/category context."
       },
       {
         "name": "Return Line Count",
@@ -766,7 +785,8 @@
         },
         "aggregation": {
           "rule": "SUM"
-        }
+        },
+        "description": "Return line count for the collection/category context."
       },
       {
         "name": "Refund Amount",
@@ -788,7 +808,8 @@
         },
         "aggregation": {
           "rule": "SUM"
-        }
+        },
+        "description": "Refund amount for the collection/category context."
       },
       {
         "name": "Inventory SKU Count",
@@ -810,7 +831,8 @@
         },
         "aggregation": {
           "rule": "SUM"
-        }
+        },
+        "description": "Number of SKUs represented in the latest inventory snapshot."
       },
       {
         "name": "Inventory Style Count",
@@ -832,7 +854,8 @@
         },
         "aggregation": {
           "rule": "SUM"
-        }
+        },
+        "description": "Number of styles represented in the latest inventory snapshot."
       },
       {
         "name": "Inventory Store Count",
@@ -854,7 +877,8 @@
         },
         "aggregation": {
           "rule": "SUM"
-        }
+        },
+        "description": "Number of stores represented in the latest inventory snapshot."
       },
       {
         "name": "Latest Store SKU Snapshot Count",
@@ -876,7 +900,8 @@
         },
         "aggregation": {
           "rule": "SUM"
-        }
+        },
+        "description": "Store-SKU snapshots in the latest available inventory week."
       },
       {
         "name": "Latest On Hand Units",
@@ -898,7 +923,8 @@
         },
         "aggregation": {
           "rule": "SUM"
-        }
+        },
+        "description": "On-hand units in the latest available inventory week."
       },
       {
         "name": "Latest Available Units",
@@ -920,7 +946,8 @@
         },
         "aggregation": {
           "rule": "SUM"
-        }
+        },
+        "description": "Available units in the latest available inventory week."
       },
       {
         "name": "Latest Reserved Units",
@@ -942,7 +969,8 @@
         },
         "aggregation": {
           "rule": "SUM"
-        }
+        },
+        "description": "Reserved units in the latest available inventory week."
       },
       {
         "name": "Latest Stockout Store Count",
@@ -964,7 +992,8 @@
         },
         "aggregation": {
           "rule": "SUM"
-        }
+        },
+        "description": "Stockout store snapshots in the latest available inventory week."
       },
       {
         "name": "Latest Inventory Value At Cost",
@@ -986,7 +1015,8 @@
         },
         "aggregation": {
           "rule": "SUM"
-        }
+        },
+        "description": "Inventory value at cost in the latest available inventory week."
       },
       {
         "name": "Average Latest Weeks Of Supply",
@@ -1008,7 +1038,8 @@
         },
         "aggregation": {
           "rule": "AVG"
-        }
+        },
+        "description": "Average weeks of supply in the latest available inventory week."
       },
       {
         "name": "Average Latest Overstock Risk Score",
@@ -1030,7 +1061,8 @@
         },
         "aggregation": {
           "rule": "AVG"
-        }
+        },
+        "description": "Average overstock risk in the latest available inventory week."
       },
       {
         "name": "Average Latest Stockout Risk Score",
@@ -1052,7 +1084,8 @@
         },
         "aggregation": {
           "rule": "AVG"
-        }
+        },
+        "description": "Average stockout risk in the latest available inventory week."
       },
       {
         "name": "Collection Sell Through Basis Units",
@@ -1074,7 +1107,8 @@
         },
         "aggregation": {
           "rule": "SUM"
-        }
+        },
+        "description": "Hidden denominator used to calculate collection sell-through percent."
       },
       {
         "name": "Gross Margin Percent",
@@ -1089,7 +1123,8 @@
               "logicalColumn:Fashion Retail DW.Collection Health.Net Sales Amount"
             ]
           }
-        }
+        },
+        "description": "Gross margin amount as a percentage of net sales for the collection context."
       },
       {
         "name": "Markdown Percent",
@@ -1104,7 +1139,8 @@
               "logicalColumn:Fashion Retail DW.Collection Health.Gross Sales Amount"
             ]
           }
-        }
+        },
+        "description": "Discount amount as a percentage of gross sales for the collection context."
       },
       {
         "name": "Return Rate Percent",
@@ -1119,7 +1155,8 @@
               "logicalColumn:Fashion Retail DW.Collection Health.Units Sold"
             ]
           }
-        }
+        },
+        "description": "Returned units as a percentage of sold units for the collection context."
       },
       {
         "name": "Full Price Unit Share Percent",
@@ -1134,7 +1171,8 @@
               "logicalColumn:Fashion Retail DW.Collection Health.Units Sold"
             ]
           }
-        }
+        },
+        "description": "Full-price units as a percentage of total units sold for the collection context."
       },
       {
         "name": "Collection Sell Through Percent",
@@ -1149,7 +1187,8 @@
               "logicalColumn:Fashion Retail DW.Collection Health.Collection Sell Through Basis Units"
             ]
           }
-        }
+        },
+        "description": "Units sold as a percentage of units sold plus latest on-hand units."
       },
       {
         "name": "Latest Stockout Store Rate Percent",
@@ -1164,7 +1203,8 @@
               "logicalColumn:Fashion Retail DW.Collection Health.Latest Store SKU Snapshot Count"
             ]
           }
-        }
+        },
+        "description": "Latest stockout store snapshots as a percentage of latest store-SKU snapshots."
       }
     ],
     "logicalTableSources": [
