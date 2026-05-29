@@ -891,15 +891,12 @@
         "logicalColumnSource": {
           "derivedFrom": "LOGICAL_COLUMNS",
           "logicalExpression": {
-            "expressionTemplate": "EVALUATE_AGGR('AVG(%1) KEEP (DENSE_RANK LAST ORDER BY %2)' AS DOUBLE, %1, %2)",
+            "expressionTemplate": "EVALUATE_AGGR('AVG(\\%1) KEEP (DENSE_RANK LAST ORDER BY \\%2)' AS DOUBLE, %1, %2)",
             "expressionObjects": [
               "logicalColumn:Fashion Retail DW.Product Weekly Performance.Raw Stockout Risk Score",
               "logicalColumn:Fashion Retail DW.Product Weekly Performance.Week Start Date"
             ]
           }
-        },
-        "aggregation": {
-          "rule": "EVALUATE_AGGR"
         }
       },
       {
@@ -910,15 +907,12 @@
         "logicalColumnSource": {
           "derivedFrom": "LOGICAL_COLUMNS",
           "logicalExpression": {
-            "expressionTemplate": "EVALUATE_AGGR('AVG(%1) KEEP (DENSE_RANK LAST ORDER BY %2)' AS DOUBLE, %1, %2)",
+            "expressionTemplate": "EVALUATE_AGGR('AVG(\\%1) KEEP (DENSE_RANK LAST ORDER BY \\%2)' AS DOUBLE, %1, %2)",
             "expressionObjects": [
               "logicalColumn:Fashion Retail DW.Product Weekly Performance.Raw Overstock Risk Score",
               "logicalColumn:Fashion Retail DW.Product Weekly Performance.Week Start Date"
             ]
           }
-        },
-        "aggregation": {
-          "rule": "EVALUATE_AGGR"
         }
       },
       {
