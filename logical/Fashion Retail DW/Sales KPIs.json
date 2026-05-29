@@ -352,6 +352,29 @@
         }
       },
       {
+        "name": "Full Price Units",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "FACT_SALES_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1 * %2",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.FACT_SALES.IS_FULL_PRICE",
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.FACT_SALES.QUANTITY"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        }
+      },
+      {
         "name": "Returned Line Count",
         "dataType": "DOUBLE",
         "writeable": false,
@@ -491,6 +514,21 @@
             "expressionObjects": [
               "logicalColumn:Fashion Retail DW.Sales KPIs.Full Price Line Count",
               "logicalColumn:Fashion Retail DW.Sales KPIs.Sales Line Count"
+            ]
+          }
+        }
+      },
+      {
+        "name": "Full Price Unit Share Percent",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "expressionTemplate": "CASE WHEN %2 = 0 THEN 0 ELSE %1 / %2 * 100 END",
+            "expressionObjects": [
+              "logicalColumn:Fashion Retail DW.Sales KPIs.Full Price Units",
+              "logicalColumn:Fashion Retail DW.Sales KPIs.Units Sold"
             ]
           }
         }

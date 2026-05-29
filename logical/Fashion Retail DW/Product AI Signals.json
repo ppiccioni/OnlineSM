@@ -138,7 +138,7 @@
         }
       },
       {
-        "name": "Demo Phenomenon",
+        "name": "Business Phenomenon",
         "dataType": "VARCHAR",
         "writeable": false,
         "logicalColumnSource": {
@@ -233,7 +233,7 @@
         }
       },
       {
-        "name": "Recommended Demo Action",
+        "name": "Recommended Action",
         "dataType": "VARCHAR",
         "writeable": false,
         "logicalColumnSource": {
@@ -570,6 +570,21 @@
         }
       },
       {
+        "name": "Full Price Unit Share Percent",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "expressionTemplate": "CASE WHEN %2 = 0 THEN 0 ELSE %1 / %2 * 100 END",
+            "expressionObjects": [
+              "logicalColumn:Fashion Retail DW.Product AI Signals.Full Price Units",
+              "logicalColumn:Fashion Retail DW.Product AI Signals.Units Sold"
+            ]
+          }
+        }
+      },
+      {
         "name": "Sell Through Percent",
         "dataType": "DOUBLE",
         "writeable": false,
@@ -680,7 +695,7 @@
         }
       },
       {
-        "name": "Computed Stockout Risk Score",
+        "name": "Stockout Risk Score",
         "dataType": "DOUBLE",
         "writeable": false,
         "logicalColumnSource": {
@@ -702,7 +717,7 @@
         }
       },
       {
-        "name": "Computed Overstock Risk Score",
+        "name": "Overstock Risk Score",
         "dataType": "DOUBLE",
         "writeable": false,
         "logicalColumnSource": {
@@ -878,7 +893,7 @@
         }
       },
       {
-        "name": "Stockout Alert Count",
+        "name": "Stockout Alert Cases",
         "dataType": "DOUBLE",
         "writeable": false,
         "logicalColumnSource": {
@@ -900,7 +915,7 @@
         }
       },
       {
-        "name": "Overstock Alert Count",
+        "name": "Overstock Alert Cases",
         "dataType": "DOUBLE",
         "writeable": false,
         "logicalColumnSource": {
@@ -966,7 +981,7 @@
         }
       },
       {
-        "name": "Demo Priority",
+        "name": "Action Priority",
         "dataType": "DOUBLE",
         "writeable": false,
         "logicalColumnSource": {

@@ -65,7 +65,7 @@
         "logicalLevel": "Cluster"
       },
       {
-        "name": "Recommended Demo Action",
+        "name": "Recommended Action",
         "dataType": "VARCHAR",
         "writeable": false,
         "logicalColumnSource": {
@@ -105,7 +105,7 @@
         "logicalLevel": "Cluster"
       },
       {
-        "name": "Demo Priority",
+        "name": "Action Priority",
         "dataType": "DOUBLE",
         "writeable": false,
         "logicalColumnSource": {
@@ -309,7 +309,7 @@
         "logicalLevel": "Cluster"
       },
       {
-        "name": "Average Stockout Risk",
+        "name": "Cluster Avg Stockout Risk Score",
         "dataType": "DOUBLE",
         "writeable": false,
         "logicalColumnSource": {
@@ -332,7 +332,7 @@
         "logicalLevel": "Cluster"
       },
       {
-        "name": "Average Overstock Risk",
+        "name": "Cluster Avg Overstock Risk Score",
         "dataType": "DOUBLE",
         "writeable": false,
         "logicalColumnSource": {
@@ -520,7 +520,7 @@
           ],
           "displayKey": "Cluster Label",
           "chronologicalKey": [
-            "Demo Priority"
+            "Action Priority"
           ]
         }
       ],

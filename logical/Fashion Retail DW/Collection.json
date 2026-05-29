@@ -44,7 +44,8 @@
             }
           ]
         },
-        "logicalLevel": "Detail"
+        "logicalLevel": "Detail",
+        "sortBy": "Launch Date"
       },
       {
         "name": "Season Code",
@@ -83,6 +84,22 @@
               }
             }
           ]
+        },
+        "logicalLevel": "Season",
+        "sortBy": "Season Sort Order"
+      },
+      {
+        "name": "Season Sort Order",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "expressionTemplate": "CASE WHEN %1 = 'SS' THEN 1 WHEN %1 = 'AW' THEN 2 ELSE 9 END",
+            "expressionObjects": [
+              "logicalColumn:Fashion Retail DW.Collection.Season Code"
+            ]
+          }
         },
         "logicalLevel": "Season"
       },
@@ -277,7 +294,7 @@
           ],
           "displayKey": "Season Name",
           "chronologicalKey": [
-            "Season Code"
+            "Season Sort Order"
           ]
         },
         {
@@ -290,7 +307,7 @@
           ],
           "displayKey": "Collection Name",
           "chronologicalKey": [
-            "Collection ID"
+            "Launch Date"
           ]
         }
       ],

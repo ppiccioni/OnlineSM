@@ -118,6 +118,11 @@
         }
       },
       {
+        "name": "Full Price Units",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Sales KPIs.Full Price Units",
+        "useLogicalColumnName": true
+      },
+      {
         "name": "Returned Line Count",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Sales KPIs.Returned Line Count",
         "useLogicalColumnName": true,
@@ -163,6 +168,11 @@
       {
         "name": "Full Price Line Share",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Sales KPIs.Full Price Line Share",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Full Price Unit Share Percent",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Sales KPIs.Full Price Unit Share Percent",
         "useLogicalColumnName": true
       }
     ]
