@@ -347,7 +347,8 @@
         },
         "aggregation": {
           "rule": "SUM"
-        }
+        },
+        "description": "Units sold in the product-week case used by the AI signal layer."
       },
       {
         "name": "Full Price Units",
@@ -369,7 +370,8 @@
         },
         "aggregation": {
           "rule": "SUM"
-        }
+        },
+        "description": "Full-price units in the product-week case used by the AI signal layer."
       },
       {
         "name": "Net Sales Amount",
@@ -391,7 +393,8 @@
         },
         "aggregation": {
           "rule": "SUM"
-        }
+        },
+        "description": "Net sales amount in the product-week case used by the AI signal layer."
       },
       {
         "name": "Gross Margin Amount",
@@ -413,7 +416,8 @@
         },
         "aggregation": {
           "rule": "SUM"
-        }
+        },
+        "description": "Gross margin amount in the product-week case used by the AI signal layer."
       },
       {
         "name": "Returned Units",
@@ -435,7 +439,8 @@
         },
         "aggregation": {
           "rule": "SUM"
-        }
+        },
+        "description": "Returned units in the product-week case used by the AI signal layer."
       },
       {
         "name": "On Hand Units",
@@ -457,7 +462,8 @@
         },
         "aggregation": {
           "rule": "SUM"
-        }
+        },
+        "description": "On-hand inventory in the product-week case used by the AI signal layer."
       },
       {
         "name": "Available Units",
@@ -479,7 +485,8 @@
         },
         "aggregation": {
           "rule": "SUM"
-        }
+        },
+        "description": "Available inventory in the product-week case used by the AI signal layer."
       },
       {
         "name": "Markdown Percent",
@@ -501,7 +508,8 @@
         },
         "aggregation": {
           "rule": "AVG"
-        }
+        },
+        "description": "Markdown percent used as an AI signal feature."
       },
       {
         "name": "Gross Margin Percent",
@@ -523,7 +531,8 @@
         },
         "aggregation": {
           "rule": "AVG"
-        }
+        },
+        "description": "Gross margin percent used as an AI signal feature."
       },
       {
         "name": "Return Rate Percent",
@@ -545,7 +554,8 @@
         },
         "aggregation": {
           "rule": "AVG"
-        }
+        },
+        "description": "Return rate percent used as an AI signal feature."
       },
       {
         "name": "Full Price Sell Through Percent",
@@ -567,7 +577,8 @@
         },
         "aggregation": {
           "rule": "AVG"
-        }
+        },
+        "description": "Full-price sell-through percent used as an AI signal feature."
       },
       {
         "name": "Full Price Unit Share Percent",
@@ -582,7 +593,8 @@
               "logicalColumn:Fashion Retail DW.Product AI Signals.Units Sold"
             ]
           }
-        }
+        },
+        "description": "Full-price unit share used as an AI signal feature."
       },
       {
         "name": "Sell Through Percent",
@@ -604,7 +616,8 @@
         },
         "aggregation": {
           "rule": "AVG"
-        }
+        },
+        "description": "Sell-through percent used as an AI signal feature."
       },
       {
         "name": "Stockout Store Rate Percent",
@@ -626,7 +639,8 @@
         },
         "aggregation": {
           "rule": "AVG"
-        }
+        },
+        "description": "Store stockout rate used as an AI signal feature."
       },
       {
         "name": "Average Weeks Of Supply",
@@ -648,7 +662,8 @@
         },
         "aggregation": {
           "rule": "AVG"
-        }
+        },
+        "description": "Weeks-of-supply feature used by the AI signal layer."
       },
       {
         "name": "Demand Index 4W",
@@ -670,7 +685,8 @@
         },
         "aggregation": {
           "rule": "AVG"
-        }
+        },
+        "description": "Short-term demand index used by the AI signal layer."
       },
       {
         "name": "Demand Index 13W",
@@ -692,7 +708,8 @@
         },
         "aggregation": {
           "rule": "AVG"
-        }
+        },
+        "description": "Longer-term demand index used by the AI signal layer."
       },
       {
         "name": "Stockout Risk Score",
@@ -714,7 +731,8 @@
         },
         "aggregation": {
           "rule": "AVG"
-        }
+        },
+        "description": "Product-week stockout risk score used by AI labeling and signal generation."
       },
       {
         "name": "Overstock Risk Score",
@@ -736,7 +754,8 @@
         },
         "aggregation": {
           "rule": "AVG"
-        }
+        },
+        "description": "Product-week overstock risk score used by AI labeling and signal generation."
       },
       {
         "name": "Anomaly Prediction",
@@ -758,7 +777,8 @@
         },
         "aggregation": {
           "rule": "AVG"
-        }
+        },
+        "description": "Model output indicating whether the product-week case is anomalous."
       },
       {
         "name": "Anomaly Count",
@@ -780,7 +800,8 @@
         },
         "aggregation": {
           "rule": "SUM"
-        }
+        },
+        "description": "Count of cases flagged as anomalous."
       },
       {
         "name": "Anomaly Probability",
@@ -802,7 +823,8 @@
         },
         "aggregation": {
           "rule": "AVG"
-        }
+        },
+        "description": "Model probability that the product-week case is anomalous."
       },
       {
         "name": "Typical Probability",
@@ -824,7 +846,8 @@
         },
         "aggregation": {
           "rule": "AVG"
-        }
+        },
+        "description": "Model probability that the product-week case is typical."
       },
       {
         "name": "Cluster Probability",
@@ -846,7 +869,8 @@
         },
         "aggregation": {
           "rule": "AVG"
-        }
+        },
+        "description": "Model confidence for the assigned product behavior cluster."
       },
       {
         "name": "Primary Feature ID",
@@ -890,7 +914,8 @@
         },
         "aggregation": {
           "rule": "AVG"
-        }
+        },
+        "description": "Value of the feature that most influenced the signal assignment."
       },
       {
         "name": "Stockout Alert Cases",
@@ -912,7 +937,8 @@
         },
         "aggregation": {
           "rule": "SUM"
-        }
+        },
+        "description": "Count of AI signal cases classified as stockout alerts."
       },
       {
         "name": "Overstock Alert Cases",
@@ -934,7 +960,8 @@
         },
         "aggregation": {
           "rule": "SUM"
-        }
+        },
+        "description": "Count of AI signal cases classified as overstock alerts."
       },
       {
         "name": "Margin Alert Count",
@@ -956,7 +983,8 @@
         },
         "aggregation": {
           "rule": "SUM"
-        }
+        },
+        "description": "Count of AI signal cases classified as margin alerts."
       },
       {
         "name": "Return Alert Count",
@@ -978,7 +1006,8 @@
         },
         "aggregation": {
           "rule": "SUM"
-        }
+        },
+        "description": "Count of AI signal cases classified as return alerts."
       },
       {
         "name": "Action Priority",
@@ -1000,7 +1029,8 @@
         },
         "aggregation": {
           "rule": "AVG"
-        }
+        },
+        "description": "Priority score used to order recommended business actions."
       }
     ],
     "logicalTableSources": [

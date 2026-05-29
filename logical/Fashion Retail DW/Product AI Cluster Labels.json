@@ -122,7 +122,8 @@
             }
           ]
         },
-        "logicalLevel": "Cluster"
+        "logicalLevel": "Cluster",
+        "description": "Priority score assigned to the cluster label and recommended action."
       },
       {
         "name": "Product Week Count",
@@ -145,7 +146,8 @@
         "aggregation": {
           "rule": "SUM"
         },
-        "logicalLevel": "Cluster"
+        "logicalLevel": "Cluster",
+        "description": "Number of product-week cases assigned to the cluster."
       },
       {
         "name": "SKU Count",
@@ -168,7 +170,8 @@
         "aggregation": {
           "rule": "SUM"
         },
-        "logicalLevel": "Cluster"
+        "logicalLevel": "Cluster",
+        "description": "Number of distinct SKUs represented in the cluster."
       },
       {
         "name": "Average Cluster Probability",
@@ -191,7 +194,8 @@
         "aggregation": {
           "rule": "AVG"
         },
-        "logicalLevel": "Cluster"
+        "logicalLevel": "Cluster",
+        "description": "Average model confidence for cases assigned to the cluster."
       },
       {
         "name": "Average Units Sold",
@@ -214,7 +218,8 @@
         "aggregation": {
           "rule": "AVG"
         },
-        "logicalLevel": "Cluster"
+        "logicalLevel": "Cluster",
+        "description": "Average units sold among product-week cases in the cluster."
       },
       {
         "name": "Average Net Sales Amount",
@@ -237,7 +242,8 @@
         "aggregation": {
           "rule": "AVG"
         },
-        "logicalLevel": "Cluster"
+        "logicalLevel": "Cluster",
+        "description": "Average net sales among product-week cases in the cluster."
       },
       {
         "name": "Average Full Price Sell Through Percent",
@@ -260,7 +266,8 @@
         "aggregation": {
           "rule": "AVG"
         },
-        "logicalLevel": "Cluster"
+        "logicalLevel": "Cluster",
+        "description": "Average full-price sell-through percent for the cluster."
       },
       {
         "name": "Average Markdown Percent",
@@ -283,7 +290,8 @@
         "aggregation": {
           "rule": "AVG"
         },
-        "logicalLevel": "Cluster"
+        "logicalLevel": "Cluster",
+        "description": "Average markdown percent for the cluster."
       },
       {
         "name": "Average Return Rate Percent",
@@ -306,7 +314,8 @@
         "aggregation": {
           "rule": "AVG"
         },
-        "logicalLevel": "Cluster"
+        "logicalLevel": "Cluster",
+        "description": "Average return rate percent for the cluster."
       },
       {
         "name": "Cluster Avg Stockout Risk Score",
@@ -329,7 +338,8 @@
         "aggregation": {
           "rule": "AVG"
         },
-        "logicalLevel": "Cluster"
+        "logicalLevel": "Cluster",
+        "description": "Average stockout risk score for product-week cases in the cluster."
       },
       {
         "name": "Cluster Avg Overstock Risk Score",
@@ -352,7 +362,8 @@
         "aggregation": {
           "rule": "AVG"
         },
-        "logicalLevel": "Cluster"
+        "logicalLevel": "Cluster",
+        "description": "Average overstock risk score for product-week cases in the cluster."
       },
       {
         "name": "Average Anomaly Probability",
@@ -375,7 +386,8 @@
         "aggregation": {
           "rule": "AVG"
         },
-        "logicalLevel": "Cluster"
+        "logicalLevel": "Cluster",
+        "description": "Average anomaly probability for product-week cases in the cluster."
       },
       {
         "name": "Anomaly Row Count",
@@ -398,7 +410,8 @@
         "aggregation": {
           "rule": "SUM"
         },
-        "logicalLevel": "Cluster"
+        "logicalLevel": "Cluster",
+        "description": "Number of anomalous product-week cases represented in the cluster."
       },
       {
         "name": "Modal Department",

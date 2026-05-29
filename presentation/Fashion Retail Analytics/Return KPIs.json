@@ -66,17 +66,20 @@
       {
         "name": "Returned Units",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Return KPIs.Returned Units",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Total units returned by customers in the selected context."
       },
       {
         "name": "Refund Amount",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Return KPIs.Refund Amount",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Total refunded value associated with returned sales lines."
       },
       {
         "name": "Average Days To Return",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Return KPIs.Average Days To Return",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Average number of days between original sale and return."
       },
       {
         "name": "Scenario Tag",
@@ -86,17 +89,20 @@
       {
         "name": "Return Line Count",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Return KPIs.Return Line Count",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Number of return records or returned sales lines."
       },
       {
         "name": "Average Refund Amount",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Return KPIs.Average Refund Amount",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Refund amount divided by return line count."
       },
       {
         "name": "Returned Units Per Return",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Return KPIs.Returned Units Per Return",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Average number of returned units per return record."
       }
     ]
   }

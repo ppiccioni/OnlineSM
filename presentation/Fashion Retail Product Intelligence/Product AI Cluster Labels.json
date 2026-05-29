@@ -33,67 +33,80 @@
       {
         "name": "Action Priority",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.Action Priority",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Priority score assigned to the cluster label and recommended action."
       },
       {
         "name": "Product Week Count",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.Product Week Count",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Number of product-week cases assigned to the cluster."
       },
       {
         "name": "SKU Count",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.SKU Count",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Number of distinct SKUs represented in the cluster."
       },
       {
         "name": "Average Cluster Probability",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.Average Cluster Probability",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Average model confidence for cases assigned to the cluster."
       },
       {
         "name": "Average Units Sold",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.Average Units Sold",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Average units sold among product-week cases in the cluster."
       },
       {
         "name": "Average Net Sales Amount",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.Average Net Sales Amount",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Average net sales among product-week cases in the cluster."
       },
       {
         "name": "Average Full Price Sell Through Percent",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.Average Full Price Sell Through Percent",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Average full-price sell-through percent for the cluster."
       },
       {
         "name": "Average Markdown Percent",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.Average Markdown Percent",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Average markdown percent for the cluster."
       },
       {
         "name": "Average Return Rate Percent",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.Average Return Rate Percent",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Average return rate percent for the cluster."
       },
       {
         "name": "Cluster Avg Stockout Risk Score",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.Cluster Avg Stockout Risk Score",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Average stockout risk score for product-week cases in the cluster."
       },
       {
         "name": "Cluster Avg Overstock Risk Score",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.Cluster Avg Overstock Risk Score",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Average overstock risk score for product-week cases in the cluster."
       },
       {
         "name": "Average Anomaly Probability",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.Average Anomaly Probability",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Average anomaly probability for product-week cases in the cluster."
       },
       {
         "name": "Anomaly Row Count",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.Anomaly Row Count",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Number of anomalous product-week cases represented in the cluster."
       },
       {
         "name": "Modal Department",

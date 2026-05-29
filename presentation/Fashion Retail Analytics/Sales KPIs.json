@@ -74,32 +74,38 @@
       {
         "name": "Units Sold",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Sales KPIs.Units Sold",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Total merchandise units sold after applying the current analysis filters."
       },
       {
         "name": "Gross Sales Amount",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Sales KPIs.Gross Sales Amount",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Sales value before discounts, markdowns, returns, or cost deductions."
       },
       {
         "name": "Discount Amount",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Sales KPIs.Discount Amount",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Total discount or markdown value applied to sales lines."
       },
       {
         "name": "Net Sales Amount",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Sales KPIs.Net Sales Amount",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Sales value after discounts and markdowns, before cost and return adjustments."
       },
       {
         "name": "Cost Amount",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Sales KPIs.Cost Amount",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Total standard product cost associated with the sold units."
       },
       {
         "name": "Gross Margin Amount",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Sales KPIs.Gross Margin Amount",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Net sales minus product cost, expressed as an amount."
       },
       {
         "name": "Markdown Pct Raw",
@@ -107,7 +113,8 @@
         "useLogicalColumnName": true,
         "hideIfTrue": {
           "expressionTemplate": "1 = 1"
-        }
+        },
+        "description": "Raw line-level markdown ratio used as an input to markdown calculations."
       },
       {
         "name": "Full Price Line Count",
@@ -115,12 +122,14 @@
         "useLogicalColumnName": true,
         "hideIfTrue": {
           "expressionTemplate": "1 = 1"
-        }
+        },
+        "description": "Number of sales lines sold without markdown."
       },
       {
         "name": "Full Price Units",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Sales KPIs.Full Price Units",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Units sold at full price, before markdown activity."
       },
       {
         "name": "Returned Line Count",
@@ -128,7 +137,8 @@
         "useLogicalColumnName": true,
         "hideIfTrue": {
           "expressionTemplate": "1 = 1"
-        }
+        },
+        "description": "Number of sales lines that later generated a return."
       },
       {
         "name": "Scenario Tag",
@@ -138,42 +148,50 @@
       {
         "name": "Sales Line Count",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Sales KPIs.Sales Line Count",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Count of sales lines, useful as a transaction-detail activity measure."
       },
       {
         "name": "Transaction Count",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Sales KPIs.Transaction Count",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Distinct sales transactions represented in the selected context."
       },
       {
         "name": "Average Selling Price",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Sales KPIs.Average Selling Price",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Net sales amount divided by units sold; a proxy for realized price."
       },
       {
         "name": "Gross Margin Pct",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Sales KPIs.Gross Margin Pct",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Gross margin amount as a percentage of net sales amount."
       },
       {
         "name": "Markdown Pct",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Sales KPIs.Markdown Pct",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Discount amount as a percentage of gross sales amount."
       },
       {
         "name": "Return Line Rate",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Sales KPIs.Return Line Rate",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Returned sales lines as a percentage of total sales lines."
       },
       {
         "name": "Full Price Line Share",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Sales KPIs.Full Price Line Share",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Full-price sales lines as a percentage of total sales lines."
       },
       {
         "name": "Full Price Unit Share Percent",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Sales KPIs.Full Price Unit Share Percent",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Full-price units as a percentage of total units sold."
       }
     ]
   }

@@ -96,167 +96,200 @@
       {
         "name": "Assortment Style Count",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Assortment Style Count",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Number of distinct styles planned or represented in the collection context."
       },
       {
         "name": "Assortment SKU Count",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Assortment SKU Count",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Number of distinct SKUs planned or represented in the collection context."
       },
       {
         "name": "Average List Price",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Average List Price",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Average product list price for the collection context."
       },
       {
         "name": "Average Standard Cost",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Average Standard Cost",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Average standard cost for products in the collection context."
       },
       {
         "name": "Sustainable SKU Count",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Sustainable SKU Count",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Number of SKUs flagged as sustainable in the collection context."
       },
       {
         "name": "Carryover SKU Count",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Carryover SKU Count",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Number of carryover SKUs in the collection context."
       },
       {
         "name": "Sales Line Count",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Sales Line Count",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Sales line activity represented in the collection health mart."
       },
       {
         "name": "Transaction Count",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Transaction Count",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Distinct transaction activity represented in the collection health mart."
       },
       {
         "name": "Selling SKU Count",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Selling SKU Count",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Number of SKUs with sales activity."
       },
       {
         "name": "Selling Style Count",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Selling Style Count",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Number of styles with sales activity."
       },
       {
         "name": "Units Sold",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Units Sold",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Units sold for the collection/category context."
       },
       {
         "name": "Full Price Units",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Full Price Units",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Units sold at full price for the collection/category context."
       },
       {
         "name": "Full Price Line Count",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Full Price Line Count",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Full-price sales lines for the collection/category context."
       },
       {
         "name": "Gross Sales Amount",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Gross Sales Amount",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Gross sales amount before discounts for the collection/category context."
       },
       {
         "name": "Discount Amount",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Discount Amount",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Discount or markdown amount for the collection/category context."
       },
       {
         "name": "Net Sales Amount",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Net Sales Amount",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Net sales amount after discounts for the collection/category context."
       },
       {
         "name": "Cost Amount",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Cost Amount",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Standard product cost for sold units in the collection/category context."
       },
       {
         "name": "Gross Margin Amount",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Gross Margin Amount",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Net sales minus standard cost for the collection/category context."
       },
       {
         "name": "Returned Units",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Returned Units",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Returned units for the collection/category context."
       },
       {
         "name": "Return Line Count",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Return Line Count",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Return line count for the collection/category context."
       },
       {
         "name": "Refund Amount",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Refund Amount",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Refund amount for the collection/category context."
       },
       {
         "name": "Inventory SKU Count",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Inventory SKU Count",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Number of SKUs represented in the latest inventory snapshot."
       },
       {
         "name": "Inventory Style Count",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Inventory Style Count",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Number of styles represented in the latest inventory snapshot."
       },
       {
         "name": "Inventory Store Count",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Inventory Store Count",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Number of stores represented in the latest inventory snapshot."
       },
       {
         "name": "Latest Store SKU Snapshot Count",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Latest Store SKU Snapshot Count",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Store-SKU snapshots in the latest available inventory week."
       },
       {
         "name": "Latest On Hand Units",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Latest On Hand Units",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "On-hand units in the latest available inventory week."
       },
       {
         "name": "Latest Available Units",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Latest Available Units",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Available units in the latest available inventory week."
       },
       {
         "name": "Latest Reserved Units",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Latest Reserved Units",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Reserved units in the latest available inventory week."
       },
       {
         "name": "Latest Stockout Store Count",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Latest Stockout Store Count",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Stockout store snapshots in the latest available inventory week."
       },
       {
         "name": "Latest Inventory Value At Cost",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Latest Inventory Value At Cost",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Inventory value at cost in the latest available inventory week."
       },
       {
         "name": "Average Latest Weeks Of Supply",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Average Latest Weeks Of Supply",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Average weeks of supply in the latest available inventory week."
       },
       {
         "name": "Average Latest Overstock Risk Score",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Average Latest Overstock Risk Score",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Average overstock risk in the latest available inventory week."
       },
       {
         "name": "Average Latest Stockout Risk Score",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Average Latest Stockout Risk Score",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Average stockout risk in the latest available inventory week."
       },
       {
         "name": "Collection Sell Through Basis Units",
@@ -264,37 +297,44 @@
         "useLogicalColumnName": true,
         "hideIfTrue": {
           "expressionTemplate": "1 = 1"
-        }
+        },
+        "description": "Hidden denominator used to calculate collection sell-through percent."
       },
       {
         "name": "Gross Margin Percent",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Gross Margin Percent",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Gross margin amount as a percentage of net sales for the collection context."
       },
       {
         "name": "Markdown Percent",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Markdown Percent",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Discount amount as a percentage of gross sales for the collection context."
       },
       {
         "name": "Return Rate Percent",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Return Rate Percent",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Returned units as a percentage of sold units for the collection context."
       },
       {
         "name": "Full Price Unit Share Percent",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Full Price Unit Share Percent",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Full-price units as a percentage of total units sold for the collection context."
       },
       {
         "name": "Collection Sell Through Percent",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Collection Sell Through Percent",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Units sold as a percentage of units sold plus latest on-hand units."
       },
       {
         "name": "Latest Stockout Store Rate Percent",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Latest Stockout Store Rate Percent",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Latest stockout store snapshots as a percentage of latest store-SKU snapshots."
       }
     ]
   }

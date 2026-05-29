@@ -62,7 +62,8 @@
         },
         "aggregation": {
           "rule": "SUM"
-        }
+        },
+        "description": "Total store visits or counted footfall events."
       },
       {
         "name": "Traffic Transaction Count",
@@ -84,7 +85,8 @@
         },
         "aggregation": {
           "rule": "SUM"
-        }
+        },
+        "description": "Transactions associated with store traffic reporting."
       },
       {
         "name": "Conversion Rate Raw",
@@ -106,7 +108,8 @@
         },
         "aggregation": {
           "rule": "AVG"
-        }
+        },
+        "description": "Raw conversion-rate input from the store traffic source."
       },
       {
         "name": "Average Dwell Minutes",
@@ -128,7 +131,8 @@
         },
         "aggregation": {
           "rule": "AVG"
-        }
+        },
+        "description": "Average customer dwell time in store, in minutes."
       },
       {
         "name": "Average Weather Impact Index",
@@ -150,7 +154,8 @@
         },
         "aggregation": {
           "rule": "AVG"
-        }
+        },
+        "description": "Average weather-related impact score for store traffic."
       },
       {
         "name": "Local Event Day Count",
@@ -172,7 +177,8 @@
         },
         "aggregation": {
           "rule": "SUM"
-        }
+        },
+        "description": "Count of days flagged as affected by local events."
       },
       {
         "name": "Traffic Conversion Rate",
@@ -187,7 +193,8 @@
               "logicalColumn:Fashion Retail DW.Store Traffic KPIs.Footfall Count"
             ]
           }
-        }
+        },
+        "description": "Transactions as a percentage of store footfall."
       }
     ],
     "logicalTableSources": [

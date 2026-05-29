@@ -119,7 +119,8 @@
         },
         "aggregation": {
           "rule": "SUM"
-        }
+        },
+        "description": "Total physical stock on hand at store-SKU-week grain."
       },
       {
         "name": "Available Units",
@@ -141,7 +142,8 @@
         },
         "aggregation": {
           "rule": "SUM"
-        }
+        },
+        "description": "Units available for sale after reservations or unavailable stock."
       },
       {
         "name": "Reserved Units",
@@ -163,7 +165,8 @@
         },
         "aggregation": {
           "rule": "SUM"
-        }
+        },
+        "description": "Units reserved and not immediately available for sale."
       },
       {
         "name": "Stockout Count",
@@ -185,7 +188,8 @@
         },
         "aggregation": {
           "rule": "SUM"
-        }
+        },
+        "description": "Count of store-SKU snapshots flagged as stockout."
       },
       {
         "name": "Inventory Value At Cost",
@@ -207,7 +211,8 @@
         },
         "aggregation": {
           "rule": "SUM"
-        }
+        },
+        "description": "Inventory value calculated using standard product cost."
       },
       {
         "name": "Average Weeks Of Supply",
@@ -229,7 +234,8 @@
         },
         "aggregation": {
           "rule": "AVG"
-        }
+        },
+        "description": "Average estimated weeks of supply based on stock and demand."
       },
       {
         "name": "Average Overstock Risk Score",
@@ -251,7 +257,8 @@
         },
         "aggregation": {
           "rule": "AVG"
-        }
+        },
+        "description": "Historical average overstock risk at store-SKU-week grain."
       },
       {
         "name": "Average Stockout Risk Score",
@@ -273,7 +280,8 @@
         },
         "aggregation": {
           "rule": "AVG"
-        }
+        },
+        "description": "Historical average stockout risk at store-SKU-week grain."
       },
       {
         "name": "Raw Stockout Risk Score",
@@ -292,7 +300,8 @@
               }
             }
           ]
-        }
+        },
+        "description": "Hidden raw store-SKU stockout score used by current-risk calculations."
       },
       {
         "name": "Raw Overstock Risk Score",
@@ -311,11 +320,12 @@
               }
             }
           ]
-        }
+        },
+        "description": "Hidden raw store-SKU overstock score used by current-risk calculations."
       },
       {
-        "name": "Current Stockout Risk Score",
-        "description": "Average score for the latest available snapshot week in the current query context.",
+        "name": "Current Store-SKU Stockout Risk Score",
+        "description": "Store-SKU stockout risk for the latest available snapshot week in the current query context; supports Store and Region filtering.",
         "dataType": "DOUBLE",
         "writeable": false,
         "logicalColumnSource": {
@@ -330,8 +340,8 @@
         }
       },
       {
-        "name": "Current Overstock Risk Score",
-        "description": "Average score for the latest available snapshot week in the current query context.",
+        "name": "Current Store-SKU Overstock Risk Score",
+        "description": "Store-SKU overstock risk for the latest available snapshot week in the current query context; supports Store and Region filtering.",
         "dataType": "DOUBLE",
         "writeable": false,
         "logicalColumnSource": {
@@ -377,7 +387,8 @@
               "logicalColumn:Fashion Retail DW.Inventory KPIs.On Hand Units"
             ]
           }
-        }
+        },
+        "description": "Available units as a percentage of on-hand units."
       }
     ],
     "logicalTableSources": [
