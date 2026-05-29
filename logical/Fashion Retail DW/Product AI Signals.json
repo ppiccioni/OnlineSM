@@ -233,7 +233,7 @@
         }
       },
       {
-        "name": "Recommended Action",
+        "name": "Recommended Business Action",
         "dataType": "VARCHAR",
         "writeable": false,
         "logicalColumnSource": {
