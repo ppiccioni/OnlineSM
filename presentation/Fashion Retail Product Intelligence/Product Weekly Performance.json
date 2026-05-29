@@ -223,6 +223,16 @@
         "useLogicalColumnName": true
       },
       {
+        "name": "Current Stockout Risk Score",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Current Stockout Risk Score",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Current Overstock Risk Score",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Current Overstock Risk Score",
+        "useLogicalColumnName": true
+      },
+      {
         "name": "Activity Count",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Activity Count",
         "useLogicalColumnName": true

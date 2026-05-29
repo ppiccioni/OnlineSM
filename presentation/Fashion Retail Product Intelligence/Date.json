@@ -71,27 +71,27 @@
           {
             "name": "Year",
             "sourceLogicalLevel": "logicalLevel:Fashion Retail DW.Date.Year",
-            "displayColumn": "presentationColumn:Fashion Retail Analytics.Date.Calendar Year"
+            "displayColumn": "presentationColumn:Fashion Retail Product Intelligence.Date.Calendar Year"
           },
           {
             "name": "Quarter",
             "sourceLogicalLevel": "logicalLevel:Fashion Retail DW.Date.Quarter",
-            "displayColumn": "presentationColumn:Fashion Retail Analytics.Date.Quarter Number"
+            "displayColumn": "presentationColumn:Fashion Retail Product Intelligence.Date.Quarter Number"
           },
           {
             "name": "Month",
             "sourceLogicalLevel": "logicalLevel:Fashion Retail DW.Date.Month",
-            "displayColumn": "presentationColumn:Fashion Retail Analytics.Date.Month Name"
+            "displayColumn": "presentationColumn:Fashion Retail Product Intelligence.Date.Month Name"
           },
           {
             "name": "Week",
             "sourceLogicalLevel": "logicalLevel:Fashion Retail DW.Date.Week",
-            "displayColumn": "presentationColumn:Fashion Retail Analytics.Date.Week Start Date"
+            "displayColumn": "presentationColumn:Fashion Retail Product Intelligence.Date.Week Start Date"
           },
           {
             "name": "Detail",
             "sourceLogicalLevel": "logicalLevel:Fashion Retail DW.Date.Detail",
-            "displayColumn": "presentationColumn:Fashion Retail Analytics.Date.Calendar Date"
+            "displayColumn": "presentationColumn:Fashion Retail Product Intelligence.Date.Calendar Date"
           }
         ]
       }

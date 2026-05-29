@@ -846,6 +846,82 @@
         }
       },
       {
+        "name": "Raw Stockout Risk Score",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "MART_PRODUCT_PERFORMANCE_WEEKLY_V2_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.MART_PRODUCT_PERFORMANCE_WEEKLY_V2.COMPUTED_STOCKOUT_RISK_SCORE"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Raw Overstock Risk Score",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "MART_PRODUCT_PERFORMANCE_WEEKLY_V2_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.MART_PRODUCT_PERFORMANCE_WEEKLY_V2.COMPUTED_OVERSTOCK_RISK_SCORE"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Current Stockout Risk Score",
+        "description": "Average score for the latest available snapshot week in the current query context.",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "expressionTemplate": "EVALUATE_AGGR('AVG(%1) KEEP (DENSE_RANK LAST ORDER BY %2)' AS DOUBLE, %1, %2)",
+            "expressionObjects": [
+              "logicalColumn:Fashion Retail DW.Product Weekly Performance.Raw Stockout Risk Score",
+              "logicalColumn:Fashion Retail DW.Product Weekly Performance.Week Start Date"
+            ]
+          }
+        },
+        "aggregation": {
+          "rule": "EVALUATE_AGGR"
+        }
+      },
+      {
+        "name": "Current Overstock Risk Score",
+        "description": "Average score for the latest available snapshot week in the current query context.",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "expressionTemplate": "EVALUATE_AGGR('AVG(%1) KEEP (DENSE_RANK LAST ORDER BY %2)' AS DOUBLE, %1, %2)",
+            "expressionObjects": [
+              "logicalColumn:Fashion Retail DW.Product Weekly Performance.Raw Overstock Risk Score",
+              "logicalColumn:Fashion Retail DW.Product Weekly Performance.Week Start Date"
+            ]
+          }
+        },
+        "aggregation": {
+          "rule": "EVALUATE_AGGR"
+        }
+      },
+      {
         "name": "Activity Count",
         "dataType": "DOUBLE",
         "writeable": false,
