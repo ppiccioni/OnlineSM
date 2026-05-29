@@ -1,0 +1,301 @@
+{
+  "presentationTable": {
+    "name": "Collection Health",
+    "presentationColumns": [
+      {
+        "name": "Collection ID",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Collection ID",
+        "useLogicalColumnName": true,
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
+      },
+      {
+        "name": "Collection Name",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Collection Name",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Season Code",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Season Code",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Season Name",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Season Name",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Collection Year",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Collection Year",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Launch Date",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Launch Date",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Markdown Start Date",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Markdown Start Date",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Clearance Start Date",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Clearance Start Date",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "End Date",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.End Date",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Collection Sort Key",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Collection Sort Key",
+        "useLogicalColumnName": true,
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
+      },
+      {
+        "name": "Department",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Department",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Category",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Category",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Subcategory",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Subcategory",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Price Tier",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Price Tier",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Brand",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Brand",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Latest Snapshot Week Start Date",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Latest Snapshot Week Start Date",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Collection Health Signal",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Collection Health Signal",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Assortment Style Count",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Assortment Style Count",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Assortment SKU Count",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Assortment SKU Count",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Average List Price",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Average List Price",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Average Standard Cost",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Average Standard Cost",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Sustainable SKU Count",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Sustainable SKU Count",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Carryover SKU Count",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Carryover SKU Count",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Sales Line Count",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Sales Line Count",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Transaction Count",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Transaction Count",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Selling SKU Count",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Selling SKU Count",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Selling Style Count",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Selling Style Count",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Units Sold",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Units Sold",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Full Price Units",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Full Price Units",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Full Price Line Count",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Full Price Line Count",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Gross Sales Amount",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Gross Sales Amount",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Discount Amount",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Discount Amount",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Net Sales Amount",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Net Sales Amount",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Cost Amount",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Cost Amount",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Gross Margin Amount",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Gross Margin Amount",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Returned Units",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Returned Units",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Return Line Count",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Return Line Count",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Refund Amount",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Refund Amount",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Inventory SKU Count",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Inventory SKU Count",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Inventory Style Count",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Inventory Style Count",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Inventory Store Count",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Inventory Store Count",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Latest Store SKU Snapshot Count",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Latest Store SKU Snapshot Count",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Latest On Hand Units",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Latest On Hand Units",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Latest Available Units",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Latest Available Units",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Latest Reserved Units",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Latest Reserved Units",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Latest Stockout Store Count",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Latest Stockout Store Count",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Latest Inventory Value At Cost",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Latest Inventory Value At Cost",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Average Latest Weeks Of Supply",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Average Latest Weeks Of Supply",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Average Latest Overstock Risk Score",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Average Latest Overstock Risk Score",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Average Latest Stockout Risk Score",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Average Latest Stockout Risk Score",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Collection Sell Through Basis Units",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Collection Sell Through Basis Units",
+        "useLogicalColumnName": true,
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
+      },
+      {
+        "name": "Gross Margin Percent",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Gross Margin Percent",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Markdown Percent",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Markdown Percent",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Return Rate Percent",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Return Rate Percent",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Full Price Unit Share Percent",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Full Price Unit Share Percent",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Collection Sell Through Percent",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Collection Sell Through Percent",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Latest Stockout Store Rate Percent",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Latest Stockout Store Rate Percent",
+        "useLogicalColumnName": true
+      }
+    ]
+  }
+}

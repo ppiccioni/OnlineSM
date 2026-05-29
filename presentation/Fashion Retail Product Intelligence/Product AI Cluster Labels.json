@@ -1,0 +1,120 @@
+{
+  "presentationTable": {
+    "name": "Product AI Cluster Labels",
+    "presentationColumns": [
+      {
+        "name": "Cluster ID",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.Cluster ID",
+        "useLogicalColumnName": true,
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
+      },
+      {
+        "name": "Cluster Label",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.Cluster Label",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Business Interpretation",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.Business Interpretation",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Recommended Action",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.Recommended Action",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Evidence Summary",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.Evidence Summary",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Action Priority",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.Action Priority",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Product Week Count",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.Product Week Count",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "SKU Count",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.SKU Count",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Average Cluster Probability",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.Average Cluster Probability",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Average Units Sold",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.Average Units Sold",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Average Net Sales Amount",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.Average Net Sales Amount",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Average Full Price Sell Through Percent",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.Average Full Price Sell Through Percent",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Average Markdown Percent",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.Average Markdown Percent",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Average Return Rate Percent",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.Average Return Rate Percent",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Cluster Avg Stockout Risk Score",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.Cluster Avg Stockout Risk Score",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Cluster Avg Overstock Risk Score",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.Cluster Avg Overstock Risk Score",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Average Anomaly Probability",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.Average Anomaly Probability",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Anomaly Row Count",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.Anomaly Row Count",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Modal Department",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.Modal Department",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Modal Category",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.Modal Category",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Modal Price Tier",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.Modal Price Tier",
+        "useLogicalColumnName": true
+      },
+      {
+        "name": "Modal Reason Code",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.Modal Reason Code",
+        "useLogicalColumnName": true
+      }
+    ]
+  }
+}
