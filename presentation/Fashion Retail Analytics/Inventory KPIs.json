@@ -76,28 +76,28 @@
         "description": "Average estimated weeks of supply based on stock and demand."
       },
       {
-        "name": "Average Overstock Risk Score",
-        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Inventory KPIs.Average Overstock Risk Score",
+        "name": "Average Store-SKU Overstock Risk Index",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Inventory KPIs.Average Store-SKU Overstock Risk Index",
         "useLogicalColumnName": true,
-        "description": "Historical average overstock risk at store-SKU-week grain."
+        "description": "Historical average raw overstock risk index at store-SKU-week grain; not scaled to 0-100."
       },
       {
-        "name": "Average Stockout Risk Score",
-        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Inventory KPIs.Average Stockout Risk Score",
+        "name": "Average Store-SKU Stockout Risk Index",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Inventory KPIs.Average Store-SKU Stockout Risk Index",
         "useLogicalColumnName": true,
-        "description": "Historical average stockout risk at store-SKU-week grain."
+        "description": "Historical average raw stockout risk index at store-SKU-week grain; not scaled to 0-100."
       },
       {
         "name": "Current Store-SKU Stockout Risk Score",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Inventory KPIs.Current Store-SKU Stockout Risk Score",
         "useLogicalColumnName": true,
-        "description": "Store-SKU stockout risk for the latest available snapshot week in the current query context; supports Store and Region filtering."
+        "description": "Latest-week store-SKU stockout risk rescaled to a 0-100 dashboard score; supports Store and Region filtering."
       },
       {
         "name": "Current Store-SKU Overstock Risk Score",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Inventory KPIs.Current Store-SKU Overstock Risk Score",
         "useLogicalColumnName": true,
-        "description": "Store-SKU overstock risk for the latest available snapshot week in the current query context; supports Store and Region filtering."
+        "description": "Latest-week store-SKU overstock risk rescaled to a 0-100 dashboard score; supports Store and Region filtering."
       },
       {
         "name": "Available Unit Share",
