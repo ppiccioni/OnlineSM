@@ -4,9 +4,6 @@
     "sourceBusinessModel": "businessModel:Fashion Retail DW",
     "tableOrder": [
       {
-        "name": "presentationTable:Fashion Retail Analytics.Collection Health"
-      },
-      {
         "name": "presentationTable:Fashion Retail Analytics.Sales KPIs"
       },
       {
