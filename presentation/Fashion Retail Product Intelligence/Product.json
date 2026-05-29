@@ -106,27 +106,27 @@
           {
             "name": "Department",
             "sourceLogicalLevel": "logicalLevel:Fashion Retail DW.Product.Department",
-            "displayColumn": "presentationColumn:Fashion Retail Analytics.Product.Department"
+            "displayColumn": "presentationColumn:Fashion Retail Product Intelligence.Product.Department"
           },
           {
             "name": "Category",
             "sourceLogicalLevel": "logicalLevel:Fashion Retail DW.Product.Category",
-            "displayColumn": "presentationColumn:Fashion Retail Analytics.Product.Category"
+            "displayColumn": "presentationColumn:Fashion Retail Product Intelligence.Product.Category"
           },
           {
             "name": "Subcategory",
             "sourceLogicalLevel": "logicalLevel:Fashion Retail DW.Product.Subcategory",
-            "displayColumn": "presentationColumn:Fashion Retail Analytics.Product.Subcategory"
+            "displayColumn": "presentationColumn:Fashion Retail Product Intelligence.Product.Subcategory"
           },
           {
             "name": "Style",
             "sourceLogicalLevel": "logicalLevel:Fashion Retail DW.Product.Style",
-            "displayColumn": "presentationColumn:Fashion Retail Analytics.Product.Style Description"
+            "displayColumn": "presentationColumn:Fashion Retail Product Intelligence.Product.Style Description"
           },
           {
             "name": "SKU",
             "sourceLogicalLevel": "logicalLevel:Fashion Retail DW.Product.SKU",
-            "displayColumn": "presentationColumn:Fashion Retail Analytics.Product.SKU Code"
+            "displayColumn": "presentationColumn:Fashion Retail Product Intelligence.Product.SKU Code"
           }
         ]
       }
