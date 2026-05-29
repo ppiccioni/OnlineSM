@@ -1,0 +1,33 @@
+{
+  "subjectArea": {
+    "name": "Fashion Retail Product Intelligence",
+    "sourceBusinessModel": "businessModel:Fashion Retail DW",
+    "tableOrder": [
+      {
+        "name": "presentationTable:Fashion Retail Product Intelligence.Collection Health"
+      },
+      {
+        "name": "presentationTable:Fashion Retail Product Intelligence.Product Weekly Performance"
+      },
+      {
+        "name": "presentationTable:Fashion Retail Product Intelligence.Product AI Signals"
+      },
+      {
+        "name": "presentationTable:Fashion Retail Product Intelligence.Product AI Cluster Labels"
+      },
+      {
+        "name": "presentationTable:Fashion Retail Product Intelligence.Date"
+      },
+      {
+        "name": "presentationTable:Fashion Retail Product Intelligence.Collection"
+      },
+      {
+        "name": "presentationTable:Fashion Retail Product Intelligence.Product"
+      }
+    ],
+    "localization": {
+      "localizationKey": "Fashion Retail Product Intelligence",
+      "nameVariable": "Fashion Retail Product Intelligence"
+    }
+  }
+}
