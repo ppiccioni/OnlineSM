@@ -1,7 +1,7 @@
 {
   "logicalTable": {
     "name": "Product AI Signals",
-    "description": "Product-week AI score signals from FASHIONDW.PRODUCT_AI_SCORE_LABELED_V.",
+    "description": "Store-SKU-week AI score signals from FASHIONDW.PRODUCT_AI_SCORE_LABELED_V.",
     "type": "FACT",
     "logicalColumns": [
       {
@@ -21,7 +21,8 @@
               }
             }
           ]
-        }
+        },
+        "description": "Unique store-SKU-week case generated for ML scoring."
       },
       {
         "name": "Week Start Date",
@@ -55,6 +56,25 @@
                 "expressionTemplate": "%1",
                 "expressionObjects": [
                   "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_SCORE_LABELED_V.DATE_KEY"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Store ID",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_SCORE_LABELED_V_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_SCORE_LABELED_V.STORE_ID"
                 ]
               }
             }
@@ -348,7 +368,7 @@
         "aggregation": {
           "rule": "SUM"
         },
-        "description": "Units sold in the product-week case used by the AI signal layer."
+        "description": "Units sold in the store-SKU-week case used by the AI signal layer."
       },
       {
         "name": "Full Price Units",
@@ -371,7 +391,7 @@
         "aggregation": {
           "rule": "SUM"
         },
-        "description": "Full-price units in the product-week case used by the AI signal layer."
+        "description": "Full-price units in the store-SKU-week case used by the AI signal layer."
       },
       {
         "name": "Net Sales Amount",
@@ -394,7 +414,7 @@
         "aggregation": {
           "rule": "SUM"
         },
-        "description": "Net sales amount in the product-week case used by the AI signal layer."
+        "description": "Net sales amount in the store-SKU-week case used by the AI signal layer."
       },
       {
         "name": "Gross Margin Amount",
@@ -417,7 +437,7 @@
         "aggregation": {
           "rule": "SUM"
         },
-        "description": "Gross margin amount in the product-week case used by the AI signal layer."
+        "description": "Gross margin amount in the store-SKU-week case used by the AI signal layer."
       },
       {
         "name": "Returned Units",
@@ -440,7 +460,7 @@
         "aggregation": {
           "rule": "SUM"
         },
-        "description": "Returned units in the product-week case used by the AI signal layer."
+        "description": "Returned units in the store-SKU-week case used by the AI signal layer."
       },
       {
         "name": "On Hand Units",
@@ -463,7 +483,7 @@
         "aggregation": {
           "rule": "SUM"
         },
-        "description": "On-hand inventory in the product-week case used by the AI signal layer."
+        "description": "On-hand inventory in the store-SKU-week case used by the AI signal layer."
       },
       {
         "name": "Available Units",
@@ -486,7 +506,7 @@
         "aggregation": {
           "rule": "SUM"
         },
-        "description": "Available inventory in the product-week case used by the AI signal layer."
+        "description": "Available inventory in the store-SKU-week case used by the AI signal layer."
       },
       {
         "name": "Markdown Percent",
@@ -732,7 +752,7 @@
         "aggregation": {
           "rule": "AVG"
         },
-        "description": "Product-week stockout risk score used by AI labeling and signal generation."
+        "description": "Store-SKU-week stockout risk score used by AI labeling and signal generation."
       },
       {
         "name": "Overstock Risk Score",
@@ -755,7 +775,7 @@
         "aggregation": {
           "rule": "AVG"
         },
-        "description": "Product-week overstock risk score used by AI labeling and signal generation."
+        "description": "Store-SKU-week overstock risk score used by AI labeling and signal generation."
       },
       {
         "name": "Anomaly Prediction",
@@ -778,7 +798,7 @@
         "aggregation": {
           "rule": "AVG"
         },
-        "description": "Model output indicating whether the product-week case is anomalous."
+        "description": "Model output indicating whether the store-SKU-week case is anomalous."
       },
       {
         "name": "Anomaly Count",
@@ -824,7 +844,30 @@
         "aggregation": {
           "rule": "AVG"
         },
-        "description": "Model probability that the product-week case is anomalous."
+        "description": "Model probability that the store-SKU-week case is anomalous."
+      },
+      {
+        "name": "Business Exception Score",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_SCORE_LABELED_V_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_SCORE_LABELED_V.BUSINESS_EXCEPTION_SCORE"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "MAX"
+        },
+        "description": "Business-weighted score for ranking store-SKU-week exceptions by actionability and impact."
       },
       {
         "name": "Typical Probability",
@@ -847,7 +890,7 @@
         "aggregation": {
           "rule": "AVG"
         },
-        "description": "Model probability that the product-week case is typical."
+        "description": "Model probability that the store-SKU-week case is typical."
       },
       {
         "name": "Cluster Probability",
@@ -1050,6 +1093,11 @@
     "joins": [
       {
         "rightTable": "logicalTable:Fashion Retail DW.Date",
+        "joinType": "INNER",
+        "cardinality": "MANY_TO_ZERO_OR_ONE"
+      },
+      {
+        "rightTable": "logicalTable:Fashion Retail DW.Store",
         "joinType": "INNER",
         "cardinality": "MANY_TO_ZERO_OR_ONE"
       },

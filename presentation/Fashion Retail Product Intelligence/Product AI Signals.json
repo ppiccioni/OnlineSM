@@ -8,7 +8,8 @@
         "useLogicalColumnName": true,
         "hideIfTrue": {
           "expressionTemplate": "1 = 1"
-        }
+        },
+        "description": "Unique store-SKU-week case generated for ML scoring."
       },
       {
         "name": "Week Start Date",
@@ -18,6 +19,14 @@
       {
         "name": "Date Key",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Date Key",
+        "useLogicalColumnName": true,
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
+      },
+      {
+        "name": "Store ID",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Store ID",
         "useLogicalColumnName": true,
         "hideIfTrue": {
           "expressionTemplate": "1 = 1"
@@ -109,43 +118,43 @@
         "name": "Units Sold",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Units Sold",
         "useLogicalColumnName": true,
-        "description": "Units sold in the product-week case used by the AI signal layer."
+        "description": "Units sold in the store-SKU-week case used by the AI signal layer."
       },
       {
         "name": "Full Price Units",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Full Price Units",
         "useLogicalColumnName": true,
-        "description": "Full-price units in the product-week case used by the AI signal layer."
+        "description": "Full-price units in the store-SKU-week case used by the AI signal layer."
       },
       {
         "name": "Net Sales Amount",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Net Sales Amount",
         "useLogicalColumnName": true,
-        "description": "Net sales amount in the product-week case used by the AI signal layer."
+        "description": "Net sales amount in the store-SKU-week case used by the AI signal layer."
       },
       {
         "name": "Gross Margin Amount",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Gross Margin Amount",
         "useLogicalColumnName": true,
-        "description": "Gross margin amount in the product-week case used by the AI signal layer."
+        "description": "Gross margin amount in the store-SKU-week case used by the AI signal layer."
       },
       {
         "name": "Returned Units",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Returned Units",
         "useLogicalColumnName": true,
-        "description": "Returned units in the product-week case used by the AI signal layer."
+        "description": "Returned units in the store-SKU-week case used by the AI signal layer."
       },
       {
         "name": "On Hand Units",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.On Hand Units",
         "useLogicalColumnName": true,
-        "description": "On-hand inventory in the product-week case used by the AI signal layer."
+        "description": "On-hand inventory in the store-SKU-week case used by the AI signal layer."
       },
       {
         "name": "Available Units",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Available Units",
         "useLogicalColumnName": true,
-        "description": "Available inventory in the product-week case used by the AI signal layer."
+        "description": "Available inventory in the store-SKU-week case used by the AI signal layer."
       },
       {
         "name": "Markdown Percent",
@@ -211,13 +220,13 @@
         "name": "Stockout Risk Score",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Stockout Risk Score",
         "useLogicalColumnName": true,
-        "description": "Product-week stockout risk score used by AI labeling and signal generation."
+        "description": "Store-SKU-week stockout risk score used by AI labeling and signal generation."
       },
       {
         "name": "Overstock Risk Score",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Overstock Risk Score",
         "useLogicalColumnName": true,
-        "description": "Product-week overstock risk score used by AI labeling and signal generation."
+        "description": "Store-SKU-week overstock risk score used by AI labeling and signal generation."
       },
       {
         "name": "Anomaly Prediction",
@@ -226,7 +235,7 @@
         "hideIfTrue": {
           "expressionTemplate": "1 = 1"
         },
-        "description": "Model output indicating whether the product-week case is anomalous."
+        "description": "Model output indicating whether the store-SKU-week case is anomalous."
       },
       {
         "name": "Anomaly Count",
@@ -238,13 +247,19 @@
         "name": "Anomaly Probability",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Anomaly Probability",
         "useLogicalColumnName": true,
-        "description": "Model probability that the product-week case is anomalous."
+        "description": "Model probability that the store-SKU-week case is anomalous."
+      },
+      {
+        "name": "Business Exception Score",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Business Exception Score",
+        "useLogicalColumnName": true,
+        "description": "Business-weighted score for ranking store-SKU-week exceptions by actionability and impact."
       },
       {
         "name": "Typical Probability",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Typical Probability",
         "useLogicalColumnName": true,
-        "description": "Model probability that the product-week case is typical."
+        "description": "Model probability that the store-SKU-week case is typical."
       },
       {
         "name": "Cluster Probability",
