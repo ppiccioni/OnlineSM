@@ -22,6 +22,12 @@
         "nullable": true
       },
       {
+        "name": "STORE_ID",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
         "name": "SKU_ID",
         "dataType": "DOUBLE",
         "length": 22,
@@ -172,6 +178,12 @@
         "nullable": true
       },
       {
+        "name": "BUSINESS_EXCEPTION_SCORE",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
         "name": "TYPICAL_PROBABILITY",
         "dataType": "DOUBLE",
         "length": 22,
@@ -282,7 +294,7 @@
       {
         "name": "BUSINESS_EVIDENCE",
         "dataType": "VARCHAR",
-        "length": 700,
+        "length": 900,
         "nullable": true
       }
     ],
@@ -298,6 +310,16 @@
           {
             "leftColumn": "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_SCORE_LABELED_V.DATE_KEY",
             "rightColumn": "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_DATE.DATE_KEY"
+          }
+        ]
+      },
+      {
+        "rightTable": "physicalTable:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_STORE",
+        "useJoinExpression": false,
+        "joinConditions": [
+          {
+            "leftColumn": "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_SCORE_LABELED_V.STORE_ID",
+            "rightColumn": "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_STORE.STORE_ID"
           }
         ]
       },
