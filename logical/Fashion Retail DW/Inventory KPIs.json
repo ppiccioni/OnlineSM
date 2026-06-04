@@ -192,8 +192,8 @@
         }
       },
       {
-        "name": "Current Store-SKU On Hand Units",
-        "description": "Latest-week physical stock on hand at store-SKU grain. Use this for current store availability and transfer analysis because it avoids summing inventory across historical weeks.",
+        "name": "Latest Known Store-SKU On Hand Units",
+        "description": "Last known physical stock on hand at store-SKU grain. Use this with the snapshot week to understand store availability when a SKU is not present in every weekly inventory snapshot.",
         "dataType": "DOUBLE",
         "writeable": false,
         "logicalColumnSource": {
@@ -231,8 +231,8 @@
         }
       },
       {
-        "name": "Current Store-SKU Available Units",
-        "description": "Latest-week sellable inventory at store-SKU grain after reservations and unavailable stock. Use this to identify stores that can potentially transfer units to a stockout location.",
+        "name": "Latest Known Store-SKU Available Units",
+        "description": "Last known sellable inventory at store-SKU grain after reservations and unavailable stock. Use this with the snapshot week to identify possible transfer candidates and judge how fresh the inventory status is.",
         "dataType": "DOUBLE",
         "writeable": false,
         "logicalColumnSource": {
@@ -270,8 +270,8 @@
         }
       },
       {
-        "name": "Current Store-SKU Reserved Units",
-        "description": "Latest-week reserved inventory at store-SKU grain. Use this beside current available units to understand why on-hand stock may not be fully transferable.",
+        "name": "Latest Known Store-SKU Reserved Units",
+        "description": "Last known reserved inventory at store-SKU grain. Use this beside latest known available units to understand why on-hand stock may not be fully transferable.",
         "dataType": "DOUBLE",
         "writeable": false,
         "logicalColumnSource": {
