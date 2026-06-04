@@ -43,13 +43,13 @@
         "name": "On Hand Units",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Inventory KPIs.On Hand Units",
         "useLogicalColumnName": true,
-        "description": "Total physical stock on hand at store-SKU-week grain."
+        "description": "Physical stock on hand at store-SKU-week grain. Use this for operational inventory reporting; when looking at exception severity, prefer latest or current risk measures instead of averaging across many weeks."
       },
       {
         "name": "Available Units",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Inventory KPIs.Available Units",
         "useLogicalColumnName": true,
-        "description": "Units available for sale after reservations or unavailable stock."
+        "description": "Inventory available for sale after reservations and unavailable stock. Use this to understand sellable inventory; pair it with stockout counts or current risk scores for availability analysis."
       },
       {
         "name": "Reserved Units",
@@ -61,7 +61,7 @@
         "name": "Stockout Count",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Inventory KPIs.Stockout Count",
         "useLogicalColumnName": true,
-        "description": "Count of store-SKU snapshots flagged as stockout."
+        "description": "Count of weekly store-SKU snapshots flagged as stockout. This is an operational stockout count, not an AI alert count; AI alert cases apply stricter demand and risk criteria."
       },
       {
         "name": "Inventory Value At Cost",
@@ -91,13 +91,13 @@
         "name": "Current Store-SKU Stockout Risk Score",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Inventory KPIs.Current Store-SKU Stockout Risk Score",
         "useLogicalColumnName": true,
-        "description": "Latest-week store-SKU stockout risk rescaled to a 0-100 dashboard score; supports Store and Region filtering."
+        "description": "Latest-week store-SKU stockout risk rescaled to a 0-100 dashboard score. Use this for current inventory risk because it avoids diluting the latest state with older weeks."
       },
       {
         "name": "Current Store-SKU Overstock Risk Score",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Inventory KPIs.Current Store-SKU Overstock Risk Score",
         "useLogicalColumnName": true,
-        "description": "Latest-week store-SKU overstock risk rescaled to a 0-100 dashboard score; supports Store and Region filtering."
+        "description": "Latest-week store-SKU overstock risk rescaled to a 0-100 dashboard score. Use this for current overstock monitoring because it reflects the latest available inventory snapshot."
       },
       {
         "name": "Available Unit Share",
@@ -108,7 +108,11 @@
       {
         "name": "Scenario Tag",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Inventory KPIs.Scenario Tag",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Internal data-generation scenario marker; hidden from business-facing analysis.",
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
       }
     ]
   }

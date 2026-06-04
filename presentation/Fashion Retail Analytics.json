@@ -10,10 +10,22 @@
         "name": "presentationTable:Fashion Retail Analytics.Return KPIs"
       },
       {
+        "name": "presentationTable:Fashion Retail Analytics.Inventory KPIs"
+      },
+      {
         "name": "presentationTable:Fashion Retail Analytics.Store Traffic KPIs"
       },
       {
-        "name": "presentationTable:Fashion Retail Analytics.Inventory KPIs"
+        "name": "presentationTable:Fashion Retail Analytics.Collection Health"
+      },
+      {
+        "name": "presentationTable:Fashion Retail Analytics.Product Weekly Performance"
+      },
+      {
+        "name": "presentationTable:Fashion Retail Analytics.Product AI Signals"
+      },
+      {
+        "name": "presentationTable:Fashion Retail Analytics.Product AI Cluster Labels"
       },
       {
         "name": "presentationTable:Fashion Retail Analytics.Date"

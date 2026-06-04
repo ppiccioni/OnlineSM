@@ -579,7 +579,7 @@
         "aggregation": {
           "rule": "SUM"
         },
-        "description": "Units sold for the collection/category context."
+        "description": "Same underlying sales quantity as the core Units Sold KPI, rolled up to collection, category, and assortment context. Use this for collection health summaries rather than transaction-level sales analysis."
       },
       {
         "name": "Full Price Units",
@@ -924,7 +924,7 @@
         "aggregation": {
           "rule": "SUM"
         },
-        "description": "On-hand units in the latest available inventory week."
+        "description": "On-hand inventory for the latest available collection inventory snapshot. Use this for current collection health instead of summing historical inventory weeks."
       },
       {
         "name": "Latest Available Units",
@@ -947,7 +947,7 @@
         "aggregation": {
           "rule": "SUM"
         },
-        "description": "Available units in the latest available inventory week."
+        "description": "Available inventory for the latest available collection inventory snapshot. Use this to see current sellable stock for the collection context."
       },
       {
         "name": "Latest Reserved Units",
@@ -1062,7 +1062,7 @@
         "aggregation": {
           "rule": "AVG"
         },
-        "description": "Average overstock risk in the latest available inventory week."
+        "description": "Average overstock risk in the latest inventory week for the collection context. This is better for current collection health than averaging risk across the whole season."
       },
       {
         "name": "Average Latest Stockout Risk Score",
@@ -1085,7 +1085,7 @@
         "aggregation": {
           "rule": "AVG"
         },
-        "description": "Average stockout risk in the latest available inventory week."
+        "description": "Average stockout risk in the latest inventory week for the collection context. This is better for current collection health than averaging risk across the whole season."
       },
       {
         "name": "Collection Sell Through Basis Units",

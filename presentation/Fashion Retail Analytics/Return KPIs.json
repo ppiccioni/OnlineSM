@@ -84,7 +84,10 @@
       {
         "name": "Scenario Tag",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Return KPIs.Scenario Tag",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
       },
       {
         "name": "Return Line Count",

@@ -242,6 +242,9 @@
               }
             }
           ]
+        },
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
         }
       },
       {

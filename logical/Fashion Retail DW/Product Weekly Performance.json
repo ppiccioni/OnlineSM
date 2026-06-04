@@ -147,7 +147,7 @@
         "aggregation": {
           "rule": "SUM"
         },
-        "description": "Units sold for the selected product-week context."
+        "description": "Same underlying sales quantity as the core Units Sold KPI, aggregated into the product-week mart. Use this for SKU/week trend analysis, moving averages, sell-through behavior, and product performance diagnostics."
       },
       {
         "name": "Full Price Units",
@@ -262,7 +262,7 @@
         "aggregation": {
           "rule": "SUM"
         },
-        "description": "Product-week sales amount after discounts and markdowns."
+        "description": "Net sales aggregated into product-week grain. Use this when comparing product weekly performance; use the core Sales KPIs folder for general revenue reporting by customer, channel, or promotion."
       },
       {
         "name": "Cost Amount",
@@ -400,7 +400,7 @@
         "aggregation": {
           "rule": "SUM"
         },
-        "description": "Inventory on hand aggregated into the product-week mart."
+        "description": "Inventory on hand aggregated into product-week grain. Use this as context for weekly product performance; use Inventory KPIs for operational store-SKU inventory reporting."
       },
       {
         "name": "Available Units",
@@ -423,7 +423,7 @@
         "aggregation": {
           "rule": "SUM"
         },
-        "description": "Available inventory aggregated into the product-week mart."
+        "description": "Available inventory aggregated into product-week grain. Use this beside weekly sell-through and demand indices to explain product trend behavior."
       },
       {
         "name": "Reserved Units",
@@ -857,7 +857,7 @@
         "aggregation": {
           "rule": "AVG"
         },
-        "description": "Historical product-week stockout risk score; use current product score for latest-snapshot status."
+        "description": "Average product-week stockout risk across the selected context. Useful for trend context, but for exception severity prefer current, latest, or peak risk measures where available."
       },
       {
         "name": "Overstock Risk Score",
@@ -880,7 +880,7 @@
         "aggregation": {
           "rule": "AVG"
         },
-        "description": "Historical product-week overstock risk score; use current product score for latest-snapshot status."
+        "description": "Average product-week overstock risk across the selected context. Useful for trend context, but for exception severity prefer current, latest, or peak risk measures where available."
       },
       {
         "name": "Raw Stockout Risk Score",
@@ -900,7 +900,10 @@
             }
           ]
         },
-        "description": "Hidden raw product-week stockout score used by current-risk calculations."
+        "description": "Hidden raw product-week stockout score used by current-risk calculations.",
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
       },
       {
         "name": "Raw Overstock Risk Score",
@@ -920,11 +923,14 @@
             }
           ]
         },
-        "description": "Hidden raw product-week overstock score used by current-risk calculations."
+        "description": "Hidden raw product-week overstock score used by current-risk calculations.",
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
       },
       {
         "name": "Current Product Stockout Risk Score",
-        "description": "Product-week stockout risk for the latest available week in the current query context; not store or region aware.",
+        "description": "Latest-week product stockout risk in the current query context. This is product-week focused and not store-aware; use Product AI Signals for store-SKU-week exception cases.",
         "dataType": "DOUBLE",
         "writeable": false,
         "logicalColumnSource": {
@@ -940,7 +946,7 @@
       },
       {
         "name": "Current Product Overstock Risk Score",
-        "description": "Product-week overstock risk for the latest available week in the current query context; not store or region aware.",
+        "description": "Latest-week product overstock risk in the current query context. This is product-week focused and not store-aware; use Product AI Signals for store-SKU-week exception cases.",
         "dataType": "DOUBLE",
         "writeable": false,
         "logicalColumnSource": {
@@ -994,6 +1000,10 @@
               }
             }
           ]
+        },
+        "description": "Internal data-generation scenario marker; hidden from business-facing analysis.",
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
         }
       }
     ],
