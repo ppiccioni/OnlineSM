@@ -169,6 +169,29 @@
         "description": "Units reserved and not immediately available for sale."
       },
       {
+        "name": "Raw Store-SKU On Hand Units",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "FACT_INVENTORY_SNAPSHOT_WEEKLY_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.FACT_INVENTORY_SNAPSHOT_WEEKLY.ON_HAND_UNITS"
+                ]
+              }
+            }
+          ]
+        },
+        "description": "Hidden raw on_hand_units value used by latest-week inventory status measures.",
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
+      },
+      {
         "name": "Current Store-SKU On Hand Units",
         "description": "Latest-week physical stock on hand at store-SKU grain. Use this for current store availability and transfer analysis because it avoids summing inventory across historical weeks.",
         "dataType": "DOUBLE",
@@ -178,10 +201,33 @@
           "logicalExpression": {
             "expressionTemplate": "EVALUATE_AGGR('SUM(\\%1) KEEP (DENSE_RANK LAST ORDER BY \\%2)' AS DOUBLE, %1, %2)",
             "expressionObjects": [
-              "logicalColumn:Fashion Retail DW.Inventory KPIs.On Hand Units",
+              "logicalColumn:Fashion Retail DW.Inventory KPIs.Raw Store-SKU On Hand Units",
               "logicalColumn:Fashion Retail DW.Inventory KPIs.Snapshot Week Start Date"
             ]
           }
+        }
+      },
+      {
+        "name": "Raw Store-SKU Available Units",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "FACT_INVENTORY_SNAPSHOT_WEEKLY_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.FACT_INVENTORY_SNAPSHOT_WEEKLY.AVAILABLE_UNITS"
+                ]
+              }
+            }
+          ]
+        },
+        "description": "Hidden raw available_units value used by latest-week inventory status measures.",
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
         }
       },
       {
@@ -194,10 +240,33 @@
           "logicalExpression": {
             "expressionTemplate": "EVALUATE_AGGR('SUM(\\%1) KEEP (DENSE_RANK LAST ORDER BY \\%2)' AS DOUBLE, %1, %2)",
             "expressionObjects": [
-              "logicalColumn:Fashion Retail DW.Inventory KPIs.Available Units",
+              "logicalColumn:Fashion Retail DW.Inventory KPIs.Raw Store-SKU Available Units",
               "logicalColumn:Fashion Retail DW.Inventory KPIs.Snapshot Week Start Date"
             ]
           }
+        }
+      },
+      {
+        "name": "Raw Store-SKU Reserved Units",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "FACT_INVENTORY_SNAPSHOT_WEEKLY_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.FACT_INVENTORY_SNAPSHOT_WEEKLY.RESERVED_UNITS"
+                ]
+              }
+            }
+          ]
+        },
+        "description": "Hidden raw reserved_units value used by latest-week inventory status measures.",
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
         }
       },
       {
@@ -210,7 +279,7 @@
           "logicalExpression": {
             "expressionTemplate": "EVALUATE_AGGR('SUM(\\%1) KEEP (DENSE_RANK LAST ORDER BY \\%2)' AS DOUBLE, %1, %2)",
             "expressionObjects": [
-              "logicalColumn:Fashion Retail DW.Inventory KPIs.Reserved Units",
+              "logicalColumn:Fashion Retail DW.Inventory KPIs.Raw Store-SKU Reserved Units",
               "logicalColumn:Fashion Retail DW.Inventory KPIs.Snapshot Week Start Date"
             ]
           }
