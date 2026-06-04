@@ -24,7 +24,8 @@
             }
           ]
         },
-        "logicalLevel": "Store"
+        "logicalLevel": "Store",
+        "description": "Hidden technical store key used by fact tables and derived AI signal tables. Use Store Code or Store Name for business-facing analysis."
       },
       {
         "name": "Store Code",
@@ -44,7 +45,8 @@
             }
           ]
         },
-        "logicalLevel": "Store"
+        "logicalLevel": "Store",
+        "description": "Stable business code for the physical store. Use this when you need an unambiguous store identifier that will not change if the display name changes."
       },
       {
         "name": "Store Name",
@@ -64,7 +66,8 @@
             }
           ]
         },
-        "logicalLevel": "Store"
+        "logicalLevel": "Store",
+        "description": "Unique business-facing store label. Names include city and neighborhood or street so OAC filters and AI Assistant prompts do not merge multiple physical stores."
       },
       {
         "name": "Country",
@@ -84,7 +87,8 @@
             }
           ]
         },
-        "logicalLevel": "Country"
+        "logicalLevel": "Country",
+        "description": "Country where the store operates."
       },
       {
         "name": "Region",
@@ -104,7 +108,8 @@
             }
           ]
         },
-        "logicalLevel": "Region"
+        "logicalLevel": "Region",
+        "description": "Commercial region or subnational geography used for store analysis, such as Greater London, Bavaria, Catalonia, or Lombardy."
       },
       {
         "name": "City",
@@ -124,7 +129,8 @@
             }
           ]
         },
-        "logicalLevel": "City"
+        "logicalLevel": "City",
+        "description": "City where the store operates."
       },
       {
         "name": "Store Format",
@@ -144,7 +150,8 @@
             }
           ]
         },
-        "logicalLevel": "Store"
+        "logicalLevel": "Store",
+        "description": "Retail format of the store, such as Flagship, High Street, Mall, or Outlet."
       },
       {
         "name": "Location Type",
@@ -164,7 +171,8 @@
             }
           ]
         },
-        "logicalLevel": "Store"
+        "logicalLevel": "Store",
+        "description": "Broad location classification such as Urban, Mall, or Outlet Village."
       },
       {
         "name": "Opening Date",
@@ -184,7 +192,8 @@
             }
           ]
         },
-        "logicalLevel": "Store"
+        "logicalLevel": "Store",
+        "description": "Date when the store opened. Use it for store maturity and lifecycle analysis."
       },
       {
         "name": "Selling Area SQM",
@@ -204,7 +213,8 @@
             }
           ]
         },
-        "logicalLevel": "Store"
+        "logicalLevel": "Store",
+        "description": "Approximate selling area in square meters. Use it to compare store scale and normalize traffic or inventory exposure."
       },
       {
         "name": "Climate Zone",
@@ -224,7 +234,8 @@
             }
           ]
         },
-        "logicalLevel": "Store"
+        "logicalLevel": "Store",
+        "description": "Climate classification for the store location, useful for seasonal assortment and weather-sensitive product analysis."
       },
       {
         "name": "Affluence Index",
@@ -244,7 +255,8 @@
             }
           ]
         },
-        "logicalLevel": "Store"
+        "logicalLevel": "Store",
+        "description": "Relative affluence indicator for the store catchment area. Use it as context for price tier, full-price demand, and assortment mix."
       },
       {
         "name": "Is Flagship",
@@ -264,7 +276,8 @@
             }
           ]
         },
-        "logicalLevel": "Store"
+        "logicalLevel": "Store",
+        "description": "Flags flagship stores. Use it to separate high-profile brand locations from standard stores."
       },
       {
         "name": "Is Outlet",
@@ -284,7 +297,8 @@
             }
           ]
         },
-        "logicalLevel": "Store"
+        "logicalLevel": "Store",
+        "description": "Flags outlet stores. Use it to separate clearance and outlet behavior from full-price retail stores."
       },
       {
         "name": "Latitude",
@@ -304,7 +318,8 @@
             }
           ]
         },
-        "logicalLevel": "Store"
+        "logicalLevel": "Store",
+        "description": "Store latitude for map visualizations and geographic analysis."
       },
       {
         "name": "Longitude",
@@ -324,7 +339,8 @@
             }
           ]
         },
-        "logicalLevel": "Store"
+        "logicalLevel": "Store",
+        "description": "Store longitude for map visualizations and geographic analysis."
       }
     ],
     "logicalTableSources": [
