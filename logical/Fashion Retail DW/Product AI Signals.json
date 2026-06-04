@@ -345,6 +345,10 @@
               }
             }
           ]
+        },
+        "description": "Internal data-generation scenario marker; hidden from business-facing analysis.",
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
         }
       },
       {
@@ -368,7 +372,7 @@
         "aggregation": {
           "rule": "SUM"
         },
-        "description": "Units sold in the store-SKU-week case used by the AI signal layer."
+        "description": "Sales quantity observed in the store-SKU-week AI case. It reconciles to core sales quantity when rolled up, but should be used as case evidence beside risk, alert, and recommendation fields rather than as the primary sales KPI."
       },
       {
         "name": "Full Price Units",
@@ -391,7 +395,7 @@
         "aggregation": {
           "rule": "SUM"
         },
-        "description": "Full-price units in the store-SKU-week case used by the AI signal layer."
+        "description": "Full-price units observed in the store-SKU-week AI case. Use this as evidence of demand quality when investigating an AI signal."
       },
       {
         "name": "Net Sales Amount",
@@ -414,7 +418,7 @@
         "aggregation": {
           "rule": "SUM"
         },
-        "description": "Net sales amount in the store-SKU-week case used by the AI signal layer."
+        "description": "Net sales observed in the store-SKU-week AI case. Use this as impact evidence for an exception; use core Sales KPIs for standard revenue reporting."
       },
       {
         "name": "Gross Margin Amount",
@@ -437,7 +441,7 @@
         "aggregation": {
           "rule": "SUM"
         },
-        "description": "Gross margin amount in the store-SKU-week case used by the AI signal layer."
+        "description": "Gross margin observed in the store-SKU-week AI case. Use this to judge whether an exception is commercially important."
       },
       {
         "name": "Returned Units",
@@ -460,7 +464,7 @@
         "aggregation": {
           "rule": "SUM"
         },
-        "description": "Returned units in the store-SKU-week case used by the AI signal layer."
+        "description": "Returned units observed in the store-SKU-week AI case. Use this as fit, quality, or return-risk evidence within the AI signal workflow."
       },
       {
         "name": "On Hand Units",
@@ -483,7 +487,7 @@
         "aggregation": {
           "rule": "SUM"
         },
-        "description": "On-hand inventory in the store-SKU-week case used by the AI signal layer."
+        "description": "On-hand inventory in the store-SKU-week AI case. Use this as context for the signal; use Inventory KPIs for operational inventory reporting."
       },
       {
         "name": "Available Units",
@@ -506,7 +510,7 @@
         "aggregation": {
           "rule": "SUM"
         },
-        "description": "Available inventory in the store-SKU-week case used by the AI signal layer."
+        "description": "Available inventory in the store-SKU-week AI case. Use this to understand whether an AI case has sellable stock at the time of the signal."
       },
       {
         "name": "Markdown Percent",
@@ -752,7 +756,7 @@
         "aggregation": {
           "rule": "AVG"
         },
-        "description": "Store-SKU-week stockout risk score used by AI labeling and signal generation."
+        "description": "Average store-SKU-week stockout risk across the selected AI cases. Useful for context, but for exception severity prefer Latest Stockout Risk Score, Peak Stockout Risk Score, or Affected Stockout Weeks."
       },
       {
         "name": "Overstock Risk Score",
@@ -775,7 +779,7 @@
         "aggregation": {
           "rule": "AVG"
         },
-        "description": "Store-SKU-week overstock risk score used by AI labeling and signal generation."
+        "description": "Average store-SKU-week overstock risk across the selected AI cases. Useful for context, but for exception severity prefer Latest Overstock Risk Score, Peak Overstock Risk Score, or Affected Overstock Weeks."
       },
       {
         "name": "Anomaly Prediction",
@@ -798,7 +802,7 @@
         "aggregation": {
           "rule": "AVG"
         },
-        "description": "Model output indicating whether the store-SKU-week case is anomalous."
+        "description": "Model output indicating whether the product-week case is anomalous."
       },
       {
         "name": "Anomaly Count",
@@ -844,7 +848,7 @@
         "aggregation": {
           "rule": "AVG"
         },
-        "description": "Model probability that the store-SKU-week case is anomalous."
+        "description": "Model probability that the product-week case is anomalous."
       },
       {
         "name": "Business Exception Score",
@@ -867,7 +871,7 @@
         "aggregation": {
           "rule": "MAX"
         },
-        "description": "Business-weighted score for ranking store-SKU-week exceptions by actionability and impact."
+        "description": "Highest business exception score across the selected AI cases. Use this to rank store-SKU-week exceptions by actionability and commercial impact."
       },
       {
         "name": "Typical Probability",
@@ -890,7 +894,7 @@
         "aggregation": {
           "rule": "AVG"
         },
-        "description": "Model probability that the store-SKU-week case is typical."
+        "description": "Model probability that the product-week case is typical."
       },
       {
         "name": "Cluster Probability",
@@ -981,7 +985,7 @@
         "aggregation": {
           "rule": "SUM"
         },
-        "description": "Count of AI signal cases classified as stockout alerts."
+        "description": "Count of AI cases classified as stockout alerts. This is stricter than a zero-inventory count because it requires the case to meet the stockout risk and demand conditions used by the AI signal layer."
       },
       {
         "name": "Overstock Alert Cases",
@@ -1004,7 +1008,7 @@
         "aggregation": {
           "rule": "SUM"
         },
-        "description": "Count of AI signal cases classified as overstock alerts."
+        "description": "Count of AI cases classified as overstock alerts. This is an exception case count, not a raw count of products with inventory on hand."
       },
       {
         "name": "Margin Alert Count",
@@ -1074,6 +1078,247 @@
           "rule": "AVG"
         },
         "description": "Priority score used to order recommended business actions."
+      },
+      {
+        "name": "Raw Stockout Risk Score",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_SCORE_LABELED_V_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_SCORE_LABELED_V.COMPUTED_STOCKOUT_RISK_SCORE"
+                ]
+              }
+            }
+          ]
+        },
+        "description": "Hidden raw store-SKU-week stockout risk score used by latest and peak exception measures.",
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
+      },
+      {
+        "name": "Raw Overstock Risk Score",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_SCORE_LABELED_V_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_SCORE_LABELED_V.COMPUTED_OVERSTOCK_RISK_SCORE"
+                ]
+              }
+            }
+          ]
+        },
+        "description": "Hidden raw store-SKU-week overstock risk score used by latest and peak exception measures.",
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
+      },
+      {
+        "name": "Raw Stockout Alert Flag",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_SCORE_LABELED_V_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_SCORE_LABELED_V.STOCKOUT_ALERT_FLAG"
+                ]
+              }
+            }
+          ]
+        },
+        "description": "Hidden raw stockout alert flag used to count affected weeks.",
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
+      },
+      {
+        "name": "Raw Overstock Alert Flag",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_SCORE_LABELED_V_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_SCORE_LABELED_V.OVERSTOCK_ALERT_FLAG"
+                ]
+              }
+            }
+          ]
+        },
+        "description": "Hidden raw overstock alert flag used to count affected weeks.",
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
+      },
+      {
+        "name": "Raw Business Exception Score",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_SCORE_LABELED_V_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_SCORE_LABELED_V.BUSINESS_EXCEPTION_SCORE"
+                ]
+              }
+            }
+          ]
+        },
+        "description": "Hidden raw business exception score used by latest exception measures.",
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
+      },
+      {
+        "name": "Peak Stockout Risk Score",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_SCORE_LABELED_V_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_SCORE_LABELED_V.COMPUTED_STOCKOUT_RISK_SCORE"
+                ]
+              }
+            }
+          ]
+        },
+        "description": "Highest stockout risk score reached by the selected AI cases across all included weeks. Use this to rank severity without diluting short but important stockout episodes.",
+        "aggregation": {
+          "rule": "MAX"
+        }
+      },
+      {
+        "name": "Peak Overstock Risk Score",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_SCORE_LABELED_V_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_SCORE_LABELED_V.COMPUTED_OVERSTOCK_RISK_SCORE"
+                ]
+              }
+            }
+          ]
+        },
+        "description": "Highest overstock risk score reached by the selected AI cases across all included weeks. Use this to rank severity without diluting short but important overstock episodes.",
+        "aggregation": {
+          "rule": "MAX"
+        }
+      },
+      {
+        "name": "Latest Stockout Risk Score",
+        "description": "Highest stockout risk score in the latest week available for the selected AI cases. Use this when the current state matters more than historical average risk.",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "expressionTemplate": "EVALUATE_AGGR('MAX(\\%1) KEEP (DENSE_RANK LAST ORDER BY \\%2)' AS DOUBLE, %1, %2)",
+            "expressionObjects": [
+              "logicalColumn:Fashion Retail DW.Product AI Signals.Raw Stockout Risk Score",
+              "logicalColumn:Fashion Retail DW.Product AI Signals.Week Start Date"
+            ]
+          }
+        }
+      },
+      {
+        "name": "Latest Overstock Risk Score",
+        "description": "Highest overstock risk score in the latest week available for the selected AI cases. Use this when the current state matters more than historical average risk.",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "expressionTemplate": "EVALUATE_AGGR('MAX(\\%1) KEEP (DENSE_RANK LAST ORDER BY \\%2)' AS DOUBLE, %1, %2)",
+            "expressionObjects": [
+              "logicalColumn:Fashion Retail DW.Product AI Signals.Raw Overstock Risk Score",
+              "logicalColumn:Fashion Retail DW.Product AI Signals.Week Start Date"
+            ]
+          }
+        }
+      },
+      {
+        "name": "Latest Business Exception Score",
+        "description": "Highest business exception score in the latest available week for the selected AI cases. Use this for current exception prioritization.",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "expressionTemplate": "EVALUATE_AGGR('MAX(\\%1) KEEP (DENSE_RANK LAST ORDER BY \\%2)' AS DOUBLE, %1, %2)",
+            "expressionObjects": [
+              "logicalColumn:Fashion Retail DW.Product AI Signals.Raw Business Exception Score",
+              "logicalColumn:Fashion Retail DW.Product AI Signals.Week Start Date"
+            ]
+          }
+        }
+      },
+      {
+        "name": "Affected Stockout Weeks",
+        "description": "Number of distinct weeks with at least one stockout alert case in the selected context. Use this to distinguish a one-week spike from a repeated stockout problem.",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "expressionTemplate": "EVALUATE_AGGR('COUNT(DISTINCT CASE WHEN \\%1 > 0 THEN \\%2 END)' AS DOUBLE, %1, %2)",
+            "expressionObjects": [
+              "logicalColumn:Fashion Retail DW.Product AI Signals.Raw Stockout Alert Flag",
+              "logicalColumn:Fashion Retail DW.Product AI Signals.Week Start Date"
+            ]
+          }
+        }
+      },
+      {
+        "name": "Affected Overstock Weeks",
+        "description": "Number of distinct weeks with at least one overstock alert case in the selected context. Use this to distinguish a one-week spike from a repeated overstock problem.",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "expressionTemplate": "EVALUATE_AGGR('COUNT(DISTINCT CASE WHEN \\%1 > 0 THEN \\%2 END)' AS DOUBLE, %1, %2)",
+            "expressionObjects": [
+              "logicalColumn:Fashion Retail DW.Product AI Signals.Raw Overstock Alert Flag",
+              "logicalColumn:Fashion Retail DW.Product AI Signals.Week Start Date"
+            ]
+          }
+        }
       }
     ],
     "logicalTableSources": [

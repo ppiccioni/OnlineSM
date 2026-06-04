@@ -65,6 +65,15 @@
         }
       },
       {
+        "name": "Scenario Tag",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Scenario Tag",
+        "useLogicalColumnName": true,
+        "description": "Internal data-generation scenario marker; hidden from business-facing analysis.",
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
+      },
+      {
         "name": "Business Phenomenon",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Business Phenomenon",
         "useLogicalColumnName": true
@@ -80,11 +89,6 @@
         "useLogicalColumnName": true
       },
       {
-        "name": "Cluster Label",
-        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Cluster Label",
-        "useLogicalColumnName": true
-      },
-      {
         "name": "Business Interpretation",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Business Interpretation",
         "useLogicalColumnName": true
@@ -95,13 +99,8 @@
         "useLogicalColumnName": true
       },
       {
-        "name": "Model Evidence",
-        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Model Evidence",
-        "useLogicalColumnName": true
-      },
-      {
-        "name": "Business Evidence",
-        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Business Evidence",
+        "name": "Cluster Label",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Cluster Label",
         "useLogicalColumnName": true
       },
       {
@@ -110,51 +109,136 @@
         "useLogicalColumnName": true
       },
       {
-        "name": "Scenario Tag",
-        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Scenario Tag",
-        "useLogicalColumnName": true
+        "name": "Stockout Alert Cases",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Stockout Alert Cases",
+        "useLogicalColumnName": true,
+        "description": "Count of AI cases classified as stockout alerts. This is stricter than a zero-inventory count because it requires the case to meet the stockout risk and demand conditions used by the AI signal layer."
+      },
+      {
+        "name": "Overstock Alert Cases",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Overstock Alert Cases",
+        "useLogicalColumnName": true,
+        "description": "Count of AI cases classified as overstock alerts. This is an exception case count, not a raw count of products with inventory on hand."
+      },
+      {
+        "name": "Affected Stockout Weeks",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Affected Stockout Weeks",
+        "useLogicalColumnName": true,
+        "description": "Number of distinct weeks with at least one stockout alert case in the selected context. Use this to distinguish a one-week spike from a repeated stockout problem."
+      },
+      {
+        "name": "Affected Overstock Weeks",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Affected Overstock Weeks",
+        "useLogicalColumnName": true,
+        "description": "Number of distinct weeks with at least one overstock alert case in the selected context. Use this to distinguish a one-week spike from a repeated overstock problem."
+      },
+      {
+        "name": "Latest Stockout Risk Score",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Latest Stockout Risk Score",
+        "useLogicalColumnName": true,
+        "description": "Highest stockout risk score in the latest week available for the selected AI cases. Use this when the current state matters more than historical average risk."
+      },
+      {
+        "name": "Latest Overstock Risk Score",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Latest Overstock Risk Score",
+        "useLogicalColumnName": true,
+        "description": "Highest overstock risk score in the latest week available for the selected AI cases. Use this when the current state matters more than historical average risk."
+      },
+      {
+        "name": "Peak Stockout Risk Score",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Peak Stockout Risk Score",
+        "useLogicalColumnName": true,
+        "description": "Highest stockout risk score reached by the selected AI cases across all included weeks. Use this to rank severity without diluting short but important stockout episodes."
+      },
+      {
+        "name": "Peak Overstock Risk Score",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Peak Overstock Risk Score",
+        "useLogicalColumnName": true,
+        "description": "Highest overstock risk score reached by the selected AI cases across all included weeks. Use this to rank severity without diluting short but important overstock episodes."
+      },
+      {
+        "name": "Business Exception Score",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Business Exception Score",
+        "useLogicalColumnName": true,
+        "description": "Highest business exception score across the selected AI cases. Use this to rank store-SKU-week exceptions by actionability and commercial impact."
+      },
+      {
+        "name": "Latest Business Exception Score",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Latest Business Exception Score",
+        "useLogicalColumnName": true,
+        "description": "Highest business exception score in the latest available week for the selected AI cases. Use this for current exception prioritization."
+      },
+      {
+        "name": "Anomaly Count",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Anomaly Count",
+        "useLogicalColumnName": true,
+        "description": "Count of cases flagged as anomalous."
+      },
+      {
+        "name": "Anomaly Probability",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Anomaly Probability",
+        "useLogicalColumnName": true,
+        "description": "Model probability that the product-week case is anomalous."
+      },
+      {
+        "name": "Typical Probability",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Typical Probability",
+        "useLogicalColumnName": true,
+        "description": "Model probability that the product-week case is typical."
+      },
+      {
+        "name": "Cluster Probability",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Cluster Probability",
+        "useLogicalColumnName": true,
+        "description": "Model confidence for the assigned product behavior cluster."
+      },
+      {
+        "name": "Action Priority",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Action Priority",
+        "useLogicalColumnName": true,
+        "description": "Priority score used to order recommended business actions."
       },
       {
         "name": "Units Sold",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Units Sold",
         "useLogicalColumnName": true,
-        "description": "Units sold in the store-SKU-week case used by the AI signal layer."
+        "description": "Sales quantity observed in the store-SKU-week AI case. It reconciles to core sales quantity when rolled up, but should be used as case evidence beside risk, alert, and recommendation fields rather than as the primary sales KPI."
       },
       {
         "name": "Full Price Units",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Full Price Units",
         "useLogicalColumnName": true,
-        "description": "Full-price units in the store-SKU-week case used by the AI signal layer."
+        "description": "Full-price units observed in the store-SKU-week AI case. Use this as evidence of demand quality when investigating an AI signal."
       },
       {
         "name": "Net Sales Amount",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Net Sales Amount",
         "useLogicalColumnName": true,
-        "description": "Net sales amount in the store-SKU-week case used by the AI signal layer."
+        "description": "Net sales observed in the store-SKU-week AI case. Use this as impact evidence for an exception; use core Sales KPIs for standard revenue reporting."
       },
       {
         "name": "Gross Margin Amount",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Gross Margin Amount",
         "useLogicalColumnName": true,
-        "description": "Gross margin amount in the store-SKU-week case used by the AI signal layer."
+        "description": "Gross margin observed in the store-SKU-week AI case. Use this to judge whether an exception is commercially important."
       },
       {
         "name": "Returned Units",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Returned Units",
         "useLogicalColumnName": true,
-        "description": "Returned units in the store-SKU-week case used by the AI signal layer."
+        "description": "Returned units observed in the store-SKU-week AI case. Use this as fit, quality, or return-risk evidence within the AI signal workflow."
       },
       {
         "name": "On Hand Units",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.On Hand Units",
         "useLogicalColumnName": true,
-        "description": "On-hand inventory in the store-SKU-week case used by the AI signal layer."
+        "description": "On-hand inventory in the store-SKU-week AI case. Use this as context for the signal; use Inventory KPIs for operational inventory reporting."
       },
       {
         "name": "Available Units",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Available Units",
         "useLogicalColumnName": true,
-        "description": "Available inventory in the store-SKU-week case used by the AI signal layer."
+        "description": "Available inventory in the store-SKU-week AI case. Use this to understand whether an AI case has sellable stock at the time of the signal."
       },
       {
         "name": "Markdown Percent",
@@ -220,13 +304,13 @@
         "name": "Stockout Risk Score",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Stockout Risk Score",
         "useLogicalColumnName": true,
-        "description": "Store-SKU-week stockout risk score used by AI labeling and signal generation."
+        "description": "Average store-SKU-week stockout risk across the selected AI cases. Useful for context, but for exception severity prefer Latest Stockout Risk Score, Peak Stockout Risk Score, or Affected Stockout Weeks."
       },
       {
         "name": "Overstock Risk Score",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Overstock Risk Score",
         "useLogicalColumnName": true,
-        "description": "Store-SKU-week overstock risk score used by AI labeling and signal generation."
+        "description": "Average store-SKU-week overstock risk across the selected AI cases. Useful for context, but for exception severity prefer Latest Overstock Risk Score, Peak Overstock Risk Score, or Affected Overstock Weeks."
       },
       {
         "name": "Anomaly Prediction",
@@ -235,37 +319,7 @@
         "hideIfTrue": {
           "expressionTemplate": "1 = 1"
         },
-        "description": "Model output indicating whether the store-SKU-week case is anomalous."
-      },
-      {
-        "name": "Anomaly Count",
-        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Anomaly Count",
-        "useLogicalColumnName": true,
-        "description": "Count of cases flagged as anomalous."
-      },
-      {
-        "name": "Anomaly Probability",
-        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Anomaly Probability",
-        "useLogicalColumnName": true,
-        "description": "Model probability that the store-SKU-week case is anomalous."
-      },
-      {
-        "name": "Business Exception Score",
-        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Business Exception Score",
-        "useLogicalColumnName": true,
-        "description": "Business-weighted score for ranking store-SKU-week exceptions by actionability and impact."
-      },
-      {
-        "name": "Typical Probability",
-        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Typical Probability",
-        "useLogicalColumnName": true,
-        "description": "Model probability that the store-SKU-week case is typical."
-      },
-      {
-        "name": "Cluster Probability",
-        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Cluster Probability",
-        "useLogicalColumnName": true,
-        "description": "Model confidence for the assigned product behavior cluster."
+        "description": "Model output indicating whether the product-week case is anomalous."
       },
       {
         "name": "Primary Feature ID",
@@ -282,16 +336,14 @@
         "description": "Value of the feature that most influenced the signal assignment."
       },
       {
-        "name": "Stockout Alert Cases",
-        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Stockout Alert Cases",
-        "useLogicalColumnName": true,
-        "description": "Count of AI signal cases classified as stockout alerts."
+        "name": "Model Evidence",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Model Evidence",
+        "useLogicalColumnName": true
       },
       {
-        "name": "Overstock Alert Cases",
-        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Overstock Alert Cases",
-        "useLogicalColumnName": true,
-        "description": "Count of AI signal cases classified as overstock alerts."
+        "name": "Business Evidence",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Business Evidence",
+        "useLogicalColumnName": true
       },
       {
         "name": "Margin Alert Count",
@@ -304,12 +356,6 @@
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Return Alert Count",
         "useLogicalColumnName": true,
         "description": "Count of AI signal cases classified as return alerts."
-      },
-      {
-        "name": "Action Priority",
-        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Action Priority",
-        "useLogicalColumnName": true,
-        "description": "Priority score used to order recommended business actions."
       }
     ]
   }

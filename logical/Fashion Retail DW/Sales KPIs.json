@@ -196,7 +196,7 @@
         "aggregation": {
           "rule": "SUM"
         },
-        "description": "Total merchandise units sold after applying the current analysis filters."
+        "description": "Primary sales quantity from the base sales fact. Use this as the enterprise sales volume KPI when analyzing sales by date, product, store, customer, channel, promotion, or collection."
       },
       {
         "name": "Gross Sales Amount",
@@ -265,7 +265,7 @@
         "aggregation": {
           "rule": "SUM"
         },
-        "description": "Sales value after discounts and markdowns, before cost and return adjustments."
+        "description": "Primary sales value after discounts and markdowns. Use this for revenue analysis across the standard business dimensions; it is the cleanest value for dashboard sales trends and comparisons."
       },
       {
         "name": "Cost Amount",
@@ -311,7 +311,7 @@
         "aggregation": {
           "rule": "SUM"
         },
-        "description": "Net sales minus product cost, expressed as an amount."
+        "description": "Net sales minus product cost. Use this to compare profitability across products, stores, channels, and collections."
       },
       {
         "name": "Markdown Pct Raw",
@@ -381,7 +381,7 @@
         "aggregation": {
           "rule": "SUM"
         },
-        "description": "Units sold at full price, before markdown activity."
+        "description": "Units sold without markdown. Use this to understand demand quality and whether volume is coming from full-price selling rather than discounting."
       },
       {
         "name": "Returned Line Count",
@@ -423,6 +423,10 @@
               }
             }
           ]
+        },
+        "description": "Internal data-generation scenario marker; hidden from business-facing analysis.",
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
         }
       },
       {

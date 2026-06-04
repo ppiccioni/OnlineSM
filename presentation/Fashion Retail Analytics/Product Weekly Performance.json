@@ -47,7 +47,7 @@
         "name": "Units Sold",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Units Sold",
         "useLogicalColumnName": true,
-        "description": "Units sold for the selected product-week context."
+        "description": "Same underlying sales quantity as the core Units Sold KPI, aggregated into the product-week mart. Use this for SKU/week trend analysis, moving averages, sell-through behavior, and product performance diagnostics."
       },
       {
         "name": "Full Price Units",
@@ -77,7 +77,7 @@
         "name": "Net Sales Amount",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Net Sales Amount",
         "useLogicalColumnName": true,
-        "description": "Product-week sales amount after discounts and markdowns."
+        "description": "Net sales aggregated into product-week grain. Use this when comparing product weekly performance; use the core Sales KPIs folder for general revenue reporting by customer, channel, or promotion."
       },
       {
         "name": "Cost Amount",
@@ -113,13 +113,13 @@
         "name": "On Hand Units",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.On Hand Units",
         "useLogicalColumnName": true,
-        "description": "Inventory on hand aggregated into the product-week mart."
+        "description": "Inventory on hand aggregated into product-week grain. Use this as context for weekly product performance; use Inventory KPIs for operational store-SKU inventory reporting."
       },
       {
         "name": "Available Units",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Available Units",
         "useLogicalColumnName": true,
-        "description": "Available inventory aggregated into the product-week mart."
+        "description": "Available inventory aggregated into product-week grain. Use this beside weekly sell-through and demand indices to explain product trend behavior."
       },
       {
         "name": "Reserved Units",
@@ -251,25 +251,25 @@
         "name": "Stockout Risk Score",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Stockout Risk Score",
         "useLogicalColumnName": true,
-        "description": "Historical product-week stockout risk score; use current product score for latest-snapshot status."
+        "description": "Average product-week stockout risk across the selected context. Useful for trend context, but for exception severity prefer current, latest, or peak risk measures where available."
       },
       {
         "name": "Overstock Risk Score",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Overstock Risk Score",
         "useLogicalColumnName": true,
-        "description": "Historical product-week overstock risk score; use current product score for latest-snapshot status."
+        "description": "Average product-week overstock risk across the selected context. Useful for trend context, but for exception severity prefer current, latest, or peak risk measures where available."
       },
       {
         "name": "Current Product Stockout Risk Score",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Current Product Stockout Risk Score",
         "useLogicalColumnName": true,
-        "description": "Product-week stockout risk for the latest available week in the current query context; not store or region aware."
+        "description": "Latest-week product stockout risk in the current query context. This is product-week focused and not store-aware; use Product AI Signals for store-SKU-week exception cases."
       },
       {
         "name": "Current Product Overstock Risk Score",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Current Product Overstock Risk Score",
         "useLogicalColumnName": true,
-        "description": "Product-week overstock risk for the latest available week in the current query context; not store or region aware."
+        "description": "Latest-week product overstock risk in the current query context. This is product-week focused and not store-aware; use Product AI Signals for store-SKU-week exception cases."
       },
       {
         "name": "Activity Count",
@@ -280,7 +280,11 @@
       {
         "name": "Scenario Tag",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Scenario Tag",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Internal data-generation scenario marker; hidden from business-facing analysis.",
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
       }
     ]
   }
