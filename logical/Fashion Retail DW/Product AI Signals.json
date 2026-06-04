@@ -22,7 +22,7 @@
             }
           ]
         },
-        "description": "Unique store-SKU-week case generated for ML scoring."
+        "description": "Hidden technical identifier for one store-SKU-week AI signal case."
       },
       {
         "name": "Week Start Date",
@@ -41,7 +41,8 @@
               }
             }
           ]
-        }
+        },
+        "description": "Week represented by the AI signal case. Include this field when you need to see the exact timing of an exception rather than an average across multiple weeks."
       },
       {
         "name": "Date Key",
@@ -60,7 +61,8 @@
               }
             }
           ]
-        }
+        },
+        "description": "Hidden date key used to join the AI signal case to the Date dimension."
       },
       {
         "name": "Store ID",
@@ -79,7 +81,8 @@
               }
             }
           ]
-        }
+        },
+        "description": "Hidden store key used to join the AI signal case to the Store dimension."
       },
       {
         "name": "SKU ID",
@@ -98,7 +101,8 @@
               }
             }
           ]
-        }
+        },
+        "description": "Hidden SKU key used to join the AI signal case to the Product dimension."
       },
       {
         "name": "Style ID",
@@ -117,7 +121,8 @@
               }
             }
           ]
-        }
+        },
+        "description": "Hidden style key carried from the product hierarchy for the AI signal case."
       },
       {
         "name": "Collection ID",
@@ -136,7 +141,8 @@
               }
             }
           ]
-        }
+        },
+        "description": "Hidden collection key used to join the AI signal case to the Collection dimension."
       },
       {
         "name": "Cluster ID",
@@ -155,7 +161,8 @@
               }
             }
           ]
-        }
+        },
+        "description": "Hidden cluster key assigned by the product behavior clustering model."
       },
       {
         "name": "Business Phenomenon",
@@ -174,7 +181,8 @@
               }
             }
           ]
-        }
+        },
+        "description": "Business-facing classification of the AI case, such as stockout risk, overstock, return or fit risk, margin pressure, or unexplained anomaly."
       },
       {
         "name": "Reason Code",
@@ -193,7 +201,8 @@
               }
             }
           ]
-        }
+        },
+        "description": "Compact reason label explaining the main driver behind the AI case. Use it to group similar exceptions without reading the longer evidence text."
       },
       {
         "name": "Recommended Action",
@@ -212,7 +221,8 @@
               }
             }
           ]
-        }
+        },
+        "description": "Short operational action suggested for the individual store-SKU-week AI case."
       },
       {
         "name": "Cluster Label",
@@ -231,7 +241,8 @@
               }
             }
           ]
-        }
+        },
+        "description": "Descriptive label for the behavior cluster assigned to the AI case. Use it to group cases with similar sales, inventory, return, and risk patterns."
       },
       {
         "name": "Business Interpretation",
@@ -250,7 +261,8 @@
               }
             }
           ]
-        }
+        },
+        "description": "Plain-language interpretation of what the assigned AI signal or cluster means for the business."
       },
       {
         "name": "Recommended Business Action",
@@ -269,7 +281,8 @@
               }
             }
           ]
-        }
+        },
+        "description": "Longer business action guidance associated with the signal or cluster; useful for dashboard detail panes and AI-assisted explanations."
       },
       {
         "name": "Model Evidence",
@@ -288,7 +301,8 @@
               }
             }
           ]
-        }
+        },
+        "description": "Model-oriented explanation of the features, scores, or probabilities that influenced the AI case classification."
       },
       {
         "name": "Business Evidence",
@@ -307,7 +321,8 @@
               }
             }
           ]
-        }
+        },
+        "description": "Business-readable explanation of the sales, inventory, return, margin, or risk signals supporting the AI case."
       },
       {
         "name": "Cluster Evidence Summary",
@@ -326,7 +341,8 @@
               }
             }
           ]
-        }
+        },
+        "description": "Summary of the behaviors that characterize the assigned cluster, such as demand, sell-through, markdown, returns, stockout risk, or overstock risk."
       },
       {
         "name": "Scenario Tag",
@@ -802,7 +818,7 @@
         "aggregation": {
           "rule": "AVG"
         },
-        "description": "Model output indicating whether the product-week case is anomalous."
+        "description": "Hidden model output indicating whether the store-SKU-week case is predicted to be anomalous."
       },
       {
         "name": "Anomaly Count",
@@ -848,7 +864,7 @@
         "aggregation": {
           "rule": "AVG"
         },
-        "description": "Model probability that the product-week case is anomalous."
+        "description": "Probability that the store-SKU-week case is unusual compared with learned product behavior."
       },
       {
         "name": "Business Exception Score",
@@ -894,7 +910,7 @@
         "aggregation": {
           "rule": "AVG"
         },
-        "description": "Model probability that the product-week case is typical."
+        "description": "Probability that the store-SKU-week case is typical compared with learned product behavior."
       },
       {
         "name": "Cluster Probability",
@@ -917,7 +933,7 @@
         "aggregation": {
           "rule": "AVG"
         },
-        "description": "Model confidence for the assigned product behavior cluster."
+        "description": "Model confidence that the store-SKU-week case belongs to its assigned behavior cluster."
       },
       {
         "name": "Primary Feature ID",
@@ -939,7 +955,8 @@
         },
         "aggregation": {
           "rule": "AVG"
-        }
+        },
+        "description": "Hidden technical identifier for the model feature that most influenced the AI case. Use Model Evidence or Business Evidence for business-facing explanations."
       },
       {
         "name": "Primary Feature Value",
@@ -962,7 +979,7 @@
         "aggregation": {
           "rule": "AVG"
         },
-        "description": "Value of the feature that most influenced the signal assignment."
+        "description": "Numeric value of the feature that most influenced the AI case; mainly useful for diagnostics alongside the evidence fields."
       },
       {
         "name": "Stockout Alert Cases",

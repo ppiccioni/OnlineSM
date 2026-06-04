@@ -9,12 +9,13 @@
         "hideIfTrue": {
           "expressionTemplate": "1 = 1"
         },
-        "description": "Unique store-SKU-week case generated for ML scoring."
+        "description": "Hidden technical identifier for one store-SKU-week AI signal case."
       },
       {
         "name": "Week Start Date",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Week Start Date",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Week represented by the AI signal case. Include this field when you need to see the exact timing of an exception rather than an average across multiple weeks."
       },
       {
         "name": "Date Key",
@@ -22,7 +23,8 @@
         "useLogicalColumnName": true,
         "hideIfTrue": {
           "expressionTemplate": "1 = 1"
-        }
+        },
+        "description": "Hidden date key used to join the AI signal case to the Date dimension."
       },
       {
         "name": "Store ID",
@@ -30,7 +32,8 @@
         "useLogicalColumnName": true,
         "hideIfTrue": {
           "expressionTemplate": "1 = 1"
-        }
+        },
+        "description": "Hidden store key used to join the AI signal case to the Store dimension."
       },
       {
         "name": "SKU ID",
@@ -38,7 +41,8 @@
         "useLogicalColumnName": true,
         "hideIfTrue": {
           "expressionTemplate": "1 = 1"
-        }
+        },
+        "description": "Hidden SKU key used to join the AI signal case to the Product dimension."
       },
       {
         "name": "Style ID",
@@ -46,7 +50,8 @@
         "useLogicalColumnName": true,
         "hideIfTrue": {
           "expressionTemplate": "1 = 1"
-        }
+        },
+        "description": "Hidden style key carried from the product hierarchy for the AI signal case."
       },
       {
         "name": "Collection ID",
@@ -54,7 +59,8 @@
         "useLogicalColumnName": true,
         "hideIfTrue": {
           "expressionTemplate": "1 = 1"
-        }
+        },
+        "description": "Hidden collection key used to join the AI signal case to the Collection dimension."
       },
       {
         "name": "Cluster ID",
@@ -62,7 +68,8 @@
         "useLogicalColumnName": true,
         "hideIfTrue": {
           "expressionTemplate": "1 = 1"
-        }
+        },
+        "description": "Hidden cluster key assigned by the product behavior clustering model."
       },
       {
         "name": "Scenario Tag",
@@ -76,37 +83,44 @@
       {
         "name": "Business Phenomenon",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Business Phenomenon",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Business-facing classification of the AI case, such as stockout risk, overstock, return or fit risk, margin pressure, or unexplained anomaly."
       },
       {
         "name": "Reason Code",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Reason Code",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Compact reason label explaining the main driver behind the AI case. Use it to group similar exceptions without reading the longer evidence text."
       },
       {
         "name": "Recommended Action",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Recommended Action",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Short operational action suggested for the individual store-SKU-week AI case."
       },
       {
         "name": "Business Interpretation",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Business Interpretation",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Plain-language interpretation of what the assigned AI signal or cluster means for the business."
       },
       {
         "name": "Recommended Business Action",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Recommended Business Action",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Longer business action guidance associated with the signal or cluster; useful for dashboard detail panes and AI-assisted explanations."
       },
       {
         "name": "Cluster Label",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Cluster Label",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Descriptive label for the behavior cluster assigned to the AI case. Use it to group cases with similar sales, inventory, return, and risk patterns."
       },
       {
         "name": "Cluster Evidence Summary",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Cluster Evidence Summary",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Summary of the behaviors that characterize the assigned cluster, such as demand, sell-through, markdown, returns, stockout risk, or overstock risk."
       },
       {
         "name": "Stockout Alert Cases",
@@ -178,19 +192,19 @@
         "name": "Anomaly Probability",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Anomaly Probability",
         "useLogicalColumnName": true,
-        "description": "Model probability that the product-week case is anomalous."
+        "description": "Probability that the store-SKU-week case is unusual compared with learned product behavior."
       },
       {
         "name": "Typical Probability",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Typical Probability",
         "useLogicalColumnName": true,
-        "description": "Model probability that the product-week case is typical."
+        "description": "Probability that the store-SKU-week case is typical compared with learned product behavior."
       },
       {
         "name": "Cluster Probability",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Cluster Probability",
         "useLogicalColumnName": true,
-        "description": "Model confidence for the assigned product behavior cluster."
+        "description": "Model confidence that the store-SKU-week case belongs to its assigned behavior cluster."
       },
       {
         "name": "Action Priority",
@@ -319,7 +333,7 @@
         "hideIfTrue": {
           "expressionTemplate": "1 = 1"
         },
-        "description": "Model output indicating whether the product-week case is anomalous."
+        "description": "Hidden model output indicating whether the store-SKU-week case is predicted to be anomalous."
       },
       {
         "name": "Primary Feature ID",
@@ -327,23 +341,26 @@
         "useLogicalColumnName": true,
         "hideIfTrue": {
           "expressionTemplate": "1 = 1"
-        }
+        },
+        "description": "Hidden technical identifier for the model feature that most influenced the AI case. Use Model Evidence or Business Evidence for business-facing explanations."
       },
       {
         "name": "Primary Feature Value",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Primary Feature Value",
         "useLogicalColumnName": true,
-        "description": "Value of the feature that most influenced the signal assignment."
+        "description": "Numeric value of the feature that most influenced the AI case; mainly useful for diagnostics alongside the evidence fields."
       },
       {
         "name": "Model Evidence",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Model Evidence",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Model-oriented explanation of the features, scores, or probabilities that influenced the AI case classification."
       },
       {
         "name": "Business Evidence",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Business Evidence",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Business-readable explanation of the sales, inventory, return, margin, or risk signals supporting the AI case."
       },
       {
         "name": "Margin Alert Count",

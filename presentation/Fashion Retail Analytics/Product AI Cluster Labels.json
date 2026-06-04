@@ -8,27 +8,32 @@
         "useLogicalColumnName": true,
         "hideIfTrue": {
           "expressionTemplate": "1 = 1"
-        }
+        },
+        "description": "Hidden technical identifier for a behavior cluster produced by the product AI model."
       },
       {
         "name": "Cluster Label",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.Cluster Label",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Business-facing name for a group of similar product behavior cases."
       },
       {
         "name": "Business Interpretation",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.Business Interpretation",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Plain-language explanation of what the cluster generally means for merchants, planners, or store teams."
       },
       {
         "name": "Recommended Action",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.Recommended Action",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Suggested business response for cases belonging to this behavior cluster."
       },
       {
         "name": "Evidence Summary",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.Evidence Summary",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Summary of the common measured behaviors behind the cluster, such as demand, markdown, returns, or risk."
       },
       {
         "name": "Action Priority",
@@ -40,7 +45,7 @@
         "name": "Product Week Count",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.Product Week Count",
         "useLogicalColumnName": true,
-        "description": "Number of product-week cases assigned to the cluster."
+        "description": "Number of AI signal cases represented by the cluster."
       },
       {
         "name": "SKU Count",
@@ -58,19 +63,19 @@
         "name": "Average Units Sold",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.Average Units Sold",
         "useLogicalColumnName": true,
-        "description": "Average units sold among product-week cases in the cluster."
+        "description": "Average sales quantity among AI signal cases in the cluster; use it as cluster context, not as the primary enterprise Units Sold KPI."
       },
       {
         "name": "Average Net Sales Amount",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.Average Net Sales Amount",
         "useLogicalColumnName": true,
-        "description": "Average net sales among product-week cases in the cluster."
+        "description": "Average net sales among AI signal cases in the cluster; use it as cluster context, not as the primary revenue KPI."
       },
       {
         "name": "Average Full Price Sell Through Percent",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.Average Full Price Sell Through Percent",
         "useLogicalColumnName": true,
-        "description": "Average full-price sell-through percent for the cluster."
+        "description": "Average full-price sell-through among AI signal cases in the cluster, useful for understanding whether demand is profitable and supply-constrained."
       },
       {
         "name": "Average Markdown Percent",
@@ -88,13 +93,13 @@
         "name": "Cluster Avg Stockout Risk Score",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.Cluster Avg Stockout Risk Score",
         "useLogicalColumnName": true,
-        "description": "Average stockout risk score for product-week cases in the cluster."
+        "description": "Average stockout risk among AI signal cases in the cluster. It describes the cluster profile rather than the latest state of one SKU or store."
       },
       {
         "name": "Cluster Avg Overstock Risk Score",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.Cluster Avg Overstock Risk Score",
         "useLogicalColumnName": true,
-        "description": "Average overstock risk score for product-week cases in the cluster."
+        "description": "Average overstock risk among AI signal cases in the cluster. It describes the cluster profile rather than the latest state of one SKU or store."
       },
       {
         "name": "Average Anomaly Probability",
@@ -111,22 +116,26 @@
       {
         "name": "Modal Department",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.Modal Department",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Most common department among the AI signal cases assigned to the cluster. It describes the dominant cluster profile, not every case in the cluster."
       },
       {
         "name": "Modal Category",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.Modal Category",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Most common category among the AI signal cases assigned to the cluster. It describes the dominant cluster profile, not every case in the cluster."
       },
       {
         "name": "Modal Price Tier",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.Modal Price Tier",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Most common price tier among the AI signal cases assigned to the cluster. It describes the dominant cluster profile, not every case in the cluster."
       },
       {
         "name": "Modal Reason Code",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.Modal Reason Code",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Most common reason code among the AI signal cases assigned to the cluster. Use it as a quick cluster explanation, not as the reason for every individual case."
       }
     ]
   }
