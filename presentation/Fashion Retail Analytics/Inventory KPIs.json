@@ -58,6 +58,24 @@
         "description": "Units reserved and not immediately available for sale."
       },
       {
+        "name": "Current Store-SKU On Hand Units",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Inventory KPIs.Current Store-SKU On Hand Units",
+        "useLogicalColumnName": true,
+        "description": "Latest-week physical stock on hand at store-SKU grain. Use this for current store availability and transfer analysis because it avoids summing inventory across historical weeks."
+      },
+      {
+        "name": "Current Store-SKU Available Units",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Inventory KPIs.Current Store-SKU Available Units",
+        "useLogicalColumnName": true,
+        "description": "Latest-week sellable inventory at store-SKU grain after reservations and unavailable stock. Use this to identify stores that can potentially transfer units to a stockout location."
+      },
+      {
+        "name": "Current Store-SKU Reserved Units",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Inventory KPIs.Current Store-SKU Reserved Units",
+        "useLogicalColumnName": true,
+        "description": "Latest-week reserved inventory at store-SKU grain. Use this beside current available units to understand why on-hand stock may not be fully transferable."
+      },
+      {
         "name": "Stockout Count",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Inventory KPIs.Stockout Count",
         "useLogicalColumnName": true,
