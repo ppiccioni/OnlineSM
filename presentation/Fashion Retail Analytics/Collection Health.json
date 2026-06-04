@@ -8,47 +8,56 @@
         "useLogicalColumnName": true,
         "hideIfTrue": {
           "expressionTemplate": "1 = 1"
-        }
+        },
+        "description": "Hidden technical key for the collection represented by the collection health row."
       },
       {
         "name": "Collection Name",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Collection Name",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Business name of the collection represented by the collection health row."
       },
       {
         "name": "Season Code",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Season Code",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Short season code associated with the collection, such as SS or AW."
       },
       {
         "name": "Season Name",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Season Name",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Readable season name associated with the collection."
       },
       {
         "name": "Collection Year",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Collection Year",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Calendar year associated with the collection launch and selling season."
       },
       {
         "name": "Launch Date",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Launch Date",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Planned launch date for the collection."
       },
       {
         "name": "Markdown Start Date",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Markdown Start Date",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Date when planned markdown activity begins for the collection."
       },
       {
         "name": "Clearance Start Date",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Clearance Start Date",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Date when planned clearance activity begins for the collection."
       },
       {
         "name": "End Date",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.End Date",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Planned end date for the collection lifecycle."
       },
       {
         "name": "Collection Sort Key",
@@ -56,42 +65,50 @@
         "useLogicalColumnName": true,
         "hideIfTrue": {
           "expressionTemplate": "1 = 1"
-        }
+        },
+        "description": "Hidden numeric key used to sort collections in business lifecycle order."
       },
       {
         "name": "Department",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Department",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Department represented by the collection health row when the mart is viewed below collection level."
       },
       {
         "name": "Category",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Category",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Category represented by the collection health row when the mart is viewed below collection level."
       },
       {
         "name": "Subcategory",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Subcategory",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Subcategory represented by the collection health row when the mart is viewed below collection level."
       },
       {
         "name": "Price Tier",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Price Tier",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Price tier represented by the collection health row."
       },
       {
         "name": "Brand",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Brand",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Brand represented by the collection health row."
       },
       {
         "name": "Latest Snapshot Week Start Date",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Latest Snapshot Week Start Date",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Week used for latest inventory and latest risk measures in the collection health mart."
       },
       {
         "name": "Collection Health Signal",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Collection Health Signal",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Business-facing status label summarizing the collection/category health pattern."
       },
       {
         "name": "Assortment Style Count",

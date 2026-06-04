@@ -21,7 +21,8 @@
               }
             }
           ]
-        }
+        },
+        "description": "Week represented by the product weekly mart row. Include this field when analyzing trends or when you do not want weekly product measures to blend across the season."
       },
       {
         "name": "Date Key",
@@ -40,7 +41,8 @@
               }
             }
           ]
-        }
+        },
+        "description": "Hidden date key used to join the product weekly mart to the Date dimension."
       },
       {
         "name": "SKU ID",
@@ -59,7 +61,8 @@
               }
             }
           ]
-        }
+        },
+        "description": "Hidden SKU key used to join the product weekly mart to the Product dimension."
       },
       {
         "name": "Collection ID",
@@ -78,7 +81,8 @@
               }
             }
           ]
-        }
+        },
+        "description": "Hidden collection key used to join the product weekly mart to the Collection dimension."
       },
       {
         "name": "Sales Line Count",

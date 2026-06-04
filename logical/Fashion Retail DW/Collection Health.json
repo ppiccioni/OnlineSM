@@ -21,7 +21,8 @@
               }
             }
           ]
-        }
+        },
+        "description": "Hidden technical key for the collection represented by the collection health row."
       },
       {
         "name": "Collection Name",
@@ -41,7 +42,8 @@
             }
           ]
         },
-        "sortBy": "Collection Sort Key"
+        "sortBy": "Collection Sort Key",
+        "description": "Business name of the collection represented by the collection health row."
       },
       {
         "name": "Season Code",
@@ -60,7 +62,8 @@
               }
             }
           ]
-        }
+        },
+        "description": "Short season code associated with the collection, such as SS or AW."
       },
       {
         "name": "Season Name",
@@ -79,7 +82,8 @@
               }
             }
           ]
-        }
+        },
+        "description": "Readable season name associated with the collection."
       },
       {
         "name": "Collection Year",
@@ -98,7 +102,8 @@
               }
             }
           ]
-        }
+        },
+        "description": "Calendar year associated with the collection launch and selling season."
       },
       {
         "name": "Launch Date",
@@ -117,7 +122,8 @@
               }
             }
           ]
-        }
+        },
+        "description": "Planned launch date for the collection."
       },
       {
         "name": "Markdown Start Date",
@@ -136,7 +142,8 @@
               }
             }
           ]
-        }
+        },
+        "description": "Date when planned markdown activity begins for the collection."
       },
       {
         "name": "Clearance Start Date",
@@ -155,7 +162,8 @@
               }
             }
           ]
-        }
+        },
+        "description": "Date when planned clearance activity begins for the collection."
       },
       {
         "name": "End Date",
@@ -174,7 +182,8 @@
               }
             }
           ]
-        }
+        },
+        "description": "Planned end date for the collection lifecycle."
       },
       {
         "name": "Collection Sort Key",
@@ -193,7 +202,8 @@
               }
             }
           ]
-        }
+        },
+        "description": "Hidden numeric key used to sort collections in business lifecycle order."
       },
       {
         "name": "Department",
@@ -212,7 +222,8 @@
               }
             }
           ]
-        }
+        },
+        "description": "Department represented by the collection health row when the mart is viewed below collection level."
       },
       {
         "name": "Category",
@@ -231,7 +242,8 @@
               }
             }
           ]
-        }
+        },
+        "description": "Category represented by the collection health row when the mart is viewed below collection level."
       },
       {
         "name": "Subcategory",
@@ -250,7 +262,8 @@
               }
             }
           ]
-        }
+        },
+        "description": "Subcategory represented by the collection health row when the mart is viewed below collection level."
       },
       {
         "name": "Price Tier",
@@ -269,7 +282,8 @@
               }
             }
           ]
-        }
+        },
+        "description": "Price tier represented by the collection health row."
       },
       {
         "name": "Brand",
@@ -288,7 +302,8 @@
               }
             }
           ]
-        }
+        },
+        "description": "Brand represented by the collection health row."
       },
       {
         "name": "Latest Snapshot Week Start Date",
@@ -307,7 +322,8 @@
               }
             }
           ]
-        }
+        },
+        "description": "Week used for latest inventory and latest risk measures in the collection health mart."
       },
       {
         "name": "Collection Health Signal",
@@ -326,7 +342,8 @@
               }
             }
           ]
-        }
+        },
+        "description": "Business-facing status label summarizing the collection/category health pattern."
       },
       {
         "name": "Assortment Style Count",
