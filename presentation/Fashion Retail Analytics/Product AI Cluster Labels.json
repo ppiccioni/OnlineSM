@@ -54,6 +54,42 @@
         "description": "Number of distinct SKUs represented in the cluster."
       },
       {
+        "name": "Store Count",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.Store Count",
+        "useLogicalColumnName": true,
+        "description": "Number of stores represented in the cluster. This matters because Product AI is now store-aware."
+      },
+      {
+        "name": "Style Count",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.Style Count",
+        "useLogicalColumnName": true,
+        "description": "Number of distinct styles represented in the cluster."
+      },
+      {
+        "name": "Average Full Price Unit Share Percent",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.Average Full Price Unit Share Percent",
+        "useLogicalColumnName": true,
+        "description": "Average full-price unit share among AI signal cases in the cluster. Use it to judge whether the cluster reflects healthy full-price demand or markdown-driven movement."
+      },
+      {
+        "name": "Average Lost Sales Units",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.Average Lost Sales Units",
+        "useLogicalColumnName": true,
+        "description": "Average lost-sales units among AI signal cases in the cluster. Higher values indicate clusters where missed demand is a common behavior."
+      },
+      {
+        "name": "Average Lost Sales Rate Percent",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.Average Lost Sales Rate Percent",
+        "useLogicalColumnName": true,
+        "description": "Average percentage of demand that became lost sales among AI signal cases in the cluster."
+      },
+      {
+        "name": "Average Inbound Supply Units",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.Average Inbound Supply Units",
+        "useLogicalColumnName": true,
+        "description": "Average replenishment plus transfer-in units among AI signal cases in the cluster. Use it to see whether supply actions are typical for the cluster."
+      },
+      {
         "name": "Average Cluster Probability",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.Average Cluster Probability",
         "useLogicalColumnName": true,
@@ -124,6 +160,12 @@
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.Modal Category",
         "useLogicalColumnName": true,
         "description": "Most common category among the AI signal cases assigned to the cluster. It describes the dominant cluster profile, not every case in the cluster."
+      },
+      {
+        "name": "Modal Region",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.Modal Region",
+        "useLogicalColumnName": true,
+        "description": "Most common store region among AI signal cases assigned to the cluster. It describes the dominant cluster profile, not every case in the cluster."
       },
       {
         "name": "Modal Price Tier",
