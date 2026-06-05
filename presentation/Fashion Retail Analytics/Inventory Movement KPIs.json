@@ -1,7 +1,7 @@
 {
   "presentationTable": {
-    "name": "Base Warehouse - Inventory Movement KPIs",
-    "description": "Base warehouse inventory movement ledger at Store + SKU + Week grain. Use this folder for operational stock-flow analysis: opening stock, replenishment, transfers, fulfilled sales, estimated demand, estimated lost sales, and ending stock.",
+    "name": "Inventory Movement KPIs",
+    "description": "Base warehouse inventory movement ledger from FASHIONDW.FACT_INVENTORY_MOVEMENT_WEEKLY at Store + SKU + Week grain. Use this for opening stock, replenishment, transfers, fulfilled sales, estimated demand, estimated lost sales, and ending stock.",
     "presentationColumns": [
       {
         "name": "Movement Week Start Date",

@@ -6,109 +6,109 @@
         "name": "SKU Code",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product.SKU Code",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Business-facing SKU code. Use it to identify the exact sellable product variant."
+        "description": "Business-facing SKU code. Use it to identify the exact sellable product variant."
       },
       {
         "name": "Style Code",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product.Style Code",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Style-level code grouping related SKU variants such as sizes or colors."
+        "description": "Style-level code grouping related SKU variants such as sizes or colors."
       },
       {
         "name": "Product Name",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product.Product Name",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Readable product name for the SKU."
+        "description": "Readable product name for the SKU."
       },
       {
         "name": "Style Description",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product.Style Description",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Short description of the style family. Use it when SKU-level names are too granular."
+        "description": "Short description of the style family. Use it when SKU-level names are too granular."
       },
       {
         "name": "Department",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product.Department",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Top-level product department, such as Womenswear or Accessories."
+        "description": "Top-level product department, such as Womenswear or Accessories."
       },
       {
         "name": "Category",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product.Category",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Product category within the department, such as Bags, Dresses, or Sneakers."
+        "description": "Product category within the department, such as Bags, Dresses, or Sneakers."
       },
       {
         "name": "Subcategory",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product.Subcategory",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. More detailed product grouping within the category."
+        "description": "More detailed product grouping within the category."
       },
       {
         "name": "Brand",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product.Brand",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Brand or house label associated with the product."
+        "description": "Brand or house label associated with the product."
       },
       {
         "name": "Color Family",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product.Color Family",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Color family for the SKU, useful for assortment and trend analysis."
+        "description": "Color family for the SKU, useful for assortment and trend analysis."
       },
       {
         "name": "Size Code",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product.Size Code",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Size variant for the SKU."
+        "description": "Size variant for the SKU."
       },
       {
         "name": "Fit",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product.Fit",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Fit classification for apparel or footwear products."
+        "description": "Fit classification for apparel or footwear products."
       },
       {
         "name": "Fabric",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product.Fabric",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Primary fabric or material classification."
+        "description": "Primary fabric or material classification."
       },
       {
         "name": "Price Tier",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product.Price Tier",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Commercial price tier, useful for comparing entry, premium, and luxury behavior."
+        "description": "Commercial price tier, useful for comparing entry, premium, and luxury behavior."
       },
       {
         "name": "List Price",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product.List Price",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Standard list price before discounts or markdowns."
+        "description": "Standard list price before discounts or markdowns."
       },
       {
         "name": "Standard Cost",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product.Standard Cost",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Standard product cost used for margin and inventory value calculations."
+        "description": "Standard product cost used for margin and inventory value calculations."
       },
       {
         "name": "Trend Tag",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product.Trend Tag",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Trend or style signal associated with the product, useful for merchandising analysis."
+        "description": "Trend or style signal associated with the product, useful for merchandising analysis."
       },
       {
         "name": "Sustainability Flag",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product.Sustainability Flag",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Flags SKUs positioned as sustainable or using sustainability-related attributes."
+        "description": "Flags SKUs positioned as sustainable or using sustainability-related attributes."
       },
       {
         "name": "Carryover Flag",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product.Carryover Flag",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Flags products carried over from a previous season rather than newly introduced."
+        "description": "Flags products carried over from a previous season rather than newly introduced."
       }
     ],
     "hierarchies": [
@@ -149,6 +149,6 @@
         ]
       }
     ],
-    "description": "Legacy-compatible alias for Dimensions - Product. Existing OAC analyses can continue to use this folder path; prefer Dimensions - Product for new content. Core product and SKU dimension used for style, category, assortment, price, and product attribute analysis."
+    "description": "Core product and SKU dimension used for style, category, assortment, price, and product attribute analysis."
   }
 }

@@ -9,13 +9,13 @@
         "hideIfTrue": {
           "expressionTemplate": "1 = 1"
         },
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Legacy-compatible field preserved for existing OAC content."
+        "description": "Legacy-compatible field preserved for existing OAC content."
       },
       {
         "name": "Transaction ID",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Sales KPIs.Transaction ID",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Sales transaction identifier from the base sales fact. Use it for transaction-level detail or distinct transaction counts; it is not intended as an aggregate KPI."
+        "description": "Sales transaction identifier from the base sales fact. Use it for transaction-level detail or distinct transaction counts; it is not intended as an aggregate KPI."
       },
       {
         "name": "Date Key",
@@ -24,7 +24,7 @@
         "hideIfTrue": {
           "expressionTemplate": "1 = 1"
         },
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Legacy-compatible field preserved for existing OAC content."
+        "description": "Legacy-compatible field preserved for existing OAC content."
       },
       {
         "name": "Store ID",
@@ -33,7 +33,7 @@
         "hideIfTrue": {
           "expressionTemplate": "1 = 1"
         },
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Legacy-compatible field preserved for existing OAC content."
+        "description": "Legacy-compatible field preserved for existing OAC content."
       },
       {
         "name": "Customer ID",
@@ -42,7 +42,7 @@
         "hideIfTrue": {
           "expressionTemplate": "1 = 1"
         },
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Legacy-compatible field preserved for existing OAC content."
+        "description": "Legacy-compatible field preserved for existing OAC content."
       },
       {
         "name": "SKU ID",
@@ -51,7 +51,7 @@
         "hideIfTrue": {
           "expressionTemplate": "1 = 1"
         },
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Legacy-compatible field preserved for existing OAC content."
+        "description": "Legacy-compatible field preserved for existing OAC content."
       },
       {
         "name": "Collection ID",
@@ -60,7 +60,7 @@
         "hideIfTrue": {
           "expressionTemplate": "1 = 1"
         },
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Legacy-compatible field preserved for existing OAC content."
+        "description": "Legacy-compatible field preserved for existing OAC content."
       },
       {
         "name": "Channel ID",
@@ -69,7 +69,7 @@
         "hideIfTrue": {
           "expressionTemplate": "1 = 1"
         },
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Legacy-compatible field preserved for existing OAC content."
+        "description": "Legacy-compatible field preserved for existing OAC content."
       },
       {
         "name": "Promotion ID",
@@ -78,43 +78,43 @@
         "hideIfTrue": {
           "expressionTemplate": "1 = 1"
         },
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Legacy-compatible field preserved for existing OAC content."
+        "description": "Legacy-compatible field preserved for existing OAC content."
       },
       {
         "name": "Units Sold",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Sales KPIs.Units Sold",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Primary sales quantity from the base sales fact. Use this as the enterprise sales volume KPI when analyzing sales by date, product, store, customer, channel, promotion, or collection."
+        "description": "Primary sales quantity from the base sales fact. Use this as the enterprise sales volume KPI when analyzing sales by date, product, store, customer, channel, promotion, or collection."
       },
       {
         "name": "Gross Sales Amount",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Sales KPIs.Gross Sales Amount",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Sales value before discounts, markdowns, returns, or cost deductions."
+        "description": "Sales value before discounts, markdowns, returns, or cost deductions."
       },
       {
         "name": "Discount Amount",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Sales KPIs.Discount Amount",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Total discount or markdown value applied to sales lines."
+        "description": "Total discount or markdown value applied to sales lines."
       },
       {
         "name": "Net Sales Amount",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Sales KPIs.Net Sales Amount",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Primary sales value after discounts and markdowns. Use this for revenue analysis across the standard business dimensions; it is the cleanest value for dashboard sales trends and comparisons."
+        "description": "Primary sales value after discounts and markdowns. Use this for revenue analysis across the standard business dimensions; it is the cleanest value for dashboard sales trends and comparisons."
       },
       {
         "name": "Cost Amount",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Sales KPIs.Cost Amount",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Total standard product cost associated with the sold units."
+        "description": "Total standard product cost associated with the sold units."
       },
       {
         "name": "Gross Margin Amount",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Sales KPIs.Gross Margin Amount",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Net sales minus product cost. Use this to compare profitability across products, stores, channels, and collections."
+        "description": "Net sales minus product cost. Use this to compare profitability across products, stores, channels, and collections."
       },
       {
         "name": "Markdown Pct Raw",
@@ -123,7 +123,7 @@
         "hideIfTrue": {
           "expressionTemplate": "1 = 1"
         },
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Raw line-level markdown ratio used as an input to markdown calculations."
+        "description": "Raw line-level markdown ratio used as an input to markdown calculations."
       },
       {
         "name": "Full Price Line Count",
@@ -132,13 +132,13 @@
         "hideIfTrue": {
           "expressionTemplate": "1 = 1"
         },
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Number of sales lines sold without markdown."
+        "description": "Number of sales lines sold without markdown."
       },
       {
         "name": "Full Price Units",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Sales KPIs.Full Price Units",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Units sold without markdown. Use this to understand demand quality and whether volume is coming from full-price selling rather than discounting."
+        "description": "Units sold without markdown. Use this to understand demand quality and whether volume is coming from full-price selling rather than discounting."
       },
       {
         "name": "Returned Line Count",
@@ -147,13 +147,13 @@
         "hideIfTrue": {
           "expressionTemplate": "1 = 1"
         },
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Number of sales lines that later generated a return."
+        "description": "Number of sales lines that later generated a return."
       },
       {
         "name": "Scenario Tag",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Sales KPIs.Scenario Tag",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Internal data-generation scenario marker; hidden from business-facing analysis.",
+        "description": "Internal data-generation scenario marker; hidden from business-facing analysis.",
         "hideIfTrue": {
           "expressionTemplate": "1 = 1"
         }
@@ -162,51 +162,51 @@
         "name": "Sales Line Count",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Sales KPIs.Sales Line Count",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Count of sales lines, useful as a transaction-detail activity measure."
+        "description": "Count of sales lines, useful as a transaction-detail activity measure."
       },
       {
         "name": "Transaction Count",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Sales KPIs.Transaction Count",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Distinct sales transactions represented in the selected context."
+        "description": "Distinct sales transactions represented in the selected context."
       },
       {
         "name": "Average Selling Price",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Sales KPIs.Average Selling Price",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Net sales amount divided by units sold; a proxy for realized price."
+        "description": "Net sales amount divided by units sold; a proxy for realized price."
       },
       {
         "name": "Gross Margin Pct",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Sales KPIs.Gross Margin Pct",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Gross margin amount as a percentage of net sales amount."
+        "description": "Gross margin amount as a percentage of net sales amount."
       },
       {
         "name": "Markdown Pct",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Sales KPIs.Markdown Pct",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Discount amount as a percentage of gross sales amount."
+        "description": "Discount amount as a percentage of gross sales amount."
       },
       {
         "name": "Return Line Rate",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Sales KPIs.Return Line Rate",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Returned sales lines as a percentage of total sales lines."
+        "description": "Returned sales lines as a percentage of total sales lines."
       },
       {
         "name": "Full Price Line Share",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Sales KPIs.Full Price Line Share",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Full-price sales lines as a percentage of total sales lines."
+        "description": "Full-price sales lines as a percentage of total sales lines."
       },
       {
         "name": "Full Price Unit Share Percent",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Sales KPIs.Full Price Unit Share Percent",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Full-price units as a percentage of total units sold."
+        "description": "Full-price units as a percentage of total units sold."
       }
     ],
-    "description": "Legacy-compatible alias for Base Warehouse - Sales KPIs. Existing OAC analyses can continue to use this folder path; prefer Base Warehouse - Sales KPIs for new content. Base warehouse sales measures from FASHIONDW.FACT_SALES. Use this as the canonical folder for observed sales, revenue, margin, markdown, and full-price selling."
+    "description": "Base warehouse sales measures from FASHIONDW.FACT_SALES. Use this as the canonical folder for observed sales, revenue, margin, markdown, and full-price selling."
   }
 }

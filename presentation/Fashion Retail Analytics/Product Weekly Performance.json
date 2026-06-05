@@ -6,7 +6,7 @@
         "name": "Week Start Date",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Week Start Date",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Week represented by the product weekly mart row. Include this field when analyzing trends or when you do not want weekly product measures to blend across the season."
+        "description": "Week represented by the product weekly mart row. Include this field when analyzing trends or when you do not want weekly product measures to blend across the season."
       },
       {
         "name": "Date Key",
@@ -15,7 +15,7 @@
         "hideIfTrue": {
           "expressionTemplate": "1 = 1"
         },
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Hidden date key used to join the product weekly mart to the Date dimension."
+        "description": "Hidden date key used to join the product weekly mart to the Date dimension."
       },
       {
         "name": "SKU ID",
@@ -24,7 +24,7 @@
         "hideIfTrue": {
           "expressionTemplate": "1 = 1"
         },
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Hidden SKU key used to join the product weekly mart to the Product dimension."
+        "description": "Hidden SKU key used to join the product weekly mart to the Product dimension."
       },
       {
         "name": "Collection ID",
@@ -33,127 +33,127 @@
         "hideIfTrue": {
           "expressionTemplate": "1 = 1"
         },
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Hidden collection key used to join the product weekly mart to the Collection dimension."
+        "description": "Hidden collection key used to join the product weekly mart to the Collection dimension."
       },
       {
         "name": "Sales Line Count",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Sales Line Count",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Sales line activity aggregated to product-week grain."
+        "description": "Sales line activity aggregated to product-week grain."
       },
       {
         "name": "Transaction Count",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Transaction Count",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Distinct transaction activity represented in the product-week mart."
+        "description": "Distinct transaction activity represented in the product-week mart."
       },
       {
         "name": "Units Sold",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Units Sold",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Same underlying sales quantity as the core Units Sold KPI, aggregated into the product-week mart. Use this for SKU/week trend analysis, moving averages, sell-through behavior, and product performance diagnostics."
+        "description": "Same underlying sales quantity as the core Units Sold KPI, aggregated into the product-week mart. Use this for SKU/week trend analysis, moving averages, sell-through behavior, and product performance diagnostics."
       },
       {
         "name": "Full Price Units",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Full Price Units",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Units sold at full price for the selected product-week context."
+        "description": "Units sold at full price for the selected product-week context."
       },
       {
         "name": "Full Price Line Count",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Full Price Line Count",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Sales lines sold at full price for the selected product-week context."
+        "description": "Sales lines sold at full price for the selected product-week context."
       },
       {
         "name": "Gross Sales Amount",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Gross Sales Amount",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Product-week sales amount before discounts and markdowns."
+        "description": "Product-week sales amount before discounts and markdowns."
       },
       {
         "name": "Discount Amount",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Discount Amount",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Product-week discount or markdown value."
+        "description": "Product-week discount or markdown value."
       },
       {
         "name": "Net Sales Amount",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Net Sales Amount",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Net sales aggregated into product-week grain. Use this when comparing product weekly performance; use the core Sales KPIs folder for general revenue reporting by customer, channel, or promotion."
+        "description": "Net sales aggregated into product-week grain. Use this when comparing product weekly performance; use the core Sales KPIs folder for general revenue reporting by customer, channel, or promotion."
       },
       {
         "name": "Cost Amount",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Cost Amount",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Product-week standard cost associated with sold units."
+        "description": "Product-week standard cost associated with sold units."
       },
       {
         "name": "Gross Margin Amount",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Gross Margin Amount",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Product-week net sales minus product cost."
+        "description": "Product-week net sales minus product cost."
       },
       {
         "name": "Returned Units",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Returned Units",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Returned units associated with the product-week context."
+        "description": "Returned units associated with the product-week context."
       },
       {
         "name": "Return Line Count",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Return Line Count",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Return lines associated with the product-week context."
+        "description": "Return lines associated with the product-week context."
       },
       {
         "name": "Refund Amount",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Refund Amount",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Refund amount associated with returned product-week units."
+        "description": "Refund amount associated with returned product-week units."
       },
       {
         "name": "On Hand Units",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Product-Week On Hand Units",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias for Product-Week On Hand Units. Prefer Product-Week On Hand Units in new content. On-hand inventory aggregated into product-week grain. Use this as product trend context; use base inventory snapshot or movement folders for operational store-SKU inventory analysis."
+        "description": "On-hand inventory aggregated into product-week grain. Use this as product trend context; use base inventory snapshot or movement folders for operational store-SKU inventory analysis."
       },
       {
         "name": "Available Units",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Product-Week Available Units",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias for Product-Week Available Units. Prefer Product-Week Available Units in new content. Available inventory aggregated into product-week grain. Use this beside weekly sell-through and demand indices to explain product trend behavior."
+        "description": "Available inventory aggregated into product-week grain. Use this beside weekly sell-through and demand indices to explain product trend behavior."
       },
       {
         "name": "Reserved Units",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Product-Week Reserved Units",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias for Product-Week Reserved Units. Prefer Product-Week Reserved Units in new content. Reserved inventory aggregated into product-week grain."
+        "description": "Reserved inventory aggregated into product-week grain."
       },
       {
         "name": "Stockout Store Count",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Stockout Store Count",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Number of store snapshots with a stockout for the product-week context."
+        "description": "Number of store snapshots with a stockout for the product-week context."
       },
       {
         "name": "Store Snapshot Count",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Store Snapshot Count",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Number of store-SKU inventory snapshots contributing to the product-week context."
+        "description": "Number of store-SKU inventory snapshots contributing to the product-week context."
       },
       {
         "name": "Inventory Value At Cost",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Inventory Value At Cost",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Product-week inventory value calculated at standard cost."
+        "description": "Product-week inventory value calculated at standard cost."
       },
       {
         "name": "Average Weeks Of Supply",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Average Weeks Of Supply",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Average weeks of supply for the product-week context."
+        "description": "Average weeks of supply for the product-week context."
       },
       {
         "name": "Source Inventory Overstock Risk Score",
@@ -162,7 +162,7 @@
         "hideIfTrue": {
           "expressionTemplate": "1 = 1"
         },
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Hidden source overstock score carried from inventory before product-week recomputation."
+        "description": "Hidden source overstock score carried from inventory before product-week recomputation."
       },
       {
         "name": "Source Inventory Stockout Risk Score",
@@ -171,126 +171,126 @@
         "hideIfTrue": {
           "expressionTemplate": "1 = 1"
         },
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Hidden source stockout score carried from inventory before product-week recomputation."
+        "description": "Hidden source stockout score carried from inventory before product-week recomputation."
       },
       {
         "name": "Markdown Percent",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Markdown Percent",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Discount amount as a percentage of gross sales amount at product-week grain."
+        "description": "Discount amount as a percentage of gross sales amount at product-week grain."
       },
       {
         "name": "Gross Margin Percent",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Gross Margin Percent",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Gross margin amount as a percentage of net sales amount at product-week grain."
+        "description": "Gross margin amount as a percentage of net sales amount at product-week grain."
       },
       {
         "name": "Return Rate Percent",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Return Rate Percent",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Returned units as a percentage of sold units at product-week grain."
+        "description": "Returned units as a percentage of sold units at product-week grain."
       },
       {
         "name": "Full Price Sell Through Percent",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Full Price Sell Through Percent",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Full-price units divided by full-price units plus on-hand units."
+        "description": "Full-price units divided by full-price units plus on-hand units."
       },
       {
         "name": "Full Price Unit Share Percent",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Full Price Unit Share Percent",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Full-price units as a percentage of total units sold."
+        "description": "Full-price units as a percentage of total units sold."
       },
       {
         "name": "Sell Through Percent",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Sell Through Percent",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Units sold divided by units sold plus on-hand units."
+        "description": "Units sold divided by units sold plus on-hand units."
       },
       {
         "name": "Stockout Store Rate Percent",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Stockout Store Rate Percent",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Stockout store snapshots as a percentage of store snapshots."
+        "description": "Stockout store snapshots as a percentage of store snapshots."
       },
       {
         "name": "Units Sold 4W Avg",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Units Sold 4W Avg",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Four-week moving average of units sold."
+        "description": "Four-week moving average of units sold."
       },
       {
         "name": "Units Sold 13W Avg",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Units Sold 13W Avg",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Thirteen-week moving average of units sold."
+        "description": "Thirteen-week moving average of units sold."
       },
       {
         "name": "Net Sales 4W Avg",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Net Sales 4W Avg",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Four-week moving average of net sales amount."
+        "description": "Four-week moving average of net sales amount."
       },
       {
         "name": "Return Rate 4W Avg",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Return Rate 4W Avg",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Four-week moving average of return rate."
+        "description": "Four-week moving average of return rate."
       },
       {
         "name": "Demand Index 4W",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Demand Index 4W",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Short-term demand index based on recent four-week sales behavior."
+        "description": "Short-term demand index based on recent four-week sales behavior."
       },
       {
         "name": "Demand Index 13W",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Demand Index 13W",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Longer-term demand index based on thirteen-week sales behavior."
+        "description": "Longer-term demand index based on thirteen-week sales behavior."
       },
       {
         "name": "Stockout Risk Score",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Stockout Risk Score",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Average product-week stockout risk across the selected context. Useful for trend context, but for exception severity prefer current, latest, or peak risk measures where available."
+        "description": "Average product-week stockout risk across the selected context. Useful for trend context, but for exception severity prefer current, latest, or peak risk measures where available."
       },
       {
         "name": "Overstock Risk Score",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Overstock Risk Score",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Average product-week overstock risk across the selected context. Useful for trend context, but for exception severity prefer current, latest, or peak risk measures where available."
+        "description": "Average product-week overstock risk across the selected context. Useful for trend context, but for exception severity prefer current, latest, or peak risk measures where available."
       },
       {
         "name": "Current Product Stockout Risk Score",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Current Product Stockout Risk Score",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Latest-week product stockout risk in the current query context. This is product-week focused and not store-aware; use Product AI Signals for store-SKU-week exception cases."
+        "description": "Latest-week product stockout risk in the current query context. This is product-week focused and not store-aware; use Product AI Signals for store-SKU-week exception cases."
       },
       {
         "name": "Current Product Overstock Risk Score",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Current Product Overstock Risk Score",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Latest-week product overstock risk in the current query context. This is product-week focused and not store-aware; use Product AI Signals for store-SKU-week exception cases."
+        "description": "Latest-week product overstock risk in the current query context. This is product-week focused and not store-aware; use Product AI Signals for store-SKU-week exception cases."
       },
       {
         "name": "Activity Count",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Activity Count",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Activity flag count used to identify product-weeks with meaningful movement."
+        "description": "Activity flag count used to identify product-weeks with meaningful movement."
       },
       {
         "name": "Scenario Tag",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Scenario Tag",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Internal data-generation scenario marker; hidden from business-facing analysis.",
+        "description": "Internal data-generation scenario marker; hidden from business-facing analysis.",
         "hideIfTrue": {
           "expressionTemplate": "1 = 1"
         }
       }
     ],
-    "description": "Legacy-compatible alias for Derived Mart - Product Weekly Performance. Existing OAC analyses can continue to use this folder path; prefer Derived Mart - Product Weekly Performance for new content. Notebook-derived product weekly performance mart. Use this for curated product trend, sell-through, return, demand-index, and risk features at product-week grain."
+    "description": "Notebook-derived product weekly performance mart. Use this for curated product trend, sell-through, return, demand-index, and risk features at product-week grain."
   }
 }

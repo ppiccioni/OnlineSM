@@ -9,55 +9,55 @@
         "hideIfTrue": {
           "expressionTemplate": "1 = 1"
         },
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Hidden technical key for the collection represented by the collection health row."
+        "description": "Hidden technical key for the collection represented by the collection health row."
       },
       {
         "name": "Collection Name",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Collection Name",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Business name of the collection represented by the collection health row."
+        "description": "Business name of the collection represented by the collection health row."
       },
       {
         "name": "Season Code",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Season Code",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Short season code associated with the collection, such as SS or AW."
+        "description": "Short season code associated with the collection, such as SS or AW."
       },
       {
         "name": "Season Name",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Season Name",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Readable season name associated with the collection."
+        "description": "Readable season name associated with the collection."
       },
       {
         "name": "Collection Year",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Collection Year",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Calendar year associated with the collection launch and selling season."
+        "description": "Calendar year associated with the collection launch and selling season."
       },
       {
         "name": "Launch Date",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Launch Date",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Planned launch date for the collection."
+        "description": "Planned launch date for the collection."
       },
       {
         "name": "Markdown Start Date",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Markdown Start Date",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Date when planned markdown activity begins for the collection."
+        "description": "Date when planned markdown activity begins for the collection."
       },
       {
         "name": "Clearance Start Date",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Clearance Start Date",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Date when planned clearance activity begins for the collection."
+        "description": "Date when planned clearance activity begins for the collection."
       },
       {
         "name": "End Date",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.End Date",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Planned end date for the collection lifecycle."
+        "description": "Planned end date for the collection lifecycle."
       },
       {
         "name": "Collection Sort Key",
@@ -66,247 +66,247 @@
         "hideIfTrue": {
           "expressionTemplate": "1 = 1"
         },
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Hidden numeric key used to sort collections in business lifecycle order."
+        "description": "Hidden numeric key used to sort collections in business lifecycle order."
       },
       {
         "name": "Department",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Department",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Department represented by the collection health row when the mart is viewed below collection level."
+        "description": "Department represented by the collection health row when the mart is viewed below collection level."
       },
       {
         "name": "Category",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Category",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Category represented by the collection health row when the mart is viewed below collection level."
+        "description": "Category represented by the collection health row when the mart is viewed below collection level."
       },
       {
         "name": "Subcategory",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Subcategory",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Subcategory represented by the collection health row when the mart is viewed below collection level."
+        "description": "Subcategory represented by the collection health row when the mart is viewed below collection level."
       },
       {
         "name": "Price Tier",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Price Tier",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Price tier represented by the collection health row."
+        "description": "Price tier represented by the collection health row."
       },
       {
         "name": "Brand",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Brand",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Brand represented by the collection health row."
+        "description": "Brand represented by the collection health row."
       },
       {
         "name": "Latest Snapshot Week Start Date",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Latest Snapshot Week Start Date",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Week used for latest inventory and latest risk measures in the collection health mart."
+        "description": "Week used for latest inventory and latest risk measures in the collection health mart."
       },
       {
         "name": "Collection Health Signal",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Collection Health Signal",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Business-facing status label summarizing the collection/category health pattern."
+        "description": "Business-facing status label summarizing the collection/category health pattern."
       },
       {
         "name": "Assortment Style Count",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Assortment Style Count",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Number of distinct styles planned or represented in the collection context."
+        "description": "Number of distinct styles planned or represented in the collection context."
       },
       {
         "name": "Assortment SKU Count",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Assortment SKU Count",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Number of distinct SKUs planned or represented in the collection context."
+        "description": "Number of distinct SKUs planned or represented in the collection context."
       },
       {
         "name": "Average List Price",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Average List Price",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Average product list price for the collection context."
+        "description": "Average product list price for the collection context."
       },
       {
         "name": "Average Standard Cost",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Average Standard Cost",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Average standard cost for products in the collection context."
+        "description": "Average standard cost for products in the collection context."
       },
       {
         "name": "Sustainable SKU Count",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Sustainable SKU Count",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Number of SKUs flagged as sustainable in the collection context."
+        "description": "Number of SKUs flagged as sustainable in the collection context."
       },
       {
         "name": "Carryover SKU Count",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Carryover SKU Count",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Number of carryover SKUs in the collection context."
+        "description": "Number of carryover SKUs in the collection context."
       },
       {
         "name": "Sales Line Count",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Sales Line Count",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Sales line activity represented in the collection health mart."
+        "description": "Sales line activity represented in the collection health mart."
       },
       {
         "name": "Transaction Count",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Transaction Count",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Distinct transaction activity represented in the collection health mart."
+        "description": "Distinct transaction activity represented in the collection health mart."
       },
       {
         "name": "Selling SKU Count",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Selling SKU Count",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Number of SKUs with sales activity."
+        "description": "Number of SKUs with sales activity."
       },
       {
         "name": "Selling Style Count",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Selling Style Count",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Number of styles with sales activity."
+        "description": "Number of styles with sales activity."
       },
       {
         "name": "Units Sold",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Units Sold",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Same underlying sales quantity as the core Units Sold KPI, rolled up to collection, category, and assortment context. Use this for collection health summaries rather than transaction-level sales analysis."
+        "description": "Same underlying sales quantity as the core Units Sold KPI, rolled up to collection, category, and assortment context. Use this for collection health summaries rather than transaction-level sales analysis."
       },
       {
         "name": "Full Price Units",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Full Price Units",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Units sold at full price for the collection/category context."
+        "description": "Units sold at full price for the collection/category context."
       },
       {
         "name": "Full Price Line Count",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Full Price Line Count",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Full-price sales lines for the collection/category context."
+        "description": "Full-price sales lines for the collection/category context."
       },
       {
         "name": "Gross Sales Amount",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Gross Sales Amount",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Gross sales amount before discounts for the collection/category context."
+        "description": "Gross sales amount before discounts for the collection/category context."
       },
       {
         "name": "Discount Amount",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Discount Amount",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Discount or markdown amount for the collection/category context."
+        "description": "Discount or markdown amount for the collection/category context."
       },
       {
         "name": "Net Sales Amount",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Net Sales Amount",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Net sales amount after discounts for the collection/category context."
+        "description": "Net sales amount after discounts for the collection/category context."
       },
       {
         "name": "Cost Amount",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Cost Amount",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Standard product cost for sold units in the collection/category context."
+        "description": "Standard product cost for sold units in the collection/category context."
       },
       {
         "name": "Gross Margin Amount",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Gross Margin Amount",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Net sales minus standard cost for the collection/category context."
+        "description": "Net sales minus standard cost for the collection/category context."
       },
       {
         "name": "Returned Units",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Returned Units",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Returned units for the collection/category context."
+        "description": "Returned units for the collection/category context."
       },
       {
         "name": "Return Line Count",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Return Line Count",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Return line count for the collection/category context."
+        "description": "Return line count for the collection/category context."
       },
       {
         "name": "Refund Amount",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Refund Amount",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Refund amount for the collection/category context."
+        "description": "Refund amount for the collection/category context."
       },
       {
         "name": "Inventory SKU Count",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Inventory SKU Count",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Number of SKUs represented in the latest inventory snapshot."
+        "description": "Number of SKUs represented in the latest inventory snapshot."
       },
       {
         "name": "Inventory Style Count",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Inventory Style Count",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Number of styles represented in the latest inventory snapshot."
+        "description": "Number of styles represented in the latest inventory snapshot."
       },
       {
         "name": "Inventory Store Count",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Inventory Store Count",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Number of stores represented in the latest inventory snapshot."
+        "description": "Number of stores represented in the latest inventory snapshot."
       },
       {
         "name": "Latest Store SKU Snapshot Count",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Latest Store SKU Snapshot Count",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Store-SKU snapshots in the latest available inventory week."
+        "description": "Store-SKU snapshots in the latest available inventory week."
       },
       {
         "name": "Latest On Hand Units",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Latest On Hand Units",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. On-hand inventory for the latest available collection inventory snapshot. Use this for current collection health instead of summing historical inventory weeks."
+        "description": "On-hand inventory for the latest available collection inventory snapshot. Use this for current collection health instead of summing historical inventory weeks."
       },
       {
         "name": "Latest Available Units",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Latest Available Units",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Available inventory for the latest available collection inventory snapshot. Use this to see current sellable stock for the collection context."
+        "description": "Available inventory for the latest available collection inventory snapshot. Use this to see current sellable stock for the collection context."
       },
       {
         "name": "Latest Reserved Units",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Latest Reserved Units",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Reserved units in the latest available inventory week."
+        "description": "Reserved units in the latest available inventory week."
       },
       {
         "name": "Latest Stockout Store Count",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Latest Stockout Store Count",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Stockout store snapshots in the latest available inventory week."
+        "description": "Stockout store snapshots in the latest available inventory week."
       },
       {
         "name": "Latest Inventory Value At Cost",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Latest Inventory Value At Cost",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Inventory value at cost in the latest available inventory week."
+        "description": "Inventory value at cost in the latest available inventory week."
       },
       {
         "name": "Average Latest Weeks Of Supply",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Average Latest Weeks Of Supply",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Average weeks of supply in the latest available inventory week."
+        "description": "Average weeks of supply in the latest available inventory week."
       },
       {
         "name": "Average Latest Overstock Risk Score",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Average Latest Overstock Risk Score",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Average overstock risk in the latest inventory week for the collection context. This is better for current collection health than averaging risk across the whole season."
+        "description": "Average overstock risk in the latest inventory week for the collection context. This is better for current collection health than averaging risk across the whole season."
       },
       {
         "name": "Average Latest Stockout Risk Score",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Average Latest Stockout Risk Score",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Average stockout risk in the latest inventory week for the collection context. This is better for current collection health than averaging risk across the whole season."
+        "description": "Average stockout risk in the latest inventory week for the collection context. This is better for current collection health than averaging risk across the whole season."
       },
       {
         "name": "Collection Sell Through Basis Units",
@@ -315,45 +315,45 @@
         "hideIfTrue": {
           "expressionTemplate": "1 = 1"
         },
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Hidden denominator used to calculate collection sell-through percent."
+        "description": "Hidden denominator used to calculate collection sell-through percent."
       },
       {
         "name": "Gross Margin Percent",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Gross Margin Percent",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Gross margin amount as a percentage of net sales for the collection context."
+        "description": "Gross margin amount as a percentage of net sales for the collection context."
       },
       {
         "name": "Markdown Percent",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Markdown Percent",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Discount amount as a percentage of gross sales for the collection context."
+        "description": "Discount amount as a percentage of gross sales for the collection context."
       },
       {
         "name": "Return Rate Percent",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Return Rate Percent",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Returned units as a percentage of sold units for the collection context."
+        "description": "Returned units as a percentage of sold units for the collection context."
       },
       {
         "name": "Full Price Unit Share Percent",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Full Price Unit Share Percent",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Full-price units as a percentage of total units sold for the collection context."
+        "description": "Full-price units as a percentage of total units sold for the collection context."
       },
       {
         "name": "Collection Sell Through Percent",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Collection Sell Through Percent",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Units sold as a percentage of units sold plus latest on-hand units."
+        "description": "Units sold as a percentage of units sold plus latest on-hand units."
       },
       {
         "name": "Latest Stockout Store Rate Percent",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection Health.Latest Stockout Store Rate Percent",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Latest stockout store snapshots as a percentage of latest store-SKU snapshots."
+        "description": "Latest stockout store snapshots as a percentage of latest store-SKU snapshots."
       }
     ],
-    "description": "Legacy-compatible alias for Derived Mart - Collection Health. Existing OAC analyses can continue to use this folder path; prefer Derived Mart - Collection Health for new content. Notebook-derived collection health mart. Use this for curated collection/category lifecycle health, latest inventory, sell-through, markdown, return, and margin summaries."
+    "description": "Notebook-derived collection health mart. Use this for curated collection/category lifecycle health, latest inventory, sell-through, markdown, return, and margin summaries."
   }
 }

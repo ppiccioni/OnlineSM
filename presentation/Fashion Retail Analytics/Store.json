@@ -6,91 +6,91 @@
         "name": "Store Code",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Store.Store Code",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Stable business code for the physical store. Use this when you need an unambiguous store identifier that will not change if the display name changes."
+        "description": "Stable business code for the physical store. Use this when you need an unambiguous store identifier that will not change if the display name changes."
       },
       {
         "name": "Store Name",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Store.Store Name",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Unique business-facing store label. Names include city and neighborhood or street so OAC filters and AI Assistant prompts do not merge multiple physical stores."
+        "description": "Unique business-facing store label. Names include city and neighborhood or street so OAC filters and AI Assistant prompts do not merge multiple physical stores."
       },
       {
         "name": "Country",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Store.Country",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Country where the store operates."
+        "description": "Country where the store operates."
       },
       {
         "name": "Region",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Store.Region",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Commercial region or subnational geography used for store analysis, such as Greater London, Bavaria, Catalonia, or Lombardy."
+        "description": "Commercial region or subnational geography used for store analysis, such as Greater London, Bavaria, Catalonia, or Lombardy."
       },
       {
         "name": "City",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Store.City",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. City where the store operates."
+        "description": "City where the store operates."
       },
       {
         "name": "Store Format",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Store.Store Format",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Retail format of the store, such as Flagship, High Street, Mall, or Outlet."
+        "description": "Retail format of the store, such as Flagship, High Street, Mall, or Outlet."
       },
       {
         "name": "Location Type",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Store.Location Type",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Broad location classification such as Urban, Mall, or Outlet Village."
+        "description": "Broad location classification such as Urban, Mall, or Outlet Village."
       },
       {
         "name": "Opening Date",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Store.Opening Date",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Date when the store opened. Use it for store maturity and lifecycle analysis."
+        "description": "Date when the store opened. Use it for store maturity and lifecycle analysis."
       },
       {
         "name": "Selling Area SQM",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Store.Selling Area SQM",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Approximate selling area in square meters. Use it to compare store scale and normalize traffic or inventory exposure."
+        "description": "Approximate selling area in square meters. Use it to compare store scale and normalize traffic or inventory exposure."
       },
       {
         "name": "Climate Zone",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Store.Climate Zone",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Climate classification for the store location, useful for seasonal assortment and weather-sensitive product analysis."
+        "description": "Climate classification for the store location, useful for seasonal assortment and weather-sensitive product analysis."
       },
       {
         "name": "Affluence Index",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Store.Affluence Index",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Relative affluence indicator for the store catchment area. Use it as context for price tier, full-price demand, and assortment mix."
+        "description": "Relative affluence indicator for the store catchment area. Use it as context for price tier, full-price demand, and assortment mix."
       },
       {
         "name": "Is Flagship",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Store.Is Flagship",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Flags flagship stores. Use it to separate high-profile brand locations from standard stores."
+        "description": "Flags flagship stores. Use it to separate high-profile brand locations from standard stores."
       },
       {
         "name": "Is Outlet",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Store.Is Outlet",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Flags outlet stores. Use it to separate clearance and outlet behavior from full-price retail stores."
+        "description": "Flags outlet stores. Use it to separate clearance and outlet behavior from full-price retail stores."
       },
       {
         "name": "Latitude",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Store.Latitude",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Store latitude for map visualizations and geographic analysis."
+        "description": "Store latitude for map visualizations and geographic analysis."
       },
       {
         "name": "Longitude",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Store.Longitude",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Store longitude for map visualizations and geographic analysis."
+        "description": "Store longitude for map visualizations and geographic analysis."
       }
     ],
     "hierarchies": [
@@ -126,6 +126,6 @@
         ]
       }
     ],
-    "description": "Legacy-compatible alias for Dimensions - Store. Existing OAC analyses can continue to use this folder path; prefer Dimensions - Store for new content. Core store dimension with unique store labels, geography, format, and store-context attributes."
+    "description": "Core store dimension with unique store labels, geography, format, and store-context attributes."
   }
 }

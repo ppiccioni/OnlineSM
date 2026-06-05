@@ -9,13 +9,13 @@
         "hideIfTrue": {
           "expressionTemplate": "1 = 1"
         },
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Hidden technical identifier for one store-SKU-week AI signal case."
+        "description": "Hidden technical identifier for one store-SKU-week AI signal case."
       },
       {
         "name": "Week Start Date",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Week Start Date",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Week represented by the AI signal case. Include this field when you need to see the exact timing of an exception rather than an average across multiple weeks."
+        "description": "Week represented by the AI signal case. Include this field when you need to see the exact timing of an exception rather than an average across multiple weeks."
       },
       {
         "name": "Date Key",
@@ -24,7 +24,7 @@
         "hideIfTrue": {
           "expressionTemplate": "1 = 1"
         },
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Hidden date key used to join the AI signal case to the Date dimension."
+        "description": "Hidden date key used to join the AI signal case to the Date dimension."
       },
       {
         "name": "Store ID",
@@ -33,7 +33,7 @@
         "hideIfTrue": {
           "expressionTemplate": "1 = 1"
         },
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Hidden store key used to join the AI signal case to the Store dimension."
+        "description": "Hidden store key used to join the AI signal case to the Store dimension."
       },
       {
         "name": "SKU ID",
@@ -42,7 +42,7 @@
         "hideIfTrue": {
           "expressionTemplate": "1 = 1"
         },
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Hidden SKU key used to join the AI signal case to the Product dimension."
+        "description": "Hidden SKU key used to join the AI signal case to the Product dimension."
       },
       {
         "name": "Style ID",
@@ -51,7 +51,7 @@
         "hideIfTrue": {
           "expressionTemplate": "1 = 1"
         },
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Hidden style key carried from the product hierarchy for the AI signal case."
+        "description": "Hidden style key carried from the product hierarchy for the AI signal case."
       },
       {
         "name": "Collection ID",
@@ -60,7 +60,7 @@
         "hideIfTrue": {
           "expressionTemplate": "1 = 1"
         },
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Hidden collection key used to join the AI signal case to the Collection dimension."
+        "description": "Hidden collection key used to join the AI signal case to the Collection dimension."
       },
       {
         "name": "Cluster ID",
@@ -69,13 +69,13 @@
         "hideIfTrue": {
           "expressionTemplate": "1 = 1"
         },
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Hidden cluster key assigned by the product behavior clustering model."
+        "description": "Hidden cluster key assigned by the product behavior clustering model."
       },
       {
         "name": "Scenario Tag",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Scenario Tag",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Internal data-generation scenario marker; hidden from business-facing analysis.",
+        "description": "Internal data-generation scenario marker; hidden from business-facing analysis.",
         "hideIfTrue": {
           "expressionTemplate": "1 = 1"
         }
@@ -84,379 +84,379 @@
         "name": "Business Phenomenon",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Business Phenomenon",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Business-facing classification of the AI case, such as stockout risk, overstock, return or fit risk, margin pressure, or unexplained anomaly."
+        "description": "Business-facing classification of the AI case, such as stockout risk, overstock, return or fit risk, margin pressure, or unexplained anomaly."
       },
       {
         "name": "Reason Code",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Reason Code",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Compact reason label explaining the main driver behind the AI case. Use it to group similar exceptions without reading the longer evidence text."
+        "description": "Compact reason label explaining the main driver behind the AI case. Use it to group similar exceptions without reading the longer evidence text."
       },
       {
         "name": "Recommended Action",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Recommended Action",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Short operational action suggested for the individual store-SKU-week AI case."
+        "description": "Short operational action suggested for the individual store-SKU-week AI case."
       },
       {
         "name": "Business Interpretation",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Business Interpretation",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Plain-language interpretation of what the assigned AI signal or cluster means for the business."
+        "description": "Plain-language interpretation of what the assigned AI signal or cluster means for the business."
       },
       {
         "name": "Recommended Business Action",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Recommended Business Action",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Longer business action guidance associated with the signal or cluster; useful for dashboard detail panes and AI-assisted explanations."
+        "description": "Longer business action guidance associated with the signal or cluster; useful for dashboard detail panes and AI-assisted explanations."
       },
       {
         "name": "Cluster Label",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Cluster Label",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Descriptive label for the behavior cluster assigned to the AI case. Use it to group cases with similar sales, inventory, return, and risk patterns."
+        "description": "Descriptive label for the behavior cluster assigned to the AI case. Use it to group cases with similar sales, inventory, return, and risk patterns."
       },
       {
         "name": "Cluster Evidence Summary",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Cluster Evidence Summary",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Summary of the behaviors that characterize the assigned cluster, such as demand, sell-through, markdown, returns, stockout risk, or overstock risk."
+        "description": "Summary of the behaviors that characterize the assigned cluster, such as demand, sell-through, markdown, returns, stockout risk, or overstock risk."
       },
       {
         "name": "Stockout Alert Cases",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Stockout Alert Cases",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Count of AI cases classified as stockout alerts. This is stricter than a zero-inventory count because it requires the case to meet the stockout risk and demand conditions used by the AI signal layer."
+        "description": "Count of AI cases classified as stockout alerts. This is stricter than a zero-inventory count because it requires the case to meet the stockout risk and demand conditions used by the AI signal layer."
       },
       {
         "name": "Overstock Alert Cases",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Overstock Alert Cases",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Count of AI cases classified as overstock alerts. This is an exception case count, not a raw count of products with inventory on hand."
+        "description": "Count of AI cases classified as overstock alerts. This is an exception case count, not a raw count of products with inventory on hand."
       },
       {
         "name": "Affected Stockout Weeks",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Affected Stockout Weeks",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Number of distinct weeks with at least one stockout alert case in the selected context. Use this to distinguish a one-week spike from a repeated stockout problem."
+        "description": "Number of distinct weeks with at least one stockout alert case in the selected context. Use this to distinguish a one-week spike from a repeated stockout problem."
       },
       {
         "name": "Affected Overstock Weeks",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Affected Overstock Weeks",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Number of distinct weeks with at least one overstock alert case in the selected context. Use this to distinguish a one-week spike from a repeated overstock problem."
+        "description": "Number of distinct weeks with at least one overstock alert case in the selected context. Use this to distinguish a one-week spike from a repeated overstock problem."
       },
       {
         "name": "Latest Stockout Risk Score",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Latest Stockout Risk Score",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Highest stockout risk score in the latest week available for the selected AI cases. Use this when the current state matters more than historical average risk."
+        "description": "Highest stockout risk score in the latest week available for the selected AI cases. Use this when the current state matters more than historical average risk."
       },
       {
         "name": "Latest Overstock Risk Score",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Latest Overstock Risk Score",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Highest overstock risk score in the latest week available for the selected AI cases. Use this when the current state matters more than historical average risk."
+        "description": "Highest overstock risk score in the latest week available for the selected AI cases. Use this when the current state matters more than historical average risk."
       },
       {
         "name": "Peak Stockout Risk Score",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Peak Stockout Risk Score",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Highest stockout risk score reached by the selected AI cases across all included weeks. Use this to rank severity without diluting short but important stockout episodes."
+        "description": "Highest stockout risk score reached by the selected AI cases across all included weeks. Use this to rank severity without diluting short but important stockout episodes."
       },
       {
         "name": "Peak Overstock Risk Score",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Peak Overstock Risk Score",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Highest overstock risk score reached by the selected AI cases across all included weeks. Use this to rank severity without diluting short but important overstock episodes."
+        "description": "Highest overstock risk score reached by the selected AI cases across all included weeks. Use this to rank severity without diluting short but important overstock episodes."
       },
       {
         "name": "Business Exception Score",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Business Exception Score",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Highest business exception score across the selected AI cases. Use this to rank store-SKU-week exceptions by actionability and commercial impact."
+        "description": "Highest business exception score across the selected AI cases. Use this to rank store-SKU-week exceptions by actionability and commercial impact."
       },
       {
         "name": "Latest Business Exception Score",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Latest Business Exception Score",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Highest business exception score in the latest available week for the selected AI cases. Use this for current exception prioritization."
+        "description": "Highest business exception score in the latest available week for the selected AI cases. Use this for current exception prioritization."
       },
       {
         "name": "Latest Demand Units",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Latest Estimated Demand Units",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias for Latest Estimated Demand Units. Prefer Latest Estimated Demand Units in new content. Estimated demand units in the latest available AI signal week for the selected context. Use this for current demand evidence instead of summing across historical weeks."
+        "description": "Estimated demand units in the latest available AI signal week for the selected context. Use this for current demand evidence instead of summing across historical weeks."
       },
       {
         "name": "Latest Lost Sales Units",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Latest Estimated Lost Sales Units",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias for Latest Estimated Lost Sales Units. Prefer Latest Estimated Lost Sales Units in new content. Estimated lost-sales units in the latest available AI signal week for the selected context. This highlights current missed demand when stock is exhausted."
+        "description": "Estimated lost-sales units in the latest available AI signal week for the selected context. This highlights current missed demand when stock is exhausted."
       },
       {
         "name": "Latest Ending On Hand Units",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Latest Ending On Hand Units",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Ending on-hand units in the latest available AI signal week for the selected context. Use it to check current stock position while investigating AI cases."
+        "description": "Ending on-hand units in the latest available AI signal week for the selected context. Use it to check current stock position while investigating AI cases."
       },
       {
         "name": "Latest Ending Available Units",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Latest Ending Available Units",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Ending available units in the latest available AI signal week for the selected context. Use it to identify whether any sellable stock remains now."
+        "description": "Ending available units in the latest available AI signal week for the selected context. Use it to identify whether any sellable stock remains now."
       },
       {
         "name": "Affected Lost Sales Weeks",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Affected Estimated Lost Sales Weeks",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias for Affected Estimated Lost Sales Weeks. Prefer Affected Estimated Lost Sales Weeks in new content. Number of distinct weeks with estimated lost-sales evidence in the selected context. Use it to distinguish repeated missed demand from an isolated stockout."
+        "description": "Number of distinct weeks with estimated lost-sales evidence in the selected context. Use it to distinguish repeated missed demand from an isolated stockout."
       },
       {
         "name": "Anomaly Count",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Anomaly Count",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Count of cases flagged as anomalous."
+        "description": "Count of cases flagged as anomalous."
       },
       {
         "name": "Anomaly Probability",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Anomaly Probability",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Probability that the store-SKU-week case is unusual compared with learned product behavior."
+        "description": "Probability that the store-SKU-week case is unusual compared with learned product behavior."
       },
       {
         "name": "Typical Probability",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Typical Probability",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Probability that the store-SKU-week case is typical compared with learned product behavior."
+        "description": "Probability that the store-SKU-week case is typical compared with learned product behavior."
       },
       {
         "name": "Cluster Probability",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Cluster Probability",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Model confidence that the store-SKU-week case belongs to its assigned behavior cluster."
+        "description": "Model confidence that the store-SKU-week case belongs to its assigned behavior cluster."
       },
       {
         "name": "Action Priority",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Action Priority",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Priority score used to order recommended business actions."
+        "description": "Priority score used to order recommended business actions."
       },
       {
         "name": "Units Sold",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Fulfilled Units Sold",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias for Fulfilled Units Sold. Prefer Fulfilled Units Sold in new content. Units actually sold and fulfilled in the store-SKU-week AI case. It reconciles to core sales quantity at the same grain; use it beside estimated demand and estimated lost sales to understand constrained demand."
+        "description": "Units actually sold and fulfilled in the store-SKU-week AI case. It reconciles to core sales quantity at the same grain; use it beside estimated demand and estimated lost sales to understand constrained demand."
       },
       {
         "name": "Full Price Units",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Full Price Units",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Full-price units observed in the store-SKU-week AI case. Use this as evidence of demand quality when investigating an AI signal."
+        "description": "Full-price units observed in the store-SKU-week AI case. Use this as evidence of demand quality when investigating an AI signal."
       },
       {
         "name": "Net Sales Amount",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Net Sales Amount",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Net sales observed in the store-SKU-week AI case. Use this as impact evidence for an exception; use core Sales KPIs for standard revenue reporting."
+        "description": "Net sales observed in the store-SKU-week AI case. Use this as impact evidence for an exception; use core Sales KPIs for standard revenue reporting."
       },
       {
         "name": "Gross Margin Amount",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Gross Margin Amount",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Gross margin observed in the store-SKU-week AI case. Use this to judge whether an exception is commercially important."
+        "description": "Gross margin observed in the store-SKU-week AI case. Use this to judge whether an exception is commercially important."
       },
       {
         "name": "Returned Units",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Returned Units",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Returned units observed in the store-SKU-week AI case. Use this as fit, quality, or return-risk evidence within the AI signal workflow."
+        "description": "Returned units observed in the store-SKU-week AI case. Use this as fit, quality, or return-risk evidence within the AI signal workflow."
       },
       {
         "name": "On Hand Units",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.On Hand Units",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. On-hand inventory in the store-SKU-week AI case. Use this as context for the signal; use Inventory KPIs for operational inventory reporting."
+        "description": "On-hand inventory in the store-SKU-week AI case. Use this as context for the signal; use Inventory KPIs for operational inventory reporting."
       },
       {
         "name": "Available Units",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Available Units",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Available inventory in the store-SKU-week AI case. Use this to understand whether an AI case has sellable stock at the time of the signal."
+        "description": "Available inventory in the store-SKU-week AI case. Use this to understand whether an AI case has sellable stock at the time of the signal."
       },
       {
         "name": "Opening On Hand Units",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Opening On Hand Units",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Opening physical stock on hand for the store-SKU-week AI case. Use it with replenishment, transfers, fulfilled sales, and ending stock when reviewing the flow that led to an exception."
+        "description": "Opening physical stock on hand for the store-SKU-week AI case. Use it with replenishment, transfers, fulfilled sales, and ending stock when reviewing the flow that led to an exception."
       },
       {
         "name": "Ending On Hand Units",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Ending On Hand Units",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Ending physical stock on hand for the store-SKU-week AI case after replenishment, transfers, and fulfilled sales. Prefer this over hidden snapshot stock fields when investigating AI exceptions."
+        "description": "Ending physical stock on hand for the store-SKU-week AI case after replenishment, transfers, and fulfilled sales. Prefer this over hidden snapshot stock fields when investigating AI exceptions."
       },
       {
         "name": "Ending Available Units",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Ending Available Units",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Ending sellable units for the store-SKU-week AI case after reservations. This is the clearest AI-signal field for seeing whether a store still had sellable stock at the end of the week."
+        "description": "Ending sellable units for the store-SKU-week AI case after reservations. This is the clearest AI-signal field for seeing whether a store still had sellable stock at the end of the week."
       },
       {
         "name": "Replenishment Units",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Replenishment Units",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Units received through replenishment for the store-SKU-week AI case. Use this to see whether the business tried to restore supply before an exception emerged."
+        "description": "Units received through replenishment for the store-SKU-week AI case. Use this to see whether the business tried to restore supply before an exception emerged."
       },
       {
         "name": "Transfer In Units",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Transfer In Units",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Units transferred into the store for the store-SKU-week AI case. This supports investigation of cross-store inventory actions, especially for stockout stories."
+        "description": "Units transferred into the store for the store-SKU-week AI case. This supports investigation of cross-store inventory actions, especially for stockout stories."
       },
       {
         "name": "Transfer Out Units",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Transfer Out Units",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Units transferred out of the store for the store-SKU-week AI case. Use this to understand whether inventory was moved away from the store before or during an exception."
+        "description": "Units transferred out of the store for the store-SKU-week AI case. Use this to understand whether inventory was moved away from the store before or during an exception."
       },
       {
         "name": "Demand Units",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Estimated Demand Units",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias for Estimated Demand Units. Prefer Estimated Demand Units in new content. Estimated unconstrained customer demand represented by the store-SKU-week AI case, equal to fulfilled units sold plus estimated lost sales units. This is modeled demand evidence, not a directly observed POS count."
+        "description": "Estimated unconstrained customer demand represented by the store-SKU-week AI case, equal to fulfilled units sold plus estimated lost sales units. This is modeled demand evidence, not a directly observed POS count."
       },
       {
         "name": "Lost Sales Units",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Estimated Lost Sales Units",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias for Estimated Lost Sales Units. Prefer Estimated Lost Sales Units in new content. Estimated demand units that could not be fulfilled because available stock was exhausted. Positive values indicate missed demand rather than normal low sales."
+        "description": "Estimated demand units that could not be fulfilled because available stock was exhausted. Positive values indicate missed demand rather than normal low sales."
       },
       {
         "name": "Fulfilled Demand Percent",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Fulfilled Estimated Demand Percent",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias for Fulfilled Estimated Demand Percent. Prefer Fulfilled Estimated Demand Percent in new content. Percentage of estimated demand that was fulfilled in the store-SKU-week AI case. Low values indicate demand was constrained by availability."
+        "description": "Percentage of estimated demand that was fulfilled in the store-SKU-week AI case. Low values indicate demand was constrained by availability."
       },
       {
         "name": "Lost Sales Rate Percent",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Estimated Lost Sales Rate Percent",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias for Estimated Lost Sales Rate Percent. Prefer Estimated Lost Sales Rate Percent in new content. Percentage of estimated demand that became estimated lost sales in the store-SKU-week AI case. Use it to rank stockout severity independently from fulfilled sales."
+        "description": "Percentage of estimated demand that became estimated lost sales in the store-SKU-week AI case. Use it to rank stockout severity independently from fulfilled sales."
       },
       {
         "name": "Supply Units",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Supply Units",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Opening stock plus inbound supply less transfer-out units for the store-SKU-week AI case. This helps explain the stock position before fulfilled sales are deducted."
+        "description": "Opening stock plus inbound supply less transfer-out units for the store-SKU-week AI case. This helps explain the stock position before fulfilled sales are deducted."
       },
       {
         "name": "Net Inventory Change Units",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Net Inventory Change Units",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Change in on-hand units from opening to ending inventory for the store-SKU-week AI case. Negative values show depletion; positive values show net inventory build-up."
+        "description": "Change in on-hand units from opening to ending inventory for the store-SKU-week AI case. Negative values show depletion; positive values show net inventory build-up."
       },
       {
         "name": "Replenishment Event Cases",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Replenishment Event Cases",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Count of AI cases where replenishment or transfer-in activity occurred. Use it to see whether supply actions preceded or accompanied an exception."
+        "description": "Count of AI cases where replenishment or transfer-in activity occurred. Use it to see whether supply actions preceded or accompanied an exception."
       },
       {
         "name": "Lost Sales Stockout Cases",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Estimated Lost Sales Stockout Cases",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias for Estimated Lost Sales Stockout Cases. Prefer Estimated Lost Sales Stockout Cases in new content. Count of AI cases where ending available stock is zero and estimated lost sales were recorded. This is stricter evidence than a zero-availability snapshot alone."
+        "description": "Count of AI cases where ending available stock is zero and estimated lost sales were recorded. This is stricter evidence than a zero-availability snapshot alone."
       },
       {
         "name": "Demand Units 4W Avg",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Estimated Demand Units 4W Avg",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias for Estimated Demand Units 4W Avg. Prefer Estimated Demand Units 4W Avg in new content. Four-week average estimated demand units used by the AI signal layer. It captures recent demand momentum, including missed demand when stock is exhausted."
+        "description": "Four-week average estimated demand units used by the AI signal layer. It captures recent demand momentum, including missed demand when stock is exhausted."
       },
       {
         "name": "Lost Sales Units 4W Sum",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Estimated Lost Sales Units 4W Sum",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias for Estimated Lost Sales Units 4W Sum. Prefer Estimated Lost Sales Units 4W Sum in new content. Rolling four-week estimated lost-sales evidence used by the AI signal layer. Use it to distinguish repeated missed demand from a one-week issue."
+        "description": "Rolling four-week estimated lost-sales evidence used by the AI signal layer. Use it to distinguish repeated missed demand from a one-week issue."
       },
       {
         "name": "Full Price Unit Share 4W Avg",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Full Price Unit Share 4W Avg",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Four-week average full-price unit share used by the AI signal layer. It helps separate healthy full-price demand from markdown-driven movement."
+        "description": "Four-week average full-price unit share used by the AI signal layer. It helps separate healthy full-price demand from markdown-driven movement."
       },
       {
         "name": "Markdown Percent",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Markdown Percent",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Markdown percent used as an AI signal feature."
+        "description": "Markdown percent used as an AI signal feature."
       },
       {
         "name": "Gross Margin Percent",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Gross Margin Percent",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Gross margin percent used as an AI signal feature."
+        "description": "Gross margin percent used as an AI signal feature."
       },
       {
         "name": "Return Rate Percent",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Return Rate Percent",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Return rate percent used as an AI signal feature."
+        "description": "Return rate percent used as an AI signal feature."
       },
       {
         "name": "Full Price Sell Through Percent",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Full Price Sell Through Percent",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Full-price sell-through percent used as an AI signal feature."
+        "description": "Full-price sell-through percent used as an AI signal feature."
       },
       {
         "name": "Full Price Unit Share Percent",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Full Price Unit Share Percent",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Full-price unit share used as an AI signal feature."
+        "description": "Full-price unit share used as an AI signal feature."
       },
       {
         "name": "Sell Through Percent",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Sell Through Percent",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Sell-through percent used as an AI signal feature."
+        "description": "Sell-through percent used as an AI signal feature."
       },
       {
         "name": "Stockout Store Rate Percent",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Stockout Store Rate Percent",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Store stockout rate used as an AI signal feature."
+        "description": "Store stockout rate used as an AI signal feature."
       },
       {
         "name": "Average Weeks Of Supply",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Average Weeks Of Supply",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Weeks-of-supply feature used by the AI signal layer."
+        "description": "Weeks-of-supply feature used by the AI signal layer."
       },
       {
         "name": "Demand Index 4W",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Demand Index 4W",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Short-term demand index used by the AI signal layer."
+        "description": "Short-term demand index used by the AI signal layer."
       },
       {
         "name": "Demand Index 13W",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Demand Index 13W",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Longer-term demand index used by the AI signal layer."
+        "description": "Longer-term demand index used by the AI signal layer."
       },
       {
         "name": "Stockout Risk Score",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Stockout Risk Score",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Average store-SKU-week stockout risk across the selected AI cases. Useful for context, but for exception severity prefer Latest Stockout Risk Score, Peak Stockout Risk Score, or Affected Stockout Weeks."
+        "description": "Average store-SKU-week stockout risk across the selected AI cases. Useful for context, but for exception severity prefer Latest Stockout Risk Score, Peak Stockout Risk Score, or Affected Stockout Weeks."
       },
       {
         "name": "Overstock Risk Score",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Overstock Risk Score",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Average store-SKU-week overstock risk across the selected AI cases. Useful for context, but for exception severity prefer Latest Overstock Risk Score, Peak Overstock Risk Score, or Affected Overstock Weeks."
+        "description": "Average store-SKU-week overstock risk across the selected AI cases. Useful for context, but for exception severity prefer Latest Overstock Risk Score, Peak Overstock Risk Score, or Affected Overstock Weeks."
       },
       {
         "name": "Anomaly Prediction",
@@ -465,7 +465,7 @@
         "hideIfTrue": {
           "expressionTemplate": "1 = 1"
         },
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Hidden model output indicating whether the store-SKU-week case is predicted to be anomalous."
+        "description": "Hidden model output indicating whether the store-SKU-week case is predicted to be anomalous."
       },
       {
         "name": "Primary Feature ID",
@@ -474,39 +474,39 @@
         "hideIfTrue": {
           "expressionTemplate": "1 = 1"
         },
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Hidden technical identifier for the model feature that most influenced the AI case. Use Model Evidence or Business Evidence for business-facing explanations."
+        "description": "Hidden technical identifier for the model feature that most influenced the AI case. Use Model Evidence or Business Evidence for business-facing explanations."
       },
       {
         "name": "Primary Feature Value",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Primary Feature Value",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Numeric value of the feature that most influenced the AI case; mainly useful for diagnostics alongside the evidence fields."
+        "description": "Numeric value of the feature that most influenced the AI case; mainly useful for diagnostics alongside the evidence fields."
       },
       {
         "name": "Model Evidence",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Model Evidence",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Model-oriented explanation of the features, scores, or probabilities that influenced the AI case classification."
+        "description": "Model-oriented explanation of the features, scores, or probabilities that influenced the AI case classification."
       },
       {
         "name": "Business Evidence",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Business Evidence",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Business-readable explanation of the sales, inventory, return, margin, or risk signals supporting the AI case."
+        "description": "Business-readable explanation of the sales, inventory, return, margin, or risk signals supporting the AI case."
       },
       {
         "name": "Margin Alert Count",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Margin Alert Count",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Count of AI signal cases classified as margin alerts."
+        "description": "Count of AI signal cases classified as margin alerts."
       },
       {
         "name": "Return Alert Count",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Return Alert Count",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Count of AI signal cases classified as return alerts."
+        "description": "Count of AI signal cases classified as return alerts."
       }
     ],
-    "description": "Legacy-compatible alias for AI Insights - Product AI Signals. Existing OAC analyses can continue to use this folder path; prefer AI Insights - Product AI Signals for new content. Notebook-derived AI and exception evidence at Collection + Week + Store + SKU grain. Use this for stockout, overstock, return, margin, anomaly, and recommended-action investigations."
+    "description": "Notebook-derived AI and exception evidence at Collection + Week + Store + SKU grain. Use this for stockout, overstock, return, margin, anomaly, and recommended-action investigations."
   }
 }
