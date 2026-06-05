@@ -52,6 +52,42 @@
         "nullable": true
       },
       {
+        "name": "STORE_COUNT",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
+        "name": "STYLE_COUNT",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
+        "name": "AVG_FULL_PRICE_UNIT_SHARE_PCT",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
+        "name": "AVG_LOST_SALES_UNITS",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
+        "name": "AVG_LOST_SALES_RATE_PCT",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
+        "name": "AVG_INBOUND_SUPPLY_UNITS",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
         "name": "AVG_CLUSTER_PROBABILITY",
         "dataType": "DOUBLE",
         "length": 22,
@@ -119,6 +155,12 @@
       },
       {
         "name": "MODAL_CATEGORY",
+        "dataType": "VARCHAR",
+        "length": 80,
+        "nullable": true
+      },
+      {
+        "name": "MODAL_REGION",
         "dataType": "VARCHAR",
         "length": 80,
         "nullable": true

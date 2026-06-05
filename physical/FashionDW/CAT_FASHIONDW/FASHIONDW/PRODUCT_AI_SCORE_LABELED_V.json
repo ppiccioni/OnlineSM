@@ -88,6 +88,108 @@
         "nullable": true
       },
       {
+        "name": "OPENING_ON_HAND_UNITS",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
+        "name": "ENDING_ON_HAND_UNITS",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
+        "name": "ENDING_AVAILABLE_UNITS",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
+        "name": "REPLENISHMENT_UNITS",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
+        "name": "TRANSFER_IN_UNITS",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
+        "name": "TRANSFER_OUT_UNITS",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
+        "name": "DEMAND_UNITS",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
+        "name": "LOST_SALES_UNITS",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
+        "name": "FULFILLED_DEMAND_PCT",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
+        "name": "LOST_SALES_RATE_PCT",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
+        "name": "SUPPLY_UNITS",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
+        "name": "NET_INVENTORY_CHANGE_UNITS",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
+        "name": "REPLENISHMENT_EVENT_FLAG",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
+        "name": "LOST_SALES_STOCKOUT_FLAG",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
+        "name": "DEMAND_UNITS_4W_AVG",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
+        "name": "LOST_SALES_UNITS_4W_SUM",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
+        "name": "FULL_PRICE_UNIT_SHARE_4W_AVG",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
         "name": "MARKDOWN_PCT",
         "dataType": "DOUBLE",
         "length": 22,

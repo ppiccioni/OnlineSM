@@ -183,6 +183,36 @@
         "description": "Highest business exception score in the latest available week for the selected AI cases. Use this for current exception prioritization."
       },
       {
+        "name": "Latest Demand Units",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Latest Demand Units",
+        "useLogicalColumnName": true,
+        "description": "Demand units in the latest available AI signal week for the selected context. Use this for current demand evidence instead of summing across historical weeks."
+      },
+      {
+        "name": "Latest Lost Sales Units",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Latest Lost Sales Units",
+        "useLogicalColumnName": true,
+        "description": "Lost-sales units in the latest available AI signal week for the selected context. This highlights current missed demand when stock is exhausted."
+      },
+      {
+        "name": "Latest Ending On Hand Units",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Latest Ending On Hand Units",
+        "useLogicalColumnName": true,
+        "description": "Ending on-hand units in the latest available AI signal week for the selected context. Use it to check current stock position while investigating AI cases."
+      },
+      {
+        "name": "Latest Ending Available Units",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Latest Ending Available Units",
+        "useLogicalColumnName": true,
+        "description": "Ending available units in the latest available AI signal week for the selected context. Use it to identify whether any sellable stock remains now."
+      },
+      {
+        "name": "Affected Lost Sales Weeks",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Affected Lost Sales Weeks",
+        "useLogicalColumnName": true,
+        "description": "Number of distinct weeks with lost-sales evidence in the selected context. Use it to distinguish repeated missed demand from an isolated stockout."
+      },
+      {
         "name": "Anomaly Count",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Anomaly Count",
         "useLogicalColumnName": true,
@@ -253,6 +283,108 @@
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Available Units",
         "useLogicalColumnName": true,
         "description": "Available inventory in the store-SKU-week AI case. Use this to understand whether an AI case has sellable stock at the time of the signal."
+      },
+      {
+        "name": "Opening On Hand Units",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Opening On Hand Units",
+        "useLogicalColumnName": true,
+        "description": "Opening physical stock on hand for the store-SKU-week AI case. Use with Week Start Date when reviewing the inventory flow that led to an exception; avoid treating it as a pure cumulative KPI across many weeks."
+      },
+      {
+        "name": "Ending On Hand Units",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Ending On Hand Units",
+        "useLogicalColumnName": true,
+        "description": "Ending physical stock on hand for the store-SKU-week AI case. Use it to understand the post-sales stock position after replenishment, transfers, and fulfilled sales."
+      },
+      {
+        "name": "Ending Available Units",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Ending Available Units",
+        "useLogicalColumnName": true,
+        "description": "Ending sellable units for the store-SKU-week AI case after reservations. This is the clearest AI-signal field for seeing whether a store still had available stock at the end of the week."
+      },
+      {
+        "name": "Replenishment Units",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Replenishment Units",
+        "useLogicalColumnName": true,
+        "description": "Units received through replenishment for the store-SKU-week AI case. Use this to see whether the business tried to restore supply before an exception emerged."
+      },
+      {
+        "name": "Transfer In Units",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Transfer In Units",
+        "useLogicalColumnName": true,
+        "description": "Units transferred into the store for the store-SKU-week AI case. This supports investigation of cross-store inventory actions, especially for stockout stories."
+      },
+      {
+        "name": "Transfer Out Units",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Transfer Out Units",
+        "useLogicalColumnName": true,
+        "description": "Units transferred out of the store for the store-SKU-week AI case. Use this to understand whether inventory was moved away from the store before or during an exception."
+      },
+      {
+        "name": "Demand Units",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Demand Units",
+        "useLogicalColumnName": true,
+        "description": "Total demand represented by the store-SKU-week AI case, equal to fulfilled sales plus lost sales. This is useful when fulfilled sales fall to zero because stock is exhausted."
+      },
+      {
+        "name": "Lost Sales Units",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Lost Sales Units",
+        "useLogicalColumnName": true,
+        "description": "Demand units that could not be fulfilled because available stock was exhausted. Positive values indicate missed demand rather than normal low sales."
+      },
+      {
+        "name": "Fulfilled Demand Percent",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Fulfilled Demand Percent",
+        "useLogicalColumnName": true,
+        "description": "Percentage of demand that was fulfilled in the store-SKU-week AI case. Low values indicate demand was constrained by availability."
+      },
+      {
+        "name": "Lost Sales Rate Percent",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Lost Sales Rate Percent",
+        "useLogicalColumnName": true,
+        "description": "Percentage of demand that became lost sales in the store-SKU-week AI case. Use it to rank stockout severity independently from fulfilled sales."
+      },
+      {
+        "name": "Supply Units",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Supply Units",
+        "useLogicalColumnName": true,
+        "description": "Opening stock plus inbound supply less transfer-out units for the store-SKU-week AI case. This helps explain the stock position before fulfilled sales are deducted."
+      },
+      {
+        "name": "Net Inventory Change Units",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Net Inventory Change Units",
+        "useLogicalColumnName": true,
+        "description": "Change in on-hand units from opening to ending inventory for the store-SKU-week AI case. Negative values show depletion; positive values show net inventory build-up."
+      },
+      {
+        "name": "Replenishment Event Cases",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Replenishment Event Cases",
+        "useLogicalColumnName": true,
+        "description": "Count of AI cases where replenishment or transfer-in activity occurred. Use it to see whether supply actions preceded or accompanied an exception."
+      },
+      {
+        "name": "Lost Sales Stockout Cases",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Lost Sales Stockout Cases",
+        "useLogicalColumnName": true,
+        "description": "Count of AI cases where available stock ended at zero and lost sales were recorded. This is a stricter stockout evidence count than a zero-availability snapshot alone."
+      },
+      {
+        "name": "Demand Units 4W Avg",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Demand Units 4W Avg",
+        "useLogicalColumnName": true,
+        "description": "Four-week average demand units used by the AI signal layer. It captures recent demand momentum, including lost demand when stock is exhausted."
+      },
+      {
+        "name": "Lost Sales Units 4W Sum",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Lost Sales Units 4W Sum",
+        "useLogicalColumnName": true,
+        "description": "Rolling four-week lost-sales evidence used by the AI signal layer. Use it to distinguish repeated missed demand from a one-week issue."
+      },
+      {
+        "name": "Full Price Unit Share 4W Avg",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Full Price Unit Share 4W Avg",
+        "useLogicalColumnName": true,
+        "description": "Four-week average full-price unit share used by the AI signal layer. It helps separate healthy full-price demand from markdown-driven movement."
       },
       {
         "name": "Markdown Percent",

@@ -179,6 +179,150 @@
         "description": "Number of distinct SKUs represented in the cluster."
       },
       {
+        "name": "Store Count",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_CLUSTER_LABELS_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_CLUSTER_LABELS.STORE_COUNT"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        },
+        "description": "Number of stores represented in the cluster. This matters because Product AI is now store-aware.",
+        "logicalLevel": "Cluster"
+      },
+      {
+        "name": "Style Count",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_CLUSTER_LABELS_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_CLUSTER_LABELS.STYLE_COUNT"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        },
+        "description": "Number of distinct styles represented in the cluster.",
+        "logicalLevel": "Cluster"
+      },
+      {
+        "name": "Average Full Price Unit Share Percent",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_CLUSTER_LABELS_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_CLUSTER_LABELS.AVG_FULL_PRICE_UNIT_SHARE_PCT"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "AVG"
+        },
+        "description": "Average full-price unit share among AI signal cases in the cluster. Use it to judge whether the cluster reflects healthy full-price demand or markdown-driven movement.",
+        "logicalLevel": "Cluster"
+      },
+      {
+        "name": "Average Lost Sales Units",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_CLUSTER_LABELS_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_CLUSTER_LABELS.AVG_LOST_SALES_UNITS"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "AVG"
+        },
+        "description": "Average lost-sales units among AI signal cases in the cluster. Higher values indicate clusters where missed demand is a common behavior.",
+        "logicalLevel": "Cluster"
+      },
+      {
+        "name": "Average Lost Sales Rate Percent",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_CLUSTER_LABELS_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_CLUSTER_LABELS.AVG_LOST_SALES_RATE_PCT"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "AVG"
+        },
+        "description": "Average percentage of demand that became lost sales among AI signal cases in the cluster.",
+        "logicalLevel": "Cluster"
+      },
+      {
+        "name": "Average Inbound Supply Units",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_CLUSTER_LABELS_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_CLUSTER_LABELS.AVG_INBOUND_SUPPLY_UNITS"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "AVG"
+        },
+        "description": "Average replenishment plus transfer-in units among AI signal cases in the cluster. Use it to see whether supply actions are typical for the cluster.",
+        "logicalLevel": "Cluster"
+      },
+      {
         "name": "Average Cluster Probability",
         "dataType": "DOUBLE",
         "writeable": false,
@@ -459,6 +603,27 @@
         },
         "logicalLevel": "Cluster",
         "description": "Most common category among the AI signal cases assigned to the cluster. It describes the dominant cluster profile, not every case in the cluster."
+      },
+      {
+        "name": "Modal Region",
+        "dataType": "VARCHAR",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_CLUSTER_LABELS_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_CLUSTER_LABELS.MODAL_REGION"
+                ]
+              }
+            }
+          ]
+        },
+        "description": "Most common store region among AI signal cases assigned to the cluster. It describes the dominant cluster profile, not every case in the cluster.",
+        "logicalLevel": "Cluster"
       },
       {
         "name": "Modal Price Tier",

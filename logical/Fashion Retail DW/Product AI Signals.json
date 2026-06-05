@@ -1,7 +1,7 @@
 {
   "logicalTable": {
     "name": "Product AI Signals",
-    "description": "Store-SKU-week AI score signals from FASHIONDW.PRODUCT_AI_SCORE_LABELED_V.",
+    "description": "Store-SKU-week AI score signals from FASHIONDW.PRODUCT_AI_SCORE_LABELED_V, including sales, inventory movement, lost-sales, risk, and recommended-action evidence.",
     "type": "FACT",
     "logicalColumns": [
       {
@@ -527,6 +527,397 @@
           "rule": "SUM"
         },
         "description": "Available inventory in the store-SKU-week AI case. Use this to understand whether an AI case has sellable stock at the time of the signal."
+      },
+      {
+        "name": "Opening On Hand Units",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_SCORE_LABELED_V_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_SCORE_LABELED_V.OPENING_ON_HAND_UNITS"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        },
+        "description": "Opening physical stock on hand for the store-SKU-week AI case. Use with Week Start Date when reviewing the inventory flow that led to an exception; avoid treating it as a pure cumulative KPI across many weeks."
+      },
+      {
+        "name": "Ending On Hand Units",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_SCORE_LABELED_V_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_SCORE_LABELED_V.ENDING_ON_HAND_UNITS"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        },
+        "description": "Ending physical stock on hand for the store-SKU-week AI case. Use it to understand the post-sales stock position after replenishment, transfers, and fulfilled sales."
+      },
+      {
+        "name": "Ending Available Units",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_SCORE_LABELED_V_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_SCORE_LABELED_V.ENDING_AVAILABLE_UNITS"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        },
+        "description": "Ending sellable units for the store-SKU-week AI case after reservations. This is the clearest AI-signal field for seeing whether a store still had available stock at the end of the week."
+      },
+      {
+        "name": "Replenishment Units",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_SCORE_LABELED_V_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_SCORE_LABELED_V.REPLENISHMENT_UNITS"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        },
+        "description": "Units received through replenishment for the store-SKU-week AI case. Use this to see whether the business tried to restore supply before an exception emerged."
+      },
+      {
+        "name": "Transfer In Units",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_SCORE_LABELED_V_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_SCORE_LABELED_V.TRANSFER_IN_UNITS"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        },
+        "description": "Units transferred into the store for the store-SKU-week AI case. This supports investigation of cross-store inventory actions, especially for stockout stories."
+      },
+      {
+        "name": "Transfer Out Units",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_SCORE_LABELED_V_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_SCORE_LABELED_V.TRANSFER_OUT_UNITS"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        },
+        "description": "Units transferred out of the store for the store-SKU-week AI case. Use this to understand whether inventory was moved away from the store before or during an exception."
+      },
+      {
+        "name": "Demand Units",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_SCORE_LABELED_V_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_SCORE_LABELED_V.DEMAND_UNITS"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        },
+        "description": "Total demand represented by the store-SKU-week AI case, equal to fulfilled sales plus lost sales. This is useful when fulfilled sales fall to zero because stock is exhausted."
+      },
+      {
+        "name": "Lost Sales Units",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_SCORE_LABELED_V_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_SCORE_LABELED_V.LOST_SALES_UNITS"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        },
+        "description": "Demand units that could not be fulfilled because available stock was exhausted. Positive values indicate missed demand rather than normal low sales."
+      },
+      {
+        "name": "Fulfilled Demand Percent",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_SCORE_LABELED_V_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_SCORE_LABELED_V.FULFILLED_DEMAND_PCT"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "AVG"
+        },
+        "description": "Percentage of demand that was fulfilled in the store-SKU-week AI case. Low values indicate demand was constrained by availability."
+      },
+      {
+        "name": "Lost Sales Rate Percent",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_SCORE_LABELED_V_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_SCORE_LABELED_V.LOST_SALES_RATE_PCT"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "AVG"
+        },
+        "description": "Percentage of demand that became lost sales in the store-SKU-week AI case. Use it to rank stockout severity independently from fulfilled sales."
+      },
+      {
+        "name": "Supply Units",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_SCORE_LABELED_V_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_SCORE_LABELED_V.SUPPLY_UNITS"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        },
+        "description": "Opening stock plus inbound supply less transfer-out units for the store-SKU-week AI case. This helps explain the stock position before fulfilled sales are deducted."
+      },
+      {
+        "name": "Net Inventory Change Units",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_SCORE_LABELED_V_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_SCORE_LABELED_V.NET_INVENTORY_CHANGE_UNITS"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        },
+        "description": "Change in on-hand units from opening to ending inventory for the store-SKU-week AI case. Negative values show depletion; positive values show net inventory build-up."
+      },
+      {
+        "name": "Replenishment Event Cases",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_SCORE_LABELED_V_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_SCORE_LABELED_V.REPLENISHMENT_EVENT_FLAG"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        },
+        "description": "Count of AI cases where replenishment or transfer-in activity occurred. Use it to see whether supply actions preceded or accompanied an exception."
+      },
+      {
+        "name": "Lost Sales Stockout Cases",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_SCORE_LABELED_V_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_SCORE_LABELED_V.LOST_SALES_STOCKOUT_FLAG"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        },
+        "description": "Count of AI cases where available stock ended at zero and lost sales were recorded. This is a stricter stockout evidence count than a zero-availability snapshot alone."
+      },
+      {
+        "name": "Demand Units 4W Avg",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_SCORE_LABELED_V_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_SCORE_LABELED_V.DEMAND_UNITS_4W_AVG"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "AVG"
+        },
+        "description": "Four-week average demand units used by the AI signal layer. It captures recent demand momentum, including lost demand when stock is exhausted."
+      },
+      {
+        "name": "Lost Sales Units 4W Sum",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_SCORE_LABELED_V_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_SCORE_LABELED_V.LOST_SALES_UNITS_4W_SUM"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "AVG"
+        },
+        "description": "Rolling four-week lost-sales evidence used by the AI signal layer. Use it to distinguish repeated missed demand from a one-week issue."
+      },
+      {
+        "name": "Full Price Unit Share 4W Avg",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_SCORE_LABELED_V_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_SCORE_LABELED_V.FULL_PRICE_UNIT_SHARE_4W_AVG"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "AVG"
+        },
+        "description": "Four-week average full-price unit share used by the AI signal layer. It helps separate healthy full-price demand from markdown-driven movement."
       },
       {
         "name": "Markdown Percent",
@@ -1212,6 +1603,98 @@
         }
       },
       {
+        "name": "Raw Demand Units",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_SCORE_LABELED_V_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_SCORE_LABELED_V.DEMAND_UNITS"
+                ]
+              }
+            }
+          ]
+        },
+        "description": "Hidden raw demand units used by latest-week movement evidence measures.",
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
+      },
+      {
+        "name": "Raw Lost Sales Units",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_SCORE_LABELED_V_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_SCORE_LABELED_V.LOST_SALES_UNITS"
+                ]
+              }
+            }
+          ]
+        },
+        "description": "Hidden raw lost-sales units used by latest-week movement evidence measures.",
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
+      },
+      {
+        "name": "Raw Ending On Hand Units",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_SCORE_LABELED_V_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_SCORE_LABELED_V.ENDING_ON_HAND_UNITS"
+                ]
+              }
+            }
+          ]
+        },
+        "description": "Hidden raw ending on-hand units used by latest-week inventory evidence measures.",
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
+      },
+      {
+        "name": "Raw Ending Available Units",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "PRODUCT_AI_SCORE_LABELED_V_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_SCORE_LABELED_V.ENDING_AVAILABLE_UNITS"
+                ]
+              }
+            }
+          ]
+        },
+        "description": "Hidden raw ending available units used by latest-week inventory evidence measures.",
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
+      },
+      {
         "name": "Peak Stockout Risk Score",
         "dataType": "DOUBLE",
         "writeable": false,
@@ -1300,6 +1783,86 @@
             "expressionTemplate": "EVALUATE_AGGR('MAX(\\%1) KEEP (DENSE_RANK LAST ORDER BY \\%2)' AS DOUBLE, %1, %2)",
             "expressionObjects": [
               "logicalColumn:Fashion Retail DW.Product AI Signals.Raw Business Exception Score",
+              "logicalColumn:Fashion Retail DW.Product AI Signals.Week Start Date"
+            ]
+          }
+        }
+      },
+      {
+        "name": "Latest Demand Units",
+        "description": "Demand units in the latest available AI signal week for the selected context. Use this for current demand evidence instead of summing across historical weeks.",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "expressionTemplate": "EVALUATE_AGGR('SUM(\\%1) KEEP (DENSE_RANK LAST ORDER BY \\%2)' AS DOUBLE, %1, %2)",
+            "expressionObjects": [
+              "logicalColumn:Fashion Retail DW.Product AI Signals.Raw Demand Units",
+              "logicalColumn:Fashion Retail DW.Product AI Signals.Week Start Date"
+            ]
+          }
+        }
+      },
+      {
+        "name": "Latest Lost Sales Units",
+        "description": "Lost-sales units in the latest available AI signal week for the selected context. This highlights current missed demand when stock is exhausted.",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "expressionTemplate": "EVALUATE_AGGR('SUM(\\%1) KEEP (DENSE_RANK LAST ORDER BY \\%2)' AS DOUBLE, %1, %2)",
+            "expressionObjects": [
+              "logicalColumn:Fashion Retail DW.Product AI Signals.Raw Lost Sales Units",
+              "logicalColumn:Fashion Retail DW.Product AI Signals.Week Start Date"
+            ]
+          }
+        }
+      },
+      {
+        "name": "Latest Ending On Hand Units",
+        "description": "Ending on-hand units in the latest available AI signal week for the selected context. Use it to check current stock position while investigating AI cases.",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "expressionTemplate": "EVALUATE_AGGR('SUM(\\%1) KEEP (DENSE_RANK LAST ORDER BY \\%2)' AS DOUBLE, %1, %2)",
+            "expressionObjects": [
+              "logicalColumn:Fashion Retail DW.Product AI Signals.Raw Ending On Hand Units",
+              "logicalColumn:Fashion Retail DW.Product AI Signals.Week Start Date"
+            ]
+          }
+        }
+      },
+      {
+        "name": "Latest Ending Available Units",
+        "description": "Ending available units in the latest available AI signal week for the selected context. Use it to identify whether any sellable stock remains now.",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "expressionTemplate": "EVALUATE_AGGR('SUM(\\%1) KEEP (DENSE_RANK LAST ORDER BY \\%2)' AS DOUBLE, %1, %2)",
+            "expressionObjects": [
+              "logicalColumn:Fashion Retail DW.Product AI Signals.Raw Ending Available Units",
+              "logicalColumn:Fashion Retail DW.Product AI Signals.Week Start Date"
+            ]
+          }
+        }
+      },
+      {
+        "name": "Affected Lost Sales Weeks",
+        "description": "Number of distinct weeks with lost-sales evidence in the selected context. Use it to distinguish repeated missed demand from an isolated stockout.",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "expressionTemplate": "EVALUATE_AGGR('COUNT(DISTINCT CASE WHEN \\%1 > 0 THEN \\%2 END)' AS DOUBLE, %1, %2)",
+            "expressionObjects": [
+              "logicalColumn:Fashion Retail DW.Product AI Signals.Raw Lost Sales Units",
               "logicalColumn:Fashion Retail DW.Product AI Signals.Week Start Date"
             ]
           }
