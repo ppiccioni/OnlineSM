@@ -59,7 +59,8 @@
               }
             }
           ]
-        }
+        },
+        "description": "Hidden date key used to join return rows to the Date dimension."
       },
       {
         "name": "Store ID",
@@ -154,7 +155,8 @@
               }
             }
           ]
-        }
+        },
+        "description": "Reason captured for the returned item, such as fit issue, size mismatch, quality issue, late delivery, changed mind, or color expectation. Use it to analyze return drivers."
       },
       {
         "name": "Returned Units",

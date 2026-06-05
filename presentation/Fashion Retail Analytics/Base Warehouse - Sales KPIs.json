@@ -1,6 +1,6 @@
 {
   "presentationTable": {
-    "name": "Sales KPIs",
+    "name": "Base Warehouse - Sales KPIs",
     "presentationColumns": [
       {
         "name": "Sales Line ID",
@@ -13,7 +13,8 @@
       {
         "name": "Transaction ID",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Sales KPIs.Transaction ID",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Sales transaction identifier from the base sales fact. Use it for transaction-level detail or distinct transaction counts; it is not intended as an aggregate KPI."
       },
       {
         "name": "Date Key",
@@ -197,6 +198,7 @@
         "useLogicalColumnName": true,
         "description": "Full-price units as a percentage of total units sold."
       }
-    ]
+    ],
+    "description": "Base warehouse sales measures from FASHIONDW.FACT_SALES. Use this as the canonical folder for observed sales, revenue, margin, markdown, and full-price selling."
   }
 }

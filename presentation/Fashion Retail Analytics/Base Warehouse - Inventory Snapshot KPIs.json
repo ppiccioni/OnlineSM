@@ -1,11 +1,12 @@
 {
   "presentationTable": {
-    "name": "Inventory KPIs",
+    "name": "Base Warehouse - Inventory Snapshot KPIs",
     "presentationColumns": [
       {
         "name": "Snapshot Week Start Date",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Inventory KPIs.Snapshot Week Start Date",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Week represented by the base inventory snapshot. Include it when analyzing inventory history or validating latest-known inventory status."
       },
       {
         "name": "Date Key",
@@ -40,22 +41,22 @@
         }
       },
       {
-        "name": "On Hand Units",
-        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Inventory KPIs.On Hand Units",
+        "name": "Snapshot On Hand Units",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Inventory KPIs.Snapshot On Hand Units",
         "useLogicalColumnName": true,
-        "description": "Physical stock on hand at store-SKU-week grain. Use this for operational inventory reporting; when looking at exception severity, prefer latest or current risk measures instead of averaging across many weeks."
+        "description": "Physical stock on hand in the weekly inventory snapshot at store-SKU-week grain. Use it for point-in-time operational inventory reporting; use Inventory Movement KPIs for opening-to-ending flow analysis."
       },
       {
-        "name": "Available Units",
-        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Inventory KPIs.Available Units",
+        "name": "Snapshot Available Units",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Inventory KPIs.Snapshot Available Units",
         "useLogicalColumnName": true,
-        "description": "Inventory available for sale after reservations and unavailable stock. Use this to understand sellable inventory; pair it with stockout counts or current risk scores for availability analysis."
+        "description": "Sellable units in the weekly inventory snapshot after reservations or unavailable stock are excluded. Use it for point-in-time availability reporting."
       },
       {
-        "name": "Reserved Units",
-        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Inventory KPIs.Reserved Units",
+        "name": "Snapshot Reserved Units",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Inventory KPIs.Snapshot Reserved Units",
         "useLogicalColumnName": true,
-        "description": "Units reserved and not immediately available for sale."
+        "description": "Reserved units in the weekly inventory snapshot that are physically on hand but not immediately sellable."
       },
       {
         "name": "Latest Known Store-SKU On Hand Units",
@@ -76,22 +77,22 @@
         "description": "Last known reserved inventory at store-SKU grain. Use this beside latest known available units to understand why on-hand stock may not be fully transferable."
       },
       {
-        "name": "Stockout Count",
-        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Inventory KPIs.Stockout Count",
+        "name": "Snapshot Stockout Count",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Inventory KPIs.Snapshot Stockout Count",
         "useLogicalColumnName": true,
-        "description": "Count of weekly store-SKU snapshots flagged as stockout. This is an operational stockout count, not an AI alert count; AI alert cases apply stricter demand and risk criteria."
+        "description": "Count of weekly store-SKU snapshots flagged as stockout. This is an operational snapshot count, not an AI alert count."
       },
       {
-        "name": "Inventory Value At Cost",
-        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Inventory KPIs.Inventory Value At Cost",
+        "name": "Snapshot Inventory Value At Cost",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Inventory KPIs.Snapshot Inventory Value At Cost",
         "useLogicalColumnName": true,
-        "description": "Inventory value calculated using standard product cost."
+        "description": "Inventory value at standard cost for the weekly inventory snapshot."
       },
       {
-        "name": "Average Weeks Of Supply",
-        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Inventory KPIs.Average Weeks Of Supply",
+        "name": "Average Snapshot Weeks Of Supply",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Inventory KPIs.Average Snapshot Weeks Of Supply",
         "useLogicalColumnName": true,
-        "description": "Average estimated weeks of supply based on stock and demand."
+        "description": "Average estimated weeks of supply across weekly inventory snapshots in the selected context."
       },
       {
         "name": "Average Store-SKU Overstock Risk Index",
@@ -118,10 +119,10 @@
         "description": "Latest-week store-SKU overstock risk rescaled to a 0-100 dashboard score. Use this for current overstock monitoring because it reflects the latest available inventory snapshot."
       },
       {
-        "name": "Available Unit Share",
-        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Inventory KPIs.Available Unit Share",
+        "name": "Snapshot Available Unit Share",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Inventory KPIs.Snapshot Available Unit Share",
         "useLogicalColumnName": true,
-        "description": "Available units as a percentage of on-hand units."
+        "description": "Snapshot available units as a percentage of snapshot on-hand units."
       },
       {
         "name": "Scenario Tag",
@@ -132,6 +133,7 @@
           "expressionTemplate": "1 = 1"
         }
       }
-    ]
+    ],
+    "description": "Base warehouse weekly inventory snapshots from FASHIONDW.FACT_INVENTORY_SNAPSHOT_WEEKLY. Use this for stock position, latest known availability, and snapshot risk reporting."
   }
 }

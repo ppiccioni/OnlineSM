@@ -1,0 +1,144 @@
+{
+  "physicalTable": {
+    "name": "FACT_INVENTORY_MOVEMENT_WEEKLY",
+    "sourceType": "TABLE",
+    "physicalColumns": [
+      {
+        "name": "MOVEMENT_WEEK_START_DATE",
+        "dataType": "DATE",
+        "length": 7,
+        "nullable": true
+      },
+      {
+        "name": "DATE_KEY",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
+        "name": "STORE_ID",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
+        "name": "SKU_ID",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
+        "name": "COLLECTION_ID",
+        "dataType": "VARCHAR",
+        "length": 4,
+        "nullable": true
+      },
+      {
+        "name": "OPENING_ON_HAND_UNITS",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
+        "name": "REPLENISHMENT_UNITS",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
+        "name": "TRANSFER_IN_UNITS",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
+        "name": "TRANSFER_OUT_UNITS",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
+        "name": "DEMAND_UNITS",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
+        "name": "UNITS_SOLD",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
+        "name": "LOST_SALES_UNITS",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
+        "name": "ENDING_ON_HAND_UNITS",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
+        "name": "ENDING_AVAILABLE_UNITS",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
+        "name": "SCENARIO_TAG",
+        "dataType": "VARCHAR",
+        "length": 80,
+        "nullable": true
+      }
+    ],
+    "caching": {
+      "enable": true,
+      "expiryTime": 0
+    },
+    "joins": [
+      {
+        "rightTable": "physicalTable:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_DATE",
+        "useJoinExpression": false,
+        "joinConditions": [
+          {
+            "leftColumn": "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.FACT_INVENTORY_MOVEMENT_WEEKLY.DATE_KEY",
+            "rightColumn": "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_DATE.DATE_KEY"
+          }
+        ]
+      },
+      {
+        "rightTable": "physicalTable:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_STORE",
+        "useJoinExpression": false,
+        "joinConditions": [
+          {
+            "leftColumn": "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.FACT_INVENTORY_MOVEMENT_WEEKLY.STORE_ID",
+            "rightColumn": "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_STORE.STORE_ID"
+          }
+        ]
+      },
+      {
+        "rightTable": "physicalTable:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_PRODUCT",
+        "useJoinExpression": false,
+        "joinConditions": [
+          {
+            "leftColumn": "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.FACT_INVENTORY_MOVEMENT_WEEKLY.SKU_ID",
+            "rightColumn": "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_PRODUCT.SKU_ID"
+          }
+        ]
+      },
+      {
+        "rightTable": "physicalTable:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_COLLECTION",
+        "useJoinExpression": false,
+        "joinConditions": [
+          {
+            "leftColumn": "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.FACT_INVENTORY_MOVEMENT_WEEKLY.COLLECTION_ID",
+            "rightColumn": "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_COLLECTION.COLLECTION_ID"
+          }
+        ]
+      }
+    ]
+  }
+}

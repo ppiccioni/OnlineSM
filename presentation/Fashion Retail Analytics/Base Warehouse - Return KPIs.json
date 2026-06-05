@@ -1,6 +1,6 @@
 {
   "presentationTable": {
-    "name": "Return KPIs",
+    "name": "Base Warehouse - Return KPIs",
     "presentationColumns": [
       {
         "name": "Return ID",
@@ -24,7 +24,8 @@
         "useLogicalColumnName": true,
         "hideIfTrue": {
           "expressionTemplate": "1 = 1"
-        }
+        },
+        "description": "Hidden date key used to join return rows to the Date dimension."
       },
       {
         "name": "Store ID",
@@ -61,7 +62,8 @@
       {
         "name": "Return Reason",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Return KPIs.Return Reason",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Reason captured for the returned item, such as fit issue, size mismatch, quality issue, late delivery, changed mind, or color expectation. Use it to analyze return drivers."
       },
       {
         "name": "Returned Units",
@@ -107,6 +109,7 @@
         "useLogicalColumnName": true,
         "description": "Average number of returned units per return record."
       }
-    ]
+    ],
+    "description": "Base warehouse return measures from FASHIONDW.FACT_RETURNS. Use this for observed returns, refund, and return-reason analysis."
   }
 }

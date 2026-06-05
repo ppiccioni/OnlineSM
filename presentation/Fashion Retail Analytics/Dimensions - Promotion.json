@@ -1,37 +1,44 @@
 {
   "presentationTable": {
-    "name": "Promotion",
+    "name": "Dimensions - Promotion",
     "presentationColumns": [
       {
         "name": "Promotion Code",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Promotion.Promotion Code",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Business-facing promotion code associated with the sales line."
       },
       {
         "name": "Promotion Name",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Promotion.Promotion Name",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Readable promotion name."
       },
       {
         "name": "Promotion Type",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Promotion.Promotion Type",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Type of promotion, such as markdown, loyalty, clearance, campaign, or no promotion."
       },
       {
         "name": "Markdown Depth Pct",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Promotion.Markdown Depth Pct",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Planned markdown or discount depth percentage for the promotion."
       },
       {
         "name": "Campaign Family",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Promotion.Campaign Family",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Campaign or promotional family used to group related promotion mechanics."
       },
       {
         "name": "Is Clearance",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Promotion.Is Clearance",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Flags promotions used for clearance or end-of-season activity."
       }
-    ]
+    ],
+    "description": "Core promotion dimension for markdown, campaign, clearance, and full-price selling analysis."
   }
 }

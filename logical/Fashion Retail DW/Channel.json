@@ -44,7 +44,8 @@
             }
           ]
         },
-        "logicalLevel": "Detail"
+        "logicalLevel": "Detail",
+        "description": "Sales channel name, such as Store, E-Commerce, Outlet, or Marketplace."
       },
       {
         "name": "Channel Group",
@@ -64,7 +65,8 @@
             }
           ]
         },
-        "logicalLevel": "Group"
+        "logicalLevel": "Group",
+        "description": "Higher-level channel grouping used for reporting and comparison."
       },
       {
         "name": "Return Bias",
@@ -84,7 +86,8 @@
             }
           ]
         },
-        "logicalLevel": "Detail"
+        "logicalLevel": "Detail",
+        "description": "Relative return tendency associated with the channel. Use it as context for returns analysis."
       },
       {
         "name": "Markdown Bias",
@@ -104,7 +107,8 @@
             }
           ]
         },
-        "logicalLevel": "Detail"
+        "logicalLevel": "Detail",
+        "description": "Relative markdown tendency associated with the channel. Use it as context for discount analysis."
       }
     ],
     "logicalTableSources": [

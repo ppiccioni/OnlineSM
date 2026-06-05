@@ -1,6 +1,6 @@
 {
   "presentationTable": {
-    "name": "Store",
+    "name": "Dimensions - Store",
     "presentationColumns": [
       {
         "name": "Store Code",
@@ -106,25 +106,26 @@
           {
             "name": "Country",
             "sourceLogicalLevel": "logicalLevel:Fashion Retail DW.Store.Country",
-            "displayColumn": "presentationColumn:Fashion Retail Analytics.Store.Country"
+            "displayColumn": "presentationColumn:Fashion Retail Analytics.Dimensions - Store.Country"
           },
           {
             "name": "Region",
             "sourceLogicalLevel": "logicalLevel:Fashion Retail DW.Store.Region",
-            "displayColumn": "presentationColumn:Fashion Retail Analytics.Store.Region"
+            "displayColumn": "presentationColumn:Fashion Retail Analytics.Dimensions - Store.Region"
           },
           {
             "name": "City",
             "sourceLogicalLevel": "logicalLevel:Fashion Retail DW.Store.City",
-            "displayColumn": "presentationColumn:Fashion Retail Analytics.Store.City"
+            "displayColumn": "presentationColumn:Fashion Retail Analytics.Dimensions - Store.City"
           },
           {
             "name": "Store",
             "sourceLogicalLevel": "logicalLevel:Fashion Retail DW.Store.Store",
-            "displayColumn": "presentationColumn:Fashion Retail Analytics.Store.Store Name"
+            "displayColumn": "presentationColumn:Fashion Retail Analytics.Dimensions - Store.Store Name"
           }
         ]
       }
-    ]
+    ],
+    "description": "Core store dimension with unique store labels, geography, format, and store-context attributes."
   }
 }

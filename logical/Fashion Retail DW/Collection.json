@@ -45,7 +45,8 @@
           ]
         },
         "logicalLevel": "Detail",
-        "sortBy": "Launch Date"
+        "sortBy": "Launch Date",
+        "description": "Business-facing collection name, such as an Autumn/Winter or Spring/Summer assortment."
       },
       {
         "name": "Season Code",
@@ -65,7 +66,8 @@
             }
           ]
         },
-        "logicalLevel": "Season"
+        "logicalLevel": "Season",
+        "description": "Short season code for the collection, such as SS or AW."
       },
       {
         "name": "Season Name",
@@ -86,7 +88,8 @@
           ]
         },
         "logicalLevel": "Season",
-        "sortBy": "Season Sort Order"
+        "sortBy": "Season Sort Order",
+        "description": "Readable season name for the collection."
       },
       {
         "name": "Season Sort Order",
@@ -121,7 +124,8 @@
             }
           ]
         },
-        "logicalLevel": "Year"
+        "logicalLevel": "Year",
+        "description": "Year associated with the collection launch and selling lifecycle."
       },
       {
         "name": "Launch Date",
@@ -141,7 +145,8 @@
             }
           ]
         },
-        "logicalLevel": "Detail"
+        "logicalLevel": "Detail",
+        "description": "Planned launch date for the collection."
       },
       {
         "name": "Markdown Start Date",
@@ -161,7 +166,8 @@
             }
           ]
         },
-        "logicalLevel": "Detail"
+        "logicalLevel": "Detail",
+        "description": "Date when planned markdown activity begins for the collection."
       },
       {
         "name": "Clearance Start Date",
@@ -181,7 +187,8 @@
             }
           ]
         },
-        "logicalLevel": "Detail"
+        "logicalLevel": "Detail",
+        "description": "Date when clearance activity begins for the collection."
       },
       {
         "name": "End Date",
@@ -201,7 +208,8 @@
             }
           ]
         },
-        "logicalLevel": "Detail"
+        "logicalLevel": "Detail",
+        "description": "Planned end date for the collection lifecycle."
       },
       {
         "name": "Primary Weather",
@@ -221,7 +229,8 @@
             }
           ]
         },
-        "logicalLevel": "Detail"
+        "logicalLevel": "Detail",
+        "description": "Weather or climate context most relevant to the collection assortment."
       },
       {
         "name": "Story",
@@ -241,7 +250,8 @@
             }
           ]
         },
-        "logicalLevel": "Detail"
+        "logicalLevel": "Detail",
+        "description": "Merchandising narrative or buying theme associated with the collection."
       }
     ],
     "logicalTableSources": [

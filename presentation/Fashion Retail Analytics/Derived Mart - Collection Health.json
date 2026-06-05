@@ -1,6 +1,6 @@
 {
   "presentationTable": {
-    "name": "Collection Health",
+    "name": "Derived Mart - Collection Health",
     "presentationColumns": [
       {
         "name": "Collection ID",
@@ -353,6 +353,7 @@
         "useLogicalColumnName": true,
         "description": "Latest stockout store snapshots as a percentage of latest store-SKU snapshots."
       }
-    ]
+    ],
+    "description": "Notebook-derived collection health mart. Use this for curated collection/category lifecycle health, latest inventory, sell-through, markdown, return, and margin summaries."
   }
 }

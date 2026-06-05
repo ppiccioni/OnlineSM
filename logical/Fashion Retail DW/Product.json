@@ -44,7 +44,8 @@
             }
           ]
         },
-        "logicalLevel": "SKU"
+        "logicalLevel": "SKU",
+        "description": "Business-facing SKU code. Use it to identify the exact sellable product variant."
       },
       {
         "name": "Style ID",
@@ -84,7 +85,8 @@
             }
           ]
         },
-        "logicalLevel": "Style"
+        "logicalLevel": "Style",
+        "description": "Style-level code grouping related SKU variants such as sizes or colors."
       },
       {
         "name": "Product Name",
@@ -104,7 +106,8 @@
             }
           ]
         },
-        "logicalLevel": "SKU"
+        "logicalLevel": "SKU",
+        "description": "Readable product name for the SKU."
       },
       {
         "name": "Style Description",
@@ -124,7 +127,8 @@
             }
           ]
         },
-        "logicalLevel": "Style"
+        "logicalLevel": "Style",
+        "description": "Short description of the style family. Use it when SKU-level names are too granular."
       },
       {
         "name": "Department",
@@ -144,7 +148,8 @@
             }
           ]
         },
-        "logicalLevel": "Department"
+        "logicalLevel": "Department",
+        "description": "Top-level product department, such as Womenswear or Accessories."
       },
       {
         "name": "Category",
@@ -164,7 +169,8 @@
             }
           ]
         },
-        "logicalLevel": "Category"
+        "logicalLevel": "Category",
+        "description": "Product category within the department, such as Bags, Dresses, or Sneakers."
       },
       {
         "name": "Subcategory",
@@ -184,7 +190,8 @@
             }
           ]
         },
-        "logicalLevel": "Subcategory"
+        "logicalLevel": "Subcategory",
+        "description": "More detailed product grouping within the category."
       },
       {
         "name": "Brand",
@@ -204,7 +211,8 @@
             }
           ]
         },
-        "logicalLevel": "SKU"
+        "logicalLevel": "SKU",
+        "description": "Brand or house label associated with the product."
       },
       {
         "name": "Collection ID",
@@ -244,7 +252,8 @@
             }
           ]
         },
-        "logicalLevel": "SKU"
+        "logicalLevel": "SKU",
+        "description": "Color family for the SKU, useful for assortment and trend analysis."
       },
       {
         "name": "Size Code",
@@ -264,7 +273,8 @@
             }
           ]
         },
-        "logicalLevel": "SKU"
+        "logicalLevel": "SKU",
+        "description": "Size variant for the SKU."
       },
       {
         "name": "Fit",
@@ -284,7 +294,8 @@
             }
           ]
         },
-        "logicalLevel": "SKU"
+        "logicalLevel": "SKU",
+        "description": "Fit classification for apparel or footwear products."
       },
       {
         "name": "Fabric",
@@ -304,7 +315,8 @@
             }
           ]
         },
-        "logicalLevel": "SKU"
+        "logicalLevel": "SKU",
+        "description": "Primary fabric or material classification."
       },
       {
         "name": "Price Tier",
@@ -324,7 +336,8 @@
             }
           ]
         },
-        "logicalLevel": "SKU"
+        "logicalLevel": "SKU",
+        "description": "Commercial price tier, useful for comparing entry, premium, and luxury behavior."
       },
       {
         "name": "List Price",
@@ -344,7 +357,8 @@
             }
           ]
         },
-        "logicalLevel": "SKU"
+        "logicalLevel": "SKU",
+        "description": "Standard list price before discounts or markdowns."
       },
       {
         "name": "Standard Cost",
@@ -364,7 +378,8 @@
             }
           ]
         },
-        "logicalLevel": "SKU"
+        "logicalLevel": "SKU",
+        "description": "Standard product cost used for margin and inventory value calculations."
       },
       {
         "name": "Trend Tag",
@@ -384,7 +399,8 @@
             }
           ]
         },
-        "logicalLevel": "SKU"
+        "logicalLevel": "SKU",
+        "description": "Trend or style signal associated with the product, useful for merchandising analysis."
       },
       {
         "name": "Sustainability Flag",
@@ -404,7 +420,8 @@
             }
           ]
         },
-        "logicalLevel": "SKU"
+        "logicalLevel": "SKU",
+        "description": "Flags SKUs positioned as sustainable or using sustainability-related attributes."
       },
       {
         "name": "Carryover Flag",
@@ -424,7 +441,8 @@
             }
           ]
         },
-        "logicalLevel": "SKU"
+        "logicalLevel": "SKU",
+        "description": "Flags products carried over from a previous season rather than newly introduced."
       }
     ],
     "logicalTableSources": [

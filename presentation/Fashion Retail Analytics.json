@@ -4,49 +4,52 @@
     "sourceBusinessModel": "businessModel:Fashion Retail DW",
     "tableOrder": [
       {
-        "name": "presentationTable:Fashion Retail Analytics.Sales KPIs"
+        "name": "presentationTable:Fashion Retail Analytics.Dimensions - Date"
       },
       {
-        "name": "presentationTable:Fashion Retail Analytics.Return KPIs"
+        "name": "presentationTable:Fashion Retail Analytics.Dimensions - Collection"
       },
       {
-        "name": "presentationTable:Fashion Retail Analytics.Inventory KPIs"
+        "name": "presentationTable:Fashion Retail Analytics.Dimensions - Product"
       },
       {
-        "name": "presentationTable:Fashion Retail Analytics.Store Traffic KPIs"
+        "name": "presentationTable:Fashion Retail Analytics.Dimensions - Store"
       },
       {
-        "name": "presentationTable:Fashion Retail Analytics.Collection Health"
+        "name": "presentationTable:Fashion Retail Analytics.Dimensions - Customer"
       },
       {
-        "name": "presentationTable:Fashion Retail Analytics.Product Weekly Performance"
+        "name": "presentationTable:Fashion Retail Analytics.Dimensions - Channel"
       },
       {
-        "name": "presentationTable:Fashion Retail Analytics.Product AI Signals"
+        "name": "presentationTable:Fashion Retail Analytics.Dimensions - Promotion"
       },
       {
-        "name": "presentationTable:Fashion Retail Analytics.Product AI Cluster Labels"
+        "name": "presentationTable:Fashion Retail Analytics.Base Warehouse - Sales KPIs"
       },
       {
-        "name": "presentationTable:Fashion Retail Analytics.Date"
+        "name": "presentationTable:Fashion Retail Analytics.Base Warehouse - Return KPIs"
       },
       {
-        "name": "presentationTable:Fashion Retail Analytics.Collection"
+        "name": "presentationTable:Fashion Retail Analytics.Base Warehouse - Inventory Snapshot KPIs"
       },
       {
-        "name": "presentationTable:Fashion Retail Analytics.Product"
+        "name": "presentationTable:Fashion Retail Analytics.Base Warehouse - Inventory Movement KPIs"
       },
       {
-        "name": "presentationTable:Fashion Retail Analytics.Store"
+        "name": "presentationTable:Fashion Retail Analytics.Base Warehouse - Store Traffic KPIs"
       },
       {
-        "name": "presentationTable:Fashion Retail Analytics.Customer"
+        "name": "presentationTable:Fashion Retail Analytics.Derived Mart - Product Weekly Performance"
       },
       {
-        "name": "presentationTable:Fashion Retail Analytics.Channel"
+        "name": "presentationTable:Fashion Retail Analytics.Derived Mart - Collection Health"
       },
       {
-        "name": "presentationTable:Fashion Retail Analytics.Promotion"
+        "name": "presentationTable:Fashion Retail Analytics.AI Insights - Product AI Signals"
+      },
+      {
+        "name": "presentationTable:Fashion Retail Analytics.AI Insights - Product AI Cluster Labels"
       }
     ],
     "localization": {
