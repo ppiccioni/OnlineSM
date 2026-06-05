@@ -251,7 +251,7 @@
         "logicalLevel": "Cluster"
       },
       {
-        "name": "Average Lost Sales Units",
+        "name": "Average Estimated Lost Sales Units",
         "dataType": "DOUBLE",
         "writeable": false,
         "logicalColumnSource": {
@@ -271,11 +271,11 @@
         "aggregation": {
           "rule": "AVG"
         },
-        "description": "Average lost-sales units among AI signal cases in the cluster. Higher values indicate clusters where missed demand is a common behavior.",
+        "description": "Average estimated lost-sales units among AI signal cases in the cluster. Higher values indicate clusters where missed demand is a common behavior.",
         "logicalLevel": "Cluster"
       },
       {
-        "name": "Average Lost Sales Rate Percent",
+        "name": "Average Estimated Lost Sales Rate Percent",
         "dataType": "DOUBLE",
         "writeable": false,
         "logicalColumnSource": {
@@ -295,7 +295,7 @@
         "aggregation": {
           "rule": "AVG"
         },
-        "description": "Average percentage of demand that became lost sales among AI signal cases in the cluster.",
+        "description": "Average percentage of estimated demand that became estimated lost sales among AI signal cases in the cluster.",
         "logicalLevel": "Cluster"
       },
       {
@@ -347,7 +347,7 @@
         "description": "Average model confidence for cases assigned to the cluster."
       },
       {
-        "name": "Average Units Sold",
+        "name": "Average Fulfilled Units Sold",
         "dataType": "DOUBLE",
         "writeable": false,
         "logicalColumnSource": {
@@ -368,7 +368,7 @@
           "rule": "AVG"
         },
         "logicalLevel": "Cluster",
-        "description": "Average sales quantity among AI signal cases in the cluster; use it as cluster context, not as the primary enterprise Units Sold KPI."
+        "description": "Average fulfilled units sold among AI signal cases in the cluster; use it as cluster context, not as the primary enterprise Units Sold KPI."
       },
       {
         "name": "Average Net Sales Amount",

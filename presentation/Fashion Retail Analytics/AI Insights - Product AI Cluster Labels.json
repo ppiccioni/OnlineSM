@@ -1,6 +1,6 @@
 {
   "presentationTable": {
-    "name": "Product AI Cluster Labels",
+    "name": "AI Insights - Product AI Cluster Labels",
     "presentationColumns": [
       {
         "name": "Cluster ID",
@@ -72,16 +72,16 @@
         "description": "Average full-price unit share among AI signal cases in the cluster. Use it to judge whether the cluster reflects healthy full-price demand or markdown-driven movement."
       },
       {
-        "name": "Average Lost Sales Units",
-        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.Average Lost Sales Units",
+        "name": "Average Estimated Lost Sales Units",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.Average Estimated Lost Sales Units",
         "useLogicalColumnName": true,
-        "description": "Average lost-sales units among AI signal cases in the cluster. Higher values indicate clusters where missed demand is a common behavior."
+        "description": "Average estimated lost-sales units among AI signal cases in the cluster. Higher values indicate clusters where missed demand is a common behavior."
       },
       {
-        "name": "Average Lost Sales Rate Percent",
-        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.Average Lost Sales Rate Percent",
+        "name": "Average Estimated Lost Sales Rate Percent",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.Average Estimated Lost Sales Rate Percent",
         "useLogicalColumnName": true,
-        "description": "Average percentage of demand that became lost sales among AI signal cases in the cluster."
+        "description": "Average percentage of estimated demand that became estimated lost sales among AI signal cases in the cluster."
       },
       {
         "name": "Average Inbound Supply Units",
@@ -96,10 +96,10 @@
         "description": "Average model confidence for cases assigned to the cluster."
       },
       {
-        "name": "Average Units Sold",
-        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.Average Units Sold",
+        "name": "Average Fulfilled Units Sold",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.Average Fulfilled Units Sold",
         "useLogicalColumnName": true,
-        "description": "Average sales quantity among AI signal cases in the cluster; use it as cluster context, not as the primary enterprise Units Sold KPI."
+        "description": "Average fulfilled units sold among AI signal cases in the cluster; use it as cluster context, not as the primary enterprise Units Sold KPI."
       },
       {
         "name": "Average Net Sales Amount",
@@ -179,6 +179,7 @@
         "useLogicalColumnName": true,
         "description": "Most common reason code among the AI signal cases assigned to the cluster. Use it as a quick cluster explanation, not as the reason for every individual case."
       }
-    ]
+    ],
+    "description": "Notebook-derived cluster labels and explanations for Product AI signal cases. Use this to understand behavior patterns and common recommended actions."
   }
 }

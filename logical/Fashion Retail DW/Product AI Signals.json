@@ -368,7 +368,7 @@
         }
       },
       {
-        "name": "Units Sold",
+        "name": "Fulfilled Units Sold",
         "dataType": "DOUBLE",
         "writeable": false,
         "logicalColumnSource": {
@@ -388,7 +388,7 @@
         "aggregation": {
           "rule": "SUM"
         },
-        "description": "Sales quantity observed in the store-SKU-week AI case. It reconciles to core sales quantity when rolled up, but should be used as case evidence beside risk, alert, and recommendation fields rather than as the primary sales KPI."
+        "description": "Units actually sold and fulfilled in the store-SKU-week AI case. It reconciles to core sales quantity at the same grain; use it beside estimated demand and estimated lost sales to understand constrained demand."
       },
       {
         "name": "Full Price Units",
@@ -667,7 +667,7 @@
         "description": "Units transferred out of the store for the store-SKU-week AI case. Use this to understand whether inventory was moved away from the store before or during an exception."
       },
       {
-        "name": "Demand Units",
+        "name": "Estimated Demand Units",
         "dataType": "DOUBLE",
         "writeable": false,
         "logicalColumnSource": {
@@ -687,10 +687,10 @@
         "aggregation": {
           "rule": "SUM"
         },
-        "description": "Total demand represented by the store-SKU-week AI case, equal to fulfilled sales plus lost sales. This is useful when fulfilled sales fall to zero because stock is exhausted."
+        "description": "Estimated unconstrained customer demand represented by the store-SKU-week AI case, equal to fulfilled units sold plus estimated lost sales units. This is modeled demand evidence, not a directly observed POS count."
       },
       {
-        "name": "Lost Sales Units",
+        "name": "Estimated Lost Sales Units",
         "dataType": "DOUBLE",
         "writeable": false,
         "logicalColumnSource": {
@@ -710,10 +710,10 @@
         "aggregation": {
           "rule": "SUM"
         },
-        "description": "Demand units that could not be fulfilled because available stock was exhausted. Positive values indicate missed demand rather than normal low sales."
+        "description": "Estimated demand units that could not be fulfilled because available stock was exhausted. Positive values indicate missed demand rather than normal low sales."
       },
       {
-        "name": "Fulfilled Demand Percent",
+        "name": "Fulfilled Estimated Demand Percent",
         "dataType": "DOUBLE",
         "writeable": false,
         "logicalColumnSource": {
@@ -733,10 +733,10 @@
         "aggregation": {
           "rule": "AVG"
         },
-        "description": "Percentage of demand that was fulfilled in the store-SKU-week AI case. Low values indicate demand was constrained by availability."
+        "description": "Percentage of estimated demand that was fulfilled in the store-SKU-week AI case. Low values indicate demand was constrained by availability."
       },
       {
-        "name": "Lost Sales Rate Percent",
+        "name": "Estimated Lost Sales Rate Percent",
         "dataType": "DOUBLE",
         "writeable": false,
         "logicalColumnSource": {
@@ -756,7 +756,7 @@
         "aggregation": {
           "rule": "AVG"
         },
-        "description": "Percentage of demand that became lost sales in the store-SKU-week AI case. Use it to rank stockout severity independently from fulfilled sales."
+        "description": "Percentage of estimated demand that became estimated lost sales in the store-SKU-week AI case. Use it to rank stockout severity independently from fulfilled sales."
       },
       {
         "name": "Supply Units",
@@ -828,7 +828,7 @@
         "description": "Count of AI cases where replenishment or transfer-in activity occurred. Use it to see whether supply actions preceded or accompanied an exception."
       },
       {
-        "name": "Lost Sales Stockout Cases",
+        "name": "Estimated Lost Sales Stockout Cases",
         "dataType": "DOUBLE",
         "writeable": false,
         "logicalColumnSource": {
@@ -848,10 +848,10 @@
         "aggregation": {
           "rule": "SUM"
         },
-        "description": "Count of AI cases where available stock ended at zero and lost sales were recorded. This is a stricter stockout evidence count than a zero-availability snapshot alone."
+        "description": "Count of AI cases where ending available stock is zero and estimated lost sales were recorded. This is stricter evidence than a zero-availability snapshot alone."
       },
       {
-        "name": "Demand Units 4W Avg",
+        "name": "Estimated Demand Units 4W Avg",
         "dataType": "DOUBLE",
         "writeable": false,
         "logicalColumnSource": {
@@ -871,10 +871,10 @@
         "aggregation": {
           "rule": "AVG"
         },
-        "description": "Four-week average demand units used by the AI signal layer. It captures recent demand momentum, including lost demand when stock is exhausted."
+        "description": "Four-week average estimated demand units used by the AI signal layer. It captures recent demand momentum, including missed demand when stock is exhausted."
       },
       {
-        "name": "Lost Sales Units 4W Sum",
+        "name": "Estimated Lost Sales Units 4W Sum",
         "dataType": "DOUBLE",
         "writeable": false,
         "logicalColumnSource": {
@@ -894,7 +894,7 @@
         "aggregation": {
           "rule": "AVG"
         },
-        "description": "Rolling four-week lost-sales evidence used by the AI signal layer. Use it to distinguish repeated missed demand from a one-week issue."
+        "description": "Rolling four-week estimated lost-sales evidence used by the AI signal layer. Use it to distinguish repeated missed demand from a one-week issue."
       },
       {
         "name": "Full Price Unit Share 4W Avg",
@@ -1021,7 +1021,7 @@
             "expressionTemplate": "CASE WHEN %2 = 0 THEN 0 ELSE %1 / %2 * 100 END",
             "expressionObjects": [
               "logicalColumn:Fashion Retail DW.Product AI Signals.Full Price Units",
-              "logicalColumn:Fashion Retail DW.Product AI Signals.Units Sold"
+              "logicalColumn:Fashion Retail DW.Product AI Signals.Fulfilled Units Sold"
             ]
           }
         },
@@ -1789,8 +1789,8 @@
         }
       },
       {
-        "name": "Latest Demand Units",
-        "description": "Demand units in the latest available AI signal week for the selected context. Use this for current demand evidence instead of summing across historical weeks.",
+        "name": "Latest Estimated Demand Units",
+        "description": "Estimated demand units in the latest available AI signal week for the selected context. Use this for current demand evidence instead of summing across historical weeks.",
         "dataType": "DOUBLE",
         "writeable": false,
         "logicalColumnSource": {
@@ -1805,8 +1805,8 @@
         }
       },
       {
-        "name": "Latest Lost Sales Units",
-        "description": "Lost-sales units in the latest available AI signal week for the selected context. This highlights current missed demand when stock is exhausted.",
+        "name": "Latest Estimated Lost Sales Units",
+        "description": "Estimated lost-sales units in the latest available AI signal week for the selected context. This highlights current missed demand when stock is exhausted.",
         "dataType": "DOUBLE",
         "writeable": false,
         "logicalColumnSource": {
@@ -1853,8 +1853,8 @@
         }
       },
       {
-        "name": "Affected Lost Sales Weeks",
-        "description": "Number of distinct weeks with lost-sales evidence in the selected context. Use it to distinguish repeated missed demand from an isolated stockout.",
+        "name": "Affected Estimated Lost Sales Weeks",
+        "description": "Number of distinct weeks with estimated lost-sales evidence in the selected context. Use it to distinguish repeated missed demand from an isolated stockout.",
         "dataType": "DOUBLE",
         "writeable": false,
         "logicalColumnSource": {

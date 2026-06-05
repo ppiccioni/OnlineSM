@@ -1,0 +1,453 @@
+{
+  "logicalTable": {
+    "name": "Inventory Movement KPIs",
+    "description": "Base warehouse inventory movement ledger from FASHIONDW.FACT_INVENTORY_MOVEMENT_WEEKLY at Store + SKU + Week grain. Use it to explain how opening stock, replenishment, transfers, fulfilled sales, estimated demand, and estimated lost sales reconcile to ending inventory.",
+    "type": "FACT",
+    "logicalColumns": [
+      {
+        "name": "Movement Week Start Date",
+        "dataType": "DATE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "FACT_INVENTORY_MOVEMENT_WEEKLY_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.FACT_INVENTORY_MOVEMENT_WEEKLY.MOVEMENT_WEEK_START_DATE"
+                ]
+              }
+            }
+          ]
+        },
+        "description": "Week represented by the inventory movement ledger row. Use it with Store and SKU to review stock flow over time."
+      },
+      {
+        "name": "Date Key",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "FACT_INVENTORY_MOVEMENT_WEEKLY_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.FACT_INVENTORY_MOVEMENT_WEEKLY.DATE_KEY"
+                ]
+              }
+            }
+          ]
+        },
+        "description": "Hidden date key used to join inventory movement rows to the Date dimension.",
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
+      },
+      {
+        "name": "Store ID",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "FACT_INVENTORY_MOVEMENT_WEEKLY_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.FACT_INVENTORY_MOVEMENT_WEEKLY.STORE_ID"
+                ]
+              }
+            }
+          ]
+        },
+        "description": "Hidden store key used to join inventory movement rows to the Store dimension.",
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
+      },
+      {
+        "name": "SKU ID",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "FACT_INVENTORY_MOVEMENT_WEEKLY_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.FACT_INVENTORY_MOVEMENT_WEEKLY.SKU_ID"
+                ]
+              }
+            }
+          ]
+        },
+        "description": "Hidden SKU key used to join inventory movement rows to the Product dimension.",
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
+      },
+      {
+        "name": "Collection ID",
+        "dataType": "VARCHAR",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "FACT_INVENTORY_MOVEMENT_WEEKLY_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.FACT_INVENTORY_MOVEMENT_WEEKLY.COLLECTION_ID"
+                ]
+              }
+            }
+          ]
+        },
+        "description": "Hidden collection key used to join inventory movement rows to the Collection dimension.",
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
+      },
+      {
+        "name": "Opening On Hand Units",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "FACT_INVENTORY_MOVEMENT_WEEKLY_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.FACT_INVENTORY_MOVEMENT_WEEKLY.OPENING_ON_HAND_UNITS"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        },
+        "description": "Physical stock on hand at the start of the store-SKU-week. Use it as the starting balance for inventory-flow analysis."
+      },
+      {
+        "name": "Replenishment Units",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "FACT_INVENTORY_MOVEMENT_WEEKLY_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.FACT_INVENTORY_MOVEMENT_WEEKLY.REPLENISHMENT_UNITS"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        },
+        "description": "Units received through normal replenishment during the store-SKU-week. These units increase available supply before fulfilled sales are deducted."
+      },
+      {
+        "name": "Transfer In Units",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "FACT_INVENTORY_MOVEMENT_WEEKLY_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.FACT_INVENTORY_MOVEMENT_WEEKLY.TRANSFER_IN_UNITS"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        },
+        "description": "Units moved into the store during the store-SKU-week, typically from another store or source. Use it to analyze transfer actions separately from standard replenishment."
+      },
+      {
+        "name": "Transfer Out Units",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "FACT_INVENTORY_MOVEMENT_WEEKLY_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.FACT_INVENTORY_MOVEMENT_WEEKLY.TRANSFER_OUT_UNITS"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        },
+        "description": "Units moved out of the store during the store-SKU-week. These units reduce the stock available to fulfill local demand."
+      },
+      {
+        "name": "Estimated Demand Units",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "FACT_INVENTORY_MOVEMENT_WEEKLY_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.FACT_INVENTORY_MOVEMENT_WEEKLY.DEMAND_UNITS"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        },
+        "description": "Estimated unconstrained customer demand for the store-SKU-week, equal to fulfilled units sold plus estimated lost sales units. This is modeled demand, not a directly observed POS count."
+      },
+      {
+        "name": "Fulfilled Units Sold",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "FACT_INVENTORY_MOVEMENT_WEEKLY_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.FACT_INVENTORY_MOVEMENT_WEEKLY.UNITS_SOLD"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        },
+        "description": "Units actually sold and fulfilled from available supply during the store-SKU-week. This reconciles to core sales quantity at the same grain."
+      },
+      {
+        "name": "Estimated Lost Sales Units",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "FACT_INVENTORY_MOVEMENT_WEEKLY_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.FACT_INVENTORY_MOVEMENT_WEEKLY.LOST_SALES_UNITS"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        },
+        "description": "Estimated demand that could not be fulfilled because stock was exhausted. Positive values indicate missed demand, not observed sales."
+      },
+      {
+        "name": "Ending On Hand Units",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "FACT_INVENTORY_MOVEMENT_WEEKLY_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.FACT_INVENTORY_MOVEMENT_WEEKLY.ENDING_ON_HAND_UNITS"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        },
+        "description": "Physical stock on hand at the end of the store-SKU-week after replenishment, transfers, and fulfilled sales."
+      },
+      {
+        "name": "Ending Available Units",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "FACT_INVENTORY_MOVEMENT_WEEKLY_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.FACT_INVENTORY_MOVEMENT_WEEKLY.ENDING_AVAILABLE_UNITS"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        },
+        "description": "Sellable units available at the end of the store-SKU-week after reservations or unavailable stock are excluded."
+      },
+      {
+        "name": "Scenario Tag",
+        "dataType": "VARCHAR",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [
+            {
+              "logicalTableSource": "FACT_INVENTORY_MOVEMENT_WEEKLY_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.FACT_INVENTORY_MOVEMENT_WEEKLY.SCENARIO_TAG"
+                ]
+              }
+            }
+          ]
+        },
+        "description": "Internal data-generation scenario marker; hidden from business-facing analysis.",
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
+      },
+      {
+        "name": "Fulfilled Demand Percent",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "expressionTemplate": "CASE WHEN %1 = 0 THEN 0 ELSE %2 / %1 * 100 END",
+            "expressionObjects": [
+              "logicalColumn:Fashion Retail DW.Inventory Movement KPIs.Estimated Demand Units",
+              "logicalColumn:Fashion Retail DW.Inventory Movement KPIs.Fulfilled Units Sold"
+            ]
+          }
+        },
+        "description": "Percentage of estimated demand that was fulfilled. Use it to quantify how much demand was served when supply was constrained."
+      },
+      {
+        "name": "Estimated Lost Sales Rate Percent",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "expressionTemplate": "CASE WHEN %1 = 0 THEN 0 ELSE %2 / %1 * 100 END",
+            "expressionObjects": [
+              "logicalColumn:Fashion Retail DW.Inventory Movement KPIs.Estimated Demand Units",
+              "logicalColumn:Fashion Retail DW.Inventory Movement KPIs.Estimated Lost Sales Units"
+            ]
+          }
+        },
+        "description": "Estimated lost sales as a percentage of estimated demand. Use it to rank stockout severity independently from fulfilled sales volume."
+      },
+      {
+        "name": "Supply Units",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "expressionTemplate": "%1 + %2 + %3 - %4",
+            "expressionObjects": [
+              "logicalColumn:Fashion Retail DW.Inventory Movement KPIs.Opening On Hand Units",
+              "logicalColumn:Fashion Retail DW.Inventory Movement KPIs.Replenishment Units",
+              "logicalColumn:Fashion Retail DW.Inventory Movement KPIs.Transfer In Units",
+              "logicalColumn:Fashion Retail DW.Inventory Movement KPIs.Transfer Out Units"
+            ]
+          }
+        },
+        "description": "Opening stock plus inbound supply less transfer-out units. This is the supply available before fulfilled sales are deducted."
+      },
+      {
+        "name": "Net Inventory Change Units",
+        "dataType": "DOUBLE",
+        "writeable": false,
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "expressionTemplate": "%1 - %2",
+            "expressionObjects": [
+              "logicalColumn:Fashion Retail DW.Inventory Movement KPIs.Ending On Hand Units",
+              "logicalColumn:Fashion Retail DW.Inventory Movement KPIs.Opening On Hand Units"
+            ]
+          }
+        },
+        "description": "Change in physical on-hand units from the beginning to the end of the week. Negative values show depletion; positive values show inventory build-up."
+      }
+    ],
+    "logicalTableSources": [
+      {
+        "name": "FACT_INVENTORY_MOVEMENT_WEEKLY_LTS",
+        "disable": false,
+        "tableMapping": {
+          "tables": [
+            "physicalTable:FashionDW.CAT_FASHIONDW.FASHIONDW.FACT_INVENTORY_MOVEMENT_WEEKLY"
+          ]
+        },
+        "combineWithOtherFragments": false,
+        "enableFragmentSelection": false,
+        "distinctValues": false
+      }
+    ],
+    "joins": [
+      {
+        "rightTable": "logicalTable:Fashion Retail DW.Date",
+        "joinType": "INNER",
+        "cardinality": "MANY_TO_ZERO_OR_ONE"
+      },
+      {
+        "rightTable": "logicalTable:Fashion Retail DW.Store",
+        "joinType": "INNER",
+        "cardinality": "MANY_TO_ZERO_OR_ONE"
+      },
+      {
+        "rightTable": "logicalTable:Fashion Retail DW.Product",
+        "joinType": "INNER",
+        "cardinality": "MANY_TO_ZERO_OR_ONE"
+      },
+      {
+        "rightTable": "logicalTable:Fashion Retail DW.Collection",
+        "joinType": "INNER",
+        "cardinality": "MANY_TO_ZERO_OR_ONE"
+      }
+    ]
+  }
+}

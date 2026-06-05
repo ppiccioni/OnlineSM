@@ -1,96 +1,114 @@
 {
   "presentationTable": {
-    "name": "Product",
+    "name": "Dimensions - Product",
     "presentationColumns": [
       {
         "name": "SKU Code",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product.SKU Code",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Business-facing SKU code. Use it to identify the exact sellable product variant."
       },
       {
         "name": "Style Code",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product.Style Code",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Style-level code grouping related SKU variants such as sizes or colors."
       },
       {
         "name": "Product Name",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product.Product Name",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Readable product name for the SKU."
       },
       {
         "name": "Style Description",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product.Style Description",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Short description of the style family. Use it when SKU-level names are too granular."
       },
       {
         "name": "Department",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product.Department",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Top-level product department, such as Womenswear or Accessories."
       },
       {
         "name": "Category",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product.Category",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Product category within the department, such as Bags, Dresses, or Sneakers."
       },
       {
         "name": "Subcategory",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product.Subcategory",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "More detailed product grouping within the category."
       },
       {
         "name": "Brand",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product.Brand",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Brand or house label associated with the product."
       },
       {
         "name": "Color Family",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product.Color Family",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Color family for the SKU, useful for assortment and trend analysis."
       },
       {
         "name": "Size Code",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product.Size Code",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Size variant for the SKU."
       },
       {
         "name": "Fit",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product.Fit",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Fit classification for apparel or footwear products."
       },
       {
         "name": "Fabric",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product.Fabric",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Primary fabric or material classification."
       },
       {
         "name": "Price Tier",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product.Price Tier",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Commercial price tier, useful for comparing entry, premium, and luxury behavior."
       },
       {
         "name": "List Price",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product.List Price",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Standard list price before discounts or markdowns."
       },
       {
         "name": "Standard Cost",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product.Standard Cost",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Standard product cost used for margin and inventory value calculations."
       },
       {
         "name": "Trend Tag",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product.Trend Tag",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Trend or style signal associated with the product, useful for merchandising analysis."
       },
       {
         "name": "Sustainability Flag",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product.Sustainability Flag",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Flags SKUs positioned as sustainable or using sustainability-related attributes."
       },
       {
         "name": "Carryover Flag",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product.Carryover Flag",
-        "useLogicalColumnName": true
+        "useLogicalColumnName": true,
+        "description": "Flags products carried over from a previous season rather than newly introduced."
       }
     ],
     "hierarchies": [
@@ -106,30 +124,31 @@
           {
             "name": "Department",
             "sourceLogicalLevel": "logicalLevel:Fashion Retail DW.Product.Department",
-            "displayColumn": "presentationColumn:Fashion Retail Analytics.Product.Department"
+            "displayColumn": "presentationColumn:Fashion Retail Analytics.Dimensions - Product.Department"
           },
           {
             "name": "Category",
             "sourceLogicalLevel": "logicalLevel:Fashion Retail DW.Product.Category",
-            "displayColumn": "presentationColumn:Fashion Retail Analytics.Product.Category"
+            "displayColumn": "presentationColumn:Fashion Retail Analytics.Dimensions - Product.Category"
           },
           {
             "name": "Subcategory",
             "sourceLogicalLevel": "logicalLevel:Fashion Retail DW.Product.Subcategory",
-            "displayColumn": "presentationColumn:Fashion Retail Analytics.Product.Subcategory"
+            "displayColumn": "presentationColumn:Fashion Retail Analytics.Dimensions - Product.Subcategory"
           },
           {
             "name": "Style",
             "sourceLogicalLevel": "logicalLevel:Fashion Retail DW.Product.Style",
-            "displayColumn": "presentationColumn:Fashion Retail Analytics.Product.Style Description"
+            "displayColumn": "presentationColumn:Fashion Retail Analytics.Dimensions - Product.Style Description"
           },
           {
             "name": "SKU",
             "sourceLogicalLevel": "logicalLevel:Fashion Retail DW.Product.SKU",
-            "displayColumn": "presentationColumn:Fashion Retail Analytics.Product.SKU Code"
+            "displayColumn": "presentationColumn:Fashion Retail Analytics.Dimensions - Product.SKU Code"
           }
         ]
       }
-    ]
+    ],
+    "description": "Core product and SKU dimension used for style, category, assortment, price, and product attribute analysis."
   }
 }

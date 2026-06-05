@@ -21,7 +21,8 @@
               }
             }
           ]
-        }
+        },
+        "description": "Week represented by the base inventory snapshot. Include it when analyzing inventory history or validating latest-known inventory status."
       },
       {
         "name": "Date Key",
@@ -100,7 +101,7 @@
         }
       },
       {
-        "name": "On Hand Units",
+        "name": "Snapshot On Hand Units",
         "dataType": "DOUBLE",
         "writeable": false,
         "logicalColumnSource": {
@@ -120,10 +121,10 @@
         "aggregation": {
           "rule": "SUM"
         },
-        "description": "Physical stock on hand at store-SKU-week grain. Use this for operational inventory reporting; when looking at exception severity, prefer latest or current risk measures instead of averaging across many weeks."
+        "description": "Physical stock on hand in the weekly inventory snapshot at store-SKU-week grain. Use it for point-in-time operational inventory reporting; use Inventory Movement KPIs for opening-to-ending flow analysis."
       },
       {
-        "name": "Available Units",
+        "name": "Snapshot Available Units",
         "dataType": "DOUBLE",
         "writeable": false,
         "logicalColumnSource": {
@@ -143,10 +144,10 @@
         "aggregation": {
           "rule": "SUM"
         },
-        "description": "Inventory available for sale after reservations and unavailable stock. Use this to understand sellable inventory; pair it with stockout counts or current risk scores for availability analysis."
+        "description": "Sellable units in the weekly inventory snapshot after reservations or unavailable stock are excluded. Use it for point-in-time availability reporting."
       },
       {
-        "name": "Reserved Units",
+        "name": "Snapshot Reserved Units",
         "dataType": "DOUBLE",
         "writeable": false,
         "logicalColumnSource": {
@@ -166,7 +167,7 @@
         "aggregation": {
           "rule": "SUM"
         },
-        "description": "Units reserved and not immediately available for sale."
+        "description": "Reserved units in the weekly inventory snapshot that are physically on hand but not immediately sellable."
       },
       {
         "name": "Raw Store-SKU On Hand Units",
@@ -286,7 +287,7 @@
         }
       },
       {
-        "name": "Stockout Count",
+        "name": "Snapshot Stockout Count",
         "dataType": "DOUBLE",
         "writeable": false,
         "logicalColumnSource": {
@@ -306,10 +307,10 @@
         "aggregation": {
           "rule": "SUM"
         },
-        "description": "Count of weekly store-SKU snapshots flagged as stockout. This is an operational stockout count, not an AI alert count; AI alert cases apply stricter demand and risk criteria."
+        "description": "Count of weekly store-SKU snapshots flagged as stockout. This is an operational snapshot count, not an AI alert count."
       },
       {
-        "name": "Inventory Value At Cost",
+        "name": "Snapshot Inventory Value At Cost",
         "dataType": "DOUBLE",
         "writeable": false,
         "logicalColumnSource": {
@@ -329,10 +330,10 @@
         "aggregation": {
           "rule": "SUM"
         },
-        "description": "Inventory value calculated using standard product cost."
+        "description": "Inventory value at standard cost for the weekly inventory snapshot."
       },
       {
-        "name": "Average Weeks Of Supply",
+        "name": "Average Snapshot Weeks Of Supply",
         "dataType": "DOUBLE",
         "writeable": false,
         "logicalColumnSource": {
@@ -352,7 +353,7 @@
         "aggregation": {
           "rule": "AVG"
         },
-        "description": "Average estimated weeks of supply based on stock and demand."
+        "description": "Average estimated weeks of supply across weekly inventory snapshots in the selected context."
       },
       {
         "name": "Average Store-SKU Overstock Risk Index",
@@ -496,7 +497,7 @@
         }
       },
       {
-        "name": "Available Unit Share",
+        "name": "Snapshot Available Unit Share",
         "dataType": "DOUBLE",
         "writeable": false,
         "logicalColumnSource": {
@@ -504,12 +505,12 @@
           "logicalExpression": {
             "expressionTemplate": "CASE WHEN %2 = 0 THEN 0 ELSE %1 / %2 * 100 END",
             "expressionObjects": [
-              "logicalColumn:Fashion Retail DW.Inventory KPIs.Available Units",
-              "logicalColumn:Fashion Retail DW.Inventory KPIs.On Hand Units"
+              "logicalColumn:Fashion Retail DW.Inventory KPIs.Snapshot Available Units",
+              "logicalColumn:Fashion Retail DW.Inventory KPIs.Snapshot On Hand Units"
             ]
           }
         },
-        "description": "Available units as a percentage of on-hand units."
+        "description": "Snapshot available units as a percentage of snapshot on-hand units."
       }
     ],
     "logicalTableSources": [

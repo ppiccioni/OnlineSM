@@ -1,0 +1,137 @@
+{
+  "presentationTable": {
+    "name": "Base Warehouse - Inventory Movement KPIs",
+    "description": "Base warehouse inventory movement ledger at Store + SKU + Week grain. Use this folder for operational stock-flow analysis: opening stock, replenishment, transfers, fulfilled sales, estimated demand, estimated lost sales, and ending stock.",
+    "presentationColumns": [
+      {
+        "name": "Movement Week Start Date",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Inventory Movement KPIs.Movement Week Start Date",
+        "useLogicalColumnName": true,
+        "description": "Week represented by the inventory movement ledger row. Use it with Store and SKU to review stock flow over time."
+      },
+      {
+        "name": "Date Key",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Inventory Movement KPIs.Date Key",
+        "useLogicalColumnName": true,
+        "description": "Hidden date key used to join inventory movement rows to the Date dimension.",
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
+      },
+      {
+        "name": "Store ID",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Inventory Movement KPIs.Store ID",
+        "useLogicalColumnName": true,
+        "description": "Hidden store key used to join inventory movement rows to the Store dimension.",
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
+      },
+      {
+        "name": "SKU ID",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Inventory Movement KPIs.SKU ID",
+        "useLogicalColumnName": true,
+        "description": "Hidden SKU key used to join inventory movement rows to the Product dimension.",
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
+      },
+      {
+        "name": "Collection ID",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Inventory Movement KPIs.Collection ID",
+        "useLogicalColumnName": true,
+        "description": "Hidden collection key used to join inventory movement rows to the Collection dimension.",
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
+      },
+      {
+        "name": "Opening On Hand Units",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Inventory Movement KPIs.Opening On Hand Units",
+        "useLogicalColumnName": true,
+        "description": "Physical stock on hand at the start of the store-SKU-week. Use it as the starting balance for inventory-flow analysis."
+      },
+      {
+        "name": "Replenishment Units",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Inventory Movement KPIs.Replenishment Units",
+        "useLogicalColumnName": true,
+        "description": "Units received through normal replenishment during the store-SKU-week. These units increase available supply before fulfilled sales are deducted."
+      },
+      {
+        "name": "Transfer In Units",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Inventory Movement KPIs.Transfer In Units",
+        "useLogicalColumnName": true,
+        "description": "Units moved into the store during the store-SKU-week, typically from another store or source. Use it to analyze transfer actions separately from standard replenishment."
+      },
+      {
+        "name": "Transfer Out Units",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Inventory Movement KPIs.Transfer Out Units",
+        "useLogicalColumnName": true,
+        "description": "Units moved out of the store during the store-SKU-week. These units reduce the stock available to fulfill local demand."
+      },
+      {
+        "name": "Estimated Demand Units",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Inventory Movement KPIs.Estimated Demand Units",
+        "useLogicalColumnName": true,
+        "description": "Estimated unconstrained customer demand for the store-SKU-week, equal to fulfilled units sold plus estimated lost sales units. This is modeled demand, not a directly observed POS count."
+      },
+      {
+        "name": "Fulfilled Units Sold",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Inventory Movement KPIs.Fulfilled Units Sold",
+        "useLogicalColumnName": true,
+        "description": "Units actually sold and fulfilled from available supply during the store-SKU-week. This reconciles to core sales quantity at the same grain."
+      },
+      {
+        "name": "Estimated Lost Sales Units",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Inventory Movement KPIs.Estimated Lost Sales Units",
+        "useLogicalColumnName": true,
+        "description": "Estimated demand that could not be fulfilled because stock was exhausted. Positive values indicate missed demand, not observed sales."
+      },
+      {
+        "name": "Ending On Hand Units",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Inventory Movement KPIs.Ending On Hand Units",
+        "useLogicalColumnName": true,
+        "description": "Physical stock on hand at the end of the store-SKU-week after replenishment, transfers, and fulfilled sales."
+      },
+      {
+        "name": "Ending Available Units",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Inventory Movement KPIs.Ending Available Units",
+        "useLogicalColumnName": true,
+        "description": "Sellable units available at the end of the store-SKU-week after reservations or unavailable stock are excluded."
+      },
+      {
+        "name": "Scenario Tag",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Inventory Movement KPIs.Scenario Tag",
+        "useLogicalColumnName": true,
+        "description": "Internal data-generation scenario marker; hidden from business-facing analysis.",
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
+      },
+      {
+        "name": "Fulfilled Demand Percent",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Inventory Movement KPIs.Fulfilled Demand Percent",
+        "useLogicalColumnName": true,
+        "description": "Percentage of estimated demand that was fulfilled. Use it to quantify how much demand was served when supply was constrained."
+      },
+      {
+        "name": "Estimated Lost Sales Rate Percent",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Inventory Movement KPIs.Estimated Lost Sales Rate Percent",
+        "useLogicalColumnName": true,
+        "description": "Estimated lost sales as a percentage of estimated demand. Use it to rank stockout severity independently from fulfilled sales volume."
+      },
+      {
+        "name": "Supply Units",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Inventory Movement KPIs.Supply Units",
+        "useLogicalColumnName": true,
+        "description": "Opening stock plus inbound supply less transfer-out units. This is the supply available before fulfilled sales are deducted."
+      },
+      {
+        "name": "Net Inventory Change Units",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Inventory Movement KPIs.Net Inventory Change Units",
+        "useLogicalColumnName": true,
+        "description": "Change in physical on-hand units from the beginning to the end of the week. Negative values show depletion; positive values show inventory build-up."
+      }
+    ]
+  }
+}

@@ -1,6 +1,6 @@
 {
   "presentationTable": {
-    "name": "Store Traffic KPIs",
+    "name": "Base Warehouse - Store Traffic KPIs",
     "presentationColumns": [
       {
         "name": "Date Key",
@@ -63,6 +63,7 @@
         "useLogicalColumnName": true,
         "description": "Count of days flagged as affected by local events."
       }
-    ]
+    ],
+    "description": "Base warehouse daily store traffic measures from FASHIONDW.FACT_STORE_TRAFFIC_DAILY. Use this for visits, conversion, traffic, and service-level analysis."
   }
 }

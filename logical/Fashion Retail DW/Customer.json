@@ -44,7 +44,8 @@
             }
           ]
         },
-        "logicalLevel": "Detail"
+        "logicalLevel": "Detail",
+        "description": "Business-facing customer identifier for customer-level analysis."
       },
       {
         "name": "Home Country",
@@ -64,7 +65,8 @@
             }
           ]
         },
-        "logicalLevel": "Country"
+        "logicalLevel": "Country",
+        "description": "Customer home country used for geographic and market analysis."
       },
       {
         "name": "Age Band",
@@ -84,7 +86,8 @@
             }
           ]
         },
-        "logicalLevel": "Segment"
+        "logicalLevel": "Segment",
+        "description": "Customer age range used for demographic segmentation."
       },
       {
         "name": "Gender Affinity",
@@ -104,7 +107,8 @@
             }
           ]
         },
-        "logicalLevel": "Segment"
+        "logicalLevel": "Segment",
+        "description": "Fashion affinity segment used for customer analysis; not a legal or identity attribute."
       },
       {
         "name": "Loyalty Tier",
@@ -124,7 +128,8 @@
             }
           ]
         },
-        "logicalLevel": "Segment"
+        "logicalLevel": "Segment",
+        "description": "Customer loyalty tier, useful for comparing behavior across loyalty segments."
       },
       {
         "name": "Acquisition Channel",
@@ -144,7 +149,8 @@
             }
           ]
         },
-        "logicalLevel": "Segment"
+        "logicalLevel": "Segment",
+        "description": "Channel through which the customer was acquired."
       },
       {
         "name": "Signup Date",
@@ -164,7 +170,8 @@
             }
           ]
         },
-        "logicalLevel": "Detail"
+        "logicalLevel": "Detail",
+        "description": "Date when the customer joined or became known to the business."
       },
       {
         "name": "Discount Sensitivity",
@@ -184,7 +191,8 @@
             }
           ]
         },
-        "logicalLevel": "Detail"
+        "logicalLevel": "Detail",
+        "description": "Relative indicator of how responsive the customer is to discounts and promotions."
       },
       {
         "name": "Style Affinity",
@@ -204,7 +212,8 @@
             }
           ]
         },
-        "logicalLevel": "Segment"
+        "logicalLevel": "Segment",
+        "description": "Primary style preference segment inferred for the customer."
       },
       {
         "name": "Is Active",
@@ -224,7 +233,8 @@
             }
           ]
         },
-        "logicalLevel": "Detail"
+        "logicalLevel": "Detail",
+        "description": "Flags customers considered active in the synthetic customer base."
       }
     ],
     "logicalTableSources": [

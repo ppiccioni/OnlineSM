@@ -40,7 +40,8 @@
               }
             }
           ]
-        }
+        },
+        "description": "Sales transaction identifier from the base sales fact. Use it for transaction-level detail or distinct transaction counts; it is not intended as an aggregate KPI."
       },
       {
         "name": "Date Key",

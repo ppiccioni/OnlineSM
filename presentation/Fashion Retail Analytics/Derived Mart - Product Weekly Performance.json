@@ -1,6 +1,6 @@
 {
   "presentationTable": {
-    "name": "Product Weekly Performance",
+    "name": "Derived Mart - Product Weekly Performance",
     "presentationColumns": [
       {
         "name": "Week Start Date",
@@ -114,22 +114,22 @@
         "description": "Refund amount associated with returned product-week units."
       },
       {
-        "name": "On Hand Units",
-        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.On Hand Units",
+        "name": "Product-Week On Hand Units",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Product-Week On Hand Units",
         "useLogicalColumnName": true,
-        "description": "Inventory on hand aggregated into product-week grain. Use this as context for weekly product performance; use Inventory KPIs for operational store-SKU inventory reporting."
+        "description": "On-hand inventory aggregated into product-week grain. Use this as product trend context; use base inventory snapshot or movement folders for operational store-SKU inventory analysis."
       },
       {
-        "name": "Available Units",
-        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Available Units",
+        "name": "Product-Week Available Units",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Product-Week Available Units",
         "useLogicalColumnName": true,
         "description": "Available inventory aggregated into product-week grain. Use this beside weekly sell-through and demand indices to explain product trend behavior."
       },
       {
-        "name": "Reserved Units",
-        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Reserved Units",
+        "name": "Product-Week Reserved Units",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Product-Week Reserved Units",
         "useLogicalColumnName": true,
-        "description": "Reserved inventory aggregated into the product-week mart."
+        "description": "Reserved inventory aggregated into product-week grain."
       },
       {
         "name": "Stockout Store Count",
@@ -290,6 +290,7 @@
           "expressionTemplate": "1 = 1"
         }
       }
-    ]
+    ],
+    "description": "Notebook-derived product weekly performance mart. Use this for curated product trend, sell-through, return, demand-index, and risk features at product-week grain."
   }
 }

@@ -384,7 +384,7 @@
         "description": "Refund amount associated with returned product-week units."
       },
       {
-        "name": "On Hand Units",
+        "name": "Product-Week On Hand Units",
         "dataType": "DOUBLE",
         "writeable": false,
         "logicalColumnSource": {
@@ -404,10 +404,10 @@
         "aggregation": {
           "rule": "SUM"
         },
-        "description": "Inventory on hand aggregated into product-week grain. Use this as context for weekly product performance; use Inventory KPIs for operational store-SKU inventory reporting."
+        "description": "On-hand inventory aggregated into product-week grain. Use this as product trend context; use base inventory snapshot or movement folders for operational store-SKU inventory analysis."
       },
       {
-        "name": "Available Units",
+        "name": "Product-Week Available Units",
         "dataType": "DOUBLE",
         "writeable": false,
         "logicalColumnSource": {
@@ -430,7 +430,7 @@
         "description": "Available inventory aggregated into product-week grain. Use this beside weekly sell-through and demand indices to explain product trend behavior."
       },
       {
-        "name": "Reserved Units",
+        "name": "Product-Week Reserved Units",
         "dataType": "DOUBLE",
         "writeable": false,
         "logicalColumnSource": {
@@ -450,7 +450,7 @@
         "aggregation": {
           "rule": "SUM"
         },
-        "description": "Reserved inventory aggregated into the product-week mart."
+        "description": "Reserved inventory aggregated into product-week grain."
       },
       {
         "name": "Stockout Store Count",
@@ -648,7 +648,7 @@
             "expressionTemplate": "CASE WHEN (%1 + %2) = 0 THEN 0 ELSE %1 / (%1 + %2) * 100 END",
             "expressionObjects": [
               "logicalColumn:Fashion Retail DW.Product Weekly Performance.Full Price Units",
-              "logicalColumn:Fashion Retail DW.Product Weekly Performance.On Hand Units"
+              "logicalColumn:Fashion Retail DW.Product Weekly Performance.Product-Week On Hand Units"
             ]
           }
         },
@@ -680,7 +680,7 @@
             "expressionTemplate": "CASE WHEN (%1 + %2) = 0 THEN 0 ELSE %1 / (%1 + %2) * 100 END",
             "expressionObjects": [
               "logicalColumn:Fashion Retail DW.Product Weekly Performance.Units Sold",
-              "logicalColumn:Fashion Retail DW.Product Weekly Performance.On Hand Units"
+              "logicalColumn:Fashion Retail DW.Product Weekly Performance.Product-Week On Hand Units"
             ]
           }
         },

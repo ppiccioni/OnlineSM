@@ -44,7 +44,8 @@
             }
           ]
         },
-        "logicalLevel": "Detail"
+        "logicalLevel": "Detail",
+        "description": "Calendar day represented by the fact row or analysis context. Use it for daily filtering and time-series detail."
       },
       {
         "name": "Day Of Week",
@@ -64,7 +65,8 @@
             }
           ]
         },
-        "logicalLevel": "Detail"
+        "logicalLevel": "Detail",
+        "description": "Name of the day in the week, useful for comparing weekday and weekend retail behavior."
       },
       {
         "name": "Week Start Date",
@@ -84,7 +86,8 @@
             }
           ]
         },
-        "logicalLevel": "Week"
+        "logicalLevel": "Week",
+        "description": "Start date of the retail analysis week. Use it for weekly sales, inventory, and AI signal trend analysis."
       },
       {
         "name": "Month Number",
@@ -104,7 +107,8 @@
             }
           ]
         },
-        "logicalLevel": "Month"
+        "logicalLevel": "Month",
+        "description": "Calendar month number from 1 to 12, useful for sorting month-based views."
       },
       {
         "name": "Month Name",
@@ -124,7 +128,8 @@
             }
           ]
         },
-        "logicalLevel": "Month"
+        "logicalLevel": "Month",
+        "description": "Calendar month name for readable monthly reporting."
       },
       {
         "name": "Quarter Number",
@@ -144,7 +149,8 @@
             }
           ]
         },
-        "logicalLevel": "Quarter"
+        "logicalLevel": "Quarter",
+        "description": "Calendar quarter number, useful for quarterly trend and seasonal comparisons."
       },
       {
         "name": "Calendar Year",
@@ -164,7 +170,8 @@
             }
           ]
         },
-        "logicalLevel": "Year"
+        "logicalLevel": "Year",
+        "description": "Calendar year associated with the date."
       },
       {
         "name": "Fiscal Year",
@@ -184,7 +191,8 @@
             }
           ]
         },
-        "logicalLevel": "Year"
+        "logicalLevel": "Year",
+        "description": "Fiscal year associated with the date, aligned to the FashionDW fiscal calendar."
       },
       {
         "name": "Fiscal Period",
@@ -204,7 +212,8 @@
             }
           ]
         },
-        "logicalLevel": "Month"
+        "logicalLevel": "Month",
+        "description": "Fiscal accounting period associated with the date."
       },
       {
         "name": "Is Weekend",
@@ -224,7 +233,8 @@
             }
           ]
         },
-        "logicalLevel": "Detail"
+        "logicalLevel": "Detail",
+        "description": "Flags Saturday and Sunday dates. Use it to compare weekend and weekday shopping patterns."
       },
       {
         "name": "Is Holiday Peak",
@@ -244,7 +254,8 @@
             }
           ]
         },
-        "logicalLevel": "Detail"
+        "logicalLevel": "Detail",
+        "description": "Flags dates in high-traffic holiday or peak selling periods."
       }
     ],
     "logicalTableSources": [
