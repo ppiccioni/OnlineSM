@@ -6,61 +6,61 @@
         "name": "Customer Code",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Customer.Customer Code",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Business-facing customer identifier for customer-level analysis."
+        "description": "Business-facing customer identifier for customer-level analysis."
       },
       {
         "name": "Home Country",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Customer.Home Country",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Customer home country used for geographic and market analysis."
+        "description": "Customer home country used for geographic and market analysis."
       },
       {
         "name": "Age Band",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Customer.Age Band",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Customer age range used for demographic segmentation."
+        "description": "Customer age range used for demographic segmentation."
       },
       {
         "name": "Gender Affinity",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Customer.Gender Affinity",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Fashion affinity segment used for customer analysis; not a legal or identity attribute."
+        "description": "Fashion affinity segment used for customer analysis; not a legal or identity attribute."
       },
       {
         "name": "Loyalty Tier",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Customer.Loyalty Tier",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Customer loyalty tier, useful for comparing behavior across loyalty segments."
+        "description": "Customer loyalty tier, useful for comparing behavior across loyalty segments."
       },
       {
         "name": "Acquisition Channel",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Customer.Acquisition Channel",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Channel through which the customer was acquired."
+        "description": "Channel through which the customer was acquired."
       },
       {
         "name": "Signup Date",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Customer.Signup Date",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Date when the customer joined or became known to the business."
+        "description": "Date when the customer joined or became known to the business."
       },
       {
         "name": "Discount Sensitivity",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Customer.Discount Sensitivity",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Relative indicator of how responsive the customer is to discounts and promotions."
+        "description": "Relative indicator of how responsive the customer is to discounts and promotions."
       },
       {
         "name": "Style Affinity",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Customer.Style Affinity",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Primary style preference segment inferred for the customer."
+        "description": "Primary style preference segment inferred for the customer."
       },
       {
         "name": "Is Active",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Customer.Is Active",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Flags customers considered active in the synthetic customer base."
+        "description": "Flags customers considered active in the synthetic customer base."
       }
     ],
     "hierarchies": [
@@ -91,6 +91,6 @@
         ]
       }
     ],
-    "description": "Legacy-compatible alias for Dimensions - Customer. Existing OAC analyses can continue to use this folder path; prefer Dimensions - Customer for new content. Core customer dimension for customer segment, loyalty, acquisition, and style-affinity analysis."
+    "description": "Core customer dimension for customer segment, loyalty, acquisition, and style-affinity analysis."
   }
 }

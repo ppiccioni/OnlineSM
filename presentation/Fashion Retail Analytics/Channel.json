@@ -6,27 +6,27 @@
         "name": "Channel Name",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Channel.Channel Name",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Sales channel name, such as Store, E-Commerce, Outlet, or Marketplace."
+        "description": "Sales channel name, such as Store, E-Commerce, Outlet, or Marketplace."
       },
       {
         "name": "Channel Group",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Channel.Channel Group",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Higher-level channel grouping used for reporting and comparison."
+        "description": "Higher-level channel grouping used for reporting and comparison."
       },
       {
         "name": "Return Bias",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Channel.Return Bias",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Relative return tendency associated with the channel. Use it as context for returns analysis."
+        "description": "Relative return tendency associated with the channel. Use it as context for returns analysis."
       },
       {
         "name": "Markdown Bias",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Channel.Markdown Bias",
         "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Relative markdown tendency associated with the channel. Use it as context for discount analysis."
+        "description": "Relative markdown tendency associated with the channel. Use it as context for discount analysis."
       }
     ],
-    "description": "Legacy-compatible alias for Dimensions - Channel. Existing OAC analyses can continue to use this folder path; prefer Dimensions - Channel for new content. Core channel dimension for store, digital, outlet, marketplace, and channel-behavior analysis."
+    "description": "Core channel dimension for store, digital, outlet, marketplace, and channel-behavior analysis."
   }
 }
