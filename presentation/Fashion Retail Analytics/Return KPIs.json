@@ -1,0 +1,122 @@
+{
+  "presentationTable": {
+    "name": "Return KPIs",
+    "presentationColumns": [
+      {
+        "name": "Return ID",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Return KPIs.Return ID",
+        "useLogicalColumnName": false,
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        },
+        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Legacy-compatible field preserved for existing OAC content."
+      },
+      {
+        "name": "Sales Line ID",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Return KPIs.Sales Line ID",
+        "useLogicalColumnName": false,
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        },
+        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Legacy-compatible field preserved for existing OAC content."
+      },
+      {
+        "name": "Return Date Key",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Return KPIs.Return Date Key",
+        "useLogicalColumnName": false,
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        },
+        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Hidden date key used to join return rows to the Date dimension."
+      },
+      {
+        "name": "Store ID",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Return KPIs.Store ID",
+        "useLogicalColumnName": false,
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        },
+        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Legacy-compatible field preserved for existing OAC content."
+      },
+      {
+        "name": "Customer ID",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Return KPIs.Customer ID",
+        "useLogicalColumnName": false,
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        },
+        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Legacy-compatible field preserved for existing OAC content."
+      },
+      {
+        "name": "SKU ID",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Return KPIs.SKU ID",
+        "useLogicalColumnName": false,
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        },
+        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Legacy-compatible field preserved for existing OAC content."
+      },
+      {
+        "name": "Channel ID",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Return KPIs.Channel ID",
+        "useLogicalColumnName": false,
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        },
+        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Legacy-compatible field preserved for existing OAC content."
+      },
+      {
+        "name": "Return Reason",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Return KPIs.Return Reason",
+        "useLogicalColumnName": false,
+        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Reason captured for the returned item, such as fit issue, size mismatch, quality issue, late delivery, changed mind, or color expectation. Use it to analyze return drivers."
+      },
+      {
+        "name": "Returned Units",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Return KPIs.Returned Units",
+        "useLogicalColumnName": false,
+        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Total units returned by customers in the selected context."
+      },
+      {
+        "name": "Refund Amount",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Return KPIs.Refund Amount",
+        "useLogicalColumnName": false,
+        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Total refunded value associated with returned sales lines."
+      },
+      {
+        "name": "Average Days To Return",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Return KPIs.Average Days To Return",
+        "useLogicalColumnName": false,
+        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Average number of days between original sale and return."
+      },
+      {
+        "name": "Scenario Tag",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Return KPIs.Scenario Tag",
+        "useLogicalColumnName": false,
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        },
+        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Legacy-compatible field preserved for existing OAC content."
+      },
+      {
+        "name": "Return Line Count",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Return KPIs.Return Line Count",
+        "useLogicalColumnName": false,
+        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Number of return records or returned sales lines."
+      },
+      {
+        "name": "Average Refund Amount",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Return KPIs.Average Refund Amount",
+        "useLogicalColumnName": false,
+        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Refund amount divided by return line count."
+      },
+      {
+        "name": "Returned Units Per Return",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Return KPIs.Returned Units Per Return",
+        "useLogicalColumnName": false,
+        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Average number of returned units per return record."
+      }
+    ],
+    "description": "Legacy-compatible alias for Base Warehouse - Return KPIs. Existing OAC analyses can continue to use this folder path; prefer Base Warehouse - Return KPIs for new content. Base warehouse return measures from FASHIONDW.FACT_RETURNS. Use this for observed returns, refund, and return-reason analysis."
+  }
+}

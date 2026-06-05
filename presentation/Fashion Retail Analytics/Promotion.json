@@ -1,0 +1,44 @@
+{
+  "presentationTable": {
+    "name": "Promotion",
+    "presentationColumns": [
+      {
+        "name": "Promotion Code",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Promotion.Promotion Code",
+        "useLogicalColumnName": false,
+        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Business-facing promotion code associated with the sales line."
+      },
+      {
+        "name": "Promotion Name",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Promotion.Promotion Name",
+        "useLogicalColumnName": false,
+        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Readable promotion name."
+      },
+      {
+        "name": "Promotion Type",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Promotion.Promotion Type",
+        "useLogicalColumnName": false,
+        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Type of promotion, such as markdown, loyalty, clearance, campaign, or no promotion."
+      },
+      {
+        "name": "Markdown Depth Pct",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Promotion.Markdown Depth Pct",
+        "useLogicalColumnName": false,
+        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Planned markdown or discount depth percentage for the promotion."
+      },
+      {
+        "name": "Campaign Family",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Promotion.Campaign Family",
+        "useLogicalColumnName": false,
+        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Campaign or promotional family used to group related promotion mechanics."
+      },
+      {
+        "name": "Is Clearance",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Promotion.Is Clearance",
+        "useLogicalColumnName": false,
+        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Flags promotions used for clearance or end-of-season activity."
+      }
+    ],
+    "description": "Legacy-compatible alias for Dimensions - Promotion. Existing OAC analyses can continue to use this folder path; prefer Dimensions - Promotion for new content. Core promotion dimension for markdown, campaign, clearance, and full-price selling analysis."
+  }
+}

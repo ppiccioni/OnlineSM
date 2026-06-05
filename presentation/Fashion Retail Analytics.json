@@ -50,6 +50,51 @@
       },
       {
         "name": "presentationTable:Fashion Retail Analytics.AI Insights - Product AI Cluster Labels"
+      },
+      {
+        "name": "presentationTable:Fashion Retail Analytics.Sales KPIs"
+      },
+      {
+        "name": "presentationTable:Fashion Retail Analytics.Return KPIs"
+      },
+      {
+        "name": "presentationTable:Fashion Retail Analytics.Inventory KPIs"
+      },
+      {
+        "name": "presentationTable:Fashion Retail Analytics.Store Traffic KPIs"
+      },
+      {
+        "name": "presentationTable:Fashion Retail Analytics.Collection Health"
+      },
+      {
+        "name": "presentationTable:Fashion Retail Analytics.Product Weekly Performance"
+      },
+      {
+        "name": "presentationTable:Fashion Retail Analytics.Product AI Signals"
+      },
+      {
+        "name": "presentationTable:Fashion Retail Analytics.Product AI Cluster Labels"
+      },
+      {
+        "name": "presentationTable:Fashion Retail Analytics.Date"
+      },
+      {
+        "name": "presentationTable:Fashion Retail Analytics.Collection"
+      },
+      {
+        "name": "presentationTable:Fashion Retail Analytics.Product"
+      },
+      {
+        "name": "presentationTable:Fashion Retail Analytics.Store"
+      },
+      {
+        "name": "presentationTable:Fashion Retail Analytics.Customer"
+      },
+      {
+        "name": "presentationTable:Fashion Retail Analytics.Channel"
+      },
+      {
+        "name": "presentationTable:Fashion Retail Analytics.Promotion"
       }
     ],
     "localization": {

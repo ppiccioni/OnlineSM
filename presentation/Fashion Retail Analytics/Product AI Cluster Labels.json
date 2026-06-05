@@ -1,0 +1,185 @@
+{
+  "presentationTable": {
+    "name": "Product AI Cluster Labels",
+    "presentationColumns": [
+      {
+        "name": "Cluster ID",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.Cluster ID",
+        "useLogicalColumnName": false,
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        },
+        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Hidden technical identifier for a behavior cluster produced by the product AI model."
+      },
+      {
+        "name": "Cluster Label",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.Cluster Label",
+        "useLogicalColumnName": false,
+        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Business-facing name for a group of similar product behavior cases."
+      },
+      {
+        "name": "Business Interpretation",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.Business Interpretation",
+        "useLogicalColumnName": false,
+        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Plain-language explanation of what the cluster generally means for merchants, planners, or store teams."
+      },
+      {
+        "name": "Recommended Action",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.Recommended Action",
+        "useLogicalColumnName": false,
+        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Suggested business response for cases belonging to this behavior cluster."
+      },
+      {
+        "name": "Evidence Summary",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.Evidence Summary",
+        "useLogicalColumnName": false,
+        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Summary of the common measured behaviors behind the cluster, such as demand, markdown, returns, or risk."
+      },
+      {
+        "name": "Action Priority",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.Action Priority",
+        "useLogicalColumnName": false,
+        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Priority score assigned to the cluster label and recommended action."
+      },
+      {
+        "name": "Product Week Count",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.Product Week Count",
+        "useLogicalColumnName": false,
+        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Number of AI signal cases represented by the cluster."
+      },
+      {
+        "name": "SKU Count",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.SKU Count",
+        "useLogicalColumnName": false,
+        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Number of distinct SKUs represented in the cluster."
+      },
+      {
+        "name": "Store Count",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.Store Count",
+        "useLogicalColumnName": false,
+        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Number of stores represented in the cluster. This matters because Product AI is now store-aware."
+      },
+      {
+        "name": "Style Count",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.Style Count",
+        "useLogicalColumnName": false,
+        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Number of distinct styles represented in the cluster."
+      },
+      {
+        "name": "Average Full Price Unit Share Percent",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.Average Full Price Unit Share Percent",
+        "useLogicalColumnName": false,
+        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Average full-price unit share among AI signal cases in the cluster. Use it to judge whether the cluster reflects healthy full-price demand or markdown-driven movement."
+      },
+      {
+        "name": "Average Lost Sales Units",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.Average Estimated Lost Sales Units",
+        "useLogicalColumnName": false,
+        "description": "Legacy-compatible alias for Average Estimated Lost Sales Units. Prefer Average Estimated Lost Sales Units in new content. Average estimated lost-sales units among AI signal cases in the cluster. Higher values indicate clusters where missed demand is a common behavior."
+      },
+      {
+        "name": "Average Lost Sales Rate Percent",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.Average Estimated Lost Sales Rate Percent",
+        "useLogicalColumnName": false,
+        "description": "Legacy-compatible alias for Average Estimated Lost Sales Rate Percent. Prefer Average Estimated Lost Sales Rate Percent in new content. Average percentage of estimated demand that became estimated lost sales among AI signal cases in the cluster."
+      },
+      {
+        "name": "Average Inbound Supply Units",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.Average Inbound Supply Units",
+        "useLogicalColumnName": false,
+        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Average replenishment plus transfer-in units among AI signal cases in the cluster. Use it to see whether supply actions are typical for the cluster."
+      },
+      {
+        "name": "Average Cluster Probability",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.Average Cluster Probability",
+        "useLogicalColumnName": false,
+        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Average model confidence for cases assigned to the cluster."
+      },
+      {
+        "name": "Average Units Sold",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.Average Fulfilled Units Sold",
+        "useLogicalColumnName": false,
+        "description": "Legacy-compatible alias for Average Fulfilled Units Sold. Prefer Average Fulfilled Units Sold in new content. Average fulfilled units sold among AI signal cases in the cluster; use it as cluster context, not as the primary enterprise Units Sold KPI."
+      },
+      {
+        "name": "Average Net Sales Amount",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.Average Net Sales Amount",
+        "useLogicalColumnName": false,
+        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Average net sales among AI signal cases in the cluster; use it as cluster context, not as the primary revenue KPI."
+      },
+      {
+        "name": "Average Full Price Sell Through Percent",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.Average Full Price Sell Through Percent",
+        "useLogicalColumnName": false,
+        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Average full-price sell-through among AI signal cases in the cluster, useful for understanding whether demand is profitable and supply-constrained."
+      },
+      {
+        "name": "Average Markdown Percent",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.Average Markdown Percent",
+        "useLogicalColumnName": false,
+        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Average markdown percent for the cluster."
+      },
+      {
+        "name": "Average Return Rate Percent",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.Average Return Rate Percent",
+        "useLogicalColumnName": false,
+        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Average return rate percent for the cluster."
+      },
+      {
+        "name": "Cluster Avg Stockout Risk Score",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.Cluster Avg Stockout Risk Score",
+        "useLogicalColumnName": false,
+        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Average stockout risk among AI signal cases in the cluster. It describes the cluster profile rather than the latest state of one SKU or store."
+      },
+      {
+        "name": "Cluster Avg Overstock Risk Score",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.Cluster Avg Overstock Risk Score",
+        "useLogicalColumnName": false,
+        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Average overstock risk among AI signal cases in the cluster. It describes the cluster profile rather than the latest state of one SKU or store."
+      },
+      {
+        "name": "Average Anomaly Probability",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.Average Anomaly Probability",
+        "useLogicalColumnName": false,
+        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Average anomaly probability for product-week cases in the cluster."
+      },
+      {
+        "name": "Anomaly Row Count",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.Anomaly Row Count",
+        "useLogicalColumnName": false,
+        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Number of anomalous product-week cases represented in the cluster."
+      },
+      {
+        "name": "Modal Department",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.Modal Department",
+        "useLogicalColumnName": false,
+        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Most common department among the AI signal cases assigned to the cluster. It describes the dominant cluster profile, not every case in the cluster."
+      },
+      {
+        "name": "Modal Category",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.Modal Category",
+        "useLogicalColumnName": false,
+        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Most common category among the AI signal cases assigned to the cluster. It describes the dominant cluster profile, not every case in the cluster."
+      },
+      {
+        "name": "Modal Region",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.Modal Region",
+        "useLogicalColumnName": false,
+        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Most common store region among AI signal cases assigned to the cluster. It describes the dominant cluster profile, not every case in the cluster."
+      },
+      {
+        "name": "Modal Price Tier",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.Modal Price Tier",
+        "useLogicalColumnName": false,
+        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Most common price tier among the AI signal cases assigned to the cluster. It describes the dominant cluster profile, not every case in the cluster."
+      },
+      {
+        "name": "Modal Reason Code",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Cluster Labels.Modal Reason Code",
+        "useLogicalColumnName": false,
+        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Most common reason code among the AI signal cases assigned to the cluster. Use it as a quick cluster explanation, not as the reason for every individual case."
+      }
+    ],
+    "description": "Legacy-compatible alias for AI Insights - Product AI Cluster Labels. Existing OAC analyses can continue to use this folder path; prefer AI Insights - Product AI Cluster Labels for new content. Notebook-derived cluster labels and explanations for Product AI signal cases. Use this to understand behavior patterns and common recommended actions."
+  }
+}
