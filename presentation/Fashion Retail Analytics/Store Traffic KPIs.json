@@ -1,0 +1,71 @@
+{
+  "presentationTable": {
+    "name": "Store Traffic KPIs",
+    "presentationColumns": [
+      {
+        "name": "Date Key",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Store Traffic KPIs.Date Key",
+        "useLogicalColumnName": false,
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        },
+        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Legacy-compatible field preserved for existing OAC content."
+      },
+      {
+        "name": "Store ID",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Store Traffic KPIs.Store ID",
+        "useLogicalColumnName": false,
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        },
+        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Legacy-compatible field preserved for existing OAC content."
+      },
+      {
+        "name": "Footfall Count",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Store Traffic KPIs.Footfall Count",
+        "useLogicalColumnName": false,
+        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Total store visits or counted footfall events."
+      },
+      {
+        "name": "Traffic Transaction Count",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Store Traffic KPIs.Traffic Transaction Count",
+        "useLogicalColumnName": false,
+        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Transactions associated with store traffic reporting."
+      },
+      {
+        "name": "Traffic Conversion Rate",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Store Traffic KPIs.Traffic Conversion Rate",
+        "useLogicalColumnName": false,
+        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Transactions as a percentage of store footfall."
+      },
+      {
+        "name": "Conversion Rate Raw",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Store Traffic KPIs.Conversion Rate Raw",
+        "useLogicalColumnName": false,
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        },
+        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Raw conversion-rate input from the store traffic source."
+      },
+      {
+        "name": "Average Dwell Minutes",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Store Traffic KPIs.Average Dwell Minutes",
+        "useLogicalColumnName": false,
+        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Average customer dwell time in store, in minutes."
+      },
+      {
+        "name": "Average Weather Impact Index",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Store Traffic KPIs.Average Weather Impact Index",
+        "useLogicalColumnName": false,
+        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Average weather-related impact score for store traffic."
+      },
+      {
+        "name": "Local Event Day Count",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Store Traffic KPIs.Local Event Day Count",
+        "useLogicalColumnName": false,
+        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Count of days flagged as affected by local events."
+      }
+    ],
+    "description": "Legacy-compatible alias for Base Warehouse - Store Traffic KPIs. Existing OAC analyses can continue to use this folder path; prefer Base Warehouse - Store Traffic KPIs for new content. Base warehouse daily store traffic measures from FASHIONDW.FACT_STORE_TRAFFIC_DAILY. Use this for visits, conversion, traffic, and service-level analysis."
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "presentationTable": {
+    "name": "Date",
+    "presentationColumns": [
+      {
+        "name": "Calendar Date",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Date.Calendar Date",
+        "useLogicalColumnName": false,
+        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Calendar day represented by the fact row or analysis context. Use it for daily filtering and time-series detail."
+      },
+      {
+        "name": "Day Of Week",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Date.Day Of Week",
+        "useLogicalColumnName": false,
+        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Name of the day in the week, useful for comparing weekday and weekend retail behavior."
+      },
+      {
+        "name": "Week Start Date",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Date.Week Start Date",
+        "useLogicalColumnName": false,
+        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Start date of the retail analysis week. Use it for weekly sales, inventory, and AI signal trend analysis."
+      },
+      {
+        "name": "Month Number",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Date.Month Number",
+        "useLogicalColumnName": false,
+        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Calendar month number from 1 to 12, useful for sorting month-based views."
+      },
+      {
+        "name": "Month Name",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Date.Month Name",
+        "useLogicalColumnName": false,
+        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Calendar month name for readable monthly reporting."
+      },
+      {
+        "name": "Quarter Number",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Date.Quarter Number",
+        "useLogicalColumnName": false,
+        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Calendar quarter number, useful for quarterly trend and seasonal comparisons."
+      },
+      {
+        "name": "Calendar Year",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Date.Calendar Year",
+        "useLogicalColumnName": false,
+        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Calendar year associated with the date."
+      },
+      {
+        "name": "Fiscal Year",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Date.Fiscal Year",
+        "useLogicalColumnName": false,
+        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Fiscal year associated with the date, aligned to the FashionDW fiscal calendar."
+      },
+      {
+        "name": "Fiscal Period",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Date.Fiscal Period",
+        "useLogicalColumnName": false,
+        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Fiscal accounting period associated with the date."
+      },
+      {
+        "name": "Is Weekend",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Date.Is Weekend",
+        "useLogicalColumnName": false,
+        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Flags Saturday and Sunday dates. Use it to compare weekend and weekday shopping patterns."
+      },
+      {
+        "name": "Is Holiday Peak",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Date.Is Holiday Peak",
+        "useLogicalColumnName": false,
+        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Flags dates in high-traffic holiday or peak selling periods."
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Calendar",
+        "description": "default hierarchy",
+        "sourceLogicalTable": "logicalTable:Fashion Retail DW.Date",
+        "levels": [
+          {
+            "name": "Total",
+            "sourceLogicalLevel": "logicalLevel:Fashion Retail DW.Date.Total"
+          },
+          {
+            "name": "Year",
+            "sourceLogicalLevel": "logicalLevel:Fashion Retail DW.Date.Year",
+            "displayColumn": "presentationColumn:Fashion Retail Analytics.Date.Calendar Year"
+          },
+          {
+            "name": "Quarter",
+            "sourceLogicalLevel": "logicalLevel:Fashion Retail DW.Date.Quarter",
+            "displayColumn": "presentationColumn:Fashion Retail Analytics.Date.Quarter Number"
+          },
+          {
+            "name": "Month",
+            "sourceLogicalLevel": "logicalLevel:Fashion Retail DW.Date.Month",
+            "displayColumn": "presentationColumn:Fashion Retail Analytics.Date.Month Name"
+          },
+          {
+            "name": "Week",
+            "sourceLogicalLevel": "logicalLevel:Fashion Retail DW.Date.Week",
+            "displayColumn": "presentationColumn:Fashion Retail Analytics.Date.Week Start Date"
+          },
+          {
+            "name": "Detail",
+            "sourceLogicalLevel": "logicalLevel:Fashion Retail DW.Date.Detail",
+            "displayColumn": "presentationColumn:Fashion Retail Analytics.Date.Calendar Date"
+          }
+        ]
+      }
+    ],
+    "description": "Legacy-compatible alias for Dimensions - Date. Existing OAC analyses can continue to use this folder path; prefer Dimensions - Date for new content. Core calendar dimension used by sales, inventory, movement, traffic, marts, and AI signal facts."
+  }
+}

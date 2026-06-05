@@ -1,0 +1,96 @@
+{
+  "presentationTable": {
+    "name": "Collection",
+    "presentationColumns": [
+      {
+        "name": "Collection Name",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection.Collection Name",
+        "useLogicalColumnName": false,
+        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Business-facing collection name, such as an Autumn/Winter or Spring/Summer assortment."
+      },
+      {
+        "name": "Season Code",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection.Season Code",
+        "useLogicalColumnName": false,
+        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Short season code for the collection, such as SS or AW."
+      },
+      {
+        "name": "Season Name",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection.Season Name",
+        "useLogicalColumnName": false,
+        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Readable season name for the collection."
+      },
+      {
+        "name": "Collection Year",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection.Collection Year",
+        "useLogicalColumnName": false,
+        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Year associated with the collection launch and selling lifecycle."
+      },
+      {
+        "name": "Launch Date",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection.Launch Date",
+        "useLogicalColumnName": false,
+        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Planned launch date for the collection."
+      },
+      {
+        "name": "Markdown Start Date",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection.Markdown Start Date",
+        "useLogicalColumnName": false,
+        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Date when planned markdown activity begins for the collection."
+      },
+      {
+        "name": "Clearance Start Date",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection.Clearance Start Date",
+        "useLogicalColumnName": false,
+        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Date when clearance activity begins for the collection."
+      },
+      {
+        "name": "End Date",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection.End Date",
+        "useLogicalColumnName": false,
+        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Planned end date for the collection lifecycle."
+      },
+      {
+        "name": "Primary Weather",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection.Primary Weather",
+        "useLogicalColumnName": false,
+        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Weather or climate context most relevant to the collection assortment."
+      },
+      {
+        "name": "Story",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection.Story",
+        "useLogicalColumnName": false,
+        "description": "Legacy-compatible alias preserved for existing OAC content. Same business meaning as the cleaned folder version. Merchandising narrative or buying theme associated with the collection."
+      }
+    ],
+    "hierarchies": [
+      {
+        "name": "Collection",
+        "description": "default hierarchy",
+        "sourceLogicalTable": "logicalTable:Fashion Retail DW.Collection",
+        "levels": [
+          {
+            "name": "Total",
+            "sourceLogicalLevel": "logicalLevel:Fashion Retail DW.Collection.Total"
+          },
+          {
+            "name": "Year",
+            "sourceLogicalLevel": "logicalLevel:Fashion Retail DW.Collection.Year",
+            "displayColumn": "presentationColumn:Fashion Retail Analytics.Collection.Collection Year"
+          },
+          {
+            "name": "Season",
+            "sourceLogicalLevel": "logicalLevel:Fashion Retail DW.Collection.Season",
+            "displayColumn": "presentationColumn:Fashion Retail Analytics.Collection.Season Name"
+          },
+          {
+            "name": "Detail",
+            "sourceLogicalLevel": "logicalLevel:Fashion Retail DW.Collection.Detail",
+            "displayColumn": "presentationColumn:Fashion Retail Analytics.Collection.Collection Name"
+          }
+        ]
+      }
+    ],
+    "description": "Legacy-compatible alias for Dimensions - Collection. Existing OAC analyses can continue to use this folder path; prefer Dimensions - Collection for new content. Core merchandising collection dimension with launch, markdown, clearance, and seasonal context."
+  }
+}
