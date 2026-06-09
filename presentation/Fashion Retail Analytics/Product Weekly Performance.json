@@ -39,97 +39,145 @@
         "name": "Sales Line Count",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Sales Line Count",
         "useLogicalColumnName": false,
-        "description": "Sales line activity aggregated to product-week grain."
+        "description": "Sales line activity aggregated to product-week grain.",
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
       },
       {
         "name": "Transaction Count",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Transaction Count",
         "useLogicalColumnName": false,
-        "description": "Distinct transaction activity represented in the product-week mart."
+        "description": "Distinct transaction activity represented in the product-week mart.",
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
       },
       {
         "name": "Units Sold",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Units Sold",
         "useLogicalColumnName": false,
-        "description": "Same underlying sales quantity as the core Units Sold KPI, aggregated into the product-week mart. Use this for SKU/week trend analysis, moving averages, sell-through behavior, and product performance diagnostics."
+        "description": "Same underlying sales quantity as the core Units Sold KPI, aggregated into the product-week mart. Use this for SKU/week trend analysis, moving averages, sell-through behavior, and product performance diagnostics.",
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
       },
       {
         "name": "Full Price Units",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Full Price Units",
         "useLogicalColumnName": false,
-        "description": "Units sold at full price for the selected product-week context."
+        "description": "Units sold at full price for the selected product-week context.",
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
       },
       {
         "name": "Full Price Line Count",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Full Price Line Count",
         "useLogicalColumnName": false,
-        "description": "Sales lines sold at full price for the selected product-week context."
+        "description": "Sales lines sold at full price for the selected product-week context.",
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
       },
       {
         "name": "Gross Sales Amount",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Gross Sales Amount",
         "useLogicalColumnName": false,
-        "description": "Product-week sales amount before discounts and markdowns."
+        "description": "Product-week sales amount before discounts and markdowns.",
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
       },
       {
         "name": "Discount Amount",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Discount Amount",
         "useLogicalColumnName": false,
-        "description": "Product-week discount or markdown value."
+        "description": "Product-week discount or markdown value.",
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
       },
       {
         "name": "Net Sales Amount",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Net Sales Amount",
         "useLogicalColumnName": false,
-        "description": "Net sales aggregated into product-week grain. Use this when comparing product weekly performance; use the core Sales KPIs folder for general revenue reporting by customer, channel, or promotion."
+        "description": "Net sales aggregated into product-week grain. Use this when comparing product weekly performance; use the core Sales KPIs folder for general revenue reporting by customer, channel, or promotion.",
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
       },
       {
         "name": "Cost Amount",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Cost Amount",
         "useLogicalColumnName": false,
-        "description": "Product-week standard cost associated with sold units."
+        "description": "Product-week standard cost associated with sold units.",
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
       },
       {
         "name": "Gross Margin Amount",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Gross Margin Amount",
         "useLogicalColumnName": false,
-        "description": "Product-week net sales minus product cost."
+        "description": "Product-week net sales minus product cost.",
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
       },
       {
         "name": "Returned Units",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Returned Units",
         "useLogicalColumnName": false,
-        "description": "Returned units associated with the product-week context."
+        "description": "Returned units associated with the product-week context.",
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
       },
       {
         "name": "Return Line Count",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Return Line Count",
         "useLogicalColumnName": false,
-        "description": "Return lines associated with the product-week context."
+        "description": "Return lines associated with the product-week context.",
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
       },
       {
         "name": "Refund Amount",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Refund Amount",
         "useLogicalColumnName": false,
-        "description": "Refund amount associated with returned product-week units."
+        "description": "Refund amount associated with returned product-week units.",
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
       },
       {
         "name": "On Hand Units",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Product-Week On Hand Units",
         "useLogicalColumnName": false,
-        "description": "On-hand inventory aggregated into product-week grain. Use this as product trend context; use base inventory snapshot or movement folders for operational store-SKU inventory analysis."
+        "description": "On-hand inventory aggregated into product-week grain. Use this as product trend context; use base inventory snapshot or movement folders for operational store-SKU inventory analysis.",
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
       },
       {
         "name": "Available Units",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Product-Week Available Units",
         "useLogicalColumnName": false,
-        "description": "Available inventory aggregated into product-week grain. Use this beside weekly sell-through and demand indices to explain product trend behavior."
+        "description": "Available inventory aggregated into product-week grain. Use this beside weekly sell-through and demand indices to explain product trend behavior.",
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
       },
       {
         "name": "Reserved Units",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Product-Week Reserved Units",
         "useLogicalColumnName": false,
-        "description": "Reserved inventory aggregated into product-week grain."
+        "description": "Reserved inventory aggregated into product-week grain.",
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
       },
       {
         "name": "Stockout Store Count",
@@ -147,7 +195,10 @@
         "name": "Inventory Value At Cost",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Inventory Value At Cost",
         "useLogicalColumnName": false,
-        "description": "Product-week inventory value calculated at standard cost."
+        "description": "Product-week inventory value calculated at standard cost.",
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
       },
       {
         "name": "Average Weeks Of Supply",
@@ -255,13 +306,19 @@
         "name": "Stockout Risk Score",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Stockout Risk Score",
         "useLogicalColumnName": false,
-        "description": "Average product-week stockout risk across the selected context. Useful for trend context, but for exception severity prefer current, latest, or peak risk measures where available."
+        "description": "Average product-week stockout risk across the selected context. Useful for trend context, but for exception severity prefer current, latest, or peak risk measures where available.",
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
       },
       {
         "name": "Overstock Risk Score",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product Weekly Performance.Overstock Risk Score",
         "useLogicalColumnName": false,
-        "description": "Average product-week overstock risk across the selected context. Useful for trend context, but for exception severity prefer current, latest, or peak risk measures where available."
+        "description": "Average product-week overstock risk across the selected context. Useful for trend context, but for exception severity prefer current, latest, or peak risk measures where available.",
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
       },
       {
         "name": "Current Product Stockout Risk Score",
