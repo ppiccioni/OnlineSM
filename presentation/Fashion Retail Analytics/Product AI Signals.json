@@ -150,13 +150,19 @@
         "name": "Latest Stockout Risk Score",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Latest Stockout Risk Score",
         "useLogicalColumnName": false,
-        "description": "Highest stockout risk score in the latest week available for the selected AI cases. Use this when the current state matters more than historical average risk."
+        "description": "Highest stockout risk score in the latest week available for the selected AI cases. Use this when the current state matters more than historical average risk.",
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
       },
       {
         "name": "Latest Overstock Risk Score",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Latest Overstock Risk Score",
         "useLogicalColumnName": false,
-        "description": "Highest overstock risk score in the latest week available for the selected AI cases. Use this when the current state matters more than historical average risk."
+        "description": "Highest overstock risk score in the latest week available for the selected AI cases. Use this when the current state matters more than historical average risk.",
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
       },
       {
         "name": "Peak Stockout Risk Score",
@@ -180,31 +186,46 @@
         "name": "Latest Business Exception Score",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Latest Business Exception Score",
         "useLogicalColumnName": false,
-        "description": "Highest business exception score in the latest available week for the selected AI cases. Use this for current exception prioritization."
+        "description": "Highest business exception score in the latest available week for the selected AI cases. Use this for current exception prioritization.",
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
       },
       {
         "name": "Latest Demand Units",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Latest Estimated Demand Units",
         "useLogicalColumnName": false,
-        "description": "Estimated demand units in the latest available AI signal week for the selected context. Use this for current demand evidence instead of summing across historical weeks."
+        "description": "Estimated demand units in the latest available AI signal week for the selected context. Use this for current demand evidence instead of summing across historical weeks.",
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
       },
       {
         "name": "Latest Lost Sales Units",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Latest Estimated Lost Sales Units",
         "useLogicalColumnName": false,
-        "description": "Estimated lost-sales units in the latest available AI signal week for the selected context. This highlights current missed demand when stock is exhausted."
+        "description": "Estimated lost-sales units in the latest available AI signal week for the selected context. This highlights current missed demand when stock is exhausted.",
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
       },
       {
         "name": "Latest Ending On Hand Units",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Latest Ending On Hand Units",
         "useLogicalColumnName": false,
-        "description": "Ending on-hand units in the latest available AI signal week for the selected context. Use it to check current stock position while investigating AI cases."
+        "description": "Ending on-hand units in the latest available AI signal week for the selected context. Use it to check current stock position while investigating AI cases.",
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
       },
       {
         "name": "Latest Ending Available Units",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Latest Ending Available Units",
         "useLogicalColumnName": false,
-        "description": "Ending available units in the latest available AI signal week for the selected context. Use it to identify whether any sellable stock remains now."
+        "description": "Ending available units in the latest available AI signal week for the selected context. Use it to identify whether any sellable stock remains now.",
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
       },
       {
         "name": "Affected Lost Sales Weeks",
@@ -228,7 +249,10 @@
         "name": "Typical Probability",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Typical Probability",
         "useLogicalColumnName": false,
-        "description": "Probability that the store-SKU-week case is typical compared with learned product behavior."
+        "description": "Probability that the store-SKU-week case is typical compared with learned product behavior.",
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
       },
       {
         "name": "Cluster Probability",
@@ -276,13 +300,19 @@
         "name": "On Hand Units",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.On Hand Units",
         "useLogicalColumnName": false,
-        "description": "On-hand inventory in the store-SKU-week AI case. Use this as context for the signal; use Inventory KPIs for operational inventory reporting."
+        "description": "On-hand inventory in the store-SKU-week AI case. Use this as context for the signal; use Inventory KPIs for operational inventory reporting.",
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
       },
       {
         "name": "Available Units",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Available Units",
         "useLogicalColumnName": false,
-        "description": "Available inventory in the store-SKU-week AI case. Use this to understand whether an AI case has sellable stock at the time of the signal."
+        "description": "Available inventory in the store-SKU-week AI case. Use this to understand whether an AI case has sellable stock at the time of the signal.",
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
       },
       {
         "name": "Opening On Hand Units",
@@ -450,13 +480,19 @@
         "name": "Stockout Risk Score",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Stockout Risk Score",
         "useLogicalColumnName": false,
-        "description": "Average store-SKU-week stockout risk across the selected AI cases. Useful for context, but for exception severity prefer Latest Stockout Risk Score, Peak Stockout Risk Score, or Affected Stockout Weeks."
+        "description": "Average store-SKU-week stockout risk across the selected AI cases. Useful for context, but for exception severity prefer Latest Stockout Risk Score, Peak Stockout Risk Score, or Affected Stockout Weeks.",
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
       },
       {
         "name": "Overstock Risk Score",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Overstock Risk Score",
         "useLogicalColumnName": false,
-        "description": "Average store-SKU-week overstock risk across the selected AI cases. Useful for context, but for exception severity prefer Latest Overstock Risk Score, Peak Overstock Risk Score, or Affected Overstock Weeks."
+        "description": "Average store-SKU-week overstock risk across the selected AI cases. Useful for context, but for exception severity prefer Latest Overstock Risk Score, Peak Overstock Risk Score, or Affected Overstock Weeks.",
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
       },
       {
         "name": "Anomaly Prediction",
@@ -480,7 +516,10 @@
         "name": "Primary Feature Value",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Primary Feature Value",
         "useLogicalColumnName": false,
-        "description": "Numeric value of the feature that most influenced the AI case; mainly useful for diagnostics alongside the evidence fields."
+        "description": "Numeric value of the feature that most influenced the AI case; mainly useful for diagnostics alongside the evidence fields.",
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
       },
       {
         "name": "Model Evidence",

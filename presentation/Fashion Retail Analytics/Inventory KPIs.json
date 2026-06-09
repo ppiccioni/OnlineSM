@@ -102,13 +102,19 @@
         "name": "Average Store-SKU Overstock Risk Index",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Inventory KPIs.Average Store-SKU Overstock Risk Index",
         "useLogicalColumnName": false,
-        "description": "Historical average raw overstock risk index at store-SKU-week grain; not scaled to 0-100."
+        "description": "Historical average raw overstock risk index at store-SKU-week grain; not scaled to 0-100.",
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
       },
       {
         "name": "Average Store-SKU Stockout Risk Index",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Inventory KPIs.Average Store-SKU Stockout Risk Index",
         "useLogicalColumnName": false,
-        "description": "Historical average raw stockout risk index at store-SKU-week grain; not scaled to 0-100."
+        "description": "Historical average raw stockout risk index at store-SKU-week grain; not scaled to 0-100.",
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
       },
       {
         "name": "Current Store-SKU Stockout Risk Score",
