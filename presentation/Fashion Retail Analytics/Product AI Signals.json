@@ -354,16 +354,10 @@
         "name": "Stockout-Adjusted Demand Units",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Estimated Demand Units",
         "useLogicalColumnName": false,
-        "description": "Modeled demand after adjusting observed sales for stockout constraints in the store-SKU-week AI case. This is not the original planning forecast; it equals units sold plus estimated lost sales units."
-      },
-      {
-        "name": "Demand Units",
-        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Estimated Demand Units",
-        "useLogicalColumnName": false,
-        "description": "Legacy-compatible alias for Stockout-Adjusted Demand Units. Hidden from new analyses to avoid confusion with original planning forecasts.",
-        "hideIfTrue": {
-          "expressionTemplate": "1 = 1"
-        }
+        "description": "Modeled demand after adjusting observed sales for stockout constraints in the store-SKU-week AI case. This is not the original planning forecast; it equals units sold plus estimated lost sales units.",
+        "alternateNames": [
+          "Demand Units"
+        ]
       },
       {
         "name": "Lost Sales Units",
