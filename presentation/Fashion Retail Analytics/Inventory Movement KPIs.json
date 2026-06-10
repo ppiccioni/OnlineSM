@@ -70,10 +70,19 @@
         "description": "Units moved out of the store during the store-SKU-week. These units reduce the stock available to fulfill local demand."
       },
       {
+        "name": "Stockout-Adjusted Demand Units",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Inventory Movement KPIs.Estimated Demand Units",
+        "useLogicalColumnName": false,
+        "description": "Modeled weekly demand after adjusting observed sales for stockout constraints at store-SKU-week grain. This is not the original planning forecast; it equals fulfilled units sold plus estimated lost sales units."
+      },
+      {
         "name": "Estimated Demand Units",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Inventory Movement KPIs.Estimated Demand Units",
-        "useLogicalColumnName": true,
-        "description": "Estimated unconstrained customer demand for the store-SKU-week, equal to fulfilled units sold plus estimated lost sales units. This is modeled demand, not a directly observed POS count."
+        "useLogicalColumnName": false,
+        "description": "Legacy-compatible alias for Stockout-Adjusted Demand Units. Hidden from new analyses to avoid confusion with original planning forecasts.",
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
       },
       {
         "name": "Fulfilled Units Sold",
