@@ -9,22 +9,16 @@
         "description": "Business-facing collection name, such as an Autumn/Winter or Spring/Summer assortment."
       },
       {
-        "name": "Season Code",
-        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection.Season Code",
+        "name": "Collection Code",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection.Collection ID",
         "useLogicalColumnName": false,
-        "description": "Short season code for the collection, such as SS or AW."
+        "description": "Compact collection identifier combining season and year, such as SS26 or AW26. Use this for concise selectors, dashboard labels, and AI prompts when the full collection name is too verbose."
       },
       {
         "name": "Season Name",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection.Season Name",
         "useLogicalColumnName": false,
         "description": "Readable season name for the collection."
-      },
-      {
-        "name": "Collection Year",
-        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Collection.Collection Year",
-        "useLogicalColumnName": false,
-        "description": "Year associated with the collection launch and selling lifecycle."
       },
       {
         "name": "Launch Date",
@@ -75,8 +69,7 @@
           },
           {
             "name": "Year",
-            "sourceLogicalLevel": "logicalLevel:Fashion Retail DW.Collection.Year",
-            "displayColumn": "presentationColumn:Fashion Retail Analytics.Collection.Collection Year"
+            "sourceLogicalLevel": "logicalLevel:Fashion Retail DW.Collection.Year"
           },
           {
             "name": "Season",
@@ -86,7 +79,7 @@
           {
             "name": "Detail",
             "sourceLogicalLevel": "logicalLevel:Fashion Retail DW.Collection.Detail",
-            "displayColumn": "presentationColumn:Fashion Retail Analytics.Collection.Collection Name"
+            "displayColumn": "presentationColumn:Fashion Retail Analytics.Collection.Collection Code"
           }
         ]
       }
