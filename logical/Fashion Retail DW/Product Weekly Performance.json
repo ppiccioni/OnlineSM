@@ -597,7 +597,7 @@
         "logicalColumnSource": {
           "derivedFrom": "LOGICAL_COLUMNS",
           "logicalExpression": {
-            "expressionTemplate": "CASE WHEN %2 = 0 THEN 0 ELSE %1 / %2 * 100 END",
+            "expressionTemplate": "CASE WHEN %2 = 0 THEN 0 ELSE %1 / %2 END",
             "expressionObjects": [
               "logicalColumn:Fashion Retail DW.Product Weekly Performance.Discount Amount",
               "logicalColumn:Fashion Retail DW.Product Weekly Performance.Gross Sales Amount"
@@ -613,7 +613,7 @@
         "logicalColumnSource": {
           "derivedFrom": "LOGICAL_COLUMNS",
           "logicalExpression": {
-            "expressionTemplate": "CASE WHEN %2 = 0 THEN 0 ELSE %1 / %2 * 100 END",
+            "expressionTemplate": "CASE WHEN %2 = 0 THEN 0 ELSE %1 / %2 END",
             "expressionObjects": [
               "logicalColumn:Fashion Retail DW.Product Weekly Performance.Gross Margin Amount",
               "logicalColumn:Fashion Retail DW.Product Weekly Performance.Net Sales Amount"
@@ -629,7 +629,7 @@
         "logicalColumnSource": {
           "derivedFrom": "LOGICAL_COLUMNS",
           "logicalExpression": {
-            "expressionTemplate": "CASE WHEN %2 = 0 THEN 0 ELSE %1 / %2 * 100 END",
+            "expressionTemplate": "CASE WHEN %2 = 0 THEN 0 ELSE %1 / %2 END",
             "expressionObjects": [
               "logicalColumn:Fashion Retail DW.Product Weekly Performance.Returned Units",
               "logicalColumn:Fashion Retail DW.Product Weekly Performance.Units Sold"
@@ -645,7 +645,7 @@
         "logicalColumnSource": {
           "derivedFrom": "LOGICAL_COLUMNS",
           "logicalExpression": {
-            "expressionTemplate": "CASE WHEN (%1 + %2) = 0 THEN 0 ELSE %1 / (%1 + %2) * 100 END",
+            "expressionTemplate": "CASE WHEN (%1 + %2) = 0 THEN 0 ELSE %1 / (%1 + %2) END",
             "expressionObjects": [
               "logicalColumn:Fashion Retail DW.Product Weekly Performance.Full Price Units",
               "logicalColumn:Fashion Retail DW.Product Weekly Performance.Product-Week On Hand Units"
@@ -661,7 +661,7 @@
         "logicalColumnSource": {
           "derivedFrom": "LOGICAL_COLUMNS",
           "logicalExpression": {
-            "expressionTemplate": "CASE WHEN %2 = 0 THEN 0 ELSE %1 / %2 * 100 END",
+            "expressionTemplate": "CASE WHEN %2 = 0 THEN 0 ELSE %1 / %2 END",
             "expressionObjects": [
               "logicalColumn:Fashion Retail DW.Product Weekly Performance.Full Price Units",
               "logicalColumn:Fashion Retail DW.Product Weekly Performance.Units Sold"
@@ -677,7 +677,7 @@
         "logicalColumnSource": {
           "derivedFrom": "LOGICAL_COLUMNS",
           "logicalExpression": {
-            "expressionTemplate": "CASE WHEN (%1 + %2) = 0 THEN 0 ELSE %1 / (%1 + %2) * 100 END",
+            "expressionTemplate": "CASE WHEN (%1 + %2) = 0 THEN 0 ELSE %1 / (%1 + %2) END",
             "expressionObjects": [
               "logicalColumn:Fashion Retail DW.Product Weekly Performance.Units Sold",
               "logicalColumn:Fashion Retail DW.Product Weekly Performance.Product-Week On Hand Units"
@@ -693,7 +693,7 @@
         "logicalColumnSource": {
           "derivedFrom": "LOGICAL_COLUMNS",
           "logicalExpression": {
-            "expressionTemplate": "CASE WHEN %2 = 0 THEN 0 ELSE %1 / %2 * 100 END",
+            "expressionTemplate": "CASE WHEN %2 = 0 THEN 0 ELSE %1 / %2 END",
             "expressionObjects": [
               "logicalColumn:Fashion Retail DW.Product Weekly Performance.Stockout Store Count",
               "logicalColumn:Fashion Retail DW.Product Weekly Performance.Store Snapshot Count"
@@ -781,7 +781,7 @@
             {
               "logicalTableSource": "MART_PRODUCT_PERFORMANCE_WEEKLY_V2_LTS",
               "physicalExpression": {
-                "expressionTemplate": "%1",
+                "expressionTemplate": "%1 / 100",
                 "expressionObjects": [
                   "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.MART_PRODUCT_PERFORMANCE_WEEKLY_V2.RETURN_RATE_4W_AVG"
                 ]

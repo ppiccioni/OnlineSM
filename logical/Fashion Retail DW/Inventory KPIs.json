@@ -503,7 +503,7 @@
         "logicalColumnSource": {
           "derivedFrom": "LOGICAL_COLUMNS",
           "logicalExpression": {
-            "expressionTemplate": "CASE WHEN %2 = 0 THEN 0 ELSE %1 / %2 * 100 END",
+            "expressionTemplate": "CASE WHEN %2 = 0 THEN 0 ELSE %1 / %2 END",
             "expressionObjects": [
               "logicalColumn:Fashion Retail DW.Inventory KPIs.Snapshot Available Units",
               "logicalColumn:Fashion Retail DW.Inventory KPIs.Snapshot On Hand Units"

@@ -353,7 +353,7 @@
         "logicalColumnSource": {
           "derivedFrom": "LOGICAL_COLUMNS",
           "logicalExpression": {
-            "expressionTemplate": "CASE WHEN %1 = 0 THEN 0 ELSE %2 / %1 * 100 END",
+            "expressionTemplate": "CASE WHEN %1 = 0 THEN 0 ELSE %2 / %1 END",
             "expressionObjects": [
               "logicalColumn:Fashion Retail DW.Inventory Movement KPIs.Estimated Demand Units",
               "logicalColumn:Fashion Retail DW.Inventory Movement KPIs.Fulfilled Units Sold"
@@ -369,7 +369,7 @@
         "logicalColumnSource": {
           "derivedFrom": "LOGICAL_COLUMNS",
           "logicalExpression": {
-            "expressionTemplate": "CASE WHEN %1 = 0 THEN 0 ELSE %2 / %1 * 100 END",
+            "expressionTemplate": "CASE WHEN %1 = 0 THEN 0 ELSE %2 / %1 END",
             "expressionObjects": [
               "logicalColumn:Fashion Retail DW.Inventory Movement KPIs.Estimated Demand Units",
               "logicalColumn:Fashion Retail DW.Inventory Movement KPIs.Estimated Lost Sales Units"

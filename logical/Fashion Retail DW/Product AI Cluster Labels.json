@@ -236,7 +236,7 @@
             {
               "logicalTableSource": "PRODUCT_AI_CLUSTER_LABELS_LTS",
               "physicalExpression": {
-                "expressionTemplate": "%1",
+                "expressionTemplate": "%1 / 100",
                 "expressionObjects": [
                   "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_CLUSTER_LABELS.AVG_FULL_PRICE_UNIT_SHARE_PCT"
                 ]
@@ -284,7 +284,7 @@
             {
               "logicalTableSource": "PRODUCT_AI_CLUSTER_LABELS_LTS",
               "physicalExpression": {
-                "expressionTemplate": "%1",
+                "expressionTemplate": "%1 / 100",
                 "expressionObjects": [
                   "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_CLUSTER_LABELS.AVG_LOST_SALES_RATE_PCT"
                 ]
@@ -404,7 +404,7 @@
             {
               "logicalTableSource": "PRODUCT_AI_CLUSTER_LABELS_LTS",
               "physicalExpression": {
-                "expressionTemplate": "%1",
+                "expressionTemplate": "%1 / 100",
                 "expressionObjects": [
                   "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_CLUSTER_LABELS.AVG_FULL_PRICE_SELL_THROUGH_PCT"
                 ]
@@ -428,7 +428,7 @@
             {
               "logicalTableSource": "PRODUCT_AI_CLUSTER_LABELS_LTS",
               "physicalExpression": {
-                "expressionTemplate": "%1",
+                "expressionTemplate": "%1 / 100",
                 "expressionObjects": [
                   "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_CLUSTER_LABELS.AVG_MARKDOWN_PCT"
                 ]
@@ -452,7 +452,7 @@
             {
               "logicalTableSource": "PRODUCT_AI_CLUSTER_LABELS_LTS",
               "physicalExpression": {
-                "expressionTemplate": "%1",
+                "expressionTemplate": "%1 / 100",
                 "expressionObjects": [
                   "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_CLUSTER_LABELS.AVG_RETURN_RATE_PCT"
                 ]

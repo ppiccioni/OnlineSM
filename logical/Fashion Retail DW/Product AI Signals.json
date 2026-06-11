@@ -717,46 +717,32 @@
         "dataType": "DOUBLE",
         "writeable": false,
         "logicalColumnSource": {
-          "derivedFrom": "PHYSICAL_COLUMNS",
-          "physicalMappings": [
-            {
-              "logicalTableSource": "PRODUCT_AI_SCORE_LABELED_V_LTS",
-              "physicalExpression": {
-                "expressionTemplate": "%1",
-                "expressionObjects": [
-                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_SCORE_LABELED_V.FULFILLED_DEMAND_PCT"
-                ]
-              }
-            }
-          ]
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "expressionTemplate": "CASE WHEN %2 = 0 THEN 0 ELSE %1 / %2 END",
+            "expressionObjects": [
+              "logicalColumn:Fashion Retail DW.Product AI Signals.Fulfilled Units Sold",
+              "logicalColumn:Fashion Retail DW.Product AI Signals.Estimated Demand Units"
+            ]
+          }
         },
-        "aggregation": {
-          "rule": "AVG"
-        },
-        "description": "Percentage of estimated demand that was fulfilled in the store-SKU-week AI case. Low values indicate demand was constrained by availability."
+        "description": "Fraction of estimated demand that was fulfilled after applying the current filters. Format as a percentage in OAC."
       },
       {
         "name": "Estimated Lost Sales Rate Percent",
         "dataType": "DOUBLE",
         "writeable": false,
         "logicalColumnSource": {
-          "derivedFrom": "PHYSICAL_COLUMNS",
-          "physicalMappings": [
-            {
-              "logicalTableSource": "PRODUCT_AI_SCORE_LABELED_V_LTS",
-              "physicalExpression": {
-                "expressionTemplate": "%1",
-                "expressionObjects": [
-                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_SCORE_LABELED_V.LOST_SALES_RATE_PCT"
-                ]
-              }
-            }
-          ]
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "expressionTemplate": "CASE WHEN %2 = 0 THEN 0 ELSE %1 / %2 END",
+            "expressionObjects": [
+              "logicalColumn:Fashion Retail DW.Product AI Signals.Estimated Lost Sales Units",
+              "logicalColumn:Fashion Retail DW.Product AI Signals.Estimated Demand Units"
+            ]
+          }
         },
-        "aggregation": {
-          "rule": "AVG"
-        },
-        "description": "Percentage of estimated demand that became estimated lost sales in the store-SKU-week AI case. Use it to rank stockout severity independently from fulfilled sales."
+        "description": "Fraction of estimated demand that could not be fulfilled because stock was unavailable. Format as a percentage in OAC."
       },
       {
         "name": "Supply Units",
@@ -906,7 +892,7 @@
             {
               "logicalTableSource": "PRODUCT_AI_SCORE_LABELED_V_LTS",
               "physicalExpression": {
-                "expressionTemplate": "%1",
+                "expressionTemplate": "%1 / 100",
                 "expressionObjects": [
                   "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_SCORE_LABELED_V.FULL_PRICE_UNIT_SHARE_4W_AVG"
                 ]
@@ -929,7 +915,7 @@
             {
               "logicalTableSource": "PRODUCT_AI_SCORE_LABELED_V_LTS",
               "physicalExpression": {
-                "expressionTemplate": "%1",
+                "expressionTemplate": "%1 / 100",
                 "expressionObjects": [
                   "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_SCORE_LABELED_V.MARKDOWN_PCT"
                 ]
@@ -940,76 +926,55 @@
         "aggregation": {
           "rule": "AVG"
         },
-        "description": "Markdown percent used as an AI signal feature."
+        "description": "Average row-level markdown fraction used as an AI signal feature. Product AI Signals does not expose gross sales and discount amount, so this field should be interpreted as average markdown intensity; format as a percentage in OAC."
       },
       {
         "name": "Gross Margin Percent",
         "dataType": "DOUBLE",
         "writeable": false,
         "logicalColumnSource": {
-          "derivedFrom": "PHYSICAL_COLUMNS",
-          "physicalMappings": [
-            {
-              "logicalTableSource": "PRODUCT_AI_SCORE_LABELED_V_LTS",
-              "physicalExpression": {
-                "expressionTemplate": "%1",
-                "expressionObjects": [
-                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_SCORE_LABELED_V.GROSS_MARGIN_PCT"
-                ]
-              }
-            }
-          ]
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "expressionTemplate": "CASE WHEN %2 = 0 THEN 0 ELSE %1 / %2 END",
+            "expressionObjects": [
+              "logicalColumn:Fashion Retail DW.Product AI Signals.Gross Margin Amount",
+              "logicalColumn:Fashion Retail DW.Product AI Signals.Net Sales Amount"
+            ]
+          }
         },
-        "aggregation": {
-          "rule": "AVG"
-        },
-        "description": "Gross margin percent used as an AI signal feature."
+        "description": "Gross margin fraction after applying the current filters. Calculated as gross margin amount divided by net sales amount; format as a percentage in OAC."
       },
       {
         "name": "Return Rate Percent",
         "dataType": "DOUBLE",
         "writeable": false,
         "logicalColumnSource": {
-          "derivedFrom": "PHYSICAL_COLUMNS",
-          "physicalMappings": [
-            {
-              "logicalTableSource": "PRODUCT_AI_SCORE_LABELED_V_LTS",
-              "physicalExpression": {
-                "expressionTemplate": "%1",
-                "expressionObjects": [
-                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_SCORE_LABELED_V.RETURN_RATE_PCT"
-                ]
-              }
-            }
-          ]
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "expressionTemplate": "CASE WHEN %2 = 0 THEN 0 ELSE %1 / %2 END",
+            "expressionObjects": [
+              "logicalColumn:Fashion Retail DW.Product AI Signals.Returned Units",
+              "logicalColumn:Fashion Retail DW.Product AI Signals.Fulfilled Units Sold"
+            ]
+          }
         },
-        "aggregation": {
-          "rule": "AVG"
-        },
-        "description": "Return rate percent used as an AI signal feature."
+        "description": "Returned units as a fraction of fulfilled units sold after applying the current filters. Format as a percentage in OAC."
       },
       {
         "name": "Full Price Sell Through Percent",
         "dataType": "DOUBLE",
         "writeable": false,
         "logicalColumnSource": {
-          "derivedFrom": "PHYSICAL_COLUMNS",
-          "physicalMappings": [
-            {
-              "logicalTableSource": "PRODUCT_AI_SCORE_LABELED_V_LTS",
-              "physicalExpression": {
-                "expressionTemplate": "%1",
-                "expressionObjects": [
-                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_SCORE_LABELED_V.FULL_PRICE_SELL_THROUGH_PCT"
-                ]
-              }
-            }
-          ]
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "expressionTemplate": "CASE WHEN (%1 + %2) = 0 THEN 0 ELSE %1 / (%1 + %2) END",
+            "expressionObjects": [
+              "logicalColumn:Fashion Retail DW.Product AI Signals.Full Price Units",
+              "logicalColumn:Fashion Retail DW.Product AI Signals.On Hand Units"
+            ]
+          }
         },
-        "aggregation": {
-          "rule": "AVG"
-        },
-        "description": "Full-price sell-through percent used as an AI signal feature."
+        "description": "Full-price sell-through fraction after applying the current filters. Format as a percentage in OAC."
       },
       {
         "name": "Full Price Unit Share Percent",
@@ -1018,37 +983,30 @@
         "logicalColumnSource": {
           "derivedFrom": "LOGICAL_COLUMNS",
           "logicalExpression": {
-            "expressionTemplate": "CASE WHEN %2 = 0 THEN 0 ELSE %1 / %2 * 100 END",
+            "expressionTemplate": "CASE WHEN %2 = 0 THEN 0 ELSE %1 / %2 END",
             "expressionObjects": [
               "logicalColumn:Fashion Retail DW.Product AI Signals.Full Price Units",
               "logicalColumn:Fashion Retail DW.Product AI Signals.Fulfilled Units Sold"
             ]
           }
         },
-        "description": "Full-price unit share used as an AI signal feature."
+        "description": "Fraction of fulfilled units sold at full price after applying the current filters. Format as a percentage in OAC."
       },
       {
         "name": "Sell Through Percent",
         "dataType": "DOUBLE",
         "writeable": false,
         "logicalColumnSource": {
-          "derivedFrom": "PHYSICAL_COLUMNS",
-          "physicalMappings": [
-            {
-              "logicalTableSource": "PRODUCT_AI_SCORE_LABELED_V_LTS",
-              "physicalExpression": {
-                "expressionTemplate": "%1",
-                "expressionObjects": [
-                  "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_SCORE_LABELED_V.SELL_THROUGH_PCT"
-                ]
-              }
-            }
-          ]
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "expressionTemplate": "CASE WHEN (%1 + %2) = 0 THEN 0 ELSE %1 / (%1 + %2) END",
+            "expressionObjects": [
+              "logicalColumn:Fashion Retail DW.Product AI Signals.Fulfilled Units Sold",
+              "logicalColumn:Fashion Retail DW.Product AI Signals.On Hand Units"
+            ]
+          }
         },
-        "aggregation": {
-          "rule": "AVG"
-        },
-        "description": "Sell-through percent used as an AI signal feature."
+        "description": "Sell-through fraction after applying the current filters. Format as a percentage in OAC."
       },
       {
         "name": "Stockout Store Rate Percent",
@@ -1060,7 +1018,7 @@
             {
               "logicalTableSource": "PRODUCT_AI_SCORE_LABELED_V_LTS",
               "physicalExpression": {
-                "expressionTemplate": "%1",
+                "expressionTemplate": "%1 / 100",
                 "expressionObjects": [
                   "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.PRODUCT_AI_SCORE_LABELED_V.STOCKOUT_STORE_RATE_PCT"
                 ]
@@ -1071,7 +1029,7 @@
         "aggregation": {
           "rule": "AVG"
         },
-        "description": "Store stockout rate used as an AI signal feature."
+        "description": "Average row-level store stockout-rate fraction used as an AI signal feature. Use stockout and lost-sales case counts for aggregate exception volumes; format as a percentage in OAC."
       },
       {
         "name": "Average Weeks Of Supply",
