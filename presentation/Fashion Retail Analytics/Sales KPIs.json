@@ -192,13 +192,13 @@
         "name": "Return Line Rate",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Sales KPIs.Return Line Rate",
         "useLogicalColumnName": false,
-        "description": "Returned sales lines as a percentage of total sales lines."
+        "description": "Fraction of sales lines flagged as returned after applying the current filters. Format as a percentage in OAC."
       },
       {
         "name": "Full Price Line Share",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Sales KPIs.Full Price Line Share",
         "useLogicalColumnName": false,
-        "description": "Full-price sales lines as a percentage of total sales lines."
+        "description": "Fraction of sales lines sold at full price after applying the current filters. Format as a percentage in OAC."
       },
       {
         "name": "Full Price Unit Share Percent",

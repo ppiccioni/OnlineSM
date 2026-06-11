@@ -369,13 +369,13 @@
         "name": "Fulfilled Demand Percent",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Fulfilled Estimated Demand Percent",
         "useLogicalColumnName": false,
-        "description": "Percentage of estimated demand that was fulfilled in the store-SKU-week AI case. Low values indicate demand was constrained by availability."
+        "description": "Fraction of estimated demand that was fulfilled after applying the current filters. Format as a percentage in OAC."
       },
       {
         "name": "Lost Sales Rate Percent",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Estimated Lost Sales Rate Percent",
         "useLogicalColumnName": false,
-        "description": "Percentage of estimated demand that became estimated lost sales in the store-SKU-week AI case. Use it to rank stockout severity independently from fulfilled sales."
+        "description": "Fraction of estimated demand that could not be fulfilled because stock was unavailable. Format as a percentage in OAC."
       },
       {
         "name": "Supply Units",
@@ -423,43 +423,43 @@
         "name": "Markdown Percent",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Markdown Percent",
         "useLogicalColumnName": false,
-        "description": "Markdown percent used as an AI signal feature."
+        "description": "Average row-level markdown fraction used as an AI signal feature. Product AI Signals does not expose gross sales and discount amount, so this is average markdown intensity; format as a percentage in OAC."
       },
       {
         "name": "Gross Margin Percent",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Gross Margin Percent",
         "useLogicalColumnName": false,
-        "description": "Gross margin percent used as an AI signal feature."
+        "description": "Gross margin fraction after applying the current filters. Calculated as gross margin amount divided by net sales amount; format as a percentage in OAC."
       },
       {
         "name": "Return Rate Percent",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Return Rate Percent",
         "useLogicalColumnName": false,
-        "description": "Return rate percent used as an AI signal feature."
+        "description": "Returned units as a fraction of fulfilled units sold after applying the current filters. Format as a percentage in OAC."
       },
       {
         "name": "Full Price Sell Through Percent",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Full Price Sell Through Percent",
         "useLogicalColumnName": false,
-        "description": "Full-price sell-through percent used as an AI signal feature."
+        "description": "Full-price sell-through fraction after applying the current filters. Format as a percentage in OAC."
       },
       {
         "name": "Full Price Unit Share Percent",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Full Price Unit Share Percent",
         "useLogicalColumnName": false,
-        "description": "Full-price unit share used as an AI signal feature."
+        "description": "Fraction of fulfilled units sold at full price after applying the current filters. Format as a percentage in OAC."
       },
       {
         "name": "Sell Through Percent",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Sell Through Percent",
         "useLogicalColumnName": false,
-        "description": "Sell-through percent used as an AI signal feature."
+        "description": "Sell-through fraction after applying the current filters. Format as a percentage in OAC."
       },
       {
         "name": "Stockout Store Rate Percent",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Stockout Store Rate Percent",
         "useLogicalColumnName": false,
-        "description": "Store stockout rate used as an AI signal feature."
+        "description": "Average row-level store stockout-rate fraction used as an AI signal feature. Use stockout and lost-sales case counts for aggregate exception volumes; format as a percentage in OAC."
       },
       {
         "name": "Average Weeks Of Supply",

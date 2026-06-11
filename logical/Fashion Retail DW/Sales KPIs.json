@@ -515,14 +515,14 @@
         "logicalColumnSource": {
           "derivedFrom": "LOGICAL_COLUMNS",
           "logicalExpression": {
-            "expressionTemplate": "%1 / %2 * 100",
+            "expressionTemplate": "CASE WHEN %2 = 0 THEN 0 ELSE %1 / %2 END",
             "expressionObjects": [
               "logicalColumn:Fashion Retail DW.Sales KPIs.Returned Line Count",
               "logicalColumn:Fashion Retail DW.Sales KPIs.Sales Line Count"
             ]
           }
         },
-        "description": "Returned sales lines as a percentage of total sales lines."
+        "description": "Fraction of sales lines flagged as returned after applying the current filters. Format as a percentage in OAC."
       },
       {
         "name": "Full Price Line Share",
@@ -531,14 +531,14 @@
         "logicalColumnSource": {
           "derivedFrom": "LOGICAL_COLUMNS",
           "logicalExpression": {
-            "expressionTemplate": "%1 / %2 * 100",
+            "expressionTemplate": "CASE WHEN %2 = 0 THEN 0 ELSE %1 / %2 END",
             "expressionObjects": [
               "logicalColumn:Fashion Retail DW.Sales KPIs.Full Price Line Count",
               "logicalColumn:Fashion Retail DW.Sales KPIs.Sales Line Count"
             ]
           }
         },
-        "description": "Full-price sales lines as a percentage of total sales lines."
+        "description": "Fraction of sales lines sold at full price after applying the current filters. Format as a percentage in OAC."
       },
       {
         "name": "Full Price Unit Share Percent",
@@ -547,7 +547,7 @@
         "logicalColumnSource": {
           "derivedFrom": "LOGICAL_COLUMNS",
           "logicalExpression": {
-            "expressionTemplate": "CASE WHEN %2 = 0 THEN 0 ELSE %1 / %2 * 100 END",
+            "expressionTemplate": "CASE WHEN %2 = 0 THEN 0 ELSE %1 / %2 END",
             "expressionObjects": [
               "logicalColumn:Fashion Retail DW.Sales KPIs.Full Price Units",
               "logicalColumn:Fashion Retail DW.Sales KPIs.Units Sold"

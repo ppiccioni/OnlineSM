@@ -1134,7 +1134,7 @@
         "logicalColumnSource": {
           "derivedFrom": "LOGICAL_COLUMNS",
           "logicalExpression": {
-            "expressionTemplate": "CASE WHEN %2 = 0 THEN 0 ELSE %1 / %2 * 100 END",
+            "expressionTemplate": "CASE WHEN %2 = 0 THEN 0 ELSE %1 / %2 END",
             "expressionObjects": [
               "logicalColumn:Fashion Retail DW.Collection Health.Gross Margin Amount",
               "logicalColumn:Fashion Retail DW.Collection Health.Net Sales Amount"
@@ -1150,7 +1150,7 @@
         "logicalColumnSource": {
           "derivedFrom": "LOGICAL_COLUMNS",
           "logicalExpression": {
-            "expressionTemplate": "CASE WHEN %2 = 0 THEN 0 ELSE %1 / %2 * 100 END",
+            "expressionTemplate": "CASE WHEN %2 = 0 THEN 0 ELSE %1 / %2 END",
             "expressionObjects": [
               "logicalColumn:Fashion Retail DW.Collection Health.Discount Amount",
               "logicalColumn:Fashion Retail DW.Collection Health.Gross Sales Amount"
@@ -1166,7 +1166,7 @@
         "logicalColumnSource": {
           "derivedFrom": "LOGICAL_COLUMNS",
           "logicalExpression": {
-            "expressionTemplate": "CASE WHEN %2 = 0 THEN 0 ELSE %1 / %2 * 100 END",
+            "expressionTemplate": "CASE WHEN %2 = 0 THEN 0 ELSE %1 / %2 END",
             "expressionObjects": [
               "logicalColumn:Fashion Retail DW.Collection Health.Returned Units",
               "logicalColumn:Fashion Retail DW.Collection Health.Units Sold"
@@ -1182,7 +1182,7 @@
         "logicalColumnSource": {
           "derivedFrom": "LOGICAL_COLUMNS",
           "logicalExpression": {
-            "expressionTemplate": "CASE WHEN %2 = 0 THEN 0 ELSE %1 / %2 * 100 END",
+            "expressionTemplate": "CASE WHEN %2 = 0 THEN 0 ELSE %1 / %2 END",
             "expressionObjects": [
               "logicalColumn:Fashion Retail DW.Collection Health.Full Price Units",
               "logicalColumn:Fashion Retail DW.Collection Health.Units Sold"
@@ -1198,7 +1198,7 @@
         "logicalColumnSource": {
           "derivedFrom": "LOGICAL_COLUMNS",
           "logicalExpression": {
-            "expressionTemplate": "CASE WHEN %2 = 0 THEN 0 ELSE %1 / %2 * 100 END",
+            "expressionTemplate": "CASE WHEN %2 = 0 THEN 0 ELSE %1 / %2 END",
             "expressionObjects": [
               "logicalColumn:Fashion Retail DW.Collection Health.Units Sold",
               "logicalColumn:Fashion Retail DW.Collection Health.Collection Sell Through Basis Units"
@@ -1214,7 +1214,7 @@
         "logicalColumnSource": {
           "derivedFrom": "LOGICAL_COLUMNS",
           "logicalExpression": {
-            "expressionTemplate": "CASE WHEN %2 = 0 THEN 0 ELSE %1 / %2 * 100 END",
+            "expressionTemplate": "CASE WHEN %2 = 0 THEN 0 ELSE %1 / %2 END",
             "expressionObjects": [
               "logicalColumn:Fashion Retail DW.Collection Health.Latest Stockout Store Count",
               "logicalColumn:Fashion Retail DW.Collection Health.Latest Store SKU Snapshot Count"
