@@ -90,6 +90,23 @@
         "description": "Start date of the retail analysis week. Use it for weekly sales, inventory, and AI signal trend analysis."
       },
       {
+        "name": "Week",
+        "dataType": "VARCHAR",
+        "writeable": false,
+        "sortBy": "Week Start Date",
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "expression": {
+            "expressionTemplate": "'Week ' || CAST ( WEEK_OF_YEAR(%1) AS VARCHAR ( 2 )) || ' ' || CAST ( YEAR(%1) AS VARCHAR ( 4 ))",
+            "expressionObjects": [
+              "logicalColumn:Fashion Retail DW.Date.Week Start Date"
+            ]
+          }
+        },
+        "logicalLevel": "Week",
+        "description": "Readable retail week label formatted as 'Week NN YYYY'. Use it in filters, prompts, and data action links when the analysis needs a stable week text value."
+      },
+      {
         "name": "Month Number",
         "dataType": "DOUBLE",
         "writeable": false,
@@ -333,7 +350,7 @@
           "primaryKey": [
             "Week Start Date"
           ],
-          "displayKey": "Week Start Date",
+          "displayKey": "Week",
           "chronologicalKey": [
             "Week Start Date"
           ]
