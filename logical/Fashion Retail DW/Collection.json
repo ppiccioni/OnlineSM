@@ -25,7 +25,8 @@
           ]
         },
         "logicalLevel": "Detail",
-        "description": "Compact collection identifier combining season and year, such as SS26 or AW26. Exposed to business users as Collection Code."
+        "description": "Compact collection identifier combining season and year, such as SS26 or AW26. Exposed to business users as Collection Code.",
+        "sortBy": "Launch Date"
       },
       {
         "name": "Collection Name",
