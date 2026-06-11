@@ -21,6 +21,12 @@
         "description": "Start date of the retail analysis week. Use it for weekly sales, inventory, and AI signal trend analysis."
       },
       {
+        "name": "Week",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Date.Week",
+        "useLogicalColumnName": false,
+        "description": "Readable retail week label formatted as 'Week NN YYYY'. Use it when passing a week value to links, prompts, or data actions, including the Aster Moda internal press digest."
+      },
+      {
         "name": "Month Number",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Date.Month Number",
         "useLogicalColumnName": false,
@@ -97,7 +103,7 @@
           {
             "name": "Week",
             "sourceLogicalLevel": "logicalLevel:Fashion Retail DW.Date.Week",
-            "displayColumn": "presentationColumn:Fashion Retail Analytics.Date.Week Start Date"
+            "displayColumn": "presentationColumn:Fashion Retail Analytics.Date.Week"
           },
           {
             "name": "Detail",
