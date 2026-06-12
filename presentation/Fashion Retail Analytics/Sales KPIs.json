@@ -180,13 +180,13 @@
         "name": "Gross Margin Pct",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Sales KPIs.Gross Margin Pct",
         "useLogicalColumnName": false,
-        "description": "Gross margin amount as a percentage of net sales amount."
+        "description": "Gross margin fraction after applying the current filters. Calculated as gross margin amount divided by net sales amount; format as a percentage in OAC."
       },
       {
         "name": "Markdown Pct",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Sales KPIs.Markdown Pct",
         "useLogicalColumnName": false,
-        "description": "Discount amount as a percentage of gross sales amount."
+        "description": "Markdown fraction after applying the current filters. Calculated as discount amount divided by gross sales amount; format as a percentage in OAC."
       },
       {
         "name": "Return Line Rate",

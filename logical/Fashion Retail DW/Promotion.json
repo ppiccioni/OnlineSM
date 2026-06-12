@@ -99,7 +99,7 @@
             {
               "logicalTableSource": "DIM_PROMOTION_LTS",
               "physicalExpression": {
-                "expressionTemplate": "%1",
+                "expressionTemplate": "%1 / 100",
                 "expressionObjects": [
                   "physicalColumn:FashionDW.CAT_FASHIONDW.FASHIONDW.DIM_PROMOTION.MARKDOWN_DEPTH_PCT"
                 ]
@@ -108,7 +108,7 @@
           ]
         },
         "logicalLevel": "Detail",
-        "description": "Planned markdown or discount depth percentage for the promotion."
+        "description": "Promotion markdown depth as a fraction of full price. Format as a percentage in OAC."
       },
       {
         "name": "Campaign Family",
