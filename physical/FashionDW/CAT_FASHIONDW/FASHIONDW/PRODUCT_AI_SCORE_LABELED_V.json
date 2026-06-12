@@ -106,6 +106,48 @@
         "nullable": true
       },
       {
+        "name": "INVENTORY_RETAIL_EXPOSURE_AMOUNT",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
+        "name": "INVENTORY_COST_EXPOSURE_AMOUNT",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
+        "name": "CONSECUTIVE_OVERSTOCK_WEEKS",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
+        "name": "OVERSTOCK_START_WEEK",
+        "dataType": "DATE",
+        "length": 7,
+        "nullable": true
+      },
+      {
+        "name": "TOTAL_OVERSTOCK_WEEKS_TO_DATE",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
+        "name": "OVERSTOCK_WEEKS_LAST_4",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
+        "name": "OVERSTOCK_WEEKS_LAST_13",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
         "name": "REPLENISHMENT_UNITS",
         "dataType": "DOUBLE",
         "length": 22,
@@ -131,6 +173,18 @@
       },
       {
         "name": "LOST_SALES_UNITS",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
+        "name": "ESTIMATED_LOST_SALES_AMOUNT",
+        "dataType": "DOUBLE",
+        "length": 22,
+        "nullable": true
+      },
+      {
+        "name": "ESTIMATED_LOST_GROSS_MARGIN_AMOUNT",
         "dataType": "DOUBLE",
         "length": 22,
         "nullable": true

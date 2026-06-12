@@ -333,6 +333,48 @@
         "description": "Ending sellable units for the store-SKU-week AI case after reservations. This is the clearest AI-signal field for seeing whether a store still had sellable stock at the end of the week."
       },
       {
+        "name": "Inventory Retail Exposure Amount",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Inventory Retail Exposure Amount",
+        "useLogicalColumnName": false,
+        "description": "Retail value of ending sellable inventory in the selected store-SKU-week AI cases. For overstock reviews, use it with a week filter to estimate how much customer-facing inventory is still exposed."
+      },
+      {
+        "name": "Inventory Cost Exposure Amount",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Inventory Cost Exposure Amount",
+        "useLogicalColumnName": false,
+        "description": "Cost value of ending on-hand inventory in the selected store-SKU-week AI cases. Use it to estimate the balance-sheet exposure behind overstock alerts."
+      },
+      {
+        "name": "Consecutive Overstock Weeks",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Consecutive Overstock Weeks",
+        "useLogicalColumnName": false,
+        "description": "Maximum number of consecutive weeks, up to the selected week, in which the same store-SKU combination has remained in overstock alert status."
+      },
+      {
+        "name": "Overstock Start Week",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Overstock Start Week",
+        "useLogicalColumnName": false,
+        "description": "First week of the current consecutive overstock episode for the store-SKU AI case."
+      },
+      {
+        "name": "Total Overstock Weeks To Date",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Total Overstock Weeks To Date",
+        "useLogicalColumnName": false,
+        "description": "Maximum number of overstock alert weeks accumulated by the same store-SKU combination up to the selected week."
+      },
+      {
+        "name": "Overstock Weeks Last 4",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Overstock Weeks Last 4",
+        "useLogicalColumnName": false,
+        "description": "Maximum number of overstock alert weeks in the trailing four-week window for the selected store-SKU AI cases."
+      },
+      {
+        "name": "Overstock Weeks Last 13",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Overstock Weeks Last 13",
+        "useLogicalColumnName": false,
+        "description": "Maximum number of overstock alert weeks in the trailing thirteen-week window for the selected store-SKU AI cases."
+      },
+      {
         "name": "Replenishment Units",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Replenishment Units",
         "useLogicalColumnName": false,
@@ -364,6 +406,18 @@
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Estimated Lost Sales Units",
         "useLogicalColumnName": false,
         "description": "Estimated demand units that could not be fulfilled because available stock was exhausted. Positive values indicate missed demand rather than normal low sales."
+      },
+      {
+        "name": "Lost Sales Amount",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Estimated Lost Sales Amount",
+        "useLogicalColumnName": false,
+        "description": "Estimated net sales value of unmet demand in the selected AI cases. Use it to rank stockout cases by revenue exposure."
+      },
+      {
+        "name": "Lost Gross Margin Amount",
+        "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product AI Signals.Estimated Lost Gross Margin Amount",
+        "useLogicalColumnName": false,
+        "description": "Estimated gross margin value of unmet demand in the selected AI cases. Use it to prioritize stockouts by profit exposure."
       },
       {
         "name": "Fulfilled Demand Percent",
