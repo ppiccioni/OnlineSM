@@ -483,14 +483,14 @@
         "logicalColumnSource": {
           "derivedFrom": "LOGICAL_COLUMNS",
           "logicalExpression": {
-            "expressionTemplate": "%1 / %2 * 100",
+            "expressionTemplate": "CASE WHEN %2 = 0 THEN 0 ELSE %1 / %2 END",
             "expressionObjects": [
               "logicalColumn:Fashion Retail DW.Sales KPIs.Gross Margin Amount",
               "logicalColumn:Fashion Retail DW.Sales KPIs.Net Sales Amount"
             ]
           }
         },
-        "description": "Gross margin amount as a percentage of net sales amount."
+        "description": "Gross margin fraction after applying the current filters. Calculated as gross margin amount divided by net sales amount; format as a percentage in OAC."
       },
       {
         "name": "Markdown Pct",
@@ -499,14 +499,14 @@
         "logicalColumnSource": {
           "derivedFrom": "LOGICAL_COLUMNS",
           "logicalExpression": {
-            "expressionTemplate": "%1 / %2 * 100",
+            "expressionTemplate": "CASE WHEN %2 = 0 THEN 0 ELSE %1 / %2 END",
             "expressionObjects": [
               "logicalColumn:Fashion Retail DW.Sales KPIs.Discount Amount",
               "logicalColumn:Fashion Retail DW.Sales KPIs.Gross Sales Amount"
             ]
           }
         },
-        "description": "Discount amount as a percentage of gross sales amount."
+        "description": "Markdown fraction after applying the current filters. Calculated as discount amount divided by gross sales amount; format as a percentage in OAC."
       },
       {
         "name": "Return Line Rate",

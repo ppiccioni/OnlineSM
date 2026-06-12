@@ -24,7 +24,7 @@
         "name": "Week",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Date.Week",
         "useLogicalColumnName": false,
-        "description": "Readable retail week label formatted as 'Week NN YYYY'. Use it when passing a week value to links, prompts, or data actions, including the Aster Moda internal press digest."
+        "description": "Readable retail week label formatted as 'Week NN YYYY'. Use it when passing a week value to links, prompts, or data actions, including the Avelis internal press digest."
       },
       {
         "name": "Month Number",
