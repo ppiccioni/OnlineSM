@@ -12,19 +12,19 @@
         "name": "Style Code",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product.Style Code",
         "useLogicalColumnName": false,
-        "description": "Style-level code grouping related SKU variants such as sizes or colors."
+        "description": "Product-level style code grouping the SKU variants that belong to the same sellable product instance."
       },
       {
         "name": "Product Name",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product.Product Name",
         "useLogicalColumnName": false,
-        "description": "Readable product name for the SKU."
+        "description": "Readable product-level name shared by color and size SKU variants. Use it between Style Description and SKU Code in the product hierarchy."
       },
       {
         "name": "Style Description",
         "sourceLogicalColumn": "logicalColumn:Fashion Retail DW.Product.Style Description",
         "useLogicalColumnName": false,
-        "description": "Short description of the style family. Use it when SKU-level names are too granular."
+        "description": "Readable style-family label, such as Chelsea Leather Boot. Use it above Product Name to group related branded products."
       },
       {
         "name": "Department",
@@ -140,6 +140,11 @@
             "name": "Style",
             "sourceLogicalLevel": "logicalLevel:Fashion Retail DW.Product.Style",
             "displayColumn": "presentationColumn:Fashion Retail Analytics.Product.Style Description"
+          },
+          {
+            "name": "Product",
+            "sourceLogicalLevel": "logicalLevel:Fashion Retail DW.Product.Product",
+            "displayColumn": "presentationColumn:Fashion Retail Analytics.Product.Product Name"
           },
           {
             "name": "SKU",
