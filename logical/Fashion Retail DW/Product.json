@@ -65,7 +65,7 @@
             }
           ]
         },
-        "logicalLevel": "Style"
+        "logicalLevel": "Product"
       },
       {
         "name": "Style Code",
@@ -85,8 +85,8 @@
             }
           ]
         },
-        "logicalLevel": "Style",
-        "description": "Style-level code grouping related SKU variants such as sizes or colors."
+        "logicalLevel": "Product",
+        "description": "Product-level style code grouping the SKU variants that belong to the same sellable product instance."
       },
       {
         "name": "Product Name",
@@ -106,8 +106,8 @@
             }
           ]
         },
-        "logicalLevel": "SKU",
-        "description": "Readable product name for the SKU."
+        "logicalLevel": "Product",
+        "description": "Readable product-level name shared by color and size SKU variants. Use it between Style Description and SKU Code in the product hierarchy."
       },
       {
         "name": "Style Description",
@@ -128,7 +128,7 @@
           ]
         },
         "logicalLevel": "Style",
-        "description": "Short description of the style family. Use it when SKU-level names are too granular."
+        "description": "Readable style-family label, such as Chelsea Leather Boot. Use it above Product Name to group related branded products."
       },
       {
         "name": "Department",
@@ -515,26 +515,42 @@
         },
         {
           "name": "Style",
+          "numberOfElements": 126,
+          "grandTotalLevel": false,
+          "disableAggregateToHigherLevel": false,
+          "primaryKey": [
+            "Department",
+            "Category",
+            "Subcategory",
+            "Style Description"
+          ],
+          "displayKey": "Style Description",
+          "chronologicalKey": [
+            "Style Description"
+          ]
+        },
+        {
+          "name": "Product",
           "numberOfElements": 1200,
           "grandTotalLevel": false,
           "disableAggregateToHigherLevel": false,
           "primaryKey": [
             "Style ID"
           ],
-          "displayKey": "Style Description",
+          "displayKey": "Product Name",
           "chronologicalKey": [
             "Style ID"
           ]
         },
         {
           "name": "SKU",
-          "numberOfElements": 8808,
+          "numberOfElements": 8628,
           "grandTotalLevel": false,
           "disableAggregateToHigherLevel": false,
           "primaryKey": [
             "SKU ID"
           ],
-          "displayKey": "Product Name",
+          "displayKey": "SKU Code",
           "chronologicalKey": [
             "SKU ID"
           ]
@@ -550,6 +566,7 @@
             "Category",
             "Subcategory",
             "Style",
+            "Product",
             "SKU"
           ]
         }
